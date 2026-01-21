@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://mohitkoli.info/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-coding-setup-3.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer Coding Setup</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-developer-life-1.jpg</image:loc>
+      <image:title>Mohit Koli Developer Life - Web Developer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-full-stack-4.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer Working on Projects</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-react-specialist-13.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer - React Specialist</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-php-expert-11.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer - PHP Expert</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-laravel-developer-12.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer - Laravel</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-youtube-22.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer and YouTube Creator</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-tech-influencer-18.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer &amp; Influencer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-instagram-23.jpg</image:loc>
+      <image:title>Mohit Koli Instagram Creator</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-web-projects-16.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer Projects</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-web-design-8.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer and Designer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-software-architect-19.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer Architect</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-software-engineer-9.jpg</image:loc>
+      <image:title>Mohit Koli Professional Web Developer Profile</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-programmer-7.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer Programmer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg</image:loc>
+      <image:title>Mohit Koli - Top Web Developer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://mohitkoli.info/assets/mohit-koli-setup-24.jpg</image:loc>
+      <image:title>Mohit Koli Web Developer Setup</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mohitkoli.info/blogs.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mohitkoli.info/profile.html</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mohitkoli.info/privacy-policy.html</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mohitkoli.info/terms.html</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mohitkoli.info/blogs/blog1.html</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mohitkoli.info/blogs/blog2.html</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mohitkoli.info/blogs/blog3.html</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mohitkoli.info/blogs/blog4.html</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mohitkoli.info/blogs/blog5.html</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mohitkoli.info/blogs/blog6.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mohitkoli.info/blogs/blog7.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-01-19</lastmod>
+  </url>
+</urlset>
