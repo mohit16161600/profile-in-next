@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Experience() {
     return (
         <section id="experience" className="py-24 bg-white">
@@ -31,8 +33,13 @@ export default function Experience() {
 
                             <div
                                 className="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-16 h-16 rounded-full absolute left-0 md:left-1/2 transform md:-translate-x-1/2 overflow-hidden border-4 border-white">
-                                <img src="/assets/mohit-koli-profile-photo.jpg" alt="Mohit Koli"
-                                    className="w-full h-full object-cover opacity-80" />
+                                <Image
+                                    src="/assets/mohit-koli-profile-photo.jpg"
+                                    alt="Mohit Koli"
+                                    width={64}
+                                    height={64}
+                                    className="w-full h-full object-cover opacity-80"
+                                />
                             </div>
 
                             <div className="order-1 md:w-5/12 pl-20 md:pl-0"></div>

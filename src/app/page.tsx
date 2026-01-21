@@ -11,11 +11,21 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      <Qualification />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Contact />
+      <div className="content-auto">
+        <Qualification />
+      </div>
+      <div className="content-auto">
+        <Experience />
+      </div>
+      <div className="content-auto">
+        <Skills />
+      </div>
+      <div className="content-auto">
+        <Projects />
+      </div>
+      <div className="content-auto">
+        <Contact />
+      </div>
     </>
   );
 }

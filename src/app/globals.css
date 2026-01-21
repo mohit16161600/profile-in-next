@@ -55,6 +55,25 @@ body {
   }
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
+
+.content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 500px;
+  /* Approximate height */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+    will-change: transform;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .animate-float,
+  .animate-pulse,
+  .animate-ping {
+    animation: none !important;
+  }
 }
