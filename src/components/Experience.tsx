@@ -24,9 +24,9 @@ export default function Experience() {
                                     <h3 className="text-xl font-bold text-gray-900">Web Developer</h3>
                                     <h4 className="text-blue-600 font-semibold mb-2">Sheopals Pvt Ltd</h4>
                                     <p className="text-gray-600 text-sm leading-relaxed">
-                                        Creating responsive websites using HTML, CSS, JavaScript, PHP, and Laravel. Collaborating with clients
-                                        to understand requirements and deliver tailored web solutions. Developing custom web applications and
-                                        maintaining existing projects.
+                                        Creating responsive websites using HTML, CSS, JavaScript, PHP, and Laravel.
+                                        Spearheaded the development of a complex <strong>CRM system</strong> with role-based access for Agents, TLs, and Admins.
+                                        Implemented robust automation workflows and seamless 3rd-party integrations using <strong>cURL/Webhooks</strong>.
                                     </p>
                                 </div>
                             </div>

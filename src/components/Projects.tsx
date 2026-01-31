@@ -22,41 +22,41 @@ export default function Projects() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {/* Project 1 */}
+                    {/* Project 1 - Sheopals CRM */}
                     <article
                         className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-2">
                         <div className="relative h-56 bg-gray-100 overflow-hidden group">
-                            <div className="absolute inset-0 bg-primary-900/10 z-10 group-hover:bg-primary-900/0 transition-colors duration-500"></div>
-                            {/* Placeholder gradient or image */}
+                            <div className="absolute inset-0 bg-red-900/10 z-10 group-hover:bg-red-900/0 transition-colors duration-500"></div>
+                            {/* Gradient Background */}
                             <div
-                                className="absolute inset-0 bg-gradient-to-br from-blue-500 to-primary-700 opacity-90 group-hover:scale-110 transition-transform duration-700">
+                                className="absolute inset-0 bg-gradient-to-br from-red-600 to-primary-700 opacity-90 group-hover:scale-110 transition-transform duration-700">
                             </div>
-                            <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold z-20">Get Fast Education</div>
+                            <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold z-20">Sheopals CRM</div>
                         </div>
                         <div className="p-8">
-                            <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
-                                <a href="https://getfasteducation.in" target="_blank" rel="noopener noreferrer">Get Fast Education</a>
+                            <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors">
+                                <Link href="/projects/sheopals-crm">Sheopals Internal CRM</Link>
                             </h3>
-                            <p className="text-gray-600 mb-6 line-clamp-3 text-sm leading-relaxed">
-                                Launched and developed "Get Fast Education," a streamlined platform offering personalized admission
-                                counselling for Indian students.
+                            <p className="text-gray-600 mb-6 line-clamp-4 text-sm leading-relaxed">
+                                Engineered a comprehensive CRM with complex role-based access (Agents, TLs, Managers, Admin).
+                                Features robust automation, daily task management, and seamless integrations via Webhooks & cURL APIs.
                             </p>
 
                             <div className="flex flex-wrap gap-2 mb-6">
-                                <span className="px-3 py-1 bg-primary-50 text-primary-700 text-xs font-semibold rounded-full border border-primary-100">PHP</span>
-                                <span className="px-3 py-1 bg-primary-50 text-primary-700 text-xs font-semibold rounded-full border border-primary-100">MySQL</span>
-                                <span className="px-3 py-1 bg-primary-50 text-primary-700 text-xs font-semibold rounded-full border border-primary-100">Bootstrap</span>
+                                <span className="px-3 py-1 bg-red-50 text-red-700 text-xs font-semibold rounded-full border border-red-100">Next.js</span>
+                                <span className="px-3 py-1 bg-red-50 text-red-700 text-xs font-semibold rounded-full border border-red-100">Automation</span>
+                                <span className="px-3 py-1 bg-red-50 text-red-700 text-xs font-semibold rounded-full border border-red-100">API/Webhooks</span>
                             </div>
 
-                            <a href="https://getfasteducation.in" target="_blank" rel="noopener noreferrer"
-                                className="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
-                                Visit Website
+                            <Link href="/projects/sheopals-crm"
+                                className="inline-flex items-center text-red-600 hover:text-red-800 font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                                View Case Study
                                 <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none"
                                     stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
                                     </path>
                                 </svg>
-                            </a>
+                            </Link>
                         </div>
                     </article>
 
