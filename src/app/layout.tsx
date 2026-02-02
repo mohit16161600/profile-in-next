@@ -86,7 +86,8 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/mohitkoli1/",
                 "https://github.com/mohit16161600",
                 "https://twitter.com/mohitko86979490",
-                "https://www.instagram.com/mohitkoli.1/"
+                "https://www.youtube.com/@rideswithmohit",
+                "https://www.instagram.com/mohit12162/"
               ],
               jobTitle: "Senior Full Stack Developer",
               worksFor: {

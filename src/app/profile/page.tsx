@@ -95,7 +95,7 @@ export default function ProfilePage() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900">Content Creator</h3>
                             <p className="text-sm text-gray-500 mb-6">Posting coding tutorials & tech reviews</p>
-                            <a href="https://www.youtube.com/@CodeWithMohit" target="_blank" rel="noopener noreferrer"
+                            <a href="https://www.youtube.com/@rideswithmohit" target="_blank" rel="noopener noreferrer"
                                 className="mt-auto px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition font-medium w-full">
                                 Visit Channel
                             </a>
@@ -108,7 +108,7 @@ export default function ProfilePage() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900">Daily Life</h3>
                             <p className="text-sm text-gray-500 mb-6">Sharing behind the scenes & lifestyle</p>
-                            <a href="https://www.instagram.com/mohit_koli_14" target="_blank" rel="noopener noreferrer"
+                            <a href="https://www.instagram.com/mohit12162/" target="_blank" rel="noopener noreferrer"
                                 className="mt-auto px-6 py-2 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 text-white rounded-lg hover:opacity-90 transition font-medium w-full">
                                 Follow Me
                             </a>
