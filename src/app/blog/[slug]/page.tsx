@@ -11,6 +11,7 @@ import Blog5 from "@/components/blog-posts/Blog5";
 import Blog6 from "@/components/blog-posts/Blog6";
 import Blog7 from "@/components/blog-posts/Blog7";
 import Blog8 from "@/components/blog-posts/Blog8";
+import Blog9 from "@/components/blog-posts/Blog9";
 
 // Mapping of slug to content component
 const CONTENT_MAP: Record<string, React.ComponentType> = {
@@ -22,6 +23,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
     blog6: Blog6,
     blog7: Blog7,
     blog8: Blog8,
+    blog9: Blog9,
     // Future posts will be added here
 };
 

@@ -55,7 +55,7 @@ export default function ProfilePage() {
                             Inside the Life of a Developer
                         </div>
                         <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-                            More Than Just <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400">Code.</span>
+                            More Than Just <span className=" bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400">Code.</span>
                         </h1>
                         <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
                             Behind every commit is a story. From my coding setup to my daily adventures as a tech creator, welcome to my world.

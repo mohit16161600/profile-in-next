@@ -12,6 +12,17 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 9,
+        title: "How to Use AI to Build a Full Website in 30 Minutes (Step-by-Step Guide – 2026)",
+        date: "Feb 12, 2026",
+        readTime: "5 min read",
+        category: "AI & Web Development",
+        views: 50,
+        keywords: ["ai", "web development", "chatgpt", "website building", "next.js", "2026"],
+        slug: "blog9",
+        imageSrc: "/assets/AI-in-Web-Development-2.jpg",
+    },
+    {
         id: 8,
         title: "Will AI Replace Web Developers in 2026? (Reality vs Hype)",
         date: "Jan 21, 2026",
