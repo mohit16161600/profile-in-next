@@ -16,9 +16,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Mohit Koli" }],
   publisher: "Mohit Koli",
   metadataBase: new URL("https://mohitkoli.info"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "Mohit Koli - Professional Web Developer | Full Stack Developer",
     description: "Professional Web Developer and Full Stack Developer with 2+ years of experience. Specializing in React, PHP, Laravel, Node.js, and modern web technologies.",

@@ -7,6 +7,9 @@ export const metadata = {
     title: "Mohit Koli - Top Web Developer Tech Blog | AI & Development Insights",
     description: "Technology blog by Top Web Developer Mohit Koli. Expert insights on AI, Web Development, and Programming. Tutorials by Senior Developer Mohit Koli.",
     keywords: "Mohit Koli, mohitkoli.info, technology blog, AI development, web development, programming tutorials, software engineering, JavaScript, React, Node.js, artificial intelligence, coding tips, developer insights, tech trends, programming guides, full stack development",
+    alternates: {
+        canonical: "https://mohitkoli.info/blog",
+    },
 };
 
 export default function BlogPage() {

@@ -6,7 +6,9 @@ export const metadata: Metadata = {
     description: "Privacy Policy for mohitkoli.info. Learn how Mohit Koli collects, uses, and protects your personal information when you visit this website.",
     keywords: "Mohit Koli, mohitkoli.info, privacy policy, data protection, cookie policy, GDPR, website privacy",
     authors: [{ name: "Mohit Koli" }],
-    // Add other metadata as needed
+    alternates: {
+        canonical: "https://mohitkoli.info/privacy-policy",
+    },
 };
 
 export default function PrivacyPolicy() {

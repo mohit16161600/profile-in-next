@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     description: "Terms of Service for mohitkoli.info. Read the terms and conditions for using Mohit Koli's website and services.",
     keywords: "Mohit Koli, mohitkoli.info, terms of service, terms and conditions, legal, website terms",
     authors: [{ name: "Mohit Koli" }],
+    alternates: {
+        canonical: "https://mohitkoli.info/terms",
+    },
 };
 
 export default function TermsOfService() {

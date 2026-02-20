@@ -33,6 +33,9 @@ const galleryImages = [
 export const metadata = {
     title: "Mohit Koli | Gallery & Social Profile",
     description: "Explore the life of Mohit Koli behind the code. A gallery of coding setups, developer lifestyle, and social media highlights.",
+    alternates: {
+        canonical: "https://mohitkoli.info/profile",
+    },
     openGraph: {
         title: "Mohit Koli - Developer Life & Gallery",
         description: "Behind the scenes: Coding setups, vlogging, and the developer lifestyle of Mohit Koli.",
