@@ -4,6 +4,18 @@ import Link from 'next/link';
 export const metadata = {
     title: "Sheopals CRM Case Study | Built with Next.js by Mohit Koli",
     description: "A deep dive into the internal CRM built for Sheopals, featuring complex role-based access, automation pipelines, and API integrations.",
+    alternates: {
+        canonical: "https://mohitkoli.info/projects/sheopals-crm",
+    },
+    openGraph: {
+        title: "Sheopals CRM Case Study | Built with Next.js",
+        description: "A deep dive into the internal CRM built for Sheopals, featuring complex role-based access, automation pipelines, and API integrations.",
+        url: "https://mohitkoli.info/projects/sheopals-crm",
+    },
+    twitter: {
+        title: "Sheopals CRM Case Study | Built with Next.js",
+        description: "A deep dive into the internal CRM built for Sheopals, featuring complex role-based access, automation pipelines, and API integrations.",
+    }
 };
 
 export default function SheopalsCrmProject() {
