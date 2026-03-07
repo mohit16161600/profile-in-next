@@ -4,13 +4,13 @@ export default function BlogSidebar() {
     return (
         <div className="lg:col-span-1 mt-12 lg:mt-0">
             {/* Search */}
-            <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">Search Technology Articles</h3>
+            <div className="glass rounded-xl shadow-sm p-6 mb-8 border border-white/5">
+                <h3 className="text-lg font-bold text-white mb-4">Search Technology Articles</h3>
                 <div className="relative">
                     <input
                         type="text"
                         placeholder="Search AI, web development, programming articles..."
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent placeholder-gray-500"
                         aria-label="Search technology articles"
                     />
                     <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
@@ -33,32 +33,32 @@ export default function BlogSidebar() {
             </div>
 
             {/* Categories */}
-            <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">Technology Categories</h3>
-                <ul className="space-y-2">
+            <div className="glass rounded-xl shadow-sm p-6 mb-8 border border-white/5">
+                <h3 className="text-lg font-bold text-white mb-4">Technology Categories</h3>
+                <ul className="space-y-3">
                     <li>
-                        <Link href="#" className="text-gray-600 hover:text-blue-600 flex justify-between" title="JavaScript programming articles">
-                            <span>JavaScript</span><span className="text-sm text-gray-400">12</span>
+                        <Link href="#" className="text-gray-400 hover:text-primary-500 flex justify-between transition-colors" title="JavaScript programming articles">
+                            <span>JavaScript</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300">12</span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="text-gray-600 hover:text-blue-600 flex justify-between" title="CSS styling and design articles">
-                            <span>CSS</span><span className="text-sm text-gray-400">8</span>
+                        <Link href="#" className="text-gray-400 hover:text-primary-500 flex justify-between transition-colors" title="CSS styling and design articles">
+                            <span>CSS</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300">8</span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="text-gray-600 hover:text-blue-600 flex justify-between" title="React framework tutorials">
-                            <span>React</span><span className="text-sm text-gray-400">15</span>
+                        <Link href="#" className="text-gray-400 hover:text-primary-500 flex justify-between transition-colors" title="React framework tutorials">
+                            <span>React</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300">15</span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="text-gray-600 hover:text-blue-600 flex justify-between" title="Node.js backend development">
-                            <span>Node.js</span><span className="text-sm text-gray-400">6</span>
+                        <Link href="#" className="text-gray-400 hover:text-primary-500 flex justify-between transition-colors" title="Node.js backend development">
+                            <span>Node.js</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300">6</span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="text-gray-600 hover:text-blue-600 flex justify-between" title="Web design and UX articles">
-                            <span>Design</span><span className="text-sm text-gray-400">9</span>
+                        <Link href="#" className="text-gray-400 hover:text-primary-500 flex justify-between transition-colors" title="Web design and UX articles">
+                            <span>Design</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300">9</span>
                         </Link>
                     </li>
                 </ul>
@@ -71,20 +71,20 @@ export default function BlogSidebar() {
       </div> */}
 
             {/* Newsletter */}
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-6 text-white">
+            <div className="bg-gradient-to-br from-primary-600 to-secondary-600 rounded-xl p-6 text-white shadow-lg shadow-primary-500/20 border border-white/10">
                 <h3 className="text-lg font-bold mb-2">Subscribe to Technology Newsletter</h3>
-                <p className="text-blue-100 text-sm mb-4">
+                <p className="text-white/80 text-sm mb-4">
                     Get the latest AI development, web programming, and tech insights delivered to your inbox
                 </p>
                 <div className="space-y-3">
                     <input
                         type="email"
                         placeholder="Enter your email address"
-                        className="w-full px-3 py-2 text-gray-900 rounded-lg focus:ring-2 focus:ring-white"
+                        className="w-full px-4 py-3 bg-black/20 border border-white/20 text-white placeholder-white/50 rounded-lg focus:ring-2 focus:ring-white focus:outline-none focus:bg-black/30 transition-all"
                         aria-label="Email address for newsletter subscription"
                     />
                     <button
-                        className="w-full bg-white text-blue-600 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                        className="w-full bg-white text-primary-600 py-3 rounded-lg font-bold hover:bg-gray-100 hover:shadow-lg transition-all"
                         aria-label="Subscribe to technology newsletter"
                     >
                         Subscribe

@@ -62,21 +62,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         {/* Breadcrumb */}
                         <nav className="mb-6">
                             <ol className="flex items-center space-x-2 text-sm text-gray-500">
-                                <li><Link href="/" className="hover:text-blue-600">Home</Link></li>
+                                <li><Link href="/" className="hover:text-primary-500 transition-colors">Home</Link></li>
                                 <li>/</li>
-                                <li><Link href="/blog" className="hover:text-blue-600">Blog</Link></li>
+                                <li><Link href="/blog" className="hover:text-primary-500 transition-colors">Blog</Link></li>
                                 <li>/</li>
-                                <li className="text-gray-900 line-clamp-1">{post.title}</li>
+                                <li className="text-gray-300 line-clamp-1">{post.title}</li>
                             </ol>
                         </nav>
 
                         {/* Article Header */}
                         <header className="mb-8">
-                            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
                                 {post.title}
                             </h1>
 
-                            <div className="flex items-center justify-between mb-6 text-sm text-gray-600">
+                            <div className="flex items-center justify-between mb-6 text-sm text-gray-400">
                                 <div className="flex items-center space-x-4">
                                     <div className="flex items-center">
                                         <Image
@@ -87,8 +87,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                             className="rounded-full mr-3 object-cover"
                                         />
                                         <div>
-                                            <p className="font-medium text-gray-900">Mohit Koli</p>
-                                            <p className="text-gray-500">Senior Full Stack Developer</p>
+                                            <p className="font-medium text-white">Mohit Koli</p>
+                                            <p className="text-gray-400">Senior Full Stack Developer</p>
                                         </div>
                                     </div>
                                 </div>
@@ -110,17 +110,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                         </header>
 
                         {/* Content Body */}
-                        <div className="prose prose-lg max-w-none">
+                        <div className="prose prose-lg prose-invert max-w-none prose-p:text-gray-300 prose-headings:text-white prose-a:text-primary-500 hover:prose-a:text-primary-400">
                             {ContentComponent ? <ContentComponent /> : <p>Content coming soon...</p>}
                         </div>
 
                         {/* Social Share (Simplified) */}
-                        <div className="bg-white rounded-lg shadow-sm p-6 mt-12 border border-gray-100">
-                            <h3 className="text-lg font-bold text-gray-900 mb-4">Share This Article</h3>
+                        <div className="glass rounded-xl shadow-sm p-6 mt-12 border border-white/5">
+                            <h3 className="text-lg font-bold text-white mb-4">Share This Article</h3>
                             <div className="flex flex-wrap gap-3">
                                 {/* Add share buttons here if needed, reused across posts */}
-                                <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Share on Twitter</button>
-                                <button className="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-900">Share on LinkedIn</button>
+                                <button className="bg-primary-600/20 text-primary-400 border border-primary-500/30 px-4 py-2 rounded-lg hover:bg-primary-600 hover:text-white transition-colors">Share on Twitter</button>
+                                <button className="bg-[#0077b5]/20 text-[#0077b5] border border-[#0077b5]/30 px-4 py-2 rounded-lg hover:bg-[#0077b5] hover:text-white transition-colors">Share on LinkedIn</button>
                             </div>
                         </div>
 

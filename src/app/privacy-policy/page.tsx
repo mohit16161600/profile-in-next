@@ -16,25 +16,25 @@ export default function PrivacyPolicy() {
         <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             {/* Breadcrumb */}
             <nav className="mb-6 text-sm" aria-label="Breadcrumb">
-                <ol className="flex items-center space-x-2 text-gray-600">
+                <ol className="flex items-center space-x-2 text-gray-400">
                     <li>
-                        <Link href="/" className="hover:text-blue-700">
+                        <Link href="/" className="hover:text-primary-500 transition-colors">
                             Home
                         </Link>
                     </li>
                     <li>/</li>
-                    <li className="text-gray-900">Privacy Policy</li>
+                    <li className="text-white">Privacy Policy</li>
                 </ol>
             </nav>
 
             {/* Page Header */}
             <header className="mb-8">
-                <h1 className="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
-                <p className="text-gray-600">Last Updated: November 20, 2025</p>
+                <h1 className="text-4xl font-bold text-white mb-4">Privacy Policy</h1>
+                <p className="text-gray-400">Last Updated: November 20, 2025</p>
             </header>
 
             {/* Privacy Policy Content */}
-            <div className="bg-white rounded-lg shadow-sm p-8 prose prose-lg max-w-none">
+            <div className="glass rounded-xl shadow-sm p-8 prose prose-lg prose-invert max-w-none border border-white/5 prose-p:text-gray-300 prose-headings:text-white prose-li:text-gray-300">
                 <section className="mb-8">
                     <h2 className="text-2xl font-semibold text-gray-900 mb-4">
                         1. Introduction
@@ -290,42 +290,42 @@ export default function PrivacyPolicy() {
                         If you have any questions about this Privacy Policy or wish to
                         exercise your rights, please contact me:
                     </p>
-                    <div className="bg-gray-50 p-6 rounded-lg">
-                        <p className="text-gray-700 mb-2">
+                    <div className="bg-white/5 p-6 rounded-lg border border-white/5">
+                        <p className="text-gray-300 mb-2">
                             <strong>Mohit Koli</strong>
                         </p>
-                        <p className="text-gray-700 mb-2">
+                        <p className="text-gray-300 mb-2">
                             Email:{" "}
                             <a
                                 href="mailto:contact@mohitkoli.info"
-                                className="text-blue-600 hover:text-blue-800"
+                                className="text-primary-500 hover:text-primary-400 transition-colors"
                             >
                                 contact@mohitkoli.info
                             </a>
                         </p>
-                        <p className="text-gray-700 mb-2">
+                        <p className="text-gray-300 mb-2">
                             Alternate Email:{" "}
                             <a
                                 href="mailto:mohitkoli12162@gmail.com"
-                                className="text-blue-600 hover:text-blue-800"
+                                className="text-primary-500 hover:text-primary-400 transition-colors"
                             >
                                 mohitkoli12162@gmail.com
                             </a>
                         </p>
-                        <p className="text-gray-700">
+                        <p className="text-gray-300">
                             Phone:{" "}
                             <a
                                 href="tel:+918383868837"
-                                className="text-blue-600 hover:text-blue-800"
+                                className="text-primary-500 hover:text-primary-400 transition-colors"
                             >
                                 +91 8383868837
                             </a>
                         </p>
-                        <p className="text-gray-700 mt-2">
+                        <p className="text-gray-300 mt-2">
                             Website:{" "}
                             <a
                                 href="https://mohitkoli.info"
-                                className="text-blue-600 hover:text-blue-800"
+                                className="text-primary-500 hover:text-primary-400 transition-colors"
                             >
                                 https://mohitkoli.info
                             </a>
@@ -349,7 +349,7 @@ export default function PrivacyPolicy() {
             <div className="mt-8 text-center">
                 <Link
                     href="/"
-                    className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                    className="inline-block bg-primary-600 text-white px-8 py-3 rounded-xl hover:bg-primary-500 transition-colors font-medium shadow-lg"
                 >
                     ← Back to Home
                 </Link>

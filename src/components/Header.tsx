@@ -3,9 +3,11 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const pathname = usePathname();
 
     const navLinks = [
@@ -33,23 +35,39 @@ export default function Header() {
             if (e.key === "Escape") closeDrawer();
         };
         document.addEventListener("keydown", handleKeyDown);
-        return () => document.removeEventListener("keydown", handleKeyDown);
+        
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        
+        return () => {
+            document.removeEventListener("keydown", handleKeyDown);
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, []);
 
     return (
         <>
-            <header
+            <motion.header
                 id="header-main"
-                className="bg-white shadow-md sticky top-0 z-50"
+                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#050505]/80 backdrop-blur-md border-b border-white/10 shadow-lg" : "bg-transparent py-2"}`}
                 role="banner"
+                initial={{ y: -100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
                     <Link
                         href="/"
-                        className="text-xl font-bold text-blue-900"
+                        className="text-2xl font-bold text-white tracking-tight flex items-center group hover-target"
                         aria-label="Mohit Koli Home"
                     >
-                        Mohit Koli
+                        Mohit<span className="text-primary-500 transition-colors group-hover:text-primary-400">Koli</span>.
                     </Link>
 
                     {/* Desktop Menu */}
@@ -58,14 +76,15 @@ export default function Header() {
                         role="navigation"
                         aria-label="Main navigation"
                     >
-                        <ul className="flex space-x-6 text-sm font-medium">
+                        <ul className="flex space-x-8 text-sm font-medium">
                             {navLinks.map((link) => (
                                 <li key={link.name}>
                                     <Link
                                         href={link.href}
-                                        className="text-gray-700 hover:text-blue-700 transition"
+                                        className="text-gray-300 hover:text-white transition-colors hover-target relative group py-2"
                                     >
                                         {link.name}
+                                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all group-hover:w-full"></span>
                                     </Link>
                                 </li>
                             ))}
@@ -75,73 +94,75 @@ export default function Header() {
                     {/* Mobile Hamburger */}
                     <button
                         id="menu-btn"
-                        className="md:hidden flex flex-col space-y-1.5 focus:outline-none"
+                        className="md:hidden flex flex-col justify-center items-center w-8 h-8 focus:outline-none hover-target z-50 relative"
                         onClick={openDrawer}
                         aria-expanded={isDrawerOpen}
                         aria-label="Open menu"
                         aria-controls="mobile-drawer"
                     >
-                        <span className="w-6 h-0.5 bg-gray-800"></span>
-                        <span className="w-6 h-0.5 bg-gray-800"></span>
-                        <span className="w-6 h-0.5 bg-gray-800"></span>
+                        <span className={`w-6 h-0.5 bg-white transition-all duration-300 absolute ${isDrawerOpen ? "rotate-45 translate-y-0" : "-translate-y-2"}`}></span>
+                        <span className={`w-6 h-0.5 bg-white transition-all duration-300 absolute ${isDrawerOpen ? "opacity-0" : "opacity-100"}`}></span>
+                        <span className={`w-6 h-0.5 bg-white transition-all duration-300 absolute ${isDrawerOpen ? "-rotate-45 translate-y-0" : "translate-y-2"}`}></span>
                     </button>
                 </div>
-            </header>
+            </motion.header>
 
             {/* Mobile Menu Overlay */}
-            <div
-                id="overlay"
-                className={`fixed inset-0 bg-black/40 transition-opacity duration-300 ease-in-out z-40 ${isDrawerOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-                    }`}
-                onClick={closeDrawer}
-            ></div>
+            <AnimatePresence>
+                {isDrawerOpen && (
+                    <motion.div
+                        id="overlay"
+                        className="fixed inset-0 bg-black/80 backdrop-blur-sm z-40 md:hidden"
+                        onClick={closeDrawer}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                    ></motion.div>
+                )}
+            </AnimatePresence>
 
             {/* Mobile Drawer */}
             <nav
                 id="mobile-drawer"
-                className={`fixed right-0 top-0 h-full w-72 max-w-[85vw] bg-white shadow-lg z-50 transition-transform duration-300 ease-in-out md:hidden ${isDrawerOpen ? "translate-x-0" : "translate-x-full"
-                    }`}
+                className={`fixed right-0 top-0 h-full w-full sm:w-80 max-w-[85vw] bg-[#0a0a0a] border-l border-white/10 shadow-2xl z-50 transition-transform duration-300 ease-in-out md:hidden flex flex-col pt-20 ${isDrawerOpen ? "translate-x-0" : "translate-x-full"}`}
                 aria-labelledby="menu-btn"
                 role="navigation"
             >
-                <div className="px-6 py-4 flex items-center justify-between border-b">
-                    <span className="text-base font-semibold">Menu</span>
-                    <button
-                        id="close-btn"
-                        className="p-2 rounded hover:bg-gray-100"
-                        onClick={closeDrawer}
-                        aria-label="Close menu"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="1.5"
-                                d="M6 18L18 6M6 6l12 12"
-                            />
-                        </svg>
-                    </button>
-                </div>
-                <ul className="flex flex-col space-y-3 px-6 py-4 text-sm font-medium" role="menu">
-                    {navLinks.map((link) => (
-                        <li key={link.name}>
-                            <Link
-                                href={link.href}
-                                className="text-gray-700 hover:text-blue-700 mobile-menu-link block"
-                                role="menuitem"
-                                onClick={() => setTimeout(closeDrawer, 100)}
+                <div className="flex-1 overflow-y-auto overflow-x-hidden">
+                    <ul className="flex flex-col px-4 py-6 text-2xl font-bold space-y-4" role="menu">
+                        {navLinks.map((link, index) => (
+                            <li 
+                                key={link.name}
+                                style={{
+                                    opacity: isDrawerOpen ? 1 : 0,
+                                    transform: isDrawerOpen ? "translateX(0)" : "translateX(20px)",
+                                    transition: `all 0.3s ease-out ${0.1 + index * 0.05}s`
+                                }}
                             >
-                                {link.name}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+                                <Link
+                                    href={link.href}
+                                    className="text-gray-400 hover:text-white hover:pl-4 block border-b border-white/5 pb-4 transition-all hover-target"
+                                    role="menuitem"
+                                    onClick={() => setTimeout(closeDrawer, 100)}
+                                >
+                                    {link.name}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                
+                <div className="p-8 border-t border-white/10">
+                    <p className="text-gray-500 text-sm mb-4">Connect with me</p>
+                    <div className="flex space-x-4">
+                        <a href="https://github.com/mohit16161600" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-primary-600 transition-colors">
+                            GH
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohit-koli-b47260213" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-[#0077b5] transition-colors">
+                            IN
+                        </a>
+                    </div>
+                </div>
             </nav>
         </>
     );

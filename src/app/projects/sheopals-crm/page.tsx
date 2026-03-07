@@ -12,8 +12,8 @@ export default function SheopalsCrmProject() {
             {/* --- HERO SECTION --- */}
             <section className="relative pt-32 pb-20 bg-gray-900 text-white overflow-hidden">
                 {/* Background Gradients */}
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-red-600/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
-                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/4"></div>
+                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-red-600/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 hidden md:block"></div>
+                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 hidden md:block"></div>
                 <div className="absolute inset-0 bg-[url('/assets/grid.svg')] opacity-10 bg-center"></div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -145,7 +145,7 @@ export default function SheopalsCrmProject() {
             <section className="py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="bg-gray-900 rounded-3xl p-8 md:p-16 relative overflow-hidden text-white">
-                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/30 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 hidden md:block"></div>
 
                         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                             <div>

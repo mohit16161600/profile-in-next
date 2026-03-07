@@ -5,11 +5,12 @@ import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import InfiniteTechMarquee from "@/components/InfiniteTechMarquee";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mohit Koli - Top Web Developer & Professional Developer Portfolio",
-  description: "Mohit Koli is a top Web Developer and Developer specializing in React, PHP, and Laravel. View portfolio and projects at mohitkoli.info",
+  title: "Mohit Koli | Freelance Web Developer, Programmer & Coder",
+  description: "Mohit Koli's official portfolio. I am a top rated Web Developer, Software Programmer, and Coder specializing in React, Next.js, and PHP Laravel.",
   alternates: {
     canonical: "https://mohitkoli.info/",
   },
@@ -19,6 +20,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <InfiniteTechMarquee />
       <About />
       <div className="content-auto">
         <Qualification />

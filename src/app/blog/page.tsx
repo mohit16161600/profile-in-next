@@ -42,12 +42,12 @@ export default function BlogPage() {
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="lg:grid lg:grid-cols-3 lg:gap-8">
                     <div className="lg:col-span-2">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-8">Latest Technology Articles</h2>
+                        <h2 className="text-3xl font-bold text-white mb-8">Latest Technology Articles</h2>
 
                         {BLOG_POSTS.map((post) => (
                             <article
                                 key={post.id}
-                                className="bg-white rounded-lg shadow-sm mb-8 overflow-hidden hover:shadow-md transition-shadow"
+                                className="glass rounded-lg shadow-sm mb-8 overflow-hidden hover:shadow-2xl transition-all duration-300 border border-white/5"
                                 itemScope
                                 itemType="https://schema.org/BlogPosting"
                             >
@@ -61,7 +61,7 @@ export default function BlogPage() {
                                     />
                                 </div>
                                 <div className="p-6">
-                                    <div className="flex items-center text-sm text-gray-500 mb-2">
+                                    <div className="flex items-center text-sm text-gray-400 mb-2">
                                         <time dateTime={post.date} itemProp="datePublished">
                                             {post.date}
                                         </time>
@@ -69,14 +69,14 @@ export default function BlogPage() {
                                         <span itemProp="timeRequired">{post.readTime}</span>
                                     </div>
                                     <h3
-                                        className="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 cursor-pointer"
+                                        className="text-xl font-bold text-white mb-3 hover:text-primary-500 cursor-pointer transition-colors"
                                         itemProp="headline"
                                     >
                                         <Link href={`/blog/${post.slug}`} title={`Read ${post.title}`}>
                                             {post.title}
                                         </Link>
                                     </h3>
-                                    <p className="text-gray-600 mb-4" itemProp="description">
+                                    <p className="text-gray-400 mb-4" itemProp="description">
                                         {/* Placeholder description as content snippet is not in posts.ts yet. 
                         Ideally, add description to posts.ts */}
                                         Explore {post.title} and gain insights into {post.category}.
@@ -85,7 +85,7 @@ export default function BlogPage() {
                                         <div className="flex items-center">
                                             <div>
                                                 <p
-                                                    className="text-sm font-medium text-gray-900"
+                                                    className="text-sm font-medium text-white"
                                                     itemProp="author"
                                                     itemScope
                                                     itemType="https://schema.org/Person"
@@ -97,7 +97,7 @@ export default function BlogPage() {
                                         </div>
                                         <Link
                                             href={`/blog/${post.slug}`}
-                                            className="text-blue-600 hover:text-blue-800 font-medium"
+                                            className="text-primary-500 hover:text-primary-400 font-medium transition-colors"
                                             title="Read full guide"
                                             itemProp="url"
                                         >
@@ -110,7 +110,7 @@ export default function BlogPage() {
 
                         <div className="text-center mt-12">
                             <button
-                                className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                                className="bg-primary-600 text-white px-8 py-3 rounded-xl hover:bg-primary-500 transition-colors font-medium shadow-lg hover:shadow-primary-600/30"
                                 aria-label="Load more technology articles"
                             >
                                 Load More Articles
