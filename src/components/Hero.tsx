@@ -38,7 +38,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Text Content */}
-          <motion.div 
+          <motion.div
             className="order-2 lg:order-1 text-center lg:text-left"
             variants={containerVariants}
             initial="hidden"
@@ -91,7 +91,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Image Content */}
-          <motion.div 
+          <motion.div
             className="order-1 lg:order-2 flex justify-center relative"
             initial={{ opacity: 0, scale: 0.8, rotate: -3 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -114,7 +114,7 @@ export default function Hero() {
               </div>
 
               {/* Floating Badge 1 */}
-              <motion.div 
+              <motion.div
                 className="absolute top-8 -right-8 glass p-4 rounded-xl shadow-xl z-20 flex items-center gap-3 cursor-default"
                 initial={{ opacity: 0, x: 40 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -130,7 +130,7 @@ export default function Hero() {
               </motion.div>
 
               {/* Floating Badge 2 */}
-              <motion.div 
+              <motion.div
                 className="absolute bottom-8 -left-8 glass p-4 rounded-xl shadow-xl z-20 flex items-center gap-3 cursor-default"
                 initial={{ opacity: 0, x: -40 }}
                 animate={{ opacity: 1, x: 0 }}

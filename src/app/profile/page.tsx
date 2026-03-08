@@ -4,20 +4,27 @@ import Link from 'next/link';
 
 // Filtered list of images (excluding blog images)
 const galleryImages = [
+    { src: '/assets/mohit-koli-coding-workspace-32.jpeg', alt: 'Coding Workspace', size: 'medium' },
     { src: '/assets/mohit-koli-profile-photo.jpg', alt: 'Mohit Koli Profile', size: 'large' },
-    { src: '/assets/mohit-koli-coding-setup-3.jpg', alt: 'Coding Setup', size: 'medium' },
+    { src: '/assets/mohit-koli-freelance-web-developer-27.jpeg', alt: 'Freelance Web Developer', size: 'medium' },
+    { src: '/assets/mohit-koli-software-programmer-delhi-28.jpeg', alt: 'Software Programmer in Delhi', size: 'large' },
     { src: '/assets/mohit-koli-developer-life-1.jpg', alt: 'Developer Life', size: 'medium' },
-    { src: '/assets/mohit-koli-full-stack-4.jpg', alt: 'Full Stack Development', size: 'wide' },
+    { src: '/assets/mohit-koli-react-nextjs-expert-29.jpeg', alt: 'React & Next.js Expert', size: 'medium' },
+    { src: '/assets/mohit-koli-youtube-22.jpg', alt: 'YouTube Content', size: 'medium' },
+    { src: '/assets/mohit-koli-full-stack-engineer-mumbai-30.jpeg', alt: 'Full Stack Engineer in Mumbai', size: 'wide' },
     { src: '/assets/mohit-koli-software-engineer-9.jpg', alt: 'Software Engineer', size: 'medium' },
     { src: '/assets/mohit-koli-tech-creator-2.jpg', alt: 'Tech Creator', size: 'large' },
-    { src: '/assets/mohit-koli-youtube-22.jpg', alt: 'YouTube Content', size: 'medium' },
+    { src: '/assets/mohit-koli-laravel-php-developer-31.jpeg', alt: 'Laravel & PHP Developer', size: 'medium' },
+    { src: '/assets/mohit-koli-tech-speaker-33.jpeg', alt: 'Tech Speaker', size: 'medium' },
+    { src: '/assets/mohit-koli-web-development-agency-34.jpeg', alt: 'Web Development Agency', size: 'large' },
+    { src: '/assets/mohit-koli-top-rated-coder-india-35.jpeg', alt: 'Top Rated Coder in India', size: 'wide' },
+    { src: '/assets/mohit-koli-coding-setup-3.jpg', alt: 'Coding Setup', size: 'medium' },
+    { src: '/assets/mohit-koli-full-stack-4.jpg', alt: 'Full Stack Development', size: 'wide' },
     { src: '/assets/mohit-koli-instagram-23.jpg', alt: 'Instagram Vibe', size: 'medium' },
     { src: '/assets/mohit-koli-web-design-8.jpg', alt: 'Web Design', size: 'wide' },
     { src: '/assets/mohit-koli-vlogger-10.jpg', alt: 'Vlogging', size: 'medium' },
     { src: '/assets/mohit-koli-laravel-developer-12.jpg', alt: 'Laravel Developer', size: 'medium' },
     { src: '/assets/mohit-koli-backend-guru-14.jpg', alt: 'Backend Expert', size: 'medium' },
-    { src: '/assets/mohit-koli-react-specialist-13.jpg', alt: 'React Specialist', size: 'wide' },
-    { src: '/assets/mohit-koli-frontend-master-15.jpg', alt: 'Frontend Master', size: 'medium' },
     { src: '/assets/mohit-koli-web-projects-16.jpg', alt: 'Web Projects', size: 'medium' },
     { src: '/assets/mohit-koli-coding-life-17.jpg', alt: 'Coding Life', size: 'medium' },
     { src: '/assets/mohit-koli-tech-influencer-18.jpg', alt: 'Tech Influencer', size: 'large' },
@@ -25,9 +32,10 @@ const galleryImages = [
     { src: '/assets/mohit-koli-digital-creator-20.jpg', alt: 'Digital Creator', size: 'medium' },
     { src: '/assets/mohit-koli-setup-24.jpg', alt: 'Workspace Setup', size: 'wide' },
     { src: '/assets/mohit-koli-work-25.jpg', alt: 'Hard at Work', size: 'medium' },
+    { src: '/assets/mohit-koli-frontend-master-15.jpg', alt: 'Frontend Master', size: 'medium' },
     { src: '/assets/mohit-koli-portfolio-26.jpg', alt: 'Portfolio Showcase', size: 'medium' },
     { src: '/assets/mohit-koli-lifestyle-6.jpg', alt: 'Lifestyle', size: 'large' },
-
+    { src: '/assets/mohit-koli-react-specialist-13.jpg', alt: 'React Specialist', size: 'wide' }
 ];
 
 export const metadata = {

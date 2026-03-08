@@ -46,7 +46,7 @@ export default function Typewriter({
 
   // Ensure SSR visual stability
   return (
-    <span className="inline-block relative min-h-[1em]">
+    <span className="inline relative">
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-500">
         {text || <span className="opacity-0">{words[0].substring(0, 1)}</span>}
       </span>

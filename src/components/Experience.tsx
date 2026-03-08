@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <section id="experience" className="py-24 bg-transparent">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -25,7 +25,7 @@ export default function Experience() {
           <div className="space-y-12">
             {/* Job 1 (Sheopals) - LEFT */}
             <div className="relative flex flex-col md:flex-row items-center justify-between group">
-              <motion.div 
+              <motion.div
                 className="order-1 md:w-5/12 pl-20 md:pl-0 md:text-right"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -42,7 +42,7 @@ export default function Experience() {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="z-20 flex items-center order-1 bg-primary-600 shadow-xl w-16 h-16 rounded-full absolute left-0 md:left-1/2 transform md:-translate-x-1/2 overflow-hidden border-4 border-[#050505]"
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -59,7 +59,7 @@ export default function Experience() {
             <div className="relative flex flex-col md:flex-row items-center justify-between group">
               <div className="order-1 md:w-5/12 md:text-right"></div>
 
-              <motion.div 
+              <motion.div
                 className="z-20 flex items-center order-1 bg-[#0f0f0f] shadow-xl w-16 h-16 rounded-full absolute left-0 md:left-1/2 transform md:-translate-x-1/2 border-4 border-white/10 justify-center text-primary-500 font-bold"
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -69,7 +69,7 @@ export default function Experience() {
                 2024
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="order-1 md:w-5/12 pl-20 md:pl-0"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -89,7 +89,7 @@ export default function Experience() {
 
             {/* Job 3 (Danstring) - LEFT */}
             <div className="relative flex flex-col md:flex-row items-center justify-between group">
-              <motion.div 
+              <motion.div
                 className="order-1 md:w-5/12 pl-20 md:pl-0 md:text-right"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -106,7 +106,7 @@ export default function Experience() {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 className="z-20 flex items-center order-1 bg-[#0f0f0f] shadow-xl w-16 h-16 rounded-full absolute left-0 md:left-1/2 transform md:-translate-x-1/2 border-4 border-white/10 justify-center text-primary-500 font-bold"
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}

@@ -18,25 +18,27 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+    <article itemScope itemType="https://schema.org/AboutPage">
       <Hero />
       <InfiniteTechMarquee />
-      <About />
-      <div className="content-auto">
+      <section aria-label="About Mohit Koli">
+        <About />
+      </section>
+      <section aria-label="Qualifications" className="content-auto">
         <Qualification />
-      </div>
-      <div className="content-auto">
+      </section>
+      <section aria-label="Professional Experience" className="content-auto">
         <Experience />
-      </div>
-      <div className="content-auto">
+      </section>
+      <section aria-label="Technical Skills" className="content-auto">
         <Skills />
-      </div>
-      <div className="content-auto">
+      </section>
+      <section aria-label="Featured Projects" className="content-auto">
         <Projects />
-      </div>
-      <div className="content-auto">
+      </section>
+      <section aria-label="Contact Information" className="content-auto">
         <Contact />
-      </div>
-    </>
+      </section>
+    </article>
   );
 }

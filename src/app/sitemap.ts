@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { BLOG_POSTS } from '@/data/posts';
+import { SEO_LOCATIONS } from '@/data/locations';
 
 export const revalidate = 86400; // revalidate every 24 hours
 
@@ -58,5 +59,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ];
 
-    return [...staticRoutes, ...blogPosts];
+    const locationRoutes: MetadataRoute.Sitemap = SEO_LOCATIONS.map((location) => ({
+        url: `${baseUrl}/developer-in-${location.slug}`,
+        lastModified: new Date().toISOString().split('T')[0],
+        changeFrequency: 'monthly',
+        priority: 0.6,
+    }));
+
+    return [...staticRoutes, ...blogPosts, ...locationRoutes];
 }
