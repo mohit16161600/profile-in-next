@@ -34,12 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/projects`,
-            lastModified: new Date().toISOString().split('T')[0],
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
             url: `${baseUrl}/projects/sheopals-crm`,
             lastModified: new Date().toISOString().split('T')[0],
             changeFrequency: 'monthly',

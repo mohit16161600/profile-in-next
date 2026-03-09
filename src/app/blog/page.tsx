@@ -16,7 +16,7 @@ export default function BlogPage() {
     return (
         <>
             <section
-                className="bg-cover bg-center text-white py-20 relative"
+                className="bg-cover bg-center text-white pt-32 pb-20 relative"
                 style={{ backgroundImage: "url('/assets/mohitkolibg.jpg')" }}
                 aria-label="Blog Hero Section"
             >

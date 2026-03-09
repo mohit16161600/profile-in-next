@@ -7,7 +7,7 @@ export default function Blog5() {
                 <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
                     Why Choose Hostinger KVM VPS in 2025?
                 </h2>
-                <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
+                <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-6">
                     After extensive testing and analysis, Hostinger&apos;s KVM
                     (Kernel-based Virtual Machine) VPS hosting stands out as one
                     of the best value propositions in the market. Whether you&apos;re
@@ -15,7 +15,7 @@ export default function Blog5() {
                     need a robust development environment, Hostinger&apos;s VPS
                     delivers exceptional performance at competitive prices.
                 </p>
-                <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+                <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
                     Get the best <strong className="text-yellow-600">Hostinger 50% off coupon code</strong> - <strong
                         className="text-yellow-600">mohitkoli</strong>! This comprehensive review includes exclusive <strong
                             className="text-yellow-600">Hostinger discount</strong> codes and <strong
@@ -36,7 +36,7 @@ export default function Blog5() {
                 <h2 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
                     Key Features That Set Hostinger Apart
                 </h2>
-                <p className="text-gray-600 text-center mb-8">
+                <p className="text-gray-400 text-center mb-8">
                     Here&apos;s what makes Hostinger VPS hosting a top choice for
                     developers and businesses:
                 </p>
@@ -107,10 +107,10 @@ export default function Blog5() {
                             <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50 text-indigo-600 mb-4">
                                 {feature.icon}
                             </div>
-                            <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                            <h3 className="text-xl font-semibold mb-2 text-gray-100">
                                 {feature.title}
                             </h3>
-                            <p className="text-gray-600">
+                            <p className="text-gray-400">
                                 {feature.desc}
                             </p>
                         </div>
@@ -122,7 +122,7 @@ export default function Blog5() {
                 <h2 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
                     Hostinger KVM VPS Plans (with 50% OFF)
                 </h2>
-                <p className="text-gray-600 text-center mb-8">
+                <p className="text-gray-400 text-center mb-8">
                     All plans include KVM virtualization, NVMe SSD storage,
                     dedicated IP, and weekly backups. Prices shown with 50% discount applied using our exclusive
                     <strong> Hostinger 50% off coupon code</strong> and <strong>hosting discount coupons</strong>:
@@ -162,9 +162,9 @@ export default function Blog5() {
                             popular: false
                         }
                     ].map((plan, idx) => (
-                        <div key={idx} className={`bg-white p-6 rounded-xl shadow-lg border ${plan.popular ? 'border-purple-500 ring-2 ring-yellow-400 relative' : 'border-gray-200'} flex flex-col justify-between`}>
+                        <div key={idx} className={`bg-white p-6 rounded-xl shadow-lg border ${plan.popular ? 'border-purple-500/30 ring-2 ring-yellow-400 relative' : 'border-gray-200'} flex flex-col justify-between`}>
                             {plan.popular && (
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-gray-900 px-3 py-1 text-sm font-bold rounded-full">
+                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-gray-100 px-3 py-1 text-sm font-bold rounded-full">
                                     MOST POPULAR
                                 </div>
                             )}
@@ -173,16 +173,16 @@ export default function Blog5() {
                                     {plan.name}
                                 </h3>
                                 <div className="text-center mb-4">
-                                    <span className="text-2xl font-bold text-gray-800">{plan.type}</span>
+                                    <span className="text-2xl font-bold text-gray-200">{plan.type}</span>
                                     <div className="text-sm text-gray-500">
                                         {plan.desc}
                                     </div>
                                 </div>
-                                <div className="space-y-1 mb-4 text-gray-600">
-                                    <p><span className="font-semibold text-gray-800">{plan.cpu} vCPU</span> Core</p>
-                                    <p><span className="font-semibold text-gray-800">{plan.ram}</span> RAM</p>
-                                    <p><span className="font-semibold text-gray-800">{plan.ssd} NVMe</span> SSD</p>
-                                    <p><span className="font-semibold text-gray-800">{plan.bw}</span> Bandwidth</p>
+                                <div className="space-y-1 mb-4 text-gray-400">
+                                    <p><span className="font-semibold text-gray-200">{plan.cpu} vCPU</span> Core</p>
+                                    <p><span className="font-semibold text-gray-200">{plan.ram}</span> RAM</p>
+                                    <p><span className="font-semibold text-gray-200">{plan.ssd} NVMe</span> SSD</p>
+                                    <p><span className="font-semibold text-gray-200">{plan.bw}</span> Bandwidth</p>
                                 </div>
                             </div>
                             <a href={plan.link} target="_blank" rel="noopener noreferrer"
@@ -197,12 +197,12 @@ export default function Blog5() {
             {/* Comparison and Performance sections were truncated but I will omit them for brevity as I need to keep file size managed, or I can add a summary if critical. For now, I'll add a closing. */}
 
             <section id="conclusion" className="mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Final Verdict</h2>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <h2 className="text-3xl font-bold text-gray-100 mb-6">Final Verdict</h2>
+                <p className="text-gray-300 mb-4 leading-relaxed">
                     Hostinger&apos;s KVM VPS plans offer an unbeatable combination of performance, features, and price.
                     With our exclusive discount, the deal is even sweeter.
                 </p>
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-300 mb-6 leading-relaxed">
                     Ready to boost your website&apos;s performance?
                     <a href="https://hostinger.in?REFERRALCODE=mohitkoli" target="_blank" rel="noopener noreferrer"
                         className="text-blue-600 hover:underline font-semibold ml-1">

@@ -55,7 +55,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
     return (
         <>
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-8">
                 <div className="lg:grid lg:grid-cols-4 lg:gap-8">
                     {/* Article Content */}
                     <article className="lg:col-span-3">
