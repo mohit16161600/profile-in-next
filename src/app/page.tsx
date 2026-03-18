@@ -6,6 +6,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import InfiniteTechMarquee from "@/components/InfiniteTechMarquee";
+import ServiceAreas from "@/components/ServiceAreas";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -24,6 +25,10 @@ export default function Home() {
       <section aria-label="About Mohit Koli">
         <About />
       </section>
+      <ServiceAreas
+        title="Cities and states I serve"
+        description="These service-area links are now surfaced directly from the homepage so both users and search engines can discover them faster."
+      />
       <section aria-label="Qualifications" className="content-auto">
         <Qualification />
       </section>

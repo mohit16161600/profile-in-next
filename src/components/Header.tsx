@@ -2,13 +2,11 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const pathname = usePathname();
 
     const navLinks = [
         { name: "About", href: "/#about" },
@@ -17,6 +15,7 @@ export default function Header() {
         { name: "Skills", href: "/#skills" },
         { name: "Projects", href: "/#projects" },
         { name: "Contact", href: "/#contact" },
+        { name: "Locations", href: "/locations" },
         { name: "Blog", href: "/blog" },
     ];
 

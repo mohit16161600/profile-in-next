@@ -42,6 +42,7 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm">
                             <li><Link href="/#about" className="text-gray-400 border-b border-transparent hover:text-white hover:border-white transition-all hover-target w-max block">About</Link></li>
                             <li><Link href="/profile" className="text-gray-400 border-b border-transparent hover:text-white hover:border-white transition-all hover-target w-max block">Profile</Link></li>
+                            <li><Link href="/locations" className="text-gray-400 border-b border-transparent hover:text-white hover:border-white transition-all hover-target w-max block">Locations</Link></li>
                             <li><Link href="/#projects" className="text-gray-400 border-b border-transparent hover:text-white hover:border-white transition-all hover-target w-max block">Projects</Link></li>
                             <li><Link href="/blog" className="text-gray-400 border-b border-transparent hover:text-white hover:border-white transition-all hover-target w-max flex items-center">Blog <span
                                 className="bg-primary-600 font-bold tracking-wider text-white text-[9px] uppercase px-1.5 py-0.5 rounded ml-2">New</span></Link></li>

@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     apple: "/assets/mohit-koli-profile-photo.jpg",
     shortcut: "/assets/mohit-koli-profile-photo.jpg",
   },
-  manifest: "/site.webmanifest",
+  manifest: "/manifest.json",
   category: "technology",
   other: {
     "geo.region": "IN",
