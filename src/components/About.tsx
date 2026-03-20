@@ -29,17 +29,17 @@ export default function About() {
 
             <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
               <p>
-                I'm <strong className="text-white" itemProp="name">Mohit Koli</strong>, a passionate and dedicated <strong>Web Developer</strong> and <strong>Full Stack Developer</strong> with over 2 years of professional experience. I specialize in designing, developing, and maintaining responsive websites and web applications that drive results. Welcome to my professional portfolio at <strong className="text-primary-500">mohitkoli.info</strong>.
+                I'm <strong className="text-white" itemProp="name">Mohit Koli</strong>, a results-driven <strong>Senior Web Developer</strong> and <strong>Full Stack Engineer</strong> with over 2 years of professional experience across India. I specialize in the <strong>MERN Stack</strong> (MongoDB, Express, React, Node.js) and <strong>PHP Laravel</strong> to build <strong>scalable web applications</strong> and <strong>custom CMS</strong> solutions.
               </p>
               <p>
-                My expertise spans modern frontend and backend technologies, allowing me to deliver end-to-end solutions that are functionally robust and visually stunning. As a professional developer, I bring a unique blend of technical skill and creative problem-solving to every project.
+                My expertise spans modern frontend frameworks and robust backend architectures, allowing me to deliver high-performance solutions that are functionally redundant and visually premium. As a <strong>professional freelance developer</strong>, I help businesses transform complex ideas into digital reality at <strong className="text-primary-500">mohitkoli.info</strong>.
               </p>
               <p>
-                Currently serving as a <strong>Web Developer</strong> at <span className="font-semibold text-white" itemProp="worksFor">Sheopals Pvt Ltd</span>, I engineer responsive dashboards and platforms using HTML, PHP, Laravel, and React. I hold a <strong>Bachelor's Degree in Computer Science & Engineering</strong> from BPIT, providing me with structured software engineering principles.
+                Currently serving as a <strong itemProp="jobTitle">Senior Web Developer</strong> at <span className="font-semibold text-white" itemProp="worksFor">Sheopals Pvt Ltd</span>, I engineer responsive dashboards and enterprise platforms. I hold a <strong>B.Tech in Computer Science & Engineering</strong>, ensuring all my code follows industry-standard architectural principles.
               </p>
               <div className="pt-4">
                 <p className="italic text-gray-500 border-l-4 border-primary-500 pl-4">
-                  "Whether you're searching for 'Mohit Koli' or 'mohitkoli.info', you've found a partner dedicated to your digital success."
+                  "Expert in <strong>Next.js SEO</strong>, <strong>Laravel Performance</strong>, and <strong>React Component Design</strong>—I build for the future of the web."
                 </p>
               </div>
             </div>

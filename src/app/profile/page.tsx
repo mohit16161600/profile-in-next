@@ -39,14 +39,15 @@ const galleryImages = [
 ];
 
 export const metadata = {
-    title: "Mohit Koli | Gallery & Social Profile",
-    description: "Explore the life of Mohit Koli behind the code. A gallery of coding setups, developer lifestyle, and social media highlights.",
+    title: "Mohit Koli | Senior Developer Life, Gallery & Social Profile",
+    description: "Explore the journey of Mohit Koli, a Senior Full Stack Developer and Tech Creator. A curated gallery of coding setups, developer lifestyle, and social media highlights.",
+    keywords: ["Mohit Koli profile", "developer lifestyle", "coding setup", "tech creator india", "mohit koli gallery"],
     alternates: {
         canonical: "https://mohitkoli.info/profile",
     },
     openGraph: {
-        title: "Mohit Koli - Developer Life & Gallery",
-        description: "Behind the scenes: Coding setups, vlogging, and the developer lifestyle of Mohit Koli.",
+        title: "Mohit Koli - Professional Journey & Developer Lifestyle",
+        description: "Behind the scenes of a Senior Full Stack Developer. Coding setups, tech content creation, and professional highlights.",
         images: ["/assets/mohit-koli-coding-setup-3.jpg"],
     },
 };

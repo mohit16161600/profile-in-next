@@ -3,7 +3,7 @@ import { BLOG_POSTS } from '@/data/posts';
 import { SEO_LOCATIONS } from '@/data/locations';
 
 export const revalidate = 86400; // revalidate every 24 hours
-const LAST_MAJOR_CONTENT_UPDATE = '2026-03-18';
+const LAST_MAJOR_CONTENT_UPDATE = '2026-03-21';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://mohitkoli.info';
@@ -63,8 +63,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const locationRoutes: MetadataRoute.Sitemap = SEO_LOCATIONS.map((location) => ({
         url: `${baseUrl}/developer-in-${location.slug}`,
         lastModified: LAST_MAJOR_CONTENT_UPDATE,
-        changeFrequency: 'monthly',
-        priority: 0.7,
+        changeFrequency: 'weekly',
+        priority: 0.8,
     }));
 
     return [...staticRoutes, ...blogPosts, ...locationRoutes];

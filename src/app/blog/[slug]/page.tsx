@@ -12,18 +12,21 @@ import Blog6 from "@/components/blog-posts/Blog6";
 import Blog7 from "@/components/blog-posts/Blog7";
 import Blog8 from "@/components/blog-posts/Blog8";
 import Blog9 from "@/components/blog-posts/Blog9";
+import HostingerDiscount from "@/components/blog-posts/HostingerDiscount";
+
 
 // Mapping of slug to content component
 const CONTENT_MAP: Record<string, React.ComponentType> = {
-    blog1: Blog1,
-    blog2: Blog2,
-    blog3: Blog3,
-    blog4: Blog4,
-    blog5: Blog5,
-    blog6: Blog6,
-    blog7: Blog7,
-    blog8: Blog8,
-    blog9: Blog9,
+    "ai-in-web-development-comprehensive-guide": Blog1,
+    "the-truth-about-ai-coding-assistants": Blog2,
+    "top-javascript-libraries-frameworks-2025": Blog3,
+    "best-ai-productivity-tools-2025": Blog4,
+    "hostinger-vps-hosting-review-discount": Blog5,
+    "frontend-vs-backend-development-guide": Blog6,
+    "is-react-worth-learning-2026": Blog7,
+    "will-ai-replace-web-developers-2026": Blog8,
+    "build-website-with-ai-step-by-step": Blog9,
+    "hostinger-discount-90-coupon-code": HostingerDiscount,
     // Future posts will be added here
 };
 
@@ -38,8 +41,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
     return {
         title: `${post.title} | Mohit Koli`,
-        description: `Read about ${post.title} and more web development insights on Mohit Koli's blog.`,
-        // Add more metadata here from posts.ts if available (keywords, etc)
+        description: post.description,
+        keywords: post.keywords.join(", "),
+        alternates: {
+            canonical: `https://mohitkoli.info/blog/${post.slug}`,
+        },
+        openGraph: {
+            title: post.title,
+            description: post.description,
+            url: `https://mohitkoli.info/blog/${post.slug}`,
+            images: [post.imageSrc],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: post.title,
+            description: post.description,
+            images: [post.imageSrc],
+        },
     };
 }
 

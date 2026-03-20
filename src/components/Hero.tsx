@@ -56,12 +56,12 @@ export default function Hero() {
               Hi, I'm <span className="text-white">Mohit Koli</span>
               <br />
               <span className="text-4xl md:text-5xl lg:text-6xl mt-4 block h-[1.2em]">
-                <Typewriter words={["Web Developer.", "Programmer.", "Software Coder.", "UI/UX Engineer."]} />
+                <Typewriter words={["Web Developer.", "Programmer.", "Senior Coder.", "Full Stack Engineer."]} />
               </span>
             </motion.h1>
 
             <motion.h2 variants={itemVariants} className="text-xl text-gray-400 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
-              I am a Senior Full Stack Developer tailored for complex web ecosystems. I architect scalable solutions using React, Node.js, and Cloud Infrastructure to build digital scale and performance.
+              I am a <strong>Senior Full Stack Developer</strong> and <strong>Freelance Web Specialist</strong> based in India. I architect scalable ecosystems using <strong>React</strong>, <strong>Next.js</strong>, and <strong>PHP Laravel</strong> to drive digital performance and scale.
             </motion.h2>
 
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -105,7 +105,7 @@ export default function Hero() {
               <div className="relative w-full h-full rounded-full border-[6px] border-white/10 shadow-[0_0_50px_rgba(239,68,68,0.2)] overflow-hidden z-10 hover:scale-[1.02] transition-transform duration-500">
                 <Image
                   src="/assets/mohit-koli-profile-photo.jpg"
-                  alt="Mohit Koli - Professional Web Developer"
+                  alt="Mohit Koli - Senior Full Stack Web Developer & Software Programmer India"
                   fill
                   className="object-cover"
                   priority

@@ -98,23 +98,22 @@ export default function RootLayout({
               {
                 "@context": "https://schema.org",
                 "@type": "Person",
-                name: "Mohit Koli",
-                url: "https://mohitkoli.info",
-                image: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
-                sameAs: [
-                  "https://www.linkedin.com/in/mohitkoli1/",
-                  "https://github.com/mohit16161600",
-                  "https://twitter.com/mohitko86979490",
-                  "https://www.youtube.com/@rideswithmohit",
-                  "https://www.instagram.com/mohit12162/"
-                ],
-                jobTitle: ["Senior Full Stack Developer", "Web Developer", "Programmer", "Coder", "Software Engineer"],
-                worksFor: {
-                  "@type": "Organization",
-                  name: "Freelance"
+                "name": "Mohit Koli",
+                "url": "https://mohitkoli.info",
+                "image": "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+                "jobTitle": "Senior Full Stack Developer",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Sheopals Pvt Ltd"
                 },
-                description: "Expert Web Developer, competitive Programmer, and Full-Stack Coder specializing in React, Next.js, PHP, Laravel, and Node.js.",
-                knowsAbout: ["Web Development", "Computer Programming", "Coding", "Software Engineering", "React", "Next.js", "PHP", "Laravel", "SEO"]
+                "sameAs": [
+                    "https://github.com/mohit16161600",
+                    "https://www.linkedin.com/in/mohit-koli-b47260213",
+                    "https://x.com/mohitko86979490",
+                    "https://www.instagram.com/mohit12162/"
+                ],
+                "description": "Senior Full Stack Developer and Freelance Web Specialist expert in React, Next.js, and PHP Laravel Development.",
+                "knowsAbout": ["Web Development", "React", "Next.js", "PHP", "Laravel", "Node.js", "SEO", "UI/UX Design"]
               },
               {
                 "@context": "https://schema.org",
@@ -140,10 +139,21 @@ export default function RootLayout({
                 "description": "Top-rated freelance Web Developer providing high-performance React, Next.js, and PHP Laravel solutions.",
                 "url": "https://mohitkoli.info",
                 "priceRange": "$$",
-                "telephone": "Contact via Website",
+                "telephone": "+91 8383868837",
                 "address": {
                   "@type": "PostalAddress",
                   "addressCountry": "IN"
+                }
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Mohit Koli | Senior Full Stack Developer",
+                "url": "https://mohitkoli.info",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://mohitkoli.info/blog?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
                 }
               }
             ]),
