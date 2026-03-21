@@ -12,7 +12,7 @@ const HostingerDiscount = () => {
         <p className="text-xl text-gray-300 leading-relaxed mb-8">
           Are you looking for the best web hosting deal in 2026? You've come to the right place. 
           As a developer, I've tested dozens of hosting providers, and <strong>Hostinger</strong> consistently 
-          stands out for its incredible speed, reliability, and most importantly, its value for money.
+          stands out for its incredible speed, reliability, and most importantly, its value for money. 
         </p>
         <p className="text-lg text-gray-400">
           By using my exclusive referral code <strong>MOHITKOLI</strong>, you can unlock an additional discount 
