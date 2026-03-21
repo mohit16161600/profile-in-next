@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
 
     const title = `Web Developer in ${locationData.name} | Mohit Koli`;
     const description = `Hire Mohit Koli, a freelance web developer in ${locationData.name}, for ${locationData.serviceFocus}. Serving clients across ${locationData.region} with React, Next.js, PHP, and Laravel expertise.`;
-    const canonical = `https://mohitkoli.info/developer-in-${locationData.slug}`;
+    const canonical = `https://mohitkoli.info/developer-in/${locationData.slug}`;
 
     return {
         title,
@@ -77,7 +77,7 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
     }
 
     const relatedLocations = getRelatedLocations(locationData);
-    const canonical = `https://mohitkoli.info/developer-in-${locationData.slug}`;
+    const canonical = `https://mohitkoli.info/developer-in/${locationData.slug}`;
     const faqItems = [
         {
             question: `Do you work with clients in ${locationData.name} remotely?`,
@@ -179,7 +179,7 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
                                     return (
                                         <li key={nearbyLocation.slug}>
                                             <Link
-                                                href={`/developer-in-${nearbyLocation.slug}`}
+                                                href={`/developer-in/${nearbyLocation.slug}`}
                                                 className="text-gray-300 transition-colors hover:text-primary-400"
                                             >
                                                 Web developer in {nearbyLocation.name}
@@ -228,7 +228,7 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
                         {relatedLocations.map((relatedLocation) => (
                             <Link
                                 key={relatedLocation.slug}
-                                href={`/developer-in-${relatedLocation.slug}`}
+                                href={`/developer-in/${relatedLocation.slug}`}
                                 className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-colors hover:border-primary-500/40"
                             >
                                 <p className="text-xs uppercase tracking-[0.25em] text-gray-500">{relatedLocation.region}</p>

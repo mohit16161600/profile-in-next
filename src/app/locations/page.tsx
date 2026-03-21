@@ -28,7 +28,7 @@ export default function LocationsIndexPage() {
                     {SEO_LOCATIONS.map((location) => (
                         <Link
                             key={location.slug}
-                            href={`/developer-in-${location.slug}`}
+                            href={`/developer-in/${location.slug}`}
                             className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-colors hover:border-primary-500/40"
                         >
                             <p className="text-xs uppercase tracking-[0.25em] text-gray-500">

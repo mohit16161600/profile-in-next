@@ -50,7 +50,11 @@ export const SEO_LOCATIONS: LocationData[] = [
     { slug: "andhra-pradesh", name: "Andhra Pradesh", type: "state", region: "South India", serviceFocus: "service websites, statewide landing pages, and Laravel-powered platforms", nearby: ["hyderabad", "chennai", "telangana"] },
 ];
 
-export function getLocationBySlug(slug: string) {
+export function getLocationBySlug(slug?: string) {
+    if (!slug) {
+        return undefined;
+    }
+
     return SEO_LOCATIONS.find((location) => location.slug === slug.toLowerCase());
 }
 

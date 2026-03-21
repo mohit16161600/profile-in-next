@@ -61,7 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ];
 
     const locationRoutes: MetadataRoute.Sitemap = SEO_LOCATIONS.map((location) => ({
-        url: `${baseUrl}/developer-in-${location.slug}`,
+        url: `${baseUrl}/developer-in/${location.slug}`,
         lastModified: LAST_MAJOR_CONTENT_UPDATE,
         changeFrequency: 'weekly',
         priority: 0.8,

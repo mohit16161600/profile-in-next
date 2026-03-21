@@ -14,7 +14,7 @@ export default async function LegacyLocationPage({ params }: { params: Promise<{
     const locationData = getLocationBySlug(location);
 
     if (locationData) {
-        permanentRedirect(`/developer-in-${locationData.slug}`);
+        permanentRedirect(`/developer-in/${locationData.slug}`);
     }
 
     permanentRedirect("/locations");

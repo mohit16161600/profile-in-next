@@ -31,7 +31,7 @@ export default function ServiceAreas({
                     {featuredLocations.map((location) => (
                         <Link
                             key={location.slug}
-                            href={`/developer-in-${location.slug}`}
+                            href={`/developer-in/${location.slug}`}
                             className="group rounded-2xl border border-white/10 bg-black/20 p-5 transition-all duration-300 hover:border-primary-500/40 hover:bg-black/30"
                         >
                             <p className="text-xs uppercase tracking-[0.25em] text-gray-500">{location.region}</p>
