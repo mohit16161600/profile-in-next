@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-outfit);
+  --font-sans: "Segoe UI", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --color-primary-50: #0a0a0a;
   --color-primary-100: #171717;
   --color-primary-400: #f87171;
