@@ -19,19 +19,22 @@ export default function Contact() {
         const message = formData.get("message");
 
         try {
-            const response = await fetch("https://mailideepakrajput.vercel.app/", {
+            const response = await fetch("/api/send-mail", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    uuid: "65fe1234567890abcdef9101",
-                    message: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+                    name,
+                    email,
+                    phone,
+                    message,
                 }),
             });
 
             if (!response.ok) {
-                throw new Error("Network response was not ok");
+                const errorData = await response.json();
+                throw new Error(errorData?.message || "Unable to send email");
             }
 
             alert("Message sent successfully! Mohit Koli will get back to you soon.");

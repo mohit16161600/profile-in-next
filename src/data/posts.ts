@@ -13,6 +13,18 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 11,
+        title: "Hostinger Discount Code India 2026 – Get Hosting at Lowest Price Using My Referral Link",
+        description: "Exclusive Hostinger discount code India 2026 article: save more with my referral link. Cheap hosting India with automatic coupon and free domain offer.",
+        date: "March 24, 2026",
+        readTime: "10 min read",
+        category: "Hosting",
+        views: 0,
+        keywords: ["hostinger discount code India", "cheap hosting India", "hostinger coupon code 2026", "best web hosting for beginners", "hostinger price India", "hostinger offer today"],
+        slug: "hostinger-discount-code-2026",
+        imageSrc: "/assets/hostinger-offer.webp",
+    },
+    {
         id: 10,
         title: "Hostinger Coupon Code 2026: Get Up to 90% OFF + Free Domain (Verified)",
         description: "Looking for a Hostinger discount? Use referral code MOHITKOLI to get up to 90% OFF plus a free domain and SSL. Verified Hostinger promo code for 2026.",

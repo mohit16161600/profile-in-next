@@ -51,7 +51,7 @@ export default function BlogPage() {
                                 itemScope
                                 itemType="https://schema.org/BlogPosting"
                             >
-                                <div className="relative w-full h-48">
+                                <div className="relative w-full h-64 sm:h-72">
                                     <Image
                                         src={post.imageSrc}
                                         alt={`${post.title} - Guide by Mohit Koli`}

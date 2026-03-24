@@ -43,7 +43,7 @@ export default function LatestBlogs() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="glass group rounded-2xl overflow-hidden border border-white/5 hover:border-primary-500/30 transition-all duration-300 flex flex-col h-full"
                         >
-                            <Link href={`/blog/${post.slug}`} className="block aspect-video relative overflow-hidden">
+                            <Link href={`/blog/${post.slug}`} className="block relative h-56 sm:h-60 overflow-hidden">
                                 <Image
                                     src={post.imageSrc || "/assets/blog-placeholder.jpg"}
                                     alt={post.title}

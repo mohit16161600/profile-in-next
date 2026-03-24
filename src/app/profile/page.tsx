@@ -39,15 +39,22 @@ const galleryImages = [
 ];
 
 export const metadata = {
-    title: "Mohit Koli | Senior Developer Life, Gallery & Social Profile",
-    description: "Explore the journey of Mohit Koli, a Senior Full Stack Developer and Tech Creator. A curated gallery of coding setups, developer lifestyle, and social media highlights.",
-    keywords: ["Mohit Koli profile", "developer lifestyle", "coding setup", "tech creator india", "mohit koli gallery"],
+    title: "Mohit Koli | Best Freelance Web Developer Profile & Portfolio",
+    description: "Official profile of Mohit Koli, the best freelance web developer in India. Full-stack expertise in React, Next.js, and Laravel with proven client impact.",
+    keywords: [
+        "best web developer profile",
+        "best freelancer profile",
+        "freelance web developer India",
+        "React Next.js expert",
+        "PHP Laravel developer",
+        "mohit koli portfolio",
+    ],
     alternates: {
         canonical: "https://mohitkoli.info/profile",
     },
     openGraph: {
-        title: "Mohit Koli - Professional Journey & Developer Lifestyle",
-        description: "Behind the scenes of a Senior Full Stack Developer. Coding setups, tech content creation, and professional highlights.",
+        title: "Mohit Koli - Best Freelance Web Developer Profile",
+        description: "Discover the best freelance web developer in India, with proven React, Next.js and PHP/Laravel expertise for businesses.",
         images: ["/assets/mohit-koli-coding-setup-3.jpg"],
     },
 };

@@ -27,14 +27,17 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
         return {};
     }
 
-    const title = `Web Developer in ${locationData.name} | Mohit Koli`;
-    const description = `Hire Mohit Koli, a freelance web developer in ${locationData.name}, for ${locationData.serviceFocus}. Serving clients across ${locationData.region} with React, Next.js, PHP, and Laravel expertise.`;
+    const title = `Web Developer in ${locationData.name} | Best Freelance Web Developer | Mohit Koli`;
+    const description = `Hire the best web developer and freelancer in ${locationData.name} for ${locationData.serviceFocus}. Serving clients across ${locationData.region} with React, Next.js, PHP, and Laravel expertise.`;
     const canonical = `https://mohitkoli.info/developer-in/${locationData.slug}`;
 
     return {
         title,
         description,
         keywords: [
+            `best web developer in ${locationData.name}`,
+            `best freelance web developer ${locationData.name}`,
+            `best freelancer in ${locationData.name}`,
             `web developer in ${locationData.name}`,
             `freelance web developer ${locationData.name}`,
             `react developer ${locationData.name}`,
@@ -159,6 +162,9 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
                             </h1>
                             <p className="mt-4 text-lg leading-8 text-gray-300">
                                 I work with teams in {locationData.name} that need {locationData.serviceFocus}. These pages are built to make it easy for clients to find the right service area, understand what I offer, and move directly into a project discussion.
+                            </p>
+                            <p className="mt-4 text-lg leading-8 text-gray-300">
+                                As the best freelance web developer in {locationData.name}, I focus on outcome-based solutions: fast page speed, readable code, SEO-friendly markup, and measurable revenue growth.
                             </p>
                             <p className="mt-4 text-lg leading-8 text-gray-300">
                                 The {locationData.name} page supports businesses across {locationData.region}, with strong internal links, clear canonical URLs, and indexable content designed around real web development services instead of thin doorway pages.

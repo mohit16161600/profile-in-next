@@ -3,10 +3,40 @@ import Link from "next/link";
 import { SEO_LOCATIONS } from "@/data/locations";
 
 export const metadata: Metadata = {
-    title: "Service Areas | Mohit Koli",
-    description: "Browse all cities and states where Mohit Koli offers freelance web development services.",
+    title: "Best Freelance Web Developer Locations | Mohit Koli",
+    description:
+        "Explore all service areas where Mohit Koli is the top freelance web developer and professional web development partner in India.",
+    keywords: [
+        "best web developer",
+        "best freelancer",
+        "freelance web developer",
+        "web development service areas",
+        "React developer",
+        "Next.js developer",
+        "PHP Laravel developer",
+        "local web developer",
+        "service areas",
+        "developer-in",
+    ],
+    robots: {
+        index: true,
+        follow: true,
+    },
     alternates: {
         canonical: "https://mohitkoli.info/locations",
+    },
+    openGraph: {
+        title: "Best Freelance Web Developer Locations | Mohit Koli",
+        description:
+            "Explore all service areas where Mohit Koli is the top freelance web developer in India, including Delhi, Mumbai, Bangalore, and more.",
+        type: "website",
+        url: "https://mohitkoli.info/locations",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Best Freelance Web Developer Locations | Mohit Koli",
+        description:
+            "Explore all service areas where Mohit Koli is the top freelance web developer in India, including Delhi, Mumbai, Bangalore, and more.",
     },
 };
 
