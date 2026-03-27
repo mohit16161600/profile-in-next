@@ -13,6 +13,7 @@ import Blog7 from "@/components/blog-posts/Blog7";
 import Blog8 from "@/components/blog-posts/Blog8";
 import Blog9 from "@/components/blog-posts/Blog9";
 import Blog10 from "@/components/blog-posts/Blog10";
+import Blog11 from "@/components/blog-posts/Blog11";
 import HostingerDiscount from "@/components/blog-posts/HostingerDiscount";
 
 
@@ -28,6 +29,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
     "will-ai-replace-web-developers-2026": Blog8,
     "build-website-with-ai-step-by-step": Blog9,
     "best-ai-tools-to-make-money-online-2026": Blog10,
+    "best-ai-tools-for-whatsapp-business-automation-2026": Blog11,
     "hostinger-discount-90-coupon-code": HostingerDiscount,
     // Future posts will be added here
 };
