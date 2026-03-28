@@ -2,7 +2,35 @@
 
 import { motion } from "framer-motion";
 
-const services = [
+const accentClasses = {
+  primary: {
+    border: "hover:border-primary-500/30",
+    icon: "bg-primary-500/20 text-primary-400",
+    chip: "group-hover:border-primary-500/30",
+    text: "group-hover:text-primary-400",
+  },
+  emerald: {
+    border: "hover:border-emerald-500/30",
+    icon: "bg-emerald-500/20 text-emerald-400",
+    chip: "group-hover:border-emerald-500/30",
+    text: "group-hover:text-emerald-400",
+  },
+  amber: {
+    border: "hover:border-amber-500/30",
+    icon: "bg-amber-500/20 text-amber-400",
+    chip: "group-hover:border-amber-500/30",
+    text: "group-hover:text-amber-400",
+  },
+} as const;
+
+type ServiceAccent = keyof typeof accentClasses;
+
+const services: Array<{
+  title: string;
+  description: string;
+  tags: string[];
+  accent: ServiceAccent;
+}> = [
   {
     title: "High-Converting Business Websites",
     description:
@@ -32,27 +60,6 @@ const reasons = [
   "Clear communication, business-focused delivery, and long-term maintenance support",
   "Responsive, fast-loading interfaces designed for users, not just screenshots",
 ];
-
-const accentClasses = {
-  primary: {
-    border: "hover:border-primary-500/30",
-    icon: "bg-primary-500/20 text-primary-400",
-    chip: "group-hover:border-primary-500/30",
-    text: "group-hover:text-primary-400",
-  },
-  emerald: {
-    border: "hover:border-emerald-500/30",
-    icon: "bg-emerald-500/20 text-emerald-400",
-    chip: "group-hover:border-emerald-500/30",
-    text: "group-hover:text-emerald-400",
-  },
-  amber: {
-    border: "hover:border-amber-500/30",
-    icon: "bg-amber-500/20 text-amber-400",
-    chip: "group-hover:border-amber-500/30",
-    text: "group-hover:text-amber-400",
-  },
-} as const;
 
 export default function ServiceHighlights() {
   return (
