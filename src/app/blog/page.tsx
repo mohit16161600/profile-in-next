@@ -16,25 +16,28 @@ export default function BlogPage() {
     return (
         <>
             <section
-                className="bg-cover bg-center text-white pt-32 pb-20 relative"
-                style={{ backgroundImage: "url('/assets/mohitkolibg.jpg')" }}
+                className="text-white pt-32 pb-20 relative overflow-hidden"
                 aria-label="Blog Hero Section"
             >
-                <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
+                <div
+                    className="absolute inset-0 bg-cover bg-center opacity-80 z-0"
+                    style={{ backgroundImage: "url('/assets/mohitkolibg.jpg')" }}
+                    aria-hidden="true"
+                />
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
                             Technology Blog by Mohit Koli
                         </h1>
 
-                        <p className="text-lg sm:text-xl md:text-2xl mb-8 text-blue-100">
+                        <p className="text-lg sm:text-xl md:text-2xl mb-16 text-blue-100">
                             Discover the latest in AI development, web programming, and software engineering insights
                         </p>
 
-                        <button className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                        {/* <button className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
                             Explore Articles
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </section>
