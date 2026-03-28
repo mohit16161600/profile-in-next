@@ -149,6 +149,15 @@ const accentMap = {
     red: "bg-red-100 text-red-600",
 } as const;
 
+type RoleAccent = keyof typeof accentMap;
+
+const typedRoleCards: Array<{
+    code: string;
+    title: string;
+    description: string;
+    accent: RoleAccent;
+}> = roleCards;
+
 export default function SheopalsCrmProject() {
     return (
         <div className="bg-white min-h-screen font-sans">
@@ -261,7 +270,7 @@ export default function SheopalsCrmProject() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {roleCards.map((role) => (
+                        {typedRoleCards.map((role) => (
                             <div key={role.code} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                 <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 font-bold text-xl ${accentMap[role.accent]}`}>{role.code}</div>
                                 <h3 className="text-lg font-bold text-gray-900 mb-2">{role.title}</h3>
