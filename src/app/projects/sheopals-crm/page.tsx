@@ -300,7 +300,7 @@ export default function SheopalsCrmProject() {
                                             <h4 className="text-xl font-bold mb-1">Operational Automation</h4>
                                             <p className="text-gray-400 text-sm">Supported routine process execution, workload handling, and daily team actions through structured system workflows and repeatable logic.</p>
                                         </div>
-                                    </div>
+                                    </div> 
 
                                     <div className="flex gap-4">
                                         <div className="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center flex-shrink-0 border border-gray-700">
