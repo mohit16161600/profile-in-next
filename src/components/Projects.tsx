@@ -77,6 +77,90 @@ export default function Projects() {
             </div>
           </motion.article>
 
+
+          {/* Project 4 */}
+          <motion.article variants={itemVariants} className="glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+            <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
+              <div className="absolute inset-0 bg-sky-900/40 z-10 group-hover:bg-sky-900/10 transition-colors duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-sky-500 to-cyan-700 opacity-60 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700"></div>
+              <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold z-20 transition-transform duration-500 group-hover:scale-110">Driftload</div>
+            </div>
+            <div className="p-8">
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-sky-400 transition-colors">
+                <a href="https://driftload.in/" target="_blank" rel="noopener noreferrer" className="hover-target">Driftload Logistics</a>
+              </h3>
+              <p className="text-gray-400 mb-6 line-clamp-4 text-sm leading-relaxed">
+                Built a logistics brand website focused on reliable, efficient, and cost-effective transportation solutions, with messaging centered on trust, transparency, and exceptional service delivery.
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-sky-400/30 transition-colors">Business Website</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-sky-400/30 transition-colors">Branding</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-sky-400/30 transition-colors">Responsive UI</span>
+              </div>
+
+              <a href="https://driftload.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sky-400 hover:text-sky-300 font-semibold text-sm group-hover:underline decoration-2 underline-offset-4 hover-target">
+                Visit Website
+                <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </motion.article>
+
+          {/* Project 5 */}
+          <motion.article variants={itemVariants} className="glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+            <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
+              <div className="absolute inset-0 bg-amber-900/40 z-10 group-hover:bg-amber-900/10 transition-colors duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-700 opacity-60 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700"></div>
+              <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold z-20 transition-transform duration-500 group-hover:scale-110">Software Crafting</div>
+            </div>
+            <div className="p-8">
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">
+                <a href="https://www.softwarecrafting.in/" target="_blank" rel="noopener noreferrer" className="hover-target">Software Crafting</a>
+              </h3>
+              <p className="text-gray-400 mb-6 line-clamp-4 text-sm leading-relaxed">
+                Created a polished software services website that presents development expertise, service offerings, and a conversion-focused digital presence for a modern tech brand.
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-amber-400/30 transition-colors">Service Website</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-amber-400/30 transition-colors">SEO</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-amber-400/30 transition-colors">Frontend</span>
+              </div>
+
+              <a href="https://www.softwarecrafting.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-amber-400 hover:text-amber-300 font-semibold text-sm group-hover:underline decoration-2 underline-offset-4 hover-target">
+                Visit Website
+                <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </motion.article>
+
+          {/* Project 6 */}
+          <motion.article variants={itemVariants} className="glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+            <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
+              <div className="absolute inset-0 bg-pink-900/40 z-10 group-hover:bg-pink-900/10 transition-colors duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-500 to-rose-700 opacity-60 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700"></div>
+              <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold z-20 transition-transform duration-500 group-hover:scale-110">Instagram Booster</div>
+            </div>
+            <div className="p-8">
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">
+                <a href="https://instagram-like-and-follow-booster.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover-target">Instagram Like &amp; Follow Booster</a>
+              </h3>
+              <p className="text-gray-400 mb-6 line-clamp-4 text-sm leading-relaxed">
+                Built and deployed a promotional web app with a bold, campaign-style interface designed to present features clearly and drive user engagement through a fast, mobile-friendly experience.
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-pink-400/30 transition-colors">Landing Page</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-pink-400/30 transition-colors">Vercel</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-pink-400/30 transition-colors">Mobile Friendly</span>
+              </div>
+
+              <a href="https://instagram-like-and-follow-booster.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-pink-400 hover:text-pink-300 font-semibold text-sm group-hover:underline decoration-2 underline-offset-4 hover-target">
+                Visit Website
+                <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </a>
+            </div>
+          </motion.article>
           {/* Project 2 */}
           <motion.article variants={itemVariants} className="glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
             <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
@@ -132,6 +216,7 @@ export default function Projects() {
               </a>
             </div>
           </motion.article>
+          
         </motion.div>
 
         <div className="mt-12 text-center md:hidden">

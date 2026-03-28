@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
-const containerVariants: any = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -10,7 +10,7 @@ const containerVariants: any = {
   },
 };
 
-const itemVariants: any = {
+const itemVariants: Variants = {
   hidden: { y: 20, opacity: 0 },
   visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 300, damping: 24 } },
 };
@@ -47,8 +47,12 @@ export default function Skills() {
               </span>
               Frontend
             </h3>
+            <p className="text-sm text-gray-400 leading-relaxed mb-6">
+              Building fast, responsive, and conversion-focused interfaces with modern frontend architecture,
+              reusable component systems, and SEO-friendly page structure.
+            </p>
             <div className="flex flex-wrap gap-2">
-              {['React.js', 'Next.js', 'Tailwind CSS', 'HTML5/CSS3', 'JavaScript (ES6+)'].map((skill) => (
+              {['React.js', 'Next.js', 'Tailwind CSS', 'HTML5/CSS3', 'JavaScript (ES6+)', 'TypeScript', 'Responsive Design', 'Framer Motion', 'UI/UX Implementation', 'Semantic HTML'].map((skill) => (
                 <span key={skill} className="px-3 py-1.5 bg-white/5 text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-500/20 hover:text-primary-300 transition-colors border border-white/10">
                   {skill}
                 </span>
@@ -64,8 +68,12 @@ export default function Skills() {
               </span>
               Backend
             </h3>
+            <p className="text-sm text-gray-400 leading-relaxed mb-6">
+              Developing secure and scalable backend systems for websites, dashboards, CRMs, and custom web
+              applications with clean APIs and maintainable business logic.
+            </p>
             <div className="flex flex-wrap gap-2">
-              {['PHP 8+', 'Laravel', 'Node.js', 'MySQL', 'REST APIs'].map((skill) => (
+              {['PHP 8+', 'Laravel', 'Node.js', 'MySQL', 'REST APIs', 'API Integrations', 'Authentication', 'Role-Based Access', 'CRUD Systems', 'Webhook Automation'].map((skill) => (
                 <span key={skill} className="px-3 py-1.5 bg-white/5 text-gray-300 rounded-lg text-sm font-medium hover:bg-green-500/20 hover:text-green-300 transition-colors border border-white/10">
                   {skill}
                 </span>
@@ -81,8 +89,12 @@ export default function Skills() {
               </span>
               Tools & Methods
             </h3>
+            <p className="text-sm text-gray-400 leading-relaxed mb-6">
+              Using practical workflows for collaboration, version control, design handoff, content structure,
+              and delivery quality across both client projects and in-house product work.
+            </p>
             <div className="flex flex-wrap gap-2">
-              {['Git/GitHub', 'VS Code', 'Figma', 'SEO Optimization', 'Agile/Scrum'].map((skill) => (
+              {['Git/GitHub', 'VS Code', 'Figma', 'SEO Optimization', 'Agile/Scrum', 'Technical SEO', 'Performance Optimization', 'Content Structuring', 'Debugging', 'Deployment Workflows'].map((skill) => (
                 <span key={skill} className="px-3 py-1.5 bg-white/5 text-gray-300 rounded-lg text-sm font-medium hover:bg-purple-500/20 hover:text-purple-300 transition-colors border border-white/10">
                   {skill}
                 </span>

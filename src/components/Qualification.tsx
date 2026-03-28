@@ -35,6 +35,17 @@ export default function Qualification() {
               <p className="text-gray-300 font-medium">BPIT</p>
               <p className="text-gray-500 text-sm">Bhagwan Parshuram Institute of Technology</p>
               <p className="text-gray-600 text-xs mt-1">Affiliated with GGSIUP</p>
+              <p className="text-sm text-gray-400 leading-relaxed mt-4">
+                Built a strong foundation in software engineering, database systems, web technologies,
+                object-oriented programming, and system design principles through formal computer science education.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-5">
+                {["Computer Science", "Software Engineering", "Database Systems", "Web Technologies"].map((item) => (
+                  <span key={item} className="px-3 py-1.5 rounded-full border border-white/10 bg-white/5 text-xs font-semibold text-gray-300">
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           </motion.div>
 
@@ -55,6 +66,17 @@ export default function Qualification() {
               <p className="text-gray-300 font-medium">Professional Certification</p>
               <p className="text-gray-500 text-sm">Full Stack Specialization</p>
               <p className="text-gray-600 text-xs mt-1">Advanced Mastery</p>
+              <p className="text-sm text-gray-400 leading-relaxed mt-4">
+                Strengthened practical knowledge of frontend and backend development, modern deployment patterns,
+                responsive UI construction, API communication, and production-ready application workflows.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-5">
+                {["Full Stack Development", "Frontend Architecture", "Backend Fundamentals", "Deployment Basics"].map((item) => (
+                  <span key={item} className="px-3 py-1.5 rounded-full border border-white/10 bg-white/5 text-xs font-semibold text-gray-300">
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           </motion.div>
 
@@ -75,6 +97,17 @@ export default function Qualification() {
               <p className="text-gray-300 font-medium">Algorithms & Logic</p>
               <p className="text-gray-500 text-sm">Core CS Fundamentals</p>
               <p className="text-gray-600 text-xs mt-1">Problem Solving</p>
+              <p className="text-sm text-gray-400 leading-relaxed mt-4">
+                Improved analytical thinking, optimization skills, and coding efficiency by studying data
+                structures, algorithmic patterns, time complexity, and structured problem-solving techniques.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-5">
+                {["Algorithms", "Complexity Analysis", "Problem Solving", "Logic Building"].map((item) => (
+                  <span key={item} className="px-3 py-1.5 rounded-full border border-white/10 bg-white/5 text-xs font-semibold text-gray-300">
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>

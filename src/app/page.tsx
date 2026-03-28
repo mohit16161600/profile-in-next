@@ -8,45 +8,138 @@ import Contact from "@/components/Contact";
 import InfiniteTechMarquee from "@/components/InfiniteTechMarquee";
 import ServiceAreas from "@/components/ServiceAreas";
 import LatestBlogs from "@/components/LatestBlogs";
+import HomeFaq from "@/components/HomeFaq";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Web Developer & Freelancer in India | Mohit Koli",
+  title: "Freelance Web Developer in India | Mohit Koli | Next.js, React, Laravel",
   description:
-    "Hire the best freelance web developer in India. Mohit Koli delivers high-conversion React, Next.js, and PHP Laravel websites for startups, agencies, and enterprises.",
+    "Mohit Koli is a freelance web developer in India specializing in Next.js, React, PHP, and Laravel websites, dashboards, SEO-friendly business sites, and custom web applications.",
   keywords: [
-    "best web developer",
-    "best freelancer",
+    "freelance web developer in India",
+    "full stack developer India",
+    "Next.js developer India",
+    "React developer India",
+    "Laravel developer India",
+    "website developer India",
+    "custom web application developer",
+    "SEO friendly website developer",
+    "business website developer",
     "freelance web developer",
-    "hire web developer",
-    "React developer",
-    "Next.js developer",
+    "hire web developer in India",
     "PHP Laravel developer",
-    "effectiveness web developer",
-    "local SEO web developer",
-    "web development services",
+    "technical SEO developer",
   ],
   alternates: {
     canonical: "https://mohitkoli.info/",
   },
   openGraph: {
-    title: "Best Freelance Web Developer in India | Mohit Koli",
+    title: "Freelance Web Developer in India | Mohit Koli",
     description:
-      "Top-ranked freelance web developer offering expert React, Next.js, and PHP Laravel development at scale. Delivering trusted digital products for Indian businesses.",
+      "Freelance web developer building high-performance Next.js, React, and Laravel websites, dashboards, and SEO-friendly digital experiences for modern businesses.",
     url: "https://mohitkoli.info/",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Freelance Web Developer in India | Mohit Koli",
+    title: "Freelance Web Developer in India | Mohit Koli",
     description:
-      "Top-ranked freelance web developer offering expert React, Next.js, and PHP Laravel development at scale. Delivering trusted digital products for Indian businesses.",
+      "Freelance web developer building high-performance Next.js, React, and Laravel websites, dashboards, and SEO-friendly digital experiences for modern businesses.",
   },
 };
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Mohit Koli",
+    url: "https://mohitkoli.info/",
+    jobTitle: "Freelance Full Stack Web Developer",
+    knowsAbout: [
+      "Next.js",
+      "React",
+      "Laravel",
+      "PHP",
+      "JavaScript",
+      "Technical SEO",
+      "Web Application Development",
+    ],
+    worksFor: {
+      "@type": "Organization",
+      name: "Sheopals Pvt Ltd",
+    },
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "Bhagwan Parshuram Institute of Technology",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Mohit Koli Web Development Services",
+    url: "https://mohitkoli.info/",
+    areaServed: "India",
+    description:
+      "Freelance web development services for business websites, Next.js applications, React frontends, Laravel backends, dashboards, and SEO-friendly websites.",
+    provider: {
+      "@type": "Person",
+      name: "Mohit Koli",
+    },
+    serviceType: [
+      "Web Development",
+      "Frontend Development",
+      "Full Stack Development",
+      "Technical SEO",
+      "Website Performance Optimization",
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What kind of websites and web applications does Mohit Koli build?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Mohit Koli builds business websites, portfolio websites, landing pages, SEO-focused company sites, custom dashboards, CRM systems, and full-stack web applications using React, Next.js, PHP, Laravel, and modern frontend tooling.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you provide SEO-friendly website development?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. His development process includes semantic page structure, optimized headings, internal linking support, mobile responsiveness, page speed improvements, and technical SEO best practices.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can you help with redesigning an existing website?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. He redesigns outdated websites to improve credibility, user experience, performance, and conversion flow while supporting the existing business goals.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Which technologies do you specialize in?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "His strongest stack includes React, Next.js, JavaScript, Tailwind CSS, PHP, Laravel, MySQL, REST APIs, SEO improvements, and performance optimization for production websites.",
+        },
+      },
+    ],
+  },
+];
 
 export default function Home() {
   return (
     <article itemScope itemType="https://schema.org/AboutPage">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Hero />
       <InfiniteTechMarquee />
       <section aria-label="About Mohit Koli">
@@ -69,6 +162,9 @@ export default function Home() {
         <Projects />
       </section>
       <LatestBlogs />
+      <section aria-label="Frequently Asked Questions" className="content-auto" itemScope itemType="https://schema.org/FAQPage">
+        <HomeFaq />
+      </section>
       <section aria-label="Contact Information" className="content-auto">
         <Contact />
       </section>
