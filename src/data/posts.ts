@@ -13,6 +13,25 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 14,
+        title: "Mohit Koli: Backend Developer, Laravel PHP Engineer, Creator, and Freelance Web Specialist",
+        description: "Discover everything publicly shared about Mohit Koli: career journey, Laravel and PHP expertise, freelance work, professional background, public contact details, and personal brand.",
+        date: "March 30, 2026",
+        readTime: "12 min read",
+        category: "Personal Brand",
+        views: 0,
+        keywords: [
+            "Mohit Koli",
+            "Mohit Koli backend developer",
+            "Mohit Koli Laravel PHP developer",
+            "Mohit Koli contact details",
+            "Mohit Koli profile",
+            "Mohit Koli freelance web developer"
+        ],
+        slug: "mohit-koli-backend-developer-laravel-php-profile",
+        imageSrc: "/assets/mohit-koli-backend-guru-14.jpg",
+    },
+    {
         id: 13,
         title: "Best AI Tools for WhatsApp Business Automation in 2026 (Complete Beginner Guide)",
         description: "Discover the best AI tools for WhatsApp business automation in 2026. Compare features, pricing, use cases, and learn how to automate WhatsApp replies step by step.",

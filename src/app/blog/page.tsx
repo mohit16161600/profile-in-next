@@ -80,9 +80,7 @@ export default function BlogPage() {
                                         </Link>
                                     </h3>
                                     <p className="text-gray-400 mb-4" itemProp="description">
-                                        {/* Placeholder description as content snippet is not in posts.ts yet. 
-                        Ideally, add description to posts.ts */}
-                                        Explore {post.title} and gain insights into {post.category}.
+                                        {post.description}
                                     </p>
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center">
