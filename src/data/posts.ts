@@ -13,6 +13,25 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 15,
+        title: "React se eCommerce website kaise banaye (step by step)",
+        description: "Learn React eCommerce website kaise banaye step by step with simple Hinglish explanation, code snippets, cart system, backend API, and MongoDB setup.",
+        date: "April 3, 2026",
+        readTime: "15 min read",
+        category: "React",
+        views: 0,
+        keywords: [
+            "React eCommerce website kaise banaye",
+            "React eCommerce tutorial in Hindi",
+            "React shopping website kaise banaye",
+            "Node Express MongoDB eCommerce project",
+            "React cart functionality tutorial",
+            "eCommerce website using React step by step"
+        ],
+        slug: "react-se-ecommerce-website-kaise-banaye",
+        imageSrc: "/assets/React se eCommerce website kaise banaye.webp",
+    },
+    {
         id: 14,
         title: "Mohit Koli: Backend Developer, Laravel PHP Engineer, Creator, and Freelance Web Specialist",
         description: "Discover everything publicly shared about Mohit Koli: career journey, Laravel and PHP expertise, freelance work, professional background, public contact details, and personal brand.",

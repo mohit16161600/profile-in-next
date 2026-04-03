@@ -15,6 +15,7 @@ import Blog9 from "@/components/blog-posts/Blog9";
 import Blog10 from "@/components/blog-posts/Blog10";
 import Blog11 from "@/components/blog-posts/Blog11";
 import Blog14 from "@/components/blog-posts/Blog14";
+import Blog15 from "@/components/blog-posts/Blog15";
 import HostingerDiscount from "@/components/blog-posts/HostingerDiscount";
 
 
@@ -32,6 +33,7 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
     "best-ai-tools-to-make-money-online-2026": Blog10,
     "best-ai-tools-for-whatsapp-business-automation-2026": Blog11,
     "mohit-koli-backend-developer-laravel-php-profile": Blog14,
+    "react-se-ecommerce-website-kaise-banaye": Blog15,
     "hostinger-discount-90-coupon-code": HostingerDiscount,
     // Future posts will be added here
 };
