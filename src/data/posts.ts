@@ -13,6 +13,24 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 16,
+        title: "How to Make Money from Blogging (Beginner Guide 2026)",
+        description: "Looking to start a blog and earn money in 2026? This ultimate beginner guide covers the best ways to monetize, blogging tips for beginners, and income reality in India.",
+        date: "April 13, 2026",
+        readTime: "20 min read",
+        category: "Blogging",
+        views: 0,
+        keywords: [
+            "make money blogging for beginners",
+            "how to start a blog and earn money",
+            "blogging income in India",
+            "best ways to monetize a blog",
+            "blogging tips for beginners 2026"
+        ],
+        slug: "how-to-make-money-blogging-for-beginners-2026",
+        imageSrc: "/assets/make-money-blogging-2026.png",
+    },
+    {
         id: 15,
         title: "React se eCommerce website kaise banaye (step by step)",
         description: "Learn React eCommerce website kaise banaye step by step with simple Hinglish explanation, code snippets, cart system, backend API, and MongoDB setup.",
