@@ -354,18 +354,18 @@ export default function AIComparison2026() {
           <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-3xl border border-white/10 mb-12">
             <p className="text-xl font-bold mb-6 text-white text-center">Follow this simple rule in 2026:</p>
             <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                    <div className="h-10 w-10 rounded-full bg-purple-500 flex items-center justify-center font-bold">1</div>
-                    <p className="text-gray-300">If you want an <strong>Agent</strong> to do your work → <strong>ChatGPT</strong></p>
-                </div>
-                <div className="flex items-center gap-4">
-                    <div className="h-10 w-10 rounded-full bg-blue-500 flex items-center justify-center font-bold">2</div>
-                    <p className="text-gray-300">If you need to analyze <strong>Massive Data/Video</strong> → <strong>Gemini</strong></p>
-                </div>
-                <div className="flex items-center gap-4">
-                    <div className="h-10 w-10 rounded-full bg-green-500 flex items-center justify-center font-bold">3</div>
-                    <p className="text-gray-300">If you want the <strong>Highest Quality Code/Writing</strong> → <strong>Claude</strong></p>
-                </div>
+              <div className="flex items-center gap-4">
+                <div className="h-10 w-10 rounded-full bg-purple-500 flex items-center justify-center font-bold">1</div>
+                <p className="text-gray-300">If you want an <strong>Agent</strong> to do your work → <strong>ChatGPT</strong></p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="h-10 w-10 rounded-full bg-blue-500 flex items-center justify-center font-bold">2</div>
+                <p className="text-gray-300">If you need to analyze <strong>Massive Data/Video</strong> → <strong>Gemini</strong></p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="h-10 w-10 rounded-full bg-green-500 flex items-center justify-center font-bold">3</div>
+                <p className="text-gray-300">If you want the <strong>Highest Quality Code/Writing</strong> → <strong>Claude</strong></p>
+              </div>
             </div>
           </div>
 
