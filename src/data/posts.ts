@@ -13,6 +13,25 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 18,
+        title: "Will AI Replace Your Job? The Real Truth (2026)",
+        description: "Worried about AI taking your job? Discover the real truth about AI and jobs in 2026. See which roles are safe and how to future-proof your career today!",
+        date: "May 1, 2026",
+        readTime: "35 min read",
+        category: "AI & Career",
+        views: 0,
+        keywords: [
+            "Will AI replace jobs",
+            "AI and jobs 2026",
+            "jobs safe from AI",
+            "AI future jobs",
+            "AI job loss truth",
+            "impact of AI on jobs"
+        ],
+        slug: "will-ai-replace-your-job-2026",
+        imageSrc: "/assets/ai-replace-job.webp",
+    },
+    {
         id: 17,
         title: "ChatGPT vs Gemini vs Claude: The Ultimate 2026 AI Showdown",
         description: "Discover the best AI in 2026. We compare ChatGPT, Google Gemini, and Anthropic Claude on coding, writing, and accuracy. See the shocking winner inside!",

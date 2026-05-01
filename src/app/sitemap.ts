@@ -3,7 +3,7 @@ import { BLOG_POSTS } from '@/data/posts';
 import { SEO_LOCATIONS } from '@/data/locations';
 
 export const revalidate = 86400; // revalidate every 24 hours
-const LAST_MAJOR_CONTENT_UPDATE = '2026-03-21';
+const LAST_MAJOR_CONTENT_UPDATE = '2026-05-02';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://mohitkoli.info';
