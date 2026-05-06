@@ -76,6 +76,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body
         className="antialiased font-sans"
+        suppressHydrationWarning
       >
         <SmoothScroll>
           <AnimatedCursor />

@@ -13,6 +13,24 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 19,
+        title: "25 Free AI Tools That Will Make You Quit Your Paid Subscriptions in 2026",
+        description: "Stop wasting money! Discover the top 25 free AI tools in 2026 that replace expensive software like Photoshop, Midjourney, and Canva Pro. Save thousands today!",
+        date: "May 6, 2026",
+        readTime: "45 min read",
+        category: "AI Tools",
+        views: 0,
+        keywords: [
+            "free ai tools",
+            "best ai tools 2026",
+            "ai tools list",
+            "ai tools for productivity",
+            "ai software replacement"
+        ],
+        slug: "top-25-free-ai-tools-2026",
+        imageSrc: "/assets/ai-free-tool.webp",
+    },
+    {
         id: 18,
         title: "Will AI Replace Your Job? The Real Truth (2026)",
         description: "Worried about AI taking your job? Discover the real truth about AI and jobs in 2026. See which roles are safe and how to future-proof your career today!",
