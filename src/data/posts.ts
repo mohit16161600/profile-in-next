@@ -13,6 +13,45 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 21,
+        title: "15+ ChatGPT 'God Mode' Features: The Hidden Hacks Nobody Talks About (2026)",
+        description: "Unlock ChatGPT God Mode. Discover the hidden features, secret hacks, and advanced technical workflows that 99% of users don't know about. High-level AI tricks for pros.",
+        date: "May 10, 2026",
+        readTime: "65 min read",
+        category: "AI Hacks",
+        views: 0,
+        keywords: [
+            "ChatGPT God Mode",
+            "ChatGPT hacks",
+            "Advanced ChatGPT features",
+            "AI productivity hacks",
+            "Hidden ChatGPT tricks",
+            "ChatGPT for pros"
+        ],
+        slug: "chatgpt-hidden-features-hacks",
+        imageSrc: "/assets/hacker.webp",
+    },
+    {
+        id: 20,
+        title: "15+ Hidden ChatGPT Features That Will Change How You Work Forever (2026)",
+        description: "Discover the hidden ChatGPT features nobody talks about. Learn secret hacks for developers, students, and creators to 10x your productivity with these advanced AI tricks.",
+        date: "May 9, 2026",
+        readTime: "60 min read",
+        category: "AI Tips",
+        views: 0,
+        keywords: [
+            "Hidden ChatGPT features",
+            "ChatGPT secret features",
+            "Best ChatGPT tricks",
+            "ChatGPT tips and tricks",
+            "Advanced ChatGPT features",
+            "AI productivity tools",
+            "ChatGPT hacks"
+        ],
+        slug: "hidden-chatgpt-features",
+        imageSrc: "/assets/more about chatgpt.webp",
+    },
+    {
         id: 19,
         title: "25 Free AI Tools That Will Make You Quit Your Paid Subscriptions in 2026",
         description: "Stop wasting money! Discover the top 25 free AI tools in 2026 that replace expensive software like Photoshop, Midjourney, and Canva Pro. Save thousands today!",
