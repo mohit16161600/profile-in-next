@@ -156,18 +156,29 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
 
                     <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr]">
                         <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
-                            <p className="text-sm uppercase tracking-[0.3em] text-primary-400">Local SEO page</p>
+                            <p className="text-sm uppercase tracking-[0.3em] text-primary-400">Web development in {locationData.name}</p>
                             <h1 className="mt-4 text-3xl md:text-4xl font-bold text-white">
-                                Web Developer in {locationData.name}
+                                Freelance Web Developer in {locationData.name}
                             </h1>
                             <p className="mt-4 text-lg leading-8 text-gray-300">
-                                I work with teams in {locationData.name} that need {locationData.serviceFocus}. These pages are built to make it easy for clients to find the right service area, understand what I offer, and move directly into a project discussion.
+                                {locationData.intro}
+                            </p>
+                            <h2 className="mt-8 text-2xl font-semibold text-white">
+                                Industries I commonly work with in {locationData.name}
+                            </h2>
+                            <ul className="mt-4 space-y-2 text-gray-300 leading-8 list-disc list-inside">
+                                {locationData.industries.map((industry) => (
+                                    <li key={industry}>{industry}</li>
+                                ))}
+                            </ul>
+                            <h2 className="mt-8 text-2xl font-semibold text-white">
+                                What you get when you hire me in {locationData.name}
+                            </h2>
+                            <p className="mt-4 text-lg leading-8 text-gray-300">
+                                Every {locationData.name} project ships with a clean, type-safe Next.js or Laravel codebase, real Core Web Vitals scores (LCP under 2.5s, CLS under 0.1), proper on-page SEO with structured data, and a deployment that you actually own. No black-box CMS, no template lock-in, no surprise monthly fees.
                             </p>
                             <p className="mt-4 text-lg leading-8 text-gray-300">
-                                As the best freelance web developer in {locationData.name}, I focus on outcome-based solutions: fast page speed, readable code, SEO-friendly markup, and measurable revenue growth.
-                            </p>
-                            <p className="mt-4 text-lg leading-8 text-gray-300">
-                                The {locationData.name} page supports businesses across {locationData.region}, with strong internal links, clear canonical URLs, and indexable content designed around real web development services instead of thin doorway pages.
+                                I work async-first with {locationData.name} teams on Slack, Notion, or Linear, with weekly demos and a written change log. If you need a developer who explains what's happening at every step instead of disappearing for two weeks, this is the right fit.
                             </p>
                         </div>
 

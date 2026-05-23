@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "15+ Hidden ChatGPT Features That Will Change How You Work Forever (2026)",
     description: "The ultimate guide to secret ChatGPT features that 99% of people don't know exist.",
-    images: ["/assets/more about chatgpt.webp"],
+    images: ["/assets/more-about-chatgpt.webp"],
   },
 };
 
@@ -91,7 +91,7 @@ export default function HiddenChatGPTFeatures() {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             "headline": "15+ Hidden ChatGPT Features That Will Change How You Work Forever (2026)",
-            "image": "https://mohitkoli.info/assets/more about chatgpt.webp",
+            "image": "https://mohitkoli.info/assets/more-about-chatgpt.webp",
             "author": {
               "@type": "Person",
               "name": "Mohit Koli"
@@ -101,7 +101,7 @@ export default function HiddenChatGPTFeatures() {
               "name": "Mohit Koli",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://mohitkoli.info/logo.png"
+                "url": "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg"
               }
             },
             "datePublished": "2026-05-09",
@@ -155,7 +155,7 @@ export default function HiddenChatGPTFeatures() {
 
         <div className="relative w-full mb-16 rounded-[2.5rem] overflow-hidden border border-white/10 shadow-[0_0_100px_rgba(249,115,22,0.1)] group">
           <Image
-            src="/assets/more about chatgpt.webp"
+            src="/assets/more-about-chatgpt.webp"
             alt="Hidden ChatGPT features and secret tricks guide 2026"
             width={1280}
             height={720}

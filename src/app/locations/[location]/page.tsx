@@ -1,12 +1,10 @@
 import { permanentRedirect } from "next/navigation";
-import { getLocationBySlug, SEO_LOCATIONS } from "@/data/locations";
+import { getLocationBySlug } from "@/data/locations";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
-    return SEO_LOCATIONS.map((location) => ({
-        location: location.slug,
-    }));
+    return [];
 }
 
 export default async function LegacyLocationPage({ params }: { params: Promise<{ location: string }> }) {

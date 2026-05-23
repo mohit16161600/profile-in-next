@@ -10,16 +10,12 @@ import Blog4 from "@/components/blog-posts/Blog4";
 import Blog5 from "@/components/blog-posts/Blog5";
 import Blog6 from "@/components/blog-posts/Blog6";
 import Blog7 from "@/components/blog-posts/Blog7";
-import Blog8 from "@/components/blog-posts/Blog8";
 import Blog9 from "@/components/blog-posts/Blog9";
 import Blog10 from "@/components/blog-posts/Blog10";
 import Blog11 from "@/components/blog-posts/Blog11";
 import Blog14 from "@/components/blog-posts/Blog14";
 import Blog15 from "@/components/blog-posts/Blog15";
-import HostingerDiscount from "@/components/blog-posts/HostingerDiscount";
 
-
-// Mapping of slug to content component
 const CONTENT_MAP: Record<string, React.ComponentType> = {
     "ai-in-web-development-comprehensive-guide": Blog1,
     "the-truth-about-ai-coding-assistants": Blog2,
@@ -28,14 +24,11 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
     "hostinger-vps-hosting-review-discount": Blog5,
     "frontend-vs-backend-development-guide": Blog6,
     "is-react-worth-learning-2026": Blog7,
-    "will-ai-replace-web-developers-2026": Blog8,
     "build-website-with-ai-step-by-step": Blog9,
     "best-ai-tools-to-make-money-online-2026": Blog10,
     "best-ai-tools-for-whatsapp-business-automation-2026": Blog11,
     "mohit-koli-backend-developer-laravel-php-profile": Blog14,
     "react-se-ecommerce-website-kaise-banaye": Blog15,
-    "hostinger-discount-90-coupon-code": HostingerDiscount,
-    // Future posts will be added here
 };
 
 export async function generateStaticParams() {
@@ -79,8 +72,133 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
     const ContentComponent = CONTENT_MAP[slug];
 
+    const relatedPosts = BLOG_POSTS
+        .filter((p) => p.slug !== slug && (p.category === post.category || p.keywords.some((k) => post.keywords.includes(k))))
+        .slice(0, 4);
+
+    const AUTHORITY_LINKS: Record<string, { label: string; href: string; source: string }[]> = {
+        "AI Hacks": [
+            { label: "OpenAI ChatGPT product overview", href: "https://openai.com/chatgpt/", source: "OpenAI" },
+            { label: "Google AI principles and research", href: "https://ai.google/", source: "Google" },
+            { label: "Anthropic Claude documentation", href: "https://www.anthropic.com/claude", source: "Anthropic" },
+        ],
+        "AI Tips": [
+            { label: "OpenAI ChatGPT product overview", href: "https://openai.com/chatgpt/", source: "OpenAI" },
+            { label: "Anthropic Claude — official", href: "https://www.anthropic.com/claude", source: "Anthropic" },
+            { label: "ChatGPT prompt engineering guide", href: "https://platform.openai.com/docs/guides/prompt-engineering", source: "OpenAI Platform" },
+        ],
+        "AI Tools": [
+            { label: "Hugging Face — open-source AI models", href: "https://huggingface.co/", source: "Hugging Face" },
+            { label: "GitHub Copilot official page", href: "https://github.com/features/copilot", source: "GitHub" },
+            { label: "Google Gemini overview", href: "https://gemini.google.com/", source: "Google" },
+        ],
+        "AI Comparison": [
+            { label: "OpenAI ChatGPT", href: "https://openai.com/chatgpt/", source: "OpenAI" },
+            { label: "Google Gemini", href: "https://gemini.google.com/", source: "Google" },
+            { label: "Anthropic Claude", href: "https://www.anthropic.com/claude", source: "Anthropic" },
+        ],
+        "AI & Career": [
+            { label: "World Economic Forum — Future of Jobs", href: "https://www.weforum.org/reports/the-future-of-jobs-report-2023/", source: "WEF" },
+            { label: "McKinsey — generative AI and the workforce", href: "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america", source: "McKinsey" },
+        ],
+        "AI & Web Development": [
+            { label: "MDN Web Docs", href: "https://developer.mozilla.org/", source: "Mozilla" },
+            { label: "Next.js documentation", href: "https://nextjs.org/docs", source: "Vercel" },
+            { label: "React documentation", href: "https://react.dev/", source: "Meta" },
+        ],
+        "AI Coding": [
+            { label: "GitHub Copilot", href: "https://github.com/features/copilot", source: "GitHub" },
+            { label: "Cursor IDE", href: "https://cursor.com/", source: "Cursor" },
+        ],
+        "AI Development": [
+            { label: "MDN Web Docs", href: "https://developer.mozilla.org/", source: "Mozilla" },
+            { label: "OpenAI API reference", href: "https://platform.openai.com/docs", source: "OpenAI" },
+        ],
+        React: [
+            { label: "Official React docs", href: "https://react.dev/", source: "Meta" },
+            { label: "Next.js App Router guide", href: "https://nextjs.org/docs/app", source: "Vercel" },
+            { label: "MDN — JavaScript reference", href: "https://developer.mozilla.org/docs/Web/JavaScript", source: "Mozilla" },
+        ],
+        JavaScript: [
+            { label: "MDN JavaScript reference", href: "https://developer.mozilla.org/docs/Web/JavaScript", source: "Mozilla" },
+            { label: "TC39 ECMAScript specifications", href: "https://tc39.es/", source: "TC39" },
+            { label: "Node.js documentation", href: "https://nodejs.org/en/docs", source: "Node.js" },
+        ],
+        Career: [
+            { label: "Stack Overflow Developer Survey", href: "https://survey.stackoverflow.co/", source: "Stack Overflow" },
+            { label: "GitHub Octoverse report", href: "https://octoverse.github.com/", source: "GitHub" },
+        ],
+        Hosting: [
+            { label: "Hostinger — official", href: "https://www.hostinger.com/", source: "Hostinger" },
+            { label: "Cloudflare — web performance basics", href: "https://www.cloudflare.com/learning/", source: "Cloudflare" },
+        ],
+        Blogging: [
+            { label: "Google Search Central — SEO starter guide", href: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide", source: "Google" },
+            { label: "Google AdSense — official", href: "https://adsense.google.com/start/", source: "Google" },
+        ],
+        "Personal Brand": [
+            { label: "LinkedIn — Mohit Koli", href: "https://www.linkedin.com/in/mohit-koli-b47260213", source: "LinkedIn" },
+            { label: "GitHub — Mohit Koli", href: "https://github.com/mohit16161600", source: "GitHub" },
+        ],
+    };
+
+    const authorityLinks = AUTHORITY_LINKS[post.category] ?? [];
+
+    const publishedISO = new Date(post.date).toISOString();
+    const canonical = `https://mohitkoli.info/blog/${post.slug}`;
+    const absoluteImage = post.imageSrc.startsWith("http")
+        ? post.imageSrc
+        : `https://mohitkoli.info${post.imageSrc}`;
+
+    const articleSchema = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: post.title,
+        description: post.description,
+        image: absoluteImage,
+        datePublished: publishedISO,
+        dateModified: publishedISO,
+        author: {
+            "@type": "Person",
+            name: "Mohit Koli",
+            url: "https://mohitkoli.info/profile",
+            jobTitle: "Senior Full Stack Developer",
+            sameAs: [
+                "https://github.com/mohit16161600",
+                "https://www.linkedin.com/in/mohit-koli-b47260213",
+                "https://x.com/mohitko86979490",
+            ],
+        },
+        publisher: {
+            "@type": "Person",
+            name: "Mohit Koli",
+            logo: {
+                "@type": "ImageObject",
+                url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+            },
+        },
+        mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+        keywords: post.keywords.join(", "),
+        articleSection: post.category,
+        inLanguage: "en-IN",
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.info/" },
+            { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.info/blog" },
+            { "@type": "ListItem", position: 3, name: post.title, item: canonical },
+        ],
+    };
+
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, breadcrumbSchema]) }}
+            />
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-8">
                 <div className="lg:grid lg:grid-cols-4 lg:gap-8">
                     {/* Article Content */}
@@ -149,6 +267,79 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                 <button className="bg-[#0077b5]/20 text-[#0077b5] border border-[#0077b5]/30 px-4 py-2 rounded-lg hover:bg-[#0077b5] hover:text-white transition-colors">Share on LinkedIn</button>
                             </div>
                         </div>
+
+                        {authorityLinks.length > 0 && (
+                            <section className="mt-12 glass rounded-2xl border border-white/10 p-6" aria-labelledby="further-reading">
+                                <h2 id="further-reading" className="text-xl md:text-2xl font-bold text-white mb-2">Further reading from trusted sources</h2>
+                                <p className="text-sm text-gray-400 mb-5">
+                                    Cross-checked references from primary, authoritative sources — useful if you want to go deeper on this topic.
+                                </p>
+                                <ul className="space-y-3">
+                                    {authorityLinks.map((link) => (
+                                        <li key={link.href} className="flex items-start gap-3">
+                                            <span className="mt-1 inline-block w-1.5 h-1.5 rounded-full bg-primary-400" aria-hidden="true" />
+                                            <a
+                                                href={link.href}
+                                                rel="noopener noreferrer external"
+                                                target="_blank"
+                                                className="text-primary-300 hover:text-primary-200 transition-colors underline-offset-4 hover:underline"
+                                            >
+                                                {link.label}
+                                            </a>
+                                            <span className="text-xs text-gray-500 ml-1">— {link.source}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </section>
+                        )}
+
+                        {/* Author E-E-A-T block — signals expertise to Google */}
+                        <aside className="mt-12 glass rounded-2xl border border-white/10 p-6 flex flex-col sm:flex-row gap-6 items-start">
+                            <Image
+                                src="/assets/mohit-koli-profile-photo.jpg"
+                                alt="Mohit Koli, Senior Full Stack Developer"
+                                width={88}
+                                height={88}
+                                className="rounded-full object-cover flex-shrink-0"
+                            />
+                            <div>
+                                <p className="text-xs uppercase tracking-[0.25em] text-primary-400 mb-1">About the author</p>
+                                <h3 className="text-xl font-bold text-white">Mohit Koli — Senior Full Stack Developer</h3>
+                                <p className="mt-3 text-gray-300 leading-7">
+                                    I&apos;ve been shipping production web apps in React, Next.js, PHP, and Laravel since 2022, working with founders and agencies across India on real revenue-driving sites. I write about the tools, frameworks, and AI workflows I actually use — not theory.
+                                </p>
+                                <div className="mt-4 flex flex-wrap gap-4 text-sm">
+                                    <Link href="/profile" className="text-primary-400 hover:text-primary-300 transition-colors">Full profile →</Link>
+                                    <a href="https://github.com/mohit16161600" rel="author noopener" target="_blank" className="text-primary-400 hover:text-primary-300 transition-colors">GitHub</a>
+                                    <a href="https://www.linkedin.com/in/mohit-koli-b47260213" rel="author noopener" target="_blank" className="text-primary-400 hover:text-primary-300 transition-colors">LinkedIn</a>
+                                    <a href="https://x.com/mohitko86979490" rel="author noopener" target="_blank" className="text-primary-400 hover:text-primary-300 transition-colors">X (Twitter)</a>
+                                </div>
+                            </div>
+                        </aside>
+
+                        {relatedPosts.length > 0 && (
+                            <section className="mt-16 border-t border-white/10 pt-12" aria-labelledby="related-articles">
+                                <h2 id="related-articles" className="text-2xl md:text-3xl font-bold text-white mb-8">
+                                    Continue reading
+                                </h2>
+                                <div className="grid gap-6 sm:grid-cols-2">
+                                    {relatedPosts.map((related) => (
+                                        <Link
+                                            key={related.slug}
+                                            href={`/blog/${related.slug}`}
+                                            className="group glass rounded-2xl border border-white/10 p-5 hover:border-primary-500/40 transition-colors block"
+                                        >
+                                            <p className="text-xs uppercase tracking-[0.25em] text-primary-400">{related.category}</p>
+                                            <h3 className="mt-2 text-lg font-semibold text-white group-hover:text-primary-400 transition-colors line-clamp-2">
+                                                {related.title}
+                                            </h3>
+                                            <p className="mt-3 text-sm text-gray-400 line-clamp-2">{related.description}</p>
+                                            <p className="mt-4 text-xs text-gray-500">{related.date} • {related.readTime}</p>
+                                        </Link>
+                                    ))}
+                                </div>
+                            </section>
+                        )}
 
                     </article>
 

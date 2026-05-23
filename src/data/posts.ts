@@ -32,26 +32,6 @@ export const BLOG_POSTS: BlogPost[] = [
         imageSrc: "/assets/hacker.webp",
     },
     {
-        id: 20,
-        title: "15+ Hidden ChatGPT Features That Will Change How You Work Forever (2026)",
-        description: "Discover the hidden ChatGPT features nobody talks about. Learn secret hacks for developers, students, and creators to 10x your productivity with these advanced AI tricks.",
-        date: "May 9, 2026",
-        readTime: "60 min read",
-        category: "AI Tips",
-        views: 0,
-        keywords: [
-            "Hidden ChatGPT features",
-            "ChatGPT secret features",
-            "Best ChatGPT tricks",
-            "ChatGPT tips and tricks",
-            "Advanced ChatGPT features",
-            "AI productivity tools",
-            "ChatGPT hacks"
-        ],
-        slug: "hidden-chatgpt-features",
-        imageSrc: "/assets/more about chatgpt.webp",
-    },
-    {
         id: 19,
         title: "25 Free AI Tools That Will Make You Quit Your Paid Subscriptions in 2026",
         description: "Stop wasting money! Discover the top 25 free AI tools in 2026 that replace expensive software like Photoshop, Midjourney, and Canva Pro. Save thousands today!",
@@ -219,18 +199,6 @@ export const BLOG_POSTS: BlogPost[] = [
         imageSrc: "/assets/hostinger-offer.webp",
     },
     {
-        id: 10,
-        title: "Hostinger Coupon Code 2026: Get Up to 90% OFF + Free Domain (Verified)",
-        description: "Looking for a Hostinger discount? Use referral code MOHITKOLI to get up to 90% OFF plus a free domain and SSL. Verified Hostinger promo code for 2026.",
-        date: "March 21, 2026",
-        readTime: "6 min read",
-        category: "Hosting",
-        views: 0,
-        keywords: ["hostinger coupon code", "hostinger discount", "hostinger referral code", "mohitkoli", "web hosting 2026"],
-        slug: "hostinger-discount-90-coupon-code",
-        imageSrc: "/assets/hostinger-promo.png",
-    },
-    {
         id: 9,
         title: "How to Use AI to Build a Full Website in 30 Minutes (Step-by-Step Guide – 2026)",
         description: "Learn how to build a professional website in under 30 minutes using AI tools like ChatGPT, Claude, and Midjourney. A complete 2026 guide for beginners.",
@@ -241,25 +209,6 @@ export const BLOG_POSTS: BlogPost[] = [
         keywords: ["ai", "web development", "chatgpt", "website building", "next.js", "2026"],
         slug: "build-website-with-ai-step-by-step",
         imageSrc: "/assets/AI-in-Web-Development-2.jpg",
-    },
-    {
-        id: 8,
-        title: "Will AI Replace Web Developers in 2026? Reality vs Hype",
-        description: "Will AI replace web developers in 2026? Explore the real impact of AI on frontend and backend jobs, what changes, and how developers can stay ahead.",
-        date: "Jan 21, 2026",
-        readTime: "12 min read",
-        category: "AI & Career",
-        views: 120,
-        keywords: [
-            "Will AI replace web developers in 2026",
-            "AI and web development jobs",
-            "future of web development",
-            "AI replacing programmers",
-            "frontend and backend AI impact",
-            "developer career in AI era"
-        ],
-        slug: "will-ai-replace-web-developers-2026",
-        imageSrc: "/assets/AiBLog.png",
     },
     {
         id: 7,
@@ -299,7 +248,7 @@ export const BLOG_POSTS: BlogPost[] = [
             'web development career path'
         ],
         slug: 'frontend-vs-backend-development-guide',
-        imageSrc: '/assets/website%20developer.png',
+        imageSrc: '/assets/website-developer.png',
     },
     {
         id: 5,

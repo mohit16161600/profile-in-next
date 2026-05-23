@@ -47,14 +47,10 @@ export const metadata: Metadata = {
     site: "@mohitko86979490",
   },
   icons: {
-    icon: [
-      { url: "/assets/mohit-koli-profile-photo.jpg", sizes: "32x32", type: "image/jpeg" },
-      { url: "/assets/mohit-koli-profile-photo.jpg", sizes: "16x16", type: "image/jpeg" },
-    ],
+    icon: "/favicon.ico",
     apple: "/assets/mohit-koli-profile-photo.jpg",
-    shortcut: "/assets/mohit-koli-profile-photo.jpg",
+    shortcut: "/favicon.ico",
   },
-  manifest: "/manifest.json",
   category: "technology",
   other: {
     "geo.region": "IN",

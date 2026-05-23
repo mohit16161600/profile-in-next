@@ -89,7 +89,7 @@ export default function ChatGPTGodModeHacks() {
               "name": "Mohit Koli",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://mohitkoli.info/logo.png"
+                "url": "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg"
               }
             },
             "datePublished": "2026-05-10",
