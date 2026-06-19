@@ -28,6 +28,8 @@ export default function AnimatedCursor() {
       return;
     }
     
+    // Client-only mount flag to avoid SSR hydration mismatch for the custom cursor.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
 
     const updateMousePosition = (e: MouseEvent) => {

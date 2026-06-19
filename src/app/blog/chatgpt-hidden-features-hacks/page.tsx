@@ -200,9 +200,9 @@ export default function ChatGPTGodModeHacks() {
             God Mode users treat it like an <strong>Operating System</strong>.
           </p>
           <div className="bg-[#0a0a0a] p-8 rounded-xl border border-green-500/10 mb-12 font-mono text-sm leading-relaxed">
-            <span className="text-green-500 font-bold">// THE WRONG WAY:</span><br/>
+            <span className="text-green-500 font-bold">{"// THE WRONG WAY:"}</span><br/>
             "Write a script for a video about coffee."<br/><br/>
-            <span className="text-blue-400 font-bold">// THE GOD MODE WAY:</span><br/>
+            <span className="text-blue-400 font-bold">{"// THE GOD MODE WAY:"}</span><br/>
             "Act as a professional storyboard artist for a high-end luxury brand. Create a 3-column script for a 30-second commercial. Column 1: Visuals. Column 2: Audio/Voiceover. Column 3: Emotion/Atmosphere. Target audience: High-net-worth individuals in their 30s. Tone: Minimalist and sophisticated."
           </div>
 
@@ -239,7 +239,7 @@ export default function ChatGPTGodModeHacks() {
             You can use ChatGPT to mock entire APIs, generate dummy data, or even convert massive unstructured text into a database-ready format.
           </p>
           <div className="bg-[#0a0a0a] p-6 rounded-xl border border-white/5 mb-12 font-mono text-xs overflow-x-auto">
-            <span className="text-gray-500 italic">// Prompt: "Convert this list of 50 startups into a JSON array with 'name', 'founder', and 'valuation' keys."</span><br/>
+            <span className="text-gray-500 italic">{`// Prompt: "Convert this list of 50 startups into a JSON array with 'name', 'founder', and 'valuation' keys."`}</span><br/>
             [<br/>
             &nbsp;&nbsp;{ "{" }<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;"name": "QuantumLeap",<br/>

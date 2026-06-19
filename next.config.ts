@@ -34,6 +34,13 @@ const REMOVED_LOCATION_REDIRECTS = [
 ];
 
 const nextConfig: NextConfig = {
+    images: {
+        // Allow self-authored branded SVG hero images to be served via next/image.
+        // Safe here: every SVG under /public/assets is authored in-repo (no remote/user SVG).
+        dangerouslyAllowSVG: true,
+        contentDispositionType: "attachment",
+        contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    },
     async redirects() {
         const locationRedirects = REMOVED_LOCATION_REDIRECTS.flatMap((entry) => [
             {

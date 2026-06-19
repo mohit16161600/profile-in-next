@@ -352,7 +352,7 @@ export default function AIJobTruth2026() {
               AI won't replace you. But a human using AI *will* replace a human who isn't. The future isn't scary if you're the one building it.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="bg-white text-orange-700 px-10 py-4 rounded-xl font-bold hover:bg-gray-100 transition shadow-lg text-lg">
+              <Link href="/#contact" className="bg-white text-orange-700 px-10 py-4 rounded-xl font-bold hover:bg-gray-100 transition shadow-lg text-lg">
                 Get Career Guidance 🚀
               </Link>
               <Link href="/blog" className="bg-orange-800 text-white px-10 py-4 rounded-xl font-bold hover:bg-orange-900 transition border border-orange-400/30 text-lg">

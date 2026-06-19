@@ -108,15 +108,6 @@ export default function BlogPage() {
                                 </div>
                             </article>
                         ))}
-
-                        <div className="text-center mt-12">
-                            <button
-                                className="bg-primary-600 text-white px-8 py-3 rounded-xl hover:bg-primary-500 transition-colors font-medium shadow-lg hover:shadow-primary-600/30"
-                                aria-label="Load more technology articles"
-                            >
-                                Load More Articles
-                            </button>
-                        </div>
                     </div>
 
                     <BlogSidebar />

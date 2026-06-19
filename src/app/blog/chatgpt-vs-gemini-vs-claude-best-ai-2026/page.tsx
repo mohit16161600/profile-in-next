@@ -393,7 +393,7 @@ export default function AIComparison2026() {
               <Link href="/blog" className="bg-white text-purple-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition shadow-lg">
                 Explore More Guides 🚀
               </Link>
-              <Link href="/contact" className="bg-purple-800 text-white px-8 py-3 rounded-xl font-bold hover:bg-purple-900 transition border border-purple-400/30">
+              <Link href="/#contact" className="bg-purple-800 text-white px-8 py-3 rounded-xl font-bold hover:bg-purple-900 transition border border-purple-400/30">
                 Get Personalized Help
               </Link>
             </div>

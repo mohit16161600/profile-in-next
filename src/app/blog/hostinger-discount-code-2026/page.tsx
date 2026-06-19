@@ -61,11 +61,15 @@ export default function HostingerDiscountBlog() {
         <div className="rounded-3xl border border-primary-500/40 bg-gradient-to-r from-red-600/20 via-purple-600/15 to-blue-600/20 p-5 mb-6 shadow-lg shadow-black/40">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
             <div className="flex-shrink-0 w-full sm:w-1/3">
-              <img
-                src="/assets/hostinger-offer.webp"
-                alt="Hostinger Offer"
-                className="w-full h-32 sm:h-28 object-contain rounded-xl border border-white/20"
-              />
+              <div className="relative w-full h-32 sm:h-28 rounded-xl border border-white/20 overflow-hidden">
+                <Image
+                  src="/assets/hostinger-offer.webp"
+                  alt="Hostinger discount offer for India 2026"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                />
+              </div>
             </div>
             <div className="flex-1">
               <h3 className="text-2xl font-bold text-white mb-2">CLAIM UP TO 90% OFF</h3>

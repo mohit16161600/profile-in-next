@@ -2,10 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import Typewriter from "./Typewriter";
+import { motion, type Variants } from "framer-motion";
 
-const containerVariants: any = {
+const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -16,7 +15,7 @@ const containerVariants: any = {
     },
 };
 
-const itemVariants: any = {
+const itemVariants: Variants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
         y: 0,

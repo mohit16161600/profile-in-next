@@ -1,5 +1,6 @@
 import { BLOG_POSTS } from "@/data/posts";
 import BlogSidebar from "@/components/BlogSidebar";
+import ShareButtons from "@/components/ShareButtons";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -258,14 +259,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             {ContentComponent ? <ContentComponent /> : <p>Content coming soon...</p>}
                         </div>
 
-                        {/* Social Share (Simplified) */}
+                        {/* Social Share */}
                         <div className="glass rounded-xl shadow-sm p-6 mt-12 border border-white/5">
                             <h3 className="text-lg font-bold text-white mb-4">Share This Article</h3>
-                            <div className="flex flex-wrap gap-3">
-                                {/* Add share buttons here if needed, reused across posts */}
-                                <button className="bg-primary-600/20 text-primary-400 border border-primary-500/30 px-4 py-2 rounded-lg hover:bg-primary-600 hover:text-white transition-colors">Share on Twitter</button>
-                                <button className="bg-[#0077b5]/20 text-[#0077b5] border border-[#0077b5]/30 px-4 py-2 rounded-lg hover:bg-[#0077b5] hover:text-white transition-colors">Share on LinkedIn</button>
-                            </div>
+                            <ShareButtons url={canonical} title={post.title} />
                         </div>
 
                         {authorityLinks.length > 0 && (
