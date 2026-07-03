@@ -3,6 +3,8 @@ export interface BlogPost {
     title: string;
     description: string;
     date: string;
+    /** Content-freshness date — feeds sitemap <lastmod> and BlogPosting dateModified. Set when a post is meaningfully updated. */
+    updated?: string;
     readTime: string;
     category: string;
     views: number;
@@ -12,6 +14,98 @@ export interface BlogPost {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+    {
+        id: 35,
+        title: "How to Get 90% OFF on Hostinger in 2026 (Step-by-Step Deal Guide)",
+        description: "Get up to 90% OFF Hostinger in 2026 by stacking the sale with an extra 20% referral discount. Real prices, savings tables, free domain trick, and a 7-step buying guide.",
+        date: "July 2, 2026",
+        readTime: "12 min read",
+        category: "Hosting",
+        views: 0,
+        keywords: [
+            "hostinger 90 off",
+            "hostinger 90 percent off",
+            "hostinger referral code 2026",
+            "hostinger maximum discount",
+            "how to buy hostinger hosting",
+            "hostinger extra 20 percent off",
+            "hostinger free domain offer",
+            "hostinger lowest price india",
+            "hostinger deal july 2026",
+            "hostinger referral discount stack"
+        ],
+        slug: "how-to-get-hostinger-90-off-2026",
+        imageSrc: "/assets/blog/how-to-get-hostinger-90-off-2026.svg",
+    },
+    {
+        id: 34,
+        title: "7 Best Web Hosting Services in India (2026) — Tested & Ranked",
+        description: "I tested the 7 best web hosting providers in India for 2026 on speed, uptime, INR pricing, renewals and support. Full rankings, comparison table, and the #1 pick for beginners.",
+        date: "June 30, 2026",
+        readTime: "15 min read",
+        category: "Hosting",
+        views: 0,
+        keywords: [
+            "best web hosting india",
+            "best web hosting india 2026",
+            "best hosting for beginners india",
+            "cheapest web hosting india",
+            "best wordpress hosting india",
+            "web hosting india price comparison",
+            "fastest web hosting india",
+            "hosting with free domain india",
+            "best hosting for small business india",
+            "top web hosting companies india"
+        ],
+        slug: "best-web-hosting-india-2026",
+        imageSrc: "/assets/blog/best-web-hosting-india-2026.svg",
+    },
+    {
+        id: 33,
+        title: "Hostinger vs GoDaddy vs Bluehost (2026): Which Is Best in India?",
+        description: "Hostinger vs GoDaddy vs Bluehost compared for India 2026: real INR pricing, speed, renewal traps, support and category scores. One clear winner — with data to prove it.",
+        date: "June 27, 2026",
+        readTime: "14 min read",
+        category: "Hosting",
+        views: 0,
+        keywords: [
+            "hostinger vs godaddy",
+            "hostinger vs bluehost",
+            "godaddy vs hostinger india",
+            "bluehost vs hostinger 2026",
+            "hostinger vs godaddy which is better",
+            "best hosting comparison india",
+            "godaddy alternative india",
+            "hostinger comparison 2026",
+            "cheap hosting comparison india",
+            "hostinger vs godaddy pricing"
+        ],
+        slug: "hostinger-vs-godaddy-vs-bluehost-2026",
+        imageSrc: "/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.svg",
+    },
+    {
+        id: 32,
+        title: "Hostinger Plans & Pricing in India 2026: Which Plan Should You Buy?",
+        description: "Every Hostinger plan explained with real July 2026 India pricing — Premium vs Business vs Cloud, KVM VPS specs, renewal costs nobody shows you, and persona-based picks.",
+        date: "June 24, 2026",
+        readTime: "13 min read",
+        category: "Hosting",
+        views: 0,
+        keywords: [
+            "hostinger plans",
+            "hostinger pricing india",
+            "hostinger price list india 2026",
+            "hostinger premium vs business",
+            "hostinger renewal price",
+            "hostinger kvm plans",
+            "hostinger kvm 1 plan",
+            "hostinger cloud startup plan",
+            "which hostinger plan to buy",
+            "hostinger 48 month plan price"
+        ],
+        slug: "hostinger-plans-pricing-india-2026",
+        imageSrc: "/assets/blog/hostinger-plans-pricing-india-2026.svg",
+    },
     {
         id: 31,
         title: "Nano Banana Saree Trend: 12 Free Gemini Prompts (2026)",
@@ -443,19 +537,21 @@ export const BLOG_POSTS: BlogPost[] = [
     {
         id: 7,
         title: 'Is React Still Worth Learning in 2026? React vs Vue vs Svelte vs Solid',
-        description: "Is React still worth learning in 2026? Explore React vs Vue vs Svelte vs Solid, job demand, roadmap tips, and practical advice for modern frontend developers.",
+        description: "React vs Vue vs Svelte vs Solid in 2026 — which to learn first? Popularity, job demand, ecosystem size and a practical roadmap for modern frontend developers.",
         date: 'Jan 5, 2026',
+        updated: 'July 4, 2026',
         readTime: '14 min read',
         category: 'React',
         views: 1250,
         keywords: [
             'Is React Still Worth Learning in 2026',
+            'react vs vue vs svelte 2026 which to learn',
+            'react vs vue popularity 2026',
             'react vs vue vs svelte vs solid',
             'should I learn React in 2026',
             'React job market 2026',
             'best frontend framework 2026',
-            'learn React roadmap',
-            'React for beginners 2026'
+            'learn React roadmap'
         ],
         slug: 'is-react-worth-learning-2026',
         imageSrc: '/assets/blog7.jpg',
@@ -482,19 +578,22 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 5,
-        title: 'Hostinger VPS Hosting Review 2025: Is Hostinger KVM VPS Worth It?',
-        description: "Detailed Hostinger VPS Hosting Review 2025 covering KVM VPS plans, pricing, pros and cons, who it is best for, and how to claim the discount.",
+        title: 'Hostinger KVM VPS Review (2026): Plans, Pricing & Is It Worth It?',
+        description: "Hostinger KVM VPS review updated for 2026: KVM 1, KVM 2, KVM 4 and KVM 8 plans compared on price, specs and performance — who should buy which plan, and how to claim the discount.",
         date: 'Nov 20, 2025',
+        updated: 'July 4, 2026',
         readTime: '14 min read',
         category: 'Hosting',
         views: 850,
         keywords: [
-            'Hostinger VPS Hosting Review 2025',
-            'Hostinger KVM VPS review',
-            'Hostinger VPS discount',
-            'best VPS hosting 2025',
-            'Hostinger VPS plans',
-            'is Hostinger VPS worth it'
+            'hostinger kvm plans',
+            'kvm 1 plan hostinger',
+            'hostinger kvm vps review 2026',
+            'hostinger vps price india',
+            'hostinger kvm 2 plan',
+            'best vps hosting india 2026',
+            'is hostinger vps worth it',
+            'hostinger vps discount'
         ],
         slug: 'hostinger-vps-hosting-review-discount',
         imageSrc: '/assets/mohitkoliblog5.png',
@@ -513,13 +612,22 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 3,
-        title: 'The 2025 Developer\'s Guide: Top 10 JavaScript Libraries & Frameworks in Demand',
-        description: "Stay ahead of the curve with our guide to the most in-demand JavaScript libraries and frameworks. A must-read for modern web developers.",
+        title: 'Top 10 JavaScript Frameworks & Libraries in Demand (2025–2026 Guide)',
+        description: "Which JS framework has the biggest ecosystem going into 2026? React, Vue, Angular, Svelte and more ranked by demand, jobs, and ecosystem size — a guide for developers choosing what to learn.",
         date: 'Oct 28, 2025',
+        updated: 'July 4, 2026',
         readTime: '15 min read',
         category: 'JavaScript',
         views: 2100,
-        keywords: ['javascript', 'libraries', 'frameworks', 'react', 'vue', 'svelte'],
+        keywords: [
+            'top javascript frameworks 2026',
+            'js framework with the biggest ecosystem',
+            'best javascript frameworks 2025',
+            'javascript libraries in demand',
+            'react vue svelte angular comparison',
+            'best javascript developers 2026',
+            'javascript ecosystem 2026',
+        ],
         slug: 'top-javascript-libraries-frameworks-2025',
         imageSrc: '/assets/mohitkolib3.jpg',
     },

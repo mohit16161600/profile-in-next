@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Mohit Koli", url: "https://mohitkoli.info" }],
   publisher: "Mohit Koli",
   metadataBase: new URL("https://mohitkoli.info"),
+  alternates: {
+    types: {
+      "application/rss+xml": [{ url: "/feed.xml", title: "Mohit Koli — Tech Blog RSS" }],
+    },
+  },
   robots: {
     index: true,
     follow: true,

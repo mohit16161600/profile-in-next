@@ -32,33 +32,38 @@ export default function BlogSidebar() {
                 </div>
             </div>
 
-            {/* Categories */}
+            {/* Popular guides — real internal links (crawl paths + PageRank flow on every blog page) */}
             <div className="glass rounded-xl shadow-sm p-6 mb-8 border border-white/5">
-                <h3 className="text-lg font-bold text-white mb-4">Technology Categories</h3>
+                <h3 className="text-lg font-bold text-white mb-4">Popular Guides</h3>
                 <ul className="space-y-3">
                     <li>
-                        <Link href="#" className="text-gray-400 hover:text-primary-500 flex justify-between transition-colors" title="JavaScript programming articles">
-                            <span>JavaScript</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300">12</span>
+                        <Link href="/blog/how-to-get-hostinger-90-off-2026" className="text-gray-400 hover:text-primary-400 flex justify-between items-center gap-2 transition-colors" title="How to get 90% OFF on Hostinger in 2026">
+                            <span>Hostinger 90% OFF Deal Guide</span><span className="text-xs bg-green-500/20 text-green-300 px-2 py-0.5 rounded-full flex-shrink-0">Deal</span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="text-gray-400 hover:text-primary-500 flex justify-between transition-colors" title="CSS styling and design articles">
-                            <span>CSS</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300">8</span>
+                        <Link href="/blog/best-web-hosting-india-2026" className="text-gray-400 hover:text-primary-400 flex justify-between items-center gap-2 transition-colors" title="7 best web hosting services in India 2026">
+                            <span>Best Web Hosting in India 2026</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300 flex-shrink-0">Ranked</span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="text-gray-400 hover:text-primary-500 flex justify-between transition-colors" title="React framework tutorials">
-                            <span>React</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300">15</span>
+                        <Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="text-gray-400 hover:text-primary-400 flex justify-between items-center gap-2 transition-colors" title="Hostinger vs GoDaddy vs Bluehost comparison 2026">
+                            <span>Hostinger vs GoDaddy vs Bluehost</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300 flex-shrink-0">VS</span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="text-gray-400 hover:text-primary-500 flex justify-between transition-colors" title="Node.js backend development">
-                            <span>Node.js</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300">6</span>
+                        <Link href="/blog/hostinger-plans-pricing-india-2026" className="text-gray-400 hover:text-primary-400 flex justify-between items-center gap-2 transition-colors" title="Hostinger plans and pricing in India 2026">
+                            <span>Hostinger Plans &amp; Pricing India</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300 flex-shrink-0">Guide</span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className="text-gray-400 hover:text-primary-500 flex justify-between transition-colors" title="Web design and UX articles">
-                            <span>Design</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300">9</span>
+                        <Link href="/blog/top-javascript-libraries-frameworks-2025" className="text-gray-400 hover:text-primary-400 flex justify-between items-center gap-2 transition-colors" title="Top JavaScript frameworks and libraries in demand">
+                            <span>Top JS Frameworks (2025–2026)</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300 flex-shrink-0">JS</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/blog/is-react-worth-learning-2026" className="text-gray-400 hover:text-primary-400 flex justify-between items-center gap-2 transition-colors" title="React vs Vue vs Svelte vs Solid — which to learn in 2026">
+                            <span>React vs Vue vs Svelte 2026</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300 flex-shrink-0">React</span>
                         </Link>
                     </li>
                 </ul>

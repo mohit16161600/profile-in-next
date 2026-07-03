@@ -146,6 +146,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     const authorityLinks = AUTHORITY_LINKS[post.category] ?? [];
 
     const publishedISO = new Date(post.date).toISOString();
+    const modifiedISO = new Date(post.updated ?? post.date).toISOString();
     const canonical = `https://mohitkoli.info/blog/${post.slug}`;
     const absoluteImage = post.imageSrc.startsWith("http")
         ? post.imageSrc
@@ -158,7 +159,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         description: post.description,
         image: absoluteImage,
         datePublished: publishedISO,
-        dateModified: publishedISO,
+        dateModified: modifiedISO,
         author: {
             "@type": "Person",
             name: "Mohit Koli",
