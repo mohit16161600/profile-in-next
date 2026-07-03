@@ -2,18 +2,20 @@
 
 import Image from "next/image";
 
-// Array of tech logos to scroll
+// Array of tech logos to scroll.
+// Icons are vendored locally (devicon, MIT) under /public/assets/tech — no remote
+// CDN host needed in next.config images, faster loads, and no jsdelivr dependency.
 const technologies = [
-    { name: "React", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-    { name: "Next.js", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", invertTheme: true },
-    { name: "TypeScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-    { name: "Tailwind CSS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
-    { name: "Node.js", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-    { name: "PHP", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
-    { name: "MySQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-    { name: "Laravel", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" },
-    { name: "Framer Motion", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg" },
-    { name: "MongoDB", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+    { name: "React", src: "/assets/tech/react.svg" },
+    { name: "Next.js", src: "/assets/tech/nextjs.svg", invertTheme: true },
+    { name: "TypeScript", src: "/assets/tech/typescript.svg" },
+    { name: "Tailwind CSS", src: "/assets/tech/tailwindcss.svg" },
+    { name: "Node.js", src: "/assets/tech/nodejs.svg" },
+    { name: "PHP", src: "/assets/tech/php.svg" },
+    { name: "MySQL", src: "/assets/tech/mysql.svg" },
+    { name: "Laravel", src: "/assets/tech/laravel.svg" },
+    { name: "Framer Motion", src: "/assets/tech/framermotion.svg" },
+    { name: "MongoDB", src: "/assets/tech/mongodb.svg" },
 ];
 
 // Duplicate the array to create a seamless infinite scroll loop
