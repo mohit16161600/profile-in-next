@@ -161,7 +161,7 @@ const jsonLd = [
             "The 7 best web hosting providers in India for 2026 ranked on speed, uptime, INR pricing, renewals and support — with a clear #1 pick for beginners.",
         image: "https://mohitkoli.info/assets/blog/best-web-hosting-india-2026.svg",
         datePublished: "2026-06-30T00:00:00.000Z",
-        dateModified: "2026-07-02T00:00:00.000Z",
+        dateModified: "2026-07-17T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
@@ -426,6 +426,8 @@ export default function BestWebHostingIndia() {
                         <ul className="space-y-3 text-primary-400">
                             <li><Link href="/blog/how-to-get-hostinger-90-off-2026" className="hover:text-primary-300 underline underline-offset-4">How to Get 90% OFF on Hostinger — the discount-stacking walkthrough</Link></li>
                             <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing India 2026 — which plan to buy</Link></li>
+                            <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — honest verdict after a year of real sites</Link></li>
+                            <li><Link href="/blog/hostinger-domain-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Domain Price India 2026 — .com, .in &amp; .store real costs</Link></li>
                             <li><Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger vs GoDaddy vs Bluehost — the detailed head-to-head</Link></li>
                             <li><Link href="/blog/hostinger-vps-hosting-review-discount" className="hover:text-primary-300 underline underline-offset-4">Hostinger KVM VPS Review — for developers</Link></li>
                             <li><Link href="/blog/how-to-make-money-blogging-for-beginners-2026" className="hover:text-primary-300 underline underline-offset-4">How to Make Money Blogging — what to build on your new hosting</Link></li>

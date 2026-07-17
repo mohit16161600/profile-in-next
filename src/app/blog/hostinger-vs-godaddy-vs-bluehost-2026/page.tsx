@@ -74,7 +74,7 @@ const jsonLd = [
             "Head-to-head 2026 comparison for India: real INR pricing, speed, renewal traps, support quality and category scores across Hostinger, GoDaddy and Bluehost.",
         image: "https://mohitkoli.info/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.svg",
         datePublished: "2026-06-27T00:00:00.000Z",
-        dateModified: "2026-07-02T00:00:00.000Z",
+        dateModified: "2026-07-17T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
@@ -438,6 +438,8 @@ export default function HostingerVsGodaddyVsBluehost() {
                         <ul className="space-y-3 text-primary-400">
                             <li><Link href="/blog/how-to-get-hostinger-90-off-2026" className="hover:text-primary-300 underline underline-offset-4">How to Get 90% OFF on Hostinger — discount stacking, step by step</Link></li>
                             <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing India 2026 — Premium vs Business vs Cloud vs KVM</Link></li>
+                            <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — is it actually worth it? (honest verdict)</Link></li>
+                            <li><Link href="/blog/hostinger-domain-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Domain Price India 2026 — .com, .in &amp; .store real costs</Link></li>
                             <li><Link href="/blog/best-web-hosting-india-2026" className="hover:text-primary-300 underline underline-offset-4">7 Best Web Hosting Services in India (2026) — the full ranked list</Link></li>
                             <li><Link href="/blog/hostinger-vps-hosting-review-discount" className="hover:text-primary-300 underline underline-offset-4">Hostinger KVM VPS Review — for developers who need root access</Link></li>
                         </ul>

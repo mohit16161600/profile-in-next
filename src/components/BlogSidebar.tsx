@@ -37,8 +37,18 @@ export default function BlogSidebar() {
                 <h3 className="text-lg font-bold text-white mb-4">Popular Guides</h3>
                 <ul className="space-y-3">
                     <li>
+                        <Link href="/blog/hostinger-review-2026" className="text-gray-400 hover:text-primary-400 flex justify-between items-center gap-2 transition-colors" title="Honest Hostinger review 2026 — is it worth it?">
+                            <span>Hostinger Review 2026 (Honest)</span><span className="text-xs bg-yellow-500/20 text-yellow-300 px-2 py-0.5 rounded-full flex-shrink-0">Review</span>
+                        </Link>
+                    </li>
+                    <li>
                         <Link href="/blog/how-to-get-hostinger-90-off-2026" className="text-gray-400 hover:text-primary-400 flex justify-between items-center gap-2 transition-colors" title="How to get 90% OFF on Hostinger in 2026">
                             <span>Hostinger 90% OFF Deal Guide</span><span className="text-xs bg-green-500/20 text-green-300 px-2 py-0.5 rounded-full flex-shrink-0">Deal</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/blog/hostinger-domain-price-india-2026" className="text-gray-400 hover:text-primary-400 flex justify-between items-center gap-2 transition-colors" title="Hostinger domain price in India 2026 — .com, .in, .store">
+                            <span>Hostinger Domain Price India</span><span className="text-xs bg-white/10 px-2 py-0.5 rounded-full text-gray-300 flex-shrink-0">Domains</span>
                         </Link>
                     </li>
                     <li>
