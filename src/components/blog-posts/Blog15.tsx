@@ -407,11 +407,11 @@ function App() {
         </p>
         <p className="text-gray-300 leading-relaxed">
           Next step ke liye aap single product page, search bar, category filter, order summary, and checkout page add kar sakte ho. Agar React roadmap aur full stack direction aur strong karni hai, to{" "}
-          <Link href="/blog/is-react-worth-learning-2026" className="text-primary-400 hover:text-primary-300">
+          <Link href="/blog/is-react-worth-learning-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
             React learning article
           </Link>{" "}
           aur{" "}
-          <Link href="/blog/frontend-vs-backend-development-guide" className="text-primary-400 hover:text-primary-300">
+          <Link href="/blog/frontend-vs-backend-development-guide" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
             frontend vs backend guide
           </Link>{" "}
           bhi padho. Chhota start karo, but complete build karo. Wahi real progress hoti hai.

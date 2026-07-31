@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { BLOG_POSTS } from "@/data/posts";
 
 export default function LatestBlogs() {
@@ -35,19 +34,16 @@ export default function LatestBlogs() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {latestPosts.map((post, index) => (
-                        <motion.article
+                        <article
                             key={post.slug}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="glass group rounded-2xl overflow-hidden border border-white/5 hover:border-primary-500/30 transition-all duration-300 flex flex-col h-full"
+                            className={`reveal reveal-d${index + 1} glass group rounded-2xl overflow-hidden border border-white/5 hover:border-primary-500/30 transition-all duration-300 flex flex-col h-full`}
                         >
                             <Link href={`/blog/${post.slug}`} className="block relative h-56 sm:h-60 overflow-hidden">
                                 <Image
                                     src={post.imageSrc || "/assets/blog-placeholder.jpg"}
                                     alt={post.title}
                                     fill
+                                    sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
                                     className="object-cover transform group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -77,7 +73,7 @@ export default function LatestBlogs() {
                                     </svg>
                                 </Link>
                             </div>
-                        </motion.article>
+                        </article>
                     ))}
                 </div>
             </div>

@@ -18,7 +18,7 @@ export default function Blog2() {
                     19% longer to complete complex tasks.
                 </p>
                 <div className="bg-red-900/20 border-l-4 border-red-500/30 p-6 mb-6">
-                    <h4 className="text-lg font-semibold text-red-200 mb-2">The AI Reality Check:</h4>
+                    <h3 className="text-lg font-semibold text-red-200 mb-2">The AI Reality Check:</h3>
                     <ul className="list-disc list-inside text-red-300 space-y-1">
                         <li>40% of AI-generated code contains security vulnerabilities.</li>
                         <li>AI-assisted commits are merged 4x faster, often bypassing proper reviews.</li>
@@ -119,7 +119,7 @@ export default function Blog2() {
                 </p>
 
                 <div className="bg-yellow-900/20 border-l-4 border-yellow-500/30 p-6 mb-6">
-                    <h4 className="text-lg font-semibold text-yellow-200 mb-2">Warning Signs of Over-Dependence:</h4>
+                    <h3 className="text-lg font-semibold text-yellow-200 mb-2">Warning Signs of Over-Dependence:</h3>
                     <ul className="list-disc list-inside text-yellow-300 space-y-1">
                         <li>Inability to write code without autocomplete suggestions.</li>
                         <li>Difficulty remembering basic syntax and function signatures.</li>
@@ -255,13 +255,13 @@ export default function Blog2() {
                 <h3 className="text-2xl font-bold mb-4">Don't Let AI Make You a Worse Developer</h3>
                 <p className="mb-6">Start practicing these techniques today to maintain your programming skills
                     while leveraging AI effectively.</p>
-                <button className="bg-white text-orange-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                <button className="bg-white text-orange-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
                     Take the 30-Day AI-Free Challenge
                 </button>
             </div>
 
             {/* Author Bio */}
-            <div className="bg-gray-100 rounded-lg p-6 mb-12">
+            <div className="bg-white/5 border border-white/10 rounded-lg p-6 mb-12">
                 <div className="flex items-center mb-4">
                     <Image
                         src="/assets/mohit-koli-profile-photo.jpg"
@@ -271,7 +271,7 @@ export default function Blog2() {
                         className="rounded-full mr-4 object-cover"
                     />
                     <div>
-                        <h4 className="text-xl font-bold text-gray-100">Mohit Koli</h4>
+                        <h4 className="text-xl font-bold text-white">Mohit Koli</h4>
                         <p className="text-gray-400">Senior Full Stack Developer & AI Realist</p>
                     </div>
                 </div>
@@ -287,7 +287,7 @@ export default function Blog2() {
             <div className="mb-12">
                 <h3 className="text-2xl font-bold text-gray-100 mb-6">Related Articles</h3>
                 <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+                    <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors">
                         <h4 className="text-lg font-semibold text-gray-100 mb-2 hover:text-blue-600 cursor-pointer">
                             The Psychology of Programming: Why Developers Resist Change
                         </h4>
@@ -295,7 +295,7 @@ export default function Blog2() {
                         <p className="text-gray-400">Explore the cognitive biases that affect how developers adopt
                             new technologies...</p>
                     </div>
-                    <div className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+                    <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors">
                         <h4 className="text-lg font-semibold text-gray-100 mb-2 hover:text-blue-600 cursor-pointer">
                             Security-First AI Coding: Protecting Your Applications
                         </h4>

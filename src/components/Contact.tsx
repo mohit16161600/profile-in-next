@@ -2,16 +2,18 @@
 
 import Image from "next/image";
 import { useState, FormEvent } from "react";
-import { motion } from "framer-motion";
 
 export default function Contact() {
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [status, setStatus] = useState<{ type: "success" | "error"; message: string } | null>(null);
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setStatus(null);
 
-        const formData = new FormData(e.currentTarget);
+        const form = e.currentTarget;
+        const formData = new FormData(form);
         const name = formData.get("name");
         const email = formData.get("email");
         const phone = formData.get("phone");
@@ -36,11 +38,16 @@ export default function Contact() {
                 throw new Error(errorData?.message || "Unable to send email");
             }
 
-            alert("Message sent successfully! Mohit Koli will get back to you soon.");
-            (e.target as HTMLFormElement).reset();
-        } catch (error) {
-            alert("Failed to send message. Please try again or contact directly via call or email.");
-            console.error(error);
+            setStatus({
+                type: "success",
+                message: "Message sent successfully! Mohit Koli will get back to you soon.",
+            });
+            form.reset();
+        } catch {
+            setStatus({
+                type: "error",
+                message: "Failed to send message. Please try again or contact directly via call or email.",
+            });
         } finally {
             setIsSubmitting(false);
         }
@@ -51,26 +58,14 @@ export default function Contact() {
             <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-primary-600 rounded-full blur-3xl opacity-10 pointer-events-none -translate-x-1/2 -translate-y-1/2 hidden md:block"></div>
             
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <motion.div 
-                    className="text-center mb-16"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                >
+                <div className="reveal text-center mb-16">
                     <h2 className="text-4xl font-bold text-white mb-4">Get In Touch</h2>
                     <div className="w-24 h-1 bg-primary-600 mx-auto"></div>
-                </motion.div>
+                </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
                     {/* Contact Info */}
-                    <motion.div 
-                        className="glass shadow-lg rounded-2xl p-8 border border-white/10"
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.1 }}
-                    >
+                    <div className="reveal reveal-x-left glass shadow-lg rounded-2xl p-8 border border-white/10">
                         <h3 className="text-2xl font-semibold text-white mb-6">Connect With Mohit Koli</h3>
                         <p className="text-gray-400 mb-8 leading-relaxed">
                             Ready to bring your project to life? <strong className="text-white">Mohit Koli</strong> is available for freelance projects and
@@ -116,16 +111,10 @@ export default function Contact() {
                                 </a>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
 
                     {/* Contact Form */}
-                    <motion.div 
-                        className="glass shadow-lg rounded-2xl p-8 border border-white/10"
-                        initial={{ opacity: 0, x: 30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                    >
+                    <div className="reveal reveal-x-right glass shadow-lg rounded-2xl p-8 border border-white/10">
                         <h3 className="text-2xl font-semibold text-white mb-6">Start a Project</h3>
                         <form id="projectForm" className="space-y-5" onSubmit={handleSubmit}>
                             <div>
@@ -149,18 +138,26 @@ export default function Contact() {
                                     className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white/10 transition-all resize-none hover-target"></textarea>
                             </div>
                             
-                            <motion.button 
-                                type="submit" 
-                                id="submitBtn" 
+                            <button
+                                type="submit"
+                                id="submitBtn"
                                 disabled={isSubmitting}
-                                whileHover={{ scale: 1.02 }}
-                                whileTap={{ scale: 0.98 }}
-                                className="w-full bg-primary-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-primary-700 transition shadow-lg shadow-primary-500/30 disabled:opacity-70 disabled:cursor-not-allowed hover-target"
+                                className="w-full bg-primary-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-primary-700 transition shadow-lg shadow-primary-500/30 disabled:opacity-70 disabled:cursor-not-allowed hover-target hover:scale-[1.02] active:scale-[0.98]"
                             >
                                 {isSubmitting ? "Sending..." : "Let's Collaborate"}
-                            </motion.button>
+                            </button>
+
+                            {/* Inline status replaces the old window.alert() — announced to
+                                screen readers and dismissable by simply resubmitting. */}
+                            <p
+                                role="status"
+                                aria-live="polite"
+                                className={`text-sm leading-relaxed ${status ? "" : "sr-only"} ${status?.type === "error" ? "text-red-400" : "text-emerald-400"}`}
+                            >
+                                {status?.message ?? ""}
+                            </p>
                         </form>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </section>

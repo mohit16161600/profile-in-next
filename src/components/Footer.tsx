@@ -4,8 +4,8 @@ export default function Footer() {
     return (
         <footer className="bg-[#050505] border-t border-white/10 text-gray-300 py-16 font-light relative overflow-hidden">
             {/* Background glow */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-primary-900/10 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-900/10 rounded-full blur-3xl pointer-events-none translate-y-1/2 -translate-x-1/2"></div>
+            <div className="absolute top-0 right-0 w-96 h-96 bg-primary-900/10 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2 hidden md:block"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-900/10 rounded-full blur-3xl pointer-events-none translate-y-1/2 -translate-x-1/2 hidden md:block"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
@@ -38,7 +38,7 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-white font-semibold mb-6">Explore</h4>
+                        <h2 className="text-white font-semibold mb-6 text-base">Explore</h2>
                         <ul className="space-y-3 text-sm">
                             <li><Link href="/#about" className="text-gray-400 border-b border-transparent hover:text-white hover:border-white transition-all hover-target w-max block">About</Link></li>
                             <li><Link href="/profile" className="text-gray-400 border-b border-transparent hover:text-white hover:border-white transition-all hover-target w-max block">Profile</Link></li>
@@ -52,7 +52,7 @@ export default function Footer() {
 
                     {/* Resources */}
                     <div>
-                        <h4 className="text-white font-semibold mb-6">Legal</h4>
+                        <h2 className="text-white font-semibold mb-6 text-base">Legal</h2>
                         <ul className="space-y-3 text-sm">
                             <li><Link href="/privacy-policy" className="text-gray-400 border-b border-transparent hover:text-white hover:border-white transition-all hover-target w-max block">Privacy Policy</Link></li>
                             <li><Link href="/terms" className="text-gray-400 border-b border-transparent hover:text-white hover:border-white transition-all hover-target w-max block">Terms of Service</Link></li>
@@ -62,7 +62,7 @@ export default function Footer() {
 
                     {/* Contact Short */}
                     <div>
-                        <h4 className="text-white font-semibold mb-6">Contact</h4>
+                        <h2 className="text-white font-semibold mb-6 text-base">Contact</h2>
                         <ul className="space-y-3 text-sm">
                             <li className="flex items-start">
                                 <span className="mr-3 text-primary-500">📧</span>

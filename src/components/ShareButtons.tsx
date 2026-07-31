@@ -30,13 +30,13 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
             label: "Share on LinkedIn",
             href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
             className:
-                "bg-[#0077b5]/20 text-[#0a8fd6] border-[#0077b5]/30 hover:bg-[#0077b5] hover:text-white",
+                "bg-[#0077b5]/20 text-[#4db2ee] border-[#0077b5]/30 hover:bg-[#0077b5] hover:text-white",
         },
         {
             label: "Share on Facebook",
             href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
             className:
-                "bg-[#1877F2]/15 text-[#3b8bf5] border-[#1877F2]/30 hover:bg-[#1877F2] hover:text-white",
+                "bg-[#1877F2]/15 text-[#6ba8f7] border-[#1877F2]/30 hover:bg-[#1877F2] hover:text-white",
         },
     ];
 

@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 const focusAreas = [
   {
     title: "Business Websites",
@@ -29,12 +27,7 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, type: "spring" }}
-          >
+          <div className="reveal">
             <div className="inline-flex items-center px-4 py-1.5 rounded-full glass border border-primary-500/30 text-primary-400 text-sm font-medium mb-8">
               <span className="mr-2">About The Developer</span>
             </div>
@@ -58,59 +51,29 @@ export default function About() {
               <a href="#contact" className="px-7 py-3.5 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">Hire Me</a>
               <a href="#experience" className="px-7 py-3.5 glass text-white border border-white/20 rounded-xl font-semibold hover:bg-white/10 hover:border-white/30 transition-all shadow-sm hover:shadow-md">View Journey</a>
             </div>
-          </motion.div>
+          </div>
 
           <div className="space-y-6">
             <div className="grid grid-cols-2 gap-6">
-              <motion.div
-                className="glass p-6 rounded-2xl hover:scale-105 transition-transform duration-300 border border-primary-500/20"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
+              <div className="reveal reveal-d1 glass p-6 rounded-2xl hover:scale-105 transition-transform duration-300 border border-primary-500/20">
                 <div className="text-4xl font-bold text-primary-500 mb-2">02+</div>
                 <div className="text-sm font-medium text-gray-400">Years of Experience</div>
-              </motion.div>
-              <motion.div
-                className="glass p-6 rounded-2xl shadow-sm hover:scale-105 transition-transform duration-300 border border-secondary-500/20"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
+              </div>
+              <div className="reveal reveal-d2 glass p-6 rounded-2xl shadow-sm hover:scale-105 transition-transform duration-300 border border-secondary-500/20">
                 <div className="text-4xl font-bold text-secondary-500 mb-2">20+</div>
                 <div className="text-sm font-medium text-gray-400">Projects Delivered</div>
-              </motion.div>
-              <motion.div
-                className="glass p-6 rounded-2xl shadow-sm hover:scale-105 transition-transform duration-300 border border-emerald-500/20"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-              >
+              </div>
+              <div className="reveal reveal-d3 glass p-6 rounded-2xl shadow-sm hover:scale-105 transition-transform duration-300 border border-emerald-500/20">
                 <div className="text-4xl font-bold text-emerald-500 mb-2">100%</div>
                 <div className="text-sm font-medium text-gray-400">Client Satisfaction</div>
-              </motion.div>
-              <motion.div
-                className="glass p-6 rounded-2xl hover:scale-105 transition-transform duration-300 border border-orange-500/20"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.5 }}
-              >
+              </div>
+              <div className="reveal reveal-d4 glass p-6 rounded-2xl hover:scale-105 transition-transform duration-300 border border-orange-500/20">
                 <div className="text-4xl font-bold text-orange-500 mb-2">24/7</div>
-                <div className="text-sm font-medium text-gray-400">Support & Maintenance</div>
-              </motion.div>
+                <div className="text-sm font-medium text-gray-400">Support &amp; Maintenance</div>
+              </div>
             </div>
 
-            <motion.div
-              className="glass rounded-3xl border border-white/10 p-8 lg:p-10"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.55 }}
-            >
+            <div className="reveal reveal-d5 glass rounded-3xl border border-white/10 p-8 lg:p-10">
               <h3 className="text-2xl font-bold text-white mb-4">What I help clients with</h3>
               <p className="text-gray-400 leading-relaxed mb-8">
                 One focused section that explains the actual work clearly: building credible business websites, custom web systems, and performance-focused improvements that support rankings and growth.
@@ -133,7 +96,7 @@ export default function About() {
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

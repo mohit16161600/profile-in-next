@@ -430,21 +430,21 @@ export function LikeButton() {
             <ul className="list-disc list-inside text-gray-300 space-y-3">
                <li>
                   Read{" "}
-                  <Link href="/blog/top-javascript-libraries-frameworks-2025" className="text-primary-400 hover:text-primary-300">
+                  <Link href="/blog/top-javascript-libraries-frameworks-2025" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
                      Top JavaScript Libraries and Frameworks in Demand
                   </Link>{" "}
                   if you want a broader frontend market view.
                </li>
                <li>
                   Read{" "}
-                  <Link href="/blog/will-ai-replace-web-developers-2026" className="text-primary-400 hover:text-primary-300">
+                  <Link href="/blog/will-ai-replace-web-developers-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
                      Will AI Replace Web Developers in 2026?
                   </Link>{" "}
                   if you are thinking about long-term career security.
                </li>
                <li>
                   Read{" "}
-                  <Link href="/blog/build-website-with-ai-step-by-step" className="text-primary-400 hover:text-primary-300">
+                  <Link href="/blog/build-website-with-ai-step-by-step" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
                      How to Use AI to Build a Full Website in 30 Minutes
                   </Link>{" "}
                   if you want to pair React skills with faster project delivery.

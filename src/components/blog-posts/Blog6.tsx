@@ -350,14 +350,14 @@ export default function Blog6() {
         <ul className="list-disc list-inside text-gray-300 space-y-3">
           <li>
             Read{" "}
-            <Link href="/blog/is-react-worth-learning-2026" className="text-primary-400 hover:text-primary-300">
+            <Link href="/blog/is-react-worth-learning-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               Is React Still Worth Learning in 2026?
             </Link>{" "}
             if you are leaning toward frontend.
           </li>
           <li>
             Read{" "}
-            <Link href="/blog/will-ai-replace-web-developers-2026" className="text-primary-400 hover:text-primary-300">
+            <Link href="/blog/will-ai-replace-web-developers-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               Will AI Replace Web Developers in 2026?
             </Link>{" "}
             if you are thinking about the long-term future of dev careers.

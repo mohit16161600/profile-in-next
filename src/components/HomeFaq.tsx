@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 const faqs = [
   {
     question: "What kind of websites and web applications does Mohit Koli build?",
@@ -53,13 +51,7 @@ export default function HomeFaq() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          className="text-center max-w-3xl mx-auto mb-14"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
+        <div className="reveal text-center max-w-3xl mx-auto mb-14">
           <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-4">Common Questions</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
             Frequently Asked Questions About My Web Development Services
@@ -68,17 +60,13 @@ export default function HomeFaq() {
             This section is here to make it easier for clients to understand how I work, what I build, and
             whether I am the right fit for their website or web application project.
           </p>
-        </motion.div>
+        </div>
 
         <div className="space-y-5">
           {faqs.map((faq, index) => (
-            <motion.article
+            <article
               key={faq.question}
-              className="glass rounded-2xl border border-white/10 p-6 md:p-8"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: index * 0.05 }}
+              className={`reveal reveal-d${Math.min(index + 1, 5)} glass rounded-2xl border border-white/10 p-6 md:p-8`}
               itemScope
               itemProp="mainEntity"
               itemType="https://schema.org/Question"
@@ -91,7 +79,7 @@ export default function HomeFaq() {
                   {faq.answer}
                 </p>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>

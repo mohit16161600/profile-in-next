@@ -486,21 +486,21 @@ export default function Blog11() {
         <ul className="list-disc list-inside text-gray-300 space-y-3">
           <li>
             Link to{" "}
-            <Link href="/blog/best-ai-tools-to-make-money-online-2026" className="text-primary-400 hover:text-primary-300">
+            <Link href="/blog/best-ai-tools-to-make-money-online-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               Best AI Tools to Make Money Online in 2026
             </Link>{" "}
             for readers exploring AI-driven business growth.
           </li>
           <li>
             Link to{" "}
-            <Link href="/blog/best-ai-productivity-tools-2025" className="text-primary-400 hover:text-primary-300">
+            <Link href="/blog/best-ai-productivity-tools-2025" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               Best AI Tools for Students, Developers, and Digital Marketers
             </Link>{" "}
             for readers comparing broader AI workflows.
           </li>
           <li>
             Link to{" "}
-            <Link href="/blog/build-website-with-ai-step-by-step" className="text-primary-400 hover:text-primary-300">
+            <Link href="/blog/build-website-with-ai-step-by-step" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               How to Use AI to Build a Full Website in 30 Minutes
             </Link>{" "}
             for businesses pairing WhatsApp automation with website funnels.
@@ -515,21 +515,21 @@ export default function Blog11() {
         <ul className="list-disc list-inside text-gray-300 space-y-3">
           <li>
             Link to{" "}
-            <a href="https://www.whatsapp.com/business/" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300">
+            <a href="https://www.whatsapp.com/business/" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               WhatsApp Business
             </a>{" "}
             for the official product overview.
           </li>
           <li>
             Link to{" "}
-            <a href="https://www.twilio.com/docs/whatsapp" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300">
+            <a href="https://www.twilio.com/docs/whatsapp" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               Twilio WhatsApp docs
             </a>{" "}
             for developer-level WhatsApp API details.
           </li>
           <li>
             Link to{" "}
-            <a href="https://botpress.com/en/integrations/whatsapp" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300">
+            <a href="https://botpress.com/en/integrations/whatsapp" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               Botpress WhatsApp integration
             </a>{" "}
             or vendor pages like WATI and Interakt for implementation examples.

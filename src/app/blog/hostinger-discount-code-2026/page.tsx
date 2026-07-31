@@ -36,7 +36,7 @@ export default function HostingerDiscountBlog() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
           <div className="absolute bottom-4 left-4 text-white z-10">
-            <p className="text-sm uppercase tracking-widest bg-red-500 text-white px-3 py-1 rounded-full inline-block mb-2">Limited Time Offer</p>
+            <p className="text-sm uppercase tracking-widest bg-red-600 text-white px-3 py-1 rounded-full inline-block mb-2">Limited Time Offer</p>
             <h2 className="text-2xl font-bold">Hostinger discount code India 2026</h2>
           </div>
         </div>

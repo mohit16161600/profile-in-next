@@ -19,18 +19,12 @@ export default function AnimatedCursor() {
   const cursorYSpringLarge = useSpring(cursorY, springConfigLarge);
 
   useEffect(() => {
-    // Check if it's a mobile device or touch screen
-    const isMobile = window.matchMedia("(max-width: 768px)").matches || 
-                    (typeof window !== 'undefined' && 'ontouchstart' in window) ||
-                    navigator.maxTouchPoints > 0;
-                    
-    if (isMobile) {
-      return;
-    }
-    
-    // Client-only mount flag to avoid SSR hydration mismatch for the custom cursor.
+    // Pointer capability is checked by ClientEffects before this module is even
+    // fetched, so reaching here means a fine pointer is present.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
+    // Lets globals.css hide the native cursor only now that a replacement exists.
+    document.documentElement.setAttribute("data-cursor", "on");
 
     const updateMousePosition = (e: MouseEvent) => {
       cursorX.set(e.clientX);
@@ -56,6 +50,7 @@ export default function AnimatedCursor() {
     window.addEventListener("mouseover", handleMouseOver, { passive: true });
 
     return () => {
+      document.documentElement.removeAttribute("data-cursor");
       window.removeEventListener("mousemove", updateMousePosition);
       window.removeEventListener("mouseover", handleMouseOver);
     };

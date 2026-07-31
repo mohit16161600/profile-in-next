@@ -434,10 +434,10 @@ export default function HiddenChatGPTFeatures() {
 
         {/* SEO & Social Metadata Footer */}
         <footer className="mt-20 pt-12 border-t border-white/10 text-center">
-          <p className="text-gray-600 text-sm mb-4">
+          <p className="text-gray-400 text-sm mb-4">
             © 2026 Mohit Koli • Tech Strategist & AI Specialist
           </p>
-          <div className="flex justify-center gap-4 text-xs text-gray-700">
+          <div className="flex justify-center gap-4 text-xs text-gray-400">
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
             <Link href="/sitemap">Sitemap</Link>

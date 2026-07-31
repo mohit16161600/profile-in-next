@@ -36,24 +36,24 @@ export default function TermsOfService() {
             {/* Terms Content */}
             <div className="glass rounded-xl shadow-sm p-8 prose prose-lg prose-invert max-w-none border border-white/5 prose-p:text-gray-300 prose-headings:text-white">
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Acceptance of Terms</h2>
-                    <p className="text-gray-700 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">1. Acceptance of Terms</h2>
+                    <p className="text-gray-300 mb-4">
                         By accessing and using this website (mohitkoli.info), you accept and agree to be bound by the terms
                         and provision of this agreement.
                     </p>
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Use License</h2>
-                    <p className="text-gray-700 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">2. Use License</h2>
+                    <p className="text-gray-300 mb-4">
                         Permission is granted to temporarily download one copy of the materials (information or software) on
                         Mohit Koli&apos;s website for personal, non-commercial transitory viewing only.
                     </p>
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. Disclaimer</h2>
-                    <p className="text-gray-700 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">3. Disclaimer</h2>
+                    <p className="text-gray-300 mb-4">
                         The materials on Mohit Koli&apos;s website are provided on an &apos;as is&apos; basis. Mohit Koli makes no
                         warranties, expressed or implied, and hereby disclaims and negates all other warranties including,
                         without limitation, implied warranties or conditions of merchantability, fitness for a particular
@@ -62,8 +62,8 @@ export default function TermsOfService() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Limitations</h2>
-                    <p className="text-gray-700 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">4. Limitations</h2>
+                    <p className="text-gray-300 mb-4">
                         In no event shall Mohit Koli or its suppliers be liable for any damages (including, without
                         limitation, damages for loss of data or profit, or due to business interruption) arising out of the
                         use or inability to use the materials on Mohit Koli&apos;s website.
@@ -71,10 +71,10 @@ export default function TermsOfService() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Contact</h2>
+                    <h2 className="text-2xl font-semibold text-white mb-4">5. Contact</h2>
                     <p className="text-gray-300 mb-4">
                         If you have any questions about these Terms, please contact us at <a
-                            href="mailto:contact@mohitkoli.info" className="text-primary-500 hover:text-primary-400 transition-colors">contact@mohitkoli.info</a>.
+                            href="mailto:contact@mohitkoli.info" className="text-primary-500 hover:text-primary-400 underline underline-offset-2 transition-colors">contact@mohitkoli.info</a>.
                     </p>
                 </section>
             </div>

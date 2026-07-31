@@ -383,21 +383,21 @@ export default function Blog10() {
         <ul className="list-disc list-inside text-gray-300 space-y-3">
           <li>
             Link to{" "}
-            <Link href="/blog/best-ai-productivity-tools-2025" className="text-primary-400 hover:text-primary-300">
+            <Link href="/blog/best-ai-productivity-tools-2025" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               Best AI Tools for Students, Developers, and Digital Marketers in 2025
             </Link>{" "}
             for readers comparing broader productivity stacks.
           </li>
           <li>
             Link to{" "}
-            <Link href="/blog/build-website-with-ai-step-by-step" className="text-primary-400 hover:text-primary-300">
+            <Link href="/blog/build-website-with-ai-step-by-step" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               How to Use AI to Build a Full Website in 30 Minutes
             </Link>{" "}
             for users who want to turn AI skills into web service income.
           </li>
           <li>
             Link to{" "}
-            <Link href="/blog/will-ai-replace-web-developers-2026" className="text-primary-400 hover:text-primary-300">
+            <Link href="/blog/will-ai-replace-web-developers-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               Will AI Replace Web Developers in 2026?
             </Link>{" "}
             for career-focused readers who want long-term context.

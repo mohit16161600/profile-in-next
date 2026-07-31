@@ -139,7 +139,7 @@ export default function Blog9() {
                     <li>Deploy on VPS</li>
                 </ul>
                 <div className="bg-blue-900/20 border-l-4 border-blue-500/30 p-6 mb-6">
-                    <h4 className="text-lg font-semibold text-blue-200 mb-2">AI saves:</h4>
+                    <h3 className="text-lg font-semibold text-blue-200 mb-2">AI saves:</h3>
                     <ul className="list-disc list-inside text-blue-300 space-y-1">
                         <li>70% development time</li>
                         <li>50% design effort</li>
@@ -152,7 +152,7 @@ export default function Blog9() {
                 <h2 className="text-3xl font-bold text-gray-100 mb-6">⚠️ Important: AI is Assistant, Not Replacement</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                     <div className="bg-green-900/20 p-6 rounded-lg">
-                        <h4 className="text-lg font-semibold text-green-200 mb-2">AI helps with:</h4>
+                        <h3 className="text-lg font-semibold text-green-200 mb-2">AI helps with:</h3>
                         <ul className="list-disc list-inside text-green-300 space-y-1">
                             <li>Speed</li>
                             <li>Boilerplate code</li>

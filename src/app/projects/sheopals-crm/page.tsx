@@ -194,10 +194,10 @@ export default function SheopalsCrmProject() {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                         <div className="lg:col-span-2">
                             <h2 className="text-3xl font-bold text-gray-900 mb-6">Project Overview</h2>
-                            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                            <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                                 Sheopals needed a centralized CRM platform that could support the operational complexity of a busy sales and order ecosystem. Manual follow-ups, fragmented task handling, and limited reporting visibility were creating friction across teams.
                             </p>
-                            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                                 The solution was a custom-built internal CRM tailored to real company workflows. Instead of forcing the business into a generic SaaS tool, this system was designed around role-based usage, internal reporting needs, workflow automation, and integration-heavy operations.
                             </p>
 
@@ -221,7 +221,7 @@ export default function SheopalsCrmProject() {
                                 <div className="space-y-6">
                                     {stackGroups.map((group) => (
                                         <div key={group.title}>
-                                            <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">{group.title}</h4>
+                                            <h4 className="text-sm font-semibold text-slate-600 uppercase tracking-wider mb-3">{group.title}</h4>
                                             <div className="flex flex-wrap gap-2">
                                                 {group.items.map((item) => (
                                                     <span key={item} className="px-3 py-1 bg-white border border-gray-200 rounded-md text-sm font-medium text-gray-700">
@@ -242,7 +242,7 @@ export default function SheopalsCrmProject() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-14">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Core Features Delivered</h2>
-                        <p className="text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-slate-600 max-w-3xl mx-auto">
                             The CRM was designed as a practical internal product, focused on operational clarity, role separation, and day-to-day usability rather than just surface-level dashboards.
                         </p>
                     </div>
@@ -251,7 +251,7 @@ export default function SheopalsCrmProject() {
                         {featureCards.map((card) => (
                             <article key={card.title} className="rounded-2xl border border-gray-200 p-8 bg-white shadow-sm hover:shadow-md transition-shadow">
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{card.title}</h3>
-                                <p className="text-gray-600 leading-relaxed">{card.description}</p>
+                                <p className="text-slate-600 leading-relaxed">{card.description}</p>
                             </article>
                         ))}
                     </div>
@@ -262,7 +262,7 @@ export default function SheopalsCrmProject() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Multi-Level Panel Architecture</h2>
-                        <p className="text-gray-600 max-w-2xl mx-auto">
+                        <p className="text-slate-600 max-w-2xl mx-auto">
                             Different teams needed different workflows. The system was built around secure role-based access so each user type could operate with the right level of visibility and control.
                         </p>
                     </div>
@@ -272,7 +272,7 @@ export default function SheopalsCrmProject() {
                             <div key={role.code} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                 <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 font-bold text-xl ${accentMap[role.accent]}`}>{role.code}</div>
                                 <h3 className="text-lg font-bold text-gray-900 mb-2">{role.title}</h3>
-                                <p className="text-sm text-gray-500">{role.description}</p>
+                                <p className="text-sm text-slate-600">{role.description}</p>
                             </div>
                         ))}
                     </div>
@@ -297,7 +297,7 @@ export default function SheopalsCrmProject() {
                                             <svg className="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                                         </div>
                                         <div>
-                                            <h4 className="text-xl font-bold mb-1">Operational Automation</h4>
+                                            <h3 className="text-xl font-bold mb-1">Operational Automation</h3>
                                             <p className="text-gray-400 text-sm">Supported routine process execution, workload handling, and daily team actions through structured system workflows and repeatable logic.</p>
                                         </div>
                                     </div> 
@@ -307,7 +307,7 @@ export default function SheopalsCrmProject() {
                                             <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                                         </div>
                                         <div>
-                                            <h4 className="text-xl font-bold mb-1">Webhook & API Connectivity</h4>
+                                            <h3 className="text-xl font-bold mb-1">Webhook &amp; API Connectivity</h3>
                                             <p className="text-gray-400 text-sm">Integrated third-party systems through webhook listeners and cURL-based requests for data sync, partner communication, and operational continuity.</p>
                                         </div>
                                     </div>
@@ -348,7 +348,7 @@ export default function SheopalsCrmProject() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Business Impact</h2>
-                            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                            <p className="text-lg text-slate-600 leading-relaxed mb-8">
                                 The real value of this CRM was not just in the interface, but in the operational clarity it created. By centralizing actions, visibility, and process handling, the platform gave teams a stronger system for daily execution.
                             </p>
 
@@ -366,7 +366,7 @@ export default function SheopalsCrmProject() {
 
                         <div className="rounded-3xl border border-gray-200 bg-gray-50 p-8">
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">Value of This Case Study</h3>
-                            <p className="text-gray-600 leading-relaxed mb-6">
+                            <p className="text-slate-600 leading-relaxed mb-6">
                                 This page is intentionally written as a detailed project case study around custom CRM development, internal dashboard development, workflow automation, and Next.js-based operations tooling. That helps the project page rank for more relevant service and portfolio terms while making the work easier for potential clients to understand.
                             </p>
                             <div className="flex flex-wrap gap-2">
@@ -390,7 +390,7 @@ export default function SheopalsCrmProject() {
 
             <section className="py-20 text-center">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Need a Custom CRM or Internal Dashboard?</h2>
-                <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+                <p className="text-slate-600 max-w-2xl mx-auto mb-8">
                     I build business websites, internal tools, admin dashboards, and custom workflow systems designed around real operational needs.
                 </p>
                 <Link href="/#contact" className="inline-block px-8 py-4 bg-red-600 text-white rounded-full font-bold text-lg hover:bg-red-700 transition shadow-lg shadow-red-500/30">

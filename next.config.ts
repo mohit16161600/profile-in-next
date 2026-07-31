@@ -34,6 +34,13 @@ const REMOVED_LOCATION_REDIRECTS = [
 ];
 
 const nextConfig: NextConfig = {
+    experimental: {
+        // Tailwind's stylesheet is a single render-blocking request on every page.
+        // Inlining it removes that round trip from the critical path — worth more here
+        // than cross-navigation CSS caching, since most traffic lands from search on
+        // one article and the sheet is ~21KB.
+        inlineCss: true,
+    },
     images: {
         // Allow self-authored branded SVG hero images to be served via next/image.
         // Safe here: every SVG under /public/assets is authored in-repo (no remote/user SVG).

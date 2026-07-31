@@ -182,7 +182,7 @@ export default function ChatGPTGodModeHacks() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-mono text-sm">
               {sections.map((section, idx) => (
                 <a key={section.id} href={`#${section.id}`} className="flex items-center gap-3 p-3 hover:bg-green-500/5 rounded transition-all group">
-                  <span className="text-green-500/40">[{idx + 1 < 10 ? `0${idx + 1}` : idx + 1}]</span>
+                  <span className="text-green-500/70">[{idx + 1 < 10 ? `0${idx + 1}` : idx + 1}]</span>
                   <span className="group-hover:translate-x-2 transition-transform">{section.title}</span>
                 </a>
               ))}
@@ -216,7 +216,7 @@ export default function ChatGPTGodModeHacks() {
             OpenAI's "Custom Instructions" are actually a way to inject a <strong>Permanent System Prompt</strong>. This is your foundation.
           </p>
           <div className="p-8 bg-green-500/5 rounded-2xl border border-green-500/20 mb-12">
-            <h4 className="text-green-400 font-bold mb-4 uppercase tracking-widest text-xs">The "Hacker" Configuration:</h4>
+            <h3 className="text-green-400 font-bold mb-4 uppercase tracking-widest text-xs">The "Hacker" Configuration:</h3>
             <p className="text-gray-300 italic mb-6">
               "When I ask for code, don't explain anything unless I ask. Just give me the raw code in a single block. If there are multiple ways to do something, provide the most performant one. Always assume I have a senior level understanding of React, Node, and Python."
             </p>
@@ -274,7 +274,7 @@ export default function ChatGPTGodModeHacks() {
             Recursive prompting is the process of having the AI <strong>critique itself</strong>.
           </p>
           <div className="p-8 bg-white/5 rounded-3xl border border-white/10 mb-12">
-            <h4 className="text-green-400 font-bold mb-4">The "Hacker" Workflow:</h4>
+            <h3 className="text-green-400 font-bold mb-4">The "Hacker" Workflow:</h3>
             <ol className="space-y-4 text-gray-400 list-decimal pl-5">
               <li><strong>Draft:</strong> "Write a landing page for a cybersecurity tool."</li>
               <li><strong>Critique:</strong> "Now, act as a cynical customer. List 5 reasons why you wouldn't buy this tool based on the copy above."</li>
@@ -303,11 +303,11 @@ export default function ChatGPTGodModeHacks() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 font-mono">
             <div className="p-6 bg-green-500/5 border border-green-500/20 rounded-xl">
-              <h4 className="text-green-500 mb-2">REGEX MASTER</h4>
+              <h3 className="text-green-500 mb-2">REGEX MASTER</h3>
               <p className="text-xs text-gray-400">Ask ChatGPT to "Write a regex to find all emails in this massive text, but explain the logic for every single character."</p>
             </div>
             <div className="p-6 bg-green-500/5 border border-green-500/20 rounded-xl">
-              <h4 className="text-green-500 mb-2">DOCKER MAGIC</h4>
+              <h3 className="text-green-500 mb-2">DOCKER MAGIC</h3>
               <p className="text-xs text-gray-400">Upload your source code and say "Generate a multi-stage Dockerfile optimized for production size."</p>
             </div>
           </div>
@@ -354,7 +354,7 @@ export default function ChatGPTGodModeHacks() {
         </section>
 
         {/* SEO & Social Metadata Footer */}
-        <footer className="mt-20 pt-12 border-t border-white/5 text-center font-mono text-[10px] text-gray-700 tracking-widest uppercase">
+        <footer className="mt-20 pt-12 border-t border-white/5 text-center font-mono text-[10px] text-gray-400 tracking-widest uppercase">
           <p className="mb-4">
             © 2026 MOHIT KOLI // ENCRYPTED_CONTENT // ALL_RIGHTS_RESERVED
           </p>

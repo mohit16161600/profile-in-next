@@ -231,7 +231,7 @@ export default function HowToGetSora2InviteCode2026() {
           </p>
 
           <div className="bg-gradient-to-r from-orange-600/20 to-amber-600/20 border-l-4 border-orange-500 p-6 my-8 rounded-r-2xl">
-            <h3 className="text-xl font-bold mb-2">⚡ The short version</h3>
+            <h2 className="text-xl font-bold mb-2">⚡ The short version</h2>
             <p className="text-gray-200">
               There is no magic generator. Legitimate access comes from the <strong>official waitlist</strong>, an <strong>invite from an existing user</strong>, or an <strong>eligible ChatGPT paid plan</strong> in supported regions. Everything else is, at best, a waste of time, and at worst a phishing trap.
             </p>

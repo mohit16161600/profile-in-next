@@ -53,7 +53,7 @@ export default function Blog1() {
                 </p>
 
                 <div className="bg-blue-900/20 border-l-4 border-blue-500/30 p-6 mb-6">
-                    <h4 className="text-lg font-semibold text-blue-200 mb-2">Key Benefits of AI Testing:</h4>
+                    <h3 className="text-lg font-semibold text-blue-200 mb-2">Key Benefits of AI Testing:</h3>
                     <ul className="list-disc list-inside text-blue-300 space-y-1">
                         <li>Up to 95% reduction in manual testing time</li>
                         <li>Early bug detection and prevention</li>
@@ -96,7 +96,7 @@ export default function Blog1() {
                 </p>
 
                 <div className="bg-green-900/20 border-l-4 border-green-500/30 p-6 mb-6">
-                    <h4 className="text-lg font-semibold text-green-200 mb-2">Performance Improvements with AI:</h4>
+                    <h3 className="text-lg font-semibold text-green-200 mb-2">Performance Improvements with AI:</h3>
                     <ul className="list-disc list-inside text-green-300 space-y-1">
                         <li>Automated image optimization and compression</li>
                         <li>Intelligent caching and prefetching strategies</li>

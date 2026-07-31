@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 const accentClasses = {
   primary: {
     border: "hover:border-primary-500/30",
@@ -68,13 +66,7 @@ export default function ServiceHighlights() {
       <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-primary-600/10 blur-3xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div
-          className="text-center max-w-3xl mx-auto mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
+        <div className="reveal text-center max-w-3xl mx-auto mb-16">
           <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-4">Professional Services</p>
           <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
             Web Development Services Built for Growth, Rankings, and Better User Experience
@@ -84,7 +76,7 @@ export default function ServiceHighlights() {
             load fast, support SEO, and make it easier to turn traffic into leads. The focus is always practical:
             better visibility, stronger performance, and cleaner execution.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_0.9fr] gap-8 items-start">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -92,13 +84,9 @@ export default function ServiceHighlights() {
               const accent = accentClasses[service.accent];
 
               return (
-                <motion.article
+                <article
                   key={service.title}
-                  className={`glass rounded-2xl p-8 border border-white/5 transition-all duration-300 group ${accent.border}`}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.45, delay: index * 0.1 }}
+                  className={`reveal reveal-d${index + 1} glass rounded-2xl p-8 border border-white/5 transition-all duration-300 group ${accent.border}`}
                 >
                   <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${accent.icon}`}>
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -117,18 +105,12 @@ export default function ServiceHighlights() {
                       </span>
                     ))}
                   </div>
-                </motion.article>
+                </article>
               );
             })}
           </div>
 
-          <motion.aside
-            className="glass rounded-3xl border border-white/10 p-8 lg:p-10"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
+          <aside className="reveal reveal-x-right glass rounded-3xl border border-white/10 p-8 lg:p-10">
             <h3 className="text-2xl font-bold text-white mb-5">Why clients choose Mohit Koli</h3>
             <p className="text-gray-400 leading-relaxed mb-8">
               If you need a freelance web developer in India who can handle design-sensitive frontend work,
@@ -158,7 +140,7 @@ export default function ServiceHighlights() {
                 <div className="text-xs uppercase tracking-[0.2em] text-gray-500 mt-1">Years Experience</div>
               </div>
             </div>
-          </motion.aside>
+          </aside>
         </div>
       </div>
     </section>

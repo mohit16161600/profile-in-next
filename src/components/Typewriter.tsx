@@ -1,13 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 
 interface TypewriterProps {
   words: string[];
   typingSpeed?: number;
   deletingSpeed?: number;
   pauseTime?: number;
+  startDelay?: number;
 }
 
 export default function Typewriter({
@@ -15,14 +15,29 @@ export default function Typewriter({
   typingSpeed = 100,
   deletingSpeed = 50,
   pauseTime = 1500,
+  startDelay = 2500,
 }: TypewriterProps) {
-  const [text, setText] = useState("");
+  // Start on the first word fully typed so the <h1> is complete in the SSR HTML
+  // (it used to render an invisible placeholder, leaving the heading empty until
+  // hydration). The loop then enters at the deleting phase, same as before.
+  const [text, setText] = useState(words[0]);
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  // Hold the first word until the page has settled. A heading that mutates every
+  // 100ms from the first frame keeps the above-the-fold viewport changing forever,
+  // which inflates Speed Index and competes with the hero image for the main thread.
+  const [started, setStarted] = useState(false);
 
   useEffect(() => {
+    const timer = setTimeout(() => setStarted(true), startDelay);
+    return () => clearTimeout(timer);
+  }, [startDelay]);
+
+  useEffect(() => {
+    if (!started) return;
+
     const currentWord = words[wordIndex];
-    let timeout: NodeJS.Timeout;
+    let timeout: ReturnType<typeof setTimeout>;
 
     if (isDeleting) {
       timeout = setTimeout(() => {
@@ -42,19 +57,16 @@ export default function Typewriter({
     }
 
     return () => clearTimeout(timeout);
-  }, [text, isDeleting, wordIndex, words, typingSpeed, deletingSpeed, pauseTime]);
+  }, [started, text, isDeleting, wordIndex, words, typingSpeed, deletingSpeed, pauseTime]);
 
-  // Ensure SSR visual stability
   return (
     <span className="inline relative">
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-500">
-        {text || <span className="opacity-0">{words[0].substring(0, 1)}</span>}
+        {text || "​"}
       </span>
-      <motion.span
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
-        className="inline-block w-[4px] h-[1em] bg-primary-500 ml-1.5 align-middle -translate-y-[2px] shadow-[0_0_8px_rgba(239,68,68,0.8)]"
+      <span
+        aria-hidden="true"
+        className="typewriter-caret inline-block w-[4px] h-[1em] bg-primary-500 ml-1.5 align-middle -translate-y-[2px] shadow-[0_0_8px_rgba(239,68,68,0.8)]"
       />
     </span>
   );

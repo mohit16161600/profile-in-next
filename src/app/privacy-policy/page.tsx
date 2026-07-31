@@ -36,16 +36,16 @@ export default function PrivacyPolicy() {
             {/* Privacy Policy Content */}
             <div className="glass rounded-xl shadow-sm p-8 prose prose-lg prose-invert max-w-none border border-white/5 prose-p:text-gray-300 prose-headings:text-white prose-li:text-gray-300">
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         1. Introduction
                     </h2>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-300 mb-4">
                         Welcome to mohitkoli.info (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). This Privacy
                         Policy explains how Mohit Koli (&quot;I,&quot; &quot;me,&quot; or &quot;my&quot;) collects, uses,
                         discloses, and protects your personal information when you visit this
                         website.
                     </p>
-                    <p className="text-gray-700">
+                    <p className="text-gray-300">
                         By using this website, you agree to the collection and use of
                         information in accordance with this policy. If you do not agree with
                         this policy, please do not use this website.
@@ -53,31 +53,31 @@ export default function PrivacyPolicy() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         2. Information We Collect
                     </h2>
 
-                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                    <h3 className="text-xl font-semibold text-gray-200 mb-3">
                         2.1 Information You Provide
                     </h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-300 mb-4">
                         When you contact me through the contact form or email, I may collect:
                     </p>
-                    <ul className="list-disc pl-6 text-gray-700 mb-4">
+                    <ul className="list-disc pl-6 text-gray-300 mb-4">
                         <li>Your name</li>
                         <li>Email address</li>
                         <li>Phone number (optional)</li>
                         <li>Message content</li>
                     </ul>
 
-                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                    <h3 className="text-xl font-semibold text-gray-200 mb-3">
                         2.2 Automatically Collected Information
                     </h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-300 mb-4">
                         When you visit this website, certain information is automatically
                         collected:
                     </p>
-                    <ul className="list-disc pl-6 text-gray-700 mb-4">
+                    <ul className="list-disc pl-6 text-gray-300 mb-4">
                         <li>IP address</li>
                         <li>Browser type and version</li>
                         <li>Operating system</li>
@@ -88,13 +88,13 @@ export default function PrivacyPolicy() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         3. How We Use Your Information
                     </h2>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-300 mb-4">
                         I use the collected information for the following purposes:
                     </p>
-                    <ul className="list-disc pl-6 text-gray-700 mb-4">
+                    <ul className="list-disc pl-6 text-gray-300 mb-4">
                         <li>To respond to your inquiries and provide customer support</li>
                         <li>To improve the website&apos;s functionality and user experience</li>
                         <li>To analyze website traffic and usage patterns</li>
@@ -106,19 +106,19 @@ export default function PrivacyPolicy() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         4. Cookies and Tracking Technologies
                     </h2>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-300 mb-4">
                         This website uses cookies and similar tracking technologies to track
                         activity and hold certain information. Cookies are files with a small
                         amount of data that may include an anonymous unique identifier.
                     </p>
 
-                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                    <h3 className="text-xl font-semibold text-gray-200 mb-3">
                         4.1 Types of Cookies Used
                     </h3>
-                    <ul className="list-disc pl-6 text-gray-700 mb-4">
+                    <ul className="list-disc pl-6 text-gray-300 mb-4">
                         <li>
                             <strong>Essential Cookies:</strong> Required for the website to
                             function properly
@@ -133,14 +133,14 @@ export default function PrivacyPolicy() {
                         </li>
                     </ul>
 
-                    <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                    <h3 className="text-xl font-semibold text-gray-200 mb-3">
                         4.2 Third-Party Services
                     </h3>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-300 mb-4">
                         This website uses the following third-party services that may set
                         cookies:
                     </p>
-                    <ul className="list-disc pl-6 text-gray-700 mb-4">
+                    <ul className="list-disc pl-6 text-gray-300 mb-4">
                         <li>
                             <strong>Google Analytics:</strong> For website analytics and traffic
                             analysis
@@ -149,22 +149,22 @@ export default function PrivacyPolicy() {
                             <strong>Gatekeeper Consent:</strong> For cookie consent management
                         </li>
                     </ul>
-                    <p className="text-gray-700">
+                    <p className="text-gray-300">
                         You can control cookies through your browser settings. However,
                         disabling cookies may affect the functionality of this website.
                     </p>
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         5. Data Sharing and Disclosure
                     </h2>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-300 mb-4">
                         I do not sell, trade, or rent your personal information to third
                         parties. However, I may share your information in the following
                         circumstances:
                     </p>
-                    <ul className="list-disc pl-6 text-gray-700 mb-4">
+                    <ul className="list-disc pl-6 text-gray-300 mb-4">
                         <li>
                             <strong>Service Providers:</strong> With trusted third-party service
                             providers who assist in operating the website (e.g., hosting
@@ -182,30 +182,30 @@ export default function PrivacyPolicy() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         6. Data Security
                     </h2>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-300 mb-4">
                         I implement appropriate technical and organizational security
                         measures to protect your personal information against unauthorized
                         access, alteration, disclosure, or destruction. However, no method of
                         transmission over the Internet or electronic storage is 100% secure.
                     </p>
-                    <p className="text-gray-700">
+                    <p className="text-gray-300">
                         While I strive to use commercially acceptable means to protect your
                         personal information, I cannot guarantee its absolute security.
                     </p>
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         7. Your Rights
                     </h2>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-300 mb-4">
                         Depending on your location, you may have the following rights
                         regarding your personal information:
                     </p>
-                    <ul className="list-disc pl-6 text-gray-700 mb-4">
+                    <ul className="list-disc pl-6 text-gray-300 mb-4">
                         <li>
                             <strong>Right to Access:</strong> Request a copy of the personal
                             information I hold about you
@@ -235,17 +235,17 @@ export default function PrivacyPolicy() {
                             time where processing is based on consent
                         </li>
                     </ul>
-                    <p className="text-gray-700">
+                    <p className="text-gray-300">
                         To exercise these rights, please contact me using the information
                         provided in the &quot;Contact Us&quot; section below.
                     </p>
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         8. Children&apos;s Privacy
                     </h2>
-                    <p className="text-gray-700">
+                    <p className="text-gray-300">
                         This website is not intended for children under the age of 13. I do
                         not knowingly collect personal information from children under 13. If
                         you are a parent or guardian and believe your child has provided me
@@ -254,10 +254,10 @@ export default function PrivacyPolicy() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         9. Links to Other Websites
                     </h2>
-                    <p className="text-gray-700">
+                    <p className="text-gray-300">
                         This website may contain links to other websites that are not operated
                         by me. I have no control over and assume no responsibility for the
                         content, privacy policies, or practices of any third-party websites
@@ -267,15 +267,15 @@ export default function PrivacyPolicy() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         10. Changes to This Privacy Policy
                     </h2>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-300 mb-4">
                         I may update this Privacy Policy from time to time. I will notify you
                         of any changes by posting the new Privacy Policy on this page and
                         updating the &quot;Last Updated&quot; date.
                     </p>
-                    <p className="text-gray-700">
+                    <p className="text-gray-300">
                         You are advised to review this Privacy Policy periodically for any
                         changes. Changes to this Privacy Policy are effective when they are
                         posted on this page.
@@ -283,10 +283,10 @@ export default function PrivacyPolicy() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         11. Contact Us
                     </h2>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-300 mb-4">
                         If you have any questions about this Privacy Policy or wish to
                         exercise your rights, please contact me:
                     </p>
@@ -334,10 +334,10 @@ export default function PrivacyPolicy() {
                 </section>
 
                 <section className="mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    <h2 className="text-2xl font-semibold text-white mb-4">
                         12. Governing Law
                     </h2>
-                    <p className="text-gray-700">
+                    <p className="text-gray-300">
                         This Privacy Policy is governed by and construed in accordance with
                         the laws of India. Any disputes arising from this Privacy Policy shall
                         be subject to the exclusive jurisdiction of the courts in India.

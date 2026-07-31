@@ -509,7 +509,7 @@ export default function Top25FreeAITools2026() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 text-gray-500 text-sm">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold text-xs">MK</div>
+              <div className="w-8 h-8 rounded-full bg-orange-700 flex items-center justify-center text-white font-bold text-xs">MK</div>
               <span>By <strong>Mohit Koli</strong></span>
             </div>
             <span>•</span>
@@ -788,10 +788,10 @@ export default function Top25FreeAITools2026() {
             <a href="#" className="text-gray-500 hover:text-orange-500 transition">LinkedIn</a>
             <a href="#" className="text-gray-500 hover:text-orange-500 transition">Reddit</a>
           </div>
-          <p className="text-gray-600 text-sm mb-4">
+          <p className="text-gray-400 text-sm mb-4">
             © 2026 Mohit Koli • Digital Strategist & Backend Expert
           </p>
-          <div className="flex justify-center gap-4 text-xs text-gray-700">
+          <div className="flex justify-center gap-4 text-xs text-gray-400">
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
             <Link href="/sitemap">Sitemap</Link>

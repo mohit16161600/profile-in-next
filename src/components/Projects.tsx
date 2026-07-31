@@ -1,20 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { motion, type Variants } from "framer-motion";
-
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.15, delayChildren: 0.2 },
-  },
-};
-
-const itemVariants: Variants = {
-  hidden: { y: 30, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 300, damping: 24 } },
-};
 
 export default function Projects() {
   return (
@@ -22,13 +8,7 @@ export default function Projects() {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-600 rounded-full blur-3xl opacity-20 pointer-events-none translate-x-1/2 -translate-y-1/2 hidden md:block"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div 
-          className="flex flex-col md:flex-row justify-between items-end mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
+        <div className="reveal flex flex-col md:flex-row justify-between items-end mb-16">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Featured Projects</h2>
             <div className="w-24 h-1.5 bg-primary-600 rounded-full"></div>
@@ -39,17 +19,11 @@ export default function Projects() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </a>
-        </motion.div>
+        </div>
 
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Project 1 - Sheopals CRM */}
-          <motion.article variants={itemVariants} className="glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+          <article className="reveal reveal-d1 glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
             <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
               <div className="absolute inset-0 bg-red-900/40 z-10 group-hover:bg-red-900/10 transition-colors duration-500"></div>
               {/* Gradient Background */}
@@ -75,11 +49,11 @@ export default function Projects() {
                 <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </Link>
             </div>
-          </motion.article>
+          </article>
 
 
           {/* Project 4 */}
-          <motion.article variants={itemVariants} className="glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+          <article className="reveal reveal-d2 glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
             <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
               <div className="absolute inset-0 bg-sky-900/40 z-10 group-hover:bg-sky-900/10 transition-colors duration-500"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-sky-500 to-cyan-700 opacity-60 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700"></div>
@@ -104,10 +78,10 @@ export default function Projects() {
                 <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
             </div>
-          </motion.article>
+          </article>
 
           {/* Project 5 */}
-          <motion.article variants={itemVariants} className="glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+          <article className="reveal reveal-d3 glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
             <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
               <div className="absolute inset-0 bg-amber-900/40 z-10 group-hover:bg-amber-900/10 transition-colors duration-500"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-orange-700 opacity-60 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700"></div>
@@ -132,10 +106,10 @@ export default function Projects() {
                 <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
             </div>
-          </motion.article>
+          </article>
 
           {/* Project 6 */}
-          <motion.article variants={itemVariants} className="glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+          <article className="reveal reveal-d4 glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
             <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
               <div className="absolute inset-0 bg-pink-900/40 z-10 group-hover:bg-pink-900/10 transition-colors duration-500"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500 to-rose-700 opacity-60 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700"></div>
@@ -160,9 +134,9 @@ export default function Projects() {
                 <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
             </div>
-          </motion.article>
+          </article>
           {/* Project 2 */}
-          <motion.article variants={itemVariants} className="glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+          <article className="reveal reveal-d5 glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
             <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
               <div className="absolute inset-0 bg-emerald-900/40 z-10 group-hover:bg-emerald-900/10 transition-colors duration-500"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-700 opacity-60 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700"></div>
@@ -187,10 +161,10 @@ export default function Projects() {
                 <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
             </div>
-          </motion.article>
+          </article>
 
           {/* Project 3 */}
-          <motion.article variants={itemVariants} className="glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+          <article className="reveal reveal-d5 glass border border-white/5 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
             <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
               <div className="absolute inset-0 bg-purple-900/40 z-10 group-hover:bg-purple-900/10 transition-colors duration-500"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 opacity-60 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700"></div>
@@ -215,9 +189,9 @@ export default function Projects() {
                 <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
             </div>
-          </motion.article>
+          </article>
           
-        </motion.div>
+        </div>
 
         <div className="mt-12 text-center md:hidden">
           <a href="https://github.com/mohit16161600" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary-500 hover:text-primary-400 font-semibold transition-colors hover-target">

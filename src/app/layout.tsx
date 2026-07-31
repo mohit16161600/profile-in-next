@@ -65,8 +65,8 @@ export const metadata: Metadata = {
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SmoothScroll from "@/components/SmoothScroll";
-import AnimatedCursor from "@/components/AnimatedCursor";
+import ClientEffects from "@/components/ClientEffects";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function RootLayout({
   children,
@@ -75,16 +75,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        {/* Scroll-reveal is progressive enhancement: without JS the content is shown as-is. */}
+        <noscript>
+          <style>{".reveal{opacity:1!important;transform:none!important}"}</style>
+        </noscript>
+      </head>
       <body
         className="antialiased font-sans"
         suppressHydrationWarning
       >
-        <SmoothScroll>
-          <AnimatedCursor />
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </SmoothScroll>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:rounded-lg focus:bg-primary-600 focus:px-4 focus:py-2 focus:text-white focus:shadow-lg"
+        >
+          Skip to main content
+        </a>
+        <ClientEffects />
+        <ScrollReveal />
+        <Header />
+        <main id="main-content">{children}</main>
+        <Footer />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

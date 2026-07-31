@@ -3,15 +3,8 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 
-export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+export default function SmoothScroll() {
   useEffect(() => {
-    // Disable on mobile/touch devices for significant performance gains
-    const isMobile = window.matchMedia("(max-width: 768px)").matches || 
-                    (typeof window !== 'undefined' && 'ontouchstart' in window) ||
-                    navigator.maxTouchPoints > 0;
-                    
-    if (isMobile) return;
-
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -22,17 +15,19 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
       touchMultiplier: 2,
     });
 
+    let frame = 0;
     function raf(time: number) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      frame = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    frame = requestAnimationFrame(raf);
 
     return () => {
+      cancelAnimationFrame(frame);
       lenis.destroy();
     };
   }, []);
 
-  return <>{children}</>;
+  return null;
 }

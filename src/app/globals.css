@@ -14,6 +14,17 @@
   /* Lighter Orange */
   --color-secondary-500: #f97316;
   /* Energetic Orange */
+
+  /*
+   * Muted text tones, re-tuned for the near-black (#050505) canvas.
+   * Tailwind's stock gray-500 (#6b7280 -> 4.2:1) and gray-600 (#4b5563 -> 2.7:1)
+   * both fail WCAG AA on this background. These keep the same visual hierarchy
+   * (400 > 500 > 600) while every step clears 4.5:1.
+   */
+  --color-gray-500: #8b93a0;
+  /* 6.6:1 on #050505 */
+  --color-gray-600: #767e8b;
+  /* 5.0:1 on #050505 */
 }
 
 :root {
@@ -28,19 +39,20 @@ body {
   overflow-x: hidden;
 }
 
-/* Hide default cursor on desktop */
-@media (min-width: 768px) {
-  body {
-    cursor: none;
-  }
+/*
+ * Hide the native cursor only once the custom cursor has actually mounted,
+ * so a pointer is always present if that client component never loads.
+ */
+@media (hover: hover) and (pointer: fine) {
 
-  a,
-  button,
-  [role="button"],
-  input,
-  select,
-  textarea {
-    cursor: none !important;
+  html[data-cursor="on"] body,
+  html[data-cursor="on"] a,
+  html[data-cursor="on"] button,
+  html[data-cursor="on"] [role="button"],
+  html[data-cursor="on"] input,
+  html[data-cursor="on"] select,
+  html[data-cursor="on"] textarea {
+    cursor: none;
   }
 }
 
@@ -66,9 +78,21 @@ body {
     radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.15) 0, transparent 50%);
 }
 
+/*
+ * Skip layout/paint for off-screen sections. The `auto` keyword makes the browser
+ * remember each section's real height after its first render and reuse it instead of
+ * the placeholder — without it, scrolling back over a section swaps the guessed height
+ * for the actual one and shifts the page (an intermittent 0.25 CLS in testing).
+ * The second value is only the first-paint estimate.
+ */
 .content-auto {
   content-visibility: auto;
-  contain-intrinsic-size: 1px 500px;
+  contain-intrinsic-size: auto 1400px;
+}
+
+.content-auto-sm {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
 }
 
 ::selection {
@@ -85,6 +109,165 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
+/* ------------------------------------------------------------------ */
+/* Scroll reveal                                                       */
+/* Replaces framer-motion's whileInView. ScrollReveal adds .is-visible  */
+/* via IntersectionObserver; the <noscript> block in the layout and the */
+/* reduced-motion query below both fall back to plain visible content.  */
+/* ------------------------------------------------------------------ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal-x-left {
+  transform: translateX(-40px);
+}
+
+.reveal-x-right {
+  transform: translateX(40px);
+}
+
+.reveal-pop {
+  transform: scale(0.6);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-d1.is-visible {
+  transition-delay: 0.08s;
+}
+
+.reveal-d2.is-visible {
+  transition-delay: 0.16s;
+}
+
+.reveal-d3.is-visible {
+  transition-delay: 0.24s;
+}
+
+.reveal-d4.is-visible {
+  transition-delay: 0.32s;
+}
+
+.reveal-d5.is-visible {
+  transition-delay: 0.4s;
+}
+
+/* ------------------------------------------------------------------ */
+/* Hero entrance                                                       */
+/* CSS-driven so above-the-fold content paints on the first frame       */
+/* instead of waiting for React hydration. The media wrapper animates   */
+/* transform only -- never opacity -- so the LCP image stays eligible   */
+/* for paint immediately.                                               */
+/* ------------------------------------------------------------------ */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hero-pop {
+  from {
+    transform: scale(0.88) rotate(-3deg);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes hero-slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hero-slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-item {
+    animation: hero-rise 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .hero-item-1 {
+    animation-delay: 0.05s;
+  }
+
+  .hero-item-2 {
+    animation-delay: 0.13s;
+  }
+
+  .hero-item-3 {
+    animation-delay: 0.21s;
+  }
+
+  .hero-item-4 {
+    animation-delay: 0.29s;
+  }
+
+  .hero-item-5 {
+    animation-delay: 0.37s;
+  }
+
+  .hero-media {
+    animation: hero-pop 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .hero-badge-right {
+    animation: hero-slide-right 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.55s both;
+  }
+
+  .hero-badge-left {
+    animation: hero-slide-left 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.7s both;
+  }
+}
+
+/* Typewriter caret — was a framer-motion opacity loop, now pure CSS. */
+@keyframes caret-blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter-caret {
+  animation: caret-blink 1s steps(1, end) infinite;
+}
+
 /* Custom Animations */
 @keyframes marquee {
   0% {
@@ -92,7 +275,7 @@ textarea:focus-visible {
   }
 
   100% {
-    transform: translateX(-33.33%);
+    transform: translateX(-50%);
   }
 }
 
@@ -126,7 +309,16 @@ textarea:focus-visible {
 
   .animate-float,
   .animate-pulse,
-  .animate-ping {
+  .animate-ping,
+  .animate-marquee,
+  .typewriter-caret {
     animation: none !important;
+  }
+
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

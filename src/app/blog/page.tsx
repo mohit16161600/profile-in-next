@@ -19,11 +19,24 @@ export default function BlogPage() {
                 className="text-white pt-32 pb-20 relative overflow-hidden"
                 aria-label="Blog Hero Section"
             >
-                <div
-                    className="absolute inset-0 bg-cover bg-center opacity-80 z-0"
-                    style={{ backgroundImage: "url('/assets/mohitkolibg.jpg')" }}
-                    aria-hidden="true"
-                />
+                {/*
+                  This was a CSS background-image, which meant the browser downloaded the
+                  raw 709KB JPG at full size with no format negotiation and no way to hint
+                  its priority — it was the LCP element at 5.9s. Routing it through
+                  next/image gets AVIF/WebP, a viewport-appropriate size, and a real
+                  preload with fetchpriority=high.
+                */}
+                <div className="absolute inset-0 opacity-80 z-0" aria-hidden="true">
+                    <Image
+                        src="/assets/mohitkolibg.jpg"
+                        alt=""
+                        fill
+                        className="object-cover object-center"
+                        preload
+                        fetchPriority="high"
+                        sizes="100vw"
+                    />
+                </div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center">

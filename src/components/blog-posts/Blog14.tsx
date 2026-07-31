@@ -209,14 +209,14 @@ export default function Blog14() {
           Mohit Koli&apos;s website already makes it easy for potential clients, recruiters, and collaborators to reach him. The public contact details currently shown on the site include:
         </p>
         <ul className="list-disc list-inside text-gray-300 space-y-3 mb-4">
-          <li><strong>Phone:</strong> <a href="tel:+918383868837" className="text-primary-400 hover:text-primary-300">+91 8383868837</a></li>
-          <li><strong>Primary Email:</strong> <a href="mailto:contact@mohitkoli.info" className="text-primary-400 hover:text-primary-300">contact@mohitkoli.info</a></li>
-          <li><strong>Alternate Email:</strong> <a href="mailto:mohitkoli12162@gmail.com" className="text-primary-400 hover:text-primary-300">mohitkoli12162@gmail.com</a></li>
-          <li><strong>Website:</strong> <a href="https://mohitkoli.info" className="text-primary-400 hover:text-primary-300">mohitkoli.info</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/mohit16161600" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300">github.com/mohit16161600</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohit-koli-b47260213" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300">linkedin.com/in/mohit-koli-b47260213</a></li>
-          <li><strong>Instagram:</strong> <a href="https://www.instagram.com/mohit12162/" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300">@mohit12162</a></li>
-          <li><strong>YouTube:</strong> <a href="https://www.youtube.com/@rideswithmohit" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300">@rideswithmohit</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+918383868837" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">+91 8383868837</a></li>
+          <li><strong>Primary Email:</strong> <a href="mailto:contact@mohitkoli.info" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">contact@mohitkoli.info</a></li>
+          <li><strong>Alternate Email:</strong> <a href="mailto:mohitkoli12162@gmail.com" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">mohitkoli12162@gmail.com</a></li>
+          <li><strong>Website:</strong> <a href="https://mohitkoli.info" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">mohitkoli.info</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/mohit16161600" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">github.com/mohit16161600</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohit-koli-b47260213" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">linkedin.com/in/mohit-koli-b47260213</a></li>
+          <li><strong>Instagram:</strong> <a href="https://www.instagram.com/mohit12162/" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">@mohit12162</a></li>
+          <li><strong>YouTube:</strong> <a href="https://www.youtube.com/@rideswithmohit" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">@rideswithmohit</a></li>
         </ul>
         <p className="text-gray-300 leading-relaxed">
           One important accuracy note: while this article covers the public information already available across the website, <strong>date of birth information is not currently published in the site code I reviewed</strong>. That is why it is not being stated here as a fact.
@@ -245,21 +245,21 @@ export default function Blog14() {
         <ul className="list-disc list-inside text-gray-300 space-y-3">
           <li>
             Visit the{" "}
-            <Link href="/profile" className="text-primary-400 hover:text-primary-300">
+            <Link href="/profile" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               full profile page
             </Link>{" "}
             for more gallery images and public brand signals.
           </li>
           <li>
             Read the{" "}
-            <Link href="/projects/sheopals-crm" className="text-primary-400 hover:text-primary-300">
+            <Link href="/projects/sheopals-crm" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               Sheopals CRM case study
             </Link>{" "}
             to see the kind of business systems and workflows Mohit Koli builds.
           </li>
           <li>
             Explore the{" "}
-            <Link href="/blog/frontend-vs-backend-development-guide" className="text-primary-400 hover:text-primary-300">
+            <Link href="/blog/frontend-vs-backend-development-guide" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               frontend vs backend development guide
             </Link>{" "}
             for a topic closely aligned with Mohit&apos;s professional strengths.

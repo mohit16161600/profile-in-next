@@ -142,13 +142,15 @@ export default function Home() {
       />
       <Hero />
       <InfiniteTechMarquee />
-      <section aria-label="About Mohit Koli">
+      <section aria-label="About Mohit Koli" className="content-auto">
         <About />
       </section>
-      <ServiceAreas
-        title="Cities and states I serve"
-        description="These service-area links are now surfaced directly from the homepage so both users and search engines can discover them faster."
-      />
+      <section aria-label="Service Areas" className="content-auto-sm">
+        <ServiceAreas
+          title="Cities and states I serve"
+          description="These service-area links are now surfaced directly from the homepage so both users and search engines can discover them faster."
+        />
+      </section>
       <section aria-label="Qualifications" className="content-auto">
         <Qualification />
       </section>
@@ -161,7 +163,9 @@ export default function Home() {
       <section aria-label="Featured Projects" className="content-auto">
         <Projects />
       </section>
-      <LatestBlogs />
+      <section aria-label="Latest Articles" className="content-auto-sm">
+        <LatestBlogs />
+      </section>
       <section aria-label="Frequently Asked Questions" className="content-auto" itemScope itemType="https://schema.org/FAQPage">
         <HomeFaq />
       </section>
