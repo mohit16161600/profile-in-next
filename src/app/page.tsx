@@ -31,13 +31,13 @@ export const metadata: Metadata = {
     "technical SEO developer",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/",
+    canonical: "https://mohitkoli.in/",
   },
   openGraph: {
     title: "Freelance Web Developer in India | Mohit Koli",
     description:
       "Freelance web developer building high-performance Next.js, React, and Laravel websites, dashboards, and SEO-friendly digital experiences for modern businesses.",
-    url: "https://mohitkoli.info/",
+    url: "https://mohitkoli.in/",
     type: "website",
   },
   twitter: {
@@ -53,7 +53,7 @@ const structuredData = [
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Mohit Koli",
-    url: "https://mohitkoli.info/",
+    url: "https://mohitkoli.in/",
     jobTitle: "Freelance Full Stack Web Developer",
     knowsAbout: [
       "Next.js",
@@ -77,7 +77,7 @@ const structuredData = [
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: "Mohit Koli Web Development Services",
-    url: "https://mohitkoli.info/",
+    url: "https://mohitkoli.in/",
     areaServed: "India",
     description:
       "Freelance web development services for business websites, Next.js applications, React frontends, Laravel backends, dashboards, and SEO-friendly websites.",

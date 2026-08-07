@@ -4,7 +4,7 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
-const CANONICAL = "https://mohitkoli.info/blog/hostinger-vs-godaddy-vs-bluehost-2026";
+const CANONICAL = "https://mohitkoli.in/blog/hostinger-vs-godaddy-vs-bluehost-2026";
 
 export const metadata: Metadata = {
     title: "Hostinger vs GoDaddy vs Bluehost (2026): Which Is Best in India?",
@@ -72,13 +72,13 @@ const jsonLd = [
         headline: "Hostinger vs GoDaddy vs Bluehost (2026): Which Is Best in India?",
         description:
             "Head-to-head 2026 comparison for India: real INR pricing, speed, renewal traps, support quality and category scores across Hostinger, GoDaddy and Bluehost.",
-        image: "https://mohitkoli.info/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.svg",
         datePublished: "2026-06-27T00:00:00.000Z",
         dateModified: "2026-07-17T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
-            url: "https://mohitkoli.info/profile",
+            url: "https://mohitkoli.in/profile",
             jobTitle: "Senior Full Stack Developer",
             sameAs: [
                 "https://github.com/mohit16161600",
@@ -89,7 +89,7 @@ const jsonLd = [
         publisher: {
             "@type": "Person",
             name: "Mohit Koli",
-            logo: { "@type": "ImageObject", url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg" },
+            logo: { "@type": "ImageObject", url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg" },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
         keywords: "hostinger vs godaddy, hostinger vs bluehost, best hosting comparison india 2026",
@@ -100,8 +100,8 @@ const jsonLd = [
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.info/" },
-            { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.info/blog" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
+            { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.in/blog" },
             { "@type": "ListItem", position: 3, name: "Hostinger vs GoDaddy vs Bluehost (2026)", item: CANONICAL },
         ],
     },

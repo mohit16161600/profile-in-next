@@ -17,7 +17,7 @@ export default function robots(): MetadataRoute.Robots {
                 allow: '/',
             },
         ],
-        sitemap: 'https://mohitkoli.info/sitemap.xml',
-        host: 'https://mohitkoli.info',
+        sitemap: 'https://mohitkoli.in/sitemap.xml',
+        host: 'https://mohitkoli.in',
     };
 }

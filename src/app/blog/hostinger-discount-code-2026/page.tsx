@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "hostinger offer today",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/hostinger-discount-code-2026",
+    canonical: "https://mohitkoli.in/blog/hostinger-discount-code-2026",
   },
 };
 

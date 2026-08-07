@@ -4,7 +4,7 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
-const CANONICAL = "https://mohitkoli.info/blog/best-web-hosting-india-2026";
+const CANONICAL = "https://mohitkoli.in/blog/best-web-hosting-india-2026";
 
 export const metadata: Metadata = {
     title: "7 Best Web Hosting Services in India (2026) — Tested & Ranked",
@@ -159,13 +159,13 @@ const jsonLd = [
         headline: "7 Best Web Hosting Services in India (2026) — Tested & Ranked",
         description:
             "The 7 best web hosting providers in India for 2026 ranked on speed, uptime, INR pricing, renewals and support — with a clear #1 pick for beginners.",
-        image: "https://mohitkoli.info/assets/blog/best-web-hosting-india-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/best-web-hosting-india-2026.svg",
         datePublished: "2026-06-30T00:00:00.000Z",
         dateModified: "2026-07-17T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
-            url: "https://mohitkoli.info/profile",
+            url: "https://mohitkoli.in/profile",
             jobTitle: "Senior Full Stack Developer",
             sameAs: [
                 "https://github.com/mohit16161600",
@@ -176,7 +176,7 @@ const jsonLd = [
         publisher: {
             "@type": "Person",
             name: "Mohit Koli",
-            logo: { "@type": "ImageObject", url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg" },
+            logo: { "@type": "ImageObject", url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg" },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
         keywords: "best web hosting india 2026, best hosting for beginners india, cheapest web hosting india",
@@ -200,8 +200,8 @@ const jsonLd = [
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.info/" },
-            { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.info/blog" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
+            { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.in/blog" },
             { "@type": "ListItem", position: 3, name: "7 Best Web Hosting Services in India (2026)", item: CANONICAL },
         ],
     },

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "AI tools 2026"
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/chatgpt-hidden-features-hacks",
+    canonical: "https://mohitkoli.in/blog/chatgpt-hidden-features-hacks",
   },
   openGraph: {
     title: "15+ ChatGPT 'God Mode' Features: The Hidden Hacks Nobody Talks About (2026)",
@@ -79,7 +79,7 @@ export default function ChatGPTGodModeHacks() {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             "headline": "15+ ChatGPT 'God Mode' Features: The Hidden Hacks Nobody Talks About (2026)",
-            "image": "https://mohitkoli.info/assets/hacker.webp",
+            "image": "https://mohitkoli.in/assets/hacker.webp",
             "author": {
               "@type": "Person",
               "name": "Mohit Koli"
@@ -89,7 +89,7 @@ export default function ChatGPTGodModeHacks() {
               "name": "Mohit Koli",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg"
+                "url": "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg"
               }
             },
             "datePublished": "2026-05-10",

@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "what are ai agents",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/how-to-build-ai-agent-no-code-2026",
+    canonical: "https://mohitkoli.in/blog/how-to-build-ai-agent-no-code-2026",
   },
   openGraph: {
     title: "How to Build an AI Agent Without Coding in 2026 (Free)",
     description:
       "Build a working AI agent without coding in 2026. Free beginner guide using Lindy, Botpress and AgentGPT with real templates like a support and WhatsApp bot.",
-    url: "https://mohitkoli.info/blog/how-to-build-ai-agent-no-code-2026",
+    url: "https://mohitkoli.in/blog/how-to-build-ai-agent-no-code-2026",
     type: "article",
     images: ["/assets/blog/how-to-build-ai-agent-no-code-2026.svg"],
   },
@@ -96,13 +96,13 @@ export default function BuildAIAgentNoCode2026() {
     headline: "How to Build an AI Agent Without Coding in 2026 (Free)",
     description:
       "Build a working AI agent without coding in 2026. Free beginner guide using Lindy, Botpress and AgentGPT with real templates like a support and WhatsApp bot.",
-    image: "https://mohitkoli.info/assets/blog/how-to-build-ai-agent-no-code-2026.svg",
+    image: "https://mohitkoli.in/assets/blog/how-to-build-ai-agent-no-code-2026.svg",
     datePublished: "2026-06-06",
     dateModified: "2026-06-06",
     author: {
       "@type": "Person",
       name: "Mohit Koli",
-      url: "https://mohitkoli.info/profile",
+      url: "https://mohitkoli.in/profile",
       jobTitle: "Senior Full Stack Developer",
       sameAs: [
         "https://github.com/mohit16161600",
@@ -115,12 +115,12 @@ export default function BuildAIAgentNoCode2026() {
       name: "Mohit Koli",
       logo: {
         "@type": "ImageObject",
-        url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+        url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://mohitkoli.info/blog/how-to-build-ai-agent-no-code-2026",
+      "@id": "https://mohitkoli.in/blog/how-to-build-ai-agent-no-code-2026",
     },
     keywords:
       "build ai agent without coding, no code ai agent 2026, how to build ai agent, free ai agent builder, ai agent for beginners, lindy ai agent tutorial, botpress chatbot tutorial, make ai agent no code, ai agent templates, what are ai agents",
@@ -136,19 +136,19 @@ export default function BuildAIAgentNoCode2026() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://mohitkoli.info/",
+        item: "https://mohitkoli.in/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://mohitkoli.info/blog",
+        item: "https://mohitkoli.in/blog",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "How to Build an AI Agent Without Coding in 2026 (Free)",
-        item: "https://mohitkoli.info/blog/how-to-build-ai-agent-no-code-2026",
+        item: "https://mohitkoli.in/blog/how-to-build-ai-agent-no-code-2026",
       },
     ],
   };

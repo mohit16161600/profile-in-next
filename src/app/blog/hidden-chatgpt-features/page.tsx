@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "AI blogging tools"
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/hidden-chatgpt-features",
+    canonical: "https://mohitkoli.in/blog/hidden-chatgpt-features",
   },
   openGraph: {
     title: "15+ Hidden ChatGPT Features That Will Change How You Work Forever (2026)",
@@ -91,7 +91,7 @@ export default function HiddenChatGPTFeatures() {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             "headline": "15+ Hidden ChatGPT Features That Will Change How You Work Forever (2026)",
-            "image": "https://mohitkoli.info/assets/more-about-chatgpt.webp",
+            "image": "https://mohitkoli.in/assets/more-about-chatgpt.webp",
             "author": {
               "@type": "Person",
               "name": "Mohit Koli"
@@ -101,7 +101,7 @@ export default function HiddenChatGPTFeatures() {
               "name": "Mohit Koli",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg"
+                "url": "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg"
               }
             },
             "datePublished": "2026-05-09",

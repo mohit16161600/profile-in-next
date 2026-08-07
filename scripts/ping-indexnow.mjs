@@ -7,7 +7,7 @@
  *   node scripts/ping-indexnow.mjs
  */
 
-const SITE = 'https://mohitkoli.info';
+const SITE = 'https://mohitkoli.in';
 const KEY = '8530f65840195d95374c3e4bb20d2118';
 
 const sitemapRes = await fetch(`${SITE}/sitemap.xml`);
@@ -30,7 +30,7 @@ const res = await fetch('https://api.indexnow.org/indexnow', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json; charset=utf-8' },
     body: JSON.stringify({
-        host: 'mohitkoli.info',
+        host: 'mohitkoli.in',
         key: KEY,
         keyLocation: `${SITE}/${KEY}.txt`,
         urlList: urls,

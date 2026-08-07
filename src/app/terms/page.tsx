@@ -2,12 +2,12 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Terms of Service - Mohit Koli | mohitkoli.info",
-    description: "Terms of Service for mohitkoli.info. Read the terms and conditions for using Mohit Koli's website and services.",
-    keywords: "Mohit Koli, mohitkoli.info, terms of service, terms and conditions, legal, website terms",
+    title: "Terms of Service - Mohit Koli | mohitkoli.in",
+    description: "Terms of Service for mohitkoli.in. Read the terms and conditions for using Mohit Koli's website and services.",
+    keywords: "Mohit Koli, mohitkoli.in, terms of service, terms and conditions, legal, website terms",
     authors: [{ name: "Mohit Koli" }],
     alternates: {
-        canonical: "https://mohitkoli.info/terms",
+        canonical: "https://mohitkoli.in/terms",
     },
 };
 
@@ -38,7 +38,7 @@ export default function TermsOfService() {
                 <section className="mb-8">
                     <h2 className="text-2xl font-semibold text-white mb-4">1. Acceptance of Terms</h2>
                     <p className="text-gray-300 mb-4">
-                        By accessing and using this website (mohitkoli.info), you accept and agree to be bound by the terms
+                        By accessing and using this website (mohitkoli.in), you accept and agree to be bound by the terms
                         and provision of this agreement.
                     </p>
                 </section>
@@ -74,7 +74,7 @@ export default function TermsOfService() {
                     <h2 className="text-2xl font-semibold text-white mb-4">5. Contact</h2>
                     <p className="text-gray-300 mb-4">
                         If you have any questions about these Terms, please contact us at <a
-                            href="mailto:contact@mohitkoli.info" className="text-primary-500 hover:text-primary-400 underline underline-offset-2 transition-colors">contact@mohitkoli.info</a>.
+                            href="mailto:contact@mohitkoli.in" className="text-primary-500 hover:text-primary-400 underline underline-offset-2 transition-colors">contact@mohitkoli.in</a>.
                     </p>
                 </section>
             </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
-const CANONICAL = "https://mohitkoli.info/blog/hostinger-review-2026";
+const CANONICAL = "https://mohitkoli.in/blog/hostinger-review-2026";
 
 export const metadata: Metadata = {
     title: "Hostinger Review 2026: I Ran Real Client Sites for a Year — Honest Verdict",
@@ -86,7 +86,7 @@ const jsonLd = [
             brand: { "@type": "Brand", name: "Hostinger" },
         },
         reviewRating: { "@type": "Rating", ratingValue: "4.5", bestRating: "5", worstRating: "1" },
-        author: { "@type": "Person", name: "Mohit Koli", url: "https://mohitkoli.info/profile" },
+        author: { "@type": "Person", name: "Mohit Koli", url: "https://mohitkoli.in/profile" },
         publisher: { "@type": "Person", name: "Mohit Koli" },
         datePublished: "2026-07-17T00:00:00.000Z",
         reviewBody: "After a year of running real client sites on Hostinger, it delivers 99.9%-range uptime, fast NVMe/LiteSpeed performance, and a beginner-friendly hPanel at a price that's hard to beat in India. The only real downside is higher renewal pricing.",
@@ -97,13 +97,13 @@ const jsonLd = [
         headline: "Hostinger Review 2026: I Ran Real Client Sites for a Year — Honest Verdict",
         description:
             "An honest, developer-tested Hostinger review for 2026 — speed, uptime, support, hPanel, pros and cons, and whether Hostinger is worth it in India.",
-        image: "https://mohitkoli.info/assets/blog/hostinger-review-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/hostinger-review-2026.svg",
         datePublished: "2026-07-17T00:00:00.000Z",
         dateModified: "2026-07-17T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
-            url: "https://mohitkoli.info/profile",
+            url: "https://mohitkoli.in/profile",
             jobTitle: "Senior Full Stack Developer",
             sameAs: [
                 "https://github.com/mohit16161600",
@@ -114,7 +114,7 @@ const jsonLd = [
         publisher: {
             "@type": "Person",
             name: "Mohit Koli",
-            logo: { "@type": "ImageObject", url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg" },
+            logo: { "@type": "ImageObject", url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg" },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
         keywords: "hostinger review, hostinger review 2026, is hostinger good, is hostinger worth it, hostinger pros and cons",
@@ -125,8 +125,8 @@ const jsonLd = [
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.info/" },
-            { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.info/blog" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
+            { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.in/blog" },
             { "@type": "ListItem", position: 3, name: "Hostinger Review 2026", item: CANONICAL },
         ],
     },

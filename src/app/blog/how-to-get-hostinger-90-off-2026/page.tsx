@@ -4,7 +4,7 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
-const CANONICAL = "https://mohitkoli.info/blog/how-to-get-hostinger-90-off-2026";
+const CANONICAL = "https://mohitkoli.in/blog/how-to-get-hostinger-90-off-2026";
 
 export const metadata: Metadata = {
     title: "How to Get 90% OFF on Hostinger in 2026 (Step-by-Step Deal Guide)",
@@ -73,13 +73,13 @@ const jsonLd = [
         headline: "How to Get 90% OFF on Hostinger in 2026 (Step-by-Step Deal Guide)",
         description:
             "Stack Hostinger's sale price with the extra 20% referral discount to pay the lowest possible price in 2026. Real prices, savings tables, and a 7-step buying walkthrough.",
-        image: "https://mohitkoli.info/assets/blog/how-to-get-hostinger-90-off-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/how-to-get-hostinger-90-off-2026.svg",
         datePublished: "2026-07-02T00:00:00.000Z",
         dateModified: "2026-07-17T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
-            url: "https://mohitkoli.info/profile",
+            url: "https://mohitkoli.in/profile",
             jobTitle: "Senior Full Stack Developer",
             sameAs: [
                 "https://github.com/mohit16161600",
@@ -90,7 +90,7 @@ const jsonLd = [
         publisher: {
             "@type": "Person",
             name: "Mohit Koli",
-            logo: { "@type": "ImageObject", url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg" },
+            logo: { "@type": "ImageObject", url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg" },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
         keywords: "hostinger 90 off, hostinger referral code 2026, hostinger maximum discount, hostinger lowest price india",
@@ -101,8 +101,8 @@ const jsonLd = [
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.info/" },
-            { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.info/blog" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
+            { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.in/blog" },
             { "@type": "ListItem", position: 3, name: "How to Get 90% OFF on Hostinger in 2026", item: CANONICAL },
         ],
     },

@@ -81,11 +81,11 @@ export default function Contact() {
                                     <p className="text-white group-hover:text-primary-400 transition-colors">+91 8383868837</p>
                                 </div>
                             </a>
-                            <a href="mailto:contact@mohitkoli.info" className="group flex items-center space-x-4 p-4 rounded-xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/10 hover-target">
+                            <a href="mailto:contact@mohitkoli.in" className="group flex items-center space-x-4 p-4 rounded-xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/10 hover-target">
                                 <span className="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-xl group-hover:scale-110 transition-transform">📧</span>
                                 <div>
                                     <p className="font-semibold text-gray-300 text-sm">Email</p>
-                                    <p className="text-white group-hover:text-emerald-400 transition-colors">contact@mohitkoli.info</p>
+                                    <p className="text-white group-hover:text-emerald-400 transition-colors">contact@mohitkoli.in</p>
                                 </div>
                             </a>
                             <a href="mailto:mohitkoli12162@gmail.com" className="group flex items-center space-x-4 p-4 rounded-xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/10 hover-target">

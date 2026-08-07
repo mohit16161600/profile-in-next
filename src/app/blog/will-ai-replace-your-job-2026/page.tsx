@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "can AI replace human creativity"
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/will-ai-replace-your-job-2026",
+    canonical: "https://mohitkoli.in/blog/will-ai-replace-your-job-2026",
   },
 };
 

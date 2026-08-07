@@ -4,10 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Mohit Koli | Freelance Web Developer, Programmer & Coder",
   description: "Mohit Koli is a top Web Developer, Programmer, and Software Coder specializing in React, Next.js, PHP, and Laravel. Contract Mohit Koli for expert web services.",
-  keywords: ["Mohit Koli", "mohit koli", "mohitkoli.info", "Web Developer", "Programmer", "Coder", "Software Coder", "Full Stack Developer", "React Developer", "PHP Developer", "Laravel Developer", "JavaScript Programmer", "Node.js Developer", "Frontend Developer", "Backend Developer", "Portfolio", "Software Engineer", "Freelance Developer"],
-  authors: [{ name: "Mohit Koli", url: "https://mohitkoli.info" }],
+  keywords: ["Mohit Koli", "mohit koli", "mohitkoli.in", "Web Developer", "Programmer", "Coder", "Software Coder", "Full Stack Developer", "React Developer", "PHP Developer", "Laravel Developer", "JavaScript Programmer", "Node.js Developer", "Frontend Developer", "Backend Developer", "Portfolio", "Software Engineer", "Freelance Developer"],
+  authors: [{ name: "Mohit Koli", url: "https://mohitkoli.in" }],
   publisher: "Mohit Koli",
-  metadataBase: new URL("https://mohitkoli.info"),
+  metadataBase: new URL("https://mohitkoli.in"),
   alternates: {
     types: {
       "application/rss+xml": [{ url: "/feed.xml", title: "Mohit Koli — Tech Blog RSS" }],
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Mohit Koli - Professional Web Developer, Programmer & Coder",
     description: "Professional Web Developer, Coder, and Full Stack Programmer with 2+ years of experience. Specializing in React, PHP, Laravel, Node.js, and modern web technologies.",
     type: "website",
-    url: "https://mohitkoli.info/",
+    url: "https://mohitkoli.in/",
     siteName: "Mohit Koli Portfolio",
     locale: "en_US",
     images: [
@@ -104,8 +104,8 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "Person",
                 "name": "Mohit Koli",
-                "url": "https://mohitkoli.info",
-                "image": "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+                "url": "https://mohitkoli.in",
+                "image": "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
                 "jobTitle": "Senior Full Stack Developer",
                 "worksFor": {
                     "@type": "Organization",
@@ -124,7 +124,7 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "ProfessionalService",
                 "name": "Mohit Koli - Web Development Services",
-                "image": "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+                "image": "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
                 "areaServed": [
                   { "@type": "City", "name": "Delhi" },
                   { "@type": "City", "name": "Mumbai" },
@@ -142,7 +142,7 @@ export default function RootLayout({
                   { "@type": "Country", "name": "India" }
                 ],
                 "description": "Top-rated freelance Web Developer providing high-performance React, Next.js, and PHP Laravel solutions.",
-                "url": "https://mohitkoli.info",
+                "url": "https://mohitkoli.in",
                 "priceRange": "$$",
                 "telephone": "+91 8383868837",
                 "address": {
@@ -154,10 +154,10 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 "name": "Mohit Koli | Senior Full Stack Developer",
-                "url": "https://mohitkoli.info",
+                "url": "https://mohitkoli.in",
                 "potentialAction": {
                     "@type": "SearchAction",
-                    "target": "https://mohitkoli.info/blog?q={search_term_string}",
+                    "target": "https://mohitkoli.in/blog?q={search_term_string}",
                     "query-input": "required name=search_term_string"
                 }
               }

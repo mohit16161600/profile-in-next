@@ -23,14 +23,14 @@ export const metadata: Metadata = {
         follow: true,
     },
     alternates: {
-        canonical: "https://mohitkoli.info/locations",
+        canonical: "https://mohitkoli.in/locations",
     },
     openGraph: {
         title: "Best Freelance Web Developer Locations | Mohit Koli",
         description:
             "Explore all service areas where Mohit Koli is the top freelance web developer in India, including Delhi, Mumbai, Bangalore, and more.",
         type: "website",
-        url: "https://mohitkoli.info/locations",
+        url: "https://mohitkoli.in/locations",
     },
     twitter: {
         card: "summary_large_image",

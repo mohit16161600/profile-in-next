@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "best text to video ai 2026",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/best-ai-video-generators-2026",
+    canonical: "https://mohitkoli.in/blog/best-ai-video-generators-2026",
   },
   openGraph: {
     title: "Best Free AI Video Generators 2026 (Veo, Kling, Sora)",
     description:
       "The best free AI video generators in 2026 compared: Veo, Kling, Sora 2 alternatives and more. See which is best and make your first AI video free, step by step.",
-    url: "https://mohitkoli.info/blog/best-ai-video-generators-2026",
+    url: "https://mohitkoli.in/blog/best-ai-video-generators-2026",
     type: "article",
     images: ["/assets/blog/best-ai-video-generators-2026.svg"],
   },
@@ -90,8 +90,8 @@ export default function BestAIVideoGenerators2026() {
     "You can make a first AI video free in minutes with a clear, specific prompt.",
   ];
 
-  const canonical = "https://mohitkoli.info/blog/best-ai-video-generators-2026";
-  const image = "https://mohitkoli.info/assets/blog/best-ai-video-generators-2026.svg";
+  const canonical = "https://mohitkoli.in/blog/best-ai-video-generators-2026";
+  const image = "https://mohitkoli.in/assets/blog/best-ai-video-generators-2026.svg";
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -105,7 +105,7 @@ export default function BestAIVideoGenerators2026() {
     author: {
       "@type": "Person",
       name: "Mohit Koli",
-      url: "https://mohitkoli.info/profile",
+      url: "https://mohitkoli.in/profile",
       jobTitle: "Senior Full Stack Developer",
       sameAs: [
         "https://github.com/mohit16161600",
@@ -118,7 +118,7 @@ export default function BestAIVideoGenerators2026() {
       name: "Mohit Koli",
       logo: {
         "@type": "ImageObject",
-        url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+        url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
       },
     },
     mainEntityOfPage: {
@@ -139,13 +139,13 @@ export default function BestAIVideoGenerators2026() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://mohitkoli.info/",
+        item: "https://mohitkoli.in/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://mohitkoli.info/blog",
+        item: "https://mohitkoli.in/blog",
       },
       {
         "@type": "ListItem",

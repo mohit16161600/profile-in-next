@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "chatgpt writing prompts 2026",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/best-chatgpt-prompts-2026",
+    canonical: "https://mohitkoli.in/blog/best-chatgpt-prompts-2026",
   },
   openGraph: {
     title: "100+ Best ChatGPT Prompts for 2026 (Copy & Paste List)",
     description:
       "Get 100+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
-    url: "https://mohitkoli.info/blog/best-chatgpt-prompts-2026",
+    url: "https://mohitkoli.in/blog/best-chatgpt-prompts-2026",
     type: "article",
     images: ["/assets/blog/best-chatgpt-prompts-2026.svg"],
   },
@@ -91,8 +91,8 @@ export default function BestChatGPTPrompts2026() {
   ];
 
   const title = "100+ Best ChatGPT Prompts for 2026 (Copy & Paste List)";
-  const canonical = "https://mohitkoli.info/blog/best-chatgpt-prompts-2026";
-  const image = "https://mohitkoli.info/assets/blog/best-chatgpt-prompts-2026.svg";
+  const canonical = "https://mohitkoli.in/blog/best-chatgpt-prompts-2026";
+  const image = "https://mohitkoli.in/assets/blog/best-chatgpt-prompts-2026.svg";
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -106,7 +106,7 @@ export default function BestChatGPTPrompts2026() {
     author: {
       "@type": "Person",
       name: "Mohit Koli",
-      url: "https://mohitkoli.info/profile",
+      url: "https://mohitkoli.in/profile",
       jobTitle: "Senior Full Stack Developer",
       sameAs: [
         "https://github.com/mohit16161600",
@@ -119,7 +119,7 @@ export default function BestChatGPTPrompts2026() {
       name: "Mohit Koli",
       logo: {
         "@type": "ImageObject",
-        url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+        url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
       },
     },
     mainEntityOfPage: {
@@ -140,13 +140,13 @@ export default function BestChatGPTPrompts2026() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://mohitkoli.info/",
+        item: "https://mohitkoli.in/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://mohitkoli.info/blog",
+        item: "https://mohitkoli.in/blog",
       },
       {
         "@type": "ListItem",

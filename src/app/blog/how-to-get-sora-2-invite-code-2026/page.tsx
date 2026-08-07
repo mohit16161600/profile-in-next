@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "get sora 2 access",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/how-to-get-sora-2-invite-code-2026",
+    canonical: "https://mohitkoli.in/blog/how-to-get-sora-2-invite-code-2026",
   },
   openGraph: {
     title: "How to Get a Sora 2 Invite Code in 2026 (Working Methods)",
     description:
       "Want a Sora 2 invite code in 2026? Learn the real working methods to get access, avoid scams, and make your first AI video, plus free Sora alternatives.",
-    url: "https://mohitkoli.info/blog/how-to-get-sora-2-invite-code-2026",
+    url: "https://mohitkoli.in/blog/how-to-get-sora-2-invite-code-2026",
     type: "article",
     images: ["/assets/blog/how-to-get-sora-2-invite-code-2026.svg"],
   },
@@ -103,13 +103,13 @@ export default function HowToGetSora2InviteCode2026() {
             description:
               "Want a Sora 2 invite code in 2026? Learn the real working methods to get access, avoid scams, and make your first AI video, plus free Sora alternatives.",
             image:
-              "https://mohitkoli.info/assets/blog/how-to-get-sora-2-invite-code-2026.svg",
+              "https://mohitkoli.in/assets/blog/how-to-get-sora-2-invite-code-2026.svg",
             datePublished: "2026-06-01",
             dateModified: "2026-06-01",
             author: {
               "@type": "Person",
               name: "Mohit Koli",
-              url: "https://mohitkoli.info/profile",
+              url: "https://mohitkoli.in/profile",
               jobTitle: "Senior Full Stack Developer",
               sameAs: [
                 "https://github.com/mohit16161600",
@@ -122,13 +122,13 @@ export default function HowToGetSora2InviteCode2026() {
               name: "Mohit Koli",
               logo: {
                 "@type": "ImageObject",
-                url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+                url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
               },
             },
             mainEntityOfPage: {
               "@type": "WebPage",
               "@id":
-                "https://mohitkoli.info/blog/how-to-get-sora-2-invite-code-2026",
+                "https://mohitkoli.in/blog/how-to-get-sora-2-invite-code-2026",
             },
             keywords:
               "sora 2 invite code, how to get sora 2 invite code, sora 2 access 2026, sora 2 invite code free, sora 2 waitlist, sora ai invite code, sora 2 india access, sora 2 alternatives free, openai sora 2 how to use, get sora 2 access",
@@ -150,19 +150,19 @@ export default function HowToGetSora2InviteCode2026() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://mohitkoli.info/",
+                item: "https://mohitkoli.in/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Blog",
-                item: "https://mohitkoli.info/blog",
+                item: "https://mohitkoli.in/blog",
               },
               {
                 "@type": "ListItem",
                 position: 3,
                 name: "How to Get a Sora 2 Invite Code in 2026 (Working Methods)",
-                item: "https://mohitkoli.info/blog/how-to-get-sora-2-invite-code-2026",
+                item: "https://mohitkoli.in/blog/how-to-get-sora-2-invite-code-2026",
               },
             ],
           }),

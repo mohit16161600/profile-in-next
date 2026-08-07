@@ -46,12 +46,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         description: post.description,
         keywords: post.keywords.join(", "),
         alternates: {
-            canonical: `https://mohitkoli.info/blog/${post.slug}`,
+            canonical: `https://mohitkoli.in/blog/${post.slug}`,
         },
         openGraph: {
             title: post.title,
             description: post.description,
-            url: `https://mohitkoli.info/blog/${post.slug}`,
+            url: `https://mohitkoli.in/blog/${post.slug}`,
             images: [post.imageSrc],
         },
         twitter: {
@@ -147,10 +147,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
     const publishedISO = new Date(post.date).toISOString();
     const modifiedISO = new Date(post.updated ?? post.date).toISOString();
-    const canonical = `https://mohitkoli.info/blog/${post.slug}`;
+    const canonical = `https://mohitkoli.in/blog/${post.slug}`;
     const absoluteImage = post.imageSrc.startsWith("http")
         ? post.imageSrc
-        : `https://mohitkoli.info${post.imageSrc}`;
+        : `https://mohitkoli.in${post.imageSrc}`;
 
     const articleSchema = {
         "@context": "https://schema.org",
@@ -163,7 +163,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         author: {
             "@type": "Person",
             name: "Mohit Koli",
-            url: "https://mohitkoli.info/profile",
+            url: "https://mohitkoli.in/profile",
             jobTitle: "Senior Full Stack Developer",
             sameAs: [
                 "https://github.com/mohit16161600",
@@ -176,7 +176,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             name: "Mohit Koli",
             logo: {
                 "@type": "ImageObject",
-                url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+                url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
             },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
@@ -189,8 +189,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.info/" },
-            { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.info/blog" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
+            { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.in/blog" },
             { "@type": "ListItem", position: 3, name: post.title, item: canonical },
         ],
     };

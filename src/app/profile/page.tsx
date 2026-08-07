@@ -50,7 +50,7 @@ export const metadata = {
         "mohit koli portfolio",
     ],
     alternates: {
-        canonical: "https://mohitkoli.info/profile",
+        canonical: "https://mohitkoli.in/profile",
     },
     openGraph: {
         title: "Mohit Koli - Best Freelance Web Developer Profile",

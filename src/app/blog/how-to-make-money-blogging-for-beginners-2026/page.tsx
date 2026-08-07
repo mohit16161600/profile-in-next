@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "blogging tips for beginners 2026",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/how-to-make-money-blogging-for-beginners-2026",
+    canonical: "https://mohitkoli.in/blog/how-to-make-money-blogging-for-beginners-2026",
   },
 };
 

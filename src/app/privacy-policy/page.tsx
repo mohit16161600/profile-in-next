@@ -2,12 +2,12 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Privacy Policy - Mohit Koli | mohitkoli.info",
-    description: "Privacy Policy for mohitkoli.info. Learn how Mohit Koli collects, uses, and protects your personal information when you visit this website.",
-    keywords: "Mohit Koli, mohitkoli.info, privacy policy, data protection, cookie policy, GDPR, website privacy",
+    title: "Privacy Policy - Mohit Koli | mohitkoli.in",
+    description: "Privacy Policy for mohitkoli.in. Learn how Mohit Koli collects, uses, and protects your personal information when you visit this website.",
+    keywords: "Mohit Koli, mohitkoli.in, privacy policy, data protection, cookie policy, GDPR, website privacy",
     authors: [{ name: "Mohit Koli" }],
     alternates: {
-        canonical: "https://mohitkoli.info/privacy-policy",
+        canonical: "https://mohitkoli.in/privacy-policy",
     },
 };
 
@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
                         1. Introduction
                     </h2>
                     <p className="text-gray-300 mb-4">
-                        Welcome to mohitkoli.info (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). This Privacy
+                        Welcome to mohitkoli.in (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). This Privacy
                         Policy explains how Mohit Koli (&quot;I,&quot; &quot;me,&quot; or &quot;my&quot;) collects, uses,
                         discloses, and protects your personal information when you visit this
                         website.
@@ -297,10 +297,10 @@ export default function PrivacyPolicy() {
                         <p className="text-gray-300 mb-2">
                             Email:{" "}
                             <a
-                                href="mailto:contact@mohitkoli.info"
+                                href="mailto:contact@mohitkoli.in"
                                 className="text-primary-500 hover:text-primary-400 transition-colors"
                             >
-                                contact@mohitkoli.info
+                                contact@mohitkoli.in
                             </a>
                         </p>
                         <p className="text-gray-300 mb-2">
@@ -324,10 +324,10 @@ export default function PrivacyPolicy() {
                         <p className="text-gray-300 mt-2">
                             Website:{" "}
                             <a
-                                href="https://mohitkoli.info"
+                                href="https://mohitkoli.in"
                                 className="text-primary-500 hover:text-primary-400 transition-colors"
                             >
-                                https://mohitkoli.info
+                                https://mohitkoli.in
                             </a>
                         </p>
                     </div>

@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "how to make nano banana saree photo",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/nano-banana-saree-trend-prompts-2026",
+    canonical: "https://mohitkoli.in/blog/nano-banana-saree-trend-prompts-2026",
   },
   openGraph: {
     title: "Nano Banana Saree Trend: 12 Free Gemini Prompts (2026)",
     description:
       "Try the viral Nano Banana saree trend free! Copy 12 tested Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
-    url: "https://mohitkoli.info/blog/nano-banana-saree-trend-prompts-2026",
+    url: "https://mohitkoli.in/blog/nano-banana-saree-trend-prompts-2026",
     type: "article",
     images: ["/assets/blog/nano-banana-saree-trend-prompts-2026.svg"],
   },
@@ -159,13 +159,13 @@ export default function NanoBananaSareeTrendPrompts2026() {
             description:
               "Try the viral Nano Banana saree trend free! Copy 12 tested Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
             image:
-              "https://mohitkoli.info/assets/blog/nano-banana-saree-trend-prompts-2026.svg",
+              "https://mohitkoli.in/assets/blog/nano-banana-saree-trend-prompts-2026.svg",
             datePublished: "2026-06-18",
             dateModified: "2026-06-18",
             author: {
               "@type": "Person",
               name: "Mohit Koli",
-              url: "https://mohitkoli.info/profile",
+              url: "https://mohitkoli.in/profile",
               jobTitle: "Senior Full Stack Developer",
               sameAs: [
                 "https://github.com/mohit16161600",
@@ -178,13 +178,13 @@ export default function NanoBananaSareeTrendPrompts2026() {
               name: "Mohit Koli",
               logo: {
                 "@type": "ImageObject",
-                url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+                url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
               },
             },
             mainEntityOfPage: {
               "@type": "WebPage",
               "@id":
-                "https://mohitkoli.info/blog/nano-banana-saree-trend-prompts-2026",
+                "https://mohitkoli.in/blog/nano-banana-saree-trend-prompts-2026",
             },
             keywords:
               "nano banana saree prompt, nano banana saree trend, gemini saree photo prompt, nano banana 2 prompts, retro 90s bollywood ai photo, viral ai saree photo prompt, nano banana ai photo trend, free gemini image prompts 2026, nano banana saree prompt copy paste, how to make nano banana saree photo",
@@ -206,19 +206,19 @@ export default function NanoBananaSareeTrendPrompts2026() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://mohitkoli.info/",
+                item: "https://mohitkoli.in/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Blog",
-                item: "https://mohitkoli.info/blog",
+                item: "https://mohitkoli.in/blog",
               },
               {
                 "@type": "ListItem",
                 position: 3,
                 name: "Nano Banana Saree Trend: 12 Free Gemini Prompts (2026)",
-                item: "https://mohitkoli.info/blog/nano-banana-saree-trend-prompts-2026",
+                item: "https://mohitkoli.in/blog/nano-banana-saree-trend-prompts-2026",
               },
             ],
           }),

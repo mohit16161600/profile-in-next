@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
 
     const title = `Web Developer in ${locationData.name} | Best Freelance Web Developer | Mohit Koli`;
     const description = `Hire the best web developer and freelancer in ${locationData.name} for ${locationData.serviceFocus}. Serving clients across ${locationData.region} with React, Next.js, PHP, and Laravel expertise.`;
-    const canonical = `https://mohitkoli.info/developer-in/${locationData.slug}`;
+    const canonical = `https://mohitkoli.in/developer-in/${locationData.slug}`;
 
     return {
         title,
@@ -80,7 +80,7 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
     }
 
     const relatedLocations = getRelatedLocations(locationData);
-    const canonical = `https://mohitkoli.info/developer-in/${locationData.slug}`;
+    const canonical = `https://mohitkoli.in/developer-in/${locationData.slug}`;
     const faqItems = [
         {
             question: `Do you work with clients in ${locationData.name} remotely?`,
@@ -101,8 +101,8 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.info/" },
-                { "@type": "ListItem", position: 2, name: "Service Areas", item: "https://mohitkoli.info/locations" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
+                { "@type": "ListItem", position: 2, name: "Service Areas", item: "https://mohitkoli.in/locations" },
                 { "@type": "ListItem", position: 3, name: `Web Developer in ${locationData.name}`, item: canonical },
             ],
         },
@@ -113,7 +113,7 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
             provider: {
                 "@type": "Person",
                 name: "Mohit Koli",
-                url: "https://mohitkoli.info",
+                url: "https://mohitkoli.in",
             },
             serviceType: "Web Development",
             areaServed: {

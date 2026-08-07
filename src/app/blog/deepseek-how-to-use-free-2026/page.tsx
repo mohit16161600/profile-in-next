@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "is deepseek safe to use",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/deepseek-how-to-use-free-2026",
+    canonical: "https://mohitkoli.in/blog/deepseek-how-to-use-free-2026",
   },
   openGraph: {
     title: "DeepSeek AI: How to Use It Free in 2026 (Beginner Guide)",
     description:
       "Learn how to use DeepSeek free in 2026: sign up, best uses, step-by-step reasoning and tips. A budget-friendly beginner guide to the free DeepSeek AI app.",
-    url: "https://mohitkoli.info/blog/deepseek-how-to-use-free-2026",
+    url: "https://mohitkoli.in/blog/deepseek-how-to-use-free-2026",
     type: "article",
     images: ["/assets/blog/deepseek-how-to-use-free-2026.svg"],
   },
@@ -96,13 +96,13 @@ export default function DeepSeekHowToUseFree2026() {
     headline: "DeepSeek AI: How to Use It Free in 2026 (Beginner Guide)",
     description:
       "Learn how to use DeepSeek free in 2026: sign up, best uses, step-by-step reasoning and tips. A budget-friendly beginner guide to the free DeepSeek AI app.",
-    image: "https://mohitkoli.info/assets/blog/deepseek-how-to-use-free-2026.svg",
+    image: "https://mohitkoli.in/assets/blog/deepseek-how-to-use-free-2026.svg",
     datePublished: "2026-06-10",
     dateModified: "2026-06-10",
     author: {
       "@type": "Person",
       name: "Mohit Koli",
-      url: "https://mohitkoli.info/profile",
+      url: "https://mohitkoli.in/profile",
       jobTitle: "Senior Full Stack Developer",
       sameAs: [
         "https://github.com/mohit16161600",
@@ -115,12 +115,12 @@ export default function DeepSeekHowToUseFree2026() {
       name: "Mohit Koli",
       logo: {
         "@type": "ImageObject",
-        url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+        url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://mohitkoli.info/blog/deepseek-how-to-use-free-2026",
+      "@id": "https://mohitkoli.in/blog/deepseek-how-to-use-free-2026",
     },
     keywords:
       "how to use deepseek free, deepseek ai beginner guide, deepseek app tutorial 2026, deepseek free ai, how to use deepseek, deepseek best uses, deepseek for students, deepseek vs chatgpt free, deepseek reasoning model, is deepseek safe to use",
@@ -136,19 +136,19 @@ export default function DeepSeekHowToUseFree2026() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://mohitkoli.info/",
+        item: "https://mohitkoli.in/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://mohitkoli.info/blog",
+        item: "https://mohitkoli.in/blog",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "DeepSeek AI: How to Use It Free in 2026 (Beginner Guide)",
-        item: "https://mohitkoli.info/blog/deepseek-how-to-use-free-2026",
+        item: "https://mohitkoli.in/blog/deepseek-how-to-use-free-2026",
       },
     ],
   };

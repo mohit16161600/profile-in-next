@@ -66,8 +66,8 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm">
                             <li className="flex items-start">
                                 <span className="mr-3 text-primary-500">📧</span>
-                                <a href="mailto:contact@mohitkoli.info"
-                                    className="text-gray-400 border-b border-transparent hover:text-white hover:border-white transition-all hover-target">contact@mohitkoli.info</a>
+                                <a href="mailto:contact@mohitkoli.in"
+                                    className="text-gray-400 border-b border-transparent hover:text-white hover:border-white transition-all hover-target">contact@mohitkoli.in</a>
                             </li>
                             <li className="flex items-start mt-2">
                                 <span className="mr-3 text-primary-500">📞</span>

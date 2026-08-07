@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "ai tools to make money online"
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/top-25-free-ai-tools-2026",
+    canonical: "https://mohitkoli.in/blog/top-25-free-ai-tools-2026",
   },
   openGraph: {
     title: "25 Free AI Tools That Will Make You Quit Your Paid Subscriptions in 2026",
@@ -460,7 +460,7 @@ export default function Top25FreeAITools2026() {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             "headline": "25 Free AI Tools That Will Make You Quit Your Paid Subscriptions in 2026",
-            "image": "https://mohitkoli.info/assets/ai-free-tool.webp",
+            "image": "https://mohitkoli.in/assets/ai-free-tool.webp",
             "author": {
               "@type": "Person",
               "name": "Mohit Koli"
@@ -470,7 +470,7 @@ export default function Top25FreeAITools2026() {
               "name": "Mohit Koli",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg"
+                "url": "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg"
               }
             },
             "datePublished": "2026-05-06",

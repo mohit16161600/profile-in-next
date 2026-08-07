@@ -3,7 +3,7 @@ import { BLOG_POSTS } from '@/data/posts';
 export const dynamic = 'force-static';
 export const revalidate = 86400;
 
-const SITE = 'https://mohitkoli.info';
+const SITE = 'https://mohitkoli.in';
 
 function escapeXml(value: string): string {
     return value

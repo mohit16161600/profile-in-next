@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "chatgpt tips for beginners",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/how-to-use-chatgpt-beginners-2026",
+    canonical: "https://mohitkoli.in/blog/how-to-use-chatgpt-beginners-2026",
   },
   openGraph: {
     title: "How to Use ChatGPT in 2026: Complete Beginner Guide",
     description:
       "New to ChatGPT? This 2026 beginner guide shows how to sign up, write prompts, use voice, memory and free vs paid plans step by step. Start using ChatGPT today.",
-    url: "https://mohitkoli.info/blog/how-to-use-chatgpt-beginners-2026",
+    url: "https://mohitkoli.in/blog/how-to-use-chatgpt-beginners-2026",
     type: "article",
     images: ["/assets/blog/how-to-use-chatgpt-beginners-2026.svg"],
   },
@@ -88,13 +88,13 @@ export default function HowToUseChatGPTBeginners2026() {
     headline: "How to Use ChatGPT in 2026: Complete Beginner Guide",
     description:
       "New to ChatGPT? This 2026 beginner guide shows how to sign up, write prompts, use voice, memory and free vs paid plans step by step. Start using ChatGPT today.",
-    image: "https://mohitkoli.info/assets/blog/how-to-use-chatgpt-beginners-2026.svg",
+    image: "https://mohitkoli.in/assets/blog/how-to-use-chatgpt-beginners-2026.svg",
     datePublished: "2026-06-14",
     dateModified: "2026-06-14",
     author: {
       "@type": "Person",
       name: "Mohit Koli",
-      url: "https://mohitkoli.info/profile",
+      url: "https://mohitkoli.in/profile",
       jobTitle: "Senior Full Stack Developer",
       sameAs: [
         "https://github.com/mohit16161600",
@@ -107,12 +107,12 @@ export default function HowToUseChatGPTBeginners2026() {
       name: "Mohit Koli",
       logo: {
         "@type": "ImageObject",
-        url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+        url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://mohitkoli.info/blog/how-to-use-chatgpt-beginners-2026",
+      "@id": "https://mohitkoli.in/blog/how-to-use-chatgpt-beginners-2026",
     },
     keywords:
       "how to use chatgpt, chatgpt beginner guide 2026, how to use chatgpt for beginners, chatgpt tutorial 2026, chatgpt free vs plus, how to write chatgpt prompts, chatgpt sign up guide, what is chatgpt and how to use it, chatgpt voice mode beginner, chatgpt tips for beginners",
@@ -128,19 +128,19 @@ export default function HowToUseChatGPTBeginners2026() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://mohitkoli.info/",
+        item: "https://mohitkoli.in/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://mohitkoli.info/blog",
+        item: "https://mohitkoli.in/blog",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "How to Use ChatGPT in 2026: Complete Beginner Guide",
-        item: "https://mohitkoli.info/blog/how-to-use-chatgpt-beginners-2026",
+        item: "https://mohitkoli.in/blog/how-to-use-chatgpt-beginners-2026",
       },
     ],
   };

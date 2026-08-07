@@ -43,7 +43,7 @@ export default function About() {
                 My work sits at the intersection of frontend quality, backend logic, and technical SEO. That means I focus on websites and web apps that are not only visually polished, but also fast, scalable, mobile-friendly, and structured to support search visibility and better conversions.
               </p>
               <p>
-                As <strong itemProp="jobTitle">Senior Web Developer</strong> at <span className="font-semibold text-white" itemProp="worksFor">Sheopals Pvt Ltd</span>, I build responsive dashboards and workflow-driven systems. Through <strong className="text-white">mohitkoli.info</strong>, I also help clients with website redesigns, SEO-aware development, performance improvements, and production-ready business websites.
+                As <strong itemProp="jobTitle">Senior Web Developer</strong> at <span className="font-semibold text-white" itemProp="worksFor">Sheopals Pvt Ltd</span>, I build responsive dashboards and workflow-driven systems. Through <strong className="text-white">mohitkoli.in</strong>, I also help clients with website redesigns, SEO-aware development, performance improvements, and production-ready business websites.
               </p>
             </div>
 

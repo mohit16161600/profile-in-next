@@ -16,13 +16,13 @@ export const metadata: Metadata = {
         "Mohit Koli projects",
     ],
     alternates: {
-        canonical: "https://mohitkoli.info/projects/sheopals-crm",
+        canonical: "https://mohitkoli.in/projects/sheopals-crm",
     },
     openGraph: {
         title: "Sheopals CRM Case Study | Custom CRM Development by Mohit Koli",
         description:
             "A custom CRM and internal operations platform built for Sheopals with Next.js, automation workflows, role-based access, and business-critical integrations.",
-        url: "https://mohitkoli.info/projects/sheopals-crm",
+        url: "https://mohitkoli.in/projects/sheopals-crm",
         type: "article",
     },
     twitter: {
@@ -146,7 +146,7 @@ const structuredData = {
         "@type": "Person",
         name: "Mohit Koli",
     },
-    url: "https://mohitkoli.info/projects/sheopals-crm",
+    url: "https://mohitkoli.in/projects/sheopals-crm",
     about: [
         "Custom CRM development",
         "Next.js dashboard development",

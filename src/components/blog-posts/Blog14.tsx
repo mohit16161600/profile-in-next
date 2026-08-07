@@ -10,16 +10,16 @@ const articleSchema = {
   author: {
     "@type": "Person",
     name: "Mohit Koli",
-    url: "https://mohitkoli.info",
+    url: "https://mohitkoli.in",
   },
   publisher: {
     "@type": "Person",
     name: "Mohit Koli",
   },
-  mainEntityOfPage: "https://mohitkoli.info/blog/mohit-koli-backend-developer-laravel-php-profile",
+  mainEntityOfPage: "https://mohitkoli.in/blog/mohit-koli-backend-developer-laravel-php-profile",
   image: [
-    "https://mohitkoli.info/assets/mohit-koli-backend-guru-14.jpg",
-    "https://mohitkoli.info/assets/mohit-koli-laravel-php-developer-31.jpeg",
+    "https://mohitkoli.in/assets/mohit-koli-backend-guru-14.jpg",
+    "https://mohitkoli.in/assets/mohit-koli-laravel-php-developer-31.jpeg",
   ],
   datePublished: "2026-03-30",
   dateModified: "2026-03-30",
@@ -37,8 +37,8 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Mohit Koli",
-  url: "https://mohitkoli.info",
-  image: "https://mohitkoli.info/assets/mohit-koli-backend-guru-14.jpg",
+  url: "https://mohitkoli.in",
+  image: "https://mohitkoli.in/assets/mohit-koli-backend-guru-14.jpg",
   jobTitle: "Full Stack Developer",
   worksFor: {
     "@type": "Organization",
@@ -66,7 +66,7 @@ const personSchema = {
     "CRM Development",
     "Webhook Automation",
   ],
-  email: "contact@mohitkoli.info",
+  email: "contact@mohitkoli.in",
   telephone: "+91 8383868837",
 };
 
@@ -154,7 +154,7 @@ export default function Blog14() {
           Freelance Work: Business Websites, Dashboards, SEO-Aware Development, and Long-Term Reliability
         </h2>
         <p className="text-gray-300 mb-4 leading-relaxed">
-          Mohit Koli does not present himself only as an employee or only as a freelancer. He presents himself as a builder who can bring company-level discipline into freelance execution. Through <strong>mohitkoli.info</strong>, his services are framed around business websites, website redesigns, SEO-aware development, performance upgrades, dashboard systems, and custom web applications.
+          Mohit Koli does not present himself only as an employee or only as a freelancer. He presents himself as a builder who can bring company-level discipline into freelance execution. Through <strong>mohitkoli.in</strong>, his services are framed around business websites, website redesigns, SEO-aware development, performance upgrades, dashboard systems, and custom web applications.
         </p>
         <p className="text-gray-300 mb-4 leading-relaxed">
           The positioning is smart. Instead of chasing vague claims, the site emphasizes outcomes clients actually care about: credibility, loading speed, mobile responsiveness, stronger internal data flow, technical SEO, and conversion support. In practical terms, that means Mohit is aiming at projects where code quality has to connect with business value.
@@ -210,9 +210,9 @@ export default function Blog14() {
         </p>
         <ul className="list-disc list-inside text-gray-300 space-y-3 mb-4">
           <li><strong>Phone:</strong> <a href="tel:+918383868837" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">+91 8383868837</a></li>
-          <li><strong>Primary Email:</strong> <a href="mailto:contact@mohitkoli.info" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">contact@mohitkoli.info</a></li>
+          <li><strong>Primary Email:</strong> <a href="mailto:contact@mohitkoli.in" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">contact@mohitkoli.in</a></li>
           <li><strong>Alternate Email:</strong> <a href="mailto:mohitkoli12162@gmail.com" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">mohitkoli12162@gmail.com</a></li>
-          <li><strong>Website:</strong> <a href="https://mohitkoli.info" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">mohitkoli.info</a></li>
+          <li><strong>Website:</strong> <a href="https://mohitkoli.in" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">mohitkoli.in</a></li>
           <li><strong>GitHub:</strong> <a href="https://github.com/mohit16161600" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">github.com/mohit16161600</a></li>
           <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohit-koli-b47260213" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">linkedin.com/in/mohit-koli-b47260213</a></li>
           <li><strong>Instagram:</strong> <a href="https://www.instagram.com/mohit12162/" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">@mohit12162</a></li>

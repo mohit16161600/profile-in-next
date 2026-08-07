@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "autonomous ai agents",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/what-are-ai-agents-2026-guide",
+    canonical: "https://mohitkoli.in/blog/what-are-ai-agents-2026-guide",
   },
   openGraph: {
     title: "What Are AI Agents? The Complete 2026 Beginner Guide",
     description:
       "What are AI agents? This 2026 beginner guide explains how AI agents work, real examples, top tools and how to start using them, in plain simple language.",
-    url: "https://mohitkoli.info/blog/what-are-ai-agents-2026-guide",
+    url: "https://mohitkoli.in/blog/what-are-ai-agents-2026-guide",
     type: "article",
     images: ["/assets/blog/what-are-ai-agents-2026-guide.svg"],
   },
@@ -90,9 +90,9 @@ export default function WhatAreAIAgents2026Guide() {
     "Give agents limited permissions and review actions, since they can make mistakes.",
   ];
 
-  const canonical = "https://mohitkoli.info/blog/what-are-ai-agents-2026-guide";
+  const canonical = "https://mohitkoli.in/blog/what-are-ai-agents-2026-guide";
   const imageUrl =
-    "https://mohitkoli.info/assets/blog/what-are-ai-agents-2026-guide.svg";
+    "https://mohitkoli.in/assets/blog/what-are-ai-agents-2026-guide.svg";
 
   return (
     <main className="pt-28 pb-20 bg-[#040404] text-white">
@@ -112,7 +112,7 @@ export default function WhatAreAIAgents2026Guide() {
             author: {
               "@type": "Person",
               name: "Mohit Koli",
-              url: "https://mohitkoli.info/profile",
+              url: "https://mohitkoli.in/profile",
               jobTitle: "Senior Full Stack Developer",
               sameAs: [
                 "https://github.com/mohit16161600",
@@ -125,7 +125,7 @@ export default function WhatAreAIAgents2026Guide() {
               name: "Mohit Koli",
               logo: {
                 "@type": "ImageObject",
-                url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+                url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
               },
             },
             mainEntityOfPage: {
@@ -152,13 +152,13 @@ export default function WhatAreAIAgents2026Guide() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://mohitkoli.info/",
+                item: "https://mohitkoli.in/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Blog",
-                item: "https://mohitkoli.info/blog",
+                item: "https://mohitkoli.in/blog",
               },
               {
                 "@type": "ListItem",

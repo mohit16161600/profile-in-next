@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "Anthropic Claude vs OpenAI ChatGPT",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/chatgpt-vs-gemini-vs-claude-best-ai-2026",
+    canonical: "https://mohitkoli.in/blog/chatgpt-vs-gemini-vs-claude-best-ai-2026",
   },
 };
 

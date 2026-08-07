@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "custom web apps",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/services",
+    canonical: "https://mohitkoli.in/services",
   },
   openGraph: {
     title: "Web Development Services | Best Freelance Web Developer | Mohit Koli",
     description:
       "A complete list of web development services from India’s top freelance web developer: product websites, SaaS apps, landing pages, and SEO-first builds.",
-    url: "https://mohitkoli.info/services",
+    url: "https://mohitkoli.in/services",
     type: "website",
   },
   twitter: {

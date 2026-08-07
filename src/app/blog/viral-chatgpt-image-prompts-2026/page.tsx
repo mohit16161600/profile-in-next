@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "toy figure ai prompt",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/viral-chatgpt-image-prompts-2026",
+    canonical: "https://mohitkoli.in/blog/viral-chatgpt-image-prompts-2026",
   },
   openGraph: {
     title: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
     description:
       "Copy 30 tested viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
-    url: "https://mohitkoli.info/blog/viral-chatgpt-image-prompts-2026",
+    url: "https://mohitkoli.in/blog/viral-chatgpt-image-prompts-2026",
     type: "article",
     images: ["/assets/blog/viral-chatgpt-image-prompts-2026.svg"],
   },
@@ -90,7 +90,7 @@ export default function ViralChatGPTImagePrompts2026() {
     "Avoid celebrities and copyrighted characters so prompts are not refused or risky to post.",
   ];
 
-  const canonical = "https://mohitkoli.info/blog/viral-chatgpt-image-prompts-2026";
+  const canonical = "https://mohitkoli.in/blog/viral-chatgpt-image-prompts-2026";
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -98,13 +98,13 @@ export default function ViralChatGPTImagePrompts2026() {
     headline: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
     description:
       "Copy 30 tested viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
-    image: "https://mohitkoli.info/assets/blog/viral-chatgpt-image-prompts-2026.svg",
+    image: "https://mohitkoli.in/assets/blog/viral-chatgpt-image-prompts-2026.svg",
     datePublished: "2026-06-16",
     dateModified: "2026-06-16",
     author: {
       "@type": "Person",
       name: "Mohit Koli",
-      url: "https://mohitkoli.info/profile",
+      url: "https://mohitkoli.in/profile",
       jobTitle: "Senior Full Stack Developer",
       sameAs: [
         "https://github.com/mohit16161600",
@@ -117,7 +117,7 @@ export default function ViralChatGPTImagePrompts2026() {
       name: "Mohit Koli",
       logo: {
         "@type": "ImageObject",
-        url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+        url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
       },
     },
     mainEntityOfPage: {
@@ -138,13 +138,13 @@ export default function ViralChatGPTImagePrompts2026() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://mohitkoli.info/",
+        item: "https://mohitkoli.in/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://mohitkoli.info/blog",
+        item: "https://mohitkoli.in/blog",
       },
       {
         "@type": "ListItem",

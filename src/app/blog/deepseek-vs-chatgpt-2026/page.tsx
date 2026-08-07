@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "is deepseek better than chatgpt",
   ],
   alternates: {
-    canonical: "https://mohitkoli.info/blog/deepseek-vs-chatgpt-2026",
+    canonical: "https://mohitkoli.in/blog/deepseek-vs-chatgpt-2026",
   },
   openGraph: {
     title: "DeepSeek vs ChatGPT 2026: Which Free AI Is Better?",
     description:
       "DeepSeek vs ChatGPT 2026 compared on speed, reasoning, coding, cost and privacy. See which free AI wins for students and everyday users in India and beyond.",
-    url: "https://mohitkoli.info/blog/deepseek-vs-chatgpt-2026",
+    url: "https://mohitkoli.in/blog/deepseek-vs-chatgpt-2026",
     type: "article",
     images: ["/assets/blog/deepseek-vs-chatgpt-2026.svg"],
   },
@@ -96,13 +96,13 @@ export default function DeepSeekVsChatGPT2026() {
     headline: "DeepSeek vs ChatGPT 2026: Which Free AI Is Better?",
     description:
       "DeepSeek vs ChatGPT 2026 compared on speed, reasoning, coding, cost and privacy. See which free AI wins for students and everyday users in India and beyond.",
-    image: "https://mohitkoli.info/assets/blog/deepseek-vs-chatgpt-2026.svg",
+    image: "https://mohitkoli.in/assets/blog/deepseek-vs-chatgpt-2026.svg",
     datePublished: "2026-06-08",
     dateModified: "2026-06-08",
     author: {
       "@type": "Person",
       name: "Mohit Koli",
-      url: "https://mohitkoli.info/profile",
+      url: "https://mohitkoli.in/profile",
       jobTitle: "Senior Full Stack Developer",
       sameAs: [
         "https://github.com/mohit16161600",
@@ -115,12 +115,12 @@ export default function DeepSeekVsChatGPT2026() {
       name: "Mohit Koli",
       logo: {
         "@type": "ImageObject",
-        url: "https://mohitkoli.info/assets/mohit-koli-profile-photo.jpg",
+        url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://mohitkoli.info/blog/deepseek-vs-chatgpt-2026",
+      "@id": "https://mohitkoli.in/blog/deepseek-vs-chatgpt-2026",
     },
     keywords:
       "deepseek vs chatgpt, deepseek vs chatgpt 2026, which free ai is better, deepseek vs chatgpt free, deepseek vs chatgpt coding, deepseek or chatgpt for students, best free ai chatbot 2026, deepseek vs chatgpt reasoning, deepseek vs chatgpt privacy, is deepseek better than chatgpt",
@@ -136,19 +136,19 @@ export default function DeepSeekVsChatGPT2026() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://mohitkoli.info/",
+        item: "https://mohitkoli.in/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://mohitkoli.info/blog",
+        item: "https://mohitkoli.in/blog",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "DeepSeek vs ChatGPT 2026: Which Free AI Is Better?",
-        item: "https://mohitkoli.info/blog/deepseek-vs-chatgpt-2026",
+        item: "https://mohitkoli.in/blog/deepseek-vs-chatgpt-2026",
       },
     ],
   };

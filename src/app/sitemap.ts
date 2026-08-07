@@ -4,7 +4,7 @@ import { SEO_LOCATIONS } from '@/data/locations';
 
 export const revalidate = 86400;
 
-const baseUrl = 'https://mohitkoli.info';
+const baseUrl = 'https://mohitkoli.in';
 
 // Stable <lastmod> anchors. Bump these ONLY when the underlying page content
 // actually changes. Previously every deploy stamped `new Date()` (today) on all

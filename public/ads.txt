@@ -1,6 +1,6 @@
-#Ads.txt mohitkoli.info
+#Ads.txt mohitkoli.in
 #Ads.txt managed by AdsTxtManager.com - the free ads.txt management tool for publishers
-ownerdomain=mohitkoli.info
+ownerdomain=mohitkoli.in
 # 35
 themediagrid.com, Q19AKF, DIRECT, 35d5010d7789b49d
 sonobi.com, 192ecdea01, RESELLER, d1a215d9eb5aee9e
