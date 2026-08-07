@@ -1,3 +1,16 @@
+> ## ⚠️ You are on the `redirect-mohitkoli-info` branch
+>
+> **Deploy this branch to `mohitkoli.info` only. Never to `mohitkoli.in`.**
+>
+> `mohitkoli.info` is being retired. Everything this branch does is 301 every
+> request to the same path on `mohitkoli.in`, so search rankings and backlinks
+> follow the move. The single change vs. `master` is the catch-all in
+> [`next.config.ts`](next.config.ts).
+>
+> The live site is `master`, which serves `mohitkoli.in`.
+>
+> Once `mohitkoli.info` is fully deregistered, this branch can be deleted.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

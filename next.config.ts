@@ -1,101 +1,50 @@
 import type { NextConfig } from "next";
 
-const REMOVED_LOCATION_REDIRECTS = [
-    { source: "jaipur", destination: "delhi" },
-    { source: "surat", destination: "ahmedabad" },
-    { source: "lucknow", destination: "noida" },
-    { source: "chandigarh", destination: "delhi" },
-    { source: "indore", destination: "ahmedabad" },
-    { source: "patna", destination: "kolkata" },
-    { source: "bhopal", destination: "ahmedabad" },
-    { source: "kanpur", destination: "noida" },
-    { source: "nagpur", destination: "pune" },
-    { source: "agra", destination: "delhi" },
-    { source: "varanasi", destination: "kolkata" },
-    { source: "amritsar", destination: "delhi" },
-    { source: "coimbatore", destination: "chennai" },
-    { source: "kochi", destination: "chennai" },
-    { source: "bhubaneswar", destination: "kolkata" },
-    { source: "guwahati", destination: "kolkata" },
-    { source: "maharashtra", destination: "mumbai" },
-    { source: "karnataka", destination: "bangalore" },
-    { source: "gujarat", destination: "ahmedabad" },
-    { source: "tamil-nadu", destination: "chennai" },
-    { source: "uttar-pradesh", destination: "noida" },
-    { source: "rajasthan", destination: "delhi" },
-    { source: "kerala", destination: "chennai" },
-    { source: "punjab", destination: "delhi" },
-    { source: "haryana", destination: "gurugram" },
-    { source: "bihar", destination: "kolkata" },
-    { source: "madhya-pradesh", destination: "ahmedabad" },
-    { source: "west-bengal", destination: "kolkata" },
-    { source: "telangana", destination: "hyderabad" },
-    { source: "andhra-pradesh", destination: "hyderabad" },
-];
+// ---------------------------------------------------------------------------
+// BRANCH: redirect-mohitkoli-info  —  deploy this to mohitkoli.info ONLY.
+//
+// mohitkoli.info is being retired. This branch exists solely to hand every
+// request (and its accumulated link equity) to the same path on mohitkoli.in.
+// The real site lives on `master`; do not deploy this branch to mohitkoli.in.
+//
+// The page code is still here on purpose: it keeps the branch buildable and
+// rebaseable on master, and it means a config regression degrades to "old site
+// still serves" rather than "domain serves nothing".
+// ---------------------------------------------------------------------------
+
+const TARGET_ORIGIN = "https://mohitkoli.in";
 
 const nextConfig: NextConfig = {
-    experimental: {
-        // Tailwind's stylesheet is a single render-blocking request on every page.
-        // Inlining it removes that round trip from the critical path — worth more here
-        // than cross-navigation CSS caching, since most traffic lands from search on
-        // one article and the sheet is ~21KB.
-        inlineCss: true,
-    },
     images: {
-        // Allow self-authored branded SVG hero images to be served via next/image.
-        // Safe here: every SVG under /public/assets is authored in-repo (no remote/user SVG).
         dangerouslyAllowSVG: true,
         contentDispositionType: "attachment",
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     },
     async redirects() {
-        const locationRedirects = REMOVED_LOCATION_REDIRECTS.flatMap((entry) => [
-            {
-                source: `/developer-in/${entry.source}`,
-                destination: `/developer-in/${entry.destination}`,
-                permanent: true,
-            },
-            {
-                source: `/locations/${entry.source}`,
-                destination: `/developer-in/${entry.destination}`,
-                permanent: true,
-            },
-        ]);
-
+        // `redirects` are evaluated ahead of both `public/` files and app routes,
+        // so this covers pages, /sitemap.xml, /robots.txt, /feed.xml, /ads.txt —
+        // everything. Query strings ride along automatically because the
+        // destination declares none.
+        //
+        // 301 rather than `permanent: true` (which emits 308): both are permanent
+        // and Google treats them identically, but 301 is the code every crawler,
+        // social unfurler and backlink checker has understood for 25 years. On a
+        // one-shot domain migration that compatibility is worth more than the
+        // method-preservation 308 buys us on a GET-only site.
         return [
-            // Legacy .html redirects to NEW slugs
-            { source: "/blogs/blog1.html", destination: "/blog/ai-in-web-development-comprehensive-guide", permanent: true },
-            { source: "/blogs/blog2.html", destination: "/blog/the-truth-about-ai-coding-assistants", permanent: true },
-            { source: "/blogs/blog3.html", destination: "/blog/top-javascript-libraries-frameworks-2025", permanent: true },
-            { source: "/blogs/blog4.html", destination: "/blog/best-ai-productivity-tools-2025", permanent: true },
-            { source: "/blogs/blog5.html", destination: "/blog/hostinger-vps-hosting-review-discount", permanent: true },
-            { source: "/blogs/blog6.html", destination: "/blog/frontend-vs-backend-development-guide", permanent: true },
-            { source: "/blogs/blog7.html", destination: "/blog/is-react-worth-learning-2026", permanent: true },
-            { source: "/blogs/blog8.html", destination: "/blog/will-ai-replace-web-developers-2026", permanent: true },
-            { source: "/blogs/blog9.html", destination: "/blog/build-website-with-ai-step-by-step", permanent: true },
-
-            // Temporary/Internal redirects from OLD slugs to NEW slugs
-            { source: "/blog/blog1", destination: "/blog/ai-in-web-development-comprehensive-guide", permanent: true },
-            { source: "/blog/blog2", destination: "/blog/the-truth-about-ai-coding-assistants", permanent: true },
-            { source: "/blog/blog3", destination: "/blog/top-javascript-libraries-frameworks-2025", permanent: true },
-            { source: "/blog/blog4", destination: "/blog/best-ai-productivity-tools-2025", permanent: true },
-            { source: "/blog/blog5", destination: "/blog/hostinger-vps-hosting-review-discount", permanent: true },
-            { source: "/blog/blog6", destination: "/blog/frontend-vs-backend-development-guide", permanent: true },
-            { source: "/blog/blog7", destination: "/blog/is-react-worth-learning-2026", permanent: true },
-            { source: "/blog/blog8", destination: "/blog/will-ai-replace-web-developers-2026", permanent: true },
-            { source: "/blog/blog9", destination: "/blog/build-website-with-ai-step-by-step", permanent: true },
-
-            // Consolidate duplicate blog posts (fix keyword cannibalization)
-            { source: "/blog/hidden-chatgpt-features", destination: "/blog/chatgpt-hidden-features-hacks", permanent: true },
-            { source: "/blog/hostinger-discount-90-coupon-code", destination: "/blog/hostinger-discount-code-2026", permanent: true },
-            { source: "/blog/will-ai-replace-web-developers-2026", destination: "/blog/will-ai-replace-your-job-2026", permanent: true },
-
-            // Consolidate location pages
-            ...locationRedirects,
-
-            { source: "/privacy", destination: "/privacy-policy", permanent: true },
-            { source: "/blogs.html", destination: "/blog", permanent: true },
-            { source: "/blogs/blogs.html", destination: "/blog", permanent: true },
+            // Root has to be listed separately — `/:path*` compiles to a pattern
+            // with an optional capture, and relying on it to also produce a bare
+            // origin for "/" is a subtlety not worth betting the homepage on.
+            {
+                source: "/",
+                destination: TARGET_ORIGIN,
+                statusCode: 301,
+            },
+            {
+                source: "/:path*",
+                destination: `${TARGET_ORIGIN}/:path*`,
+                statusCode: 301,
+            },
         ];
     },
 };
