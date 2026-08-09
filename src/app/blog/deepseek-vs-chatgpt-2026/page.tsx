@@ -213,7 +213,7 @@ export default function DeepSeekVsChatGPT2026() {
           </div>
         </header>
 
-        <div className="relative w-full h-72 sm:h-[450px] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-rose-500/10">
+        <div className="relative w-full aspect-[1200/630] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-rose-500/10">
           <Image
             src="/assets/blog/deepseek-vs-chatgpt-2026.svg"
             alt="DeepSeek vs ChatGPT 2026: Which Free AI Is Better?"

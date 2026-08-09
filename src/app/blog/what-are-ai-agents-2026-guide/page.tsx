@@ -220,7 +220,7 @@ export default function WhatAreAIAgents2026Guide() {
           </div>
         </header>
 
-        <div className="relative w-full h-72 sm:h-[450px] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-indigo-500/10">
+        <div className="relative w-full aspect-[1200/630] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-indigo-500/10">
           <Image
             src="/assets/blog/what-are-ai-agents-2026-guide.svg"
             alt="What Are AI Agents? The Complete 2026 Beginner Guide"

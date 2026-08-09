@@ -172,7 +172,7 @@ export default function HostingerReview2026() {
                         cost to you. That doesn&apos;t change the verdict; the downsides below are real.
                     </p>
 
-                    <div className="relative w-full h-72 sm:h-96 mb-10 rounded-2xl overflow-hidden border border-white/10">
+                    <div className="relative w-full aspect-[1200/630] mb-10 rounded-2xl overflow-hidden border border-white/10">
                         <Image
                             src="/assets/blog/hostinger-review-2026.svg"
                             alt="Hostinger review 2026 — honest developer verdict on speed, uptime and support"
@@ -330,6 +330,8 @@ export default function HostingerReview2026() {
                         <h2 className="text-2xl font-bold text-white mb-4">Keep reading (hosting series)</h2>
                         <ul className="space-y-3 text-primary-400">
                             <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing in India 2026 — which plan to buy</Link></li>
+                            <li><Link href="/blog/hostinger-renewal-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Renewal Price in India — the real cost after year one</Link></li>
+                            <li><Link href="/blog/hostinger-wordpress-hosting-india-2026" className="hover:text-primary-300 underline underline-offset-4">Is Hostinger Good for WordPress? — setup, speed &amp; honest limits</Link></li>
                             <li><Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger vs GoDaddy vs Bluehost — 2026 India comparison</Link></li>
                             <li><Link href="/blog/how-to-get-hostinger-90-off-2026" className="hover:text-primary-300 underline underline-offset-4">How to Get 90% OFF on Hostinger — the discount-stacking steps</Link></li>
                             <li><Link href="/blog/hostinger-domain-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Domain Price in India 2026 — .com, .in &amp; .store costs</Link></li>

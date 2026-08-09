@@ -209,7 +209,7 @@ export default function Hostinger90OffGuide() {
                     </p>
 
                     {/* Hero image */}
-                    <div className="relative w-full h-72 sm:h-96 mb-10 rounded-2xl overflow-hidden border border-white/10">
+                    <div className="relative w-full aspect-[1200/630] mb-10 rounded-2xl overflow-hidden border border-white/10">
                         <Image
                             src="/assets/blog/how-to-get-hostinger-90-off-2026.svg"
                             alt="How to get 90% OFF on Hostinger in 2026 — discount stacking guide"
@@ -424,6 +424,7 @@ export default function Hostinger90OffGuide() {
                         <h2 className="text-2xl font-bold text-white mb-4">Keep reading (hosting series)</h2>
                         <ul className="space-y-3 text-primary-400">
                             <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — honest verdict after a year of client sites</Link></li>
+                            <li><Link href="/blog/hostinger-renewal-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Renewal Price in India — lock the discount before it matters</Link></li>
                             <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing India 2026 — which plan should you actually buy?</Link></li>
                             <li><Link href="/blog/hostinger-domain-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Domain Price India 2026 — .com, .in &amp; .store real costs</Link></li>
                             <li><Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger vs GoDaddy vs Bluehost — 2026 India comparison with scores</Link></li>

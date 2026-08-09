@@ -161,7 +161,7 @@ export default function HostingerDomainPriceIndia() {
                         commission at no extra cost to you. Domain prices rotate with sales; confirm the live number before you buy.
                     </p>
 
-                    <div className="relative w-full h-72 sm:h-96 mb-10 rounded-2xl overflow-hidden border border-white/10">
+                    <div className="relative w-full aspect-[1200/630] mb-10 rounded-2xl overflow-hidden border border-white/10">
                         <Image
                             src="/assets/blog/hostinger-domain-price-india-2026.svg"
                             alt="Hostinger domain price in India 2026 — .com, .in, .store registration and renewal"
@@ -327,6 +327,8 @@ export default function HostingerDomainPriceIndia() {
                         <h2 className="text-2xl font-bold text-white mb-4">Keep reading (hosting series)</h2>
                         <ul className="space-y-3 text-primary-400">
                             <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing in India 2026 — which plan to buy</Link></li>
+                            <li><Link href="/blog/hostinger-renewal-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Renewal Price in India — hosting &amp; domain renewal rates together</Link></li>
+                            <li><Link href="/blog/godaddy-renewal-price-increase-india" className="hover:text-primary-300 underline underline-offset-4">GoDaddy Renewal Price Shock — compare before you renew a domain there</Link></li>
                             <li><Link href="/blog/how-to-get-hostinger-90-off-2026" className="hover:text-primary-300 underline underline-offset-4">How to Get 90% OFF on Hostinger — the discount-stacking steps</Link></li>
                             <li><Link href="/blog/best-web-hosting-india-2026" className="hover:text-primary-300 underline underline-offset-4">7 Best Web Hosting Services in India (2026)</Link></li>
                             <li><Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger vs GoDaddy vs Bluehost — 2026 India comparison</Link></li>

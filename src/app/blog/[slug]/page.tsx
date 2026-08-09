@@ -244,7 +244,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                 </div>
                             </div>
 
-                            <div className="relative w-full h-[500px] mb-8">
+                            <div className="relative w-full aspect-video mb-8">
                                 <Image
                                     src={post.imageSrc}
                                     alt={post.title}

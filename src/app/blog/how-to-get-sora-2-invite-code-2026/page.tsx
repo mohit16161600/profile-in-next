@@ -214,7 +214,7 @@ export default function HowToGetSora2InviteCode2026() {
           </div>
         </header>
 
-        <div className="relative w-full h-72 sm:h-[450px] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-amber-500/10">
+        <div className="relative w-full aspect-[1200/630] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-amber-500/10">
           <Image
             src="/assets/blog/how-to-get-sora-2-invite-code-2026.svg"
             alt="How to Get a Sora 2 Invite Code in 2026 (Working Methods)"

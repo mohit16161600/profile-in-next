@@ -104,7 +104,7 @@ export default function AIComparison2026() {
           </div>
         </header>
 
-        <div className="relative w-full h-72 sm:h-[450px] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-purple-500/10">
+        <div className="relative w-full aspect-video mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-purple-500/10">
           <Image
             src="/assets/mohitkoli-chatgpt-gemini-claude.webp"
             alt="ChatGPT vs Gemini vs Claude 2026"

@@ -209,7 +209,7 @@ export default function BestAIVideoGenerators2026() {
           </div>
         </header>
 
-        <div className="relative w-full h-72 sm:h-[450px] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-pink-500/10">
+        <div className="relative w-full aspect-[1200/630] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-pink-500/10">
           <Image
             src="/assets/blog/best-ai-video-generators-2026.svg"
             alt="Best Free AI Video Generators 2026 (Veo, Kling, Sora)"

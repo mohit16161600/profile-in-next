@@ -396,13 +396,21 @@ export default function Blog5() {
       <section className="mt-16 pt-8 border-t border-white/10">
         <h3 className="text-2xl font-bold text-white mb-6">Related Articles</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Link href="/blog/hostinger-discount-90-coupon-code" className="glass p-4 rounded-xl hover:bg-white/5 transition-colors">
-            <h4 className="text-primary-400 font-bold mb-2">Hostinger Coupon Code 2026</h4>
-            <p className="text-sm text-gray-400">Check the newer Hostinger discount article for current promo-focused details.</p>
+          <Link href="/blog/nodejs-hosting-india-2026" className="glass p-4 rounded-xl hover:bg-white/5 transition-colors">
+            <h4 className="text-primary-400 font-bold mb-2">Node.js Hosting in India (2026)</h4>
+            <p className="text-sm text-gray-400">Why shared hosting can&apos;t run Node, and the exact VPS setup I use for production apps.</p>
           </Link>
-          <Link href="/blog/hostinger-discount-code-2026" className="glass p-4 rounded-xl hover:bg-white/5 transition-colors">
-            <h4 className="text-primary-400 font-bold mb-2">Hostinger Discount Code India 2026</h4>
-            <p className="text-sm text-gray-400">Compare this VPS review with the broader Hostinger discount guide.</p>
+          <Link href="/blog/how-to-get-hostinger-90-off-2026" className="glass p-4 rounded-xl hover:bg-white/5 transition-colors">
+            <h4 className="text-primary-400 font-bold mb-2">How to Get 90% OFF on Hostinger</h4>
+            <p className="text-sm text-gray-400">Stack the sale with the referral discount before buying your VPS.</p>
+          </Link>
+          <Link href="/blog/hostinger-renewal-price-india-2026" className="glass p-4 rounded-xl hover:bg-white/5 transition-colors">
+            <h4 className="text-primary-400 font-bold mb-2">Hostinger Renewal Price in India</h4>
+            <p className="text-sm text-gray-400">What every plan really costs after the intro term ends.</p>
+          </Link>
+          <Link href="/blog/hostinger-plans-pricing-india-2026" className="glass p-4 rounded-xl hover:bg-white/5 transition-colors">
+            <h4 className="text-primary-400 font-bold mb-2">Hostinger Plans &amp; Pricing India 2026</h4>
+            <p className="text-sm text-gray-400">Shared vs Cloud vs KVM — which plan fits your project.</p>
           </Link>
         </div>
       </section>

@@ -26,7 +26,7 @@ export default function HostingerDiscountBlog() {
           Hostinger Discount Code 2026 – Get Hosting at Lowest Price Using My Referral Link
         </h1>
 
-        <div className="relative w-full h-72 sm:h-96 mb-6 rounded-2xl overflow-hidden border border-white/10">
+        <div className="relative w-full aspect-[1200/630] mb-6 rounded-2xl overflow-hidden border border-white/10">
           <Image
             src="/assets/hostinger-offer.webp"
             alt="Hostinger Discount Code India 2026"

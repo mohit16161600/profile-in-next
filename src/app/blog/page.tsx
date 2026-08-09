@@ -1,130 +1,66 @@
-import Link from "next/link";
-import Image from "next/image";
 import { BLOG_POSTS } from "@/data/posts";
-import BlogSidebar from "@/components/BlogSidebar";
+import BlogIndex from "@/components/BlogIndex";
 
 export const metadata = {
-    title: "Mohit Koli - Top Web Developer Tech Blog | AI & Development Insights",
-    description: "Technology blog by Top Web Developer Mohit Koli. Expert insights on AI, Web Development, and Programming. Tutorials by Senior Developer Mohit Koli.",
-    keywords: "Mohit Koli, mohitkoli.in, technology blog, AI development, web development, programming tutorials, software engineering, JavaScript, React, Node.js, artificial intelligence, coding tips, developer insights, tech trends, programming guides, full stack development",
+    title: "Blog | Mohit Koli — Web Hosting, AI Tools & Development Guides",
+    description:
+        "Practical guides on web hosting in India, AI tools, and full-stack development — written from real client projects by Mohit Koli, Senior Full Stack Developer.",
+    keywords:
+        "Mohit Koli blog, web hosting india, hostinger guides, ai tools, web development tutorials, nextjs, react, nodejs, full stack development",
     alternates: {
         canonical: "https://mohitkoli.in/blog",
+    },
+    openGraph: {
+        title: "Blog | Mohit Koli — Web Hosting, AI Tools & Development Guides",
+        description:
+            "Practical guides on web hosting in India, AI tools, and full-stack development — from real client projects.",
+        url: "https://mohitkoli.in/blog",
+        type: "website",
     },
 };
 
 export default function BlogPage() {
+    const categoryCount = new Set(BLOG_POSTS.map((p) => p.category)).size;
+
     return (
         <>
-            <section
-                className="text-white pt-32 pb-20 relative overflow-hidden"
-                aria-label="Blog Hero Section"
-            >
-                {/*
-                  This was a CSS background-image, which meant the browser downloaded the
-                  raw 709KB JPG at full size with no format negotiation and no way to hint
-                  its priority — it was the LCP element at 5.9s. Routing it through
-                  next/image gets AVIF/WebP, a viewport-appropriate size, and a real
-                  preload with fetchpriority=high.
-                */}
-                <div className="absolute inset-0 opacity-80 z-0" aria-hidden="true">
-                    <Image
-                        src="/assets/mohitkolibg.jpg"
-                        alt=""
-                        fill
-                        className="object-cover object-center"
-                        preload
-                        fetchPriority="high"
-                        sizes="100vw"
-                    />
+            {/* Hero — pure CSS gradient (no image request = instant LCP) */}
+            <section className="relative overflow-hidden pt-36 pb-16 text-white" aria-label="Blog hero">
+                <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+                    <div className="absolute -top-32 right-[10%] h-96 w-96 rounded-full bg-purple-600/20 blur-3xl" />
+                    <div className="absolute -bottom-40 left-[5%] h-96 w-96 rounded-full bg-indigo-600/15 blur-3xl" />
+                    <div className="absolute top-1/3 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-cyan-500/10 blur-3xl" />
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="text-center">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
-                            Technology Blog by Mohit Koli
-                        </h1>
-
-                        <p className="text-lg sm:text-xl md:text-2xl mb-16 text-blue-100">
-                            Discover the latest in AI development, web programming, and software engineering insights
+                <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-3xl">
+                        <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gray-300">
+                            <span className="h-1.5 w-1.5 rounded-full bg-primary-400" />
+                            The Blog
                         </p>
-
-                        {/* <button className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-                            Explore Articles
-                        </button> */}
+                        <h1 className="mb-5 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+                            Guides that come from{" "}
+                            <span className="bg-gradient-to-r from-purple-400 via-primary-400 to-cyan-400 bg-clip-text text-transparent">
+                                real projects
+                            </span>
+                        </h1>
+                        <p className="mb-8 max-w-2xl text-lg leading-relaxed text-gray-400">
+                            Web hosting in India, AI tools, and full-stack development — tested on real client work,
+                            written without the fluff. By Mohit Koli, Senior Full Stack Developer.
+                        </p>
+                        <div className="flex flex-wrap items-center gap-6 text-sm text-gray-400">
+                            <span><strong className="text-white">{BLOG_POSTS.length}</strong> articles</span>
+                            <span className="h-4 w-px bg-white/10" aria-hidden="true" />
+                            <span><strong className="text-white">{categoryCount}</strong> topics</span>
+                            <span className="h-4 w-px bg-white/10" aria-hidden="true" />
+                            <span>Updated <strong className="text-white">August 2026</strong></span>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-                    <div className="lg:col-span-2">
-                        <h2 className="text-3xl font-bold text-white mb-8">Latest Technology Articles</h2>
-
-                        {BLOG_POSTS.map((post) => (
-                            <article
-                                key={post.id}
-                                className="glass rounded-lg shadow-sm mb-8 overflow-hidden hover:shadow-2xl transition-all duration-300 border border-white/5"
-                                itemScope
-                                itemType="https://schema.org/BlogPosting"
-                            >
-                                <div className="relative w-full h-72 sm:h-96">
-                                    <Image
-                                        src={post.imageSrc}
-                                        alt={`${post.title} - Guide by Mohit Koli`}
-                                        fill
-                                        className="object-cover"
-                                        itemProp="image"
-                                    />
-                                </div>
-                                <div className="p-6">
-                                    <div className="flex items-center text-sm text-gray-400 mb-2">
-                                        <time dateTime={post.date} itemProp="datePublished">
-                                            {post.date}
-                                        </time>
-                                        <span className="mx-2">•</span>
-                                        <span itemProp="timeRequired">{post.readTime}</span>
-                                    </div>
-                                    <h3
-                                        className="text-xl font-bold text-white mb-3 hover:text-primary-500 cursor-pointer transition-colors"
-                                        itemProp="headline"
-                                    >
-                                        <Link href={`/blog/${post.slug}`} title={`Read ${post.title}`}>
-                                            {post.title}
-                                        </Link>
-                                    </h3>
-                                    <p className="text-gray-400 mb-4" itemProp="description">
-                                        {post.description}
-                                    </p>
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-center">
-                                            <div>
-                                                <p
-                                                    className="text-sm font-medium text-white"
-                                                    itemProp="author"
-                                                    itemScope
-                                                    itemType="https://schema.org/Person"
-                                                >
-                                                    <span itemProp="name">Mohit Koli</span>
-                                                </p>
-                                                <p className="text-xs text-gray-500">Senior Full Stack Developer</p>
-                                            </div>
-                                        </div>
-                                        <Link
-                                            href={`/blog/${post.slug}`}
-                                            className="text-primary-500 hover:text-primary-400 font-medium transition-colors"
-                                            title="Read full guide"
-                                            itemProp="url"
-                                        >
-                                            Read More →
-                                        </Link>
-                                    </div>
-                                </div>
-                            </article>
-                        ))}
-                    </div>
-
-                    <BlogSidebar />
-                </div>
+            <main className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+                <BlogIndex posts={BLOG_POSTS} />
             </main>
         </>
     );

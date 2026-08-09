@@ -216,7 +216,7 @@ export default function ViralChatGPTImagePrompts2026() {
           </div>
         </header>
 
-        <div className="relative w-full h-72 sm:h-[450px] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-500/10">
+        <div className="relative w-full aspect-[1200/630] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-500/10">
           <Image
             src="/assets/blog/viral-chatgpt-image-prompts-2026.svg"
             alt="30 Viral ChatGPT Image Prompts Everyone Uses in 2026"

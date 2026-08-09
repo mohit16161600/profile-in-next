@@ -1,6 +1,7 @@
-// Generates premium branded SVG hero images for blog posts -> public/assets/blog/<slug>.svg
-// Usage: BLOG_IMG_DATA='[{"slug":"...","title":"...","chip":"..."}]' node scripts/gen-blog-images.mjs
-// Gradient/accent is chosen by index from PALETTE. Title is auto-wrapped to fit 1200x630.
+// Generates professional branded SVG hero images for blog posts -> public/assets/blog/<slug>.svg
+// Usage: BLOG_IMG_DATA='[{"slug":"...","title":"<short hero title>","chip":"<category label>","cat":"hosting|ai|dev|money"}]' node scripts/gen-blog-images.mjs
+// Design system: near-black editorial background, ONE accent hue per category (consistent
+// across the whole blog), ghosted line-art motif per category, strong typographic hierarchy.
 import { writeFileSync, mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -8,19 +9,48 @@ import { fileURLToPath } from "node:url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = resolve(__dirname, "..", "public", "assets", "blog");
 
-// 10 vibrant 3-stop palettes (c1 top-left glow, c2 top-right glow, c3 bottom glow + brand accent).
-const PALETTE = [
-  ["#34d399", "#22d3ee", "#3b82f6"], // emerald / cyan / blue
-  ["#60a5fa", "#818cf8", "#a855f7"], // blue / indigo / purple
-  ["#e879f9", "#a78bfa", "#6366f1"], // fuchsia / violet / indigo
-  ["#fbbf24", "#fb923c", "#ec4899"], // amber / orange / pink
-  ["#fb7185", "#f472b6", "#f97316"], // rose / pink / orange
-  ["#a78bfa", "#c084fc", "#d946ef"], // violet / purple / fuchsia
-  ["#38bdf8", "#60a5fa", "#4f46e5"], // sky / blue / indigo
-  ["#2dd4bf", "#34d399", "#16a34a"], // teal / emerald / green
-  ["#facc15", "#fbbf24", "#ea580c"], // yellow / amber / orange
-  ["#22d3ee", "#38bdf8", "#2563eb"], // cyan / sky / blue
-];
+// One accent per category keeps the blog grid looking like a designed system,
+// not a random rainbow. c1 = primary accent, c2 = secondary for gradient ends.
+const THEMES = {
+  hosting: { c1: "#8b5cf6", c2: "#6366f1" }, // violet / indigo
+  ai:      { c1: "#22d3ee", c2: "#3b82f6" }, // cyan / blue
+  dev:     { c1: "#34d399", c2: "#14b8a6" }, // emerald / teal
+  money:   { c1: "#fbbf24", c2: "#f59e0b" }, // amber
+  ride:    { c1: "#fb7185", c2: "#f97316" }, // rose / orange
+  default: { c1: "#818cf8", c2: "#6366f1" },
+};
+
+// Ghosted decorative motifs, drawn as light stroke line-art (viewBox 0 0 100 100).
+const MOTIFS = {
+  hosting: `
+    <rect x="14" y="16" width="72" height="20" rx="5" fill="none" stroke-width="3.5"/>
+    <rect x="14" y="42" width="72" height="20" rx="5" fill="none" stroke-width="3.5"/>
+    <rect x="14" y="68" width="72" height="20" rx="5" fill="none" stroke-width="3.5"/>
+    <circle cx="24" cy="26" r="2.6" stroke="none" class="fill"/>
+    <circle cx="24" cy="52" r="2.6" stroke="none" class="fill"/>
+    <circle cx="24" cy="78" r="2.6" stroke="none" class="fill"/>
+    <line x1="60" y1="26" x2="78" y2="26" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="60" y1="52" x2="78" y2="52" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="60" y1="78" x2="78" y2="78" stroke-width="3.5" stroke-linecap="round"/>`,
+  ai: `
+    <path d="M50 12 L56 40 L84 46 L56 52 L50 80 L44 52 L16 46 L44 40 Z" fill="none" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M78 64 L81 74 L91 77 L81 80 L78 90 L75 80 L65 77 L75 74 Z" fill="none" stroke-width="3"/>
+    <circle cx="22" cy="20" r="4" fill="none" stroke-width="3"/>`,
+  dev: `
+    <path d="M34 26 L14 50 L34 74" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M66 26 L86 50 L66 74" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="56" y1="20" x2="44" y2="80" stroke-width="5" stroke-linecap="round"/>`,
+  money: `
+    <circle cx="50" cy="50" r="36" fill="none" stroke-width="4"/>
+    <path d="M38 32 H62 M38 44 H62 M42 32 C56 32 56 50 42 50 L58 68" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>`,
+  ride: `
+    <path d="M18 72 A34 34 0 0 1 82 72" fill="none" stroke-width="4" stroke-linecap="round"/>
+    <line x1="50" y1="66" x2="66" y2="44" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="50" cy="70" r="5" fill="none" stroke-width="3.5"/>
+    <line x1="26" y1="88" x2="74" y2="88" stroke-width="4" stroke-linecap="round"/>
+    <line x1="34" y1="96" x2="46" y2="96" stroke-width="4" stroke-linecap="round"/>
+    <line x1="54" y1="96" x2="60" y2="96" stroke-width="4" stroke-linecap="round"/>`,
+};
 
 function esc(s) {
   return String(s)
@@ -50,95 +80,88 @@ function wrap(title, maxChars, maxLines) {
   return lines;
 }
 
-function svgFor({ title, chip }, idx) {
-  const [c1, c2, c3] = PALETTE[idx % PALETTE.length];
-  // pick font size first, then wrap to a width budget that matches it
-  let lines = wrap(title, 18, 3);
-  let fontSize = lines.length >= 3 ? 70 : lines.length === 2 ? 84 : 96;
-  // re-wrap a touch tighter for the biggest size to avoid overflow
-  if (lines.length === 1 && title.length > 16) { lines = wrap(title, 16, 3); fontSize = 84; }
-  const lineHeight = Math.round(fontSize * 1.14);
+function svgFor({ title, chip, cat }) {
+  const theme = THEMES[cat] || THEMES.default;
+  const { c1, c2 } = theme;
+  const motif = (MOTIFS[cat] || MOTIFS.hosting)
+    .replaceAll('class="fill"', `fill="${c1}"`);
+
+  const lines = wrap(title, 20, 3);
+  const fontSize = lines.length >= 3 ? 62 : lines.length === 2 ? 74 : 82;
+  const lineHeight = Math.round(fontSize * 1.16);
   const blockHeight = lines.length * lineHeight;
-  const centerY = 312;
-  const startY = Math.round(centerY - blockHeight / 2 + fontSize * 0.78);
+  const centerY = 318;
+  const startY = Math.round(centerY - blockHeight / 2 + fontSize * 0.76);
   const tspans = lines
     .map((ln, i) => `<tspan x="84" y="${startY + i * lineHeight}">${esc(ln)}</tspan>`)
     .join("");
   const chipText = esc(String(chip).toUpperCase());
-  const chipWidth = Math.min(620, 96 + chipText.length * 14.5);
+  const chipWidth = Math.round(58 + chipText.length * 13.2);
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="${esc(title)}">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#04050a"/>
-      <stop offset="0.55" stop-color="#080b16"/>
-      <stop offset="1" stop-color="#0b0f1c"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#0b0e17"/>
+      <stop offset="1" stop-color="#070910"/>
     </linearGradient>
-    <radialGradient id="g1" cx="0.08" cy="0.12" r="0.85">
-      <stop offset="0" stop-color="${c1}" stop-opacity="0.55"/>
-      <stop offset="0.55" stop-color="${c1}" stop-opacity="0"/>
+    <radialGradient id="glow" cx="0.88" cy="0.22" r="0.75">
+      <stop offset="0" stop-color="${c1}" stop-opacity="0.22"/>
+      <stop offset="0.6" stop-color="${c1}" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="g2" cx="0.98" cy="0.08" r="0.8">
-      <stop offset="0" stop-color="${c2}" stop-opacity="0.5"/>
-      <stop offset="0.5" stop-color="${c2}" stop-opacity="0"/>
+    <radialGradient id="glow2" cx="0.05" cy="1" r="0.7">
+      <stop offset="0" stop-color="${c2}" stop-opacity="0.14"/>
+      <stop offset="0.6" stop-color="${c2}" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="g3" cx="0.78" cy="1.0" r="0.95">
-      <stop offset="0" stop-color="${c3}" stop-opacity="0.45"/>
-      <stop offset="0.55" stop-color="${c3}" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="${c1}"/>
-      <stop offset="0.5" stop-color="${c2}"/>
-      <stop offset="1" stop-color="${c3}"/>
+      <stop offset="1" stop-color="${c2}"/>
     </linearGradient>
-    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
-      <path d="M46 0H0V46" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.6" cy="1.6" r="1.2" fill="#ffffff" fill-opacity="0.045"/>
     </pattern>
-    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="14"/>
-    </filter>
     <filter id="tshadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="3" stdDeviation="10" flood-color="#000000" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
     </filter>
+    <clipPath id="frame"><rect width="1200" height="630" rx="0"/></clipPath>
   </defs>
 
-  <!-- background layers -->
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#grid)"/>
-  <rect width="1200" height="630" fill="url(#g1)"/>
-  <rect width="1200" height="630" fill="url(#g2)"/>
-  <rect width="1200" height="630" fill="url(#g3)"/>
+  <g clip-path="url(#frame)">
+    <!-- background -->
+    <rect width="1200" height="630" fill="url(#bg)"/>
+    <rect width="1200" height="630" fill="url(#dots)"/>
+    <rect width="1200" height="630" fill="url(#glow)"/>
+    <rect width="1200" height="630" fill="url(#glow2)"/>
 
-  <!-- decorative orbit, top-right -->
-  <g transform="translate(1012 150)" opacity="0.9">
-    <circle r="240" fill="url(#bar)" opacity="0.10" filter="url(#soft)"/>
-    <ellipse rx="150" ry="58" fill="none" stroke="${c2}" stroke-opacity="0.35" stroke-width="2" transform="rotate(-22)"/>
-    <ellipse rx="110" ry="110" fill="none" stroke="${c1}" stroke-opacity="0.25" stroke-width="2"/>
-    <circle cx="150" cy="-58" r="9" fill="${c2}"/>
-    <circle cx="-104" cy="40" r="6" fill="${c1}"/>
-    <circle cx="0" cy="0" r="20" fill="url(#bar)"/>
-  </g>
+    <!-- ghosted category motif, right side -->
+    <g transform="translate(790 120) scale(3.6)" stroke="${c1}" opacity="0.14">${motif}</g>
 
-  <!-- thin top border accent -->
-  <rect x="0" y="0" width="1200" height="6" fill="url(#bar)"/>
+    <!-- hairline ring for depth -->
+    <circle cx="985" cy="300" r="255" fill="none" stroke="${c1}" stroke-opacity="0.10" stroke-width="1.5"/>
+    <circle cx="985" cy="300" r="300" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
 
-  <g font-family="'Segoe UI', 'Helvetica Neue', Roboto, Arial, sans-serif">
-    <!-- category chip -->
-    <rect x="84" y="96" rx="23" ry="23" width="${chipWidth}" height="46" fill="#ffffff" fill-opacity="0.07" stroke="${c1}" stroke-opacity="0.5"/>
-    <circle cx="112" cy="119" r="6" fill="${c1}"/>
-    <text x="130" y="127" font-size="22" font-weight="700" letter-spacing="2.5" fill="#f3f4f6">${chipText}</text>
+    <!-- top accent bar -->
+    <rect x="0" y="0" width="1200" height="5" fill="url(#accent)"/>
 
-    <!-- title -->
-    <text font-size="${fontSize}" font-weight="800" fill="#ffffff" letter-spacing="-1.5" filter="url(#tshadow)">${tspans}</text>
+    <g font-family="'Segoe UI', 'Helvetica Neue', Roboto, Arial, sans-serif">
+      <!-- category chip -->
+      <rect x="84" y="102" rx="19" ry="19" width="${chipWidth}" height="38" fill="${c1}" fill-opacity="0.10" stroke="${c1}" stroke-opacity="0.45" stroke-width="1.5"/>
+      <circle cx="108" cy="121" r="4.5" fill="${c1}"/>
+      <text x="122" y="128" font-size="17" font-weight="700" letter-spacing="2.2" fill="#e5e7eb">${chipText}</text>
 
-    <!-- divider -->
-    <rect x="84" y="486" width="132" height="6" rx="3" fill="url(#bar)"/>
+      <!-- title -->
+      <text font-size="${fontSize}" font-weight="800" fill="#f8fafc" letter-spacing="-1.2" filter="url(#tshadow)">${tspans}</text>
 
-    <!-- brand row -->
-    <circle cx="110" cy="560" r="26" fill="url(#bar)"/>
-    <text x="110" y="569" font-size="24" font-weight="800" fill="#04050a" text-anchor="middle">MK</text>
-    <text x="150" y="552" font-size="30" font-weight="800" fill="#f9fafb">mohitkoli<tspan fill="${c2}">.info</tspan></text>
-    <text x="150" y="582" font-size="19" font-weight="500" fill="#9aa3b2">Mohit Koli — Senior Full Stack Developer</text>
+      <!-- baseline divider -->
+      <rect x="84" y="497" width="1032" height="1.5" fill="#ffffff" fill-opacity="0.08"/>
+      <rect x="84" y="496" width="120" height="4" rx="2" fill="url(#accent)"/>
+
+      <!-- brand row -->
+      <circle cx="112" cy="556" r="24" fill="url(#accent)"/>
+      <text x="112" y="564" font-size="21" font-weight="800" fill="#0b0e17" text-anchor="middle">MK</text>
+      <text x="152" y="549" font-size="26" font-weight="800" fill="#f9fafb">mohitkoli<tspan fill="${c1}">.in</tspan></text>
+      <text x="152" y="577" font-size="16" font-weight="500" fill="#8b93a7">Mohit Koli · Senior Full Stack Developer</text>
+      <text x="1116" y="565" font-size="16" font-weight="600" letter-spacing="1.5" fill="#6b7280" text-anchor="end">MOHITKOLI.IN/BLOG</text>
+    </g>
   </g>
 </svg>
 `;
@@ -148,9 +171,9 @@ const DATA = JSON.parse(process.env.BLOG_IMG_DATA || "[]");
 
 mkdirSync(OUT_DIR, { recursive: true });
 let n = 0;
-DATA.forEach((item, idx) => {
-  writeFileSync(resolve(OUT_DIR, `${item.slug}.svg`), svgFor(item, idx), "utf8");
+DATA.forEach((item) => {
+  writeFileSync(resolve(OUT_DIR, `${item.slug}.svg`), svgFor(item), "utf8");
   n++;
   console.log("wrote", `${item.slug}.svg`);
 });
-console.log(`Done. ${n} premium SVG hero image(s) generated in ${OUT_DIR}`);
+console.log(`Done. ${n} professional SVG hero image(s) generated in ${OUT_DIR}`);

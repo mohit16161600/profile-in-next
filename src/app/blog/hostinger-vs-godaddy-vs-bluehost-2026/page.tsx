@@ -160,7 +160,7 @@ export default function HostingerVsGodaddyVsBluehost() {
                         Scores are my editorial assessment from hands-on client work; prices checked July 2, 2026 and rotate with sales.
                     </p>
 
-                    <div className="relative w-full h-72 sm:h-96 mb-10 rounded-2xl overflow-hidden border border-white/10">
+                    <div className="relative w-full aspect-[1200/630] mb-10 rounded-2xl overflow-hidden border border-white/10">
                         <Image
                             src="/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.svg"
                             alt="Hostinger vs GoDaddy vs Bluehost 2026 comparison for India"
@@ -436,6 +436,8 @@ export default function HostingerVsGodaddyVsBluehost() {
                     <section className="mb-10">
                         <h2 className="text-2xl font-bold text-white mb-4">Keep reading (hosting series)</h2>
                         <ul className="space-y-3 text-primary-400">
+                            <li><Link href="/blog/godaddy-renewal-price-increase-india" className="hover:text-primary-300 underline underline-offset-4">GoDaddy Renewal Price Shock — why bills jump 2–4× and your options</Link></li>
+                            <li><Link href="/blog/hostinger-renewal-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Renewal Price in India — their jump, documented honestly</Link></li>
                             <li><Link href="/blog/how-to-get-hostinger-90-off-2026" className="hover:text-primary-300 underline underline-offset-4">How to Get 90% OFF on Hostinger — discount stacking, step by step</Link></li>
                             <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing India 2026 — Premium vs Business vs Cloud vs KVM</Link></li>
                             <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — is it actually worth it? (honest verdict)</Link></li>

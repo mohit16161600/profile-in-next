@@ -77,7 +77,7 @@ export default function BloggingGuide2026() {
           </div>
         </header>
 
-        <div className="relative w-full h-72 sm:h-[450px] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-500/10">
+        <div className="relative w-full aspect-video mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-500/10">
           <Image
             src="/assets/make-money-blogging-2026.png"
             alt="How to make money blogging for beginners 2026"
