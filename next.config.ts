@@ -71,7 +71,7 @@ const nextConfig: NextConfig = {
             { source: "/blogs/blog5.html", destination: "/blog/hostinger-vps-hosting-review-discount", permanent: true },
             { source: "/blogs/blog6.html", destination: "/blog/frontend-vs-backend-development-guide", permanent: true },
             { source: "/blogs/blog7.html", destination: "/blog/is-react-worth-learning-2026", permanent: true },
-            { source: "/blogs/blog8.html", destination: "/blog/will-ai-replace-web-developers-2026", permanent: true },
+            { source: "/blogs/blog8.html", destination: "/blog/will-ai-replace-your-job-2026", permanent: true },
             { source: "/blogs/blog9.html", destination: "/blog/build-website-with-ai-step-by-step", permanent: true },
 
             // Temporary/Internal redirects from OLD slugs to NEW slugs
@@ -82,7 +82,7 @@ const nextConfig: NextConfig = {
             { source: "/blog/blog5", destination: "/blog/hostinger-vps-hosting-review-discount", permanent: true },
             { source: "/blog/blog6", destination: "/blog/frontend-vs-backend-development-guide", permanent: true },
             { source: "/blog/blog7", destination: "/blog/is-react-worth-learning-2026", permanent: true },
-            { source: "/blog/blog8", destination: "/blog/will-ai-replace-web-developers-2026", permanent: true },
+            { source: "/blog/blog8", destination: "/blog/will-ai-replace-your-job-2026", permanent: true },
             { source: "/blog/blog9", destination: "/blog/build-website-with-ai-step-by-step", permanent: true },
 
             // Consolidate duplicate blog posts (fix keyword cannibalization)

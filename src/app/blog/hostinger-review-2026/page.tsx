@@ -4,6 +4,7 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
+const REFERRAL_URL_BEGINNER = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-review-2026";
 
 export const metadata: Metadata = {
@@ -253,6 +254,25 @@ export default function HostingerReview2026() {
                         </div>
                     </section>
 
+                    {/* Mid-article CTA — beginners */}
+                    <section className="mb-12">
+                        <div className="rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6 flex flex-wrap items-center justify-between gap-4">
+                            <p className="text-sm text-gray-300 leading-7 max-w-xl">
+                                <strong className="text-white">Buying hosting for the first time?</strong> The pros above are exactly what a
+                                first site needs — free domain, free SSL and an easy hPanel. Signing up with code{" "}
+                                <strong className="text-white">HOSTFIFTY</strong> can get you an extra discount on top of the current sale price.
+                            </p>
+                            <a
+                                href={REFERRAL_URL_BEGINNER}
+                                target="_blank"
+                                rel="nofollow sponsored noopener"
+                                className="inline-block bg-white/10 hover:bg-white/20 border border-primary-500/40 text-white font-semibold px-5 py-2.5 rounded-xl transition-all text-sm"
+                            >
+                                Check Beginner Plans →
+                            </a>
+                        </div>
+                    </section>
+
                     {/* Speed & uptime */}
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-4">Speed &amp; uptime — the real numbers</h2>
@@ -301,7 +321,7 @@ export default function HostingerReview2026() {
                             <a
                                 href={REFERRAL_URL}
                                 target="_blank"
-                                rel="sponsored nofollow noopener"
+                                rel="nofollow sponsored noopener"
                                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
                             >
                                 See Live Prices with Discount Applied →

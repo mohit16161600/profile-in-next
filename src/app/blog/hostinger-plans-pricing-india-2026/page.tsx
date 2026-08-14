@@ -242,7 +242,7 @@ export default function HostingerPlansPricing() {
                                     <a
                                         href={REFERRAL_URL}
                                         target="_blank"
-                                        rel="sponsored nofollow noopener"
+                                        rel="nofollow sponsored noopener"
                                         className={`text-center font-bold px-6 py-3 rounded-xl transition ${plan.highlight ? "bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white" : "bg-white/10 hover:bg-white/20 text-white"}`}
                                     >
                                         Get {plan.name} →
@@ -431,7 +431,7 @@ export default function HostingerPlansPricing() {
                             <a
                                 href={REFERRAL_URL}
                                 target="_blank"
-                                rel="sponsored nofollow noopener"
+                                rel="nofollow sponsored noopener"
                                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
                             >
                                 See Live Prices with Discount Applied →

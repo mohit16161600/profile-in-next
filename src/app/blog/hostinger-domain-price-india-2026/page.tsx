@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
-const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
+const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-domain-price-india-2026";
 
 export const metadata: Metadata = {
@@ -239,6 +239,23 @@ export default function HostingerDomainPriceIndia() {
                         </p>
                     </section>
 
+                    {/* Mid-article CTA */}
+                    <aside className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
+                        <p className="text-gray-300 leading-7 mb-4 sm:mb-0">
+                            Going the bundle route? A Premium+ plan makes the first-year domain ₹0 — it&apos;s worth
+                            checking which extensions qualify on the live checkout, where an extra referral discount
+                            can apply as well.
+                        </p>
+                        <a
+                            href={REFERRAL_URL}
+                            target="_blank"
+                            rel="nofollow sponsored noopener"
+                            className="inline-block flex-shrink-0 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow shadow-purple-900/40"
+                        >
+                            See free-domain plans →
+                        </a>
+                    </aside>
+
                     {/* .com vs .in */}
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-6">.com vs .in — which should you pick?</h2>
@@ -298,7 +315,7 @@ export default function HostingerDomainPriceIndia() {
                             <a
                                 href={REFERRAL_URL}
                                 target="_blank"
-                                rel="sponsored nofollow noopener"
+                                rel="nofollow sponsored noopener"
                                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
                             >
                                 Search Domains &amp; See Live Prices →

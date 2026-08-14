@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const REFERRAL_LINK = "https://hostinger.in?REFERRALCODE=mohitkoli";
+const REFERRAL_LINK = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -143,7 +143,7 @@ export default function Blog5() {
           <a
             href={REFERRAL_LINK}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow sponsored noopener"
             className="inline-block bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold py-3 px-8 rounded-lg text-lg shadow-md hover:opacity-90 transition-opacity transform hover:-translate-y-0.5"
           >
             Claim Your Hostinger VPS Discount
@@ -253,7 +253,7 @@ export default function Blog5() {
               <a
                 href={plan.link}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow sponsored noopener"
                 className="block w-full text-center bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:opacity-90 transition-opacity"
               >
                 Get {plan.name}
@@ -384,7 +384,7 @@ export default function Blog5() {
           <a
             href={REFERRAL_LINK}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow sponsored noopener"
             className="text-blue-400 hover:text-blue-300 font-semibold ml-1"
           >
             Activate your discount here

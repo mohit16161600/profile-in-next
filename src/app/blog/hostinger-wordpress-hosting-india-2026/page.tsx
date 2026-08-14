@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
-const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
+const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-wordpress-hosting-india-2026";
 
 export const metadata: Metadata = {
@@ -235,6 +235,22 @@ export default function HostingerWordpressHosting() {
                         </p>
                     </section>
 
+                    {/* Mid-article CTA */}
+                    <aside className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
+                        <p className="text-gray-300 leading-7 mb-4 sm:mb-0">
+                            Those five steps really are the whole setup — a Premium plan is enough to follow along
+                            for a blog, and going via the referral link can knock a bit more off the sale price.
+                        </p>
+                        <a
+                            href={REFERRAL_URL}
+                            target="_blank"
+                            rel="nofollow sponsored noopener"
+                            className="inline-block flex-shrink-0 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow shadow-purple-900/40"
+                        >
+                            Start with the Premium plan →
+                        </a>
+                    </aside>
+
                     {/* Speed reality */}
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-4">Speed: what to realistically expect</h2>
@@ -278,7 +294,7 @@ export default function HostingerWordpressHosting() {
                             <a
                                 href={REFERRAL_URL}
                                 target="_blank"
-                                rel="sponsored nofollow noopener"
+                                rel="nofollow sponsored noopener"
                                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
                             >
                                 Get WordPress Hosting with Discount →

@@ -77,7 +77,7 @@ export default function HostingerDiscountBlog() {
               <a
                 href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli"
                 target="_blank"
-                rel="noreferrer"
+                rel="nofollow sponsored noopener"
                 className="inline-block bg-white text-black font-bold px-6 py-3 rounded-xl hover:bg-white/90 transition"
               >
                 Activate Discount Now ⚡
@@ -90,7 +90,7 @@ export default function HostingerDiscountBlog() {
           <a
             href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli"
             target="_blank"
-            rel="noreferrer"
+            rel="nofollow sponsored noopener"
             className="inline-block bg-primary-600 text-white font-bold px-8 py-4 rounded-lg hover:bg-primary-500 transition"
           >
             Click Here & Save on Hostinger Now
@@ -136,7 +136,7 @@ export default function HostingerDiscountBlog() {
         <p className="text-gray-300 mb-4">
           Is offer ka unique point yeh hai ki link se discount automatic apply hota hai.
           Aapko manual coupon code dalne ki zarurat nahi. Sirf yeh click karo:
-          <a href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli" target="_blank" rel="noreferrer" className="text-primary-400 underline">
+          <a href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 underline">
             https://www.hostinger.com/in?REFERRALCODE=mohitkoli
           </a>
         </p>
@@ -145,7 +145,7 @@ export default function HostingerDiscountBlog() {
           <a
             href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli"
             target="_blank"
-            rel="noreferrer"
+            rel="nofollow sponsored noopener"
             className="inline-block bg-primary-600 text-white font-bold px-8 py-4 rounded-lg hover:bg-primary-500 transition"
           >
             Get Hostinger Discount Immediately
@@ -258,7 +258,7 @@ export default function HostingerDiscountBlog() {
           <a
             href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli"
             target="_blank"
-            rel="noreferrer"
+            rel="nofollow sponsored noopener"
             className="inline-block bg-primary-600 hover:bg-primary-700 text-white font-bold px-8 py-4 rounded-lg transition"
           >
             Get Hostinger at Lowest Price

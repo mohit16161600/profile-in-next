@@ -260,6 +260,22 @@ export default function NodejsHostingIndia() {
                         </p>
                     </section>
 
+                    {/* Mid-article CTA */}
+                    <aside className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                        <p className="text-sm text-gray-300 leading-7">
+                            <strong className="text-white">Picked your spec?</strong> If KVM 2 matches your app, the sizing above is
+                            all you need to decide — my referral link below can get you an extra discount on top of the running sale.
+                        </p>
+                        <a
+                            href={REFERRAL_URL}
+                            target="_blank"
+                            rel="nofollow sponsored noopener"
+                            className="shrink-0 inline-block border border-primary-500/50 text-primary-300 hover:text-white hover:bg-primary-500/20 font-semibold px-5 py-2.5 rounded-xl transition-all text-sm"
+                        >
+                            Check current KVM pricing →
+                        </a>
+                    </aside>
+
                     {/* Deployment recipe */}
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-4">My production deployment recipe (copy this)</h2>
@@ -321,7 +337,7 @@ sudo certbot --nginx -d yourdomain.in`}</code></pre>
                             <a
                                 href={REFERRAL_URL}
                                 target="_blank"
-                                rel="sponsored nofollow noopener"
+                                rel="nofollow sponsored noopener"
                                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
                             >
                                 See KVM VPS Prices with Discount →

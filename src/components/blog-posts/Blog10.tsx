@@ -397,7 +397,7 @@ export default function Blog10() {
           </li>
           <li>
             Link to{" "}
-            <Link href="/blog/will-ai-replace-web-developers-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
+            <Link href="/blog/will-ai-replace-your-job-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               Will AI Replace Web Developers in 2026?
             </Link>{" "}
             for career-focused readers who want long-term context.

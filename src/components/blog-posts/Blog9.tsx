@@ -48,8 +48,11 @@ export default function Blog9() {
                 <ul className="list-disc list-inside text-gray-300 space-y-1 mb-6 ml-4">
                     <li>Vercel (Best for Next.js)</li>
                     <li>Netlify (Static sites)</li>
-                    <li>Hostinger (Traditional hosting)</li>
+                    <li><a href="https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY" rel="nofollow sponsored noopener" target="_blank">Hostinger</a> (Traditional hosting)</li>
                 </ul>
+                <p className="text-sm text-gray-400 mb-6 leading-relaxed">
+                    Disclosure: The Hostinger link above is a referral link. If you sign up through it, I may earn a commission at no extra cost to you.
+                </p>
             </section>
 
             <section id="step-by-step" className="mb-12">
@@ -203,7 +206,7 @@ export default function Blog9() {
                         <h4 className="text-primary-400 font-bold mb-2">AI in Web Development Guide</h4>
                         <p className="text-sm text-gray-400">Deep dive into how AI is revolutionizing the industry.</p>
                     </Link>
-                    <Link href="/blog/hostinger-discount-90-coupon-code" className="glass p-4 rounded-xl hover:bg-white/5 transition-colors">
+                    <Link href="/blog/hostinger-discount-code-2026" className="glass p-4 rounded-xl hover:bg-white/5 transition-colors">
                         <h4 className="text-primary-400 font-bold mb-2">Hostinger 90% Discount</h4>
                         <p className="text-sm text-gray-400">Get the best hosting deal using referral code MOHITKOLI.</p>
                     </Link>

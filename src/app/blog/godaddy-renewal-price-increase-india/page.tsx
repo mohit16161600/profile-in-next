@@ -4,6 +4,7 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
+const REFERRAL_URL_GENERAL = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
 const CANONICAL = "https://mohitkoli.in/blog/godaddy-renewal-price-increase-india";
 
 export const metadata: Metadata = {
@@ -254,6 +255,23 @@ export default function GodaddyRenewalPrice() {
                         </p>
                     </section>
 
+                    {/* Mid-article CTA */}
+                    <aside className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                        <p className="text-sm sm:text-base text-gray-300 leading-7">
+                            <strong className="text-white">Table leaning Hostinger&apos;s way?</strong> If you&apos;re switching from
+                            GoDaddy, you can grab a plan at the current sale rate — an extra new-user discount may apply through this
+                            referral link.
+                        </p>
+                        <a
+                            href={REFERRAL_URL_GENERAL}
+                            target="_blank"
+                            rel="nofollow sponsored noopener"
+                            className="flex-shrink-0 inline-block border border-primary-500/50 text-primary-400 hover:text-white hover:bg-primary-500/20 font-semibold px-5 py-3 rounded-xl transition-all"
+                        >
+                            See Hostinger&apos;s Current Price →
+                        </a>
+                    </aside>
+
                     {/* Migration steps */}
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-6">Moving hosting without downtime: the 6-step weekend migration</h2>
@@ -288,7 +306,7 @@ export default function GodaddyRenewalPrice() {
                             <a
                                 href={REFERRAL_URL}
                                 target="_blank"
-                                rel="sponsored nofollow noopener"
+                                rel="nofollow sponsored noopener"
                                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
                             >
                                 Compare Your Renewal vs Hostinger →

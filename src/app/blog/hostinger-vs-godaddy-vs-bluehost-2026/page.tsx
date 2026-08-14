@@ -180,9 +180,9 @@ export default function HostingerVsGodaddyVsBluehost() {
                         </div>
                         <div className="mt-6">
                             <a
-                                href={REFERRAL_URL}
+                                href="https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY"
                                 target="_blank"
-                                rel="sponsored nofollow noopener"
+                                rel="nofollow sponsored noopener"
                                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40"
                             >
                                 Get the Winner with Extra Discount →
@@ -408,7 +408,7 @@ export default function HostingerVsGodaddyVsBluehost() {
                             <a
                                 href={REFERRAL_URL}
                                 target="_blank"
-                                rel="sponsored nofollow noopener"
+                                rel="nofollow sponsored noopener"
                                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
                             >
                                 Try Hostinger Risk-Free for 30 Days →

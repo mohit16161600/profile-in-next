@@ -96,6 +96,10 @@ export default function BloggingGuide2026() {
             <em> how to start a blog and earn money</em>, even if you have zero experience.
           </p>
 
+          <p className="text-sm text-gray-500 italic mb-8">
+            Disclosure: This article contains referral links — signing up through them may get you a discount and earns me a small commission, at no extra cost to you.
+          </p>
+
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-10 backdrop-blur-sm">
             <h2 className="text-2xl font-bold mb-4 text-blue-400">Table of Contents</h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-300">
@@ -145,7 +149,7 @@ export default function BloggingGuide2026() {
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-blue-500/50 transition">
               <h3 className="text-xl font-bold mb-2">2. Web Hosting</h3>
-              <p className="text-gray-400">The "house" where your website files live. I highly recommend Hostinger for its speed and affordability.</p>
+              <p className="text-gray-400">The "house" where your website files live. I highly recommend <a href="https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY" target="_blank" rel="nofollow sponsored noopener" className="text-blue-400 underline">Hostinger</a> for its speed and affordability.</p>
               <Link href="/blog/hostinger-discount-code-2026" className="inline-block mt-3 text-blue-400 font-semibold hover:underline">
                 Read: How to get Hostinger at 90% discount →
               </Link>
@@ -190,7 +194,7 @@ export default function BloggingGuide2026() {
             <div>
               <h3 className="text-2xl font-semibold mb-2 text-white">2. Affiliate Marketing</h3>
               <p>Promote products (like Amazon or Hosting) and earn a commission when someone buys through your link. This is where the real money is.</p>
-              <Link href="/blog/hostinger-discount-90-coupon-code" className="text-blue-400 underline">See an example of Affiliate Marketing here.</Link>
+              <Link href="/blog/hostinger-discount-code-2026" className="text-blue-400 underline">See an example of Affiliate Marketing here.</Link>
             </div>
             <div>
               <h3 className="text-2xl font-semibold mb-2 text-white">3. Selling Digital Products</h3>

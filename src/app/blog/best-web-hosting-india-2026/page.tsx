@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
-const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
+const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
 const CANONICAL = "https://mohitkoli.in/blog/best-web-hosting-india-2026";
 
 export const metadata: Metadata = {
@@ -337,7 +337,7 @@ export default function BestWebHostingIndia() {
                                         <a
                                             href={REFERRAL_URL}
                                             target="_blank"
-                                            rel="sponsored nofollow noopener"
+                                            rel="nofollow sponsored noopener"
                                             className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
                                         >
                                             Get Hostinger with Extra Discount →
@@ -394,12 +394,12 @@ export default function BestWebHostingIndia() {
                                 money-back guarantee. If it disappoints, refund and pick #2 — you lose nothing.
                             </p>
                             <a
-                                href={REFERRAL_URL}
+                                href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli"
                                 target="_blank"
-                                rel="sponsored nofollow noopener"
+                                rel="nofollow sponsored noopener"
                                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
                             >
-                                Claim the #1 Host + Extra Discount →
+                                Claim the #1 Host with My Dev Referral →
                             </a>
                         </div>
                     </section>

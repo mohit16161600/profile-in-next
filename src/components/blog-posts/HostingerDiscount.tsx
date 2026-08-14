@@ -96,6 +96,7 @@ const HostingerDiscount = () => {
               href={REFERRAL_LINK}
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-600 font-bold text-xl rounded-full hover:scale-105 transition-transform shadow-xl"
               target="_blank"
+              rel="nofollow sponsored noopener"
             >
               Activate Discount Now
               <Zap className="ml-2 w-6 h-6 fill-current" />
@@ -303,6 +304,7 @@ const HostingerDiscount = () => {
             href={REFERRAL_LINK}
             className="inline-block bg-primary-600 hover:bg-primary-500 text-white font-black px-12 py-5 rounded-full text-2xl transition-all hover:shadow-[0_0_30px_rgba(37,99,235,0.4)]"
             target="_blank"
+            rel="nofollow sponsored noopener"
           >
             Get Hostinger Discount Now
           </Link>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
-const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
+const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
 const CANONICAL = "https://mohitkoli.in/blog/cheap-web-hosting-under-200-india";
 
 export const metadata: Metadata = {
@@ -211,6 +211,23 @@ export default function CheapHostingUnder200() {
                         </p>
                     </section>
 
+                    {/* Mid-article CTA */}
+                    <aside className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
+                        <p className="text-gray-300 leading-7 mb-4 sm:mb-0">
+                            Numbers looking sensible? The ₹139 Premium tier is the one I put most client sites on —
+                            sale pricing rotates, so a quick look at the live checkout beats any table (an extra
+                            referral discount usually applies on top).
+                        </p>
+                        <a
+                            href={REFERRAL_URL}
+                            target="_blank"
+                            rel="nofollow sponsored noopener"
+                            className="inline-block flex-shrink-0 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow shadow-purple-900/40"
+                        >
+                            Check the ₹139 plan today →
+                        </a>
+                    </aside>
+
                     {/* Corners cut */}
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-6">The 5 corners budget hosts cut (check these before paying)</h2>
@@ -287,7 +304,7 @@ export default function CheapHostingUnder200() {
                             <a
                                 href={REFERRAL_URL}
                                 target="_blank"
-                                rel="sponsored nofollow noopener"
+                                rel="nofollow sponsored noopener"
                                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
                             >
                                 See Live Prices with Discount →
