@@ -115,20 +115,6 @@ export default function Blog5() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <section id="seo-snapshot" className="mb-12">
-        <div className="rounded-2xl border border-primary-500/30 bg-primary-900/10 p-6">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            SEO Snapshot: Hostinger VPS Hosting Review 2025
-          </h2>
-          <p className="text-gray-300 mb-3 leading-relaxed">
-            <strong>Primary Keywords:</strong> Hostinger VPS Hosting Review 2025, Hostinger VPS discount, Hostinger KVM VPS review
-          </p>
-          <p className="text-gray-300 leading-relaxed">
-            <strong>Search Intent:</strong> Hosting comparison, buying decision, VPS review, discount and pricing research
-          </p>
-        </div>
-      </section>
-
       <section id="intro" className="mb-16 text-center">
         <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
           Hostinger VPS Hosting Review 2025: Is It Worth It?

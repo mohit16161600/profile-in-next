@@ -8,34 +8,40 @@ const REFERRAL_URL_BEGINNER = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIF
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-review-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger Review 2026: I Ran Real Client Sites for a Year — Honest Verdict",
+    title: "Hostinger Review 2026: Is ₹139/mo Hosting Worth It in India?",
     description:
-        "An honest Hostinger review for 2026 from a developer who hosts real client sites on it — speed, uptime, support, hPanel, the good, the annoying, and whether Hostinger is actually worth it in India.",
+        "Honest Hostinger review 2026 after a year of real client sites in India — speed, uptime, hPanel, the ₹449/mo renewal trap, plus a Hostinger Horizons review.",
     keywords: [
-        "hostinger review",
         "hostinger review 2026",
+        "hostinger review",
+        "hostinger review india",
         "is hostinger good",
         "is hostinger worth it",
-        "hostinger review india",
+        "hostinger horizons review 2026",
+        "hostinger horizons review",
         "hostinger honest review",
         "hostinger pros and cons",
+        "hostinger price in india",
+        "is hostinger good for beginners",
         "hostinger speed test",
-        "hostinger uptime review",
         "should i use hostinger",
+        "hostinger horizons",
+        "hostinger review pricing india",
+        "who should not buy hostinger",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger Review 2026: I Ran Real Client Sites for a Year — Honest Verdict",
+        title: "Hostinger Review 2026: Is ₹139/mo Hosting Worth It in India?",
         description:
-            "A developer's honest Hostinger review — speed, uptime, support, hPanel, the annoyances, and whether it's worth it in India for 2026.",
+            "Honest Hostinger review 2026 after a year of real client sites in India — speed, uptime, hPanel, the ₹449/mo renewal trap, plus a Hostinger Horizons review.",
         url: CANONICAL,
         type: "article",
         images: [{ url: "/assets/blog/hostinger-review-2026.svg", width: 1200, height: 630, alt: "Hostinger review 2026 — honest developer verdict" }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hostinger Review 2026: Honest Developer Verdict",
-        description: "A year of running real client sites on Hostinger — speed, uptime, support, and is it worth it?",
+        title: "Hostinger Review 2026: Is ₹139/mo Hosting Worth It in India?",
+        description: "A year of running real client sites on Hostinger — speed, uptime, support, Horizons AI builder, and is it worth it?",
         images: ["/assets/blog/hostinger-review-2026.svg"],
     },
 };
@@ -74,6 +80,14 @@ const FAQ = [
         q: "Is Hostinger safe and reliable?",
         a: "Yes. You get free SSL on every plan, free daily or weekly backups depending on tier, malware scanning, and a 30-day money-back guarantee so you can test it risk-free. Reliability over a year has been consistent for me.",
     },
+    {
+        q: "What is Hostinger Horizons?",
+        a: "Hostinger Horizons is Hostinger's AI website and web-app builder. You describe what you want in plain language and it generates a working site or simple app that you can tweak and publish, with hosting, domain connection and SSL handled for you. It's a separate product from the shared hosting plans — great for non-coders shipping an MVP fast, while WordPress or custom code on a normal plan gives you far more control. Check Hostinger's site for current Horizons pricing.",
+    },
+    {
+        q: "Is Hostinger good for beginners in India?",
+        a: "Yes — it's the most beginner-friendly host I've used in India. hPanel is much simpler than cPanel, WordPress installs in one click, the free domain and free SSL remove two confusing steps, and INR pricing from ₹139/mo on long terms keeps the entry cost low. The 30-day money-back guarantee means a beginner can test everything risk-free.",
+    },
 ];
 
 const jsonLd = [
@@ -95,12 +109,12 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger Review 2026: I Ran Real Client Sites for a Year — Honest Verdict",
+        headline: "Hostinger Review 2026: Is ₹139/mo Hosting Worth It in India?",
         description:
-            "An honest, developer-tested Hostinger review for 2026 — speed, uptime, support, hPanel, pros and cons, and whether Hostinger is worth it in India.",
+            "Honest Hostinger review 2026 after a year of real client sites in India — speed, uptime, hPanel, the ₹449/mo renewal trap, plus a Hostinger Horizons review.",
         image: "https://mohitkoli.in/assets/blog/hostinger-review-2026.svg",
         datePublished: "2026-07-17T00:00:00.000Z",
-        dateModified: "2026-07-17T00:00:00.000Z",
+        dateModified: "2026-08-20T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
@@ -118,7 +132,7 @@ const jsonLd = [
             logo: { "@type": "ImageObject", url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg" },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
-        keywords: "hostinger review, hostinger review 2026, is hostinger good, is hostinger worth it, hostinger pros and cons",
+        keywords: "hostinger review, hostinger review 2026, hostinger review india, is hostinger good, is hostinger worth it, hostinger horizons review 2026, hostinger pros and cons, is hostinger good for beginners",
         articleSection: "Hosting",
         inLanguage: "en-IN",
     },
@@ -159,13 +173,13 @@ export default function HostingerReview2026() {
                         </ol>
                     </nav>
 
-                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Honest Review · Updated July 17, 2026</p>
+                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Honest Review · Updated August 20, 2026</p>
                     <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
                         Hostinger Review 2026: I Ran Real Client Sites for a Year — Here&apos;s My Honest Verdict
                     </h1>
                     <p className="text-lg text-gray-300 leading-8 mb-3">
                         Most &quot;Hostinger reviews&quot; are written by people who never deployed a real site on it. I did — I&apos;ve hosted
-                        client blogs, a WooCommerce store and my own projects on Hostinger for over a year. This is the honest version:
+                        client blogs, a WooCommerce store and my own projects on Hostinger for over a year. So this is the honest version:
                         <strong className="text-white"> what&apos;s genuinely great, what&apos;s annoying, and who should skip it.</strong>
                     </p>
                     <p className="text-xs text-gray-500 mb-8 border-l-2 border-white/10 pl-3">
@@ -176,7 +190,7 @@ export default function HostingerReview2026() {
                     <div className="relative w-full aspect-[1200/630] mb-10 rounded-2xl overflow-hidden border border-white/10">
                         <Image
                             src="/assets/blog/hostinger-review-2026.svg"
-                            alt="Hostinger review 2026 — honest developer verdict on speed, uptime and support"
+                            alt="Cover card reading 'Hostinger Review 2026' with an honest-review label, written by developer Mohit Koli"
                             fill
                             className="object-cover"
                             priority
@@ -291,6 +305,101 @@ export default function HostingerReview2026() {
                         </p>
                     </section>
 
+                    {/* Pricing in India */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger price in India: what you pay now vs at renewal</h2>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            No review is honest without the money part. These are the INR prices I checked while updating this post: the intro
+                            rate applies on the 48-month sale term, and the renewal column is what lands in your inbox once that term ends.
+                        </p>
+                        <div className="overflow-x-auto rounded-2xl border border-white/10 mb-4">
+                            <table className="w-full text-sm text-left">
+                                <thead>
+                                    <tr className="bg-white/[0.06] text-white">
+                                        <th className="px-4 py-3 font-semibold">Plan</th>
+                                        <th className="px-4 py-3 font-semibold">Intro price (48-mo term)</th>
+                                        <th className="px-4 py-3 font-semibold">Renews at</th>
+                                        <th className="px-4 py-3 font-semibold">Best for</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-gray-300">
+                                    <tr className="border-t border-white/10">
+                                        <td className="px-4 py-3 text-white font-semibold">Premium</td>
+                                        <td className="px-4 py-3">₹139/mo</td>
+                                        <td className="px-4 py-3">~₹449/mo</td>
+                                        <td className="px-4 py-3">Blogs, portfolios, first sites</td>
+                                    </tr>
+                                    <tr className="border-t border-white/10">
+                                        <td className="px-4 py-3 text-white font-semibold">Business</td>
+                                        <td className="px-4 py-3">₹199/mo</td>
+                                        <td className="px-4 py-3">~₹649/mo</td>
+                                        <td className="px-4 py-3">WooCommerce, client sites (NVMe + daily backups)</td>
+                                    </tr>
+                                    <tr className="border-t border-white/10">
+                                        <td className="px-4 py-3 text-white font-semibold">Cloud Startup</td>
+                                        <td className="px-4 py-3">₹599/mo</td>
+                                        <td className="px-4 py-3">~₹1,599/mo</td>
+                                        <td className="px-4 py-3">High-traffic sites, agencies</td>
+                                    </tr>
+                                    <tr className="border-t border-white/10">
+                                        <td className="px-4 py-3 text-white font-semibold">KVM VPS</td>
+                                        <td className="px-4 py-3">from ~₹499/mo</td>
+                                        <td className="px-4 py-3">varies by term</td>
+                                        <td className="px-4 py-3">Custom apps, Docker, root access</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            The cost math that matters: Premium at ₹139/mo × 48 months is <strong className="text-white">₹6,672 upfront for four
+                            years of hosting</strong> — the same ₹6,672 buys under 15 months once Premium hits its ₹449/mo renewal rate. That is the
+                            whole argument for buying the longest term you can afford at the sale price. For the full plan-by-plan breakdown (storage,
+                            website limits, what each tier actually includes), see my{" "}
+                            <Link href="/blog/hostinger-plans-pricing-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger plans &amp; pricing in India guide
+                            </Link>.
+                        </p>
+                        <p className="text-gray-300 leading-8">
+                            And before you buy, read the renewal column twice — I&apos;ve broken down exactly what each plan costs after year one in the{" "}
+                            <Link href="/blog/hostinger-renewal-price-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger renewal price in India
+                            </Link>{" "}
+                            post, including how to lock the low rate legally for four years.
+                        </p>
+                    </section>
+
+                    {/* Hostinger Horizons review */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger Horizons Review (AI Website Builder)</h2>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            <strong className="text-white">Hostinger Horizons</strong> is Hostinger&apos;s AI website and web-app builder — a separate
+                            product from the shared plans I ran for a year, so read this as a scoped take, not a twelve-month test. Instead of installing
+                            WordPress and picking a theme, you describe what you want in plain language — &quot;a booking page for my salon with a contact
+                            form&quot; — and Horizons generates a working site or simple web app you refine with follow-up prompts, then publish. Hosting,
+                            domain connection and SSL are handled in the same flow, so there&apos;s no server setup at all.
+                        </p>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            <strong className="text-white">Who it&apos;s for:</strong> non-coders who want to ship an idea fast — a founder validating an MVP,
+                            a local business that needs a one-page site with a form, a creator selling a digital product. It removes the two things that
+                            actually stop those people: writing code and configuring hosting.
+                        </p>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            <strong className="text-white">Who it&apos;s not for:</strong> anyone who wants control. Custom plugins, your own database schema,
+                            code you can pick up and move to another host later — none of that is what an AI builder is for, and a normal plan running
+                            WordPress or your own stack still wins. I cover that path in my{" "}
+                            <Link href="/blog/hostinger-wordpress-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger WordPress hosting guide
+                            </Link>. Anything with real custom logic behind it still needs a developer.
+                        </p>
+                        <p className="text-gray-300 leading-8">
+                            Horizons is priced separately from the shared plans and those plans change often, so check the{" "}
+                            <a href={REFERRAL_URL} target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                current Horizons pricing on Hostinger
+                            </a>{" "}
+                            before you budget for it.
+                        </p>
+                    </section>
+
                     {/* Who should buy */}
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-6">Should you use Hostinger? (by situation)</h2>
@@ -308,6 +417,44 @@ export default function HostingerReview2026() {
                                 </div>
                             ))}
                         </div>
+                    </section>
+
+                    {/* Who should NOT buy */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Who should NOT buy Hostinger</h2>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            An honest review has to include this. Skip Hostinger if any of these describe you:
+                        </p>
+                        <ul className="space-y-3 text-gray-300 leading-7 mb-4">
+                            <li>
+                                ❌ <strong className="text-white">You need fully-managed enterprise WordPress.</strong> If your business dies when the site is
+                                down for ten minutes and you want an SLA, staging-first deploys and a dedicated engineer on chat, a premium managed host is
+                                worth its 10x price. Hostinger is value hosting, not white-glove hosting.
+                            </li>
+                            <li>
+                                ❌ <strong className="text-white">You refuse to commit long-term.</strong> Hostinger&apos;s value lives entirely in the 24–48 month
+                                sale terms. Pay month-to-month and you&apos;re near the regular rate — at that point other hosts compete.
+                            </li>
+                            <li>
+                                ❌ <strong className="text-white">You want phone support.</strong> Support is 24/7 chat only. It&apos;s responsive, but if you
+                                specifically want to talk to a human on a call, that option doesn&apos;t exist.
+                            </li>
+                            <li>
+                                ❌ <strong className="text-white">You expect the intro price forever.</strong> Renewals jump well above the sale rate. If reading
+                                that makes you angry rather than making you buy a longer term, this pricing model will frustrate you.
+                            </li>
+                        </ul>
+                        <p className="text-gray-300 leading-8">
+                            Still unsure? I&apos;ve compared it head-to-head with the two hosts Indians most often cross-shop in{" "}
+                            <Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger vs GoDaddy vs Bluehost
+                            </Link>
+                            , and ranked the whole market in my{" "}
+                            <Link href="/blog/best-web-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                best web hosting in India 2026
+                            </Link>{" "}
+                            roundup — Hostinger wins on value there, but not in every category.
+                        </p>
                     </section>
 
                     {/* CTA */}

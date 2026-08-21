@@ -7,39 +7,64 @@ const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-plans-pricing-india-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger Plans & Pricing in India 2026: Which Plan Should You Buy?",
+    title: "Hostinger Plans India 2026: ₹139–₹599 Full Price List",
     description:
-        "Every Hostinger plan explained with real July 2026 India pricing — Premium vs Business vs Cloud, KVM VPS specs, renewal costs nobody shows you, and a chart of what each plan really costs per month.",
+        "Hostinger plans & price list India 2026 — Premium ₹139, Business ₹199, Cloud ₹599/mo, real renewal rates, and the monthly-billing trap before you pay.",
     keywords: [
+        "hostinger plans india",
+        "hostinger india plans",
+        "hostinger plan india",
+        "hostinger pricing",
+        "hostinger pricing plans",
         "hostinger plans",
-        "hostinger pricing india",
+        "hostinger price in india",
         "hostinger price list india 2026",
-        "hostinger premium vs business",
+        "hostinger hosting prices",
+        "hostinger premium web hosting price",
+        "hostinger business plan pricing",
+        "hostinger subscription plan",
+        "hostinger pay monthly",
+        "hostinger 2 year plan",
+        "how much is hosting on hostinger",
+        "hostinger business email pricing india 2026",
+        "hostinger bd price",
         "hostinger renewal price",
         "hostinger kvm plans",
-        "hostinger kvm 1 plan",
-        "hostinger cloud startup plan",
-        "which hostinger plan to buy",
-        "hostinger 48 month plan price",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger Plans & Pricing in India 2026: Which Plan Should You Buy?",
+        title: "Hostinger Plans India 2026: ₹139–₹599 Full Price List",
         description:
-            "Premium vs Business vs Cloud vs KVM VPS — real India pricing, renewal costs, and exactly which plan fits your project.",
+            "Premium ₹139, Business ₹199, Cloud ₹599/mo — the full India price list with renewal rates, term math, and which plan fits your project.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/hostinger-plans-pricing-india-2026.svg", width: 1200, height: 630, alt: "Hostinger plans and pricing in India 2026" }],
+        images: [{ url: "/assets/blog/hostinger-plans-pricing-india-2026.svg", width: 1200, height: 630, alt: "Hostinger plans and price list in India 2026" }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hostinger Plans & Pricing India 2026: Which Plan to Buy?",
-        description: "Real prices, renewal traps, KVM VPS specs, and persona-based plan picks — everything on one page.",
+        title: "Hostinger Plans India 2026: ₹139–₹599 Full Price List",
+        description: "Every Hostinger plan with real India pricing — intro vs renewal rates, monthly billing truth, KVM VPS specs, and which plan to buy.",
         images: ["/assets/blog/hostinger-plans-pricing-india-2026.svg"],
     },
 };
 
 const FAQ = [
+    {
+        q: "How much does Hostinger cost per month in India?",
+        a: "Shared hosting starts at ₹139/mo for Premium on the 48-month term, Business is ₹199/mo, Cloud Startup is ₹599/mo, and KVM VPS starts around ₹499/mo. Renewals are higher — roughly ₹449, ₹649 and ₹1,599/mo — and GST is added at checkout for Indian billing, so budget the invoice total slightly above the listed rate.",
+    },
+    {
+        q: "Which Hostinger plan is cheapest?",
+        a: "Premium at ₹139/mo on the 48-month term is the cheapest plan in the Hostinger India lineup — about ₹111/mo with the referral discount stacked. It still includes 3 websites, 20 GB SSD, a free domain for the first year, and free SSL, so it does not feel like a stripped-down starter plan.",
+    },
+    {
+        q: "What is the price of the Hostinger Business plan?",
+        a: "The Business plan costs ₹199/mo on the 48-month sale term — ₹9,552 upfront, or roughly ₹159/mo with the referral stack — and renews around ₹649/mo. Over Premium it adds NVMe storage, daily backups, 50 websites, and the AI ecommerce builder.",
+    },
+    {
+        q: "Does Hostinger have a monthly payment plan?",
+        a: "Yes, month-to-month billing exists, but the deep discounts are tied to long terms — paying monthly puts Premium near its ₹599/mo regular rate instead of ₹139/mo. If upfront cash is tight, the 12-month term keeps a real discount, and the 48-month term remains the best value.",
+    },
     {
         q: "Which Hostinger plan is best for a WordPress blog in India?",
         a: "Premium (₹139/mo on the 48-month sale term) is the sweet spot for blogs and portfolios: 3 websites, 20 GB SSD, free domain for a year, free SSL, and managed WordPress with one-click install. Upgrade to Business only if you need daily backups and NVMe speed.",
@@ -64,18 +89,22 @@ const FAQ = [
         q: "Can I upgrade my Hostinger plan later without losing anything?",
         a: "Yes. Upgrades from Premium to Business or Cloud are one-click from hPanel, your sites stay live, and you only pay the difference. Downgrades work at renewal time. Starting small and upgrading when traffic grows is a perfectly safe strategy.",
     },
+    {
+        q: "Is the Hostinger BD (Bangladesh) price the same as the India price?",
+        a: "No — Hostinger localizes pricing by region, so the Bangladesh (BD) storefront shows the same Premium, Business, and Cloud lineup at slightly different local rates than the Indian ₹139/₹199/₹599 sale prices. Plan features are identical everywhere; the referral link automatically opens your region's storefront with its live localized prices.",
+    },
 ];
 
 const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger Plans & Pricing in India 2026: Which Plan Should You Buy?",
+        headline: "Hostinger Plans India 2026: ₹139–₹599 Full Price List",
         description:
-            "Every Hostinger plan explained with real July 2026 India pricing — shared hosting, Cloud, and KVM VPS, including renewal costs and persona-based recommendations.",
+            "Hostinger plans & price list India 2026 — Premium ₹139, Business ₹199, Cloud ₹599/mo, real renewal rates, and the monthly-billing trap before you pay.",
         image: "https://mohitkoli.in/assets/blog/hostinger-plans-pricing-india-2026.svg",
         datePublished: "2026-06-24T00:00:00.000Z",
-        dateModified: "2026-07-17T00:00:00.000Z",
+        dateModified: "2026-08-20T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
@@ -93,7 +122,7 @@ const jsonLd = [
             logo: { "@type": "ImageObject", url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg" },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
-        keywords: "hostinger plans, hostinger pricing india, hostinger premium vs business, hostinger kvm plans, hostinger renewal price",
+        keywords: "hostinger plans india, hostinger india plans, hostinger plan india, hostinger pricing, hostinger pricing plans, hostinger price in india, hostinger price list india 2026, hostinger hosting prices, hostinger business plan pricing, hostinger premium web hosting price, hostinger subscription plan, hostinger pay monthly, hostinger 2 year plan, hostinger renewal price, hostinger kvm plans",
         articleSection: "Hosting",
         inLanguage: "en-IN",
     },
@@ -103,7 +132,7 @@ const jsonLd = [
         itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
             { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.in/blog" },
-            { "@type": "ListItem", position: 3, name: "Hostinger Plans & Pricing in India 2026", item: CANONICAL },
+            { "@type": "ListItem", position: 3, name: "Hostinger Plans & Pricing India 2026", item: CANONICAL },
         ],
     },
     {
@@ -177,15 +206,16 @@ export default function HostingerPlansPricing() {
                         </ol>
                     </nav>
 
-                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Pricing Guide · Updated July 2, 2026</p>
+                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Pricing Guide · Updated August 20, 2026</p>
                     <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
-                        Hostinger Plans &amp; Pricing in India (2026): Which Plan Should You Actually Buy?
+                        Hostinger Plans &amp; Pricing in India (2026): Full Price List &amp; Which Plan to Buy
                     </h1>
                     <p className="text-lg text-gray-300 leading-8 mb-3">
                         Hostinger&apos;s pricing page shows you three shiny cards and hopes you pick the middle one. What it does not show
                         clearly: <strong className="text-white">renewal prices, term math, and when a ₹139 plan beats a ₹599 one</strong>.
-                        I have deployed client projects on every tier — shared, Cloud, and KVM VPS. Here is the complete picture with real
-                        July 2026 prices, so you buy the right plan the first time.
+                        So here is the whole India price list for 2026 — shared, Cloud and KVM VPS — with the renewal number printed next to
+                        every intro number. I have deployed client projects on every tier, and the plan most people should buy is not the one
+                        that middle card is pushing.
                     </p>
                     <p className="text-xs text-gray-500 mb-8 border-l-2 border-white/10 pl-3">
                         Disclosure: links on this page use my referral code — you get an extra ~20% discount on top of the sale price, and I
@@ -195,12 +225,66 @@ export default function HostingerPlansPricing() {
                     <div className="relative w-full aspect-[1200/630] mb-10 rounded-2xl overflow-hidden border border-white/10">
                         <Image
                             src="/assets/blog/hostinger-plans-pricing-india-2026.svg"
-                            alt="Hostinger plans and pricing in India 2026 — Premium vs Business vs Cloud"
+                            alt="Title card for this Hostinger plans and pricing India 2026 guide, bylined Mohit Koli, senior full stack developer"
                             fill
                             className="object-cover"
                             priority
                         />
                     </div>
+
+                    {/* Master price list */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger hosting prices in India — every plan at a glance</h2>
+                        <p className="text-gray-300 leading-8 mb-6">
+                            <strong className="text-white">How much is hosting on Hostinger?</strong> In India it starts at{" "}
+                            <strong className="text-white">₹139/mo</strong> for the Premium shared plan on the 48-month term, ₹199/mo for
+                            Business, and ₹599/mo for Cloud Startup; KVM VPS starts around ₹499/mo. Renewals land higher — roughly ₹449,
+                            ₹649 and ₹1,599/mo — so the table below prints both numbers side by side. Every shared plan includes free SSL
+                            and a free domain for the first year.
+                        </p>
+                        <div className="overflow-x-auto rounded-2xl border border-white/10 mb-4">
+                            <table className="w-full text-left text-sm">
+                                <thead className="bg-white/5 text-gray-200">
+                                    <tr>
+                                        <th className="p-4 font-semibold">Plan</th>
+                                        <th className="p-4">Intro price (48-mo term)</th>
+                                        <th className="p-4">Renewal price</th>
+                                        <th className="p-4">Best for</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-gray-300">
+                                    {[
+                                        ["Premium", "₹139/mo (~₹111 with referral)", "₹449/mo", "Blogs, portfolios, small business sites"],
+                                        ["Business", "₹199/mo (~₹159 with referral)", "₹649/mo", "WooCommerce stores, client work"],
+                                        ["Cloud Startup", "₹599/mo (~₹479 with referral)", "₹1,599/mo", "High-traffic sites, agencies"],
+                                        ["KVM 1 (VPS)", "~₹499/mo on sale", "Varies by term", "Custom apps, bots, small APIs"],
+                                        ["KVM 2–8 (VPS)", "See live pricing", "Varies by term", "Production apps to heavy workloads"],
+                                    ].map(([plan, intro, renewal, best], i) => (
+                                        <tr key={plan} className={`border-t border-white/5 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
+                                            <td className="p-4 font-medium text-white">{plan}</td>
+                                            <td className="p-4">{intro}</td>
+                                            <td className="p-4">{renewal}</td>
+                                            <td className="p-4">{best}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                        <p className="text-gray-300 leading-8">
+                            These are India-localized sale prices (last verified July 2026 — Hostinger rotates offers, so the live cart is
+                            the source of truth). One fine-print note for Indian buyers: GST is added at checkout on top of the listed
+                            price, so the invoice total comes out a bit higher than price × months — check the cart summary before you pay.
+                            To see how these numbers hold up against the rest of the market, my{" "}
+                            <Link href="/blog/best-web-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                best web hosting in India 2026
+                            </Link>{" "}
+                            roundup and the{" "}
+                            <Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger vs GoDaddy vs Bluehost price comparison
+                            </Link>{" "}
+                            cover every rival worth considering.
+                        </p>
+                    </section>
 
                     {/* 30-second answer */}
                     <section className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6">
@@ -256,8 +340,8 @@ export default function HostingerPlansPricing() {
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-4">Chart: what each plan really costs per month</h2>
                         <p className="text-gray-300 leading-8 mb-6">
-                            Sale price is only half the story — the referral stack lowers it further, and renewal raises it later.
-                            This chart shows all three numbers per plan so nothing surprises you:
+                            Sale price is only half the story: the referral stack pulls it down, renewal pushes it back up. All three
+                            numbers, per plan:
                         </p>
                         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 space-y-8">
                             {[
@@ -298,7 +382,7 @@ export default function HostingerPlansPricing() {
 
                     {/* Full table */}
                     <section className="mb-12">
-                        <h2 className="text-3xl font-bold text-white mb-4">Full comparison table (including what pricing pages hide)</h2>
+                        <h2 className="text-3xl font-bold text-white mb-4">Feature-by-feature comparison (including what the sales page hides)</h2>
                         <div className="overflow-x-auto rounded-2xl border border-white/10">
                             <table className="w-full text-left text-sm">
                                 <thead className="bg-white/5 text-gray-200">
@@ -337,9 +421,128 @@ export default function HostingerPlansPricing() {
                         </div>
                     </section>
 
+                    {/* Premium & Business plan detail */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Premium and Business plans in detail</h2>
+                        <h3 className="text-xl font-bold text-white mb-3">Hostinger Premium plan price — ₹139/mo</h3>
+                        <p className="text-gray-300 leading-8 mb-6">
+                            The full math on Premium web hosting: ₹139/mo on the 48-month sale term, ₹6,672 upfront for four years, roughly
+                            ₹111/mo once the referral stack is applied, and ₹449/mo at renewal once the term ends. That buys 3 websites,
+                            20 GB SSD, a free domain for year one, free SSL, weekly backups, and managed WordPress. For a blog, portfolio,
+                            or single business site this is the one I&apos;d buy without thinking twice — it is the plan I use in my{" "}
+                            <Link href="/blog/hostinger-wordpress-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger WordPress hosting India guide
+                            </Link>{" "}
+                            setup walkthrough, and the plan that tops my{" "}
+                            <Link href="/blog/cheap-web-hosting-under-200-india" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                cheap web hosting under ₹200 in India
+                            </Link>{" "}
+                            shortlist if budget is the only criterion.
+                        </p>
+                        <h3 className="text-xl font-bold text-white mb-3">Hostinger Business plan price in India — ₹199/mo</h3>
+                        <p className="text-gray-300 leading-8">
+                            The Hostinger Business plan price in India is ₹199/mo on the 48-month term — ₹9,552 upfront, about ₹159/mo with
+                            the referral stack — renewing around ₹649/mo. The extra ₹60/mo over Premium buys NVMe storage with roughly 2x
+                            faster disk I/O, daily backups instead of weekly, 50 websites, 50 GB of space, and the AI ecommerce builder. If
+                            your site earns money — a store, lead-gen pages, client projects — Business is the safer default. My verdict
+                            after a year of running client sites on these plans is in the{" "}
+                            <Link href="/blog/hostinger-review-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                full Hostinger review
+                            </Link>.
+                        </p>
+                    </section>
+
+                    {/* Term length cost */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger 1-year vs 2-year vs 4-year plan cost</h2>
+                        <p className="text-gray-300 leading-8 mb-6">
+                            Every Hostinger subscription plan is prepaid for the term you pick, and the discount deepens with length — the
+                            48-month term carries the headline 77% off on Premium. Here is how the three common terms play out:
+                        </p>
+                        <div className="overflow-x-auto rounded-2xl border border-white/10 mb-4">
+                            <table className="w-full text-left text-sm">
+                                <thead className="bg-white/5 text-gray-200">
+                                    <tr>
+                                        <th className="p-4 font-semibold">Term</th>
+                                        <th className="p-4">Premium cost</th>
+                                        <th className="p-4">What happens after</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-gray-300">
+                                    {[
+                                        ["48 months (4-year)", "₹139/mo — ₹6,672 total", "Renewal (₹449/mo) cannot touch you until 2030"],
+                                        ["24 months (2-year)", "Between ₹139 and ₹599/mo — rotates with sales", "Renews at ₹449/mo after two years"],
+                                        ["12 months (1-year)", "Smallest upfront, smallest discount", "Renews at ₹449/mo from year two"],
+                                    ].map(([term, cost, after], i) => (
+                                        <tr key={term} className={`border-t border-white/5 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
+                                            <td className="p-4 font-medium text-white">{term}</td>
+                                            <td className="p-4">{cost}</td>
+                                            <td className="p-4">{after}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                        <p className="text-gray-300 leading-8">
+                            The 1-year plan looks cheapest on checkout day but is the most expensive path over time: four years bought as
+                            12-month terms costs well over ₹15,000 versus ₹6,672 on the 4-year lock. The 2-year plan is the honest middle
+                            path if the 48-month upfront amount feels heavy. Before choosing, read the exact{" "}
+                            <Link href="/blog/hostinger-renewal-price-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger renewal price in India
+                            </Link>{" "}
+                            breakdown so year-two costs never surprise you.
+                        </p>
+                    </section>
+
+                    {/* Monthly billing */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger monthly plan — can you pay month-to-month?</h2>
+                        <p className="text-gray-300 leading-8">
+                            Yes, Hostinger lets you pay monthly, but it is the worst-value way to buy. The 65–77% discounts are attached to
+                            long terms; on month-to-month billing you pay close to the regular rate — around ₹599/mo for Premium instead of
+                            ₹139/mo — so the cheap-hosting math disappears with the first invoice. Monthly billing only makes sense for a
+                            genuinely temporary project, like a one-month campaign site. If upfront cash is the constraint, the 12-month
+                            term is the sensible compromise: a real discount now, and you can switch to a 48-month lock at renewal. Either
+                            way, stack the extra referral discount first — the exact steps are in my guide on{" "}
+                            <Link href="/blog/how-to-get-hostinger-90-off-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                how to get 90% off on Hostinger
+                            </Link>.
+                        </p>
+                    </section>
+
+                    {/* Business email pricing */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger business email pricing in India</h2>
+                        <p className="text-gray-300 leading-8">
+                            Every shared and Cloud plan on this page includes free business mailboxes for the first year — 2 per website on Premium, 5 on
+                            Business, 10 on Cloud Startup — so you@yourdomain.com costs nothing on day one. After year one, mailboxes renew
+                            at a per-mailbox rate that Hostinger rotates with its sales, so check the live cart for the current number and
+                            compare it against Google Workspace&apos;s ₹1,650/user/year before paying for a separate email suite. One catch:
+                            business email rides on your domain, and the domain has its own renewal cost — which is the next section.
+                        </p>
+                    </section>
+
+                    {/* Domain + hosting */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Is a domain included with your Hostinger plan?</h2>
+                        <p className="text-gray-300 leading-8">
+                            Yes — every shared plan from Premium up bundles a free domain for the first year (worth roughly ₹799), so
+                            &quot;domain + hosting&quot; does not mean two separate purchases on day one. Three things to know before you
+                            rely on that bundle: the free year applies to the first year only, and from year two the domain renews
+                            separately from your hosting term at the normal registry rate; you can also buy a domain from Hostinger without
+                            any hosting plan if you just want to park a name; and if your domain already lives at GoDaddy or another
+                            registrar, pointing it at Hostinger hosting is free — no transfer required. The real renewal numbers for .com,
+                            .in and .store, plus the transfer-vs-point decision, are in my{" "}
+                            <Link href="/blog/hostinger-domain-price-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger domain price in India 2026
+                            </Link>{" "}
+                            guide.
+                        </p>
+                    </section>
+
                     {/* Personas */}
                     <section className="mb-12">
-                        <h2 className="text-3xl font-bold text-white mb-6">Which plan fits you? (pick your situation)</h2>
+                        <h2 className="text-3xl font-bold text-white mb-6">Which plan fits you?</h2>
                         <div className="grid sm:grid-cols-2 gap-4">
                             {[
                                 ["📝 Blogger / student / portfolio", "Premium", "One or two sites, free domain, free SSL, managed WordPress. At ~₹111/mo with the stack this is the cheapest serious hosting in India."],
@@ -360,9 +563,9 @@ export default function HostingerPlansPricing() {
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-4">Hostinger KVM VPS plans (for developers)</h2>
                         <p className="text-gray-300 leading-8 mb-6">
-                            If you searched &quot;hostinger kvm plans&quot;, here is the quick spec sheet. KVM plans give you a real virtual
-                            server: dedicated vCPU and RAM, root access, your choice of OS, and NVMe disks. KVM 1 starts around ₹499/mo on
-                            sale (prices rotate — check live pricing through the link).
+                            KVM plans are the developer end of the lineup: a real virtual server with dedicated vCPU and RAM, root access,
+                            your choice of OS, and NVMe disks. KVM 1 starts around ₹499/mo on sale — prices rotate, so check the live page
+                            through the link before you commit to a tier.
                         </p>
                         <div className="overflow-x-auto rounded-2xl border border-white/10 mb-4">
                             <table className="w-full text-left text-sm">
@@ -418,6 +621,14 @@ export default function HostingerPlansPricing() {
                                 </li>
                             ))}
                         </ol>
+                        <p className="text-gray-300 leading-8 mt-4">
+                            Coupon codes rotate monthly, and most of the ones floating around forums are expired — I keep a tested, working
+                            list in my{" "}
+                            <Link href="/blog/hostinger-discount-code-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger discount code 2026
+                            </Link>{" "}
+                            post, so check it before you hit the payment page.
+                        </p>
                     </section>
 
                     {/* CTA */}
@@ -472,7 +683,7 @@ export default function HostingerPlansPricing() {
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
-                        <ShareButtons url={CANONICAL} title="Hostinger Plans & Pricing in India 2026: Which Plan Should You Buy?" />
+                        <ShareButtons url={CANONICAL} title="Hostinger Plans India 2026: ₹139–₹599 Full Price List" />
                     </div>
                 </article>
             </main>

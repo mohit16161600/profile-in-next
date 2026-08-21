@@ -3,38 +3,39 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
-const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
+const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/cheap-web-hosting-under-200-india";
 
 export const metadata: Metadata = {
-    title: "Cheap Web Hosting Under ₹200/Month in India (2026): What's Actually Good",
+    title: "Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks",
     description:
-        "Every hosting plan under ₹200/month in India compared — what you really get at ₹99, ₹139 and ₹199, which corners get cut, renewal traps to check, and the best pick for a blog, business site or student project.",
+        "Cheap web hosting under ₹200/month in India, price-checked Aug 2026 — 5 real picks: what ₹99, ₹139 & ₹199 buy, who gives a free domain, and the renewal trap.",
     keywords: [
         "cheap web hosting india",
+        "cheap web hosting under 200 india",
         "web hosting under 200 rupees",
+        "cheapest web hosting in india",
         "cheapest hosting india 2026",
         "hosting under 200 per month india",
+        "cheap hosting with free domain india",
         "budget web hosting india",
         "cheap hosting for students india",
         "cheap wordpress hosting india",
-        "low cost web hosting india",
-        "hosting price in india per month",
         "affordable web hosting india 2026",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Cheap Web Hosting Under ₹200/Month in India (2026): What's Actually Good",
+        title: "Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks",
         description:
-            "What ₹99–₹199/month really buys in Indian hosting, the corners budget hosts cut, and the best pick per use case.",
+            "5 real under-₹200 hosting options in India compared — price, renewal, storage, free domain — plus the corners budget hosts cut and the smartest pick per use case.",
         url: CANONICAL,
         type: "article",
         images: [{ url: "/assets/blog/cheap-web-hosting-under-200-india.svg", width: 1200, height: 630, alt: "Cheap web hosting under ₹200 per month in India" }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Cheap Web Hosting Under ₹200/Month in India: What's Actually Good",
-        description: "₹99 vs ₹139 vs ₹199 hosting compared honestly — corners cut, renewal traps, and the smartest budget pick.",
+        title: "Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks",
+        description: "₹99 vs ₹139 vs ₹199 hosting compared honestly — renewal traps, free-domain math, and the smartest budget pick for 2026.",
         images: ["/assets/blog/cheap-web-hosting-under-200-india.svg"],
     },
 };
@@ -43,6 +44,14 @@ const FAQ = [
     {
         q: "Which is the best web hosting under ₹200 per month in India?",
         a: "For most people, Hostinger Premium (₹139/mo on the 48-month sale term) is the strongest under-₹200 option in India: 3 websites, 20 GB SSD, free domain for year one, free SSL, weekly backups and managed WordPress. Nothing else in this price band bundles a free domain plus email.",
+    },
+    {
+        q: "Which is the cheapest web hosting in India?",
+        a: "From a serious host, the floor is a Single-type plan at roughly ₹99/mo on a long-term term. But count the domain: a .com alone costs ~₹1,199/year at renewal rates, so Hostinger Premium at ₹139/mo — with the domain free for year one — usually works out cheapest overall. The ₹49 'unlimited' offers that renew at ₹399 are marketing, not the cheapest hosting.",
+    },
+    {
+        q: "Can I get hosting under ₹200 per month with a free domain?",
+        a: "Yes — that is exactly what the ₹139/mo Premium tier is: free domain for year one, free SSL, email and 3 websites, all under ₹200. Sub-₹100 plans normally exclude the free domain, so if you need a domain anyway, paying ₹139 instead of ₹99 is usually the cheaper total.",
     },
     {
         q: "Can I get reliable hosting for ₹99 per month in India?",
@@ -61,8 +70,8 @@ const FAQ = [
         a: "Usually not — this is the biggest budget-hosting trap. A ₹99–₹199 intro price typically renews at 2–3× that. Always read the renewal line at checkout, and lock the longest term you can afford at the sale price. I break the exact renewal numbers down in my Hostinger renewal price guide.",
     },
     {
-        q: "Is shared hosting under ₹200 enough for a WordPress blog?",
-        a: "Yes — a well-configured shared plan with LiteSpeed caching comfortably handles tens of thousands of monthly visits for a typical blog. Upgrade to a higher tier or VPS only when you're consistently pushing serious traffic or running heavy WooCommerce.",
+        q: "Is cheap hosting good enough for WordPress?",
+        a: "For a typical blog or business site, yes — a well-configured shared plan with LiteSpeed caching comfortably handles tens of thousands of monthly visits, and the ₹139 tier includes managed WordPress with a one-click installer. Upgrade to a higher tier or VPS only when you're consistently pushing serious traffic or running heavy WooCommerce.",
     },
 ];
 
@@ -70,12 +79,12 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Cheap Web Hosting Under ₹200/Month in India (2026): What's Actually Good",
+        headline: "Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks",
         description:
-            "Every hosting option under ₹200/month in India compared honestly — what ₹99–₹199 really buys, the corners budget hosts cut, renewal traps, and best picks per use case.",
+            "Cheap web hosting under ₹200/month in India, price-checked Aug 2026 — 5 real picks: what ₹99, ₹139 & ₹199 buy, who gives a free domain, and the renewal trap.",
         image: "https://mohitkoli.in/assets/blog/cheap-web-hosting-under-200-india.svg",
         datePublished: "2026-08-09T00:00:00.000Z",
-        dateModified: "2026-08-09T00:00:00.000Z",
+        dateModified: "2026-08-20T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
@@ -93,7 +102,7 @@ const jsonLd = [
             logo: { "@type": "ImageObject", url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg" },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
-        keywords: "cheap web hosting india, hosting under 200 rupees, budget hosting india, cheapest hosting india 2026, cheap wordpress hosting india",
+        keywords: "cheap web hosting india, cheap web hosting under 200 india, web hosting under 200 rupees, cheapest web hosting in india, cheapest hosting india 2026, budget hosting india, cheap wordpress hosting india, cheap hosting with free domain india",
         articleSection: "Hosting",
         inLanguage: "en-IN",
     },
@@ -134,26 +143,36 @@ export default function CheapHostingUnder200() {
                         </ol>
                     </nav>
 
-                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Budget Guide · Updated August 9, 2026</p>
+                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Budget Guide · Updated August 20, 2026</p>
                     <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
-                        Cheap Web Hosting Under ₹200/Month in India: What&apos;s Actually Good (and What&apos;s a Trap)
+                        Cheap Web Hosting Under ₹200/Month in India: 5 Real Picks (and What&apos;s a Trap)
                     </h1>
                     <p className="text-lg text-gray-300 leading-8 mb-3">
-                        ₹200 a month is a real budget — chai money, not lakh-rupee infrastructure. The good news:
-                        in 2026 that budget genuinely buys hosting that can run a proper website. The catch:{" "}
+                        Cheap web hosting under ₹200 a month sounds like it can&apos;t be real hosting. In India in 2026 it is —
+                        chai money buys a plan that will happily run a proper website. The catch:{" "}
                         <strong className="text-white">this price band is also where the worst traps live</strong> — fake
-                        &quot;₹49&quot; prices that renew at ₹399, free hosts that die, and plans missing the one feature you needed.
-                        As a developer who deploys client sites on budget plans, here is the honest map.
+                        &quot;₹49&quot; prices that renew at ₹399, free hosts that vanish overnight, and plans missing the one
+                        feature you actually needed. I put client sites on budget plans, so here is the honest map: 5 real
+                        options, compared on price, renewal, storage and free domain.
                     </p>
-                    <p className="text-xs text-gray-500 mb-8 border-l-2 border-white/10 pl-3">
+                    <p className="text-xs text-gray-500 mb-4 border-l-2 border-white/10 pl-3">
                         Disclosure: some links use my referral code — you get an extra discount, I earn a small commission at no extra cost to you.
-                        Prices checked August 9, 2026; sale prices rotate, verify at checkout.
+                        Prices checked August 20, 2026; sale prices rotate, verify at checkout.
                     </p>
+                    <div className="mb-8 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-4 text-sm text-gray-300 leading-6">
+                        <strong className="text-white">August 2026 price check:</strong> I re-verified this month that the
+                        figures below still hold — the ~₹99 Single-type tier, ₹139/mo Premium (48-month term) and ~₹199 Business
+                        are all live at these sale prices. If your checkout shows higher, that sale has rotated — my{" "}
+                        <Link href="/blog/hostinger-discount-code-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                            Hostinger discount code guide
+                        </Link>{" "}
+                        tracks what&apos;s currently working.
+                    </div>
 
                     <div className="relative w-full aspect-[1200/630] mb-10 rounded-2xl overflow-hidden border border-white/10">
                         <Image
                             src="/assets/blog/cheap-web-hosting-under-200-india.svg"
-                            alt="Cheap web hosting under ₹200 per month in India — honest comparison of budget plans"
+                            alt="Cover card reading Web Hosting Under ₹200/Month, tagged Budget Guide, with the mohitkoli.in byline"
                             fill
                             className="object-cover"
                             priority
@@ -169,6 +188,50 @@ export default function CheapHostingUnder200() {
                             <li>⚡ <strong className="text-white">Free alternative for static sites:</strong> GitHub Pages / Vercel free tier — genuinely free, but static only.</li>
                             <li>🚩 <strong className="text-white">Skip:</strong> any &quot;unlimited everything at ₹49&quot; host that hides its renewal price.</li>
                         </ul>
+                    </section>
+
+                    {/* All 5 options compared */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">All 5 under-₹200 hosting options compared (August 2026)</h2>
+                        <div className="overflow-x-auto rounded-2xl border border-white/10">
+                            <table className="w-full text-left text-sm">
+                                <thead className="bg-white/5 text-gray-200">
+                                    <tr>
+                                        <th className="p-4 font-semibold">Option</th>
+                                        <th className="p-4">Intro price</th>
+                                        <th className="p-4">Renewal reality</th>
+                                        <th className="p-4">Storage</th>
+                                        <th className="p-4">Free domain?</th>
+                                        <th className="p-4">Best for</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-gray-300">
+                                    {[
+                                        ["Hostinger Single", "~₹99/mo", "~2–3× intro — check checkout", "~30 GB SSD", "❌", "First blog, student project"],
+                                        ["Hostinger Premium", "₹139/mo (48-mo term)", "~2–3× intro — lock the long term", "20 GB SSD", "✅ year 1", "Blogs, portfolios, small business"],
+                                        ["Hostinger Business", "~₹199/mo", "~2–3× intro — check checkout", "50 GB NVMe", "✅ year 1", "Business sites, WooCommerce"],
+                                        ["GitHub Pages", "₹0", "Stays free", "Enough for static sites", "❌ bring your own", "Static portfolio, docs"],
+                                        ["Vercel / Netlify (free tier)", "₹0", "Stays free", "Generous for static sites", "❌ bring your own", "Static and frontend projects"],
+                                    ].map(([option, price, renewal, storage, domain, bestFor], i) => (
+                                        <tr key={option} className={`border-t border-white/5 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
+                                            <td className="p-4 font-medium text-white">{option}</td>
+                                            <td className="p-4">{price}</td>
+                                            <td className="p-4">{renewal}</td>
+                                            <td className="p-4">{storage}</td>
+                                            <td className="p-4">{domain}</td>
+                                            <td className="p-4">{bestFor}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                        <p className="text-sm text-gray-500 mt-3">
+                            Renewal jumps are the whole game in this price band — a ₹99–₹199 intro typically renews at 2–3× that,
+                            so lock the longest term you can afford at the sale price. For the plan-by-plan detail behind rows 1–3, see my{" "}
+                            <Link href="/blog/hostinger-plans-pricing-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger plans &amp; pricing in India (2026) breakdown
+                            </Link>.
+                        </p>
                     </section>
 
                     {/* What 200 buys */}
@@ -211,6 +274,31 @@ export default function CheapHostingUnder200() {
                         </p>
                     </section>
 
+                    {/* Cheapest = total cost math */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Cheapest web hosting in India: the real year-one math</h2>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            Search &quot;cheapest web hosting in India&quot; and you&apos;ll drown in ₹49 banners. But the cheapest
+                            headline price is almost never the cheapest total, because a real website needs a domain too — and a
+                            .com runs about ₹1,199/year at renewal rates, roughly ₹100/month in real terms. Do the math with the
+                            domain included and the ranking flips:
+                        </p>
+                        <ul className="space-y-2 text-gray-300 leading-7 mb-4">
+                            <li>💸 <strong className="text-white">~₹99 Single-type plan</strong> + domain bought separately → effectively ~₹199/mo in year one.</li>
+                            <li>🏆 <strong className="text-white">₹139 Premium</strong> with the domain free for year one → ₹139/mo, everything included.</li>
+                            <li>🚩 <strong className="text-white">₹49 &quot;unlimited&quot; offers</strong> that renew at ₹399 → the two-year average beats neither of the above.</li>
+                        </ul>
+                        <p className="text-gray-300 leading-8">
+                            So if you need a domain — and almost everyone starting a site does — the ₹139 tier is the genuinely
+                            cheaper buy, not the sub-₹100 plans. And whichever you pick, check what year two costs{" "}
+                            <em>before</em> paying: my{" "}
+                            <Link href="/blog/hostinger-renewal-price-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger renewal price in India guide
+                            </Link>{" "}
+                            breaks down the exact post-sale numbers so the &quot;cheap&quot; plan doesn&apos;t quietly double on you.
+                        </p>
+                    </section>
+
                     {/* Mid-article CTA */}
                     <aside className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
                         <p className="text-gray-300 leading-7 mb-4 sm:mb-0">
@@ -233,7 +321,7 @@ export default function CheapHostingUnder200() {
                         <h2 className="text-3xl font-bold text-white mb-6">The 5 corners budget hosts cut (check these before paying)</h2>
                         <ol className="space-y-4">
                             {[
-                                ["Renewal price hidden below the fold", "A ₹99 intro that renews at ₹299+ triples your cost from year two. Every checkout shows the renewal line somewhere — scroll until you find it. Detailed numbers: see my renewal price guide linked below."],
+                                ["Renewal price hidden below the fold", "A ₹99 intro that renews at ₹299+ triples your bill from year two. The renewal line is always on the checkout page somewhere — scroll and find it before you type your card number."],
                                 ["No free domain", "A .com costs ~₹1,199/year at renewal rates. A plan that bundles the domain free for year one is effectively ₹100/mo cheaper than one that doesn't."],
                                 ["Slow storage on the cheapest tier", "Entry plans ship SATA SSD; the ₹199 tier gets NVMe (roughly 2× disk speed). For an image-heavy WordPress site, that difference is visible in load times."],
                                 ["Inode / database / resource caps", "Budget plans limit file counts (inodes), concurrent processes and DB size. Normal blogs never hit these — but a site builder importing 50 plugins can. Read the limits page once."],
@@ -252,7 +340,7 @@ export default function CheapHostingUnder200() {
 
                     {/* Use cases */}
                     <section className="mb-12">
-                        <h2 className="text-3xl font-bold text-white mb-6">Best pick by situation</h2>
+                        <h2 className="text-3xl font-bold text-white mb-6">Which one should you actually pick?</h2>
                         <div className="grid sm:grid-cols-2 gap-4">
                             {[
                                 ["🎓 Student building a first site", "₹99 Single-type plan", "One site, learn WordPress or upload HTML, upgrade later. Or use GitHub Pages free if the site is static."],
@@ -267,6 +355,20 @@ export default function CheapHostingUnder200() {
                                 </div>
                             ))}
                         </div>
+                        <h3 className="text-xl font-semibold text-white mt-8 mb-3">Still unsure? Find the line that describes you</h3>
+                        <ul className="space-y-2 text-gray-300 leading-7">
+                            <li><strong className="text-white">Site is fully static</strong> (portfolio, docs, landing page) → GitHub Pages or Vercel. Spend ₹0.</li>
+                            <li><strong className="text-white">One small site, hard ₹100 ceiling</strong> → the ~₹99 Single-type plan. Accept the limits, upgrade later.</li>
+                            <li><strong className="text-white">You need a domain anyway</strong> (most people) → ₹139 Premium. The free year-one domain effectively pays back the difference.</li>
+                            <li><strong className="text-white">The site earns money or takes orders</strong> → ₹199 Business for NVMe speed and daily backups.</li>
+                            <li>
+                                <strong className="text-white">Building a Node.js/Next.js app with a backend?</strong> Shared hosting won&apos;t run it — see my guide to{" "}
+                                <Link href="/blog/nodejs-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                    Node.js hosting in India
+                                </Link>{" "}
+                                instead.
+                            </li>
+                        </ul>
                         <p className="text-gray-300 leading-8 mt-6">
                             Want the full India-wide rankings beyond the budget band? Read{" "}
                             <Link href="/blog/best-web-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
@@ -293,6 +395,26 @@ export default function CheapHostingUnder200() {
                         </p>
                     </section>
 
+                    {/* WordPress on a budget */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Is cheap hosting good enough for WordPress?</h2>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            For a typical blog or business site — yes. Every paid tier here runs WordPress with a one-click
+                            installer, and with LiteSpeed caching enabled a shared plan comfortably serves tens of thousands of
+                            visits a month. The <strong className="text-white">₹139 Premium tier is the sweet spot for cheap WordPress
+                            hosting in India</strong>: managed WordPress, free domain, email and 3 sites. The ~₹99 tier runs
+                            WordPress too — just one site, with tighter resource limits.
+                        </p>
+                        <p className="text-gray-300 leading-8">
+                            Where under-₹200 stops being enough: heavy WooCommerce stores, page-builder sites stacking dozens of
+                            plugins, or anything consistently past the ~100k visits/month band — that&apos;s ₹199 Business or VPS
+                            territory. I&apos;ve broken down the WordPress-specific features, speed tests and limits in my{" "}
+                            <Link href="/blog/hostinger-wordpress-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger WordPress hosting India (2026) guide
+                            </Link>.
+                        </p>
+                    </section>
+
                     {/* CTA */}
                     <section className="mb-12">
                         <div className="rounded-3xl border border-primary-500/40 bg-gradient-to-br from-primary-900/40 to-indigo-900/30 p-8 text-center">
@@ -300,6 +422,10 @@ export default function CheapHostingUnder200() {
                             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
                                 Hostinger Premium at ₹139/mo (48-month term) — free domain, SSL, email, 3 websites.
                                 The referral link stacks an extra ~20% off the sale price. 30-day money-back guarantee.
+                                Want every discount stacked properly? Follow my{" "}
+                                <Link href="/blog/how-to-get-hostinger-90-off-2026" className="text-primary-300 hover:text-primary-200 underline underline-offset-4">
+                                    step-by-step guide to 90% off on Hostinger
+                                </Link>.
                             </p>
                             <a
                                 href={REFERRAL_URL}
@@ -342,7 +468,7 @@ export default function CheapHostingUnder200() {
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
-                        <ShareButtons url={CANONICAL} title="Cheap Web Hosting Under ₹200/Month in India (2026): What's Actually Good" />
+                        <ShareButtons url={CANONICAL} title="Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks" />
                     </div>
                 </article>
             </main>

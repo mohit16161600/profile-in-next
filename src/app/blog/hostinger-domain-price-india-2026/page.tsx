@@ -3,50 +3,53 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
-const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
+const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-domain-price-india-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger Domain Price in India 2026: .com, .in & .store Real Costs",
+    title: "Hostinger Domain Price in India 2026: .in from ₹99, .com ₹149",
     description:
-        "Real Hostinger domain prices in India for 2026 — .com, .in, .store, .online registration vs renewal costs, the free-domain-with-hosting trick, and how to register a domain cheaply without the renewal shock.",
+        "Hostinger domain price in India 2026: .in from ₹99, .com ₹149 first year. Real renewal price list, the free-domain trick, and what to check before you pay.",
     keywords: [
+        "hostinger .in domain price india 2026",
+        "hostinger .com domain price india",
         "hostinger domain price",
-        "domain price in india",
-        "hostinger india domain pricing .com .in 2026",
+        "hostinger domain pricing",
+        "hostinger domain price in india",
+        "hostinger domain hosting plans",
+        "hostinger domain renewal price in india",
         ".in domain price india",
         ".com domain price india 2026",
         "cheapest domain registration india",
         "hostinger free domain offer",
-        "domain renewal price india",
-        "how to buy a domain in india",
-        "hostinger domain vs godaddy domain price",
+        "hostinger vs godaddy domain price india",
+        "hostinger domain transfer price",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger Domain Price in India 2026: .com, .in & .store Real Costs",
+        title: "Hostinger Domain Price in India 2026: .in from ₹99, .com ₹149",
         description:
-            "Registration vs renewal for every popular extension, the free-domain trick, and how to register a domain in India without the year-2 price shock.",
+            "Real .in and .com prices in India — first-year vs renewal for every popular extension, the free-domain trick, and the renewal maths before you pay.",
         url: CANONICAL,
         type: "article",
         images: [{ url: "/assets/blog/hostinger-domain-price-india-2026.svg", width: 1200, height: 630, alt: "Hostinger domain price in India 2026 — .com, .in, .store" }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hostinger Domain Price in India 2026 (.com, .in, .store)",
-        description: "Real registration vs renewal costs, the free-domain trick, and the cheapest way to register a domain in India.",
+        title: "Hostinger Domain Price in India 2026 (.in ₹99, .com ₹149)",
+        description: "Real registration vs renewal costs for .in, .com, .store and more, the free-domain trick, and the cheapest way to register a domain in India.",
         images: ["/assets/blog/hostinger-domain-price-india-2026.svg"],
     },
 };
 
 const FAQ = [
     {
-        q: "How much does a .com domain cost in India on Hostinger?",
+        q: "What is the Hostinger .com domain price in India?",
         a: "A .com typically registers around ₹149–₹749 for the first year on Hostinger's sale and renews around ₹1,199/year. The exact intro price rotates with sales, but .com renewal sits near ₹1,199 almost everywhere — so compare on the renewal price, not the flashy first-year number.",
     },
     {
-        q: "What is the price of a .in domain in India?",
-        a: "A .in (India's country domain) is one of the cheapest options: roughly ₹99–₹299 for the first year and about ₹699/year on renewal. If your audience is Indian, .in is excellent value and signals a local business to visitors.",
+        q: "What is the Hostinger .in domain price in India for 2026?",
+        a: "A .in (India's country domain) is one of the cheapest options on Hostinger: roughly ₹99–₹299 for the first year and about ₹699/year on renewal. If your audience is Indian, .in is excellent value and signals a local business to visitors.",
     },
     {
         q: "Can I get a domain for free with Hostinger?",
@@ -64,18 +67,34 @@ const FAQ = [
         q: "Should I choose .com or .in for an Indian website?",
         a: "Pick .com if you want the most trusted, globally-recognised extension and plan to grow beyond India. Pick .in (or .co.in) if you're targeting an Indian audience, want the lower price, and the .com version is already taken. Many Indian businesses register both and redirect one to the other.",
     },
+    {
+        q: "What is the Hostinger domain renewal price in India?",
+        a: "Typical Hostinger India renewal rates: .in and .co.in around ₹699/year, .xyz around ₹899/year, .com around ₹1,199/year — while .online (~₹2,299), .shop (~₹2,799), .store and .tech (~₹3,499) renew far higher. Renewal is what you pay every year after the first, so choose your extension by that number, not the sale price.",
+    },
+    {
+        q: "Which Hostinger hosting plans include a free domain?",
+        a: "Every Hostinger plan from Premium and above, bought on a 12-month term or longer, includes a free domain for the first year. Premium starts around ₹139/mo in India, so the bundle often costs less than buying a good domain and hosting separately. The entry-level Single plan does not include the free domain.",
+    },
+    {
+        q: "Is Hostinger cheaper than GoDaddy for domain registration in India?",
+        a: "On total cost, usually yes. First-year offers look similar at both registrars, but Hostinger's renewals stay in the standard band — around ₹699/year for .in and ₹1,199/year for .com — and WHOIS privacy is included free. GoDaddy has repeatedly raised renewal prices in India, so always compare the renewal line, not the first-year banner.",
+    },
+    {
+        q: "How much does it cost to transfer a domain to Hostinger?",
+        a: "A transfer is usually priced close to the extension's normal renewal rate — near the ~₹1,199 band for a .com, less for a .in — and it adds one full year of registration to your domain, so the money isn't wasted. You'll need the EPP/auth code from your current registrar, and the domain must be at least 60 days past registration.",
+    },
 ];
 
 const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger Domain Price in India 2026: .com, .in & .store Real Costs",
+        headline: "Hostinger Domain Price in India 2026: .in from ₹99, .com ₹149",
         description:
-            "Real Hostinger domain prices in India for 2026 — registration vs renewal for .com, .in, .store and .online, the free-domain-with-hosting trick, and how to register a domain cheaply.",
+            "Hostinger domain price in India 2026: .in from ₹99, .com ₹149 first year. Real renewal price list, the free-domain trick, and what to check before you pay.",
         image: "https://mohitkoli.in/assets/blog/hostinger-domain-price-india-2026.svg",
         datePublished: "2026-07-17T00:00:00.000Z",
-        dateModified: "2026-07-17T00:00:00.000Z",
+        dateModified: "2026-08-20T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
@@ -93,7 +112,7 @@ const jsonLd = [
             logo: { "@type": "ImageObject", url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg" },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
-        keywords: "hostinger domain price, domain price in india, .in domain price, .com domain price india, hostinger free domain, domain renewal price",
+        keywords: "hostinger .in domain price india 2026, hostinger .com domain price india, hostinger domain price, hostinger domain pricing, hostinger domain price in india, hostinger domain hosting plans, hostinger domain renewal price in india, hostinger free domain, hostinger vs godaddy domain price india, hostinger domain transfer price",
         articleSection: "Hosting",
         inLanguage: "en-IN",
     },
@@ -146,15 +165,16 @@ export default function HostingerDomainPriceIndia() {
                         </ol>
                     </nav>
 
-                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Domain Pricing · Updated July 17, 2026</p>
+                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Domain Pricing · Updated August 20, 2026</p>
                     <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
-                        Hostinger Domain Price in India (2026): .com, .in &amp; .store — Real Costs
+                        Hostinger Domain Price in India (2026): .in, .com &amp; .store — Real Costs
                     </h1>
                     <p className="text-lg text-gray-300 leading-8 mb-3">
                         Every domain seller shows you a tiny first-year price and hides the number that actually matters:
-                        <strong className="text-white"> the renewal</strong>. This guide lists the real registration <em>and</em> renewal
-                        prices for the extensions Indians actually buy — .com, .in, .store, .online — plus the one trick that gets your
-                        domain <strong className="text-white">free for the first year</strong>. Prices checked July 2026 with real INR figures.
+                        <strong className="text-white"> the renewal</strong>. Here is the real <strong className="text-white">Hostinger domain
+                        price in India for 2026</strong> — registration <em>and</em> renewal, in INR — for the extensions Indians actually buy
+                        (.com, .in, .store, .online), plus the one trick that gets your domain{" "}
+                        <strong className="text-white">free for the first year</strong>.
                     </p>
                     <p className="text-xs text-gray-500 mb-8 border-l-2 border-white/10 pl-3">
                         Disclosure: links on this page use my Hostinger referral code — you get an extra discount and I earn a small
@@ -164,7 +184,7 @@ export default function HostingerDomainPriceIndia() {
                     <div className="relative w-full aspect-[1200/630] mb-10 rounded-2xl overflow-hidden border border-white/10">
                         <Image
                             src="/assets/blog/hostinger-domain-price-india-2026.svg"
-                            alt="Hostinger domain price in India 2026 — .com, .in, .store registration and renewal"
+                            alt="Title card for this Hostinger domain price in India 2026 guide, bylined Mohit Koli, senior full stack developer"
                             fill
                             className="object-cover"
                             priority
@@ -182,12 +202,50 @@ export default function HostingerDomainPriceIndia() {
                         </ul>
                     </section>
 
+                    {/* .in dedicated answer */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger .in domain price in India (2026)</h2>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            <strong className="text-white">Short answer:</strong> a .in domain on Hostinger costs about{" "}
+                            <strong className="text-white">₹99–₹299 for the first year</strong> and roughly{" "}
+                            <strong className="text-white">₹699/year on renewal</strong>.
+                        </p>
+                        <p className="text-gray-300 leading-8">
+                            .in is India&apos;s country-code domain, run by NIXI, and it&apos;s the best value on this whole page: the renewal
+                            is close to half of what a .com costs every year, and to Indian visitors it reads as a local business. The same
+                            ~₹699 renewal applies to .co.in, which is the usual fallback when your exact .in name is taken. If the domain is
+                            for a real project, register it for two or more years upfront — you lock today&apos;s rate for the whole term and
+                            remove any risk of losing the name to a missed renewal email. And if you need hosting anyway, a Premium+ plan
+                            makes the first-year .in registration free entirely (details below).
+                        </p>
+                    </section>
+
+                    {/* .com dedicated answer */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger .com domain price in India (2026)</h2>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            A .com on Hostinger registers for about{" "}
+                            <strong className="text-white">₹149–₹749 in year one</strong> — the exact sale price rotates — and renews near{" "}
+                            <strong className="text-white">₹1,199/year</strong>.
+                        </p>
+                        <p className="text-gray-300 leading-8">
+                            .com renewal pricing is anchored by Verisign&apos;s wholesale fee, so every registrar renews it in roughly the same
+                            band — which means any seller advertising a dramatically cheaper .com is simply making it back at renewal. That
+                            pattern is exactly what I documented in{" "}
+                            <Link href="/blog/godaddy-renewal-price-increase-india" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                GoDaddy&apos;s renewal price increase in India
+                            </Link>
+                            . If the brand matters — a business, a product, a personal portfolio you&apos;ll keep for years — take the .com,
+                            budget ~₹1,199/year, and register 2+ years so the flashy first-year number stops mattering at all.
+                        </p>
+                    </section>
+
                     {/* Full price table */}
                     <section className="mb-12">
-                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger domain prices in India (2026)</h2>
+                        <h2 className="text-3xl font-bold text-white mb-4">Full price sheet: every extension, first year vs renewal</h2>
                         <p className="text-gray-300 leading-8 mb-6">
-                            Here is the full extension price sheet. The gap between the two number columns is the whole point — a domain that
-                            costs ₹199 today can cost ₹3,499 next year. Sort your choice by the <strong className="text-white">renewal</strong> column.
+                            The gap between the two number columns is the whole point — a domain that costs ₹199 today can cost ₹3,499 next
+                            year. Pick by the <strong className="text-white">renewal</strong> column and the first-year price stops mattering.
                         </p>
                         <div className="overflow-x-auto rounded-2xl border border-white/10">
                             <table className="w-full text-left text-sm">
@@ -211,7 +269,49 @@ export default function HostingerDomainPriceIndia() {
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-sm text-gray-500 mt-3">Figures are typical July 2026 India prices in INR and move with Hostinger&apos;s sales. Always confirm on the live checkout.</p>
+                        <p className="text-sm text-gray-500 mt-3">Figures are typical 2026 India prices in INR and move with Hostinger&apos;s sales. Always confirm on the live checkout.</p>
+                    </section>
+
+                    {/* Renewal prices */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger domain renewal price in India</h2>
+                        <p className="text-gray-300 leading-8 mb-6">
+                            This is the price you pay <em>every</em> year after the first, so it deserves its own table. Run the 5-year maths
+                            before you fall for a cheap extension: a ₹199 .store costs about{" "}
+                            <strong className="text-white">₹14,195 over five years</strong> (₹199 + 4 × ₹3,499), while a ₹99 .in costs about{" "}
+                            <strong className="text-white">₹2,895</strong> (₹99 + 4 × ₹699) — nearly five times cheaper for the same job.
+                        </p>
+                        <div className="overflow-x-auto rounded-2xl border border-white/10">
+                            <table className="w-full text-left text-sm">
+                                <thead className="bg-white/5 text-gray-200">
+                                    <tr>
+                                        <th className="p-4 font-semibold">Extension</th>
+                                        <th className="p-4">Renewal / year</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-gray-300">
+                                    {DOMAINS.map(([ext, , renew], i) => (
+                                        <tr key={ext} className={`border-t border-white/5 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
+                                            <td className="p-4 font-medium text-white">{ext}</td>
+                                            <td className="p-4">{renew}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                        <p className="text-gray-300 leading-8 mt-6">
+                            Two ways to soften the renewal bill: register multiple years upfront at today&apos;s rate, and make your{" "}
+                            <em>first</em> bill as small as possible — a valid{" "}
+                            <Link href="/blog/hostinger-discount-code-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger discount code
+                            </Link>{" "}
+                            applies to the initial term, not renewals. And since your domain usually renews alongside hosting, see the
+                            combined hosting + domain renewal rates in my{" "}
+                            <Link href="/blog/hostinger-renewal-price-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger renewal price in India guide
+                            </Link>{" "}
+                            so year two never surprises you.
+                        </p>
                     </section>
 
                     {/* Free domain trick */}
@@ -231,6 +331,20 @@ export default function HostingerDomainPriceIndia() {
                                 <li>⚠️ Year-two renewal is the standard price from the table above — budget for it</li>
                             </ul>
                         </div>
+                        <h3 className="text-xl font-semibold text-white mt-8 mb-3">Hostinger domain hosting plans — which tiers include the free domain?</h3>
+                        <p className="text-gray-300 leading-8">
+                            Quick map of the shared-hosting tiers: <strong className="text-white">Single</strong> is the entry plan and does{" "}
+                            <em>not</em> include a free domain — fine if you already own one.{" "}
+                            <strong className="text-white">Premium</strong> (from ~₹139/mo) is the sweet spot: free first-year domain, free
+                            SSL and email, and enough capacity for most blogs and business sites.{" "}
+                            <strong className="text-white">Business and above</strong> keep the free domain and add more power for
+                            WooCommerce or higher-traffic sites. If you&apos;re still deciding whether Hostinger is even the right host for
+                            your project, start with my ranked comparison of the{" "}
+                            <Link href="/blog/best-web-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                best web hosting in India for 2026
+                            </Link>{" "}
+                            before locking in a plan.
+                        </p>
                         <p className="text-gray-300 leading-8 mt-6">
                             Not sure which plan? I break down every tier in{" "}
                             <Link href="/blog/hostinger-plans-pricing-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
@@ -242,9 +356,9 @@ export default function HostingerDomainPriceIndia() {
                     {/* Mid-article CTA */}
                     <aside className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
                         <p className="text-gray-300 leading-7 mb-4 sm:mb-0">
-                            Going the bundle route? A Premium+ plan makes the first-year domain ₹0 — it&apos;s worth
-                            checking which extensions qualify on the live checkout, where an extra referral discount
-                            can apply as well.
+                            Going the bundle route? A Premium+ plan makes the first-year domain ₹0. Check which
+                            extensions qualify on the live checkout — the referral discount stacks on top there
+                            as well.
                         </p>
                         <a
                             href={REFERRAL_URL}
@@ -279,7 +393,25 @@ export default function HostingerDomainPriceIndia() {
                                 </ul>
                             </div>
                         </div>
-                        <p className="text-gray-400 text-sm mt-4">Pro tip many Indian brands use: register both .com and .in, then 301-redirect one to the other so nobody can grab your name.</p>
+                        <p className="text-gray-400 text-sm mt-4">What a lot of Indian brands do: register both .com and .in, then 301-redirect one to the other so nobody can grab the name later.</p>
+                    </section>
+
+                    {/* vs GoDaddy */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger vs GoDaddy: domain price in India</h2>
+                        <p className="text-gray-300 leading-8">
+                            This is the comparison most Indian buyers actually make before checkout. On the first-year price the two look
+                            almost identical — both run ₹99-style sale offers on .in and .com. The separation happens at renewal:
+                            Hostinger&apos;s renewals sit in the standard registry-anchored band (~₹699/year for .in, ~₹1,199/year for
+                            .com), and WHOIS privacy is included free, so the price you see in the table above is genuinely the whole bill.
+                            GoDaddy, by contrast, has raised renewal rates in India repeatedly — which is why I keep a separate post
+                            tracking those increases. If you&apos;re weighing the two companies end to end — domains, hosting, renewals and
+                            support — my{" "}
+                            <Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Hostinger vs GoDaddy vs Bluehost comparison
+                            </Link>{" "}
+                            runs the full numbers side by side, and the verdict for domains is simple: judge both on year two, not year one.
+                        </p>
                     </section>
 
                     {/* How to register */}
@@ -354,7 +486,7 @@ export default function HostingerDomainPriceIndia() {
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
-                        <ShareButtons url={CANONICAL} title="Hostinger Domain Price in India 2026: .com, .in & .store Real Costs" />
+                        <ShareButtons url={CANONICAL} title="Hostinger Domain Price in India 2026: .in from ₹99, .com ₹149" />
                     </div>
                 </article>
             </main>

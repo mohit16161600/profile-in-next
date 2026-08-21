@@ -4,32 +4,39 @@ import Link from "next/link";
 import PrintButton from "@/components/PrintButton";
 
 export const metadata: Metadata = {
-  title: "15+ ChatGPT 'God Mode' Features: The Hidden Hacks Nobody Talks About (2026)",
-  description: "Unlock ChatGPT God Mode. Discover the hidden features, secret hacks, and advanced technical workflows that 99% of users don't know about. High-level AI tricks for pros.",
+  title: "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
+  description: "Copy the ChatGPT god mode prompt (2026) and unlock 15 hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
   keywords: [
+    "chatgpt god mode prompt 2026",
+    "chatgpt god mode prompt",
+    "ChatGPT hidden features",
+    "chatgpt hidden features 2026",
+    "hidden chatgpt features",
     "ChatGPT God Mode",
     "ChatGPT hacks",
     "Advanced ChatGPT features",
     "AI productivity hacks",
     "Hidden ChatGPT tricks",
-    "ChatGPT for pros",
     "ChatGPT developer tricks",
     "ChatGPT secret modes",
-    "AI workflow automation",
+    "ChatGPT custom instructions prompt",
     "ChatGPT prompts 2026",
     "how to use ChatGPT better",
-    "ChatGPT for students",
-    "ChatGPT for developers",
-    "secret AI websites",
     "AI tools 2026"
   ],
   alternates: {
     canonical: "https://mohitkoli.in/blog/chatgpt-hidden-features-hacks",
   },
   openGraph: {
-    title: "15+ ChatGPT 'God Mode' Features: The Hidden Hacks Nobody Talks About (2026)",
-    description: "The ultimate technical guide to secret ChatGPT features that 99% of people don't know exist.",
-    images: ["/assets/hacker.webp"],
+    title: "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
+    description: "Copy the ChatGPT god mode prompt (2026) and unlock 15 hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
+    images: ["/assets/blog/chatgpt-hidden-features-hacks.svg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
+    description: "Copy the ChatGPT god mode prompt (2026) and unlock 15 hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
+    images: ["/assets/blog/chatgpt-hidden-features-hacks.svg"],
   },
 };
 
@@ -40,12 +47,20 @@ export default function ChatGPTGodModeHacks() {
       answer: "While not an official feature, 'God Mode' refers to a series of advanced prompting techniques, custom instructions, and hidden multimodal features that allow ChatGPT to perform complex tasks like building full software apps, performing deep data forensic analysis, and creating interactive SVGs directly in the chat."
     },
     {
+      question: "What is the ChatGPT god mode prompt?",
+      answer: "The god mode prompt is a master, custom-instructions style prompt that reconfigures ChatGPT for an entire conversation: no filler, production-ready code first, one clarifying question when your request is vague, and a self-review pass before every answer. Copy the full prompt from the 'ChatGPT God Mode Prompt (2026)' section of this guide and paste it as the first message of a chat, or save it in Custom Instructions to make it permanent."
+    },
+    {
+      question: "How do I unlock hidden ChatGPT features?",
+      answer: "Most hidden ChatGPT features are unlocked in two places: Settings > Personalization (Memory, Custom Instructions, and persona 'Keyword Activators'), and the prompt itself (JSON mode for structured output, SVG code generation, Advanced Data Analysis for files, and recursive self-critique prompts). No plugins or jailbreaks needed—you activate them by asking for them explicitly."
+    },
+    {
       question: "How can I make ChatGPT remember my coding style?",
       answer: "Use the 'Memory' feature combined with a specific 'Style Guide' prompt in your Custom Instructions. Tell ChatGPT: 'Always follow my style: camelCase for variables, functional components in React, and descriptive JSDoc for every function.' Memory will then carry this preference across all new chats."
     },
     {
       question: "Can ChatGPT analyze live URLs?",
-      answer: "Yes, by using the 'Web Search' capability or specifically asking it to fetch and summarize a URL. A hidden hack is using the 'Browse with Bing' feature to extract specific CSS or JavaScript structures from a live site for reverse-engineering."
+      answer: "Yes, by using the built-in web search or by pasting a URL and asking it to fetch and summarize the page. A less obvious use is asking it to pull specific CSS or JavaScript patterns off a live site so you can understand how something was built. Accuracy varies with how much of the page it can actually read, so verify anything important against the source."
     },
     {
       question: "What are the best ChatGPT hacks for developers?",
@@ -54,11 +69,16 @@ export default function ChatGPTGodModeHacks() {
     {
       question: "Is ChatGPT Vision safe for sensitive documents?",
       answer: "OpenAI has strict privacy filters, but as a rule, you should redact sensitive personal information from images before uploading. A pro hack is asking ChatGPT to 'Find and list all PII (Personally Identifiable Information) in this image so I can redact it' before you process it further."
+    },
+    {
+      question: "Does the god mode prompt work on the free ChatGPT plan?",
+      answer: "Yes. The god mode prompt is plain text, so it works on the free plan—paste it at the start of any chat or into Custom Instructions. A few of the heavier hidden features pair better with a paid plan (larger file uploads for Advanced Data Analysis, deeper Memory), but the prompt itself upgrades response quality on every tier."
     }
   ];
 
   const sections = [
     { id: "wrong", title: "The Average User Trap" },
+    { id: "god-mode-prompt", title: "ChatGPT God Mode Prompt (2026)" },
     { id: "system-overrides", title: "System Prompt Overrides & Personas" },
     { id: "json-mode", title: "JSON Mode: The API Killer" },
     { id: "data-visualization", title: "Dynamic SVG & Visual Data Hacks" },
@@ -78,8 +98,8 @@ export default function ChatGPTGodModeHacks() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            "headline": "15+ ChatGPT 'God Mode' Features: The Hidden Hacks Nobody Talks About (2026)",
-            "image": "https://mohitkoli.in/assets/hacker.webp",
+            "headline": "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
+            "image": "https://mohitkoli.in/assets/blog/chatgpt-hidden-features-hacks.svg",
             "author": {
               "@type": "Person",
               "name": "Mohit Koli"
@@ -93,7 +113,42 @@ export default function ChatGPTGodModeHacks() {
               }
             },
             "datePublished": "2026-05-10",
-            "description": "Unlock ChatGPT God Mode. Discover the hidden features, secret hacks, and advanced technical workflows for AI pros."
+            "dateModified": "2026-08-20T00:00:00.000Z",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://mohitkoli.in/blog/chatgpt-hidden-features-hacks"
+            },
+            "keywords": "chatgpt god mode prompt 2026, ChatGPT hidden features, hidden chatgpt features, ChatGPT hacks, ChatGPT custom instructions prompt",
+            "description": "Copy the ChatGPT god mode prompt (2026) and unlock 15 hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows."
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://mohitkoli.in"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://mohitkoli.in/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
+                "item": "https://mohitkoli.in/blog/chatgpt-hidden-features-hacks"
+              }
+            ]
           }),
         }}
       />
@@ -121,10 +176,10 @@ export default function ChatGPTGodModeHacks() {
             [ACCESS GRANTED] PRO LEVEL GUIDE
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tighter bg-gradient-to-b from-white via-gray-300 to-gray-600 bg-clip-text text-transparent">
-            15+ ChatGPT <span className="text-green-500 font-mono">"God Mode"</span> Features: The Hidden Hacks Nobody Talks About
+            ChatGPT Hidden Features 2026: The <span className="text-green-500 font-mono">"God Mode"</span> Prompt + 15 Hacks
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-10">
-            Forget "How to write a blog post." We’re going under the hood. Discover the recursive prompts, hidden data modes, and API-level hacks that turn ChatGPT into an unstoppable AI agent.
+            Forget "How to write a blog post." We’re going under the hood: the copy-paste god mode prompt, hidden ChatGPT features like JSON mode and SVG output, and the memory setup that stops you re-explaining your project at the start of every new chat.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 text-gray-500 text-sm font-mono">
             <div className="flex items-center gap-2">
@@ -134,16 +189,18 @@ export default function ChatGPTGodModeHacks() {
             <span>|</span>
             <time dateTime="2026-05-10">MAY 10, 2026</time>
             <span>|</span>
+            <time dateTime="2026-08-20" className="text-green-500">UPDATED: AUGUST 20, 2026</time>
+            <span>|</span>
             <span className="flex items-center gap-1">
-              READ_TIME: 65 MIN
+              READ_TIME: 9 MIN
             </span>
           </div>
         </header>
 
         <div className="relative w-full mb-16 rounded-[2rem] overflow-hidden border border-green-500/20 shadow-[0_0_80px_rgba(34,197,94,0.15)] group">
           <Image
-            src="/assets/hacker.webp"
-            alt="Advanced ChatGPT hacking and secret features guide"
+            src="/assets/blog/chatgpt-hidden-features-hacks.svg"
+            alt="Cover card reading ChatGPT Hidden Features and God Mode Prompt, tagged AI Hacks, with the mohitkoli.in byline"
             width={1280}
             height={720}
             className="w-full h-auto transition-transform duration-1000 group-hover:scale-110"
@@ -158,7 +215,7 @@ export default function ChatGPTGodModeHacks() {
         {/* Technical Content Section */}
         <section className="prose prose-invert max-w-none prose-pre:bg-[#0a0a0a] prose-pre:border prose-pre:border-white/10">
           <div className="text-2xl text-green-400/80 leading-relaxed mb-12 font-mono italic border-l-4 border-green-500 pl-8 py-2">
-            "{">"} Most people play with AI. A few of us build with it. If you're still using basic prompts, you're leaving 90% of the value on the table."
+            "{">"} Most people play with AI. A few of us build with it. The gap isn't the model you're on—it's the instructions you give it before you ask for anything."
           </div>
 
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
@@ -166,11 +223,11 @@ export default function ChatGPTGodModeHacks() {
           </p>
 
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-            Users ask questions. Architects build workflows. In 2026, ChatGPT isn't just a chat box—it's a multi-core intelligence engine that can be tuned, tweaked, and optimized to perform tasks you didn't think were possible without a team of engineers.
+            Users ask questions. Architects build workflows. The difference isn't a secret model or a paid tier—it's that architects tell ChatGPT how to behave <em>before</em> they tell it what to do, and they reuse that setup across every chat instead of starting from zero each time.
           </p>
 
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-            Today, I'm going to show you how to flip the switch. We're going to unlock <strong>"God Mode"</strong>—a collection of hidden features and advanced prompting frameworks that nobody in the mainstream media is talking about.
+            So that's what this guide is. First the <strong>"God Mode"</strong> prompt—one copy-paste block that sets the rules for an entire conversation—then the ChatGPT features that are hidden in plain sight: JSON output, SVG generation, memory, and self-critique loops. None of it is a jailbreak or a leaked setting. It's all shipped, documented behavior that most people simply never switch on. (Completely new to AI? Warm up with my guide on <Link href="/blog/how-to-use-chatgpt-beginners-2026" className="text-green-400 underline hover:text-green-300">how to use ChatGPT as a complete beginner</Link>, then come back here.)
           </p>
 
           {/* Quick Nav */}
@@ -208,9 +265,29 @@ export default function ChatGPTGodModeHacks() {
 
           <hr className="border-white/5 my-20" />
 
-          {/* Section 2: System Overrides */}
+          {/* Section 2: God Mode Prompt */}
+          <h2 id="god-mode-prompt" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
+            <span className="text-green-500">02.</span> ChatGPT God Mode Prompt (2026)
+          </h2>
+          <p className="text-lg text-gray-400 mb-6 leading-relaxed">
+            Let's clear the biggest myth first: <strong>"God Mode" is not a secret OpenAI toggle or a jailbreak.</strong> It's a master, custom-instructions style prompt that reconfigures how ChatGPT behaves for an entire conversation—no fluff, senior-level answers, self-checking output. One prompt, pasted once, and every reply after it gets sharper.
+          </p>
+          <div className="bg-[#0a0a0a] p-8 rounded-xl border border-green-500/10 mb-8 font-mono text-sm leading-relaxed">
+            <span className="text-green-500 font-bold">{"// THE GOD MODE PROMPT — copy everything below:"}</span><br/><br/>
+            "You are my senior expert partner, not a generic assistant. Follow these rules in every reply: 1. Skip disclaimers, intros and filler—start directly with the answer. 2. For code, give the complete, production-ready block first; explain only if I ask. 3. If my request is vague, ask exactly one clarifying question, then proceed with the most likely interpretation. 4. Challenge me—if my approach is weak, say so and propose a stronger one. 5. Assume senior-level knowledge of my field; never over-explain basics. 6. Before finalizing, silently review your answer for errors and fix them. 7. For complex tasks, end with a 'Next 3 Actions' list. Stay in this mode for the entire conversation."
+          </div>
+          <p className="text-lg text-gray-400 mb-6 leading-relaxed">
+            <strong>Where to paste it:</strong> For a one-off session, make it the first message of a new chat. To make it permanent, go to Settings {">"} Personalization {">"} Custom Instructions and drop it in the "How would you like ChatGPT to respond?" box—now every new chat starts in god mode automatically.
+          </p>
+          <p className="text-lg text-gray-400 mb-12 leading-relaxed">
+            Why it works: each rule kills a default behavior that wastes your time—filler intros, over-explained basics, and the "happy to help" padding. Be clear about what it does <em>not</em> do, though. It won't make the model smarter, and it won't unlock anything OpenAI has deliberately locked. It changes the shape and tone of what comes back, not the underlying capability. That's still a real win when you're reading fifty replies a day. Treat it as your base layer, then stack task-specific prompts from my library of the <Link href="/blog/best-chatgpt-prompts-2026" className="text-green-400 underline hover:text-green-300">best ChatGPT prompts for 2026</Link> on top of it.
+          </p>
+
+          <hr className="border-white/5 my-20" />
+
+          {/* Section 3: System Overrides */}
           <h2 id="system-overrides" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
-            <span className="text-green-500">02.</span> System Prompt Overrides & Custom Personas
+            <span className="text-green-500">03.</span> System Prompt Overrides & Custom Personas
           </h2>
           <p className="text-lg text-gray-400 mb-6 leading-relaxed">
             OpenAI's "Custom Instructions" are actually a way to inject a <strong>Permanent System Prompt</strong>. This is your foundation.
@@ -228,12 +305,12 @@ export default function ChatGPTGodModeHacks() {
 
           <hr className="border-white/5 my-20" />
 
-          {/* Section 3: JSON Mode */}
+          {/* Section 4: JSON Mode */}
           <h2 id="json-mode" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
-            <span className="text-green-500">03.</span> JSON Mode: The API Killer
+            <span className="text-green-500">04.</span> JSON Mode: The API Killer
           </h2>
           <p className="text-lg text-gray-400 mb-6 leading-relaxed">
-            If you're a developer, you need structured data. Asking ChatGPT for a "list" is for amateurs. Asking for a <strong>minified JSON object</strong> is for pros.
+            If you're a developer, you don't want prose—you want something you can drop straight into code. Ask for a <strong>minified JSON object</strong> and name the exact keys you want, and you skip the cleanup pass entirely.
           </p>
           <p className="text-lg text-gray-400 mb-6 leading-relaxed">
             You can use ChatGPT to mock entire APIs, generate dummy data, or even convert massive unstructured text into a database-ready format.
@@ -251,9 +328,9 @@ export default function ChatGPTGodModeHacks() {
 
           <hr className="border-white/5 my-20" />
 
-          {/* Section 4: Data Visualization */}
+          {/* Section 5: Data Visualization */}
           <h2 id="data-visualization" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
-            <span className="text-green-500">04.</span> Dynamic SVG & Visual Data Hacks
+            <span className="text-green-500">05.</span> Dynamic SVG & Visual Data Hacks
           </h2>
           <p className="text-lg text-gray-400 mb-6 leading-relaxed">
             DALL-E 3 is cool, but it's not "functional." If you want an icon, a logo, or a specific diagram, ask for <strong>SVG code</strong>.
@@ -263,12 +340,15 @@ export default function ChatGPTGodModeHacks() {
             <li><strong>Live Charts:</strong> Upload a CSV and ask, "Create a Python script to visualize this as a 3D scatter plot and show me the resulting image."</li>
             <li><strong>UI Prototypes:</strong> "Write the SVG code for a mobile app dashboard with 4 cards and a sidebar."</li>
           </ul>
+          <p className="text-lg text-gray-400 mb-12 leading-relaxed">
+            And when you do want pure image generation, prompt structure is everything—my collection of <Link href="/blog/viral-chatgpt-image-prompts-2026" className="text-green-400 underline hover:text-green-300">viral ChatGPT image prompts for 2026</Link> breaks down the exact wording patterns behind the trends flooding Instagram right now.
+          </p>
 
           <hr className="border-white/5 my-20" />
 
-          {/* Section 5: Recursive Prompting */}
+          {/* Section 6: Recursive Prompting */}
           <h2 id="recursive-prompting" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
-            <span className="text-green-500">05.</span> Recursive Prompting Frameworks (Chain-of-Thought)
+            <span className="text-green-500">06.</span> Recursive Prompting Frameworks (Chain-of-Thought)
           </h2>
           <p className="text-lg text-gray-400 mb-6 leading-relaxed">
             Recursive prompting is the process of having the AI <strong>critique itself</strong>.
@@ -284,22 +364,22 @@ export default function ChatGPTGodModeHacks() {
 
           <hr className="border-white/5 my-20" />
 
-          {/* Section 6: Memory Hacks */}
+          {/* Section 7: Memory Hacks */}
           <h2 id="memory-hacks" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
-            <span className="text-green-500">06.</span> Memory Hacks for Long-Term Projects
+            <span className="text-green-500">07.</span> Memory Hacks for Long-Term Projects
           </h2>
           <p className="text-lg text-gray-400 mb-6 leading-relaxed">
-            In 2026, Memory is everything. If you're building a startup, you should "upload" your entire business plan to ChatGPT's memory.
+            Memory is what turns ChatGPT from a search box into something that actually knows your project. Tell it your stack, your users, and your constraints once, and you stop burning the first three messages of every chat on context. One caveat worth saying out loud: memory persists, so keep genuinely confidential material—client data, credentials, anything under NDA—out of it.
           </p>
           <p className="text-lg text-gray-400 mb-12 leading-relaxed">
-            <strong>The Hidden Gem:</strong> You can manage what the AI forgets. Go to Settings {">"} Personalization {">"} Memory. You can manually delete specific memories or "forget everything" if you're starting a clean slate. But for power users, keeping a detailed "Context Library" in your memory is like having an AI partner who has lived every second of your project.
+            <strong>The part people miss:</strong> you can manage what it forgets. Go to Settings {">"} Personalization {">"} Memory, and you can delete individual memories or wipe the lot. Audit it every few weeks. Stale memories—an old employer, a project you abandoned, a framework you've since dropped—quietly bend answers in the wrong direction, and that's a miserable thing to debug when you've forgotten what the model still thinks is true about you.
           </p>
 
           <hr className="border-white/5 my-20" />
 
-          {/* Section 7: Developer Secrets */}
+          {/* Section 8: Developer Secrets */}
           <h2 id="dev-secrets" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
-            <span className="text-green-500">07.</span> Developer 'Under-the-Hood' Secrets
+            <span className="text-green-500">08.</span> Developer 'Under-the-Hood' Secrets
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12 font-mono">
             <div className="p-6 bg-green-500/5 border border-green-500/20 rounded-xl">
@@ -314,12 +394,15 @@ export default function ChatGPTGodModeHacks() {
 
           <hr className="border-white/5 my-20" />
 
-          {/* Section 8: The Future */}
+          {/* Section 9: The Future */}
           <h2 id="future" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
-            <span className="text-green-500">08.</span> The Future of Hidden AI Features
+            <span className="text-green-500">09.</span> The Future of Hidden AI Features
           </h2>
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-            By late 2026, we expect to see <strong>Agentic Memory</strong>. This means ChatGPT won't just remember what you said—it will remember what it *did* for you. It will be able to say, "Hey, I noticed you haven't updated your blog in 3 days. Should I draft the next post based on those notes we made last week?"
+            My bet for late 2026 is <strong>agentic memory</strong>—where ChatGPT remembers not just what you said but what it <em>did</em> for you. Less "here's a draft" and more "I noticed you haven't touched the blog in three days; want me to start the next post from those notes we made last week?" That's a guess, not a roadmap leak, so hold it loosely.
+          </p>
+          <p className="text-lg text-gray-400 mb-8 leading-relaxed">
+            Whether OpenAI keeps this lead is a separate battle. If you're deciding where to invest your workflow, my head-to-head of <Link href="/blog/chatgpt-vs-gemini-vs-claude-best-ai-2026" className="text-green-400 underline hover:text-green-300">ChatGPT vs Gemini vs Claude in 2026</Link> compares them on coding, memory, and reasoning—because god mode techniques transfer, but each model has different hidden strengths.
           </p>
 
           <hr className="border-white/5 my-20" />
@@ -340,9 +423,9 @@ export default function ChatGPTGodModeHacks() {
           {/* Conclusion Section */}
           <div className="bg-gradient-to-br from-green-900/40 to-black p-12 sm:p-20 rounded-[2.5rem] text-center mb-24 border border-green-500/20 relative overflow-hidden shadow-[0_0_100px_rgba(34,197,94,0.1)]">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20" />
-            <h2 className="text-4xl sm:text-6xl font-black mb-8 text-white tracking-tighter uppercase">Evolution is Mandatory.</h2>
+            <h2 className="text-4xl sm:text-6xl font-black mb-8 text-white tracking-tighter uppercase">Start With One Prompt.</h2>
             <p className="text-gray-300 mb-12 text-xl max-w-2xl mx-auto leading-relaxed font-light">
-              The tools of the future are already in your hands. The only question is: Will you use them to follow, or will you use them to lead? <strong>Unlock your potential today.</strong>
+              Don't try all fifteen hacks this afternoon—you'll remember none of them. Paste the god mode prompt into Custom Instructions, work normally for a week, and notice how much filler you're no longer scrolling past. <strong>Everything else on this page builds on that one change.</strong>
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link href="/blog" className="bg-green-600 text-black px-12 py-5 rounded-lg font-bold hover:bg-green-400 transition-all hover:scale-105 shadow-[0_0_20px_rgba(34,197,94,0.4)] text-lg uppercase tracking-widest">
