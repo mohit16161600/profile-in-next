@@ -4,8 +4,8 @@ import Link from "next/link";
 import PrintButton from "@/components/PrintButton";
 
 export const metadata: Metadata = {
-  title: "15+ Hidden ChatGPT Features That Will Change How You Work Forever (2026)",
-  description: "Discover the hidden ChatGPT features nobody talks about. Learn secret hacks for developers, students, and creators to 10x your productivity with these advanced AI tricks in 2026.",
+  title: "15+ Hidden ChatGPT Features That Change How You Work (2026)",
+  description: "Hidden ChatGPT features nobody talks about — secret hacks for developers, students and creators to 10x productivity in 2026.",
   keywords: [
     "Hidden ChatGPT features",
     "ChatGPT secret features",
@@ -105,7 +105,33 @@ export default function HiddenChatGPTFeatures() {
               }
             },
             "datePublished": "2026-05-09",
+            "dateModified": "2026-05-09",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://mohitkoli.in/blog/hidden-chatgpt-features"
+            },
+            "articleSection": "AI Hacks",
+            "inLanguage": "en-IN",
             "description": "Discover the hidden ChatGPT features nobody talks about. Learn secret hacks for developers, students, and creators to 10x your productivity."
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mohitkoli.in/" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mohitkoli.in/blog" },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Hidden ChatGPT Features",
+                "item": "https://mohitkoli.in/blog/hidden-chatgpt-features"
+              }
+            ]
           }),
         }}
       />

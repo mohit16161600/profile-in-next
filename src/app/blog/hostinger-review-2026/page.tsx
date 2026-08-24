@@ -36,13 +36,13 @@ export const metadata: Metadata = {
             "Honest Hostinger review 2026 after a year of real client sites in India — speed, uptime, hPanel, the ₹449/mo renewal trap, plus a Hostinger Horizons review.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/hostinger-review-2026.svg", width: 1200, height: 630, alt: "Hostinger review 2026 — honest developer verdict" }],
+        images: [{ url: "/assets/blog/hostinger-review-2026.png", width: 1200, height: 630, alt: "Hostinger review 2026 — honest developer verdict" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Hostinger Review 2026: Is ₹139/mo Hosting Worth It in India?",
         description: "A year of running real client sites on Hostinger — speed, uptime, support, Horizons AI builder, and is it worth it?",
-        images: ["/assets/blog/hostinger-review-2026.svg"],
+        images: ["/assets/blog/hostinger-review-2026.png"],
     },
 };
 
@@ -112,7 +112,7 @@ const jsonLd = [
         headline: "Hostinger Review 2026: Is ₹139/mo Hosting Worth It in India?",
         description:
             "Honest Hostinger review 2026 after a year of real client sites in India — speed, uptime, hPanel, the ₹449/mo renewal trap, plus a Hostinger Horizons review.",
-        image: "https://mohitkoli.in/assets/blog/hostinger-review-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/hostinger-review-2026.png",
         datePublished: "2026-07-17T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",
         author: {

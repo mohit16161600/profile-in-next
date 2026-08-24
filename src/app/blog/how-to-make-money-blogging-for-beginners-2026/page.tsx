@@ -2,8 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+const CANONICAL = "https://mohitkoli.in/blog/how-to-make-money-blogging-for-beginners-2026";
+// The hero file is a square 1024x1024 (and actually a JPEG behind a .png name), which
+// crops badly into a 1.91:1 card — social scrapers get a dedicated crop instead.
+const IMAGE = "https://mohitkoli.in/assets/make-money-blogging-2026-og.jpg";
+const PUBLISHED = "2026-04-13T00:00:00.000Z";
+
 export const metadata: Metadata = {
-  title: "How to Make Money Blogging for Beginners: The Ultimate 2026 Guide",
+  title: "How to Make Money Blogging for Beginners (2026 Guide)",
   description:
     "Learn how to start a blog and earn money in 2026. This complete beginner guide covers monetization, blogging tips for beginners, and income in India.",
   keywords: [
@@ -14,7 +20,24 @@ export const metadata: Metadata = {
     "blogging tips for beginners 2026",
   ],
   alternates: {
-    canonical: "https://mohitkoli.in/blog/how-to-make-money-blogging-for-beginners-2026",
+    canonical: CANONICAL,
+  },
+  openGraph: {
+    title: "How to Make Money Blogging for Beginners: The Ultimate 2026 Guide",
+    description:
+      "Learn how to start a blog and earn money in 2026 — monetization, blogging tips for beginners, and realistic income figures for India.",
+    url: CANONICAL,
+    type: "article",
+    publishedTime: PUBLISHED,
+    modifiedTime: PUBLISHED,
+    images: [{ url: IMAGE, width: 1200, height: 630, alt: "How to make money blogging in 2026 — beginner guide" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Make Money Blogging for Beginners (2026 Guide)",
+    description:
+      "Start a blog and earn in 2026 — niches, monetization, and what a beginner blogger realistically makes in India.",
+    images: [IMAGE],
   },
 };
 
@@ -44,22 +67,67 @@ export default function BloggingGuide2026() {
 
   return (
     <main className="pt-28 pb-20 bg-[#040404] text-white">
-      {/* Schema.org FAQ JSON-LD */}
+      {/* Schema.org Article, Breadcrumb & FAQ JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqData.map((faq) => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer,
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              headline: "How to Make Money Blogging for Beginners: The Ultimate 2026 Guide",
+              description:
+                "Learn how to start a blog and earn money in 2026 — monetization, blogging tips for beginners, and income in India.",
+              image: IMAGE,
+              datePublished: PUBLISHED,
+              dateModified: PUBLISHED,
+              author: {
+                "@type": "Person",
+                name: "Mohit Koli",
+                url: "https://mohitkoli.in/profile",
+                jobTitle: "Senior Full Stack Developer",
+                sameAs: [
+                  "https://github.com/mohit16161600",
+                  "https://www.linkedin.com/in/mohit-koli-b47260213",
+                  "https://x.com/mohitko86979490",
+                ],
               },
-            })),
-          }),
+              publisher: {
+                "@type": "Person",
+                name: "Mohit Koli",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
+                },
+              },
+              mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
+              keywords:
+                "make money blogging for beginners, how to start a blog and earn money, blogging income in India, best ways to monetize a blog",
+              articleSection: "Blogging",
+              inLanguage: "en-IN",
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
+                { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.in/blog" },
+                { "@type": "ListItem", position: 3, name: "Make Money Blogging 2026", item: CANONICAL },
+              ],
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqData.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            },
+          ]),
         }}
       />
 

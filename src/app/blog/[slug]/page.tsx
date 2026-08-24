@@ -36,13 +36,35 @@ export async function generateStaticParams() {
     return BLOG_POSTS.map((post) => ({ slug: post.slug }));
 }
 
+/**
+ * Social platforms and Google Discover reject SVG: Facebook, WhatsApp, X, LinkedIn
+ * and Pinterest all render a bare text link instead of a card. Every branded SVG
+ * hero has a PNG twin (see scripts/rasterize-blog-images.mjs) — the SVG stays the
+ * on-page hero for LCP, the PNG goes everywhere a crawler or scraper reads it.
+ */
+function socialImage(imageSrc: string) {
+    return imageSrc.replace(/\.svg$/, ".png");
+}
+
+/**
+ * Google truncates around 60 characters. Most of these titles are already at that
+ * limit, so appending " | Mohit Koli" (13 chars) only bought a cut-off brand name —
+ * the suffix now applies solely when it actually fits.
+ */
+const BRAND_SUFFIX = " | Mohit Koli";
+function pageTitle(title: string) {
+    return title.length + BRAND_SUFFIX.length <= 60 ? `${title}${BRAND_SUFFIX}` : title;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
     const post = BLOG_POSTS.find((p) => p.slug === slug);
     if (!post) return { title: "Blog Post Not Found" };
 
+    const ogImage = socialImage(post.imageSrc);
+
     return {
-        title: `${post.title} | Mohit Koli`,
+        title: pageTitle(post.seoTitle ?? post.title),
         description: post.description,
         keywords: post.keywords.join(", "),
         alternates: {
@@ -52,13 +74,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             title: post.title,
             description: post.description,
             url: `https://mohitkoli.in/blog/${post.slug}`,
-            images: [post.imageSrc],
+            type: "article",
+            publishedTime: new Date(post.date).toISOString(),
+            modifiedTime: new Date(post.updated ?? post.date).toISOString(),
+            images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
         },
         twitter: {
             card: "summary_large_image",
             title: post.title,
             description: post.description,
-            images: [post.imageSrc],
+            images: [ogImage],
         },
     };
 }
@@ -81,12 +106,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         "AI Hacks": [
             { label: "OpenAI ChatGPT product overview", href: "https://openai.com/chatgpt/", source: "OpenAI" },
             { label: "Google AI principles and research", href: "https://ai.google/", source: "Google" },
-            { label: "Anthropic Claude documentation", href: "https://www.anthropic.com/claude", source: "Anthropic" },
+            { label: "Anthropic Claude documentation", href: "https://claude.com/product/overview", source: "Anthropic" },
         ],
         "AI Tips": [
             { label: "OpenAI ChatGPT product overview", href: "https://openai.com/chatgpt/", source: "OpenAI" },
-            { label: "Anthropic Claude — official", href: "https://www.anthropic.com/claude", source: "Anthropic" },
-            { label: "ChatGPT prompt engineering guide", href: "https://platform.openai.com/docs/guides/prompt-engineering", source: "OpenAI Platform" },
+            { label: "Anthropic Claude — official", href: "https://claude.com/product/overview", source: "Anthropic" },
+            { label: "ChatGPT prompt engineering guide", href: "https://developers.openai.com/api/docs/guides/prompt-engineering", source: "OpenAI Platform" },
         ],
         "AI Tools": [
             { label: "Hugging Face — open-source AI models", href: "https://huggingface.co/", source: "Hugging Face" },
@@ -96,7 +121,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         "AI Comparison": [
             { label: "OpenAI ChatGPT", href: "https://openai.com/chatgpt/", source: "OpenAI" },
             { label: "Google Gemini", href: "https://gemini.google.com/", source: "Google" },
-            { label: "Anthropic Claude", href: "https://www.anthropic.com/claude", source: "Anthropic" },
+            { label: "Anthropic Claude", href: "https://claude.com/product/overview", source: "Anthropic" },
         ],
         "AI & Career": [
             { label: "World Economic Forum — Future of Jobs", href: "https://www.weforum.org/reports/the-future-of-jobs-report-2023/", source: "WEF" },
@@ -113,7 +138,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         ],
         "AI Development": [
             { label: "MDN Web Docs", href: "https://developer.mozilla.org/", source: "Mozilla" },
-            { label: "OpenAI API reference", href: "https://platform.openai.com/docs", source: "OpenAI" },
+            { label: "OpenAI API reference", href: "https://developers.openai.com/api/docs", source: "OpenAI" },
         ],
         React: [
             { label: "Official React docs", href: "https://react.dev/", source: "Meta" },
@@ -148,9 +173,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     const publishedISO = new Date(post.date).toISOString();
     const modifiedISO = new Date(post.updated ?? post.date).toISOString();
     const canonical = `https://mohitkoli.in/blog/${post.slug}`;
-    const absoluteImage = post.imageSrc.startsWith("http")
-        ? post.imageSrc
-        : `https://mohitkoli.in${post.imageSrc}`;
+    // Article rich results need a raster image, so the schema points at the PNG twin
+    // even though the hero above renders the lighter SVG.
+    const schemaImage = socialImage(post.imageSrc);
+    const absoluteImage = schemaImage.startsWith("http")
+        ? schemaImage
+        : `https://mohitkoli.in${schemaImage}`;
 
     const articleSchema = {
         "@context": "https://schema.org",

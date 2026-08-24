@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Free AI Video Generators 2026 (Veo, Kling, Sora)",
+  title: "Best Free AI Video Generators 2026 (Veo, Kling, Runway)",
   description:
-    "The best free AI video generators in 2026 compared: Veo, Kling, Sora 2 alternatives and more. See which is best and make your first AI video free, step by step.",
+    "The best free AI video generators in 2026 compared: Veo, Kling, Runway and the tools that replaced Sora. See which is best and make your first video free.",
   keywords: [
     "best free ai video generator 2026",
     "best ai video generators 2026",
@@ -22,19 +22,19 @@ export const metadata: Metadata = {
     canonical: "https://mohitkoli.in/blog/best-ai-video-generators-2026",
   },
   openGraph: {
-    title: "Best Free AI Video Generators 2026 (Veo, Kling, Sora)",
+    title: "Best Free AI Video Generators 2026 (Veo, Kling, Runway)",
     description:
-      "The best free AI video generators in 2026 compared: Veo, Kling, Sora 2 alternatives and more. See which is best and make your first AI video free, step by step.",
+      "The best free AI video generators in 2026 compared: Veo, Kling, Runway and the tools that replaced Sora. See which is best and make your first video free.",
     url: "https://mohitkoli.in/blog/best-ai-video-generators-2026",
     type: "article",
-    images: ["/assets/blog/best-ai-video-generators-2026.svg"],
+    images: ["/assets/blog/best-ai-video-generators-2026.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Free AI Video Generators 2026 (Veo, Kling, Sora)",
+    title: "Best Free AI Video Generators 2026 (Veo, Kling, Runway)",
     description:
-      "The best free AI video generators in 2026 compared: Veo, Kling, Sora 2 alternatives and more. See which is best and make your first AI video free, step by step.",
-    images: ["/assets/blog/best-ai-video-generators-2026.svg"],
+      "The best free AI video generators in 2026 compared: Veo, Kling, Runway and the tools that replaced Sora. See which is best and make your first video free.",
+    images: ["/assets/blog/best-ai-video-generators-2026.png"],
   },
 };
 
@@ -53,7 +53,7 @@ export default function BestAIVideoGenerators2026() {
     {
       question: "Is Sora 2 available everywhere?",
       answer:
-        "Sora 2 access has been limited and often invite-gated by region, so many users in India rely on Veo, Kling, or other alternatives.",
+        "No — OpenAI discontinued the Sora consumer app on 26 April 2026, so it is not available anywhere. Veo, Kling and Runway are the practical replacements, and all three work in India.",
     },
     {
       question: "Do free AI videos have a watermark?",
@@ -84,21 +84,21 @@ export default function BestAIVideoGenerators2026() {
 
   const keyTakeaways = [
     "Veo and Kling lead the free AI video space in 2026, with Kling often topping quality leaderboards.",
-    "Sora 2 is frequently invite-gated by region, so Indian users often prefer Veo and Kling.",
+    "Sora was discontinued in April 2026, so Veo and Kling are now the realistic picks for Indian users.",
     "Free tiers usually add watermarks and cap clip length and resolution.",
     "Newer models generate synced audio, a big 2026 leap for text-to-video.",
     "You can make a first AI video free in minutes with a clear, specific prompt.",
   ];
 
   const canonical = "https://mohitkoli.in/blog/best-ai-video-generators-2026";
-  const image = "https://mohitkoli.in/assets/blog/best-ai-video-generators-2026.svg";
+  const image = "https://mohitkoli.in/assets/blog/best-ai-video-generators-2026.png";
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "Best Free AI Video Generators 2026 (Veo, Kling, Sora)",
+    headline: "Best Free AI Video Generators 2026 (Veo, Kling, Runway)",
     description:
-      "The best free AI video generators in 2026 compared: Veo, Kling, Sora 2 alternatives and more. See which is best and make your first AI video free, step by step.",
+      "The best free AI video generators in 2026 compared: Veo, Kling, Runway and the tools that replaced Sora. See which is best and make your first video free.",
     image: image,
     datePublished: "2026-06-02",
     dateModified: "2026-06-02",
@@ -150,7 +150,7 @@ export default function BestAIVideoGenerators2026() {
       {
         "@type": "ListItem",
         position: 3,
-        name: "Best Free AI Video Generators 2026 (Veo, Kling, Sora)",
+        name: "Best Free AI Video Generators 2026 (Veo, Kling, Runway)",
         item: canonical,
       },
     ],
@@ -212,7 +212,7 @@ export default function BestAIVideoGenerators2026() {
         <div className="relative w-full aspect-[1200/630] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-pink-500/10">
           <Image
             src="/assets/blog/best-ai-video-generators-2026.svg"
-            alt="Best Free AI Video Generators 2026 (Veo, Kling, Sora)"
+            alt="Best Free AI Video Generators 2026 (Veo, Kling, Runway)"
             fill
             className="object-cover"
             priority
@@ -244,7 +244,7 @@ export default function BestAIVideoGenerators2026() {
               <li><a href="#comparison-table" className="hover:text-pink-400 transition">→ Comparison Table</a></li>
               <li><a href="#veo" className="hover:text-pink-400 transition">→ Google Veo</a></li>
               <li><a href="#kling" className="hover:text-pink-400 transition">→ Kling AI</a></li>
-              <li><a href="#sora-alternatives" className="hover:text-pink-400 transition">→ Sora 2 &amp; Its Alternatives</a></li>
+              <li><a href="#sora-alternatives" className="hover:text-pink-400 transition">→ Sora Is Gone — What Replaced It</a></li>
               <li><a href="#other-free-tools" className="hover:text-pink-400 transition">→ Other Strong Free Tools</a></li>
               <li><a href="#make-first-video" className="hover:text-pink-400 transition">→ How to Make Your First AI Video Free</a></li>
               <li><a href="#prompt-tips" className="hover:text-pink-400 transition">→ Prompt Tips for Better Video</a></li>
@@ -268,7 +268,7 @@ export default function BestAIVideoGenerators2026() {
             </div>
             <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
               <p className="font-bold text-rose-400 mb-2">🇮🇳 Best for India Access</p>
-              <p className="text-sm text-gray-400"><strong>Veo and Kling</strong> — both are widely accessible, while Sora 2 is often invite-gated by region.</p>
+              <p className="text-sm text-gray-400"><strong>Veo and Kling</strong> — both are widely accessible. Sora is no longer an option: OpenAI shut it down in April 2026.</p>
             </div>
             <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
               <p className="font-bold text-purple-400 mb-2">🎬 Best for Beginners</p>
@@ -304,10 +304,10 @@ export default function BestAIVideoGenerators2026() {
                   <td className="p-4 text-green-400">Top-tier visual quality</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-semibold text-pink-300">Sora 2</td>
-                  <td className="p-4">Often invite-gated</td>
-                  <td className="p-4">Yes</td>
-                  <td className="p-4">Realistic scenes (if available)</td>
+                  <td className="p-4 font-semibold text-gray-500">Sora 2 <span className="text-xs uppercase tracking-wider">(discontinued)</span></td>
+                  <td className="p-4 text-gray-500">Shut down Apr 2026</td>
+                  <td className="p-4 text-gray-500">—</td>
+                  <td className="p-4 text-gray-500">No longer available</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-pink-300">Runway</td>
@@ -377,12 +377,12 @@ export default function BestAIVideoGenerators2026() {
             For most people chasing the best free <em>visual</em> quality, Kling is the one to try first. Just remember leaderboard positions move with every model update, so the gap between Kling and Veo narrows and widens release to release.
           </p>
 
-          <h2 id="sora-alternatives" className="text-3xl font-bold mt-12 mb-6">Sora 2 &amp; Its Alternatives</h2>
+          <h2 id="sora-alternatives" className="text-3xl font-bold mt-12 mb-6">Sora Is Gone — What Replaced It</h2>
           <p className="text-gray-300 mb-6">
-            OpenAI&apos;s <strong>Sora 2</strong> produces some of the most talked-about realistic clips, but access has been the catch. Throughout 2026 it has frequently been <strong>invite-gated and limited by region</strong>, which means many users — especially in India — simply cannot get reliable access. If that describes you, do not waste days hunting for entry; lean on alternatives that are open right now.
+            OpenAI&apos;s <strong>Sora 2</strong> made the most talked-about clips of its era, and then it went away: OpenAI announced the shutdown in March 2026 and <strong>discontinued the app on 26 April 2026</strong>, with the API following in September. If you are still seeing guides about invite codes, they are out of date — and anyone selling access is scamming you. The good news is that the alternatives closed the quality gap while everyone was queueing for invites.
           </p>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-8">
-            <h3 className="text-xl font-bold mb-3 text-pink-300">If you can&apos;t get Sora 2, use these instead</h3>
+            <h3 className="text-xl font-bold mb-3 text-pink-300">Use these instead</h3>
             <ul className="list-disc pl-6 text-gray-300 space-y-2">
               <li><strong>Kling AI</strong> — closest in raw quality and openly accessible.</li>
               <li><strong>Google Veo</strong> — best when you need sound baked in.</li>
@@ -391,7 +391,7 @@ export default function BestAIVideoGenerators2026() {
             </ul>
           </div>
           <p className="text-gray-300 mb-6">
-            If you do want to chase access, I keep a dedicated walkthrough on <Link href="/blog/how-to-get-sora-2-invite-code-2026" className="text-pink-400 underline hover:text-pink-300">how to get a Sora 2 invite code in 2026</Link> with the safest, scam-free routes. For a broader view of the whole AI toolkit, the <Link href="/blog/top-25-free-ai-tools-2026" className="text-pink-400 underline hover:text-pink-300">top 25 free AI tools of 2026</Link> roundup covers everything beyond video.
+            I have written up the full story — the timeline, why OpenAI pulled the plug, and the scams still circulating — in <Link href="/blog/how-to-get-sora-2-invite-code-2026" className="text-pink-400 underline hover:text-pink-300">what happened to Sora</Link>. For a broader view of the whole AI toolkit, the <Link href="/blog/top-25-free-ai-tools-2026" className="text-pink-400 underline hover:text-pink-300">top 25 free AI tools of 2026</Link> roundup covers everything beyond video.
           </p>
 
           <h2 id="other-free-tools" className="text-3xl font-bold mt-12 mb-6">Other Strong Free Tools</h2>

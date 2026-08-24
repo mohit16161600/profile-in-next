@@ -1,6 +1,13 @@
 export interface BlogPost {
     id: number;
     title: string;
+    /**
+     * Shorter title used only for the <title> tag when `title` would be truncated in
+     * search results (Google cuts around 60 characters). The on-page H1 and the blog
+     * cards keep the full `title` — this exists so SEO length limits don't force us to
+     * water down the headline a reader actually sees.
+     */
+    seoTitle?: string;
     description: string;
     date: string;
     /** Content-freshness date — feeds sitemap <lastmod> and BlogPosting dateModified. Set when a post is meaningfully updated. */
@@ -15,9 +22,39 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 44,
+        title: "Hostinger Cloud Hosting India 2026: Price, Plans & Real Cost",
+        seoTitle: "Hostinger Cloud Hosting Price India 2026: From ₹599/mo",
+        description: "Every Hostinger Cloud plan priced for India — Startup ₹599, Professional ₹899, Enterprise ₹1,899/mo, the renewal jump, and how to stack an extra 20% off.",
+        date: "August 24, 2026",
+        readTime: "12 min read",
+        category: "Hosting",
+        views: 0,
+        keywords: [
+            "hostinger cloud hosting",
+            "hostinger cloud hosting india",
+            "hostinger cloud hosting price",
+            "hostinger cloud hosting price india",
+            "cloud hosting price in india",
+            "hostinger cloud startup",
+            "hostinger cloud professional",
+            "hostinger cloud enterprise",
+            "hostinger cloud startup vs professional",
+            "best cloud hosting india 2026",
+            "cheap cloud hosting india",
+            "cloud hosting vs vps india",
+            "hostinger cloud hosting review",
+            "is hostinger cloud hosting worth it",
+            "hostinger cloud renewal price",
+            "managed cloud hosting india"
+        ],
+        slug: "hostinger-cloud-hosting-india-2026",
+        imageSrc: "/assets/blog/hostinger-cloud-hosting-india-2026.svg",
+    },
+    {
         id: 43,
         title: "BeyondZ900 Riding Vlogs: Daily Rides, Road Trips & Why It's Worth Following",
-        description: "BeyondZ900 is a rider documenting daily rides and road trips on YouTube and Instagram. Full spotlight: what the channel is about, why riding vlogs are booming in India, how to support small motovloggers, and how to start your own riding channel.",
+        description: "BeyondZ900 documents daily rides and road trips on YouTube and Instagram. What the channel is about, why riding vlogs work, and how to start your own.",
         date: "August 9, 2026",
         readTime: "12 min read",
         category: "Creator Spotlight",
@@ -359,8 +396,8 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 28,
-        title: "100+ Best ChatGPT Prompts for 2026 (Copy & Paste List)",
-        description: "Get 100+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
+        title: "70+ Best ChatGPT Prompts for 2026 (Copy & Paste List)",
+        description: "Get 70+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
         date: "June 12, 2026",
         readTime: "22 min read",
         category: "AI Tips",
@@ -497,23 +534,24 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 22,
-        title: "How to Get a Sora 2 Invite Code in 2026 (Working Methods)",
-        description: "Want a Sora 2 invite code in 2026? Learn the real working methods to get access, avoid scams, and make your first AI video, plus free Sora alternatives.",
+        title: "What Happened to Sora? OpenAI Shut It Down (2026)",
+        description: "Sora 2 invite codes no longer exist — OpenAI discontinued the Sora app on 26 April 2026. What happened, why, and the best alternatives to use instead.",
         date: "June 1, 2026",
-        readTime: "11 min read",
+        updated: "August 24, 2026",
+        readTime: "8 min read",
         category: "AI Tools",
         views: 0,
         keywords: [
+            "what happened to sora",
+            "sora shut down",
+            "is sora 2 still available",
             "sora 2 invite code",
-            "how to get sora 2 invite code",
-            "sora 2 access 2026",
-            "sora 2 invite code free",
-            "sora 2 waitlist",
-            "sora ai invite code",
-            "sora 2 india access",
-            "sora 2 alternatives free",
-            "openai sora 2 how to use",
-            "get sora 2 access"
+            "openai sora discontinued",
+            "why did openai shut down sora",
+            "sora alternatives",
+            "best sora alternative 2026",
+            "sora invite code scam",
+            "ai video generator after sora"
         ],
         slug: "how-to-get-sora-2-invite-code-2026",
         imageSrc: "/assets/blog/how-to-get-sora-2-invite-code-2026.svg",
@@ -640,7 +678,8 @@ export const BLOG_POSTS: BlogPost[] = [
     {
         id: 14,
         title: "Mohit Koli: Backend Developer, Laravel PHP Engineer, Creator, and Freelance Web Specialist",
-        description: "Discover everything publicly shared about Mohit Koli: career journey, Laravel and PHP expertise, freelance work, professional background, public contact details, and personal brand.",
+        seoTitle: "Mohit Koli — Backend Developer & Laravel PHP Engineer",
+        description: "Mohit Koli — career journey, Laravel and PHP expertise, freelance work, professional background and public contact details.",
         date: "March 30, 2026",
         readTime: "12 min read",
         category: "Personal Brand",
@@ -659,7 +698,8 @@ export const BLOG_POSTS: BlogPost[] = [
     {
         id: 13,
         title: "Best AI Tools for WhatsApp Business Automation in 2026 (Complete Beginner Guide)",
-        description: "Discover the best AI tools for WhatsApp business automation in 2026. Compare features, pricing, use cases, and learn how to automate WhatsApp replies step by step.",
+        seoTitle: "Best AI Tools for WhatsApp Business Automation (2026)",
+        description: "Best AI tools for WhatsApp business automation in 2026 — features, pricing, use cases, and how to automate WhatsApp replies step by step.",
         date: "March 27, 2026",
         readTime: "17 min read",
         category: "AI Tools",
@@ -709,6 +749,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
         id: 9,
         title: "How to Use AI to Build a Full Website in 30 Minutes (Step-by-Step Guide – 2026)",
+        seoTitle: "Build a Full Website With AI in 30 Minutes (2026 Guide)",
         description: "Learn how to build a professional website in under 30 minutes using AI tools like ChatGPT, Claude, and Midjourney. A complete 2026 guide for beginners.",
         date: "Feb 12, 2026",
         readTime: "5 min read",
@@ -743,6 +784,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
         id: 6,
         title: 'Frontend vs Backend Development - What Should You Learn First?',
+        seoTitle: 'Frontend vs Backend: What Should You Learn First?',
         description: "Frontend vs backend development - what should you learn first? Explore key differences, beginner roadmaps, real examples, tips, and practical career advice.",
         date: 'Dec 24, 2025',
         readTime: '13 min read',
@@ -763,7 +805,8 @@ export const BLOG_POSTS: BlogPost[] = [
     {
         id: 5,
         title: 'Hostinger VPS Price in India 2026: KVM Plans Review (Worth It?)',
-        description: "Hostinger KVM VPS plans reviewed for India 2026 — real KVM 1, 2, 4 & 8 pricing in INR, specs, speed and who should buy which plan, plus how to claim the extra referral discount.",
+        seoTitle: 'Hostinger VPS Price India 2026: KVM Plans Review',
+        description: "Hostinger KVM VPS reviewed for India 2026 — KVM 1, 2, 4 & 8 pricing in INR, specs, speed, who should buy which plan, plus the referral discount.",
         date: 'Nov 20, 2025',
         updated: 'July 17, 2026',
         readTime: '14 min read',
@@ -785,6 +828,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
         id: 4,
         title: 'Best AI Tools for Students, Developers, and Digital Marketers in 2025',
+        seoTitle: 'Best AI Tools for Students, Developers & Marketers',
         description: "The ultimate list of AI tools to boost your productivity. From coding assistants to marketing automation, find the best AI software for 2025.",
         date: 'Nov 15, 2025',
         readTime: '18 min read',
@@ -797,7 +841,8 @@ export const BLOG_POSTS: BlogPost[] = [
     {
         id: 3,
         title: 'Top 10 JavaScript Frameworks & Libraries in Demand (2025–2026 Guide)',
-        description: "Which JS framework has the biggest ecosystem going into 2026? React, Vue, Angular, Svelte and more ranked by demand, jobs, and ecosystem size — a guide for developers choosing what to learn.",
+        seoTitle: 'Top 10 JavaScript Frameworks & Libraries (2026 Guide)',
+        description: "React, Vue, Angular, Svelte and more ranked by demand, jobs and ecosystem size going into 2026 — a guide for developers choosing what to learn.",
         date: 'Oct 28, 2025',
         updated: 'July 4, 2026',
         readTime: '15 min read',
@@ -818,6 +863,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
         id: 2,
         title: 'The Uncomfortable Truth About AI Coding: Why AI Code Assistants Make You a Worse Developer',
+        seoTitle: 'The Truth About AI Coding Assistants (2026)',
         description: "Is AI making you lazy? Explore the pitfalls of over-relying on AI code assistants and how to maintain your problem-solving skills as a programmer.",
         date: 'Sep 22, 2025',
         readTime: '8 min read',
@@ -830,6 +876,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
         id: 1,
         title: 'Complete Guide to AI in Web Development: How AI is Revolutionizing Coding',
+        seoTitle: 'AI in Web Development: The Complete 2026 Guide',
         description: "Learn how artificial intelligence is changing the landscape of web development. From code generation to automated testing, discover the future now.",
         date: 'Sep 15, 2025',
         readTime: '12 min read',

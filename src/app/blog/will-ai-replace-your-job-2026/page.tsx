@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+const CANONICAL = "https://mohitkoli.in/blog/will-ai-replace-your-job-2026";
+const IMAGE = "https://mohitkoli.in/assets/ai-replace-job.webp";
+const PUBLISHED = "2026-05-01T00:00:00.000Z";
+
 export const metadata: Metadata = {
   title: "Will AI Replace Your Job? The Real Truth (2026)",
   description: "Worried about AI taking your job? Discover the real truth about AI and jobs in 2026. See which roles are safe and how to future-proof your career today!",
@@ -18,7 +22,24 @@ export const metadata: Metadata = {
     "can AI replace human creativity"
   ],
   alternates: {
-    canonical: "https://mohitkoli.in/blog/will-ai-replace-your-job-2026",
+    canonical: CANONICAL,
+  },
+  openGraph: {
+    title: "Will AI Replace Your Job? The Real Truth (2026)",
+    description:
+      "Worried about AI taking your job? The real truth about AI and jobs in 2026 — which roles are safe and how to future-proof your career.",
+    url: CANONICAL,
+    type: "article",
+    publishedTime: PUBLISHED,
+    modifiedTime: PUBLISHED,
+    images: [{ url: IMAGE, width: 1200, height: 630, alt: "Will AI replace your job in 2026 — the real answer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Will AI Replace Your Job? The Real Truth (2026)",
+    description:
+      "Which jobs AI actually replaces in 2026, which are safe, and how to future-proof your career.",
+    images: [IMAGE],
   },
 };
 
@@ -26,7 +47,7 @@ export default function AIJobTruth2026() {
   const faqData = [
     {
       question: "Which jobs are most at risk from AI in 2026?",
-      answer: "Jobs involving repetitive data entry, basic customer service, routine administrative tasks, and entry-level coding/translation are at the highest risk. AI agents can now handle these tasks with 99% accuracy.",
+      answer: "Jobs involving repetitive data entry, basic customer service, routine administrative tasks, and entry-level coding/translation are at the highest risk. AI handles the routine, high-volume end of these roles well; it still needs human review for edge cases, which is why these jobs shrink rather than vanish outright.",
     },
     {
       question: "Will AI replace doctors and lawyers?",
@@ -57,22 +78,67 @@ export default function AIJobTruth2026() {
 
   return (
     <main className="pt-28 pb-20 bg-[#040404] text-white">
-      {/* Schema.org FAQ JSON-LD */}
+      {/* Schema.org Article, Breadcrumb & FAQ JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqData.map((faq) => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer,
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              headline: "Will AI Replace Your Job? The Real Truth (2026)",
+              description:
+                "The real truth about AI and jobs in 2026 — which roles are at risk, which are safe, and how to future-proof your career.",
+              image: IMAGE,
+              datePublished: PUBLISHED,
+              dateModified: PUBLISHED,
+              author: {
+                "@type": "Person",
+                name: "Mohit Koli",
+                url: "https://mohitkoli.in/profile",
+                jobTitle: "Senior Full Stack Developer",
+                sameAs: [
+                  "https://github.com/mohit16161600",
+                  "https://www.linkedin.com/in/mohit-koli-b47260213",
+                  "https://x.com/mohitko86979490",
+                ],
               },
-            })),
-          }),
+              publisher: {
+                "@type": "Person",
+                name: "Mohit Koli",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
+                },
+              },
+              mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
+              keywords:
+                "Will AI replace jobs, AI and jobs 2026, jobs safe from AI, impact of AI on jobs, future proof career AI",
+              articleSection: "AI & Career",
+              inLanguage: "en-IN",
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
+                { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.in/blog" },
+                { "@type": "ListItem", position: 3, name: "Will AI Replace Your Job?", item: CANONICAL },
+              ],
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqData.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            },
+          ]),
         }}
       />
 
@@ -146,7 +212,7 @@ export default function AIJobTruth2026() {
 
           <h2 id="why-the-fear" className="text-3xl font-bold mt-12 mb-6">Why People Fear the Jobocalypse</h2>
           <p className="text-gray-300 mb-6">
-            The fear is real because the numbers are real. In 2024, IBM paused hiring for 7,800 roles that could be replaced by AI. By 2026, that number has grown globally. Why?
+            The fear is real because the numbers are real. In May 2023, IBM said it expected to pause or slow hiring for around 7,800 back-office roles it believed AI could handle over the following years. Plenty of companies have signalled something similar since. Why?
           </p>
           <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
             <li><strong>Speed:</strong> AI can do in 2 seconds what takes a human 2 hours.</li>
@@ -162,7 +228,7 @@ export default function AIJobTruth2026() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             <div className="p-6 bg-red-500/5 border border-red-500/20 rounded-xl">
               <h3 className="font-bold text-red-400 mb-2">1. Data Entry & Admin</h3>
-              <p className="text-sm text-gray-400">AI agents can now scan, categorize, and enter data with 100% accuracy. The "clerical" worker is vanishing.</p>
+              <p className="text-sm text-gray-400">AI can scan, categorise and enter data far faster and more cheaply than a person, with error rates low enough that one reviewer can cover what a team used to do. Purely clerical roles are shrinking fastest.</p>
             </div>
             <div className="p-6 bg-red-500/5 border border-red-500/20 rounded-xl">
               <h3 className="font-bold text-red-400 mb-2">2. Basic Customer Service</h3>
@@ -238,12 +304,12 @@ export default function AIJobTruth2026() {
           </p>
           <div className="space-y-6 mb-10">
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-              <p className="font-bold text-white mb-2">Klarna (Fintech):</p>
-              <p className="text-gray-400">In 2024, Klarna announced their AI assistant handles the work of 700 full-time agents. By 2026, their customer support is almost entirely automated, leading to higher profits but fewer entry-level roles.</p>
+              <p className="font-bold text-white mb-2">Klarna (Fintech) — and the walk-back:</p>
+              <p className="text-gray-400">In February 2024, Klarna&apos;s AI assistant handled 2.3 million chats in its first month — the workload of roughly 700 agents — and the company claimed $40M in savings. Then in May 2025 it reversed course and began rehiring humans. CEO Sebastian Siemiatkowski admitted the cost-first push had lowered quality: the AI handled volume but not complexity. Klarna now runs a triage model — AI takes routine queries, humans take disputes, fraud and hardship cases. That reversal is the most useful data point in this article, and it says exactly what this guide argues: AI absorbed the repetitive tier, not the judgement.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
               <p className="font-bold text-white mb-2">GitHub (Microsoft):</p>
-              <p className="text-gray-400">Copilot now writes nearly 60% of the world's new code. Junior developers are no longer hired to "write code"—they are hired to "review AI code."</p>
+              <p className="text-gray-400">Microsoft has said AI assists with roughly 30% of the code in its own repositories — a real figure, and very different from the &quot;AI writes most of the world&apos;s code&quot; claim that circulates online. The shift for junior developers is real but narrower than the headlines suggest: less time typing boilerplate, much more time reviewing, testing and correcting generated code.</p>
             </div>
           </div>
 
@@ -317,7 +383,8 @@ export default function AIJobTruth2026() {
 
           {/* Statistics Section */}
           <div className="bg-white/5 border border-white/10 p-8 rounded-3xl mb-12 text-center">
-            <h3 className="text-2xl font-bold mb-8">2026 Real-World Data Points</h3>
+            <h3 className="text-2xl font-bold mb-2">Projections, not measurements</h3>
+            <p className="text-sm text-gray-400 mb-8">Figures below are the World Economic Forum&apos;s Future of Jobs projections — forecasts about this decade, not counts of what has already happened.</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
               <div>
                 <p className="text-4xl font-bold text-orange-500 mb-2">85M</p>

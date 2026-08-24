@@ -35,11 +35,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/assets/mohit-koli-profile-photo.jpg",
+        // Purpose-built 1.91:1 card (scripts/gen-og-default.mjs). The old default was
+        // the 1333x1373 portrait declared as 1200x630 — scrapers trusted the declared
+        // box and cropped the face out of every share.
+        url: "/assets/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Mohit Koli - Professional Web Developer",
-        type: "image/jpeg",
+        alt: "Mohit Koli - Freelance Full Stack Developer, React, Next.js, PHP and Laravel",
+        type: "image/png",
       },
     ],
   },
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mohit Koli - Professional Web Developer | Coder | Programmer",
     description: "Expert Web Developer and Full Stack Programmer with 2+ years of experience. High-end React and scalable PHP/Laravel engineering.",
-    images: ["/assets/mohit-koli-profile-photo.jpg"],
+    images: ["/assets/og-default.png"],
     creator: "@mohitko86979490",
     site: "@mohitko86979490",
   },
@@ -76,6 +79,17 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/*
+          Impact site verification. Written as raw JSX rather than through the Metadata
+          API because Impact checks for `value="..."` — Next's `other` metadata field
+          always emits `content="..."`, which fails their verification.
+        */}
+        <meta
+          {...({
+            name: "impact-site-verification",
+            value: "68d8ceb6-d062-4858-a19b-a815d5fea349",
+          } as React.MetaHTMLAttributes<HTMLMetaElement>)}
+        />
         {/* Scroll-reveal is progressive enhancement: without JS the content is shown as-is. */}
         <noscript>
           <style>{".reveal{opacity:1!important;transform:none!important}"}</style>

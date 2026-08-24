@@ -30,13 +30,13 @@ export const metadata: Metadata = {
             "Hostinger WordPress hosting in India from ₹139/mo — real-world speed, best plan for blog vs WooCommerce, the renewal trap and free migration, before you pay.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/hostinger-wordpress-hosting-india-2026.svg", width: 1200, height: 630, alt: "Hostinger WordPress hosting India 2026 review" }],
+        images: [{ url: "/assets/blog/hostinger-wordpress-hosting-india-2026.png", width: 1200, height: 630, alt: "Hostinger WordPress hosting India 2026 review" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Hostinger WordPress Hosting India 2026: ₹139/mo Real Review",
         description: "Real-world WP speed, best plan for blog vs WooCommerce, price list, renewal trap and free migration — before you pay.",
-        images: ["/assets/blog/hostinger-wordpress-hosting-india-2026.svg"],
+        images: ["/assets/blog/hostinger-wordpress-hosting-india-2026.png"],
     },
 };
 
@@ -82,7 +82,7 @@ const jsonLd = [
         headline: "Hostinger WordPress Hosting India 2026: ₹139/mo Real Review",
         description:
             "Hostinger WordPress hosting in India from ₹139/mo — real-world speed, best plan for blog vs WooCommerce, the renewal trap and free migration, before you pay.",
-        image: "https://mohitkoli.in/assets/blog/hostinger-wordpress-hosting-india-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/hostinger-wordpress-hosting-india-2026.png",
         datePublished: "2026-08-09T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",
         author: {

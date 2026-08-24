@@ -7,9 +7,9 @@ const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/cheap-web-hosting-under-200-india";
 
 export const metadata: Metadata = {
-    title: "Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks",
+    title: "Cheap Web Hosting Under ₹200/Month in India (2026)",
     description:
-        "Cheap web hosting under ₹200/month in India, price-checked Aug 2026 — 5 real picks: what ₹99, ₹139 & ₹199 buy, who gives a free domain, and the renewal trap.",
+        "Cheap web hosting under ₹200/month in India — 5 real picks, what ₹99, ₹139 and ₹199 actually buy, and the renewal trap. Price-checked Aug 2026.",
     keywords: [
         "cheap web hosting india",
         "cheap web hosting under 200 india",
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
             "5 real under-₹200 hosting options in India compared — price, renewal, storage, free domain — plus the corners budget hosts cut and the smartest pick per use case.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/cheap-web-hosting-under-200-india.svg", width: 1200, height: 630, alt: "Cheap web hosting under ₹200 per month in India" }],
+        images: [{ url: "/assets/blog/cheap-web-hosting-under-200-india.png", width: 1200, height: 630, alt: "Cheap web hosting under ₹200 per month in India" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks",
         description: "₹99 vs ₹139 vs ₹199 hosting compared honestly — renewal traps, free-domain math, and the smartest budget pick for 2026.",
-        images: ["/assets/blog/cheap-web-hosting-under-200-india.svg"],
+        images: ["/assets/blog/cheap-web-hosting-under-200-india.png"],
     },
 };
 
@@ -82,7 +82,7 @@ const jsonLd = [
         headline: "Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks",
         description:
             "Cheap web hosting under ₹200/month in India, price-checked Aug 2026 — 5 real picks: what ₹99, ₹139 & ₹199 buy, who gives a free domain, and the renewal trap.",
-        image: "https://mohitkoli.in/assets/blog/cheap-web-hosting-under-200-india.svg",
+        image: "https://mohitkoli.in/assets/blog/cheap-web-hosting-under-200-india.png",
         datePublished: "2026-08-09T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",
         author: {

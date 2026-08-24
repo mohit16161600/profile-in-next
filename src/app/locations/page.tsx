@@ -31,6 +31,7 @@ export const metadata: Metadata = {
             "Explore all service areas where Mohit Koli is the top freelance web developer in India, including Delhi, Mumbai, Bangalore, and more.",
         type: "website",
         url: "https://mohitkoli.in/locations",
+        images: [{ url: "/assets/og-default.png", width: 1200, height: 630, alt: "Service areas covered by Mohit Koli across India" }],
     },
     twitter: {
         card: "summary_large_image",

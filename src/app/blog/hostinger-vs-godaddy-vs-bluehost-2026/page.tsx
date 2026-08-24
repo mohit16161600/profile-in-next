@@ -7,9 +7,9 @@ const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-vs-godaddy-vs-bluehost-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger vs GoDaddy 2026: India Pricing From ₹139 (+Bluehost)",
+    title: "Hostinger vs GoDaddy vs Bluehost 2026: India Pricing",
     description:
-        "Hostinger vs GoDaddy in India 2026 — real prices from ₹139/mo, renewal traps, speed and support compared, plus Hostinger vs Bluehost. See who wins before you pay.",
+        "Hostinger vs GoDaddy in India 2026 — real prices from ₹139/mo, renewal traps, speed and support compared, plus Bluehost. See who wins.",
     keywords: [
         "hostinger vs godaddy",
         "godaddy vs hostinger",
@@ -28,13 +28,13 @@ export const metadata: Metadata = {
         description: "Hostinger vs GoDaddy head-to-head for India: real INR pricing, renewal traps, speed and support — plus Bluehost compared. One clear winner for 2026.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.svg", width: 1200, height: 630, alt: "Hostinger vs GoDaddy vs Bluehost comparison 2026" }],
+        images: [{ url: "/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.png", width: 1200, height: 630, alt: "Hostinger vs GoDaddy vs Bluehost comparison 2026" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Hostinger vs GoDaddy 2026: India Pricing From ₹139 (+Bluehost)",
         description: "Head-to-head for India: real INR pricing, renewal traps, speed and support — plus Bluehost compared.",
-        images: ["/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.svg"],
+        images: ["/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.png"],
     },
 };
 
@@ -84,7 +84,7 @@ const jsonLd = [
         headline: "Hostinger vs GoDaddy 2026: India Pricing From ₹139 (+Bluehost)",
         description:
             "Hostinger vs GoDaddy in India 2026 — real prices from ₹139/mo, renewal traps, speed and support compared, plus Hostinger vs Bluehost. See who wins before you pay.",
-        image: "https://mohitkoli.in/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.png",
         datePublished: "2026-06-27T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",
         author: {

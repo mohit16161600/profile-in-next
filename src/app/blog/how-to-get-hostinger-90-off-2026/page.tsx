@@ -7,9 +7,9 @@ const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/how-to-get-hostinger-90-off-2026";
 
 export const metadata: Metadata = {
-    title: "How to Get 90% OFF on Hostinger in 2026 (Step-by-Step Deal Guide)",
+    title: "How to Get Up to 90% OFF Hostinger in 2026 (Deal Guide)",
     description:
-        "Get up to 90% OFF Hostinger in 2026 by stacking the sale price with an extra 20% referral discount. Real July 2026 prices, savings tables, free domain trick, and a 7-step buying guide.",
+        "Get up to 90% OFF Hostinger in 2026 by stacking the sale price with a 20% referral discount. Real prices, savings tables and a 7-step buying guide.",
     keywords: [
         "hostinger 90 off",
         "hostinger 90 percent off",
@@ -24,24 +24,24 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "How to Get 90% OFF on Hostinger in 2026 (Step-by-Step Deal Guide)",
+        title: "How to Get Up to 90% OFF Hostinger in 2026 (Deal Guide)",
         description:
             "Stack Hostinger's sale price with an extra 20% referral discount and pay the lowest possible price. Real prices, real math, step-by-step.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/how-to-get-hostinger-90-off-2026.svg", width: 1200, height: 630, alt: "How to get 90% OFF on Hostinger in 2026" }],
+        images: [{ url: "/assets/blog/how-to-get-hostinger-90-off-2026.png", width: 1200, height: 630, alt: "How to get 90% OFF on Hostinger in 2026" }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "How to Get 90% OFF on Hostinger in 2026",
+        title: "How to Get Up to 90% OFF Hostinger in 2026",
         description: "The exact discount-stacking method: sale price + extra 20% referral discount + free domain. Step-by-step with real prices.",
-        images: ["/assets/blog/how-to-get-hostinger-90-off-2026.svg"],
+        images: ["/assets/blog/how-to-get-hostinger-90-off-2026.png"],
     },
 };
 
 const FAQ = [
     {
-        q: "How do I actually get 90% OFF on Hostinger?",
+        q: "How do I actually get the maximum Hostinger discount?",
         a: "Stack two discounts: Hostinger's own sale (65–77% off, running almost year-round) plus the extra 20% referral discount that applies automatically when you buy through a referral link. On the Premium plan that turns ₹599/mo into roughly ₹111/mo — about 81% off. During mega sales like Black Friday the same stack reaches up to 90%.",
     },
     {
@@ -70,10 +70,10 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "How to Get 90% OFF on Hostinger in 2026 (Step-by-Step Deal Guide)",
+        headline: "How to Get Up to 90% OFF Hostinger in 2026 (Deal Guide)",
         description:
             "Stack Hostinger's sale price with the extra 20% referral discount to pay the lowest possible price in 2026. Real prices, savings tables, and a 7-step buying walkthrough.",
-        image: "https://mohitkoli.in/assets/blog/how-to-get-hostinger-90-off-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/how-to-get-hostinger-90-off-2026.png",
         datePublished: "2026-07-02T00:00:00.000Z",
         dateModified: "2026-07-17T00:00:00.000Z",
         author: {
@@ -103,7 +103,7 @@ const jsonLd = [
         itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
             { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.in/blog" },
-            { "@type": "ListItem", position: 3, name: "How to Get 90% OFF on Hostinger in 2026", item: CANONICAL },
+            { "@type": "ListItem", position: 3, name: "How to Get Up to 90% OFF Hostinger in 2026", item: CANONICAL },
         ],
     },
     {
@@ -194,7 +194,7 @@ export default function Hostinger90OffGuide() {
 
                     <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Hosting Deal · Updated July 2, 2026</p>
                     <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
-                        How to Get 90% OFF on Hostinger in 2026 (Step-by-Step Deal Guide)
+                        How to Get Up to 90% OFF Hostinger in 2026 (Deal Guide)
                     </h1>
                     <p className="text-lg text-gray-300 leading-8 mb-3">
                         Most people pay the &quot;sale price&quot; on Hostinger and think they got the best deal. They did not.
@@ -436,7 +436,7 @@ export default function Hostinger90OffGuide() {
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Deal</h3>
-                        <ShareButtons url={CANONICAL} title="How to Get 90% OFF on Hostinger in 2026 (Step-by-Step Deal Guide)" />
+                        <ShareButtons url={CANONICAL} title="How to Get Up to 90% OFF Hostinger in 2026 (Deal Guide)" />
                     </div>
                 </article>
             </main>

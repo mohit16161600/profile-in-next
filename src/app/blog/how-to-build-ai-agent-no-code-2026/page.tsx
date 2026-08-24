@@ -27,14 +27,14 @@ export const metadata: Metadata = {
       "Build a working AI agent without coding in 2026. Free beginner guide using Lindy, Botpress and AgentGPT with real templates like a support and WhatsApp bot.",
     url: "https://mohitkoli.in/blog/how-to-build-ai-agent-no-code-2026",
     type: "article",
-    images: ["/assets/blog/how-to-build-ai-agent-no-code-2026.svg"],
+    images: ["/assets/blog/how-to-build-ai-agent-no-code-2026.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "How to Build an AI Agent Without Coding in 2026 (Free)",
     description:
       "Build a working AI agent without coding in 2026. Free beginner guide using Lindy, Botpress and AgentGPT with real templates like a support and WhatsApp bot.",
-    images: ["/assets/blog/how-to-build-ai-agent-no-code-2026.svg"],
+    images: ["/assets/blog/how-to-build-ai-agent-no-code-2026.png"],
   },
 };
 
@@ -96,7 +96,7 @@ export default function BuildAIAgentNoCode2026() {
     headline: "How to Build an AI Agent Without Coding in 2026 (Free)",
     description:
       "Build a working AI agent without coding in 2026. Free beginner guide using Lindy, Botpress and AgentGPT with real templates like a support and WhatsApp bot.",
-    image: "https://mohitkoli.in/assets/blog/how-to-build-ai-agent-no-code-2026.svg",
+    image: "https://mohitkoli.in/assets/blog/how-to-build-ai-agent-no-code-2026.png",
     datePublished: "2026-06-06",
     dateModified: "2026-06-06",
     author: {

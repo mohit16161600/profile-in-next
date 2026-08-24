@@ -27,14 +27,14 @@ export const metadata: Metadata = {
       "DeepSeek vs ChatGPT 2026 compared on speed, reasoning, coding, cost and privacy. See which free AI wins for students and everyday users in India and beyond.",
     url: "https://mohitkoli.in/blog/deepseek-vs-chatgpt-2026",
     type: "article",
-    images: ["/assets/blog/deepseek-vs-chatgpt-2026.svg"],
+    images: ["/assets/blog/deepseek-vs-chatgpt-2026.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "DeepSeek vs ChatGPT 2026: Which Free AI Is Better?",
     description:
       "DeepSeek vs ChatGPT 2026 compared on speed, reasoning, coding, cost and privacy. See which free AI wins for students and everyday users in India and beyond.",
-    images: ["/assets/blog/deepseek-vs-chatgpt-2026.svg"],
+    images: ["/assets/blog/deepseek-vs-chatgpt-2026.png"],
   },
 };
 
@@ -96,7 +96,7 @@ export default function DeepSeekVsChatGPT2026() {
     headline: "DeepSeek vs ChatGPT 2026: Which Free AI Is Better?",
     description:
       "DeepSeek vs ChatGPT 2026 compared on speed, reasoning, coding, cost and privacy. See which free AI wins for students and everyday users in India and beyond.",
-    image: "https://mohitkoli.in/assets/blog/deepseek-vs-chatgpt-2026.svg",
+    image: "https://mohitkoli.in/assets/blog/deepseek-vs-chatgpt-2026.png",
     datePublished: "2026-06-08",
     dateModified: "2026-06-08",
     author: {

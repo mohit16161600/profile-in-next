@@ -8,9 +8,9 @@ const INSTAGRAM_URL = "https://www.instagram.com/beyondz900/";
 const CANONICAL = "https://mohitkoli.in/blog/beyondz900-riding-vlogs";
 
 export const metadata: Metadata = {
-    title: "BeyondZ900 Riding Vlogs: Daily Rides, Road Trips & Why This Channel Is Worth Following",
+    title: "BeyondZ900 Riding Vlogs: Why the Channel Is Worth It",
     description:
-        "BeyondZ900 is a rider documenting daily rides and road trips on YouTube and Instagram. Full spotlight: what the channel is about, what makes riding vlogs India's most authentic content genre, how to support small motovloggers, and how to start your own riding channel.",
+        "BeyondZ900 documents daily rides and road trips on YouTube and Instagram. What the channel is about, why riding vlogs work, and how to start your own.",
     keywords: [
         "BeyondZ900",
         "BeyondZ900 youtube",
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
             "A rider documenting daily rides and road trips on YouTube and Instagram — plus a complete look at why riding vlogs are India's most authentic content genre.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/beyondz900-riding-vlogs.svg", width: 1200, height: 630, alt: "BeyondZ900 — riding vlogs, daily rides and road trips" }],
+        images: [{ url: "/assets/blog/beyondz900-riding-vlogs.png", width: 1200, height: 630, alt: "BeyondZ900 — riding vlogs, daily rides and road trips" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "BeyondZ900: Riding Vlogs, Daily Rides & Road Trips",
         description: "What the BeyondZ900 channel is about, why riding vlogs are booming in India, and where to follow the ride.",
-        images: ["/assets/blog/beyondz900-riding-vlogs.svg"],
+        images: ["/assets/blog/beyondz900-riding-vlogs.png"],
     },
 };
 
@@ -90,7 +90,7 @@ const jsonLd = [
         headline: "BeyondZ900 Riding Vlogs: Daily Rides, Road Trips & Why This Channel Is Worth Following",
         description:
             "BeyondZ900 is a rider documenting daily rides and road trips on YouTube and Instagram. What the channel is about, why riding vlogs are booming in India, and how to follow.",
-        image: "https://mohitkoli.in/assets/blog/beyondz900-riding-vlogs.svg",
+        image: "https://mohitkoli.in/assets/blog/beyondz900-riding-vlogs.png",
         datePublished: "2026-08-09T00:00:00.000Z",
         dateModified: "2026-08-09T00:00:00.000Z",
         author: {

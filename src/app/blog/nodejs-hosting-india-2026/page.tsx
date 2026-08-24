@@ -7,9 +7,9 @@ const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/nodejs-hosting-india-2026";
 
 export const metadata: Metadata = {
-    title: "Node.js Hosting in India (2026): Why Shared Hosting Fails & What Works",
+    title: "Node.js Hosting in India 2026: VPS vs Serverless",
     description:
-        "A full-stack developer's guide to hosting Node.js apps in India — why shared hosting can't run Node, VPS vs serverless vs PaaS compared with real INR costs, and the exact setup I use for client projects.",
+        "A developer's guide to Node.js hosting in India — why shared hosting can't run Node, VPS vs serverless vs PaaS with real INR costs, and my setup.",
     keywords: [
         "nodejs hosting india",
         "node js hosting india price",
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
             "VPS vs serverless vs PaaS for Node.js in India — real INR costs, when each fits, and a developer's production setup.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/nodejs-hosting-india-2026.svg", width: 1200, height: 630, alt: "Node.js hosting in India 2026 — VPS vs serverless comparison" }],
+        images: [{ url: "/assets/blog/nodejs-hosting-india-2026.png", width: 1200, height: 630, alt: "Node.js hosting in India 2026 — VPS vs serverless comparison" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Node.js Hosting in India 2026: What Actually Works",
         description: "Why shared hosting can't run Node, VPS vs serverless with INR pricing, and a production-tested setup.",
-        images: ["/assets/blog/nodejs-hosting-india-2026.svg"],
+        images: ["/assets/blog/nodejs-hosting-india-2026.png"],
     },
 };
 
@@ -73,7 +73,7 @@ const jsonLd = [
         headline: "Node.js Hosting in India (2026): Why Shared Hosting Fails & What Works",
         description:
             "A developer's guide to Node.js hosting in India — why shared hosting can't run Node, VPS vs serverless vs PaaS with INR costs, and a production deployment recipe.",
-        image: "https://mohitkoli.in/assets/blog/nodejs-hosting-india-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/nodejs-hosting-india-2026.png",
         datePublished: "2026-08-09T00:00:00.000Z",
         dateModified: "2026-08-09T00:00:00.000Z",
         author: {

@@ -27,14 +27,14 @@ export const metadata: Metadata = {
       "What are AI agents? This 2026 beginner guide explains how AI agents work, real examples, top tools and how to start using them, in plain simple language.",
     url: "https://mohitkoli.in/blog/what-are-ai-agents-2026-guide",
     type: "article",
-    images: ["/assets/blog/what-are-ai-agents-2026-guide.svg"],
+    images: ["/assets/blog/what-are-ai-agents-2026-guide.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "What Are AI Agents? The Complete 2026 Beginner Guide",
     description:
       "What are AI agents? This 2026 beginner guide explains how AI agents work, real examples, top tools and how to start using them, in plain simple language.",
-    images: ["/assets/blog/what-are-ai-agents-2026-guide.svg"],
+    images: ["/assets/blog/what-are-ai-agents-2026-guide.png"],
   },
 };
 
@@ -92,7 +92,7 @@ export default function WhatAreAIAgents2026Guide() {
 
   const canonical = "https://mohitkoli.in/blog/what-are-ai-agents-2026-guide";
   const imageUrl =
-    "https://mohitkoli.in/assets/blog/what-are-ai-agents-2026-guide.svg";
+    "https://mohitkoli.in/assets/blog/what-are-ai-agents-2026-guide.png";
 
   return (
     <main className="pt-28 pb-20 bg-[#040404] text-white">

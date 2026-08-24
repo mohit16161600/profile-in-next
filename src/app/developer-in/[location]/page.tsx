@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import About from "@/components/About";
 import Contact from "@/components/Contact";
-import Experience from "@/components/Experience";
 import InfiniteTechMarquee from "@/components/InfiniteTechMarquee";
 import LocationHero from "@/components/LocationHero";
-import Projects from "@/components/Projects";
-import Qualification from "@/components/Qualification";
-import Skills from "@/components/Skills";
 import { getLocationBySlug, getRelatedLocations, SEO_LOCATIONS } from "@/data/locations";
 
 export const dynamicParams = false;
@@ -27,8 +22,13 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
         return {};
     }
 
-    const title = `Web Developer in ${locationData.name} | Best Freelance Web Developer | Mohit Koli`;
-    const description = `Hire the best web developer and freelancer in ${locationData.name} for ${locationData.serviceFocus}. Serving clients across ${locationData.region} with React, Next.js, PHP, and Laravel expertise.`;
+    // Kept under ~60 chars so the city — the part that actually matches the query —
+    // survives Google's truncation. The old template spent 40 chars on
+    // "| Best Freelance Web Developer | Mohit Koli" and got cut on every city.
+    const title = `Freelance Web Developer in ${locationData.name} | Mohit Koli`;
+    // Under ~160 chars even for the longest serviceFocus. The region clause was
+    // dropped: it pushed every city to 175-193 and repeated what serviceFocus says.
+    const description = `Freelance web developer in ${locationData.name} for ${locationData.serviceFocus}. React, Next.js, PHP and Laravel.`;
     const canonical = `https://mohitkoli.in/developer-in/${locationData.slug}`;
 
     return {
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
             type: "website",
             images: [
                 {
-                    url: "/assets/mohit-koli-profile-photo.jpg",
+                    url: "/assets/og-default.png",
                     width: 1200,
                     height: 630,
                     alt: `Mohit Koli web development services in ${locationData.name}`,
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
             card: "summary_large_image",
             title,
             description,
-            images: ["/assets/mohit-koli-profile-photo.jpg"],
+            images: ["/assets/og-default.png"],
         },
     };
 }
@@ -157,9 +157,12 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
                     <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr]">
                         <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
                             <p className="text-sm uppercase tracking-[0.3em] text-primary-400">Web development in {locationData.name}</p>
-                            <h1 className="mt-4 text-3xl md:text-4xl font-bold text-white">
+                            {/* h2, not h1 — LocationHero already owns this page's single h1.
+                                Two h1s split the primary heading signal for the exact query
+                                these pages target. */}
+                            <h2 className="mt-4 text-3xl md:text-4xl font-bold text-white">
                                 Freelance Web Developer in {locationData.name}
-                            </h1>
+                            </h2>
                             <p className="mt-4 text-lg leading-8 text-gray-300">
                                 {locationData.intro}
                             </p>
@@ -210,21 +213,61 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
                 </div>
             </section>
 
-            <section aria-label="About Mohit Koli">
-                <About />
+            {/*
+              About / Qualification / Experience / Skills / Projects used to render here.
+              They are verbatim copies of what `/` and `/profile` already publish, and
+              rendering them on all 10 city pages made 38 of every page's 58 sentences
+              byte-identical to the other nine — the city-specific writing above was
+              outnumbered 2:1 by boilerplate. The credential summary below carries the
+              same trust signals in a few lines and links to the canonical long versions.
+            */}
+            <section className="py-16 border-t border-white/5" aria-labelledby="credentials-title">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-3xl">
+                        <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-4">Who you&apos;re hiring</p>
+                        <h2 id="credentials-title" className="text-3xl md:text-4xl font-bold text-white">
+                            Working with {locationData.name} clients since 2022
+                        </h2>
+                        <p className="mt-5 text-lg leading-8 text-gray-300">
+                            I&apos;m Mohit Koli, a full stack developer building with Next.js, React, PHP and
+                            Laravel. Day to day I ship production dashboards and workflow systems as Senior
+                            Web Developer at Sheopals Pvt Ltd, and take on {locationData.serviceFocus} for
+                            clients across {locationData.region} independently.
+                        </p>
+                    </div>
+
+                    <dl className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                        {[
+                            ["2+ years", "Shipping production web apps"],
+                            ["20+ projects", "Delivered end to end"],
+                            ["B.Tech CSE", "BPIT, GGSIPU affiliated"],
+                            ["Next.js + Laravel", "Primary production stack"],
+                        ].map(([value, label]) => (
+                            <div key={label} className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                                <dt className="text-2xl font-bold text-white">{value}</dt>
+                                <dd className="mt-2 text-sm text-gray-400">{label}</dd>
+                            </div>
+                        ))}
+                    </dl>
+
+                    <p className="mt-8 text-gray-400">
+                        Full background on the{" "}
+                        <Link href="/profile" className="text-primary-400 hover:text-primary-300">
+                            profile page
+                        </Link>
+                        , the complete{" "}
+                        <Link href="/services" className="text-primary-400 hover:text-primary-300">
+                            services list
+                        </Link>
+                        , and a detailed{" "}
+                        <Link href="/projects/sheopals-crm" className="text-primary-400 hover:text-primary-300">
+                            CRM case study
+                        </Link>
+                        .
+                    </p>
+                </div>
             </section>
-            <div className="content-auto">
-                <Qualification />
-            </div>
-            <div className="content-auto">
-                <Experience />
-            </div>
-            <div className="content-auto">
-                <Skills />
-            </div>
-            <div className="content-auto">
-                <Projects />
-            </div>
+
             <div className="content-auto">
                 <Contact />
             </div>

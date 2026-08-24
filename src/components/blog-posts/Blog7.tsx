@@ -87,7 +87,7 @@ export default function Blog7() {
                <strong>Short answer: yes, learning React is worth it in 2026 — but only if your goal is frontend jobs, freelance web work, or serious full-stack products, and only if you learn it on top of solid JavaScript.</strong> React is no longer the newest or the simplest option, yet it still has the largest hiring ecosystem, the deepest library support, and the clearest path into Next.js and React Native. The honest nuance: React alone is not enough anymore. In 2026, employers hire for React plus TypeScript plus a framework like Next.js, not React in isolation.
             </p>
             <p className="text-gray-300 mb-4 leading-relaxed">
-               Even with Svelte 5, Vue 4, and Solid pushing fresh ideas into frontend development, React continues to dominate where it matters most: hiring demand, ecosystem depth, long-term maintainability, and production adoption.
+               Even with Svelte 5, Vue 3.5, and Solid pushing fresh ideas into frontend development, React continues to dominate where it matters most: hiring demand, ecosystem depth, long-term maintainability, and production adoption.
             </p>
             <p className="text-gray-300 mb-4 leading-relaxed">
                The better question is not whether React is good — it is whether React is the smartest place to spend the next six months of your learning time. That depends far less on the framework than on what you actually want out of it, which is why this guide spends as much time on who should skip React as on who should learn it.
@@ -189,7 +189,7 @@ export default function Blog7() {
                         <th className="px-4 py-3 font-semibold">Feature</th>
                         <th className="px-4 py-3 font-semibold">React 2026</th>
                         <th className="px-4 py-3 font-semibold">Svelte 5+</th>
-                        <th className="px-4 py-3 font-semibold">Vue 4</th>
+                        <th className="px-4 py-3 font-semibold">Vue 3.5</th>
                         <th className="px-4 py-3 font-semibold">Solid</th>
                      </tr>
                   </thead>

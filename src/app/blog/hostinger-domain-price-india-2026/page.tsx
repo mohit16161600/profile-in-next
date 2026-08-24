@@ -7,7 +7,7 @@ const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-domain-price-india-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger Domain Price in India 2026: .in from ₹99, .com ₹149",
+    title: "Hostinger Domain Price India 2026: .in ₹99, .com ₹149",
     description:
         "Hostinger domain price in India 2026: .in from ₹99, .com ₹149 first year. Real renewal price list, the free-domain trick, and what to check before you pay.",
     keywords: [
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
             "Real .in and .com prices in India — first-year vs renewal for every popular extension, the free-domain trick, and the renewal maths before you pay.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/hostinger-domain-price-india-2026.svg", width: 1200, height: 630, alt: "Hostinger domain price in India 2026 — .com, .in, .store" }],
+        images: [{ url: "/assets/blog/hostinger-domain-price-india-2026.png", width: 1200, height: 630, alt: "Hostinger domain price in India 2026 — .com, .in, .store" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Hostinger Domain Price in India 2026 (.in ₹99, .com ₹149)",
         description: "Real registration vs renewal costs for .in, .com, .store and more, the free-domain trick, and the cheapest way to register a domain in India.",
-        images: ["/assets/blog/hostinger-domain-price-india-2026.svg"],
+        images: ["/assets/blog/hostinger-domain-price-india-2026.png"],
     },
 };
 
@@ -92,7 +92,7 @@ const jsonLd = [
         headline: "Hostinger Domain Price in India 2026: .in from ₹99, .com ₹149",
         description:
             "Hostinger domain price in India 2026: .in from ₹99, .com ₹149 first year. Real renewal price list, the free-domain trick, and what to check before you pay.",
-        image: "https://mohitkoli.in/assets/blog/hostinger-domain-price-india-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/hostinger-domain-price-india-2026.png",
         datePublished: "2026-07-17T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",
         author: {

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Web Development Services | Best Freelancer Web Developer | Mohit Koli",
+  title: "Web Development Services in India | Mohit Koli",
   description:
-    "Explore services from India’s best freelance web developer. Specializing in React, Next.js, PHP, Laravel, performance optimization, and SEO-friendly web solutions.",
+    "Web development services from a freelance developer in India — React, Next.js, PHP, Laravel, performance optimization and SEO-friendly builds.",
   keywords: [
     "web development services",
     "best web developer",
@@ -25,9 +25,11 @@ export const metadata: Metadata = {
       "A complete list of web development services from India’s top freelance web developer: product websites, SaaS apps, landing pages, and SEO-first builds.",
     url: "https://mohitkoli.in/services",
     type: "website",
+    images: [{ url: "/assets/og-default.png", width: 1200, height: 630, alt: "Web development services by Mohit Koli" }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/assets/og-default.png"],
     title: "Web Development Services | Best Freelance Web Developer | Mohit Koli",
     description:
       "India’s best freelance web developer in React, Next.js, PHP and Laravel. Discover services, success cases, and local service-area pages.",

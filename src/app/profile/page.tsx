@@ -39,7 +39,7 @@ const galleryImages = [
 ];
 
 export const metadata = {
-    title: "Mohit Koli | Best Freelance Web Developer Profile & Portfolio",
+    title: "Mohit Koli — Freelance Web Developer Profile",
     description: "Official profile of Mohit Koli, the best freelance web developer in India. Full-stack expertise in React, Next.js, and Laravel with proven client impact.",
     keywords: [
         "best web developer profile",

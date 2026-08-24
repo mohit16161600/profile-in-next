@@ -30,13 +30,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
     description: "Copy the ChatGPT god mode prompt (2026) and unlock 15 hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
-    images: ["/assets/blog/chatgpt-hidden-features-hacks.svg"],
+    images: ["/assets/blog/chatgpt-hidden-features-hacks.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
     description: "Copy the ChatGPT god mode prompt (2026) and unlock 15 hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
-    images: ["/assets/blog/chatgpt-hidden-features-hacks.svg"],
+    images: ["/assets/blog/chatgpt-hidden-features-hacks.png"],
   },
 };
 
@@ -99,7 +99,7 @@ export default function ChatGPTGodModeHacks() {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             "headline": "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
-            "image": "https://mohitkoli.in/assets/blog/chatgpt-hidden-features-hacks.svg",
+            "image": "https://mohitkoli.in/assets/blog/chatgpt-hidden-features-hacks.png",
             "author": {
               "@type": "Person",
               "name": "Mohit Koli"

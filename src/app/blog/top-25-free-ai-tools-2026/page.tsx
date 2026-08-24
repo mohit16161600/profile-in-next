@@ -4,7 +4,7 @@ import Link from "next/link";
 import PrintButton from "@/components/PrintButton";
 
 export const metadata: Metadata = {
-  title: "25 Free AI Tools That Will Make You Quit Your Paid Subscriptions in 2026",
+  title: "25 Free AI Tools That Replace Paid Subscriptions (2026)",
   description: "Stop wasting money! Discover the top 25 free AI tools in 2026 that replace expensive software like Photoshop, Midjourney, and Canva Pro. Save thousands today!",
   keywords: [
     "free ai tools",
@@ -474,7 +474,33 @@ export default function Top25FreeAITools2026() {
               }
             },
             "datePublished": "2026-05-06",
+            "dateModified": "2026-05-06",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://mohitkoli.in/blog/top-25-free-ai-tools-2026"
+            },
+            "articleSection": "AI Tools",
+            "inLanguage": "en-IN",
             "description": "Stop wasting money! Discover the top 25 free AI tools in 2026 that replace expensive software like Photoshop, Midjourney, and Canva Pro."
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mohitkoli.in/" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mohitkoli.in/blog" },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "25 Free AI Tools 2026",
+                "item": "https://mohitkoli.in/blog/top-25-free-ai-tools-2026"
+              }
+            ]
           }),
         }}
       />

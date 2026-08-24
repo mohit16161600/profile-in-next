@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Sheopals CRM Case Study | Custom CRM Development by Mohit Koli",
+    title: "Sheopals CRM Case Study | Mohit Koli",
     description:
-        "Explore the Sheopals CRM case study by Mohit Koli, a custom CRM and operations dashboard built with Next.js, role-based access, workflow automation, webhook integrations, and scalable internal tooling.",
+        "The Sheopals CRM case study — a custom CRM and operations dashboard built with Next.js, role-based access, workflow automation and webhook integrations.",
     keywords: [
         "Sheopals CRM case study",
         "custom CRM development",
@@ -24,6 +24,7 @@ export const metadata: Metadata = {
             "A custom CRM and internal operations platform built for Sheopals with Next.js, automation workflows, role-based access, and business-critical integrations.",
         url: "https://mohitkoli.in/projects/sheopals-crm",
         type: "article",
+        images: [{ url: "/assets/og-default.png", width: 1200, height: 630, alt: "Sheopals CRM case study by Mohit Koli" }],
     },
     twitter: {
         card: "summary_large_image",

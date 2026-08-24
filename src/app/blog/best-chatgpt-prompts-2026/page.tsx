@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "100+ Best ChatGPT Prompts for 2026 (Copy & Paste List)",
+  title: "70+ Best ChatGPT Prompts for 2026 (Copy & Paste List)",
   description:
-    "Get 100+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
+    "Get 70+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
   keywords: [
     "best chatgpt prompts",
     "chatgpt prompts 2026",
@@ -22,19 +22,19 @@ export const metadata: Metadata = {
     canonical: "https://mohitkoli.in/blog/best-chatgpt-prompts-2026",
   },
   openGraph: {
-    title: "100+ Best ChatGPT Prompts for 2026 (Copy & Paste List)",
+    title: "70+ Best ChatGPT Prompts for 2026 (Copy & Paste List)",
     description:
-      "Get 100+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
+      "Get 70+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
     url: "https://mohitkoli.in/blog/best-chatgpt-prompts-2026",
     type: "article",
-    images: ["/assets/blog/best-chatgpt-prompts-2026.svg"],
+    images: ["/assets/blog/best-chatgpt-prompts-2026.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "100+ Best ChatGPT Prompts for 2026 (Copy & Paste List)",
+    title: "70+ Best ChatGPT Prompts for 2026 (Copy & Paste List)",
     description:
-      "Get 100+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
-    images: ["/assets/blog/best-chatgpt-prompts-2026.svg"],
+      "Get 70+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
+    images: ["/assets/blog/best-chatgpt-prompts-2026.png"],
   },
 };
 
@@ -83,23 +83,23 @@ export default function BestChatGPTPrompts2026() {
   ];
 
   const keyTakeaways = [
-    "Over 100 copy-paste prompts are organized by goal: work, study, money, marketing, coding, and writing.",
+    "70+ copy-paste prompts organised by goal: work, study, money, marketing, coding, and writing.",
     "Every prompt follows a role-context-format-constraints structure you can reuse anywhere.",
     "Prompts work on free ChatGPT and transfer to Gemini, Claude, and DeepSeek.",
     "Use bracketed placeholders to customize each prompt to your situation.",
     "Save winners in a personal prompt library and refine them with follow-ups.",
   ];
 
-  const title = "100+ Best ChatGPT Prompts for 2026 (Copy & Paste List)";
+  const title = "70+ Best ChatGPT Prompts for 2026 (Copy & Paste List)";
   const canonical = "https://mohitkoli.in/blog/best-chatgpt-prompts-2026";
-  const image = "https://mohitkoli.in/assets/blog/best-chatgpt-prompts-2026.svg";
+  const image = "https://mohitkoli.in/assets/blog/best-chatgpt-prompts-2026.png";
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: title,
     description:
-      "Get 100+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
+      "Get 70+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
     image: image,
     datePublished: "2026-06-12",
     dateModified: "2026-06-12",
@@ -200,7 +200,7 @@ export default function BestChatGPTPrompts2026() {
               Mega List
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-violet-400 via-purple-500 to-pink-600 bg-clip-text text-transparent">
-              100+ Best ChatGPT Prompts 2026
+              70+ Best ChatGPT Prompts 2026
             </h1>
             <div className="flex items-center justify-center gap-4 text-gray-400 text-sm mb-2">
               <span>By Mohit Koli</span>
@@ -225,7 +225,7 @@ export default function BestChatGPTPrompts2026() {
 
         <section className="prose prose-invert max-w-none">
           <p className="text-xl text-gray-300 leading-relaxed mb-8">
-            The difference between a mediocre ChatGPT answer and a jaw-dropping one is rarely the model — it is the <strong>prompt</strong>. In 2026, ChatGPT is smarter than ever, but it still does exactly what you tell it. This is a curated mega list of <strong>100+ copy-and-paste prompts</strong> grouped by goal: productivity, study, money, marketing, coding, and writing. Each one uses bracketed placeholders so you can swap in your own details in seconds.
+            The difference between a mediocre ChatGPT answer and a jaw-dropping one is rarely the model — it is the <strong>prompt</strong>. In 2026, ChatGPT is smarter than ever, but it still does exactly what you tell it. This is a curated mega list of <strong>70+ copy-and-paste prompts</strong> grouped by goal: productivity, study, money, marketing, coding, and writing. Each one uses bracketed placeholders so you can swap in your own details in seconds.
           </p>
 
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-10 backdrop-blur-sm">

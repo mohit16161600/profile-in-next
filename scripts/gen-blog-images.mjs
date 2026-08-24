@@ -1,5 +1,11 @@
 // Generates professional branded SVG hero images for blog posts -> public/assets/blog/<slug>.svg
 // Usage: BLOG_IMG_DATA='[{"slug":"...","title":"<short hero title>","chip":"<category label>","cat":"hosting|ai|dev|money"}]' node scripts/gen-blog-images.mjs
+//
+// ALWAYS run `npm run images:raster` afterwards. The SVG is the on-page hero, but no
+// social platform renders an SVG og:image — Facebook, WhatsApp, X, LinkedIn and
+// Pinterest all fall back to a bare link, and Google Discover needs a raster too.
+// rasterize-blog-images.mjs writes the <slug>.png twin that og:image, twitter:image
+// and the BlogPosting schema point at.
 // Design system: near-black editorial background, ONE accent hue per category (consistent
 // across the whole blog), ghosted line-art motif per category, strong typographic hierarchy.
 import { writeFileSync, mkdirSync } from "node:fs";

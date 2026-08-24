@@ -31,13 +31,13 @@ export const metadata: Metadata = {
             "A .com renews at ₹1,000–₹1,400 and hosting jumps 2–4× at GoDaddy. Check your real renewal cost, lower it, or move — the full playbook.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/godaddy-renewal-price-increase-india.svg", width: 1200, height: 630, alt: "GoDaddy domain renewal price increase in India explained" }],
+        images: [{ url: "/assets/blog/godaddy-renewal-price-increase-india.png", width: 1200, height: 630, alt: "GoDaddy domain renewal price increase in India explained" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "GoDaddy Domain Renewal Price India 2026: Why Cost Jumps 2–4×",
         description: "Why GoDaddy renewal cost jumps 2–4× in India, what a .com really renews at (₹1,000–₹1,400), and when transferring out is the smarter move.",
-        images: ["/assets/blog/godaddy-renewal-price-increase-india.svg"],
+        images: ["/assets/blog/godaddy-renewal-price-increase-india.png"],
     },
 };
 
@@ -83,7 +83,7 @@ const jsonLd = [
         headline: "GoDaddy Domain Renewal Price India 2026: Why Cost Jumps 2–4×",
         description:
             "GoDaddy domain renewal price in India 2026: .com renews at ₹1,000–₹1,400, hosting jumps 2–4×. Check your real renewal cost and cut it before you pay.",
-        image: "https://mohitkoli.in/assets/blog/godaddy-renewal-price-increase-india.svg",
+        image: "https://mohitkoli.in/assets/blog/godaddy-renewal-price-increase-india.png",
         datePublished: "2026-08-09T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",
         author: {

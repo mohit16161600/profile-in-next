@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: "Does Hostinger have a discount code in 2026?",
-    a: "Not in the way coupon sites imply. Hostinger's main price cut is not a code you type — it is the sale price attached to a plan and billing term, applied the moment you pick the 48-month option. The one code that does still do something on top of that is a referral code (mine is MOHITKOLI), which adds roughly an extra 20% off the already-discounted sale price.",
+    a: "Not in the way coupon sites imply. Hostinger's main price cut is not a code you type — it is the sale price attached to a plan and billing term, applied the moment you pick the 48-month option. What does still work on top of that is a referral code. I use two: MOHITKOLI is my personal one, and HOSTFIFTY is a general Hostinger referral code — both add roughly the same extra 20% off the already-discounted sale price. Use either; there is no third, fourth or 'exclusive' code that beats them.",
   },
   {
     q: "What is the difference between a Hostinger coupon code and a referral link?",
@@ -449,10 +449,10 @@ export default function HostingerDiscountCodeGuide() {
           {/* Final CTA */}
           <section className="mb-12">
             <div className="rounded-3xl border border-purple-500/40 bg-gradient-to-br from-purple-900/40 to-indigo-900/30 p-8 text-center">
-              <h2 className="text-3xl font-bold text-white mb-3">Stop hunting codes — there is only one</h2>
+              <h2 className="text-3xl font-bold text-white mb-3">Stop hunting codes — referral is the only kind that works</h2>
               <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
                 Sale price on the long term, plus the referral discount on top, plus a free domain and free SSL, inside
-                a 30-day money-back window. There is no secret fourth code, and anyone publishing one has not tested it.
+                a 30-day money-back window. Two referral codes do this — MOHITKOLI and HOSTFIFTY — and they stack the same amount. Anything beyond those, published as an 'exclusive coupon', has not been tested by whoever posted it.
               </p>
               <DealButton label="Open Hostinger With MOHITKOLI Applied →" />
             </div>

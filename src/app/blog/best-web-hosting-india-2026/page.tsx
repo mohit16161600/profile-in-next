@@ -33,13 +33,13 @@ export const metadata: Metadata = {
         description: "Speed, uptime, real INR pricing and renewal honesty — 7 hosts ranked for India with one clear #1 for beginners.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/best-web-hosting-india-2026.svg", width: 1200, height: 630, alt: "Best web hosting in India 2026 ranked list" }],
+        images: [{ url: "/assets/blog/best-web-hosting-india-2026.png", width: 1200, height: 630, alt: "Best web hosting in India 2026 ranked list" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹139/mo)",
         description: "The full ranked list with real INR prices, renewal traps and a clear #1 pick.",
-        images: ["/assets/blog/best-web-hosting-india-2026.svg"],
+        images: ["/assets/blog/best-web-hosting-india-2026.png"],
     },
 };
 
@@ -180,7 +180,7 @@ const jsonLd = [
         headline: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹139/mo)",
         description:
             "7 best web hosting services in India for 2026 ranked on speed, renewal traps and real INR prices from ₹139/mo — plus the cheapest reliable pick before you pay.",
-        image: "https://mohitkoli.in/assets/blog/best-web-hosting-india-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/best-web-hosting-india-2026.png",
         datePublished: "2026-06-30T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",
         author: {

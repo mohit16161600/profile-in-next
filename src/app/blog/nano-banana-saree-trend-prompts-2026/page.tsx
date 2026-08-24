@@ -27,14 +27,14 @@ export const metadata: Metadata = {
       "Try the viral Nano Banana saree trend free! Copy 12 tested Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
     url: "https://mohitkoli.in/blog/nano-banana-saree-trend-prompts-2026",
     type: "article",
-    images: ["/assets/blog/nano-banana-saree-trend-prompts-2026.svg"],
+    images: ["/assets/blog/nano-banana-saree-trend-prompts-2026.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Nano Banana Saree Trend: 12 Free Gemini Prompts (2026)",
     description:
       "Try the viral Nano Banana saree trend free! Copy 12 tested Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
-    images: ["/assets/blog/nano-banana-saree-trend-prompts-2026.svg"],
+    images: ["/assets/blog/nano-banana-saree-trend-prompts-2026.png"],
   },
 };
 
@@ -159,7 +159,7 @@ export default function NanoBananaSareeTrendPrompts2026() {
             description:
               "Try the viral Nano Banana saree trend free! Copy 12 tested Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
             image:
-              "https://mohitkoli.in/assets/blog/nano-banana-saree-trend-prompts-2026.svg",
+              "https://mohitkoli.in/assets/blog/nano-banana-saree-trend-prompts-2026.png",
             datePublished: "2026-06-18",
             dateModified: "2026-06-18",
             author: {
@@ -338,10 +338,10 @@ export default function NanoBananaSareeTrendPrompts2026() {
             studio shoot, complete with soft lighting, vintage color grading, and a dreamy
             backdrop, without ever booking a photographer. If you are brand new to AI image
             tools, our{" "}
-            <Link href="/blog/best-ai-image-generators-2026" className="text-rose-400 underline hover:text-rose-300">
-              best AI image generators guide
+            <Link href="/blog/viral-chatgpt-image-prompts-2026" className="text-rose-400 underline hover:text-rose-300">
+              viral ChatGPT image prompts guide
             </Link>{" "}
-            is a friendly place to understand how these models work.
+            is a friendly place to see what these models can actually do.
           </p>
 
           <div className="bg-gradient-to-r from-rose-600/20 to-fuchsia-600/20 border-l-4 border-rose-500 p-6 my-8 rounded-r-2xl">
@@ -623,7 +623,7 @@ export default function NanoBananaSareeTrendPrompts2026() {
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
               <h3 className="text-xl font-bold mb-2 text-amber-400">Animate Into a Reel</h3>
-              <p className="text-gray-400 text-sm">Bring your saree photo to life with subtle motion using a free AI video tool. See our <Link href="/blog/best-free-ai-video-generators-2026" className="text-rose-400 underline hover:text-rose-300">best free AI video generators guide</Link>.</p>
+              <p className="text-gray-400 text-sm">Bring your saree photo to life with subtle motion using a free AI video tool. See our <Link href="/blog/best-ai-video-generators-2026" className="text-rose-400 underline hover:text-rose-300">best free AI video generators guide</Link>.</p>
             </div>
           </div>
           <p className="text-gray-300 mb-6">

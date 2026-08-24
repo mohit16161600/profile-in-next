@@ -27,14 +27,14 @@ export const metadata: Metadata = {
       "New to ChatGPT? This 2026 beginner guide shows how to sign up, write prompts, use voice, memory and free vs paid plans step by step. Start using ChatGPT today.",
     url: "https://mohitkoli.in/blog/how-to-use-chatgpt-beginners-2026",
     type: "article",
-    images: ["/assets/blog/how-to-use-chatgpt-beginners-2026.svg"],
+    images: ["/assets/blog/how-to-use-chatgpt-beginners-2026.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "How to Use ChatGPT in 2026: Complete Beginner Guide",
     description:
       "New to ChatGPT? This 2026 beginner guide shows how to sign up, write prompts, use voice, memory and free vs paid plans step by step. Start using ChatGPT today.",
-    images: ["/assets/blog/how-to-use-chatgpt-beginners-2026.svg"],
+    images: ["/assets/blog/how-to-use-chatgpt-beginners-2026.png"],
   },
 };
 
@@ -48,7 +48,7 @@ export default function HowToUseChatGPTBeginners2026() {
     {
       question: "What is the cheapest paid ChatGPT plan?",
       answer:
-        "In 2026 OpenAI offers ChatGPT Go, a low-cost plan launched at around $8/month in select regions including India, sitting below the pricier Plus plan.",
+        "In 2026 OpenAI offers ChatGPT Go, its cheapest paid tier, priced at ₹399/month in India — and from November 2025 OpenAI began offering Indian users 12 months of Go free, after which it auto-renews at ₹399/month unless cancelled. Check the official pricing page before you subscribe, as promotions change.",
     },
     {
       question: "Do I need to install an app?",
@@ -88,7 +88,7 @@ export default function HowToUseChatGPTBeginners2026() {
     headline: "How to Use ChatGPT in 2026: Complete Beginner Guide",
     description:
       "New to ChatGPT? This 2026 beginner guide shows how to sign up, write prompts, use voice, memory and free vs paid plans step by step. Start using ChatGPT today.",
-    image: "https://mohitkoli.in/assets/blog/how-to-use-chatgpt-beginners-2026.svg",
+    image: "https://mohitkoli.in/assets/blog/how-to-use-chatgpt-beginners-2026.png",
     datePublished: "2026-06-14",
     dateModified: "2026-06-14",
     author: {
@@ -444,7 +444,7 @@ export default function HowToUseChatGPTBeginners2026() {
             <p className="text-gray-300">
               <strong>My honest opinion:</strong> use the free plan for at least a
               week. If you find yourself hitting limits or wanting newer models, the{" "}
-              <strong>ChatGPT Go</strong> plan, which launched at roughly $8/month in
+              <strong>ChatGPT Go</strong> plan, priced at ₹399/month in India — and free for 12 months for Indian users under an offer that began in November 2025 — available in
               select regions including India, is a friendly middle step before
               jumping to Plus. Treat this as guidance, not a guarantee, since OpenAI
               adjusts plans and availability over time.

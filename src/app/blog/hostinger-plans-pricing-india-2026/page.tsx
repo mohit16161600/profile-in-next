@@ -38,13 +38,13 @@ export const metadata: Metadata = {
             "Premium ₹139, Business ₹199, Cloud ₹599/mo — the full India price list with renewal rates, term math, and which plan fits your project.",
         url: CANONICAL,
         type: "article",
-        images: [{ url: "/assets/blog/hostinger-plans-pricing-india-2026.svg", width: 1200, height: 630, alt: "Hostinger plans and price list in India 2026" }],
+        images: [{ url: "/assets/blog/hostinger-plans-pricing-india-2026.png", width: 1200, height: 630, alt: "Hostinger plans and price list in India 2026" }],
     },
     twitter: {
         card: "summary_large_image",
         title: "Hostinger Plans India 2026: ₹139–₹599 Full Price List",
         description: "Every Hostinger plan with real India pricing — intro vs renewal rates, monthly billing truth, KVM VPS specs, and which plan to buy.",
-        images: ["/assets/blog/hostinger-plans-pricing-india-2026.svg"],
+        images: ["/assets/blog/hostinger-plans-pricing-india-2026.png"],
     },
 };
 
@@ -102,7 +102,7 @@ const jsonLd = [
         headline: "Hostinger Plans India 2026: ₹139–₹599 Full Price List",
         description:
             "Hostinger plans & price list India 2026 — Premium ₹139, Business ₹199, Cloud ₹599/mo, real renewal rates, and the monthly-billing trap before you pay.",
-        image: "https://mohitkoli.in/assets/blog/hostinger-plans-pricing-india-2026.svg",
+        image: "https://mohitkoli.in/assets/blog/hostinger-plans-pricing-india-2026.png",
         datePublished: "2026-06-24T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",
         author: {

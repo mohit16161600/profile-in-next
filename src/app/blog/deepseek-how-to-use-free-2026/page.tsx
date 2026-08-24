@@ -27,14 +27,14 @@ export const metadata: Metadata = {
       "Learn how to use DeepSeek free in 2026: sign up, best uses, step-by-step reasoning and tips. A budget-friendly beginner guide to the free DeepSeek AI app.",
     url: "https://mohitkoli.in/blog/deepseek-how-to-use-free-2026",
     type: "article",
-    images: ["/assets/blog/deepseek-how-to-use-free-2026.svg"],
+    images: ["/assets/blog/deepseek-how-to-use-free-2026.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "DeepSeek AI: How to Use It Free in 2026 (Beginner Guide)",
     description:
       "Learn how to use DeepSeek free in 2026: sign up, best uses, step-by-step reasoning and tips. A budget-friendly beginner guide to the free DeepSeek AI app.",
-    images: ["/assets/blog/deepseek-how-to-use-free-2026.svg"],
+    images: ["/assets/blog/deepseek-how-to-use-free-2026.png"],
   },
 };
 
@@ -96,7 +96,7 @@ export default function DeepSeekHowToUseFree2026() {
     headline: "DeepSeek AI: How to Use It Free in 2026 (Beginner Guide)",
     description:
       "Learn how to use DeepSeek free in 2026: sign up, best uses, step-by-step reasoning and tips. A budget-friendly beginner guide to the free DeepSeek AI app.",
-    image: "https://mohitkoli.in/assets/blog/deepseek-how-to-use-free-2026.svg",
+    image: "https://mohitkoli.in/assets/blog/deepseek-how-to-use-free-2026.png",
     datePublished: "2026-06-10",
     dateModified: "2026-06-10",
     author: {

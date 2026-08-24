@@ -12,9 +12,9 @@ import HomeFaq from "@/components/HomeFaq";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Freelance Web Developer in India | Mohit Koli | Next.js, React, Laravel",
+  title: "Freelance Web Developer in India | Mohit Koli",
   description:
-    "Mohit Koli is a freelance web developer in India specializing in Next.js, React, PHP, and Laravel websites, dashboards, SEO-friendly business sites, and custom web applications.",
+    "Mohit Koli is a freelance web developer in India building Next.js, React, PHP and Laravel websites, dashboards and custom web applications.",
   keywords: [
     "freelance web developer in India",
     "full stack developer India",
@@ -39,6 +39,7 @@ export const metadata: Metadata = {
       "Freelance web developer building high-performance Next.js, React, and Laravel websites, dashboards, and SEO-friendly digital experiences for modern businesses.",
     url: "https://mohitkoli.in/",
     type: "website",
+    images: [{ url: "/assets/og-default.png", width: 1200, height: 630, alt: "Mohit Koli — freelance web developer in India" }],
   },
   twitter: {
     card: "summary_large_image",

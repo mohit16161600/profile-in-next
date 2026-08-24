@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
 
     const staticRoutes: MetadataRoute.Sitemap = [
-        { url: `${baseUrl}/`, lastModified: feedLastMod, changeFrequency: 'weekly', priority: 1.0 },
+        { url: baseUrl, lastModified: feedLastMod, changeFrequency: 'weekly', priority: 1.0 },
         { url: `${baseUrl}/profile`, lastModified: SECTION_PAGES_UPDATED, changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/services`, lastModified: SECTION_PAGES_UPDATED, changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/blog`, lastModified: feedLastMod, changeFrequency: 'weekly', priority: 0.9 },

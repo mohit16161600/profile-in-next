@@ -2,7 +2,7 @@ import { BLOG_POSTS } from "@/data/posts";
 import BlogIndex from "@/components/BlogIndex";
 
 export const metadata = {
-    title: "Blog | Mohit Koli — Web Hosting, AI Tools & Development Guides",
+    title: "Blog — Web Hosting, AI Tools & Dev Guides | Mohit Koli",
     description:
         "Practical guides on web hosting in India, AI tools, and full-stack development — written from real client projects by Mohit Koli, Senior Full Stack Developer.",
     keywords:
@@ -16,6 +16,7 @@ export const metadata = {
             "Practical guides on web hosting in India, AI tools, and full-stack development — from real client projects.",
         url: "https://mohitkoli.in/blog",
         type: "website",
+        images: [{ url: "/assets/og-default.png", width: 1200, height: 630, alt: "Mohit Koli blog — web hosting, AI tools and development guides" }],
     },
 };
 

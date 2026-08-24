@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
   description:
-    "Copy 30 tested viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
+    "Copy 30 tested viral ChatGPT image prompts for 2026 — action figure, Polaroid, caricature, toy and time-travel edits, plus a beginner formula.",
   keywords: [
     "viral chatgpt image prompts",
     "chatgpt image prompts 2026",
@@ -27,14 +27,14 @@ export const metadata: Metadata = {
       "Copy 30 tested viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
     url: "https://mohitkoli.in/blog/viral-chatgpt-image-prompts-2026",
     type: "article",
-    images: ["/assets/blog/viral-chatgpt-image-prompts-2026.svg"],
+    images: ["/assets/blog/viral-chatgpt-image-prompts-2026.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
     description:
       "Copy 30 tested viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
-    images: ["/assets/blog/viral-chatgpt-image-prompts-2026.svg"],
+    images: ["/assets/blog/viral-chatgpt-image-prompts-2026.png"],
   },
 };
 
@@ -98,7 +98,7 @@ export default function ViralChatGPTImagePrompts2026() {
     headline: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
     description:
       "Copy 30 tested viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
-    image: "https://mohitkoli.in/assets/blog/viral-chatgpt-image-prompts-2026.svg",
+    image: "https://mohitkoli.in/assets/blog/viral-chatgpt-image-prompts-2026.png",
     datePublished: "2026-06-16",
     dateModified: "2026-06-16",
     author: {
@@ -412,11 +412,11 @@ export default function ViralChatGPTImagePrompts2026() {
           <p className="text-gray-300 mb-6">
             Free accounts can create images but may hit a daily cap during heavy
             use. If you generate a lot, ChatGPT Go or Plus removes most of the
-            friction. Curious which other models can do this? Compare them in my{" "}
-            <Link href="/blog/best-ai-image-generators-2026" className="text-cyan-300 underline">
-              best AI image generators of 2026
+            friction. Curious what Google&apos;s image model can do with the same idea? See my{" "}
+            <Link href="/blog/nano-banana-saree-trend-prompts-2026" className="text-cyan-300 underline">
+              Nano Banana saree trend prompts
             </Link>{" "}
-            roundup.
+            walkthrough.
           </p>
 
           {/* Section 3 - Formula */}
