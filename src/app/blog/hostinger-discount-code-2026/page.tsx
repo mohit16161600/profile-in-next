@@ -1,283 +1,482 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import ShareButtons from "@/components/ShareButtons";
+
+const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
+const CANONICAL = "https://mohitkoli.in/blog/hostinger-discount-code-2026";
+const TITLE = "Hostinger Discount Code 2026: Do Coupon Codes Actually Work?";
+const DESCRIPTION =
+  "Do Hostinger discount codes actually work in 2026? The honest answer: most listed coupon codes are dead. Here is what really cuts your price at checkout.";
 
 export const metadata: Metadata = {
-  title: "Hostinger Discount Code India 2026 - Lowest Hosting Price Using Referral",
-  description:
-    "Hostinger discount code India 2026 se hosting lein sabse sasti price par. Limited offer - miss mat karo. Click karo referral link aur save karo.",
+  title: TITLE,
+  description: DESCRIPTION,
   keywords: [
-    "hostinger discount code India",
-    "cheap hosting India",
+    "hostinger discount code",
     "hostinger coupon code 2026",
-    "best web hosting for beginners",
-    "hostinger price India",
-    "hostinger offer today",
+    "hostinger promo code",
+    "hostinger referral code",
+    "does hostinger have a coupon code",
+    "hostinger discount code india",
+    "hostinger coupon code working",
+    "hostinger checkout discount",
   ],
   alternates: {
-    canonical: "https://mohitkoli.in/blog/hostinger-discount-code-2026",
+    canonical: CANONICAL,
+  },
+  openGraph: {
+    title: TITLE,
+    description:
+      "Most Hostinger coupon codes you find online are recycled and dead. Here is the difference between a coupon code and a referral link — and what actually lowers the price.",
+    url: CANONICAL,
+    type: "article",
+    images: [{ url: "/assets/hostinger-offer.webp", width: 1200, height: 593, alt: "Hostinger sale banner showing a discount headline and the referral code MOHITKOLI" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hostinger Discount Code 2026: Do Coupon Codes Actually Work?",
+    description: "Coupon code vs referral link, why coupon listicles are dead, and what the discount really looks like on the Hostinger India checkout.",
+    images: ["/assets/hostinger-offer.webp"],
   },
 };
 
-export default function HostingerDiscountBlog() {
+const FAQ = [
+  {
+    q: "Does Hostinger have a discount code in 2026?",
+    a: "Not in the way coupon sites imply. Hostinger's main price cut is not a code you type — it is the sale price attached to a plan and billing term, applied the moment you pick the 48-month option. The one code that does still do something on top of that is a referral code (mine is MOHITKOLI), which adds roughly an extra 20% off the already-discounted sale price.",
+  },
+  {
+    q: "What is the difference between a Hostinger coupon code and a referral link?",
+    a: "A coupon code is a marketing campaign string with an expiry date, and often a region or plan restriction — once the campaign ends the string stops working. A referral code is tied to an existing Hostinger customer account, does not run on a campaign calendar, and applies automatically when you open checkout through the referral link. That is why referral discounts still work months after published coupon codes have died.",
+  },
+  {
+    q: "Why doesn't the Hostinger coupon code I found on a coupon site work?",
+    a: "Because it almost certainly expired. Coupon aggregators scrape codes automatically, swap the year in the page title each January, and label everything 'verified today' without ever testing it. Many of those pages do not need the code to work at all — the click still sets their affiliate cookie, so they get paid whether or not your total drops by a rupee.",
+  },
+  {
+    q: "Where do I enter a Hostinger coupon code at checkout?",
+    a: "On the Hostinger checkout page there is a coupon or promo code field next to the order summary. If you arrived through a referral link the discount is already applied and you do not need to type anything. To confirm a code did something, watch the order summary total — if the number does not move when you apply the code, the code is dead.",
+  },
+  {
+    q: "Is MOHITKOLI a real working Hostinger coupon code?",
+    a: "It is a referral code, not a campaign coupon — and yes, it works, because referral codes are not tied to a sale window. You can type it into the coupon field manually, but opening Hostinger through the referral link applies it for you and avoids typos. It gives you the extra referral discount on top of whatever sale is currently running.",
+  },
+  {
+    q: "Can I stack a coupon code with the Hostinger sale price?",
+    a: "The referral discount stacks with the current sale — that is exactly what it is designed to do. Two campaign coupons will not stack with each other, and Hostinger's checkout accepts only one code in the coupon field, so there is no combination trick to hunt for. Sale price plus referral discount is the realistic floor.",
+  },
+  {
+    q: "Does a discount code lower my Hostinger renewal price?",
+    a: "No, and this is the part coupon pages never mention. Every code and sale applies to your first term only. Premium renews around ₹449/mo, Business around ₹649/mo and Cloud Startup around ₹1,599/mo regardless of what you paid initially. The only real defence is buying the longest term at the discounted rate so the renewal is four years away.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: TITLE,
+    description: DESCRIPTION,
+    image: "https://mohitkoli.in/assets/hostinger-offer.webp",
+    datePublished: "2026-03-24T00:00:00.000Z",
+    dateModified: "2026-08-24T00:00:00.000Z",
+    author: {
+      "@type": "Person",
+      name: "Mohit Koli",
+      url: "https://mohitkoli.in/profile",
+      jobTitle: "Senior Full Stack Developer",
+      sameAs: [
+        "https://github.com/mohit16161600",
+        "https://www.linkedin.com/in/mohit-koli-b47260213",
+        "https://x.com/mohitko86979490",
+      ],
+    },
+    publisher: {
+      "@type": "Person",
+      name: "Mohit Koli",
+      logo: { "@type": "ImageObject", url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg" },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
+    keywords: "hostinger discount code, hostinger coupon code 2026, hostinger promo code, hostinger referral code",
+    articleSection: "Hosting",
+    inLanguage: "en-IN",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.in/blog" },
+      { "@type": "ListItem", position: 3, name: "Hostinger Discount Code 2026", item: CANONICAL },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQ.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  },
+];
+
+const CODE_VS_LINK = [
+  {
+    label: "Campaign coupon code",
+    tone: "border-red-500/25 bg-red-500/[0.06]",
+    heading: "text-red-300",
+    points: [
+      "Created for one marketing push, with a hard expiry date baked in.",
+      "Often locked to a region, a single plan, or a first-time-buyer rule.",
+      "You type it into the coupon field yourself and hope the total moves.",
+      "Once the campaign closes the string is inert — permanently.",
+    ],
+  },
+  {
+    label: "Referral code / link",
+    tone: "border-green-500/25 bg-green-500/[0.06]",
+    heading: "text-green-300",
+    points: [
+      "Attached to a real Hostinger customer account, not a sale calendar.",
+      "Applies automatically the moment checkout opens through the link.",
+      "Sits on top of whatever public sale is running that week.",
+      "Still works months later, which is why this page can honestly publish one.",
+    ],
+  },
+];
+
+function DealButton({ label }: { label: string }) {
   return (
-    <main className="pt-28 pb-20 bg-[#040404] text-white">
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-          Hostinger Discount Code 2026 – Get Hosting at Lowest Price Using My Referral Link
-        </h1>
+    <a
+      href={REFERRAL_URL}
+      target="_blank"
+      rel="nofollow sponsored noopener"
+      className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
+    >
+      {label}
+    </a>
+  );
+}
 
-        <div className="relative w-full aspect-[1200/630] mb-6 rounded-2xl overflow-hidden border border-white/10">
-          <Image
-            src="/assets/hostinger-offer.webp"
-            alt="Hostinger Discount Code India 2026"
-            fill
-            className="object-contain"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-          <div className="absolute bottom-4 left-4 text-white z-10">
-            <p className="text-sm uppercase tracking-widest bg-red-600 text-white px-3 py-1 rounded-full inline-block mb-2">Limited Time Offer</p>
-            <h2 className="text-2xl font-bold">Hostinger discount code India 2026</h2>
+export default function HostingerDiscountCodeGuide() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <main className="pt-28 pb-20 bg-[#040404] text-white">
+        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb */}
+          <nav className="mb-6 text-sm text-gray-500">
+            <ol className="flex flex-wrap items-center gap-2">
+              <li><Link href="/" className="hover:text-primary-400">Home</Link></li>
+              <li>/</li>
+              <li><Link href="/blog" className="hover:text-primary-400">Blog</Link></li>
+              <li>/</li>
+              <li className="text-gray-300">Hostinger Discount Code 2026</li>
+            </ol>
+          </nav>
+
+          <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Coupon Codes · Updated: August 24, 2026</p>
+          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-4">
+            Hostinger Discount Code 2026 — Do Coupon Codes Actually Work?
+          </h1>
+          <p className="text-lg text-gray-300 leading-8 mb-3">
+            You came here for a string to paste into a coupon box. Here is the answer before you scroll:
+            <strong className="text-white"> Hostinger does not really run on coupon codes</strong>, and almost every
+            &quot;working code&quot; you will find on a deals site is a dead campaign string that has been recycled
+            through three different years. There is a genuine extra discount available — it just is not the kind of
+            thing you type. This page explains what the difference is, why it matters to your final total, and how to
+            tell in five seconds whether a code did anything at all.
+          </p>
+          <p className="text-xs text-gray-500 mb-8 border-l-2 border-white/10 pl-3">
+            Disclosure: links on this page use my Hostinger referral code — you get an extra discount, I earn a small
+            commission at no extra cost to you. Prices quoted below were checked on the Hostinger India storefront in
+            July 2026 and move with Hostinger&apos;s sale cycles, so treat the live checkout total as the real number.
+          </p>
+
+          {/* Hero image */}
+          <div className="relative w-full aspect-[1200/593] mb-3 rounded-2xl overflow-hidden border border-white/10">
+            <Image
+              src="/assets/hostinger-offer.webp"
+              alt="Hostinger promotional banner over a neon-lit server room, showing a percentage-off sale headline, the referral code MOHITKOLI, and a 4.8 out of 5 Trustpilot rating"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
-        </div>
+          <p className="text-xs text-gray-500 mb-10">
+            That banner is a promotional graphic from one of Hostinger&apos;s past mega-sale windows, not a live price
+            quote. The headline percentage on any hosting banner is always the deepest possible case — longest term,
+            specific plan. Your real number is whatever the order summary says at checkout.
+          </p>
 
-        <p className="text-gray-300 mb-4">
-          Hostinger discount code India 2026 guide aapke liye, jo beginner, blogger, student ya small business owner hai.
-          Ye blog simple Hinglish mein likha gaya hai taaki aap jaldi samajh lo aur aaj hi best deal se hosting secure karo.
-        </p>
+          {/* Direct answer */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">The short answer: there is a discount, it is just not a coupon</h2>
+            <p className="text-gray-300 leading-8 mb-4">
+              Hostinger&apos;s discount is structural, not promotional. The price you see advertised — Premium at
+              ₹139/mo instead of its ₹599/mo regular rate — is not unlocked by a code. It is attached to the billing
+              term. Choose the 48-month option and the discount appears on its own; choose monthly billing and you pay
+              close to the regular rate no matter what you paste into the coupon field. That is the single biggest
+              reason coupon hunting for Hostinger is wasted effort: the lever is the term selector, not a text box.
+            </p>
+            <p className="text-gray-300 leading-8 mb-4">
+              There is exactly one layer that stacks on top of that sale price, and it is a referral discount —
+              roughly an extra 20% off, which takes Premium from ₹139/mo to about ₹111/mo. Mine is
+              <span className="bg-white/10 text-white px-2 py-1 rounded font-mono mx-1">MOHITKOLI</span>
+              and it applies automatically when checkout opens through the link below. You can also type it into the
+              coupon field manually if you prefer to see it happen.
+            </p>
+            <p className="text-gray-300 leading-8">
+              So the honest answer to &quot;does Hostinger have a discount code&quot; is: yes, one that works, and it
+              is a referral code rather than a promo campaign. Everything else on page one of that search is expired.
+            </p>
+          </section>
 
-        <h2 className="text-2xl font-semibold mb-3">Meta Description</h2>
-        <p className="text-gray-300 mb-6">
-          Hostinger discount code India 2026 se hosting pao sabse sasti price par. Limited offer, miss mat karo! Click karo: https://www.hostinger.com/in?REFERRALCODE=mohitkoli
-        </p>
+          <div className="rounded-3xl border-2 border-dashed border-purple-400/50 bg-gradient-to-br from-purple-900/30 via-indigo-900/20 to-black/40 p-8 text-center mb-12">
+            <p className="text-sm uppercase tracking-[0.3em] text-purple-300 mb-2">The code that actually works</p>
+            <p className="text-4xl md:text-5xl font-extrabold text-white mb-3 font-mono tracking-tight">MOHITKOLI</p>
+            <p className="text-gray-300 mb-6">
+              Referral code — applies an extra discount on top of the running sale price. Auto-applied through the
+              button, or type it into the coupon field yourself.
+            </p>
+            <DealButton label="Open Hostinger With the Code Applied →" />
+            <p className="mt-4 text-xs text-gray-500">30-day money-back guarantee · Pay in INR (UPI, cards, net banking)</p>
+          </div>
 
-        <h2 className="text-3xl font-bold mb-4">Introduction</h2>
-        <p className="text-gray-300 mb-4">
-          Problem yeh hai ki hosting queries mein `cheap hosting India` se bahut saare options aate hain,
-          par actual pricing kabhi transparent nahi hoti. Aaj ka solution simple hai: <strong>Hostinger</strong>
-          ka referral link use karo aur <strong>hostinger discount code India</strong> 2026 se extra save karo.
-        </p>
-
-        <div className="rounded-3xl border border-primary-500/40 bg-gradient-to-r from-red-600/20 via-purple-600/15 to-blue-600/20 p-5 mb-6 shadow-lg shadow-black/40">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-            <div className="flex-shrink-0 w-full sm:w-1/3">
-              <div className="relative w-full h-32 sm:h-28 rounded-xl border border-white/20 overflow-hidden">
-                <Image
-                  src="/assets/hostinger-offer.webp"
-                  alt="Hostinger discount offer for India 2026"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 640px) 100vw, 33vw"
-                />
-              </div>
+          {/* Coupon vs referral */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">Coupon code vs referral link — the mechanical difference</h2>
+            <p className="text-gray-300 leading-8 mb-6">
+              These two things look identical from the outside — both are strings, both go in the same box — but they
+              are generated by different systems and they fail in different ways. Understanding which one you are
+              holding tells you instantly whether it is worth trying.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4 mb-6">
+              {CODE_VS_LINK.map((col) => (
+                <div key={col.label} className={`rounded-2xl border p-6 ${col.tone}`}>
+                  <h3 className={`font-semibold mb-3 ${col.heading}`}>{col.label}</h3>
+                  <ul className="space-y-2 text-sm md:text-base text-gray-300">
+                    {col.points.map((point) => (
+                      <li key={point} className="leading-7">• {point}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-            <div className="flex-1">
-              <h3 className="text-2xl font-bold text-white mb-2">CLAIM UP TO 90% OFF</h3>
-              <p className="text-gray-200 mb-3">Use code <span className="bg-white/15 text-white px-2 py-1 rounded">MOHITKOLI</span> or click the referral link to auto-apply best Hostinger discounts for India.</p>
-              <a
-                href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli"
-                target="_blank"
-                rel="nofollow sponsored noopener"
-                className="inline-block bg-white text-black font-bold px-6 py-3 rounded-xl hover:bg-white/90 transition"
-              >
-                Activate Discount Now ⚡
-              </a>
+            <p className="text-gray-300 leading-8">
+              The practical consequence: a coupon code is a lottery ticket with a printed expiry you cannot see, while
+              a referral code is a standing arrangement. That is also why an affiliate page can publish a referral code
+              honestly and a coupon aggregator usually cannot — they have nothing durable to publish, so they publish
+              guesses.
+            </p>
+          </section>
+
+          {/* Why coupon lists are dead */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">Why most &quot;Hostinger coupon code&quot; lists are dead on arrival</h2>
+            <p className="text-gray-300 leading-8 mb-6">
+              If you have already tried three codes and watched the total refuse to budge, you are not doing anything
+              wrong. Here is what is actually happening on the other side of those pages:
+            </p>
+            <div className="space-y-4 mb-6">
+              {[
+                ["The codes are scraped, never tested", "Aggregator sites pull codes automatically from other aggregator sites. Nobody runs a checkout to see whether the string still resolves. A code that died in 2024 can survive on twenty pages indefinitely because no human ever checks."],
+                ["The year in the title is swapped programmatically", "A page titled 'Hostinger Coupon Code 2026' is very often the same page that said 2025 and 2024, with the number templated in. The list underneath it never changed."],
+                ["“Verified today” is a timestamp, not a test", "That green badge is usually rendered from the current date at page load. It tells you when you opened the page — nothing about whether the code works."],
+                ["A dead code still pays them", "This is the part worth understanding. Clicking through to Hostinger sets the publisher's affiliate cookie whether or not the code applies. You pay full sale price, they earn the commission anyway. The code is theatre; the click is the product."],
+                ["Real codes are usually region-locked", "Hostinger prices by storefront. A code that genuinely worked for a US or EU campaign can be rejected outright on the India storefront, which is where your ₹ pricing comes from."],
+              ].map(([title, body]) => (
+                <div key={title} className="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <h3 className="font-semibold text-white mb-1">{title}</h3>
+                  <p className="text-gray-300 leading-7 text-sm md:text-base">{body}</p>
+                </div>
+              ))}
             </div>
+            <div className="rounded-xl border border-primary-500/30 bg-primary-900/20 p-5">
+              <h3 className="font-semibold text-primary-300 mb-2">The five-second test for any hosting coupon</h3>
+              <p className="text-gray-300 leading-7">
+                Note the order summary total. Apply the code. If the total does not change, the code did nothing —
+                regardless of any &quot;coupon applied&quot; toast the page shows you. A working discount always prints
+                its own line in the summary. Nothing else counts as evidence.
+              </p>
+            </div>
+          </section>
+
+          {/* What the discount looks like */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">What the discount actually looks like on the India checkout</h2>
+            <p className="text-gray-300 leading-8 mb-6">
+              When it works properly you see two separate reductions, not one. The sale discount is already reflected in
+              the plan price once you pick the 48-month term, and the referral discount comes off that. These are the
+              numbers I recorded on the India storefront in July 2026 — sale windows rotate, so open the live page
+              before you commit to any figure here:
+            </p>
+            <div className="overflow-x-auto rounded-2xl border border-white/10 mb-4">
+              <table className="w-full text-left text-sm md:text-base">
+                <thead className="bg-white/5 text-gray-200">
+                  <tr>
+                    <th className="p-4 font-semibold">Plan (48-month term)</th>
+                    <th className="p-4">Regular</th>
+                    <th className="p-4">Sale price</th>
+                    <th className="p-4 text-purple-300 font-semibold">With referral code</th>
+                    <th className="p-4 text-red-300 font-semibold">Renews at</th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-300">
+                  <tr className="border-t border-white/5 bg-white/[0.02]">
+                    <td className="p-4 font-medium text-white">Premium</td>
+                    <td className="p-4 text-red-400 line-through">₹599/mo</td>
+                    <td className="p-4">₹139/mo</td>
+                    <td className="p-4 text-purple-300 font-bold">~₹111/mo</td>
+                    <td className="p-4">₹449/mo</td>
+                  </tr>
+                  <tr className="border-t border-white/5">
+                    <td className="p-4 font-medium text-white">Business</td>
+                    <td className="p-4 text-red-400 line-through">₹699/mo</td>
+                    <td className="p-4">₹199/mo</td>
+                    <td className="p-4 text-purple-300 font-bold">~₹159/mo</td>
+                    <td className="p-4">₹649/mo</td>
+                  </tr>
+                  <tr className="border-t border-white/5 bg-white/[0.02]">
+                    <td className="p-4 font-medium text-white">Cloud Startup</td>
+                    <td className="p-4 text-red-400 line-through">₹1,699/mo</td>
+                    <td className="p-4">₹599/mo</td>
+                    <td className="p-4 text-purple-300 font-bold">~₹479/mo</td>
+                    <td className="p-4">₹1,599/mo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-gray-500 mb-6">
+              GST is added on top for Indian billing, so the invoice lands slightly above the listed rate. The full
+              plan-by-plan breakdown with storage, site limits and term math lives in my{" "}
+              <Link href="/blog/hostinger-plans-pricing-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                Hostinger plans and pricing guide for India
+              </Link>.
+            </p>
+            <p className="text-gray-300 leading-8">
+              Two things people miss at this screen. First, the free domain for the first year (worth roughly ₹799) is
+              claimed in the setup wizard after payment, not in the coupon field — skip the wizard and you have thrown
+              it away. Second, the discount is a percentage of the term total, so it looks small per month and large on
+              the invoice: Premium at ₹139/mo is ₹6,672 for four years, and the referral layer takes a meaningful bite
+              out of that.
+            </p>
+          </section>
+
+          {/* Which plan */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">Which plan is the discount actually worth taking on?</h2>
+            <p className="text-gray-300 leading-8 mb-6">
+              A percentage discount is most tempting on the most expensive plan, which is exactly the trap. The
+              discount is worth taking on the plan you would have bought anyway — paying ₹479/mo for Cloud Startup you
+              do not need is not a saving.
+            </p>
+            <ul className="space-y-3 text-gray-300 mb-6">
+              <li className="leading-8">
+                <strong className="text-white">Blog, portfolio, or small business site:</strong> Premium. ₹6,672 upfront
+                for the 48-month term, three websites, free domain and free SSL. This is where the referral discount
+                does the most useful work per rupee.
+              </li>
+              <li className="leading-8">
+                <strong className="text-white">WooCommerce or client work:</strong> Business at ₹199/mo — ₹9,552 for the
+                term — for NVMe storage and daily backups. The extra ₹60/mo over Premium is the cheapest insurance in
+                the lineup.
+              </li>
+              <li className="leading-8">
+                <strong className="text-white">High traffic or an agency:</strong> Cloud Startup, and only once your
+                traffic actually justifies it. Until then the discount is just a nicer price on unused resources.
+              </li>
+            </ul>
+            <p className="text-gray-300 leading-8 mb-4">
+              The most important sentence on any coupon-code page, and the one you will never see on an aggregator:
+              <strong className="text-white"> no code changes your renewal price.</strong> Every discount here applies
+              to the first term only, after which Premium goes to ₹449/mo, Business to ₹649/mo and Cloud to ₹1,599/mo.
+              I broke that trap down properly in the{" "}
+              <Link href="/blog/hostinger-renewal-price-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                Hostinger renewal price guide for India
+              </Link>{" "}
+              — the short version is that the longest term is the only real hedge, because it pushes the expensive
+              renewal four years into the future.
+            </p>
+            <p className="text-gray-300 leading-8">
+              And if you have not actually settled on Hostinger yet, chasing its coupon codes is premature. Compare it
+              against the field first in my ranked list of the{" "}
+              <Link href="/blog/best-web-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                best web hosting services in India
+              </Link>{" "}
+              — the cheapest discount is on hosting you did not need to switch away from six months later.
+            </p>
+          </section>
+
+          {/* Pointer to the method guide */}
+          <section className="mb-12">
+            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+              <h2 className="text-2xl font-bold text-white mb-3">Want the maximum discount? That is a separate guide</h2>
+              <p className="text-gray-300 leading-8 mb-4">
+                This page exists to answer one question honestly: do Hostinger coupon codes work, and what should you
+                type. It deliberately does not repeat the buying walkthrough. If you have decided to purchase and want
+                the discount pushed as far as it goes — the term selection, the checkout verification, the free domain
+                claim, and the five mistakes that quietly cost people the discount — that is all in the companion
+                guide:{" "}
+                <Link href="/blog/how-to-get-hostinger-90-off-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4 font-semibold">
+                  how to get up to 90% off on Hostinger in 2026, step by step
+                </Link>.
+              </p>
+              <p className="text-gray-400 text-sm leading-7">
+                Read this page to know what to type. Read that one to know what to click.
+              </p>
+            </div>
+          </section>
+
+          {/* FAQ */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-white mb-6">Hostinger coupon code FAQ</h2>
+            <div className="space-y-4">
+              {FAQ.map((item) => (
+                <details key={item.q} className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                  <summary className="cursor-pointer text-lg font-semibold text-white list-none flex justify-between items-center">
+                    {item.q}
+                    <span className="text-primary-400 group-open:rotate-45 transition-transform text-2xl leading-none">+</span>
+                  </summary>
+                  <p className="mt-3 text-gray-300 leading-7">{item.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+
+          {/* Final CTA */}
+          <section className="mb-12">
+            <div className="rounded-3xl border border-purple-500/40 bg-gradient-to-br from-purple-900/40 to-indigo-900/30 p-8 text-center">
+              <h2 className="text-3xl font-bold text-white mb-3">Stop hunting codes — there is only one</h2>
+              <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+                Sale price on the long term, plus the referral discount on top, plus a free domain and free SSL, inside
+                a 30-day money-back window. There is no secret fourth code, and anyone publishing one has not tested it.
+              </p>
+              <DealButton label="Open Hostinger With MOHITKOLI Applied →" />
+            </div>
+          </section>
+
+          {/* Related */}
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">Keep reading (hosting series)</h2>
+            <ul className="space-y-3 text-primary-400">
+              <li><Link href="/blog/how-to-get-hostinger-90-off-2026" className="hover:text-primary-300 underline underline-offset-4">How to Get 90% OFF on Hostinger in 2026 — the full step-by-step method</Link></li>
+              <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing India 2026 — which plan should you actually buy?</Link></li>
+              <li><Link href="/blog/hostinger-renewal-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Renewal Price in India — what happens after the discount ends</Link></li>
+              <li><Link href="/blog/hostinger-domain-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Domain Price India 2026 — .com, .in &amp; .store real costs</Link></li>
+              <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — honest verdict after a year of client sites</Link></li>
+              <li><Link href="/blog/best-web-hosting-india-2026" className="hover:text-primary-300 underline underline-offset-4">7 Best Web Hosting Services in India (2026) — tested &amp; ranked</Link></li>
+            </ul>
+          </section>
+
+          <div className="glass rounded-xl p-6 border border-white/5">
+            <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
+            <ShareButtons url={CANONICAL} title="Hostinger Discount Code 2026: Do Coupon Codes Actually Work?" />
           </div>
-        </div>
-
-        <div className="mb-6">
-          <a
-            href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            className="inline-block bg-primary-600 text-white font-bold px-8 py-4 rounded-lg hover:bg-primary-500 transition"
-          >
-            Click Here & Save on Hostinger Now
-          </a>
-        </div>
-
-        <p className="text-gray-300 mb-6">
-          Without this link → expensive. With this link → very cheap. <strong>aaj hi lo</strong>, <strong>limited offer</strong>, <strong>miss mat karo</strong>.
-        </p>
-
-        <h2 className="text-3xl font-bold mb-4">What is Hostinger?</h2>
-        <p className="text-gray-300 mb-4">
-          Hostinger ek global web hosting company hai jahan aap beginner-friendly hosting plans paate hain.
-          India ke liye specially optimized pricing aur local support. Agar aap “best web hosting for beginners” dhoondh rahe ho,
-          to Hostinger ek strong candidate hai.
-        </p>
-
-        <h2 className="text-3xl font-bold mb-4">Why Hostinger is Best</h2>
-        <ul className="text-gray-300 mb-6 space-y-3">
-          <li className="flex items-start">
-            <span className="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-0.5">✓</span>
-            <span><strong className="text-green-300">Fast speed</strong> – SSD + LiteSpeed + caching engine</span>
-          </li>
-          <li className="flex items-start">
-            <span className="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-0.5">✓</span>
-            <span><strong className="text-blue-300">Free domain</strong> – selected plans with referral available</span>
-          </li>
-          <li className="flex items-start">
-            <span className="bg-purple-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-0.5">✓</span>
-            <span><strong className="text-purple-300">Free SSL</strong> – automatic, no extra paisa</span>
-          </li>
-          <li className="flex items-start">
-            <span className="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-0.5">✓</span>
-            <span><strong className="text-orange-300">24/7 support</strong> – chat support, ticket support, team always ready</span>
-          </li>
-          <li className="flex items-start">
-            <span className="bg-pink-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-3 mt-0.5">✓</span>
-            <span><strong className="text-pink-300">Easy to use</strong> – beginner-friendly dashboard, one-click WordPress</span>
-          </li>
-        </ul>
-
-        <h2 className="text-3xl font-bold mb-4">Special Discount Offer</h2>
-        <p className="text-gray-300 mb-4">
-          Is offer ka unique point yeh hai ki link se discount automatic apply hota hai.
-          Aapko manual coupon code dalne ki zarurat nahi. Sirf yeh click karo:
-          <a href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 underline">
-            https://www.hostinger.com/in?REFERRALCODE=mohitkoli
-          </a>
-        </p>
-
-        <div className="mb-6">
-          <a
-            href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            className="inline-block bg-primary-600 text-white font-bold px-8 py-4 rounded-lg hover:bg-primary-500 transition"
-          >
-            Get Hostinger Discount Immediately
-          </a>
-        </div>
-        <p className="text-gray-300 mb-4">
-          <strong>Without referral link: </strong>approx ₹149/month (old price).<br />
-          <strong>With my referral link: </strong>approx ₹59/month or ₹2500/3yr depending on plan.
-        </p>
-        <p className="text-gray-300 mb-6">
-          Saving extremely high: around ₹6000+ (3 years). Free domain + SSL bhi milta hai.
-          <strong>Aaj hi lo, limited offer</strong> – <strong>miss mat karo</strong>.
-        </p>
-
-        <h2 className="text-3xl font-bold mb-4">How to Get Discount</h2>
-        <ol className="list-decimal list-inside text-gray-300 mb-6 space-y-2">
-          <li>Click this link: <strong>https://www.hostinger.com/in?REFERRALCODE=mohitkoli</strong></li>
-          <li>Page pe automatically coupon apply ho jayega.</li>
-          <li>Plan choose karo (Single/Premium/Business) aur billing cycle select karo.</li>
-          <li>Details fill karo (name, email, password) aur payment karo.</li>
-          <li>Hosting activate ho jayega; domain aur SSL free milenge (eligible plans mein).</li>
-        </ol>
-
-        <h2 className="text-3xl font-bold mb-4">Why Use My Referral Link</h2>
-        <ul className="list-disc list-inside text-gray-300 mb-6 space-y-2">
-          <li><strong>Extra savings</strong> with direct referral deal.</li>
-          <li><strong>No manual code</strong> needed, auto apply by URL.</li>
-          <li><strong>Limited time offer</strong> - aaj hi secure karo.</li>
-          <li><strong>Trusted: </strong>My link se always low price milega.</li>
-        </ul>
-
-        <h2 className="text-3xl font-bold mb-4">Pricing Comparison Table</h2>
-        <div className="overflow-auto mb-6 bg-gradient-to-r from-primary-900/20 to-primary-800/20 p-4 rounded-lg border border-primary-500/30">
-          <table className="w-full text-left">
-            <thead className="bg-primary-600/20">
-              <tr>
-                <th className="p-4 text-primary-300 font-semibold">Plan</th>
-                <th className="p-4 text-gray-300">Without Link</th>
-                <th className="p-4 text-primary-300 font-semibold">With My Link</th>
-                <th className="p-4 text-green-400 font-semibold">Savings</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="bg-white/5 hover:bg-white/10 transition">
-                <td className="p-4 font-medium">Single (1yr)</td>
-                <td className="p-4 text-red-400 line-through">₹999/yr</td>
-                <td className="p-4 text-green-400 font-bold">₹299/yr</td>
-                <td className="p-4 text-green-400 font-bold">₹700</td>
-              </tr>
-              <tr className="bg-white/2 hover:bg-white/10 transition">
-                <td className="p-4 font-medium">Premium (3yr)</td>
-                <td className="p-4 text-red-400 line-through">₹8900/3yr</td>
-                <td className="p-4 text-green-400 font-bold">₹2500/3yr</td>
-                <td className="p-4 text-green-400 font-bold">₹6400</td>
-              </tr>
-              <tr className="bg-white/5 hover:bg-white/10 transition">
-                <td className="p-4 font-medium">Business (2yr)</td>
-                <td className="p-4 text-red-400 line-through">₹10800/2yr</td>
-                <td className="p-4 text-green-400 font-bold">₹3200/2yr</td>
-                <td className="p-4 text-green-400 font-bold">₹7600</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h2 className="text-3xl font-bold mb-4">Real-life Use Cases</h2>
-        <ul className="list-disc list-inside text-gray-300 mb-6 space-y-3">
-          <li><strong>Blogging:</strong> WordPress blog start karo low investment se. Content share aur affiliate earning begin karo.</li>
-          <li><strong>Small business:</strong> Local store website banao with lead form and contact details. `cheap hosting India` model se ROI high.</li>
-          <li><strong>Portfolio:</strong> Freelancer/student portfolio humesha live rakho. Professional look with minimal cost.</li>
-        </ul>
-
-        <h2 className="text-3xl font-bold mb-4">FAQ</h2>
-        <div className="space-y-4 mb-8">
-          <div className="bg-green-900/20 p-4 rounded-lg border-l-4 border-green-500">
-            <h3 className="font-semibold text-green-300 mb-2">1. Kya yeh link safe hai?</h3>
-            <p className="text-gray-300">Haan, bilkul. Ye Hostinger ka official affiliate link hai, direct store karta hai hostinger coupon code 2026.</p>
-          </div>
-          <div className="bg-blue-900/20 p-4 rounded-lg border-l-4 border-blue-500">
-            <h3 className="font-semibold text-blue-300 mb-2">2. Mujhe coupon code manually dalna padega?</h3>
-            <p className="text-gray-300">Nahi. Link ne hi auto discount apply kar dega, apko `hostinger price India` low milega.</p>
-          </div>
-          <div className="bg-purple-900/20 p-4 rounded-lg border-l-4 border-purple-500">
-            <h3 className="font-semibold text-purple-300 mb-2">3. Kya payment INR me hota hai?</h3>
-            <p className="text-gray-300">Haan, Hostinger India site INR payment allow karta hai. Card/UPI/Net banking pay karo.</p>
-          </div>
-          <div className="bg-orange-900/20 p-4 rounded-lg border-l-4 border-orange-500">
-            <h3 className="font-semibold text-orange-300 mb-2">4. Agar mujhe plan badalna ho kya karein?</h3>
-            <p className="text-gray-300">Dashboard se easily plan upgrade/downgrade available hai. Support bhi 24/7 hai.</p>
-          </div>
-          <div className="bg-pink-900/20 p-4 rounded-lg border-l-4 border-pink-500">
-            <h3 className="font-semibold text-pink-300 mb-2">5. Kya domain free hai?</h3>
-            <p className="text-gray-300">Selected plans ke liye first year domain free hai through referral link. renewal normal rates ke according hota hai.</p>
-          </div>
-          <div className="bg-red-900/20 p-4 rounded-lg border-l-4 border-red-500">
-            <h3 className="font-semibold text-red-300 mb-2">6. Kya refund policy hai?</h3>
-            <p className="text-gray-300">Hostinger 30-day money back guarantee deta hai. Agar website pasand na aaye to full refund le sakte ho.</p>
-          </div>
-          <div className="bg-indigo-900/20 p-4 rounded-lg border-l-4 border-indigo-500">
-            <h3 className="font-semibold text-indigo-300 mb-2">7. Local support milta hai?</h3>
-            <p className="text-gray-300">Haan, 24/7 live chat support milta hai aur India friendly timing.</p>
-          </div>
-        </div>
-
-        <h2 className="text-3xl font-bold mb-4">Strong Call-To-Action</h2>
-        <div className="bg-primary-900/30 p-6 rounded-lg border border-primary-500/50 mb-4">
-          <p className="text-gray-300 mb-4">
-            Aaj hi link par click karo aur apna hosting saste me secure karo. Yeh offer "hostinger offer today" wali vibe wala limited deal hai.
-          </p>
-          <a
-            href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            className="inline-block bg-primary-600 hover:bg-primary-700 text-white font-bold px-8 py-4 rounded-lg transition"
-          >
-            Get Hostinger at Lowest Price
-          </a>
-        </div>
-
-        <p className="text-gray-300 mt-6 font-semibold">
-          Without this link → expensive. With this link → very cheap.
-        </p>
-
-        <div className="bg-green-900/20 p-4 rounded-lg border border-green-500/50 mt-4">
-          <p className="text-green-400 text-xl font-bold mb-2">
-            Abhi niche diye gaye link par click karo aur apna hosting saste me secure karo 👇
-          </p>
-          <p className="text-primary-400 font-bold text-lg">
-            https://www.hostinger.com/in?REFERRALCODE=mohitkoli
-          </p>
-        </div>
-      </article>
-    </main>
+        </article>
+      </main>
+    </>
   );
 }

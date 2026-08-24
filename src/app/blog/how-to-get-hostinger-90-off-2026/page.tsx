@@ -429,7 +429,7 @@ export default function Hostinger90OffGuide() {
                             <li><Link href="/blog/hostinger-domain-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Domain Price India 2026 — .com, .in &amp; .store real costs</Link></li>
                             <li><Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger vs GoDaddy vs Bluehost — 2026 India comparison with scores</Link></li>
                             <li><Link href="/blog/best-web-hosting-india-2026" className="hover:text-primary-300 underline underline-offset-4">7 Best Web Hosting Services in India (2026) — tested &amp; ranked</Link></li>
-                            <li><Link href="/blog/hostinger-discount-code-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Discount Code India 2026 (Hinglish quick guide)</Link></li>
+                            <li><Link href="/blog/hostinger-discount-code-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Discount Code 2026 — do coupon codes actually work?</Link></li>
                             <li><Link href="/blog/how-to-make-money-blogging-for-beginners-2026" className="hover:text-primary-300 underline underline-offset-4">How to Make Money from Blogging — put your new hosting to work</Link></li>
                         </ul>
                     </section>
