@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 const FAQ = [
   {
     q: "Does Hostinger have a discount code in 2026?",
-    a: "Not in the way coupon sites imply. Hostinger's main price cut is not a code you type — it is the sale price attached to a plan and billing term, applied the moment you pick the 48-month option. What does still work on top of that is a referral code. I use two: MOHITKOLI is my personal one, and HOSTFIFTY is a general Hostinger referral code — both add roughly the same extra 20% off the already-discounted sale price. Use either; there is no third, fourth or 'exclusive' code that beats them.",
+    a: "Not in the way coupon sites imply. Hostinger's main price cut is not a code you type — it is the sale price attached to a plan and billing term, applied the moment you pick the 48-month option. What does still work on top of that is a referral code. I run two of them — MOHITKOLI and HOSTFIFTY — and both add roughly the same extra 20% off the already-discounted sale price. Use whichever you land on; there is no third, fourth or 'exclusive' code that beats them.",
   },
   {
     q: "What is the difference between a Hostinger coupon code and a referral link?",
@@ -470,6 +470,14 @@ export default function HostingerDiscountCodeGuide() {
               <li><Link href="/blog/best-web-hosting-india-2026" className="hover:text-primary-300 underline underline-offset-4">7 Best Web Hosting Services in India (2026) — tested &amp; ranked</Link></li>
             </ul>
           </section>
+                    {/* Cluster links — added so these articles are not internal-link orphans. */}
+                    <section className="mb-12">
+                        <h2 className="text-2xl font-bold text-white mb-4">Related reading</h2>
+                        <ul className="space-y-2 text-gray-300 list-disc list-inside">
+                            <li><Link href="/blog/hostinger-55-per-month-offer" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">The ₹55/mo offer</Link> — exactly what the referral code takes off each plan.</li>
+                        </ul>
+                    </section>
+
 
           <div className="glass rounded-xl p-6 border border-white/5">
             <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>

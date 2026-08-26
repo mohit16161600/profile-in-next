@@ -456,6 +456,15 @@ function App() {
           Frontend ko Vercel ya Netlify par, backend ko Render, Railway, ya VPS par, aur database ko MongoDB Atlas par deploy kar sakte ho.
         </p>
       </section>
+
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold text-white mb-4">Related reading</h2>
+        <ul className="space-y-2 text-gray-300 list-disc list-inside">
+          <li><Link href="/blog/shopify-vs-woocommerce" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Shopify vs WooCommerce</Link> — the real monthly cost for Indian sellers.</li>
+          <li><Link href="/blog/shopify-review-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Shopify review for India</Link> — including the 2% transaction fee.</li>
+          <li><Link href="/blog/hostinger-cloud-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Cloud hosting for stores</Link> — when shared hosting stops coping.</li>
+        </ul>
+      </section>
     </>
   );
 }

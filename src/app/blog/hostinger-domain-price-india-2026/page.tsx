@@ -483,6 +483,15 @@ export default function HostingerDomainPriceIndia() {
                             <li><Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger vs GoDaddy vs Bluehost — 2026 India comparison</Link></li>
                         </ul>
                     </section>
+                    {/* Cluster links — added so these articles are not internal-link orphans. */}
+                    <section className="mb-12">
+                        <h2 className="text-2xl font-bold text-white mb-4">Related reading</h2>
+                        <ul className="space-y-2 text-gray-300 list-disc list-inside">
+                            <li><Link href="/blog/best-domain-registrars-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Best domain registrars</Link> — what a .com costs over five years.</li>
+                            <li><Link href="/blog/how-to-transfer-domain-from-godaddy" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Transferring a domain away from GoDaddy</Link> — if your renewal has jumped.</li>
+                        </ul>
+                    </section>
+
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>

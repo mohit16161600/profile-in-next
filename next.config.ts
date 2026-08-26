@@ -35,11 +35,15 @@ const REMOVED_LOCATION_REDIRECTS = [
 
 const nextConfig: NextConfig = {
     experimental: {
-        // Tailwind's stylesheet is a single render-blocking request on every page.
-        // Inlining it removes that round trip from the critical path — worth more here
-        // than cross-navigation CSS caching, since most traffic lands from search on
-        // one article and the sheet is ~21KB.
-        inlineCss: true,
+        // Inlining Tailwind was measured and it lost, so it stays off.
+        //
+        // Measured 2026-08-24 on /blog/best-vps-hosting-india-2026, gzipped over the wire:
+        //   inlineCss: true  -> 66 KB first load, 66 KB every subsequent page (never cached)
+        //   inlineCss: false -> 21 KB HTML + 21 KB CSS = 42 KB first load, 21 KB thereafter
+        // It is lighter on the FIRST page too, not just on navigation — inlining saved one
+        // HTTP/2 request and paid 24 KB for it. The original note here assumed a ~21 KB sheet;
+        // that is the gzipped figure and still correct, but it was never the deciding number.
+        inlineCss: false,
     },
     images: {
         // Allow self-authored branded SVG hero images to be served via next/image.
@@ -57,6 +61,20 @@ const nextConfig: NextConfig = {
             },
             {
                 source: `/locations/${entry.source}`,
+                destination: `/developer-in/${entry.destination}`,
+                permanent: true,
+            },
+            // The previous site published these as hyphenated paths (/developer-in-guwahati)
+            // rather than a path segment (/developer-in/guwahati). Backlinks still point at the
+            // hyphen form and were all 404ing. These resolve straight to the final destination
+            // so a legacy link costs one redirect, not two.
+            {
+                source: `/developer-in-${entry.source}`,
+                destination: `/developer-in/${entry.destination}`,
+                permanent: true,
+            },
+            {
+                source: `/locations-${entry.source}`,
                 destination: `/developer-in/${entry.destination}`,
                 permanent: true,
             },
@@ -96,6 +114,22 @@ const nextConfig: NextConfig = {
             { source: "/privacy", destination: "/privacy-policy", permanent: true },
             { source: "/blogs.html", destination: "/blog", permanent: true },
             { source: "/blogs/blogs.html", destination: "/blog", permanent: true },
+
+            // Cities that are still live keep their own pages, so the hyphen form just needs the
+            // separator swapped. This sits AFTER the consolidation rules above, which take
+            // precedence — otherwise a retired city would land on its own dead slug.
+            { source: "/developer-in-:slug", destination: "/developer-in/:slug", permanent: true },
+            { source: "/locations-:slug", destination: "/developer-in/:slug", permanent: true },
+
+            // Legacy .html leftovers from the old site. `terms.html` in particular is still the
+            // target of live "Terms of Service" backlinks.
+            { source: "/terms.html", destination: "/terms", permanent: true },
+            { source: "/privacy-policy.html", destination: "/privacy-policy", permanent: true },
+            { source: "/privacy.html", destination: "/privacy-policy", permanent: true },
+            { source: "/index.html", destination: "/", permanent: true },
+
+            // Sitemap is served at /sitemap.xml; the extensionless path was being linked.
+            { source: "/sitemap", destination: "/sitemap.xml", permanent: true },
         ];
     },
 };

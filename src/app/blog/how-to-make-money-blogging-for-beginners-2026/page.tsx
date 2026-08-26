@@ -351,6 +351,17 @@ export default function BloggingGuide2026() {
           </div>
         </section>
 
+        {/* Cluster links — the SEO-tools and hosting articles this guide should feed. */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-white mb-4">Related reading</h2>
+          <ul className="space-y-2 text-gray-300 list-disc list-inside">
+            <li><Link href="/blog/best-seo-tools-india-2026" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Best SEO tools in India</Link> — priced in rupees, with the free options first.</li>
+            <li><Link href="/blog/best-keyword-research-tools-2026" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Best keyword research tools</Link> — including the free ones that actually matter.</li>
+            <li><Link href="/blog/semrush-review-2026" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Semrush review</Link> — when a ₹12,000/mo tool starts paying for itself.</li>
+            <li><Link href="/blog/hostinger-55-per-month-offer" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Hostinger at ₹55/mo</Link> — the cheapest way to get a blog online.</li>
+          </ul>
+        </section>
+
         <footer className="mt-12 pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
           <p>© 2026 Mohit Koli - Professional Web Developer & Blogger</p>
           <div className="mt-2 flex justify-center gap-4">

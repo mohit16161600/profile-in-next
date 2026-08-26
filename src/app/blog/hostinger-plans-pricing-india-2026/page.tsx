@@ -680,6 +680,16 @@ export default function HostingerPlansPricing() {
                             <li><Link href="/blog/hostinger-vps-hosting-review-discount" className="hover:text-primary-300 underline underline-offset-4">Hostinger KVM VPS Review — hands-on with the developer plans</Link></li>
                         </ul>
                     </section>
+                    {/* Cluster links — added so these articles are not internal-link orphans. */}
+                    <section className="mb-12">
+                        <h2 className="text-2xl font-bold text-white mb-4">Related reading</h2>
+                        <ul className="space-y-2 text-gray-300 list-disc list-inside">
+                            <li><Link href="/blog/hostinger-55-per-month-offer" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">The ₹55/mo offer explained</Link> — what every plan costs once a referral code is applied.</li>
+                            <li><Link href="/blog/best-vps-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Best VPS hosting in India</Link> — when shared plans stop being enough.</li>
+                            <li><Link href="/blog/hostinger-cloud-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Hostinger Cloud hosting</Link> — dedicated CPU and RAM without root access.</li>
+                        </ul>
+                    </section>
+
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>

@@ -453,6 +453,16 @@ export default function GodaddyRenewalPrice() {
                             <li><Link href="/blog/how-to-get-hostinger-90-off-2026" className="hover:text-primary-300 underline underline-offset-4">How to Get 90% OFF on Hostinger — discount-stacking steps</Link></li>
                         </ul>
                     </section>
+                    {/* Cluster links — added so these articles are not internal-link orphans. */}
+                    <section className="mb-12">
+                        <h2 className="text-2xl font-bold text-white mb-4">Related reading</h2>
+                        <ul className="space-y-2 text-gray-300 list-disc list-inside">
+                            <li><Link href="/blog/best-domain-registrars-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Best domain registrars</Link> — five-year cost compared across the field.</li>
+                            <li><Link href="/blog/namecheap-vs-godaddy" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Namecheap vs GoDaddy</Link> — the $31 gap over five years.</li>
+                            <li><Link href="/blog/how-to-transfer-domain-from-godaddy" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">How to transfer a domain from GoDaddy</Link> — step by step, without downtime.</li>
+                        </ul>
+                    </section>
+
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
