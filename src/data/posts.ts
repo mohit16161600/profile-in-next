@@ -22,6 +22,29 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 59,
+        title: "Hostinger Business Plan 2026: It's Now Called Unlimited",
+        description: "Hostinger renamed Business to Unlimited in July 2026. What changed, the real ₹199.20/mo price with a referral code, and who should buy it.",
+        date: "August 24, 2026",
+        readTime: "12 min read",
+        category: "Hosting",
+        views: 0,
+        keywords: [
+            "hostinger business plan",
+            "hostinger business plan price",
+            "hostinger business hosting",
+            "hostinger business plan india",
+            "hostinger business vs premium",
+            "hostinger unlimited plan",
+            "hostinger unlimited vs business",
+            "hostinger business plan review",
+            "is hostinger business plan worth it",
+            "what happened to hostinger business plan"
+        ],
+        slug: "hostinger-business-plan",
+        imageSrc: "/assets/blog/hostinger-business-plan.svg",
+    },
+    {
         id: 58,
         title: "Hostinger ₹55/mo Offer 2026: 86% Off Plus Extra 20%",
         seoTitle: "Hostinger ₹55/mo Offer: 86% Off + Extra 20% (2026)",
