@@ -202,7 +202,7 @@ export default function BestDomainRegistrars() {
                                     $6.79 first year with a code, $14.78 at renewal. That is a real jump but not an
                                     outrageous one, free WHOIS privacy is included, and the management interface is solid.
                                     If you want a large registrar without GoDaddy&apos;s renewal pricing, this is it.
-                                    <span className="text-gray-500"> [AFFILIATE_LINK: NAMECHEAP]</span>
+                                    <a href="https://namecheap.pxf.io/c/7673063/1632743/5618" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Check Namecheap&apos;s current domain prices →</a>
                                 </p>
                             </div>
                             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">

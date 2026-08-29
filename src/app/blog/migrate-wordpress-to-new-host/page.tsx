@@ -235,6 +235,23 @@ export default function MigrateWordPressToNewHost() {
                         current figure at checkout.
                     </p>
 
+                    {/* Early CTA — the first affiliate link used to sit most of the way down
+                        the page, which is no use to a reader who already knows what they want. */}
+                    <div className="mb-10 rounded-2xl border border-emerald-500/25 bg-emerald-500/[0.06] p-5 sm:flex sm:items-center sm:justify-between sm:gap-6">
+                        <div className="mb-4 sm:mb-0">
+                            <p className="font-semibold text-white leading-6">Moving hosts? Hostinger does the migration for you, free</p>
+                            <p className="mt-1 text-sm text-gray-400 leading-6">Plans from ₹119.20/mo · free domain for a year · 30 days to change your mind</p>
+                        </div>
+                        <a
+                            href={REFERRAL_URL}
+                            target="_blank"
+                            rel="nofollow sponsored noopener"
+                            className="inline-block shrink-0 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-purple-900/30 hover:scale-[1.02] whitespace-nowrap"
+                        >
+                            See Hostinger Plans →
+                        </a>
+                    </div>
+
                     {/* Quick answer — featured snippet target */}
                     <section className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6">
                         <h2 className="text-2xl font-bold text-white mb-3">The short answer</h2>

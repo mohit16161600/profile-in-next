@@ -196,7 +196,9 @@ export default function NamecheapVsGoDaddy() {
                                     <li>You prefer a clean interface without constant upselling</li>
                                     <li>Total cost matters more than phone support</li>
                                 </ul>
-                                <p className="mt-3 text-xs text-gray-500">[AFFILIATE_LINK: NAMECHEAP]</p>
+                                <a href="https://namecheap.pxf.io/c/7673063/1632743/5618" target="_blank" rel="nofollow sponsored noopener" className="inline-block bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold px-7 py-3.5 rounded-xl transition-all shadow-lg shadow-orange-900/30 hover:scale-[1.02] mt-5">
+                                    Get Your Domain at Namecheap →
+                                </a>
                             </div>
                             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                                 <h3 className="text-lg font-bold text-white mb-3">Choose GoDaddy if…</h3>

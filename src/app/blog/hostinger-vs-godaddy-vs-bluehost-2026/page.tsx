@@ -4,6 +4,7 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
+const BLUEHOST_URL = "https://bluehost.sjv.io/c/7673063/1376228/11352";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-vs-godaddy-vs-bluehost-2026";
 
 export const metadata: Metadata = {
@@ -427,6 +428,9 @@ export default function HostingerVsGodaddyVsBluehost() {
                                 <Link href="/blog/hostinger-wordpress-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Hostinger&apos;s WordPress hosting for India</Link>{" "}
                                 before paying the US-brand premium.
                             </p>
+                            <a href={BLUEHOST_URL} target="_blank" rel="nofollow sponsored noopener" className="inline-block mb-4 text-sm font-semibold text-blue-400 hover:text-blue-300 underline underline-offset-4">
+                                See Bluehost&apos;s current plans and pricing →
+                            </a>
                             <div className="grid sm:grid-cols-2 gap-4 text-sm">
                                 <div>
                                     <p className="font-semibold text-green-400 mb-2">Pros</p>
@@ -472,6 +476,9 @@ export default function HostingerVsGodaddyVsBluehost() {
                                     your audience is primarily in the US and you want a hand-held, guided WordPress setup from a brand
                                     WordPress.org has recommended for years.
                                 </p>
+                                <a href={BLUEHOST_URL} target="_blank" rel="nofollow sponsored noopener" className="inline-block mt-4 bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-500 hover:to-sky-400 text-white font-bold px-6 py-3 rounded-xl transition-all text-sm">
+                                    Check Bluehost Plans →
+                                </a>
                             </div>
                         </div>
                     </section>

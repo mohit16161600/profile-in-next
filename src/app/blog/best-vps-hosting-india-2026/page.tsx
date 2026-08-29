@@ -183,6 +183,23 @@ export default function BestVpsHostingIndia() {
                         VPS pricing moves; confirm the current figure at checkout.
                     </p>
 
+                    {/* Early CTA — the first affiliate link used to sit most of the way down
+                        the page, which is no use to a reader who already knows what they want. */}
+                    <div className="mb-10 rounded-2xl border border-emerald-500/25 bg-emerald-500/[0.06] p-5 sm:flex sm:items-center sm:justify-between sm:gap-6">
+                        <div className="mb-4 sm:mb-0">
+                            <p className="font-semibold text-white leading-6">Best rupee value: Hostinger KVM from ₹599/mo</p>
+                            <p className="mt-1 text-sm text-gray-400 leading-6">4 GB RAM and 50 GB NVMe, billed in rupees with no forex on your card</p>
+                        </div>
+                        <a
+                            href={REFERRAL_URL}
+                            target="_blank"
+                            rel="nofollow sponsored noopener"
+                            className="inline-block shrink-0 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-purple-900/30 hover:scale-[1.02] whitespace-nowrap"
+                        >
+                            Check Hostinger VPS →
+                        </a>
+                    </div>
+
                     <section className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6">
                         <h2 className="text-2xl font-bold text-white mb-3">The 30-second answer</h2>
                         <ul className="space-y-2 text-gray-300 leading-7 list-disc list-inside">

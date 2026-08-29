@@ -207,8 +207,22 @@ export default function TransferDomainFromGoDaddy() {
                             <Link href="/blog/best-domain-registrars-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">best domain registrars</Link>,
                             and the head-to-head in{" "}
                             <Link href="/blog/namecheap-vs-godaddy" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Namecheap vs GoDaddy</Link>.
-                            <span className="text-gray-500"> [AFFILIATE_LINK: NAMECHEAP] · [AFFILIATE_LINK: PORKBUN] · [AFFILIATE_LINK: DYNADOT]</span>
+{" "}
+                            <a href="https://namecheap.pxf.io/c/7673063/1632743/5618" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Start a transfer to Namecheap →</a>
+                            <span className="text-gray-500"> · [AFFILIATE_LINK: PORKBUN] · [AFFILIATE_LINK: DYNADOT]</span>
                         </p>
+                    </section>
+
+                    <section className="mb-12 rounded-2xl border border-orange-500/30 bg-gradient-to-br from-orange-900/25 to-amber-900/10 p-8">
+                        <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Ready to move your domain?</h2>
+                        <p className="text-gray-300 leading-8 mb-6">
+                            Namecheap renews a .com at $14.78 against GoDaddy&apos;s $22.99, includes free WHOIS privacy,
+                            and the transfer adds a full year to your existing expiry — so moving usually pays for itself
+                            in the first year.
+                        </p>
+                        <a href="https://namecheap.pxf.io/c/7673063/1632743/5618" target="_blank" rel="nofollow sponsored noopener" className="inline-block bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold px-7 py-3.5 rounded-xl transition-all shadow-lg shadow-orange-900/30 hover:scale-[1.02]">
+                            Transfer to Namecheap →
+                        </a>
                     </section>
 
                     <section className="mb-12">

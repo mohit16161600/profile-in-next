@@ -162,6 +162,23 @@ export default function GodaddyRenewalPrice() {
                         verify your own Renewals &amp; Billing page.
                     </p>
 
+                    {/* Early CTA — the first affiliate link used to sit most of the way down
+                        the page, which is no use to a reader who already knows what they want. */}
+                    <div className="mb-10 rounded-2xl border border-emerald-500/25 bg-emerald-500/[0.06] p-5 sm:flex sm:items-center sm:justify-between sm:gap-6">
+                        <div className="mb-4 sm:mb-0">
+                            <p className="font-semibold text-white leading-6">Leaving GoDaddy? Hostinger is ₹55.20/mo with the discount</p>
+                            <p className="mt-1 text-sm text-gray-400 leading-6">Free migration, free domain for a year, and a renewal rate that is not 4x the intro</p>
+                        </div>
+                        <a
+                            href={REFERRAL_URL}
+                            target="_blank"
+                            rel="nofollow sponsored noopener"
+                            className="inline-block shrink-0 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-purple-900/30 hover:scale-[1.02] whitespace-nowrap"
+                        >
+                            Compare Hostinger Prices →
+                        </a>
+                    </div>
+
                     <div className="relative w-full aspect-[1200/630] mb-10 rounded-2xl overflow-hidden border border-white/10">
                         <Image
                             src="/assets/blog/godaddy-renewal-price-increase-india.svg"
