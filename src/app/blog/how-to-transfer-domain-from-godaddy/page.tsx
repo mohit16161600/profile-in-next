@@ -209,7 +209,7 @@ export default function TransferDomainFromGoDaddy() {
                             <Link href="/blog/namecheap-vs-godaddy" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Namecheap vs GoDaddy</Link>.
 {" "}
                             <a href="https://namecheap.pxf.io/c/7673063/1632743/5618" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Start a transfer to Namecheap →</a>
-                            <span className="text-gray-500"> · [AFFILIATE_LINK: PORKBUN] · [AFFILIATE_LINK: DYNADOT]</span>
+                            {" "}· <a href="https://www.dynadot.com/?s7f7O16308s7px" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Transfer to Dynadot →</a><span className="text-gray-500"> · [AFFILIATE_LINK: PORKBUN]</span>
                         </p>
                     </section>
 

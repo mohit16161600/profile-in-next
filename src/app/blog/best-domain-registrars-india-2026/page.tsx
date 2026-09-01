@@ -193,7 +193,7 @@ export default function BestDomainRegistrars() {
                                     Register, renew and transfer all cost the same $10.88 for a .com. There is something
                                     refreshing about a registrar whose pricing page needs no footnotes. Interface is more
                                     utilitarian than Porkbun&apos;s.
-                                    <span className="text-gray-500"> [AFFILIATE_LINK: DYNADOT]</span>
+                                    {" "}<a href="https://www.dynadot.com/?s7f7O16308s7px" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Check Dynadot pricing →</a>
                                 </p>
                             </div>
                             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
