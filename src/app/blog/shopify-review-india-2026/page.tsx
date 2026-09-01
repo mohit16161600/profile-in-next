@@ -47,6 +47,9 @@ const FAQ = [
     { q: "Can I use Razorpay or PayU with Shopify?", a: "Yes — Shopify supports a range of Indian gateways and setting one up is straightforward. Just remember that using any third-party gateway is precisely what triggers Shopify's own transaction fee, so you are paying two percentages on each sale." },
     { q: "Is Shopify good for SEO?", a: "It is competent. You get editable titles, meta descriptions, alt text and a clean sitemap. The limitation is structural: Shopify enforces certain URL patterns (like /products/ and /collections/) that you cannot change. For most stores this matters far less than having good product pages and content." },
     { q: "What is the best Shopify alternative in India?", a: "WooCommerce on WordPress, if you can manage a site — free software, no transaction fee, and hosting from a few hundred rupees a month. It trades money for time and technical responsibility. For a comparison of what each really costs, see the dedicated breakdown." },
+    { q: "Does GST apply to the Shopify subscription in India?", a: "Yes — 18% GST is added to the subscription invoice for Indian merchants, so Basic's ₹1,499 annual-billing rate lands around ₹1,769 a month on paper. It is claimable as input credit if you are GST-registered, but it is real cash flow either way. Factor it in whenever you compare plans." },
+    { q: "Can I offer Cash on Delivery on Shopify in India?", a: "Yes. COD can be enabled as a manual payment method, and several apps add COD-specific controls like order verification and pincode rules. Just budget for the COD reality every Indian seller learns: return-to-origin rates are meaningfully higher than on prepaid orders, and each failed delivery costs you two-way shipping." },
+    { q: "How long does it take to actually launch?", a: "The store itself is a one-day build — theme, products, pages. The real timeline is set by payment gateway approval, which typically takes a few working days of KYC review after you submit business and bank details. Start the gateway application on day one, in parallel with building the store." },
     { q: "Does Shopify have a free trial?", a: "Shopify typically offers a short free trial and has run promotional first-month pricing at various points. Terms change frequently, so check their India pricing page directly rather than trusting a figure quoted in an article — including this one." },
 ];
 
@@ -162,6 +165,60 @@ export default function ShopifyReviewIndia() {
                     </section>
 
                     <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">What a real store pays: worked example</h2>
+                        <p className="text-gray-300 leading-8 mb-5">
+                            Percentages hide the pain, so here is the arithmetic for a store doing{" "}
+                            <strong className="text-white">₹2,00,000 a month</strong> in sales on the Basic plan with
+                            annual billing. Assumptions are labelled — swap in your own numbers.
+                        </p>
+                        <div className="overflow-x-auto rounded-2xl border border-white/10 mb-4">
+                            <table className="w-full text-left text-sm">
+                                <thead className="bg-white/5 text-gray-200">
+                                    <tr><th className="p-4 font-semibold">Cost line</th><th className="p-4">Monthly</th><th className="p-4">Basis</th></tr>
+                                </thead>
+                                <tbody className="text-gray-300">
+                                    <tr className="border-t border-white/5"><td className="p-4 font-medium text-white">Subscription (annual billing)</td><td className="p-4">₹1,499</td><td className="p-4">Basic plan, before GST</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-medium text-white">GST on subscription</td><td className="p-4">~₹270</td><td className="p-4">18% on the subscription invoice</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-medium text-white">Shopify transaction fee</td><td className="p-4 text-amber-300">₹4,000</td><td className="p-4">2% of ₹2,00,000 — the India-specific cost</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-medium text-white">Payment gateway fee</td><td className="p-4">~₹4,000</td><td className="p-4">Typically around 2%, varies by gateway and method</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-medium text-white">Apps (assume two paid)</td><td className="p-4">~₹2,000</td><td className="p-4">Reviews, bundles, marketing apps add up fast</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-bold text-white">Total</td><td className="p-4 font-bold text-red-300">~₹11,770</td><td className="p-4">≈ 5.9% of revenue, before shipping and ads</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p className="text-gray-300 leading-8">
+                            Two things jump out. The subscription — the number everyone compares — is barely 15% of the
+                            real monthly cost. And the two percentage fees scale with revenue, which is why the same
+                            store at ₹5 lakh a month suddenly finds the mid-tier Shopify plan (lower transaction fee)
+                            cheaper overall. Run this table with your own revenue before choosing a plan.
+                        </p>
+                    </section>
+
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Starting a Shopify store in India: the 7 steps</h2>
+                        <p className="text-gray-300 leading-8 mb-5">
+                            The setup itself is genuinely a one-day job. The waiting is elsewhere — gateway approval and
+                            your first stock photos. In order:
+                        </p>
+                        <ol className="space-y-3 text-gray-300 leading-8 list-decimal list-inside mb-5">
+                            <li><strong className="text-white">Start the trial</strong> and pick your store name — you can connect a proper domain later, so do not overthink it today.</li>
+                            <li><strong className="text-white">Choose a free theme first.</strong> Dawn (the default) converts fine. Buy a premium theme after revenue, not before.</li>
+                            <li><strong className="text-white">Add 5-10 products properly</strong> rather than 50 badly — sharp photos on a clean background, honest descriptions, GST-inclusive pricing.</li>
+                            <li><strong className="text-white">Apply to a payment gateway</strong> — Razorpay, PayU or Cashfree. This is the step with a real wait: KYC review typically takes a few days, and they will ask for business and bank details, usually including GST information.</li>
+                            <li><strong className="text-white">Set up shipping.</strong> Most Indian stores plug in an aggregator like Shiprocket or Delhivery through the app store rather than negotiating courier rates directly.</li>
+                            <li><strong className="text-white">Configure taxes</strong> — enable India GST settings so invoices come out right, and confirm the details with your CA rather than a blog (including this one).</li>
+                            <li><strong className="text-white">Place a real test order</strong> — pay, receive the emails, process the refund — before you spend a rupee on ads.</li>
+                        </ol>
+                        <p className="text-gray-300 leading-8">
+                            If you get to step 4 and the fees make you hesitate, that is the moment to re-read the{" "}
+                            <Link href="/blog/shopify-vs-woocommerce" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                Shopify vs WooCommerce cost comparison
+                            </Link>{" "}
+                            — it is much cheaper to change your mind before the gateway paperwork than after.
+                        </p>
+                    </section>
+
+                    <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-4">Scorecard</h2>
                         <div className="overflow-x-auto rounded-2xl border border-white/10">
                             <table className="w-full text-left text-sm">
@@ -228,6 +285,26 @@ export default function ShopifyReviewIndia() {
                     </section>
 
                     <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Shopify vs selling on marketplaces first</h2>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            The question Indian sellers should ask before &ldquo;Shopify or WooCommerce&rdquo; is
+                            &ldquo;own store or marketplace?&rdquo; Amazon, Flipkart and Meesho bring you traffic on day
+                            one — the single hardest thing about running your own store — and in exchange they take
+                            commission, own the customer relationship, and can change terms whenever they like.
+                        </p>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            Shopify is the opposite trade: every rupee of margin and every customer email is yours, but
+                            nobody visits until you bring them. The mature answer for most new sellers is sequencing,
+                            not either/or — <strong className="text-white">validate demand on a marketplace, then build the
+                            brand store once you know what sells</strong>. Plenty of established sellers run both, using
+                            the marketplace for discovery and the Shopify store for repeat buyers and better margins.
+                        </p>
+                        <p className="text-gray-300 leading-8 mb-8">
+                            If you are pre-revenue with an untested product, spending ₹12,000 a month on store
+                            infrastructure is usually premature. That is not a knock on Shopify — it is a note about
+                            timing.
+                        </p>
+
                         <h2 className="text-3xl font-bold text-white mb-6">FAQ — Shopify in India</h2>
                         <div className="space-y-4">
                             {FAQ.map((item) => (

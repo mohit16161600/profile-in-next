@@ -288,6 +288,58 @@ export default function HostingerRenewalPrice() {
 
                     {/* 4 year math */}
                     <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-6">Current plans at a glance — intro vs renewal</h2>
+                        <p className="text-gray-300 leading-8 mb-6">
+                            Prices checked September 2026 on the 48-month term. The green line is what a fresh signup
+                            pays through this site&apos;s link; the amber line is the number this whole article is about.
+                        </p>
+                        <div className="grid gap-6 md:grid-cols-3 mb-6">
+                            {[
+                                {
+                                    badge: "MOST POPULAR", name: "Premium", regular: "₹599", sale: "₹149", code: "₹119.20",
+                                    off: "75% off + extra 20%", renews: "₹449/mo",
+                                    features: ["3 websites", "20 GB SSD storage", "Free domain (1st year)", "Free SSL + weekly backups", "2 mailboxes per site, free 1 year", "Managed WordPress"],
+                                    best: "Blogs, portfolios, small business sites", highlight: false,
+                                },
+                                {
+                                    badge: "BEST VALUE", name: "Unlimited", regular: "₹699", sale: "₹249", code: "₹199.20",
+                                    off: "64% off + extra 20%", renews: "₹649/mo",
+                                    features: ["Unlimited websites", "50 GB NVMe (≈2x faster)", "Free domain (1st year)", "Daily backups + easy restore", "CDN + integrated ecommerce", "Node.js + priority support"],
+                                    best: "Business sites, WooCommerce, freelancers with clients", highlight: true,
+                                },
+                                {
+                                    badge: "HIGH TRAFFIC", name: "Cloud Startup", regular: "₹1,699", sale: "₹599", code: "₹479.20",
+                                    off: "65% off + extra 20%", renews: "₹1,599/mo",
+                                    features: ["Unlimited websites", "100 GB NVMe storage", "Dedicated resources", "Free domain + CDN", "Daily + on-demand backups", "Priority 24/7 support"],
+                                    best: "High-traffic sites, agencies, heavy stores", highlight: false,
+                                },
+                            ].map((p) => (
+                                <div key={p.name} className={`flex flex-col rounded-2xl border p-6 ${p.highlight ? "border-primary-500/60 bg-primary-500/[0.07] shadow-lg shadow-primary-900/30" : "border-white/10 bg-white/[0.03]"}`}>
+                                    <p className={`text-[11px] font-bold uppercase tracking-[0.2em] mb-3 ${p.highlight ? "text-primary-400" : "text-gray-500"}`}>{p.badge}</p>
+                                    <h3 className="text-2xl font-bold text-white">{p.name}</h3>
+                                    <div className="mt-3 flex items-baseline gap-2">
+                                        <span className="text-4xl font-bold text-white">{p.sale}</span>
+                                        <span className="text-gray-400">/mo</span>
+                                        <span className="text-sm text-gray-500 line-through">{p.regular}</span>
+                                    </div>
+                                    <p className="mt-1 text-sm font-semibold text-emerald-400">{p.code}/mo through this site&apos;s link · {p.off}</p>
+                                    <p className="mt-1 text-sm font-semibold text-amber-300">Renews at {p.renews}</p>
+                                    <ul className="mt-5 space-y-2 text-sm text-gray-300 flex-1">
+                                        {p.features.map((x) => <li key={x}>✓ {x}</li>)}
+                                    </ul>
+                                    <p className="mt-4 text-xs text-gray-500"><strong className="text-gray-400">Best for:</strong> {p.best}</p>
+                                    <a href={REFERRAL_URL} target="_blank" rel="nofollow sponsored noopener"
+                                       className={`mt-5 text-center font-bold px-6 py-3 rounded-xl transition ${p.highlight ? "bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white" : "bg-white/10 hover:bg-white/20 text-white"}`}>
+                                        Check {p.name} Price →
+                                    </a>
+                                </div>
+                            ))}
+                        </div>
+                        <p className="text-sm text-gray-500 mb-12">
+                            The extra 20% applies automatically when the page is opened through the links above — the
+                            cart shows the discounted figure before you pay, so verify it there.
+                        </p>
+
                         <h2 className="text-3xl font-bold text-white mb-4">The 4-year math: 48-month term vs renewing yearly</h2>
                         <p className="text-gray-300 leading-8 mb-6">
                             Here is the comparison Hostinger&apos;s pricing page never spells out — the same 4 years of Premium

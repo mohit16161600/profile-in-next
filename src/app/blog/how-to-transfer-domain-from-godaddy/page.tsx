@@ -16,6 +16,8 @@ export const metadata: Metadata = {
         "godaddy transfer authorization code", "move domain away from godaddy", "godaddy to namecheap transfer",
         "domain transfer 60 day rule", "domain transfer without downtime", "godaddy epp code",
         "domain transfer cost", "unlock domain godaddy", "godaddy alternative registrar",
+        "can you transfer domain from godaddy", "transfer domain from godaddy to namecheap",
+        "transfer domain from godaddy to hostinger", "how to transfer my domain from godaddy",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
 };
 
 const FAQ = [
+    { q: "Can you transfer any domain away from GoDaddy?", a: "Yes, with one exception: domains registered or whose owner contact details were changed within the last 60 days are locked by an ICANN rule and must wait it out. Everything else can be moved — GoDaddy cannot refuse a valid transfer request, though it may show you a retention offer on the way out." },
     { q: "Does transferring a domain cause downtime?", a: "It should not. A transfer moves who bills you for the domain, not where it points — your DNS records travel with the domain in most cases, and the site keeps resolving throughout. Downtime only happens if you change nameservers at the same time or let DNS records get dropped, which is why you copy them down first." },
     { q: "How long does a GoDaddy domain transfer take?", a: "Usually five to seven days. ICANN allows the losing registrar up to five days to release the domain, and GoDaddy generally uses that window. You can speed it up by approving the transfer from the GoDaddy side rather than waiting for it to time out and auto-approve." },
     { q: "Can I transfer a domain I just registered?", a: "No. ICANN rules impose a 60-day lock after registration, and also after any change to the registrant's contact details. If you have just bought or just edited the domain, you have to wait out the 60 days — there is no way around this at any registrar." },
@@ -38,6 +41,8 @@ const FAQ = [
     { q: "What is an EPP or authorisation code?", a: "A password proving you own the domain, issued by your current registrar. At GoDaddy you request it from the domain settings and it arrives by email. The new registrar asks for it to confirm the transfer is legitimate. It expires, so start the transfer promptly after requesting it." },
     { q: "Will I lose the remaining time on my registration?", a: "No. Transfer adds a year on top of whatever you had left. If your domain expires in eight months and you transfer today, the new expiry is twenty months away. This is the single most misunderstood part of transfers and the reason people wrongly delay." },
     { q: "Should I transfer before or after renewal?", a: "Before — but not at the last minute. Start the transfer at least two to three weeks before expiry. Transferring adds a year anyway, so paying GoDaddy's renewal first and then transferring simply means paying the higher price for no reason." },
+    { q: "Can I transfer my domain from GoDaddy to Hostinger?",
+      a: "Yes. Hostinger accepts domain transfers — a .com costs ₹969, which includes a year added to your current expiry, and free WHOIS privacy is included on eligible domains. The process is identical: unlock the domain at GoDaddy, get the authorisation code, then start the transfer from Hostinger's domain transfer page. It completes in up to seven days. It makes most sense when your hosting is already on Hostinger, so the domain and site live in one dashboard." },
     { q: "Do I need to move my hosting too?", a: "No. Domain registration and hosting are separate services. You can transfer your domain to a cheaper registrar and leave the website exactly where it is — just make sure the DNS records still point at your host after the move." },
 ];
 
@@ -117,6 +122,17 @@ export default function TransferDomainFromGoDaddy() {
                     </p>
 
                     <section className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6">
+                        <h2 className="text-2xl font-bold text-white mb-3">Can you transfer a domain from GoDaddy?</h2>
+                        <p className="text-gray-300 leading-8">
+                            <strong className="text-white">Yes.</strong> Any domain registered more than 60 days ago can be
+                            transferred away from GoDaddy to another registrar. You unlock the domain, request the
+                            authorisation (EPP) code, and start the transfer at the new registrar — it completes in five
+                            to seven days, your website stays online throughout, and a year gets added to your existing
+                            expiry date. GoDaddy cannot refuse a valid transfer.
+                        </p>
+                    </section>
+
+                    <section className="mb-12 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                         <h2 className="text-2xl font-bold text-white mb-3">Two rules before you start</h2>
                         <ul className="space-y-2 text-gray-300 leading-8 list-disc list-inside">
                             <li><strong className="text-white">The 60-day lock.</strong> A domain cannot be transferred within 60 days of registration, or within 60 days of changing the registrant&apos;s contact details. This is an ICANN rule, not a GoDaddy one — no registrar can waive it.</li>
@@ -199,6 +215,7 @@ export default function TransferDomainFromGoDaddy() {
                                     <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Porkbun</td><td className="p-4">~$11</td><td className="p-4 text-emerald-400">Save ~$12/yr</td><td className="p-4">Flat pricing, free privacy</td></tr>
                                     <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white"><a href="https://www.dynadot.com/?s7f7O16308s7px" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Dynadot</a></td><td className="p-4">$10.88</td><td className="p-4 text-emerald-400">Save ~$12/yr</td><td className="p-4">Same price to register, renew or transfer</td></tr>
                                     <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Namecheap</td><td className="p-4">$14.78</td><td className="p-4 text-emerald-400">Save ~$8/yr</td><td className="p-4">Large, familiar, free WHOIS privacy</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white"><a href="https://www.hostinger.com/in/domain-transfer?REFERRALCODE=mohitkoli" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Hostinger</a></td><td className="p-4">₹969 transfer (~$12)</td><td className="p-4 text-emerald-400">Save ~$11/yr</td><td className="p-4">Rupee billing; domain + hosting in one hPanel</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -211,6 +228,63 @@ export default function TransferDomainFromGoDaddy() {
                             <a href="https://namecheap.pxf.io/c/7673063/1632743/5618" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Start a transfer to Namecheap →</a>
                             {" "}· <a href="https://www.dynadot.com/?s7f7O16308s7px" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Transfer to Dynadot →</a><span className="text-gray-500"> · [AFFILIATE_LINK: PORKBUN]</span>
                         </p>
+
+                        <h3 className="text-xl font-bold text-white mt-8 mb-3">Transfer a domain from GoDaddy to Namecheap</h3>
+                        <p className="text-gray-300 leading-8 mb-5">
+                            The most common move. Unlock and get the code at GoDaddy, then use Namecheap&apos;s transfer
+                            page — the ~$8/year renewal saving repeats every year, WHOIS privacy is free, and the year
+                            added at transfer means the switch pays for itself immediately.
+                        </p>
+
+                        <h3 className="text-xl font-bold text-white mt-8 mb-3">Transfer a domain from GoDaddy to Hostinger</h3>
+                        <p className="text-gray-300 leading-8 mb-5">
+                            The right move when your website already lives on Hostinger — ₹969 for a .com with a year
+                            added, rupee billing, and the domain lands in the same hPanel as your hosting. Full details
+                            in the section below.
+                        </p>
+
+                        <h3 className="text-xl font-bold text-white mt-8 mb-3">Transfer a domain from GoDaddy to Dynadot or Porkbun</h3>
+                        <p className="text-gray-300 leading-8">
+                            The pure-cost play: both price registration, renewal and transfer at roughly $11, forever.
+                            Nothing to remember at renewal time, which is the whole point of leaving GoDaddy.
+                        </p>
+                    </section>
+
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Transferring to Hostinger instead</h2>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            If your website already runs on Hostinger — or is about to — transferring the domain there
+                            is a legitimate option most guides skip. Hostinger accepts transfers in: a .com costs{" "}
+                            <strong className="text-white">₹969</strong>, the transfer adds a year to your existing expiry,
+                            free WHOIS privacy is included on eligible domains, and it completes in up to seven days.
+                            The unlock + authorisation-code steps above are exactly the same; you simply start the
+                            transfer from Hostinger&apos;s domain-transfer page instead.
+                        </p>
+                        <p className="text-gray-300 leading-8 mb-5">
+                            Honest classification of when this is the right call:
+                        </p>
+                        <div className="grid gap-5 md:grid-cols-2 mb-6">
+                            <div className="rounded-2xl border border-emerald-500/25 bg-emerald-500/[0.05] p-6">
+                                <h3 className="text-base font-semibold text-white mb-2">Transfer to Hostinger if…</h3>
+                                <ul className="space-y-2 text-sm text-gray-300 leading-7 list-disc list-inside">
+                                    <li>Your hosting is already there — one hPanel, one renewal calendar, no cross-provider DNS</li>
+                                    <li>You want rupee billing instead of a forex-marked dollar charge every year</li>
+                                    <li>You are mid-way through moving your whole site off GoDaddy anyway</li>
+                                </ul>
+                            </div>
+                            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                                <h3 className="text-base font-semibold text-white mb-2">Pick a flat-price registrar instead if…</h3>
+                                <ul className="space-y-2 text-sm text-gray-300 leading-7 list-disc list-inside">
+                                    <li>You deliberately keep domain and hosting separate for flexibility</li>
+                                    <li>Pure long-term cost is the only criterion — check Hostinger&apos;s renewal rate at checkout before assuming, since only the transfer price is published</li>
+                                    <li>You manage many domains and want registrar-focused tooling</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="https://www.hostinger.com/in/domain-transfer?REFERRALCODE=mohitkoli" target="_blank" rel="nofollow sponsored noopener" className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]">
+                            Transfer Your Domain to Hostinger →
+                        </a>
+                        <p className="mt-3 text-xs text-gray-500">₹969 for a .com, includes a year added to your expiry · Free WHOIS privacy on eligible domains</p>
                     </section>
 
                     <section className="mb-12 rounded-2xl border border-orange-500/30 bg-gradient-to-br from-orange-900/25 to-amber-900/10 p-8">

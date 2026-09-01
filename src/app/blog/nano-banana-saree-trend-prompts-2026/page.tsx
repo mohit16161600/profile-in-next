@@ -81,6 +81,16 @@ export default function NanoBananaSareeTrendPrompts2026() {
         "It may refuse prompts that request real public figures, explicit content, or edits that violate its safety rules. Rephrase to a generic, original subject.",
     },
     {
+      question: "Does the saree trend work with Nano Banana Pro?",
+      answer:
+        "Yes — the prompts in this guide work unchanged in the newer Pro model inside Gemini. If your account has it, it is worth trying for tricky details like jewellery and fabric texture; if not, the standard model still produces everything shown here.",
+    },
+    {
+      question: "Why does my face look different in the output?",
+      answer:
+        "Two usual causes: the source photo was low-resolution, or the prompt never told the model to preserve your features. Use a sharp, front-facing photo and add 'keep my facial features exactly the same' to the prompt. If it still drifts, regenerate — outputs vary run to run.",
+    },
+    {
       question: "Can I make reels or videos from these images?",
       answer:
         "The saree trend is image-based, but you can animate the result using a free AI video generator, which we cover in our best free AI video generators guide.",
@@ -305,6 +315,7 @@ export default function NanoBananaSareeTrendPrompts2026() {
               <li><a href="#fix-bad-results" className="hover:text-rose-400 transition">→ How to Fix Bad or Distorted Results</a></li>
               <li><a href="#safety-watermark" className="hover:text-rose-400 transition">→ Safety, Watermark & Privacy Tips</a></li>
               <li><a href="#more-trend-variations" className="hover:text-rose-400 transition">→ More Trend Variations to Try</a></li>
+              <li><a href="#common-mistakes" className="hover:text-rose-400 transition">→ 5 Common Mistakes</a></li>
               <li><a href="#faq" className="hover:text-rose-400 transition">→ FAQs</a></li>
             </ul>
           </div>
@@ -634,6 +645,19 @@ export default function NanoBananaSareeTrendPrompts2026() {
             </Link>{" "}
             shows how creators turn viral content into income.
           </p>
+
+          <h2 id="common-mistakes" className="text-3xl font-bold mt-12 mb-6">5 Mistakes That Ruin Saree Trend Photos</h2>
+          <p className="text-gray-300 mb-6">
+            Scroll through the trend hashtags and the failed attempts all fail the same way. Avoid these five and
+            your results jump a tier immediately.
+          </p>
+          <ul className="list-disc pl-8 space-y-4 text-gray-300 mb-12">
+            <li><strong className="text-white">Using a group photo.</strong> The model has to guess which face matters. One person, facing the camera, shoulders visible — that is the input it needs.</li>
+            <li><strong className="text-white">A blurry or tiny source image.</strong> The output can only be as sharp as what you give it. Use the largest, clearest photo you have, not a WhatsApp-compressed thumbnail.</li>
+            <li><strong className="text-white">Stacking five ideas into one prompt.</strong> Retro saree + beach + rain + film grain + golden hour = mud. Pick one scene and one mood per generation, then iterate.</li>
+            <li><strong className="text-white">Not stating what must stay the same.</strong> Add &quot;keep my facial features exactly the same&quot; — without it, the model happily redesigns your face along with your outfit.</li>
+            <li><strong className="text-white">Giving up after one bad output.</strong> Generation is probabilistic. The same prompt run three times gives three different results; the trick is regenerating, not rewriting, when the composition is close.</li>
+          </ul>
 
           <h2 id="faq" className="text-3xl font-bold mt-12 mb-10 border-t border-white/10 pt-10">Frequently Asked Questions</h2>
           <div className="space-y-6 mb-12">
