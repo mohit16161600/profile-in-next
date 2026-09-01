@@ -269,7 +269,7 @@ export default function GodaddyRenewalPrice() {
                                         ["Typical renewal multiplier", "2–4× the intro rate"],
                                         ["Renewal band at that multiplier", "₹298–₹596/mo"],
                                         ["Add-ons billed on top", "backups, email, some SSL configurations"],
-                                        ["Same-spec escape: Hostinger Premium", "₹139/mo on the 48-mo sale lock, renews ~₹449/mo"],
+                                        ["Same-spec escape: Hostinger Premium", "₹149/mo on the 48-mo sale lock, renews ~₹449/mo"],
                                     ].map(([label, value], i) => (
                                         <tr key={label} className={`border-t border-white/5 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
                                             <td className="p-4 font-medium text-white">{label}</td>
@@ -313,7 +313,7 @@ export default function GodaddyRenewalPrice() {
                         <div className="space-y-4">
                             {[
                                 ["Scenario 1: Only a domain at GoDaddy", "Compare renewal quotes at 2–3 registrars (always the RENEWAL column, not the transfer offer). If GoDaddy is meaningfully higher, transfer: unlock the domain → copy the EPP/auth code → initiate transfer at the new registrar. Takes 5–7 days, usually adds a year to your registration, zero downtime if DNS stays untouched.", "border-blue-500/40 bg-blue-500/[0.06]"],
-                                ["Scenario 2: Hosting renewal feels too high", "Get your exact renewal quote, then price the SAME specs elsewhere at sale rates. Example: GoDaddy economy renewal vs Hostinger Premium at ₹139/mo (48-month lock) — the switch usually pays for itself in month one. Migration is a weekend job: backup files + DB, restore, repoint DNS.", "border-purple-500/40 bg-purple-500/[0.06]"],
+                                ["Scenario 2: Hosting renewal feels too high", "Get your exact renewal quote, then price the SAME specs elsewhere at sale rates. Example: GoDaddy economy renewal vs Hostinger Premium at ₹149/mo (48-month lock) — the switch usually pays for itself in month one. Migration is a weekend job: backup files + DB, restore, repoint DNS.", "border-purple-500/40 bg-purple-500/[0.06]"],
                                 ["Scenario 3: You want to stay at GoDaddy", "Legit levers: renew multi-year during a sale event, open retention chat and directly ask what offers they can apply, and strip add-ons you don't use before renewing. One offer applied by a retention agent often knocks a real chunk off the invoice — but you have to ask, they never volunteer it.", "border-green-500/40 bg-green-500/[0.06]"],
                             ].map(([title, body, cls]) => (
                                 <div key={title} className={`rounded-2xl border p-6 ${cls}`}>
@@ -429,7 +429,7 @@ export default function GodaddyRenewalPrice() {
                         <div className="rounded-3xl border border-primary-500/40 bg-gradient-to-br from-primary-900/40 to-indigo-900/30 p-8 text-center">
                             <h2 className="text-3xl font-bold text-white mb-3">Done with renewal shocks?</h2>
                             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                                Lock 4 years of Hostinger at the sale price (from ~₹111/mo with the referral stack) — free SSL,
+                                Lock 4 years of Hostinger at the sale price (from ~₹119/mo with the referral stack) — free SSL,
                                 backups and email included, free WordPress migration, 30-day money-back.
                             </p>
                             <a

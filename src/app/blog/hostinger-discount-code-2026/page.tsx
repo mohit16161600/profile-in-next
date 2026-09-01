@@ -216,14 +216,14 @@ export default function HostingerDiscountCodeGuide() {
             <h2 className="text-3xl font-bold text-white mb-4">The short answer: there is a discount, it is just not a coupon</h2>
             <p className="text-gray-300 leading-8 mb-4">
               Hostinger&apos;s discount is structural, not promotional. The price you see advertised — Premium at
-              ₹139/mo instead of its ₹599/mo regular rate — is not unlocked by a code. It is attached to the billing
+              ₹149/mo instead of its ₹599/mo regular rate — is not unlocked by a code. It is attached to the billing
               term. Choose the 48-month option and the discount appears on its own; choose monthly billing and you pay
               close to the regular rate no matter what you paste into the coupon field. That is the single biggest
               reason coupon hunting for Hostinger is wasted effort: the lever is the term selector, not a text box.
             </p>
             <p className="text-gray-300 leading-8 mb-4">
               There is exactly one layer that stacks on top of that sale price, and it is a referral discount —
-              roughly an extra 20% off, which takes Premium from ₹139/mo to about ₹111/mo. Mine is
+              roughly an extra 20% off, which takes Premium from ₹149/mo to about ₹119/mo. Mine is
               <span className="bg-white/10 text-white px-2 py-1 rounded font-mono mx-1">MOHITKOLI</span>
               and it applies automatically when checkout opens through the link below. You can also type it into the
               coupon field manually if you prefer to see it happen.
@@ -328,15 +328,15 @@ export default function HostingerDiscountCodeGuide() {
                   <tr className="border-t border-white/5 bg-white/[0.02]">
                     <td className="p-4 font-medium text-white">Premium</td>
                     <td className="p-4 text-red-400 line-through">₹599/mo</td>
-                    <td className="p-4">₹139/mo</td>
-                    <td className="p-4 text-purple-300 font-bold">~₹111/mo</td>
+                    <td className="p-4">₹149/mo</td>
+                    <td className="p-4 text-purple-300 font-bold">~₹119/mo</td>
                     <td className="p-4">₹449/mo</td>
                   </tr>
                   <tr className="border-t border-white/5">
                     <td className="p-4 font-medium text-white">Business</td>
                     <td className="p-4 text-red-400 line-through">₹699/mo</td>
                     <td className="p-4">₹199/mo</td>
-                    <td className="p-4 text-purple-300 font-bold">~₹159/mo</td>
+                    <td className="p-4 text-purple-300 font-bold">~₹199/mo</td>
                     <td className="p-4">₹649/mo</td>
                   </tr>
                   <tr className="border-t border-white/5 bg-white/[0.02]">
@@ -360,7 +360,7 @@ export default function HostingerDiscountCodeGuide() {
               Two things people miss at this screen. First, the free domain for the first year (worth roughly ₹799) is
               claimed in the setup wizard after payment, not in the coupon field — skip the wizard and you have thrown
               it away. Second, the discount is a percentage of the term total, so it looks small per month and large on
-              the invoice: Premium at ₹139/mo is ₹6,672 for four years, and the referral layer takes a meaningful bite
+              the invoice: Premium at ₹149/mo is ₹7,152 for four years, and the referral layer takes a meaningful bite
               out of that.
             </p>
           </section>
@@ -375,12 +375,12 @@ export default function HostingerDiscountCodeGuide() {
             </p>
             <ul className="space-y-3 text-gray-300 mb-6">
               <li className="leading-8">
-                <strong className="text-white">Blog, portfolio, or small business site:</strong> Premium. ₹6,672 upfront
+                <strong className="text-white">Blog, portfolio, or small business site:</strong> Premium. ₹7,152 upfront
                 for the 48-month term, three websites, free domain and free SSL. This is where the referral discount
                 does the most useful work per rupee.
               </li>
               <li className="leading-8">
-                <strong className="text-white">WooCommerce or client work:</strong> Business at ₹199/mo — ₹9,552 for the
+                <strong className="text-white">WooCommerce or client work:</strong> Business at ₹199/mo — ₹11,952 for the
                 term — for NVMe storage and daily backups. The extra ₹60/mo over Premium is the cheapest insurance in
                 the lineup.
               </li>

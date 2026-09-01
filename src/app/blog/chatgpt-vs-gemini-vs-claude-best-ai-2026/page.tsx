@@ -9,7 +9,7 @@ const PUBLISHED = "2026-04-25T00:00:00.000Z";
 export const metadata: Metadata = {
   title: "ChatGPT vs Gemini vs Claude: The Ultimate 2026 AI Showdown",
   description:
-    "Discover the best AI in 2026. We compare ChatGPT, Google Gemini, and Anthropic Claude on coding, writing, and accuracy. See the shocking winner inside!",
+    "ChatGPT, Gemini and Claude compared for 2026 on coding, writing, reasoning and price — with a clear recommendation for each kind of work.",
   keywords: [
     "ChatGPT vs Gemini vs Claude",
     "best AI in 2026",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChatGPT vs Gemini vs Claude: The Ultimate 2026 AI Showdown",
     description:
-      "Discover the best AI in 2026. We compare ChatGPT, Google Gemini, and Anthropic Claude on coding, writing, and accuracy. See the shocking winner inside!",
+      "ChatGPT, Gemini and Claude compared for 2026 on coding, writing, reasoning and price — with a clear recommendation for each kind of work.",
     url: CANONICAL,
     type: "article",
     publishedTime: PUBLISHED,

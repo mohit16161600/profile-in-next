@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
   description:
-    "Copy 30 tested viral ChatGPT image prompts for 2026 — action figure, Polaroid, caricature, toy and time-travel edits, plus a beginner formula.",
+    "Copy 30 ready-to-use viral ChatGPT image prompts for 2026 — action figure, Polaroid, caricature, toy and time-travel edits, plus a beginner formula.",
   keywords: [
     "viral chatgpt image prompts",
     "chatgpt image prompts 2026",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
     description:
-      "Copy 30 tested viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
+      "Copy 30 ready-to-use viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
     url: "https://mohitkoli.in/blog/viral-chatgpt-image-prompts-2026",
     type: "article",
     images: ["/assets/blog/viral-chatgpt-image-prompts-2026.png"],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
     description:
-      "Copy 30 tested viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
+      "Copy 30 ready-to-use viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
     images: ["/assets/blog/viral-chatgpt-image-prompts-2026.png"],
   },
 };
@@ -97,7 +97,7 @@ export default function ViralChatGPTImagePrompts2026() {
     "@type": "BlogPosting",
     headline: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
     description:
-      "Copy 30 tested viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
+      "Copy 30 ready-to-use viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
     image: "https://mohitkoli.in/assets/blog/viral-chatgpt-image-prompts-2026.png",
     datePublished: "2026-06-16",
     dateModified: "2026-06-16",

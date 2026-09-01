@@ -8,10 +8,10 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Is Hostinger VPS worth it in 2025?",
+      name: "Is Hostinger VPS worth it in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Hostinger VPS is worth considering in 2025 for users who want affordable virtual private hosting, root access, NVMe storage, and a beginner-friendly setup without paying premium enterprise pricing.",
+        text: "Hostinger VPS is worth considering in 2026 for users who want affordable virtual private hosting, root access, NVMe storage, and a beginner-friendly setup without paying premium enterprise pricing.",
       },
     },
     {
@@ -65,10 +65,12 @@ const plans = [
     name: "KVM 1",
     type: "Starter",
     desc: "Good for experiments, portfolios, and low-traffic sites",
+    price: "₹599/mo",
+    renews: "renews ₹999/mo",
     cpu: "1 vCPU",
     ram: "4 GB RAM",
     ssd: "50 GB NVMe",
-    bw: "1 TB bandwidth",
+    bw: "4 TB bandwidth",
     popular: false,
     link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_1&period=12&referral_type=cart_link&REFERRALCODE=mohitkoli",
   },
@@ -76,10 +78,12 @@ const plans = [
     name: "KVM 2",
     type: "Growth",
     desc: "Better for business websites and small production apps",
+    price: "₹799/mo",
+    renews: "renews ₹1,199/mo",
     cpu: "2 vCPU",
     ram: "8 GB RAM",
     ssd: "100 GB NVMe",
-    bw: "2 TB bandwidth",
+    bw: "8 TB bandwidth",
     popular: false,
     link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_2&period=12&referral_type=cart_link&REFERRALCODE=mohitkoli",
   },
@@ -87,10 +91,12 @@ const plans = [
     name: "KVM 4",
     type: "Best Value",
     desc: "Strong balance for agencies, stores, and heavier workloads",
+    price: "₹1,099/mo",
+    renews: "renews ₹2,399/mo",
     cpu: "4 vCPU",
     ram: "16 GB RAM",
     ssd: "200 GB NVMe",
-    bw: "4 TB bandwidth",
+    bw: "16 TB bandwidth",
     popular: true,
     link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_4&period=12&referral_type=cart_link&REFERRALCODE=mohitkoli",
   },
@@ -98,10 +104,12 @@ const plans = [
     name: "KVM 8",
     type: "Advanced",
     desc: "For high-traffic workloads, larger apps, and demanding stacks",
+    price: "₹2,199/mo",
+    renews: "renews ₹4,399/mo",
     cpu: "8 vCPU",
     ram: "32 GB RAM",
     ssd: "400 GB NVMe",
-    bw: "8 TB bandwidth",
+    bw: "32 TB bandwidth",
     popular: false,
     link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_8&period=12&referral_type=cart_link&REFERRALCODE=mohitkoli",
   },
@@ -117,10 +125,10 @@ export default function Blog5() {
 
       <section id="intro" className="mb-16 text-center">
         <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
-          Hostinger VPS Hosting Review 2025: Is It Worth It?
+          Hostinger VPS Hosting Review 2026: Is It Worth It?
         </h2>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-6 leading-relaxed">
-          If you are comparing affordable virtual private servers in 2025, Hostinger KVM VPS is one of the names that shows up again and again. It is marketed as a budget-friendly VPS option with full root access, NVMe storage, global infrastructure, and enough flexibility for developers, agencies, ecommerce sites, and side projects.
+          If you are comparing affordable virtual private servers in 2026, Hostinger KVM VPS is one of the names that shows up again and again. It is marketed as a budget-friendly VPS option with full root access, NVMe storage, global infrastructure, and enough flexibility for developers, agencies, ecommerce sites, and side projects.
         </p>
         <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
           This review breaks down what Hostinger VPS does well, where it fits best, which plan offers the best value, and how to use my referral code <strong className="text-yellow-500">mohitkoli</strong> to claim the discount.
@@ -142,13 +150,14 @@ export default function Blog5() {
         <h2 className="text-3xl font-bold text-white mb-6">Quick Summary</h2>
         <div className="rounded-2xl border border-green-500/30 bg-green-900/10 p-6 mb-6">
           <p className="text-green-300 leading-relaxed">
-            <strong>Hostinger VPS is a strong value pick in 2025</strong> if you want low-cost VPS hosting with root access, solid storage speed, useful scaling options, and enough control to run production websites or custom stacks.
+            <strong>Hostinger VPS is a strong value pick in 2026</strong> if you want low-cost VPS hosting with root access, solid storage speed, useful scaling options, and enough control to run production websites or custom stacks.
           </p>
         </div>
         <ul className="list-disc list-inside text-gray-300 space-y-3">
           <li><strong>Best for:</strong> developers, agencies, WordPress power users, ecommerce projects, learning server management</li>
           <li><strong>Less ideal for:</strong> users who want fully managed enterprise hosting with zero server responsibility</li>
-          <li><strong>Best overall value:</strong> mid-tier KVM plans usually offer the strongest balance of resources and price</li>
+          <li><strong>Best overall value:</strong> KVM 2 at ₹799/mo — 8 GB RAM and 100 GB NVMe hits the sweet spot for most production sites</li>
+          <li><strong>Prices checked August 2026:</strong> KVM 1 ₹599, KVM 2 ₹799, KVM 4 ₹1,099, KVM 8 ₹2,199 per month on the promotional term — renewals run roughly 1.7-2.2× higher, so factor that in before you commit</li>
         </ul>
       </section>
 
@@ -227,7 +236,9 @@ export default function Blog5() {
                 <h3 className="text-2xl font-bold text-white mb-2 mt-4">{plan.name}</h3>
                 <div className="text-center mb-4">
                   <span className="text-2xl font-bold text-primary-300">{plan.type}</span>
-                  <div className="text-sm text-slate-300 mt-1">{plan.desc}</div>
+                  <div className="mt-2 text-3xl font-bold text-white">{plan.price}</div>
+                  <div className="text-xs text-amber-300">{plan.renews}</div>
+                  <div className="text-sm text-slate-300 mt-2">{plan.desc}</div>
                 </div>
                 <div className="space-y-2 mb-4 text-slate-200">
                   <p className="rounded-lg bg-white/5 px-3 py-2">{plan.cpu}</p>
@@ -328,7 +339,7 @@ export default function Blog5() {
 
       <section id="faq" className="mb-16">
         <h2 className="text-3xl font-bold text-white mb-6">
-          FAQ: Hostinger VPS Hosting Review 2025
+          FAQ: Hostinger VPS Hosting Review 2026
         </h2>
 
         <h3 className="text-2xl font-semibold text-white mb-3">
@@ -363,7 +374,7 @@ export default function Blog5() {
       <section id="conclusion" className="mb-12">
         <h2 className="text-3xl font-bold text-white mb-6">Final Verdict</h2>
         <p className="text-gray-300 mb-4 leading-relaxed">
-          Hostinger KVM VPS remains one of the more attractive low-cost VPS options in 2025 for developers, business owners, and serious website builders who want better performance than shared hosting without jumping straight to expensive managed infrastructure.
+          Hostinger KVM VPS remains one of the more attractive low-cost VPS options in 2026 for developers, business owners, and serious website builders who want better performance than shared hosting without jumping straight to expensive managed infrastructure.
         </p>
         <p className="text-gray-300 mb-6 leading-relaxed">
           If you want an affordable VPS with solid features and flexible growth potential, this is a reasonable choice.

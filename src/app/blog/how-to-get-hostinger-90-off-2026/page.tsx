@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         "hostinger extra 20 percent off",
         "hostinger free domain offer",
         "hostinger lowest price india",
-        "hostinger deal july 2026",
+        "hostinger deal 2026",
         "hostinger referral discount stack",
     ],
     alternates: { canonical: CANONICAL },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 const FAQ = [
     {
         q: "How do I actually get the maximum Hostinger discount?",
-        a: "Stack two discounts: Hostinger's own sale (65–77% off, running almost year-round) plus the extra 20% referral discount that applies automatically when you buy through a referral link. On the Premium plan that turns ₹599/mo into roughly ₹111/mo — about 81% off. During mega sales like Black Friday the same stack reaches up to 90%.",
+        a: "Stack two discounts: Hostinger's own sale (64–83% off, running almost year-round) plus the extra 20% referral discount that applies automatically when you buy through a referral link. On the Premium plan that turns ₹599/mo into roughly ₹119/mo — about 81% off. During mega sales like Black Friday the same stack reaches up to 90%.",
     },
     {
         q: "Do I need to type a coupon code manually?",
@@ -54,7 +54,7 @@ const FAQ = [
     },
     {
         q: "Which plan and billing term gives the biggest discount?",
-        a: "The 48-month term always carries the deepest per-month discount. As of July 2026, Premium is ₹139/mo on the 48-month term (77% off ₹599) before the extra referral discount. Shorter terms (1–12 months) get much smaller discounts, and monthly billing gets almost none.",
+        a: "The 48-month term always carries the deepest per-month discount. As of September 2026, Premium is ₹149/mo on the 48-month term (77% off ₹599) before the extra referral discount. Shorter terms (1–12 months) get much smaller discounts, and monthly billing gets almost none.",
     },
     {
         q: "Do I get a free domain with the discount?",
@@ -62,7 +62,7 @@ const FAQ = [
     },
     {
         q: "What happens after my first term — will renewal cost more?",
-        a: "Yes, and no honest guide should hide it: Premium renews around ₹449/mo after the intro term. That is exactly why locking the 48-month term at ₹139/mo (or lower with referral) is the smart move — you freeze the discounted rate for 4 years.",
+        a: "Yes, and no honest guide should hide it: Premium renews around ₹449/mo after the intro term. That is exactly why locking the 48-month term at ₹149/mo (or lower with referral) is the smart move — you freeze the discounted rate for 4 years.",
     },
 ];
 
@@ -140,20 +140,20 @@ const STEPS = [
     {
         title: "Pick your plan (Premium is right for most people)",
         detail:
-            "Premium (₹139/mo on sale) hosts up to 3 websites with 20 GB SSD and a free domain — perfect for a blog, portfolio, or small business. Choose Business (₹199/mo) if you need 50 websites, NVMe storage, and daily backups. Cloud Startup (₹599/mo) is for high-traffic projects.",
+            "Premium (₹149/mo on sale) hosts up to 3 websites with 20 GB SSD and a free domain — perfect for a blog, portfolio, or small business. Choose Business (₹199/mo) if you need 50 websites, NVMe storage, and daily backups. Cloud Startup (₹599/mo) is for high-traffic projects.",
         tip: "Not sure? Read my full plan-by-plan breakdown linked at the end of this guide.",
     },
     {
         title: "Select the 48-month term — this is where the discount lives",
         detail:
             "The advertised 77% OFF applies only to the 48-month term. Pick 12 months and the discount shrinks; pay monthly and it almost disappears. Four years locked at the lowest rate also protects you from the higher renewal price for four full years.",
-        tip: "48 months at ₹139/mo costs less than 18 months at the renewal rate.",
+        tip: "48 months at ₹149/mo costs less than 18 months at the renewal rate.",
     },
     {
         title: "Verify the referral discount at checkout",
         detail:
             "On the checkout page, look at the order summary. You should see the sale discount already applied, plus the extra referral discount lowering the total again. If you do not see it, enter code MOHITKOLI in the coupon field manually.",
-        tip: "The final per-month price should land near ₹111/mo for Premium — cheaper than the public ₹139 sale price.",
+        tip: "The final per-month price should land near ₹119/mo for Premium — cheaper than the public ₹149 sale price.",
     },
     {
         title: "Create your account and pay in INR",
@@ -192,7 +192,7 @@ export default function Hostinger90OffGuide() {
                         </ol>
                     </nav>
 
-                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Hosting Deal · Updated July 2, 2026</p>
+                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Hosting Deal · Updated September 1, 2026</p>
                     <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
                         How to Get Up to 90% OFF Hostinger in 2026 (Deal Guide)
                     </h1>
@@ -200,11 +200,11 @@ export default function Hostinger90OffGuide() {
                         Most people pay the &quot;sale price&quot; on Hostinger and think they got the best deal. They did not.
                         There is a second discount — an <strong className="text-white">extra 20% referral discount</strong> — that stacks
                         on top of the public sale and brings the total savings to <strong className="text-white">up to 90%</strong> depending
-                        on the plan, term, and sale window. This guide shows the exact stacking method with real July 2026 prices.
+                        on the plan, term, and sale window. This guide shows the exact stacking method with prices re-checked in September 2026.
                     </p>
                     <p className="text-xs text-gray-500 mb-8 border-l-2 border-white/10 pl-3">
                         Disclosure: this post contains my referral link. If you buy through it I earn a commission at no extra cost to you —
-                        and you get the extra referral discount that a direct visit does not. Prices below were checked on July 2, 2026 and
+                        and you get the extra referral discount that a direct visit does not. Prices below were checked on September 1, 2026 and
                         change with Hostinger&apos;s sale cycles.
                     </p>
 
@@ -222,10 +222,10 @@ export default function Hostinger90OffGuide() {
                     {/* Coupon card */}
                     <section aria-label="Hostinger deal summary" className="mb-12">
                         <div className="rounded-3xl border-2 border-dashed border-purple-400/50 bg-gradient-to-br from-purple-900/30 via-indigo-900/20 to-black/40 p-8 text-center">
-                            <p className="text-sm uppercase tracking-[0.3em] text-purple-300 mb-2">Active Deal · July 2026</p>
+                            <p className="text-sm uppercase tracking-[0.3em] text-purple-300 mb-2">Active Deal · September 2026</p>
                             <p className="text-5xl md:text-6xl font-extrabold text-white mb-2">UP TO 90% OFF</p>
                             <p className="text-gray-300 mb-1">
-                                Sale price (65–77% off) <span className="text-white font-semibold">+ extra 20% referral discount</span> · Free domain · Free SSL
+                                Sale price (64–83% off) <span className="text-white font-semibold">+ extra 20% referral discount</span> · Free domain · Free SSL
                             </p>
                             <p className="text-gray-400 text-sm mb-6">
                                 Referral code <span className="bg-white/10 text-white px-2 py-1 rounded font-mono">MOHITKOLI</span> auto-applies through the button below
@@ -257,15 +257,15 @@ export default function Hostinger90OffGuide() {
                                     <tr className="border-t border-white/5 bg-white/[0.02]">
                                         <td className="p-4 font-medium text-white">Premium <span className="text-xs text-purple-300">(most popular)</span></td>
                                         <td className="p-4 text-red-400 line-through">₹599/mo</td>
-                                        <td className="p-4">₹139/mo <span className="text-xs text-gray-500">(77% off)</span></td>
-                                        <td className="p-4 text-purple-300 font-bold">~₹111/mo</td>
+                                        <td className="p-4">₹149/mo <span className="text-xs text-gray-500">(75% off)</span></td>
+                                        <td className="p-4 text-purple-300 font-bold">~₹119/mo</td>
                                         <td className="p-4 text-green-400 font-bold">~81%</td>
                                     </tr>
                                     <tr className="border-t border-white/5">
                                         <td className="p-4 font-medium text-white">Business</td>
                                         <td className="p-4 text-red-400 line-through">₹699/mo</td>
                                         <td className="p-4">₹199/mo <span className="text-xs text-gray-500">(72% off)</span></td>
-                                        <td className="p-4 text-purple-300 font-bold">~₹159/mo</td>
+                                        <td className="p-4 text-purple-300 font-bold">~₹199/mo</td>
                                         <td className="p-4 text-green-400 font-bold">~77%</td>
                                     </tr>
                                     <tr className="border-t border-white/5 bg-white/[0.02]">
@@ -296,14 +296,14 @@ export default function Hostinger90OffGuide() {
                             <div>
                                 <div className="flex justify-between text-sm mb-1">
                                     <span className="text-gray-400">Public sale price</span>
-                                    <span className="text-yellow-300 font-semibold">₹139/mo</span>
+                                    <span className="text-yellow-300 font-semibold">₹149/mo</span>
                                 </div>
                                 <div className="h-4 rounded-full bg-white/5"><div className="h-4 rounded-full bg-yellow-400/80" style={{ width: "23%" }} /></div>
                             </div>
                             <div>
                                 <div className="flex justify-between text-sm mb-1">
                                     <span className="text-gray-300 font-medium">Sale + referral stack (this page)</span>
-                                    <span className="text-green-400 font-bold">~₹111/mo</span>
+                                    <span className="text-green-400 font-bold">~₹119/mo</span>
                                 </div>
                                 <div className="h-4 rounded-full bg-white/5"><div className="h-4 rounded-full bg-gradient-to-r from-green-500 to-emerald-400" style={{ width: "18.5%" }} /></div>
                             </div>
@@ -415,7 +415,7 @@ export default function Hostinger90OffGuide() {
                                 Sale price + extra 20% referral discount + free domain + free SSL + 30-day refund window.
                                 That is the complete deal — no coupon hunting, no fine print surprises.
                             </p>
-                            <DealButton label="Get Hostinger at ~₹111/mo →" />
+                            <DealButton label="Get Hostinger at ~₹119/mo →" />
                         </div>
                     </section>
 

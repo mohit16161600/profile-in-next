@@ -42,7 +42,7 @@ export default function Top25FreeAITools2026() {
       freePlan: "Generous Free Tier",
       bestFor: "Content Creation, Research",
       description: "The OG of AI. In 2026, ChatGPT is no longer just a chatbot; it's a multimodal agent that can see, hear, and perform tasks across your OS.",
-      features: ["Advanced reasoning", "File analysis", "Image generation (DALL-E 3)", "Custom GPTs"],
+      features: ["Advanced reasoning", "File analysis", "Image generation (GPT Image)", "Custom GPTs"],
       pros: "Extremely versatile, huge community.",
       cons: "Free tier can be throttled during peak hours.",
       useCase: "Writing a 2000-word blog post or debugging complex Python scripts in seconds.",
@@ -50,7 +50,7 @@ export default function Top25FreeAITools2026() {
       trend2026: "Autonomous personal assistant for daily life management."
     },
     {
-      name: "Claude 3.5 Sonnet (Anthropic)",
+      name: "Claude Sonnet 5 (Anthropic)",
       replaces: "Professional Editors, Grammarly Premium",
       category: "Writing & Coding",
       freePlan: "Daily Message Limit",
@@ -64,7 +64,7 @@ export default function Top25FreeAITools2026() {
       trend2026: "The go-to tool for 'Human-in-the-loop' professional workflows."
     },
     {
-      name: "Gemini 1.5 Pro (Google)",
+      name: "Gemini 3 (Google)",
       replaces: "PDF Analyzers, Long-form Video Tools",
       category: "Multimodal Analysis",
       freePlan: "Free via Google AI Studio",
@@ -83,7 +83,7 @@ export default function Top25FreeAITools2026() {
       category: "Reasoning & Coding",
       freePlan: "Completely Free / Open Weights",
       bestFor: "Developers, Logic puzzles",
-      description: "DeepSeek has shocked the world in 2025-2026 by matching OpenAI's O1 models in reasoning while being open-source and free for most users.",
+      description: "DeepSeek shook the industry in 2025 by matching OpenAI's frontier reasoning models while staying open-source, and it remains one of the strongest free options in 2026.",
       features: ["Chain-of-thought reasoning", "Excellent coding performance", "No censorship", "Highly efficient"],
       pros: "Unbelievable logic for a free tool.",
       cons: "Smaller brand name, less ecosystem polish.",
@@ -232,7 +232,7 @@ export default function Top25FreeAITools2026() {
       trend2026: "Digital twins for everyone."
     },
     {
-      name: "Runway Gen-3 Alpha",
+      name: "Runway (Gen-4)",
       replaces: "Stock Video, VFX Studios",
       category: "Video Generation",
       freePlan: "Free Trial Credits",
@@ -265,7 +265,7 @@ export default function Top25FreeAITools2026() {
       category: "High-end Image Gen",
       freePlan: "Free via Hugging Face/Poe",
       bestFor: "Photorealistic images, Text in images",
-      description: "Flux is the new king of open-source image generation. It beats DALL-E 3 at text rendering and Midjourney at realism.",
+      description: "Flux is the new king of open-source image generation. It competes with the big proprietary image models at text rendering and realism — remarkable for an open-source model.",
       features: ["Perfect text rendering", "Hyper-realism", "Open-source weights", "Varied styles"],
       pros: "The best text-in-image capability ever seen.",
       cons: "Requires good hardware if running locally.",
@@ -321,7 +321,7 @@ export default function Top25FreeAITools2026() {
       category: "Graphic Design",
       freePlan: "Completely Free",
       bestFor: "Social Media Managers",
-      description: "Integrated with DALL-E 3, Microsoft Designer is the easiest way to create high-quality graphics for social media for free.",
+      description: "Powered by OpenAI's image models, Microsoft Designer is the easiest way to create high-quality graphics for social media for free.",
       features: ["Brand kit generator", "One-click design", "AI image generation", "Background removal"],
       pros: "Entirely free with a Microsoft account.",
       cons: "Less customization than Canva.",
@@ -381,7 +381,7 @@ export default function Top25FreeAITools2026() {
       features: ["Model switching", "Web search", "Image generation", "No tracking"],
       pros: "No login required for basic use; 100% free.",
       cons: "Can be slower than proprietary models.",
-      useCase: "Using the latest Llama 3.1 405B model for free without paying $20/mo.",
+      useCase: "Using the latest open Llama models for free without paying $20/mo.",
       hiddenFeature: "Web Search capability integrated into open models.",
       trend2026: "The primary gateway to the open-source AI world."
     }
@@ -438,7 +438,7 @@ export default function Top25FreeAITools2026() {
     },
     {
       question: "Can AI write a whole book for free?",
-      answer: "Claude 3.5 Sonnet is your best bet for this due to its long context and nuanced tone, though you'll need to work in chapters to stay within the free limits."
+      answer: "Claude is your best bet for this due to its long context and nuanced tone, though on the free tier you'll need to work in chapters to stay within the limits."
     },
     {
       question: "Is Midjourney still worth it if Leonardo is free?",
@@ -563,7 +563,7 @@ export default function Top25FreeAITools2026() {
         {/* Powerful Intro Section */}
         <section className="prose prose-invert max-w-none">
           <div className="text-2xl text-gray-300 leading-relaxed mb-12 font-medium italic border-l-4 border-orange-500 pl-8 py-2">
-            "I just saved $240 a month by canceling my 'AI Stack' and switching to these free alternatives. The crazy part? Some of them are actually better."
+            Stack three or four paid AI subscriptions and you are quietly spending ₹5,000-₹10,000 a month. Almost every tool on this list replaces one of those line items with a genuinely usable free tier.
           </div>
 
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
@@ -733,7 +733,7 @@ export default function Top25FreeAITools2026() {
               <div className="p-8 bg-white/5 rounded-3xl border border-white/10 text-center scale-110 shadow-2xl border-orange-500/30">
                 <p className="text-gray-500 uppercase font-bold text-xs tracking-widest mb-2">The Developer Stack</p>
                 <p className="text-4xl font-bold text-white mb-4">$2,100</p>
-                <p className="text-sm text-gray-400 mb-6">Copilot + GPT-4 + AWS + JetBrains</p>
+                <p className="text-sm text-gray-400 mb-6">Copilot + GPT-5 + AWS + JetBrains</p>
                 <div className="h-1 w-full bg-orange-500/20 rounded-full mb-6 overflow-hidden">
                   <div className="h-full w-full bg-orange-500 animate-pulse" />
                 </div>
@@ -763,13 +763,13 @@ export default function Top25FreeAITools2026() {
                 <p className="text-sm text-gray-300 italic">
                   "The cost of intelligence is trending toward zero. In the next 12 months, we expect to see completely free AI agents that can run locally on your phone without an internet connection."
                 </p>
-                <p className="text-xs text-gray-500 mt-4">— Tech Forecaster, 2026 Report</p>
+                <p className="text-xs text-gray-500 mt-4">— a pattern you can verify on any of the pricing pages linked above</p>
               </div>
             </div>
             <div className="space-y-6">
               <div className="p-6 bg-white/5 border border-white/10 rounded-2xl">
                 <h4 className="font-bold text-white mb-2">🚨 2026 Reality Check:</h4>
-                <p className="text-sm text-gray-400">90% of paid AI tools are actually just wrappers around free models you can access directly. Stop paying for the UI; start using the engine.</p>
+                <p className="text-sm text-gray-400">A large share of paid AI tools are wrappers around the same underlying models you can access directly for free. Before paying for a UI, check whether the engine underneath has its own free tier.</p>
               </div>
               <div className="p-6 bg-white/5 border border-white/10 rounded-2xl">
                 <h4 className="font-bold text-white mb-2">🔥 Pro Tip:</h4>

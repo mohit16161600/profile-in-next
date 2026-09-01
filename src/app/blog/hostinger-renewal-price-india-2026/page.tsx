@@ -8,9 +8,9 @@ const REFERRAL_URL_ALT = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-renewal-price-india-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger Renewal Price in India 2026: ₹139 Jumps to ₹449/mo",
+    title: "Hostinger Renewal Price in India 2026: ₹149 Jumps to ₹449/mo",
     description:
-        "Hostinger renewal price in India 2026: Premium jumps from ₹139 to ₹449/mo after year 1. Full hosting + domain renewal rate list and 5 legit ways to avoid it.",
+        "Hostinger renewal price in India 2026: Premium jumps from ₹149 to ₹449/mo after year 1. Full hosting + domain renewal rate list and 5 legit ways to avoid it.",
     keywords: [
         "hostinger renewal price",
         "hostinger renewal price india",
@@ -28,16 +28,16 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger Renewal Price in India 2026: ₹139 Jumps to ₹449/mo",
+        title: "Hostinger Renewal Price in India 2026: ₹149 Jumps to ₹449/mo",
         description:
-            "Premium renews at ₹449/mo once the ₹139 intro term ends. Exact renewal rates for every Hostinger plan and domain in India, the 4-year cost math, and 5 legit ways to keep the low price.",
+            "Premium renews at ₹449/mo once the ₹149 intro term ends. Exact renewal rates for every Hostinger plan and domain in India, the 4-year cost math, and 5 legit ways to keep the low price.",
         url: CANONICAL,
         type: "article",
         images: [{ url: "/assets/blog/hostinger-renewal-price-india-2026.png", width: 1200, height: 630, alt: "Hostinger renewal price in India 2026" }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hostinger Renewal Price India 2026: ₹139 Jumps to ₹449/mo",
+        title: "Hostinger Renewal Price India 2026: ₹149 Jumps to ₹449/mo",
         description: "Renewal rates for every Hostinger plan and domain in India, the 4-year math, and how to avoid the jump entirely.",
         images: ["/assets/blog/hostinger-renewal-price-india-2026.png"],
     },
@@ -50,7 +50,7 @@ const FAQ = [
     },
     {
         q: "How much does Hostinger Premium cost after renewal in India?",
-        a: "Premium renews around ₹449/mo (roughly ₹5,388/year) once your intro term ends. The intro sale price (₹139/mo on the 48-month term) applies only to your first purchase — which is exactly why buying the longest term upfront saves the most money.",
+        a: "Premium renews around ₹449/mo (roughly ₹5,388/year) once your intro term ends. The intro sale price (₹149/mo on the 48-month term) applies only to your first purchase — which is exactly why buying the longest term upfront saves the most money.",
     },
     {
         q: "Why is Hostinger's renewal price higher than the price I paid?",
@@ -82,9 +82,9 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger Renewal Price in India 2026: ₹139 Jumps to ₹449/mo",
+        headline: "Hostinger Renewal Price in India 2026: ₹149 Jumps to ₹449/mo",
         description:
-            "Hostinger renewal price in India 2026: Premium jumps from ₹139 to ₹449/mo after year 1. Full hosting + domain renewal rate list and 5 legit ways to avoid it.",
+            "Hostinger renewal price in India 2026: Premium jumps from ₹149 to ₹449/mo after year 1. Full hosting + domain renewal rate list and 5 legit ways to avoid it.",
         image: "https://mohitkoli.in/assets/blog/hostinger-renewal-price-india-2026.png",
         datePublished: "2026-08-09T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",
@@ -130,7 +130,7 @@ const jsonLd = [
 ];
 
 const RENEWAL_TABLE = [
-    ["Premium (shared)", "₹139/mo", "₹449/mo", "+223%", "₹5,388"],
+    ["Premium (shared)", "₹149/mo", "₹449/mo", "+223%", "₹5,388"],
     ["Business (shared)", "₹199/mo", "₹649/mo", "+226%", "₹7,788"],
     ["Cloud Startup", "₹599/mo", "₹1,599/mo", "+167%", "₹19,188"],
     ["KVM VPS (all tiers)", "from ~₹499/mo", "verify at checkout", "—", "—"],
@@ -164,7 +164,7 @@ export default function HostingerRenewalPrice() {
                         Hostinger Renewal Price in India (2026): What You&apos;ll Actually Pay After Year One
                     </h1>
                     <p className="text-lg text-gray-300 leading-8 mb-3">
-                        You bought Hostinger at ₹139/mo, and the renewal email says ₹449/mo. That jump is real, and it is the most
+                        You bought Hostinger at ₹149/mo, and the renewal email says ₹449/mo. That jump is real, and it is the most
                         common hosting question in my inbox. So this page lists{" "}
                         <strong className="text-white">every renewal rate in India (hosting and domains), the exact 4-year cost math, and the five legit ways to keep paying the low price</strong>{" "}
                         — the same tactics I use on my own client sites.
@@ -207,7 +207,7 @@ export default function HostingerRenewalPrice() {
                         <ul className="space-y-2 text-gray-300 leading-7">
                             <li>💰 <strong className="text-white">Premium renews at ~₹449/mo</strong>, Business at ~₹649/mo, Cloud Startup at ~₹1,599/mo.</li>
                             <li>📅 Renewal price hits <strong className="text-white">only after your locked term ends</strong> — a 48-month purchase doesn&apos;t renew until 2030.</li>
-                            <li>🛡️ The defence: <strong className="text-white">buy the longest term at the sale price</strong>. ₹139 × 48 months (~₹6,672) beats 12 months + three renewals (~₹17,952) by roughly ₹11,300.</li>
+                            <li>🛡️ The defence: <strong className="text-white">buy the longest term at the sale price</strong>. ₹149 × 48 months (~₹7,152) beats 12 months + three renewals (~₹17,952) by roughly ₹11,300.</li>
                             <li>🔔 Auto-renewal is ON by default — decide now whether you want it (hPanel → Billing → Subscriptions).</li>
                         </ul>
                     </section>
@@ -297,7 +297,7 @@ export default function HostingerRenewalPrice() {
                             <div className="rounded-2xl border border-green-500/40 bg-green-500/[0.06] p-6">
                                 <h3 className="text-xl font-bold text-white mb-2">✅ Buy 48 months upfront</h3>
                                 <ul className="space-y-2 text-gray-300 text-sm leading-7">
-                                    <li>₹139/mo × 48 months = <strong className="text-white">₹6,672 total</strong></li>
+                                    <li>₹149/mo × 48 months = <strong className="text-white">₹7,152 total</strong></li>
                                     <li>Price locked till mid-2030</li>
                                     <li>Free domain year 1 (~₹799 value)</li>
                                     <li>Renewal rates can&apos;t touch you for 4 years</li>
@@ -489,7 +489,7 @@ export default function HostingerRenewalPrice() {
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
-                        <ShareButtons url={CANONICAL} title="Hostinger Renewal Price in India 2026: ₹139 Jumps to ₹449/mo" />
+                        <ShareButtons url={CANONICAL} title="Hostinger Renewal Price in India 2026: ₹149 Jumps to ₹449/mo" />
                     </div>
                 </article>
             </main>

@@ -73,7 +73,7 @@ const FAQ = [
     },
     {
         q: "Which Hostinger hosting plans include a free domain?",
-        a: "Every Hostinger plan from Premium and above, bought on a 12-month term or longer, includes a free domain for the first year. Premium starts around ₹139/mo in India, so the bundle often costs less than buying a good domain and hosting separately. The entry-level Single plan does not include the free domain.",
+        a: "Every Hostinger plan from Premium and above, bought on a 12-month term or longer, includes a free domain for the first year. Premium starts around ₹149/mo in India, so the bundle often costs less than buying a good domain and hosting separately. The entry-level Single plan does not include the free domain.",
     },
     {
         q: "Is Hostinger cheaper than GoDaddy for domain registration in India?",
@@ -352,7 +352,7 @@ export default function HostingerDomainPriceIndia() {
                         <p className="text-gray-300 leading-8">
                             Quick map of the shared-hosting tiers: <strong className="text-white">Single</strong> is the entry plan and does{" "}
                             <em>not</em> include a free domain — fine if you already own one.{" "}
-                            <strong className="text-white">Premium</strong> (from ~₹139/mo) is the sweet spot: free first-year domain, free
+                            <strong className="text-white">Premium</strong> (from ~₹149/mo) is the sweet spot: free first-year domain, free
                             SSL and email, and enough capacity for most blogs and business sites.{" "}
                             <strong className="text-white">Business and above</strong> keep the free domain and add more power for
                             WooCommerce or higher-traffic sites. If you&apos;re still deciding whether Hostinger is even the right host for
@@ -366,7 +366,7 @@ export default function HostingerDomainPriceIndia() {
                             Not sure which plan? I break down every tier in{" "}
                             <Link href="/blog/hostinger-plans-pricing-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
                                 Hostinger Plans &amp; Pricing in India 2026
-                            </Link>{" "}— Premium (from ~₹139/mo) is where the free domain starts.
+                            </Link>{" "}— Premium (from ~₹149/mo) is where the free domain starts.
                         </p>
                     </section>
 

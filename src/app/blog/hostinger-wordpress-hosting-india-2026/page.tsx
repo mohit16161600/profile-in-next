@@ -7,9 +7,9 @@ const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-wordpress-hosting-india-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger WordPress Hosting India 2026: ₹139/mo Real Review",
+    title: "Hostinger WordPress Hosting India 2026: ₹149/mo Real Review",
     description:
-        "Hostinger WordPress hosting in India from ₹139/mo — real-world speed, best plan for blog vs WooCommerce, the renewal trap and free migration, before you pay.",
+        "Hostinger WordPress hosting in India from ₹149/mo — real-world speed, best plan for blog vs WooCommerce, the renewal trap and free migration, before you pay.",
     keywords: [
         "hostinger wordpress hosting india",
         "hostinger wordpress hosting price in india",
@@ -25,16 +25,16 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger WordPress Hosting India 2026: ₹139/mo Real Review",
+        title: "Hostinger WordPress Hosting India 2026: ₹149/mo Real Review",
         description:
-            "Hostinger WordPress hosting in India from ₹139/mo — real-world speed, best plan for blog vs WooCommerce, the renewal trap and free migration, before you pay.",
+            "Hostinger WordPress hosting in India from ₹149/mo — real-world speed, best plan for blog vs WooCommerce, the renewal trap and free migration, before you pay.",
         url: CANONICAL,
         type: "article",
         images: [{ url: "/assets/blog/hostinger-wordpress-hosting-india-2026.png", width: 1200, height: 630, alt: "Hostinger WordPress hosting India 2026 review" }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hostinger WordPress Hosting India 2026: ₹139/mo Real Review",
+        title: "Hostinger WordPress Hosting India 2026: ₹149/mo Real Review",
         description: "Real-world WP speed, best plan for blog vs WooCommerce, price list, renewal trap and free migration — before you pay.",
         images: ["/assets/blog/hostinger-wordpress-hosting-india-2026.png"],
     },
@@ -47,11 +47,11 @@ const FAQ = [
     },
     {
         q: "Which Hostinger plan should I buy for WordPress?",
-        a: "For a normal blog, Premium (₹139/mo on the 48-month sale term) is enough: 3 websites, 20 GB SSD, free domain year one, free SSL and weekly backups. Buy Business (₹199/mo) if the site earns money — NVMe storage, daily backups and the staging environment are worth the extra ₹60/mo once your content is your income. WooCommerce stores should treat Business as the minimum.",
+        a: "For a normal blog, Premium (₹149/mo on the 48-month sale term) is enough: 3 websites, 20 GB SSD, free domain year one, free SSL and weekly backups. Buy Business (₹199/mo) if the site earns money — NVMe storage, daily backups and the staging environment are worth the extra ₹60/mo once your content is your income. WooCommerce stores should treat Business as the minimum.",
     },
     {
         q: "How much does Hostinger WordPress hosting cost in India?",
-        a: "On the current sale, Premium is ₹139/mo and Business is ₹199/mo on the 48-month term — roughly ₹6,672 and ₹9,552 upfront. Stacking the referral discount can bring Premium to around ₹111/mo effective. Budget for renewal too: Premium renews at about ₹449/mo after the term, which is why the long term is the smart buy.",
+        a: "On the current sale, Premium is ₹149/mo and Unlimited (formerly Business) is ₹249/mo on the 48-month term — roughly ₹7,152 and ₹11,952 upfront. Stacking the referral discount can bring Premium to around ₹119/mo effective. Budget for renewal too: Premium renews at about ₹449/mo after the term, which is why the long term is the smart buy.",
     },
     {
         q: "Can I migrate my existing WordPress site to Hostinger for free?",
@@ -79,9 +79,9 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger WordPress Hosting India 2026: ₹139/mo Real Review",
+        headline: "Hostinger WordPress Hosting India 2026: ₹149/mo Real Review",
         description:
-            "Hostinger WordPress hosting in India from ₹139/mo — real-world speed, best plan for blog vs WooCommerce, the renewal trap and free migration, before you pay.",
+            "Hostinger WordPress hosting in India from ₹149/mo — real-world speed, best plan for blog vs WooCommerce, the renewal trap and free migration, before you pay.",
         image: "https://mohitkoli.in/assets/blog/hostinger-wordpress-hosting-india-2026.png",
         datePublished: "2026-08-09T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",
@@ -151,7 +151,7 @@ export default function HostingerWordpressHosting() {
                         I run client WordPress sites on Hostinger — blogs, business sites, and a couple of WooCommerce
                         stores. So instead of a copied feature list, this is the answer I&apos;d give a friend:{" "}
                         <strong className="text-white">what WordPress on Hostinger is genuinely like</strong> — the speed you can expect,
-                        the exact setup steps, which plan fits which site, what it really costs (Premium starts at ₹139/mo),
+                        the exact setup steps, which plan fits which site, what it really costs (Premium starts at ₹149/mo),
                         and the three limitations nobody puts in their ads.
                     </p>
                     <p className="text-xs text-gray-500 mb-8 border-l-2 border-white/10 pl-3">
@@ -192,7 +192,7 @@ export default function HostingerWordpressHosting() {
                         <ul className="space-y-2 text-gray-300 leading-7">
                             <li>✅ <strong className="text-white">Yes for:</strong> blogs, portfolios, business sites, small WooCommerce — best value WP hosting in the Indian budget band.</li>
                             <li>⚡ <strong className="text-white">Speed comes from LiteSpeed + LSCache</strong> — enable the plugin properly and a normal blog loads in well under a second.</li>
-                            <li>📊 <strong className="text-white">Plan pick:</strong> blog → Premium ₹139/mo · business/store → Business ₹199/mo · busy store → Cloud.</li>
+                            <li>📊 <strong className="text-white">Plan pick:</strong> blog → Premium ₹149/mo · business/store → Unlimited ₹249/mo · busy store → Cloud.</li>
                             <li>⚠️ <strong className="text-white">Not for:</strong> enterprise sites needing managed-WP hand-holding (WP Engine territory) or viral-scale traffic on shared tiers.</li>
                         </ul>
                     </section>
@@ -205,8 +205,8 @@ export default function HostingerWordpressHosting() {
                                 <thead className="bg-white/5 text-gray-200">
                                     <tr>
                                         <th className="p-4 font-semibold">Feature</th>
-                                        <th className="p-4">Premium (₹139/mo)</th>
-                                        <th className="p-4">Business (₹199/mo)</th>
+                                        <th className="p-4">Premium (₹149/mo)</th>
+                                        <th className="p-4">Unlimited (₹249/mo)</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-gray-300">
@@ -262,8 +262,8 @@ export default function HostingerWordpressHosting() {
                                 </thead>
                                 <tbody className="text-gray-300">
                                     {[
-                                        ["Premium", "₹139/mo", "~₹6,672", "Blogs, portfolios"],
-                                        ["Business", "₹199/mo", "~₹9,552", "Business sites, WooCommerce"],
+                                        ["Premium", "₹149/mo", "~₹7,152", "Blogs, portfolios"],
+                                        ["Unlimited (was Business)", "₹249/mo", "~₹11,952", "Business sites, WooCommerce"],
                                         ["Cloud Startup", "Higher tier", "See plans guide", "Busy stores, steady daily orders"],
                                     ].map(([plan, price, total, fit], i) => (
                                         <tr key={plan} className={`border-t border-white/5 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
@@ -277,7 +277,7 @@ export default function HostingerWordpressHosting() {
                             </table>
                         </div>
                         <p className="text-gray-300 leading-8 mb-4">
-                            The honest cost math: Premium at ₹139/mo is roughly ₹6,672 paid upfront for four years, and that
+                            The honest cost math: Premium at ₹149/mo is roughly ₹7,152 paid upfront for four years, and that
                             includes a free domain for year one (worth ~₹799), free SSL and weekly backups — there is nothing
                             else you have to buy to get a WordPress blog live. The catch every budget host shares is renewal:
                             Premium goes to about ₹449/mo once the term ends, more than 3× the sale price. That is exactly why
@@ -288,7 +288,7 @@ export default function HostingerWordpressHosting() {
                             guide.
                         </p>
                         <p className="text-sm text-gray-500">
-                            Going through the referral link can bring Premium down to roughly ₹111/mo effective — the stacking
+                            Going through the referral link can bring Premium down to roughly ₹119/mo effective — the stacking
                             steps are in my{" "}
                             <Link href="/blog/how-to-get-hostinger-90-off-2026" className="text-primary-400 underline underline-offset-4 hover:text-primary-300">Hostinger 90% off walkthrough</Link>.
                         </p>
@@ -312,9 +312,9 @@ export default function HostingerWordpressHosting() {
                                 </thead>
                                 <tbody className="text-gray-300">
                                     {[
-                                        ["Personal blog / portfolio", "Premium (₹139/mo)", "20 GB SSD and weekly backups are plenty; free domain covers year one."],
-                                        ["Income blog / business site", "Business (₹199/mo)", "NVMe disks, daily backups and staging — cheap insurance once the site earns."],
-                                        ["Small WooCommerce store", "Business (₹199/mo)", "Cart sessions bypass cache and write to the DB constantly; NVMe absorbs that."],
+                                        ["Personal blog / portfolio", "Premium (₹149/mo)", "20 GB SSD and weekly backups are plenty; free domain covers year one."],
+                                        ["Income blog / business site", "Unlimited (₹249/mo)", "NVMe disks, daily backups and staging — cheap insurance once the site earns."],
+                                        ["Small WooCommerce store", "Unlimited (₹249/mo)", "Cart sessions bypass cache and write to the DB constantly; NVMe absorbs that."],
                                         ["Store with steady daily orders", "Cloud Startup", "Dedicated resources and priority support; upgrade path lives in the same hPanel."],
                                     ].map(([site, plan, why], i) => (
                                         <tr key={site} className={`border-t border-white/5 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
@@ -367,7 +367,7 @@ export default function HostingerWordpressHosting() {
                     <aside className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
                         <p className="text-gray-300 leading-7 mb-4 sm:mb-0">
                             Those five steps really are the whole setup — Premium is enough to follow along for a blog,
-                            and the referral link brings it to roughly ₹111/mo effective.
+                            and the referral link brings it to roughly ₹119/mo effective.
                         </p>
                         <a
                             href={REFERRAL_URL}
@@ -416,7 +416,7 @@ export default function HostingerWordpressHosting() {
                         <div className="rounded-3xl border border-primary-500/40 bg-gradient-to-br from-primary-900/40 to-indigo-900/30 p-8 text-center">
                             <h2 className="text-3xl font-bold text-white mb-3">Start your WordPress site today</h2>
                             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                                Premium from ~₹111/mo with the referral stack — free domain, SSL, LiteSpeed, managed WordPress.
+                                Premium from ~₹119/mo with the referral stack — free domain, SSL, LiteSpeed, managed WordPress.
                                 30-day money-back guarantee, so the trial is genuinely risk-free.
                             </p>
                             <a
@@ -469,7 +469,7 @@ export default function HostingerWordpressHosting() {
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
-                        <ShareButtons url={CANONICAL} title="Hostinger WordPress Hosting India 2026: ₹139/mo Real Review" />
+                        <ShareButtons url={CANONICAL} title="Hostinger WordPress Hosting India 2026: ₹149/mo Real Review" />
                     </div>
                 </article>
             </main>

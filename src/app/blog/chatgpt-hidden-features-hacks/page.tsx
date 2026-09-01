@@ -4,8 +4,8 @@ import Link from "next/link";
 import PrintButton from "@/components/PrintButton";
 
 export const metadata: Metadata = {
-  title: "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
-  description: "Copy the ChatGPT god mode prompt (2026) and unlock 15 hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
+  title: "ChatGPT Hidden Features 2026: God Mode Prompt + Pro Hacks",
+  description: "Copy the ChatGPT god mode prompt (2026) and unlock the hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
   keywords: [
     "chatgpt god mode prompt 2026",
     "chatgpt god mode prompt",
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     canonical: "https://mohitkoli.in/blog/chatgpt-hidden-features-hacks",
   },
   openGraph: {
-    title: "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
-    description: "Copy the ChatGPT god mode prompt (2026) and unlock 15 hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
+    title: "ChatGPT Hidden Features 2026: God Mode Prompt + Pro Hacks",
+    description: "Copy the ChatGPT god mode prompt (2026) and unlock the hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
     images: ["/assets/blog/chatgpt-hidden-features-hacks.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
-    description: "Copy the ChatGPT god mode prompt (2026) and unlock 15 hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
+    title: "ChatGPT Hidden Features 2026: God Mode Prompt + Pro Hacks",
+    description: "Copy the ChatGPT god mode prompt (2026) and unlock the hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
     images: ["/assets/blog/chatgpt-hidden-features-hacks.png"],
   },
 };
@@ -98,7 +98,7 @@ export default function ChatGPTGodModeHacks() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            "headline": "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
+            "headline": "ChatGPT Hidden Features 2026: God Mode Prompt + Pro Hacks",
             "image": "https://mohitkoli.in/assets/blog/chatgpt-hidden-features-hacks.png",
             "author": {
               "@type": "Person",
@@ -119,7 +119,7 @@ export default function ChatGPTGodModeHacks() {
               "@id": "https://mohitkoli.in/blog/chatgpt-hidden-features-hacks"
             },
             "keywords": "chatgpt god mode prompt 2026, ChatGPT hidden features, hidden chatgpt features, ChatGPT hacks, ChatGPT custom instructions prompt",
-            "description": "Copy the ChatGPT god mode prompt (2026) and unlock 15 hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows."
+            "description": "Copy the ChatGPT god mode prompt (2026) and unlock the hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows."
           }),
         }}
       />
@@ -145,7 +145,7 @@ export default function ChatGPTGodModeHacks() {
               {
                 "@type": "ListItem",
                 "position": 3,
-                "name": "ChatGPT Hidden Features 2026: God Mode Prompt + 15 Hacks",
+                "name": "ChatGPT Hidden Features 2026: God Mode Prompt + Pro Hacks",
                 "item": "https://mohitkoli.in/blog/chatgpt-hidden-features-hacks"
               }
             ]
@@ -395,8 +395,35 @@ export default function ChatGPTGodModeHacks() {
           <hr className="border-white/5 my-20" />
 
           {/* Section 9: The Future */}
+          <h2 id="vision-hacks" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
+            <span className="text-green-500">09.</span> Multimodal Vision Hacks
+          </h2>
+          <p className="text-gray-400 mb-6 leading-relaxed">
+            Vision is not just &quot;what&apos;s in this image?&quot; — it is <strong className="text-white">functional analysis</strong>. Three uses most people never try:
+          </p>
+          <ul className="list-disc pl-8 space-y-4 text-gray-400 mb-12">
+            <li><strong className="text-white">The designer hack:</strong> screenshot a website you love and ask, &quot;Write the Tailwind CSS to recreate this hero section.&quot;</li>
+            <li><strong className="text-white">The handyman hack:</strong> photograph the mystery pipe under your sink and ask, &quot;What part do I need from the hardware store to fix this?&quot;</li>
+            <li><strong className="text-white">The student hack:</strong> photograph a physics diagram and say, &quot;Explain the forces at play here like I&apos;m five.&quot;</li>
+          </ul>
+
+          <hr className="border-white/5 my-20" />
+
+          <h2 id="voice-roleplay" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
+            <span className="text-green-500">10.</span> Advanced Voice Mode: The Interview Coach
+          </h2>
+          <p className="text-gray-400 mb-6 leading-relaxed">
+            If you are still typing everything, you are leaving the most underused feature on the table. The hidden
+            use case for Advanced Voice is <strong className="text-white">roleplay</strong>: ask ChatGPT to act as a
+            tough hiring manager for the exact role you are chasing, then practise your answers out loud. It pushes
+            back on weak answers, asks follow-ups, and you get to fail privately before you succeed publicly. The
+            same trick works for language practice, salary negotiation and client pitches.
+          </p>
+
+          <hr className="border-white/5 my-20" />
+
           <h2 id="future" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
-            <span className="text-green-500">09.</span> The Future of Hidden AI Features
+            <span className="text-green-500">11.</span> The Future of Hidden AI Features
           </h2>
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
             My bet for late 2026 is <strong>agentic memory</strong>—where ChatGPT remembers not just what you said but what it <em>did</em> for you. Less "here's a draft" and more "I noticed you haven't touched the blog in three days; want me to start the next post from those notes we made last week?" That's a guess, not a roadmap leak, so hold it loosely.

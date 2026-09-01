@@ -7,9 +7,9 @@ const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/best-web-hosting-india-2026";
 
 export const metadata: Metadata = {
-    title: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹139/mo)",
+    title: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹149/mo)",
     description:
-        "7 best web hosting services in India for 2026 ranked on speed, renewal traps and real INR prices from ₹139/mo — plus the cheapest reliable pick before you pay.",
+        "7 best web hosting services in India for 2026 ranked on speed, renewal traps and real INR prices from ₹149/mo — plus the cheapest reliable pick before you pay.",
     keywords: [
         "best web hosting india",
         "best web hosting india 2026",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹139/mo)",
+        title: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹149/mo)",
         description: "Speed, uptime, real INR pricing and renewal honesty — 7 hosts ranked for India with one clear #1 for beginners.",
         url: CANONICAL,
         type: "article",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹139/mo)",
+        title: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹149/mo)",
         description: "The full ranked list with real INR prices, renewal traps and a clear #1 pick.",
         images: ["/assets/blog/best-web-hosting-india-2026.png"],
     },
@@ -48,13 +48,13 @@ const HOSTS = [
         rank: 1,
         name: "Hostinger",
         rating: 9.4,
-        price: "₹139/mo",
+        price: "₹149/mo",
         renewal: "₹449/mo",
         bestFor: "Overall #1 — beginners, blogs, business sites",
-        pros: ["Cheapest real specs in India (~₹111/mo with referral stack)", "Mumbai data center + LiteSpeed = fast for Indian visitors", "Free domain, SSL, email (yr 1), weekly backups bundled", "Modern hPanel — easier than cPanel for first-timers", "Free automated migration"],
+        pros: ["Cheapest real specs in India (~₹119/mo with referral stack)", "Mumbai data center + LiteSpeed = fast for Indian visitors", "Free domain, SSL, email (yr 1), weekly backups bundled", "Modern hPanel — easier than cPanel for first-timers", "Free automated migration"],
         cons: ["Best price requires 48-month term", "Chat-only support (no phone)"],
         blurb:
-            "Hostinger wins 2026 the same way it won 2025: nobody else gives NVMe-class performance, a Mumbai data center, and a full bundle (domain, SSL, email, AI builder) at ₹139/mo — roughly ₹111/mo through the referral stack. Hostinger reports 5M+ clients and 10M+ websites created; my own client sites on Premium hold sub-2-second loads with caching enabled. The 30-day money-back window makes trying it genuinely risk-free.",
+            "Hostinger wins 2026 the same way it won 2025: nobody else gives NVMe-class performance, a Mumbai data center, and a full bundle (domain, SSL, email, AI builder) at ₹149/mo — roughly ₹119/mo through the referral stack. Hostinger reports 5M+ clients and 10M+ websites created; my own client sites on Premium hold sub-2-second loads with caching enabled. The 30-day money-back window makes trying it genuinely risk-free.",
     },
     {
         rank: 2,
@@ -133,15 +133,15 @@ const HOSTS = [
 const FAQ = [
     {
         q: "Which web hosting is best in India in 2026?",
-        a: "Hostinger is the best overall web hosting for India in 2026: ₹139/mo intro pricing (around ₹111/mo with the referral discount), a Mumbai data center, free domain and SSL, and a modern control panel. It won our ranking across price, speed for Indian visitors, and bundled features — Cloudways and Bluehost are the runners-up for specific use cases.",
+        a: "Hostinger is the best overall web hosting for India in 2026: ₹149/mo intro pricing (around ₹119/mo with the referral discount), a Mumbai data center, free domain and SSL, and a modern control panel. It won our ranking across price, speed for Indian visitors, and bundled features — Cloudways and Bluehost are the runners-up for specific use cases.",
     },
     {
         q: "Which hosting is cheapest in India?",
-        a: "Hostinger's Premium plan on the 48-month term is the cheapest hosting from a global-tier provider (~₹111–139/mo with free domain). Domestic budget hosts like MilesWeb go lower (₹60/mo) but with performance ceilings. Avoid free hosting for anything you care about — see the red flags section.",
+        a: "Hostinger's Premium plan on the 48-month term is the cheapest hosting from a global-tier provider (~₹119–139/mo with free domain). Domestic budget hosts like MilesWeb go lower (₹60/mo) but with performance ceilings. Avoid free hosting for anything you care about — see the red flags section.",
     },
     {
         q: "Is Hostinger the best hosting in India?",
-        a: "For most people, yes — it scored 9.4/10 in this ranking on ₹139/mo pricing, a Mumbai data center, and the most complete free bundle (domain, SSL, email, backups). It is not best for everyone: developers running custom Node.js apps may prefer a VPS or DigitalOcean, and US-audience sites can justify Bluehost. The 30-day money-back guarantee makes testing it risk-free.",
+        a: "For most people, yes — it scored 9.4/10 in this ranking on ₹149/mo pricing, a Mumbai data center, and the most complete free bundle (domain, SSL, email, backups). It is not best for everyone: developers running custom Node.js apps may prefer a VPS or DigitalOcean, and US-audience sites can justify Bluehost. The 30-day money-back guarantee makes testing it risk-free.",
     },
     {
         q: "Is a 'best hosting provider in India' list from 2022 still accurate?",
@@ -153,7 +153,7 @@ const FAQ = [
     },
     {
         q: "Is free web hosting worth it in India?",
-        a: "No — free hosts monetize through forced ads, throttled speed, random downtime, and no support, and many inject content into your pages. At ~₹111/mo for real hosting with a free domain, the savings are not worth risking your project or SEO.",
+        a: "No — free hosts monetize through forced ads, throttled speed, random downtime, and no support, and many inject content into your pages. At ~₹119/mo for real hosting with a free domain, the savings are not worth risking your project or SEO.",
     },
     {
         q: "Which hosting should a beginner in India choose for WordPress?",
@@ -165,7 +165,7 @@ const FAQ = [
     },
     {
         q: "Which hosting is best for small business in India?",
-        a: "For most small businesses, Hostinger is the sweet spot: ₹139/mo intro pricing, a Mumbai data center for fast loads on Indian networks, free business email for year one, and bundled SSL and backups. Budget ₹200–600/mo if you run a store or expect higher traffic. GoDaddy suits owners who want phone support in India, but equivalent specs cost visibly more once add-ons and renewals are totalled.",
+        a: "For most small businesses, Hostinger is the sweet spot: ₹149/mo intro pricing, a Mumbai data center for fast loads on Indian networks, free business email for year one, and bundled SSL and backups. Budget ₹200–600/mo if you run a store or expect higher traffic. GoDaddy suits owners who want phone support in India, but equivalent specs cost visibly more once add-ons and renewals are totalled.",
     },
     {
         q: "Should I choose shared hosting, VPS, or cloud hosting in India?",
@@ -177,9 +177,9 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹139/mo)",
+        headline: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹149/mo)",
         description:
-            "7 best web hosting services in India for 2026 ranked on speed, renewal traps and real INR prices from ₹139/mo — plus the cheapest reliable pick before you pay.",
+            "7 best web hosting services in India for 2026 ranked on speed, renewal traps and real INR prices from ₹149/mo — plus the cheapest reliable pick before you pay.",
         image: "https://mohitkoli.in/assets/blog/best-web-hosting-india-2026.png",
         datePublished: "2026-06-30T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",
@@ -349,7 +349,7 @@ export default function BestWebHostingIndia() {
                             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
                                 <h3 className="font-semibold text-white mb-2">💸 Best under ₹200/month</h3>
                                 <p className="text-sm text-gray-300 leading-6">
-                                    Hostinger at ₹139/mo is the strongest sub-₹200 pick with real specs; MilesWeb goes even lower for hobby
+                                    Hostinger at ₹149/mo is the strongest sub-₹200 pick with real specs; MilesWeb goes even lower for hobby
                                     projects. I compared every credible option in{" "}
                                     <Link href="/blog/cheap-web-hosting-under-200-india" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">cheap web hosting under ₹200 in India</Link> —
                                     including which &quot;₹49/mo&quot; deals to avoid and why.
@@ -465,7 +465,7 @@ export default function BestWebHostingIndia() {
                         <p className="text-gray-300 leading-7 mb-4">
                             Most &quot;which host is best&quot; confusion is really &quot;which <em>type</em> of hosting&quot; confusion, so settle
                             that first. <strong className="text-white">Shared hosting (₹100–200/mo)</strong> puts many sites on one managed
-                            server — the right choice for blogs, portfolios, business sites and WordPress stores, and where the ₹139/mo plan
+                            server — the right choice for blogs, portfolios, business sites and WordPress stores, and where the ₹149/mo plan
                             in this ranking lives. The full plan-by-plan breakdown — Premium vs Business, what each tier includes and who
                             should skip which — is in my guide to{" "}
                             <Link href="/blog/hostinger-plans-pricing-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Hostinger plans and pricing in India 2026</Link>.
@@ -486,8 +486,8 @@ export default function BestWebHostingIndia() {
                         <h2 className="text-3xl font-bold text-white mb-4">The renewal trap: what 4 years of hosting really costs</h2>
                         <p className="text-gray-300 leading-7 mb-4">
                             The banner price is a marketing number; the renewal price is your real bill. Quick math with figures from the
-                            table above: Hostinger&apos;s 48-month Premium term locks ₹139/mo for the entire period — about
-                            <strong className="text-white"> ₹6,672 over four years</strong> (roughly ₹5,328 at the ~₹111/mo referral rate).
+                            table above: Hostinger&apos;s 48-month Premium term locks ₹149/mo for the entire period — about
+                            <strong className="text-white"> ₹7,152 over four years</strong> (roughly ₹5,722 at the ~₹119/mo referral rate).
                             SiteGround, ranked #5 above, shows the other end of it: ≈₹250/mo promo, ≈₹1,400/mo renewal — about ₹3,000 in year
                             one and then over <strong className="text-white">₹50,000 across the next three years</strong>, nearly 8x
                             Hostinger&apos;s four-year total for comparable specs. That one column decides more of your long-term cost than any
@@ -537,7 +537,7 @@ export default function BestWebHostingIndia() {
                         <h2 className="text-3xl font-bold text-white mb-4">Still unsure? The 30-second decision guide</h2>
                         <div className="space-y-3">
                             {[
-                                ["Blog, portfolio, or business site — lowest safe cost", "Hostinger Premium at ₹139/mo (~₹111/mo via referral). Free domain, SSL, and email cover everything a first site needs."],
+                                ["Blog, portfolio, or business site — lowest safe cost", "Hostinger Premium at ₹149/mo (~₹119/mo via referral). Free domain, SSL, and email cover everything a first site needs."],
                                 ["Hard budget cap under ₹200/month", "Hostinger still fits; MilesWeb goes lower for hobby projects. Avoid any “unlimited ₹49/mo” deal — the catch is in the ToS."],
                                 ["Custom Node.js / Next.js app or Docker", "Skip shared hosting entirely — you need a VPS or cloud server (from ≈₹350/mo). See the Node.js hosting picks linked above."],
                                 ["Audience mostly in the US", "Bluehost — its US-centric servers become an advantage instead of a latency penalty."],
@@ -574,7 +574,7 @@ export default function BestWebHostingIndia() {
                         <div className="rounded-3xl border border-purple-500/40 bg-gradient-to-br from-purple-900/40 to-indigo-900/30 p-8 text-center">
                             <h2 className="text-3xl font-bold text-white mb-3">Start with the #1 pick — risk-free</h2>
                             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                                Hostinger Premium from ₹139/mo (~₹111/mo via referral) with a free domain, free SSL and a 30-day
+                                Hostinger Premium from ₹149/mo (~₹119/mo via referral) with a free domain, free SSL and a 30-day
                                 money-back guarantee. If it disappoints, refund and pick #2 — you lose nothing.
                             </p>
                             <a

@@ -2,9 +2,9 @@ export default function Blog4() {
     return (
         <>
             <section id="introduction" className="mb-12">
-                <h2 className="text-3xl font-bold text-gray-100 mb-6">Introduction: AI Tools Transforming Workflows in 2025</h2>
+                <h2 className="text-3xl font-bold text-gray-100 mb-6">Introduction: AI Tools Transforming Workflows in 2026</h2>
                 <p className="text-gray-300 mb-4 leading-relaxed">
-                    In 2025, artificial intelligence has become an indispensable part of daily workflows,
+                    In 2026, artificial intelligence has become an indispensable part of daily workflows,
                     transforming how we learn, build, and market. From summarizing lectures in seconds to
                     generating production-ready code or optimizing ad campaigns, AI tools are boosting
                     productivity like never before.
@@ -17,14 +17,14 @@ export default function Blog4() {
                 </p>
                 <p className="text-gray-300 mb-6 leading-relaxed">
                     Let&apos;s dive in and discover how <strong>Mohit Koli</strong> recommends leveraging these
-                    powerful AI tools to maximize your productivity and achieve better results in 2025.
+                    powerful AI tools to maximize your productivity and achieve better results in 2026.
                 </p>
             </section>
 
             <section id="students" className="mb-12">
-                <h2 className="text-3xl font-bold text-gray-100 mb-6">Best AI Tools for Students in 2025</h2>
+                <h2 className="text-3xl font-bold text-gray-100 mb-6">Best AI Tools for Students in 2026</h2>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                    Students in 2025 are using AI to research faster, write better, and stay organized. Here are
+                    Students in 2026 are using AI to research faster, write better, and stay organized. Here are
                     the standout tools dominating campuses and online learning:
                 </p>
 
@@ -99,16 +99,16 @@ export default function Blog4() {
             </section>
 
             <section id="developers" className="mb-12">
-                <h2 className="text-3xl font-bold text-gray-100 mb-6">Best AI Tools for Developers in 2025</h2>
+                <h2 className="text-3xl font-bold text-gray-100 mb-6">Best AI Tools for Developers in 2026</h2>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                    Coding in 2025 means AI handles boilerplate, debugging, and even architecture suggestions.
+                    Coding in 2026 means AI handles boilerplate, debugging, and even architecture suggestions.
                     These tools are integrated into IDEs and loved by millions of devs:
                 </p>
 
                 <h3 className="text-2xl font-semibold text-gray-100 mb-4">1. GitHub Copilot</h3>
                 <p className="text-gray-300 mb-4 leading-relaxed">
                     Still the king. Autocompletes entire functions, explains code, and generates tests. Powered
-                    by advanced models in 2025. ~$10/mo.
+                    by advanced models in 2026. ~$10/mo.
                 </p>
 
                 <h3 className="text-2xl font-semibold text-gray-100 mb-4">2. Cursor</h3>
@@ -168,7 +168,7 @@ export default function Blog4() {
             </section>
 
             <section id="marketers" className="mb-12">
-                <h2 className="text-3xl font-bold text-gray-100 mb-6">Best AI Tools for Digital Marketers in 2025</h2>
+                <h2 className="text-3xl font-bold text-gray-100 mb-6">Best AI Tools for Digital Marketers in 2026</h2>
                 <p className="text-gray-300 mb-6 leading-relaxed">
                     Marketers are leveraging AI for hyper-personalized campaigns, content at scale, and
                     real-time optimization. Here are the tools driving ROI:
@@ -235,7 +235,7 @@ export default function Blog4() {
             </section>
 
             <section id="conclusion" className="mb-12">
-                <h2 className="text-3xl font-bold text-gray-100 mb-6">Final Thoughts: AI in 2025 Isn&apos;t Replacing You—It&apos;s Upgrading You</h2>
+                <h2 className="text-3xl font-bold text-gray-100 mb-6">Final Thoughts: AI in 2026 Isn&apos;t Replacing You—It&apos;s Upgrading You</h2>
                 <p className="text-gray-300 mb-4 leading-relaxed">
                     The best AI tools aren&apos;t about automation alone; they&apos;re about augmentation. Students learn
                     deeper, developers build bolder, and marketers connect smarter.

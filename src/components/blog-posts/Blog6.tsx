@@ -60,13 +60,13 @@ export default function Blog6() {
           Frontend vs Backend Development - What Should You Learn First?
         </h2>
         <p className="text-gray-300 mb-4 leading-relaxed">
-          If you are starting web development, one of the first big questions you will face is <strong>frontend vs backend development - what should you learn first?</strong> It is a smart question because both paths lead to strong careers, but they reward different kinds of thinking.
+          <strong>Short answer: most beginners should learn frontend first.</strong> You see results instantly in the browser, you build the web fundamentals everything else sits on, and the feedback loop keeps you motivated through the hard early weeks. Pick backend first only if you already know you enjoy data, APIs and system logic more than visual interfaces.
         </p>
         <p className="text-gray-300 mb-4 leading-relaxed">
           Frontend developers focus on what users see and interact with. Backend developers focus on the logic, data, authentication, and systems that make applications work. Both matter. The right first choice depends on how you like to learn, what kinds of problems you enjoy, and how quickly you want to start building real projects.
         </p>
         <p className="text-gray-300 leading-relaxed">
-          In this guide, we will compare frontend and backend development, look at job and learning differences, show real examples, and give you practical tips so you can choose the best path with confidence.
+          That is the answer for most people — but "most people" might not be you. Below I compare both paths on learning curve, job market and day-to-day work, with real examples, so you can check the recommendation against how you actually like to think.
         </p>
       </section>
 

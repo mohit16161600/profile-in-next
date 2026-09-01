@@ -8,7 +8,7 @@ const REFERRAL_URL_BEGINNER = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIF
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-review-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger Review 2026: Is ₹139/mo Hosting Worth It in India?",
+    title: "Hostinger Review 2026: Is ₹149/mo Hosting Worth It in India?",
     description:
         "Honest Hostinger review 2026 after a year of real client sites in India — speed, uptime, hPanel, the ₹449/mo renewal trap, plus a Hostinger Horizons review.",
     keywords: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger Review 2026: Is ₹139/mo Hosting Worth It in India?",
+        title: "Hostinger Review 2026: Is ₹149/mo Hosting Worth It in India?",
         description:
             "Honest Hostinger review 2026 after a year of real client sites in India — speed, uptime, hPanel, the ₹449/mo renewal trap, plus a Hostinger Horizons review.",
         url: CANONICAL,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hostinger Review 2026: Is ₹139/mo Hosting Worth It in India?",
+        title: "Hostinger Review 2026: Is ₹149/mo Hosting Worth It in India?",
         description: "A year of running real client sites on Hostinger — speed, uptime, support, Horizons AI builder, and is it worth it?",
         images: ["/assets/blog/hostinger-review-2026.png"],
     },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 
 const RATINGS: [string, number, string][] = [
     ["Value for money", 4.8, "Among the cheapest serious hosting in India, especially on long terms."],
-    ["Speed (with LiteSpeed/NVMe)", 4.5, "Business+ tiers with NVMe + LiteSpeed cache feel genuinely fast."],
+    ["Speed (with LiteSpeed/NVMe)", 4.5, "The Unlimited and Cloud tiers with NVMe + LiteSpeed cache feel genuinely fast."],
     ["Uptime", 4.4, "Solidly in the 99.9% range across a year of monitoring."],
     ["hPanel (ease of use)", 4.7, "Cleaner and friendlier than cPanel for beginners."],
     ["Support", 4.0, "24/7 chat is responsive; deep technical issues take a couple of escalations."],
@@ -70,11 +70,11 @@ const FAQ = [
     },
     {
         q: "Is Hostinger good for WordPress?",
-        a: "Yes — it's one of its strongest use cases. You get one-click WordPress install, managed updates, LiteSpeed caching, and an optional AI site builder. Premium handles a normal blog; Business (NVMe + daily backups) is better for a store or client site.",
+        a: "Yes — it's one of its strongest use cases. You get one-click WordPress install, managed updates, LiteSpeed caching, and an optional AI site builder. Premium handles a normal blog; Unlimited (NVMe + daily backups) is better for a store or client site.",
     },
     {
         q: "How fast is Hostinger really?",
-        a: "On the NVMe tiers (Business and above) with LiteSpeed cache and a CDN, real-world loads are fast — typically well under a second for a cached page from an Indian data-centre region. The entry Premium plan on SSD is fine for low-traffic blogs but not as quick.",
+        a: "On the NVMe tiers (Unlimited, formerly Business, and above) with LiteSpeed cache and a CDN, real-world loads are fast — typically well under a second for a cached page from an Indian data-centre region. The entry Premium plan on SSD is fine for low-traffic blogs but not as quick.",
     },
     {
         q: "Is Hostinger safe and reliable?",
@@ -86,7 +86,7 @@ const FAQ = [
     },
     {
         q: "Is Hostinger good for beginners in India?",
-        a: "Yes — it's the most beginner-friendly host I've used in India. hPanel is much simpler than cPanel, WordPress installs in one click, the free domain and free SSL remove two confusing steps, and INR pricing from ₹139/mo on long terms keeps the entry cost low. The 30-day money-back guarantee means a beginner can test everything risk-free.",
+        a: "Yes — it's the most beginner-friendly host I've used in India. hPanel is much simpler than cPanel, WordPress installs in one click, the free domain and free SSL remove two confusing steps, and INR pricing from ₹149/mo on long terms keeps the entry cost low. The 30-day money-back guarantee means a beginner can test everything risk-free.",
     },
 ];
 
@@ -109,7 +109,7 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger Review 2026: Is ₹139/mo Hosting Worth It in India?",
+        headline: "Hostinger Review 2026: Is ₹149/mo Hosting Worth It in India?",
         description:
             "Honest Hostinger review 2026 after a year of real client sites in India — speed, uptime, hPanel, the ₹449/mo renewal trap, plus a Hostinger Horizons review.",
         image: "https://mohitkoli.in/assets/blog/hostinger-review-2026.png",
@@ -309,7 +309,7 @@ export default function HostingerReview2026() {
                         <h2 className="text-3xl font-bold text-white mb-4">Speed &amp; uptime — the real numbers</h2>
                         <p className="text-gray-300 leading-8 mb-4">
                             Over a year of monitoring, uptime stayed in the <strong className="text-white">99.9% range</strong> — a handful of
-                            minutes of blips, nothing that hurt a client. On the Business tier (NVMe + LiteSpeed cache + Cloudflare CDN), a
+                            minutes of blips, nothing that hurt a client. On the Unlimited tier — formerly Business — (NVMe + LiteSpeed cache + Cloudflare CDN), a
                             cached WordPress page from the closest data-centre region loads comfortably <strong className="text-white">under a second</strong>.
                             The entry Premium plan on SSD is fine for a low-traffic blog but noticeably slower under load — if speed matters, start on Business.
                         </p>
@@ -342,12 +342,12 @@ export default function HostingerReview2026() {
                                 <tbody className="text-gray-300">
                                     <tr className="border-t border-white/10">
                                         <td className="px-4 py-3 text-white font-semibold">Premium</td>
-                                        <td className="px-4 py-3">₹139/mo</td>
+                                        <td className="px-4 py-3">₹149/mo</td>
                                         <td className="px-4 py-3">~₹449/mo</td>
                                         <td className="px-4 py-3">Blogs, portfolios, first sites</td>
                                     </tr>
                                     <tr className="border-t border-white/10">
-                                        <td className="px-4 py-3 text-white font-semibold">Business</td>
+                                        <td className="px-4 py-3 text-white font-semibold">Unlimited (was Business)</td>
                                         <td className="px-4 py-3">₹199/mo</td>
                                         <td className="px-4 py-3">~₹649/mo</td>
                                         <td className="px-4 py-3">WooCommerce, client sites (NVMe + daily backups)</td>
@@ -368,8 +368,8 @@ export default function HostingerReview2026() {
                             </table>
                         </div>
                         <p className="text-gray-300 leading-8 mb-4">
-                            The cost math that matters: Premium at ₹139/mo × 48 months is <strong className="text-white">₹6,672 upfront for four
-                            years of hosting</strong> — the same ₹6,672 buys under 15 months once Premium hits its ₹449/mo renewal rate. That is the
+                            The cost math that matters: Premium at ₹149/mo × 48 months is <strong className="text-white">₹7,152 upfront for four
+                            years of hosting</strong> — the same ₹7,152 buys under 15 months once Premium hits its ₹449/mo renewal rate. That is the
                             whole argument for buying the longest term you can afford at the sale price. For the full plan-by-plan breakdown (storage,
                             website limits, what each tier actually includes), see my{" "}
                             <Link href="/blog/hostinger-plans-pricing-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
