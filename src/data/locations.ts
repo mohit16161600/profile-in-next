@@ -6,7 +6,7 @@ export interface LocationData {
     serviceFocus: string;
     intro: string;
     industries: string[];
-    nearby: string[];
+    nearby: string[]; 
 }
 
 export const SEO_LOCATIONS: LocationData[] = [
