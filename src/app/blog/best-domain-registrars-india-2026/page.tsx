@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 const REGISTRARS = [
     { name: "Porkbun", first: "$10.08", renewal: "~$11", pattern: "Flat", note: "Registration and renewal priced almost identically. No surprises.", pick: true },
-    { name: "Dynadot", first: "$10.88", renewal: "$10.88", pattern: "Flat", note: "Register, renew and transfer all the same price. The most transparent of the group.", pick: true },
+    { name: "Dynadot", url: "https://www.dynadot.com/?s7f7O16308s7px", first: "$10.88", renewal: "$10.88", pattern: "Flat", note: "Register, renew and transfer all the same price. The most transparent of the group.", pick: true },
     { name: "Namecheap", first: "$6.79", renewal: "$14.78", pattern: "2.2× jump", note: "Cheap year one with a code, then roughly double. Still reasonable at renewal.", pick: false },
     { name: "GoDaddy", first: "$4.99", renewal: "$22.99", pattern: "4.6× jump", note: "Cheapest headline, most expensive to actually own. The biggest gap here.", pick: false },
 ];
@@ -113,7 +113,7 @@ export default function BestDomainRegistrars() {
                     <section className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6">
                         <h2 className="text-2xl font-bold text-white mb-3">The 30-second answer</h2>
                         <ul className="space-y-2 text-gray-300 leading-7 list-disc list-inside">
-                            <li><strong className="text-white">Best overall:</strong> Porkbun or Dynadot — flat pricing, roughly $11/year forever.</li>
+                            <li><strong className="text-white">Best overall:</strong> Porkbun or <a href="https://www.dynadot.com/?s7f7O16308s7px" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Dynadot</a> — flat pricing, roughly $11/year forever.</li>
                             <li><strong className="text-white">Best known:</strong> Namecheap — cheap first year, doubles at renewal, still fair.</li>
                             <li><strong className="text-white">Avoid for long-term ownership:</strong> GoDaddy — a 4.6× renewal jump is the worst here.</li>
                             <li><strong className="text-white">Free first year:</strong> most hosting plans include a domain — worth taking if you are buying hosting anyway.</li>
@@ -132,7 +132,7 @@ export default function BestDomainRegistrars() {
                                     {REGISTRARS.map((r) => (
                                         <tr key={r.name} className="border-t border-white/5">
                                             <td className="p-4 font-semibold text-white">
-                                                {r.name}{r.pick && <span className="ml-2 text-xs uppercase tracking-wider text-primary-400">pick</span>}
+                                                {"url" in r && r.url ? <a href={r.url} target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">{r.name}</a> : r.name}{r.pick && <span className="ml-2 text-xs uppercase tracking-wider text-primary-400">pick</span>}
                                             </td>
                                             <td className="p-4">{r.first}</td>
                                             <td className={`p-4 ${r.pattern === "Flat" ? "text-emerald-400" : "text-amber-300"}`}>{r.renewal}</td>
@@ -250,7 +250,7 @@ export default function BestDomainRegistrars() {
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-4">Verdict</h2>
                         <p className="text-gray-300 leading-8">
-                            Buy from <strong className="text-white">Porkbun or Dynadot</strong> if you intend to own the domain
+                            Buy from <strong className="text-white">Porkbun or <a href="https://www.dynadot.com/?s7f7O16308s7px" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Dynadot</a></strong> if you intend to own the domain
                             for years — flat pricing removes the entire problem. <strong className="text-white">Namecheap</strong>{" "}
                             is the sensible mainstream option. Take a <strong className="text-white">free first year</strong> from
                             your host if you are buying hosting anyway. And whichever you choose, put the renewal date in

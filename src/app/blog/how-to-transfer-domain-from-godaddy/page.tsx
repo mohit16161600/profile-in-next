@@ -197,7 +197,7 @@ export default function TransferDomainFromGoDaddy() {
                                 </thead>
                                 <tbody className="text-gray-300">
                                     <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Porkbun</td><td className="p-4">~$11</td><td className="p-4 text-emerald-400">Save ~$12/yr</td><td className="p-4">Flat pricing, free privacy</td></tr>
-                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Dynadot</td><td className="p-4">$10.88</td><td className="p-4 text-emerald-400">Save ~$12/yr</td><td className="p-4">Same price to register, renew or transfer</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white"><a href="https://www.dynadot.com/?s7f7O16308s7px" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Dynadot</a></td><td className="p-4">$10.88</td><td className="p-4 text-emerald-400">Save ~$12/yr</td><td className="p-4">Same price to register, renew or transfer</td></tr>
                                     <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Namecheap</td><td className="p-4">$14.78</td><td className="p-4 text-emerald-400">Save ~$8/yr</td><td className="p-4">Large, familiar, free WHOIS privacy</td></tr>
                                 </tbody>
                             </table>

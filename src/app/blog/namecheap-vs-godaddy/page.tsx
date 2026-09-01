@@ -212,7 +212,7 @@ export default function NamecheapVsGoDaddy() {
                         </div>
                         <p className="mt-6 text-gray-300 leading-8">
                             And the third option neither company will mention: a flat-priced registrar like Porkbun or
-                            Dynadot beats both over five years. I compared all four in{" "}
+                            <a href="https://www.dynadot.com/?s7f7O16308s7px" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Dynadot</a> beats both over five years. I compared all four in{" "}
                             <Link href="/blog/best-domain-registrars-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
                                 best domain registrars
                             </Link>.
