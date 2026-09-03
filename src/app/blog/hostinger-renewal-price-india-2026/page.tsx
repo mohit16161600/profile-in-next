@@ -5,6 +5,10 @@ import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const REFERRAL_URL_ALT = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
+// Plan-specific cart links (48-month term — the term every price on this page quotes)
+const CART_PREMIUM_48 = "https://www.hostinger.com/in/cart?product=hosting%3Ahostinger_premium&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06612-907a-715a-826c-c2ae423f3289";
+const CART_UNLIMITED_48 = "https://www.hostinger.com/in/cart?product=hosting%3Ahostinger_business&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06612-ac18-72fd-adc3-4fce44121064";
+const CART_CLOUD_STARTUP_48 = "https://www.hostinger.com/in/cart?product=hosting%3Acloud_economy&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06615-43bc-7078-a7a8-92d52d2cce7b";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-renewal-price-india-2026";
 
 export const metadata: Metadata = {
@@ -296,19 +300,19 @@ export default function HostingerRenewalPrice() {
                         <div className="grid gap-6 md:grid-cols-3 mb-6">
                             {[
                                 {
-                                    badge: "MOST POPULAR", name: "Premium", regular: "₹599", sale: "₹149", code: "₹119.20",
+                                    badge: "MOST POPULAR", name: "Premium", regular: "₹599", sale: "₹149", code: "₹119.20", cart: CART_PREMIUM_48,
                                     off: "75% off + extra 20%", renews: "₹449/mo",
                                     features: ["3 websites", "20 GB SSD storage", "Free domain (1st year)", "Free SSL + weekly backups", "2 mailboxes per site, free 1 year", "Managed WordPress"],
                                     best: "Blogs, portfolios, small business sites", highlight: false,
                                 },
                                 {
-                                    badge: "BEST VALUE", name: "Unlimited", regular: "₹699", sale: "₹249", code: "₹199.20",
+                                    badge: "BEST VALUE", name: "Unlimited", regular: "₹699", sale: "₹249", code: "₹199.20", cart: CART_UNLIMITED_48,
                                     off: "64% off + extra 20%", renews: "₹649/mo",
                                     features: ["Unlimited websites", "50 GB NVMe (≈2x faster)", "Free domain (1st year)", "Daily backups + easy restore", "CDN + integrated ecommerce", "Node.js + priority support"],
                                     best: "Business sites, WooCommerce, freelancers with clients", highlight: true,
                                 },
                                 {
-                                    badge: "HIGH TRAFFIC", name: "Cloud Startup", regular: "₹1,699", sale: "₹599", code: "₹479.20",
+                                    badge: "HIGH TRAFFIC", name: "Cloud Startup", regular: "₹1,699", sale: "₹599", code: "₹479.20", cart: CART_CLOUD_STARTUP_48,
                                     off: "65% off + extra 20%", renews: "₹1,599/mo",
                                     features: ["Unlimited websites", "100 GB NVMe storage", "Dedicated resources", "Free domain + CDN", "Daily + on-demand backups", "Priority 24/7 support"],
                                     best: "High-traffic sites, agencies, heavy stores", highlight: false,
@@ -328,7 +332,7 @@ export default function HostingerRenewalPrice() {
                                         {p.features.map((x) => <li key={x}>✓ {x}</li>)}
                                     </ul>
                                     <p className="mt-4 text-xs text-gray-500"><strong className="text-gray-400">Best for:</strong> {p.best}</p>
-                                    <a href={REFERRAL_URL} target="_blank" rel="nofollow sponsored noopener"
+                                    <a href={p.cart} target="_blank" rel="nofollow sponsored noopener"
                                        className={`mt-5 text-center font-bold px-6 py-3 rounded-xl transition ${p.highlight ? "bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white" : "bg-white/10 hover:bg-white/20 text-white"}`}>
                                         Check {p.name} Price →
                                     </a>
@@ -336,8 +340,8 @@ export default function HostingerRenewalPrice() {
                             ))}
                         </div>
                         <p className="text-sm text-gray-500 mb-12">
-                            The extra 20% applies automatically when the page is opened through the links above — the
-                            cart shows the discounted figure before you pay, so verify it there.
+                            Each button above opens the cart for that exact plan on the 48-month term with the code
+                            already applied — the discounted figure shows before you pay, so verify it there.
                         </p>
 
                         <h2 className="text-3xl font-bold text-white mb-4">The 4-year math: 48-month term vs renewing yearly</h2>

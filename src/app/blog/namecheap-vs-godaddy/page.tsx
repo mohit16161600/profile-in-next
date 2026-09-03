@@ -212,7 +212,11 @@ export default function NamecheapVsGoDaddy() {
                         </div>
                         <p className="mt-6 text-gray-300 leading-8">
                             And the third option neither company will mention: a flat-priced registrar like Porkbun or
-                            <a href="https://www.dynadot.com/?s7f7O16308s7px" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Dynadot</a> beats both over five years. I compared all four in{" "}
+                            <a href="https://www.dynadot.com/?s7f7O16308s7px" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Dynadot</a> beats both over five years. And if you are buying hosting anyway, there is a fourth
+                            path neither registrar advertises: hosts like{" "}
+                            <a href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Hostinger</a>{" "}
+                            include the domain free for the first year with their main plans — usually the cheapest
+                            year-one route of all, with the same check-the-renewal caveat as everyone else. I compared all four in{" "}
                             <Link href="/blog/best-domain-registrars-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
                                 best domain registrars
                             </Link>.

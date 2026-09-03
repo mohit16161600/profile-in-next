@@ -35,6 +35,7 @@ const REGISTRARS = [
     { name: "Dynadot", url: "https://www.dynadot.com/?s7f7O16308s7px", first: "$10.88", renewal: "$10.88", pattern: "Flat", note: "Register, renew and transfer all the same price. The most transparent of the group.", pick: true },
     { name: "Namecheap", first: "$6.79", renewal: "$14.78", pattern: "2.2× jump", note: "Cheap year one with a code, then roughly double. Still reasonable at renewal.", pick: false },
     { name: "GoDaddy", first: "$4.99", renewal: "$22.99", pattern: "4.6× jump", note: "Cheapest headline, most expensive to actually own. The biggest gap here.", pick: false },
+    { name: "Hostinger", url: "https://www.hostinger.com/in?REFERRALCODE=mohitkoli", first: "₹149 (.com)", renewal: "~₹1,000–1,400", pattern: "Loss-leader", note: "Cheapest first year in rupees, and free for year one with most hosting plans.", pick: false },
 ];
 
 const FAQ = [
@@ -217,6 +218,18 @@ export default function BestDomainRegistrars() {
                                     </Link>.
                                 </p>
                             </div>
+                            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                                <h3 className="text-lg font-bold text-white mb-2">Hostinger — best if you are buying hosting anyway</h3>
+                                <p className="text-sm text-gray-300 leading-7">
+                                    Not a registrar-first company, but for Indian buyers it is often the cheapest door in:
+                                    a .com starts around ₹149 and a .in around ₹99 for the first year, billed in rupees
+                                    with free WHOIS privacy on eligible domains — and if you take any of their main
+                                    hosting plans, the domain is simply free for year one. The honest caveat: renewals
+                                    run at standard rates (roughly ₹1,000–1,400 for a .com), so like Namecheap and
+                                    GoDaddy this follows the cheap-first-year model, not flat pricing.{" "}
+                                    <a href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Check Hostinger domain prices →</a>
+                                </p>
+                            </div>
                         </div>
                     </section>
 
@@ -231,7 +244,9 @@ export default function BestDomainRegistrars() {
                             I broke down what Indian hosts actually charge for domains and renewals in{" "}
                             <Link href="/blog/hostinger-domain-price-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
                                 domain pricing in India
-                            </Link>. The short version: take the free year, then decide whether to keep it there or transfer.
+                            </Link>. The short version: take the free year — on Hostinger every main hosting plan includes the
+                            domain free for year one (<a href="https://www.hostinger.com/in?REFERRALCODE=mohitkoli" target="_blank" rel="nofollow sponsored noopener" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">see current plans →</a>) —
+                            then decide at renewal time whether to keep it there or transfer to a flat-price registrar.
                         </p>
                     </section>
 

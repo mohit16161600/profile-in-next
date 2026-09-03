@@ -4,6 +4,7 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
+const CART_PREMIUM_48 = "https://www.hostinger.com/in/cart?product=hosting%3Ahostinger_premium&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06612-907a-715a-826c-c2ae423f3289"; // for the Premium-specific CTA only
 const CANONICAL = "https://mohitkoli.in/blog/cheap-web-hosting-under-200-india";
 
 export const metadata: Metadata = {
@@ -324,7 +325,7 @@ export default function CheapHostingUnder200() {
                             referral discount usually applies on top).
                         </p>
                         <a
-                            href={REFERRAL_URL}
+                            href={CART_PREMIUM_48}
                             target="_blank"
                             rel="nofollow sponsored noopener"
                             className="inline-block flex-shrink-0 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow shadow-purple-900/40"

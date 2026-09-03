@@ -4,6 +4,15 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
+// Plan-specific cart links, 48-month term (the term the card prices quote).
+// Agency links: Startup/Growth on the 24-month term the listed price requires;
+// Professional has no verified price quoted, its link just shows the live cart price.
+const CART_PREMIUM_48 = "https://www.hostinger.com/in/cart?product=hosting%3Ahostinger_premium&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06612-907a-715a-826c-c2ae423f3289";
+const CART_UNLIMITED_48 = "https://www.hostinger.com/in/cart?product=hosting%3Ahostinger_business&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06612-ac18-72fd-adc3-4fce44121064";
+const CART_CLOUD_STARTUP_48 = "https://www.hostinger.com/in/cart?product=hosting%3Acloud_economy&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06615-43bc-7078-a7a8-92d52d2cce7b";
+const CART_AGENCY_STARTUP_24 = "https://www.hostinger.com/in/cart?product=hosting%3Aagency_startup&period=24&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06615-f5fc-7264-81e6-8f10259c436c";
+const CART_AGENCY_GROWTH_24 = "https://www.hostinger.com/in/cart?product=hosting%3Aagency_growth&period=24&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06616-0e28-733b-90ec-5742d8408d55";
+const CART_AGENCY_PROFESSIONAL = "https://www.hostinger.com/in/cart?product=hosting%3Aagency_professional&period=12&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06615-bffa-7134-9cc0-61d654e36b7f";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-plans-pricing-india-2026";
 
 export const metadata: Metadata = {
@@ -59,7 +68,7 @@ const FAQ = [
     },
     {
         q: "What is the price of the Hostinger Business plan?",
-        a: "The Unlimited plan (formerly Business) costs ₹249/mo on the 48-month sale term — ₹11,952 upfront, or roughly ₹199/mo with the referral stack — and renews around ₹649/mo. Over Premium it adds NVMe storage, daily backups, 50 websites, and the AI ecommerce builder.",
+        a: "The Unlimited plan (formerly Business) costs ₹249/mo on the 48-month sale term — ₹11,952 upfront, or roughly ₹199/mo with the referral stack — and renews around ₹649/mo. Over Premium it adds NVMe storage, daily backups, unlimited websites, and the AI ecommerce builder.",
     },
     {
         q: "Does Hostinger have a monthly payment plan?",
@@ -71,11 +80,15 @@ const FAQ = [
     },
     {
         q: "What is the real difference between Hostinger Premium and Business?",
-        a: "Unlimited — the plan formerly called Business — at ₹249/mo adds NVMe storage (roughly 2x faster disk I/O), daily backups instead of weekly, 50 websites instead of 3, 50 GB instead of 20 GB, and an AI ecommerce builder. For a serious business site or WooCommerce store the ₹60/mo difference is easily worth it.",
+        a: "Unlimited — the plan formerly called Business — at ₹249/mo adds NVMe storage (roughly 2x faster disk I/O), daily backups instead of weekly, unlimited websites instead of 3, 50 GB NVMe instead of 20 GB, and an AI ecommerce builder. For a serious business site or WooCommerce store the ₹60/mo difference is easily worth it.",
     },
     {
         q: "What are Hostinger KVM VPS plans and who needs them?",
         a: "KVM plans (KVM 1, 2, 4, 8) are virtual private servers with dedicated vCPU and RAM — you get root access and full control. Choose KVM when you run custom Node.js/Laravel apps, Docker, or need guaranteed resources. KVM 1 starts around ₹499/mo on sale with 1 vCPU, 4 GB RAM, and 50 GB NVMe.",
+    },
+    {
+        q: "Does Hostinger have plans for agencies managing client websites?",
+        a: "Yes — the Agency line under Hostinger Pro. Agency Startup was listed at ₹2,499/mo on the 24-month term in September 2026 (renewing at ₹3,499/mo) with 100 isolated websites, 300 GB NVMe, 6 CPU cores, 12 GB RAM, an unbranded client dashboard and staging. Larger Agency tiers scale up to around 300 sites on one plan.",
     },
     {
         q: "How much does Hostinger cost after renewal?",
@@ -91,7 +104,7 @@ const FAQ = [
     },
     {
         q: "Is the Hostinger BD (Bangladesh) price the same as the India price?",
-        a: "No — Hostinger localizes pricing by region, so the Bangladesh (BD) storefront shows the same Premium, Business, and Cloud lineup at slightly different local rates than the Indian ₹149/₹199/₹599 sale prices. Plan features are identical everywhere; the referral link automatically opens your region's storefront with its live localized prices.",
+        a: "No — Hostinger localizes pricing by region, so the Bangladesh (BD) storefront shows the same Premium, Unlimited, and Cloud lineup at slightly different local rates than the Indian ₹149/₹249/₹599 sale prices. Plan features are identical everywhere; the referral link automatically opens your region's storefront with its live localized prices.",
     },
 ];
 
@@ -122,7 +135,7 @@ const jsonLd = [
             logo: { "@type": "ImageObject", url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg" },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
-        keywords: "hostinger plans india, hostinger india plans, hostinger plan india, hostinger pricing, hostinger pricing plans, hostinger price in india, hostinger price list india 2026, hostinger hosting prices, hostinger business plan pricing, hostinger premium web hosting price, hostinger subscription plan, hostinger pay monthly, hostinger 2 year plan, hostinger renewal price, hostinger kvm plans",
+        keywords: "hostinger plans india, hostinger india plans, hostinger plan india, hostinger pricing, hostinger pricing plans, hostinger price in india, hostinger price list india 2026, hostinger hosting prices, hostinger business plan pricing, hostinger premium web hosting price, hostinger subscription plan, hostinger pay monthly, hostinger 2 year plan, hostinger renewal price, hostinger kvm plans, hostinger agency hosting, hostinger pro plans india",
         articleSection: "Hosting",
         inLanguage: "en-IN",
     },
@@ -149,28 +162,31 @@ const jsonLd = [
 const PLANS = [
     {
         name: "Premium",
+        cart: CART_PREMIUM_48,
         badge: "Most Popular",
         price: "₹149",
         regular: "₹599",
-        off: "77% OFF",
+        off: "75% OFF",
         renewal: "₹449/mo",
         highlight: true,
         features: ["3 websites", "20 GB SSD storage", "Free domain (1st year)", "Free SSL + weekly backups", "2 mailboxes free for 1 year", "Managed WordPress"],
         bestFor: "Blogs, portfolios, small business sites",
     },
     {
-        name: "Business",
+        name: "Unlimited",
+        cart: CART_UNLIMITED_48,
         badge: "Best Value",
-        price: "₹199",
+        price: "₹249",
         regular: "₹699",
-        off: "72% OFF",
+        off: "64% OFF",
         renewal: "₹649/mo",
         highlight: false,
-        features: ["50 websites", "50 GB NVMe storage (≈2x faster)", "Free domain (1st year)", "Daily backups", "AI ecommerce builder", "5 mailboxes free for 1 year"],
+        features: ["Unlimited websites", "50 GB NVMe storage (≈2x faster)", "Free domain (1st year)", "Daily backups", "AI ecommerce builder", "5 mailboxes free for 1 year"],
         bestFor: "Business sites, WooCommerce, freelancers with clients",
     },
     {
         name: "Cloud Startup",
+        cart: CART_CLOUD_STARTUP_48,
         badge: "High Traffic",
         price: "₹599",
         regular: "₹1,699",
@@ -237,8 +253,8 @@ export default function HostingerPlansPricing() {
                         <h2 className="text-3xl font-bold text-white mb-4">Hostinger hosting prices in India — every plan at a glance</h2>
                         <p className="text-gray-300 leading-8 mb-6">
                             <strong className="text-white">How much is hosting on Hostinger?</strong> In India it starts at{" "}
-                            <strong className="text-white">₹149/mo</strong> for the Premium shared plan on the 48-month term, ₹199/mo for
-                            Business, and ₹599/mo for Cloud Startup; KVM VPS starts around ₹499/mo. Renewals land higher — roughly ₹449,
+                            <strong className="text-white">₹149/mo</strong> for the Premium shared plan on the 48-month term, ₹249/mo for
+                            Unlimited (formerly Business), and ₹599/mo for Cloud Startup; KVM VPS starts around ₹499/mo. Renewals land higher — roughly ₹449,
                             ₹649 and ₹1,599/mo — so the table below prints both numbers side by side. Every shared plan includes free SSL
                             and a free domain for the first year.
                         </p>
@@ -324,7 +340,7 @@ export default function HostingerPlansPricing() {
                                     </ul>
                                     <p className="text-xs text-gray-400 mb-4"><strong className="text-gray-300">Best for:</strong> {plan.bestFor}</p>
                                     <a
-                                        href={REFERRAL_URL}
+                                        href={plan.cart}
                                         target="_blank"
                                         rel="nofollow sponsored noopener"
                                         className={`text-center font-bold px-6 py-3 rounded-xl transition ${plan.highlight ? "bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white" : "bg-white/10 hover:bg-white/20 text-white"}`}
@@ -345,8 +361,8 @@ export default function HostingerPlansPricing() {
                         </p>
                         <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 space-y-8">
                             {[
-                                { name: "Premium", stack: 111, sale: 139, renew: 449, max: 1699 },
-                                { name: "Business", stack: 159, sale: 199, renew: 649, max: 1699 },
+                                { name: "Premium", stack: 119, sale: 149, renew: 449, max: 1699 },
+                                { name: "Unlimited", stack: 199, sale: 249, renew: 649, max: 1699 },
                                 { name: "Cloud Startup", stack: 479, sale: 599, renew: 1599, max: 1699 },
                             ].map((p) => (
                                 <div key={p.name}>
@@ -443,7 +459,7 @@ export default function HostingerPlansPricing() {
                         <p className="text-gray-300 leading-8">
                             The Hostinger Business plan is now sold as Unlimited, at ₹249/mo on the 48-month term — ₹11,952 upfront, about ₹199/mo with
                             the referral stack — renewing around ₹649/mo. The extra ₹60/mo over Premium buys NVMe storage with roughly 2x
-                            faster disk I/O, daily backups instead of weekly, 50 websites, 50 GB of space, and the AI ecommerce builder. If
+                            faster disk I/O, daily backups instead of weekly, unlimited websites, 50 GB of space, and the AI ecommerce builder. If
                             your site earns money — a store, lead-gen pages, client projects — Business is the safer default. My verdict
                             after a year of running client sites on these plans is in the{" "}
                             <Link href="/blog/hostinger-review-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
@@ -542,12 +558,40 @@ export default function HostingerPlansPricing() {
 
                     {/* Personas */}
                     <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Agency plans: for freelancers managing client sites</h2>
+                        <p className="text-gray-300 leading-8 mb-6">
+                            In 2026 Hostinger also sells a separate Agency line (under the &quot;Hostinger Pro&quot;
+                            banner) aimed at web developers, freelancers and agencies running many client websites
+                            from one panel. The entry tier, <strong className="text-white">Agency Startup</strong>,
+                            was listed at ₹2,499/mo on the 24-month term when I checked in September 2026 — regular
+                            ₹4,999/mo, renewing at ₹3,499/mo. A different budget class than shared hosting, and
+                            priced that way because of what it carries:
+                        </p>
+                        <ul className="space-y-2 text-gray-300 leading-7 mb-6">
+                            <li>✓ 100 websites with full per-site isolation — one client&apos;s problem cannot take down another&apos;s site</li>
+                            <li>✓ 300 GB NVMe storage, 6 CPU cores, 12 GB RAM</li>
+                            <li>✓ Unbranded client dashboard with per-site access sharing — clients log in without seeing Hostinger&apos;s branding or your other projects</li>
+                            <li>✓ Staging environments, daily backups, unlimited CDN and SSL</li>
+                            <li>✓ 10 mailboxes per website, free for the first year</li>
+                        </ul>
+                        <p className="text-gray-300 leading-8 mb-6">
+                            Two larger tiers — Agency Growth and Agency Professional — scale the same idea up;
+                            Hostinger advertises up to 300 sites on a single plan at the top end. If you bill
+                            clients for hosting, the maths usually works: five clients at a modest ₹500/mo each
+                            already covers the Startup tier.
+                        </p>
+                        <div className="flex flex-wrap gap-3 mb-12">
+                            <a href={CART_AGENCY_STARTUP_24} target="_blank" rel="nofollow sponsored noopener" className="bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-6 py-3 rounded-xl transition">Check Agency Startup price →</a>
+                            <a href={CART_AGENCY_GROWTH_24} target="_blank" rel="nofollow sponsored noopener" className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-xl transition">Agency Growth →</a>
+                            <a href={CART_AGENCY_PROFESSIONAL} target="_blank" rel="nofollow sponsored noopener" className="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-xl transition">Agency Professional →</a>
+                        </div>
+
                         <h2 className="text-3xl font-bold text-white mb-6">Which plan fits you?</h2>
                         <div className="grid sm:grid-cols-2 gap-4">
                             {[
                                 ["📝 Blogger / student / portfolio", "Premium", "One or two sites, free domain, free SSL, managed WordPress. At ~₹119/mo with the stack this is the cheapest serious hosting in India."],
-                                ["💼 Small business / WooCommerce store", "Business", "NVMe storage loads product pages noticeably faster and daily backups protect order data. The AI store builder helps non-developers ship quickly."],
-                                ["🧑‍💻 Freelancer hosting client sites", "Business", "50 websites on one plan means you host every client project under one bill and keep the margin."],
+                                ["💼 Small business / WooCommerce store", "Unlimited", "NVMe storage loads product pages noticeably faster and daily backups protect order data. The AI store builder helps non-developers ship quickly."],
+                                ["🧑‍💻 Freelancer hosting client sites", "Unlimited", "Unlimited websites on one plan means you host every client project under one bill and keep the margin."],
                                 ["⚙️ Developer running custom apps", "KVM 2 VPS", "Root access, 2 vCPU / 8 GB RAM, Docker, any stack — Node.js, Laravel, Python. Shared hosting cannot do this; see the KVM table below."],
                             ].map(([who, plan, why]) => (
                                 <div key={who} className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">

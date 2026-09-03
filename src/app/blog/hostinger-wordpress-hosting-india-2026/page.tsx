@@ -4,6 +4,9 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
+// This article recommends Premium throughout — CTAs open the Premium cart (48-month term,
+// the ₹119.20/mo figure quoted in the copy).
+const CART_PREMIUM_48 = "https://www.hostinger.com/in/cart?product=hosting%3Ahostinger_premium&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06612-907a-715a-826c-c2ae423f3289";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-wordpress-hosting-india-2026";
 
 export const metadata: Metadata = {
@@ -167,12 +170,12 @@ export default function HostingerWordpressHosting() {
                             <p className="mt-1 text-sm text-gray-400 leading-6">Free domain for a year · free SSL · free migration if you are moving a site across</p>
                         </div>
                         <a
-                            href={REFERRAL_URL}
+                            href={CART_PREMIUM_48}
                             target="_blank"
                             rel="nofollow sponsored noopener"
                             className="inline-block shrink-0 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-purple-900/30 hover:scale-[1.02] whitespace-nowrap"
                         >
-                            View Hostinger Plans →
+                            Get Premium — ₹119.20/mo →
                         </a>
                     </div>
 
@@ -370,7 +373,7 @@ export default function HostingerWordpressHosting() {
                             and the referral link brings it to roughly ₹119/mo effective.
                         </p>
                         <a
-                            href={REFERRAL_URL}
+                            href={CART_PREMIUM_48}
                             target="_blank"
                             rel="nofollow sponsored noopener"
                             className="inline-block flex-shrink-0 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow shadow-purple-900/40"
@@ -420,7 +423,7 @@ export default function HostingerWordpressHosting() {
                                 30-day money-back guarantee, so the trial is genuinely risk-free.
                             </p>
                             <a
-                                href={REFERRAL_URL}
+                                href={CART_PREMIUM_48}
                                 target="_blank"
                                 rel="nofollow sponsored noopener"
                                 className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"

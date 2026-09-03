@@ -5,6 +5,10 @@ import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const REFERRAL_URL_ALT = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
+// Plan-specific cart links on the 48-month term the cards quote. Enterprise deliberately
+// keeps the pricing page — no 48-month cart link available yet.
+const CART_STARTUP_48 = "https://www.hostinger.com/in/cart?product=hosting%3Acloud_economy&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06615-43bc-7078-a7a8-92d52d2cce7b";
+const CART_PROFESSIONAL_48 = "https://www.hostinger.com/in/cart?product=hosting%3Acloud_professional&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06615-52e0-7363-892b-102533067b17";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-cloud-hosting-india-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/hostinger-cloud-hosting-india-2026.png";
 const PUBLISHED = "2026-08-24T00:00:00.000Z";
@@ -60,6 +64,7 @@ export const metadata: Metadata = {
 const PLANS = [
     {
         name: "Cloud Startup",
+        cart: CART_STARTUP_48,
         tagline: "Business and eCommerce sites that outgrew shared hosting",
         sale48: "₹599",
         list12Total: "₹9,588",
@@ -72,6 +77,7 @@ const PLANS = [
     },
     {
         name: "Cloud Professional",
+        cart: CART_PROFESSIONAL_48,
         tagline: "Scaling sites with real traffic and heavier database load",
         sale48: "₹899",
         list12Total: "₹15,588",
@@ -84,6 +90,7 @@ const PLANS = [
     },
     {
         name: "Cloud Enterprise",
+        cart: REFERRAL_URL,
         tagline: "High-traffic stores and multi-client agency portfolios",
         sale48: "₹1,899",
         list12Total: "₹29,988",
@@ -325,7 +332,7 @@ export default function HostingerCloudHostingIndia() {
                                     </ul>
 
                                     <a
-                                        href={REFERRAL_URL}
+                                        href={plan.cart}
                                         target="_blank"
                                         rel="nofollow sponsored noopener"
                                         className={`mt-6 text-center font-bold px-6 py-3 rounded-xl transition ${plan.highlight ? "bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white" : "bg-white/10 hover:bg-white/20 text-white"}`}

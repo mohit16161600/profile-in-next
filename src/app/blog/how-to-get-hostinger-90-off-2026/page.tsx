@@ -140,7 +140,7 @@ const STEPS = [
     {
         title: "Pick your plan (Premium is right for most people)",
         detail:
-            "Premium (₹149/mo on sale) hosts up to 3 websites with 20 GB SSD and a free domain — perfect for a blog, portfolio, or small business. Choose Business (₹199/mo) if you need 50 websites, NVMe storage, and daily backups. Cloud Startup (₹599/mo) is for high-traffic projects.",
+            "Premium (₹149/mo on sale) hosts up to 3 websites with 20 GB SSD and a free domain — perfect for a blog, portfolio, or small business. Choose Unlimited (₹249/mo — formerly Business) if you need unlimited websites, NVMe storage, and daily backups. Cloud Startup (₹599/mo) is for high-traffic projects.",
         tip: "Not sure? Read my full plan-by-plan breakdown linked at the end of this guide.",
     },
     {

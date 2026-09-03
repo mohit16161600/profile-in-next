@@ -4,6 +4,8 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in/pricing?REFERRALCODE=mohitkoli";
+// Direct cart link for THIS plan (Unlimited, 48-month term = the ₹199.20/mo figure quoted here)
+const CART_UNLIMITED_48 = "https://www.hostinger.com/in/cart?product=hosting%3Ahostinger_business&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06612-ac18-72fd-adc3-4fce44121064";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-business-plan";
 const IMAGE = "https://mohitkoli.in/assets/blog/hostinger-business-plan.png";
 const PUBLISHED = "2026-08-24T00:00:00.000Z";
@@ -135,10 +137,10 @@ const Tick = ({ on }: { on: boolean }) => (
 );
 
 /** Reusable CTA so the wording can vary by placement without duplicating markup. */
-const Cta = ({ label, note }: { label: string; note?: string }) => (
+const Cta = ({ label, note, href = REFERRAL_URL }: { label: string; note?: string; href?: string }) => (
     <div>
         <a
-            href={REFERRAL_URL}
+            href={href}
             target="_blank"
             rel="nofollow sponsored noopener"
             className="inline-block bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-purple-900/40 hover:scale-[1.02]"
@@ -338,7 +340,7 @@ export default function HostingerBusinessPlan() {
                                 ₹199.20/mo with the code, free domain for year one, and 30 days to change your mind if
                                 you&apos;re wrong about it.
                             </p>
-                            <Cta label="Get Unlimited at 72% Off →" />
+                            <Cta label="Get Unlimited at 72% Off →" href={CART_UNLIMITED_48} note="Opens the Unlimited cart with the discount already applied" />
                         </div>
                     </section>
 
@@ -512,7 +514,7 @@ export default function HostingerBusinessPlan() {
                             and the entry-level{" "}
                             <Link href="/blog/hostinger-55-per-month-offer" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">₹55/mo offer</Link>.
                         </p>
-                        <Cta label="Start Your Website With Hostinger →" note="₹199.20/mo · Free domain · 30-day money-back" />
+                        <Cta label="Start Your Website With Hostinger →" href={CART_UNLIMITED_48} note="₹199.20/mo · Free domain · 30-day money-back" />
                     </section>
 
                     {/* FAQ */}
@@ -550,7 +552,7 @@ export default function HostingerBusinessPlan() {
                                 priority support, and a free domain for year one. 30-day money-back guarantee, free
                                 migration if you&apos;re moving an existing site.
                             </p>
-                            <Cta label="Claim 72% Off Unlimited Hosting →" />
+                            <Cta label="Claim 72% Off Unlimited Hosting →" href={CART_UNLIMITED_48} />
                         </div>
                     </section>
 
