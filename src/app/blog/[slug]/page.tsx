@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         .filter((p) => p.slug !== slug && (p.category === post.category || p.keywords.some((k) => post.keywords.includes(k))))
         .slice(0, 4);
 
-    const AUTHORITY_LINKS: Record<string, { label: string; href: string; source: string }[]> = {
+    const AUTHORITY_LINKS: Record<string, { label: string; href: string; source: string; sponsored?: boolean }[]> = {
         "AI Hacks": [
             { label: "OpenAI ChatGPT product overview", href: "https://openai.com/chatgpt/", source: "OpenAI" },
             { label: "Google AI principles and research", href: "https://ai.google/", source: "Google" },
@@ -155,7 +155,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             { label: "GitHub Octoverse report", href: "https://octoverse.github.com/", source: "GitHub" },
         ],
         Hosting: [
-            { label: "Hostinger — official", href: "https://www.hostinger.com/", source: "Hostinger" },
+            { label: "Hostinger — official", href: "https://www.hostinger.com/in?REFERRALCODE=mohitkoli", sponsored: true, source: "Hostinger" },
             { label: "Cloudflare — web performance basics", href: "https://www.cloudflare.com/learning/", source: "Cloudflare" },
         ],
         Blogging: [
@@ -306,7 +306,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                                             <span className="mt-1 inline-block w-1.5 h-1.5 rounded-full bg-primary-400" aria-hidden="true" />
                                             <a
                                                 href={link.href}
-                                                rel="noopener noreferrer external"
+                                                rel={"sponsored" in link && link.sponsored ? "nofollow sponsored noopener" : "noopener noreferrer external"}
                                                 target="_blank"
                                                 className="text-primary-300 hover:text-primary-200 transition-colors underline-offset-4 hover:underline"
                                             >

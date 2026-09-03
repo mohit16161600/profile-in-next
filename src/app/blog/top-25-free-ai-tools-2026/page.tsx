@@ -810,9 +810,9 @@ export default function Top25FreeAITools2026() {
         {/* SEO & Social Metadata Footer */}
         <footer className="mt-20 pt-12 border-t border-white/10 text-center">
           <div className="flex justify-center gap-8 mb-8">
-            <a href="#" className="text-gray-500 hover:text-orange-500 transition">Twitter (X)</a>
-            <a href="#" className="text-gray-500 hover:text-orange-500 transition">LinkedIn</a>
-            <a href="#" className="text-gray-500 hover:text-orange-500 transition">Reddit</a>
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmohitkoli.in%2Fblog%2Ftop-25-free-ai-tools-2026&text=Top%2025%20Free%20AI%20Tools%20in%202026" target="_blank" rel="noopener" className="text-gray-500 hover:text-orange-500 transition">Twitter (X)</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmohitkoli.in%2Fblog%2Ftop-25-free-ai-tools-2026" target="_blank" rel="noopener" className="text-gray-500 hover:text-orange-500 transition">LinkedIn</a>
+            <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fmohitkoli.in%2Fblog%2Ftop-25-free-ai-tools-2026&title=Top%2025%20Free%20AI%20Tools%20in%202026" target="_blank" rel="noopener" className="text-gray-500 hover:text-orange-500 transition">Reddit</a>
           </div>
           <p className="text-gray-400 text-sm mb-4">
             © 2026 Mohit Koli • Digital Strategist & Backend Expert
