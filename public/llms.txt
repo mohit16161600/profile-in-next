@@ -1,0 +1,48 @@
+# Mohit Koli — mohitkoli.in
+
+> Full-stack developer based in India. Publishes price-checked guides on web
+> hosting, domains, SEO and eCommerce, with pricing verified against vendor
+> storefronts on the Indian market and dated on each page.
+
+All prices quoted are in INR for the Indian storefront and carry the month they
+were checked. Intro rates and renewal rates are always stated separately,
+because they differ substantially in this category.
+
+## Tools
+
+- [Hosting Cost Calculator](https://mohitkoli.in/tools/hosting-cost-calculator): Total cost of hosting over 1-10 years in India, comparing discounted long-term pricing against standard renewal rates, including GST.
+
+## Hosting
+
+- [Hostinger Plans & Pricing India 2026](https://mohitkoli.in/blog/hostinger-plans-pricing-india-2026): Every tier with intro and renewal rates, specs, KVM VPS and Agency plans.
+- [Hostinger Renewal Price India 2026](https://mohitkoli.in/blog/hostinger-renewal-price-india-2026): What each plan costs after the intro term ends, with the multi-year arithmetic.
+- [Hostinger Business Plan (now Unlimited)](https://mohitkoli.in/blog/hostinger-business-plan): The plan renamed from Business to Unlimited in 2026 — specs, price and who it suits.
+- [Cheap Web Hosting Under ₹200 India](https://mohitkoli.in/blog/cheap-web-hosting-under-200-india): Budget plans that are worth it and the ones that are cheap for a reason.
+- [Best Web Hosting India 2026](https://mohitkoli.in/blog/best-web-hosting-india-2026): Provider comparison for the Indian market.
+- [Best VPS Hosting India 2026](https://mohitkoli.in/blog/best-vps-hosting-india-2026): KVM VPS specs, prices and renewal rates.
+- [Cloud Hosting India 2026](https://mohitkoli.in/blog/hostinger-cloud-hosting-india-2026): When dedicated resources are worth the jump from shared.
+- [WordPress Hosting India 2026](https://mohitkoli.in/blog/hostinger-wordpress-hosting-india-2026): Managed WordPress hosting, what actually matters.
+- [Node.js Hosting India 2026](https://mohitkoli.in/blog/nodejs-hosting-india-2026): Running Node apps on Indian hosting.
+- [Migrate WordPress to a New Host](https://mohitkoli.in/blog/migrate-wordpress-to-new-host): Zero-downtime migration, including the DNS TTL step.
+
+## Domains
+
+- [Best Domain Registrars India 2026](https://mohitkoli.in/blog/best-domain-registrars-india-2026): First-year versus renewal pricing across registrars.
+- [How to Transfer a Domain from GoDaddy](https://mohitkoli.in/blog/how-to-transfer-domain-from-godaddy): Step-by-step transfer to any registrar.
+- [Namecheap vs GoDaddy](https://mohitkoli.in/blog/namecheap-vs-godaddy): Five-year cost comparison.
+- [Hostinger Domain Price India](https://mohitkoli.in/blog/hostinger-domain-price-india-2026): Domain registration and transfer pricing in rupees.
+
+## eCommerce
+
+- [Shopify Review India 2026](https://mohitkoli.in/blog/shopify-review-india-2026): Real total cost including gateway fees, COD and GST.
+- [Shopify vs WooCommerce](https://mohitkoli.in/blog/shopify-vs-woocommerce): Where each stops making sense.
+
+## About
+
+- [Homepage](https://mohitkoli.in): Full-stack developer, freelance, India.
+- [Blog index](https://mohitkoli.in/blog): All guides.
+
+## Note
+
+Affiliate links appear on some pages and are disclosed on those pages. Prices
+change frequently — always confirm on the vendor's own checkout.

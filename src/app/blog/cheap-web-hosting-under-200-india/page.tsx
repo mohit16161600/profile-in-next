@@ -322,7 +322,8 @@ export default function CheapHostingUnder200() {
                         <p className="text-gray-300 leading-7 mb-4 sm:mb-0">
                             Numbers looking sensible? The ₹149 Premium tier is the one I put most client sites on —
                             sale pricing rotates, so a quick look at the live checkout beats any table (an extra
-                            referral discount usually applies on top).
+                            referral discount usually applies on top). Work out the full multi-year total with my{" "}
+                            <Link href="/tools/hosting-cost-calculator" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">hosting cost calculator</Link>.
                         </p>
                         <a
                             href={CART_PREMIUM_48}

@@ -1217,3 +1217,32 @@ export const BLOG_POSTS: BlogPost[] = [
         imageSrc: '/assets/b1.png',
     },
 ];
+
+/**
+ * Pages that carry the Hostinger referral are the ones this site is actively
+ * trying to surface, so they lead the homepage and the blog index rather than
+ * sitting wherever they happen to fall in BLOG_POSTS. Order below is
+ * deliberate — broadest keyword ceiling first, then the pages that need the
+ * internal-link boost most. Anything not listed keeps its existing relative
+ * order behind them.
+ */
+export const PRIORITY_SLUGS = [
+    "hostinger-plans-pricing-india-2026",
+    "hostinger-renewal-price-india-2026",
+    "cheap-web-hosting-under-200-india",
+    "best-web-hosting-india-2026",
+    "hostinger-business-plan",
+    "hostinger-wordpress-hosting-india-2026",
+    "hostinger-55-per-month-offer",
+    "how-to-get-hostinger-90-off-2026",
+    "hostinger-cloud-hosting-india-2026",
+    "best-vps-hosting-india-2026",
+];
+
+/** BLOG_POSTS re-ordered so the monetised Hostinger guides lead. */
+export const BLOG_POSTS_BY_PRIORITY: BlogPost[] = [
+    ...PRIORITY_SLUGS
+        .map((slug) => BLOG_POSTS.find((p) => p.slug === slug))
+        .filter((p): p is BlogPost => Boolean(p)),
+    ...BLOG_POSTS.filter((p) => !PRIORITY_SLUGS.includes(p.slug)),
+];

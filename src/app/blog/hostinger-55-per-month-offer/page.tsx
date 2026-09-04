@@ -233,7 +233,7 @@ export default function Hostinger55Offer() {
                         <p className="text-gray-300 leading-8 mb-5">
                             Hostinger&apos;s sale already cuts Single from ₹399 to ₹69/mo. A referral code takes a further
                             20% off that — <strong className="text-white">₹69 × 0.8 = ₹55.20</strong>. The same 20% applies to
-                            every plan, which is why Premium reads ₹119.20 and Unlimited ₹199.20 once the code is on.
+                            every plan, which is why Premium reads ₹119.20 and <Link href="/blog/hostinger-business-plan" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Unlimited</Link> ₹199.20 once the code is on.
                         </p>
                         <p className="text-gray-300 leading-8">
                             You do not type the code anywhere. Open the pricing page through the link below and it applies

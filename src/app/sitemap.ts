@@ -13,6 +13,7 @@ const baseUrl = 'https://mohitkoli.in';
 const SECTION_PAGES_UPDATED = '2026-07-03'; // profile, services, projects, locations hub
 const LEGAL_PAGES_UPDATED = '2026-01-21';   // privacy-policy, terms — rarely change
 const LOCATION_PAGES_UPDATED = '2026-06-20'; // developer-in/* templated service-area pages
+const TOOLS_UPDATED = '2026-09-03';          // /tools/* — bump when a tool's data or logic changes
 
 const DAY_MS = 1000 * 60 * 60 * 24;
 const toDay = (value: number | Date) => new Date(value).toISOString().split('T')[0];
@@ -48,6 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${baseUrl}/blog`, lastModified: feedLastMod, changeFrequency: 'weekly', priority: 0.9 },
         { url: `${baseUrl}/locations`, lastModified: SECTION_PAGES_UPDATED, changeFrequency: 'monthly', priority: 0.7 },
         { url: `${baseUrl}/projects/sheopals-crm`, lastModified: SECTION_PAGES_UPDATED, changeFrequency: 'monthly', priority: 0.6 },
+        { url: `${baseUrl}/tools/hosting-cost-calculator`, lastModified: TOOLS_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/privacy-policy`, lastModified: LEGAL_PAGES_UPDATED, changeFrequency: 'yearly', priority: 0.3 },
         { url: `${baseUrl}/terms`, lastModified: LEGAL_PAGES_UPDATED, changeFrequency: 'yearly', priority: 0.3 },
     ];

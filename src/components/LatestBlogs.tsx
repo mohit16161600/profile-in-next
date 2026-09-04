@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { BLOG_POSTS } from "@/data/posts";
+import { BLOG_POSTS_BY_PRIORITY } from "@/data/posts";
 
 export default function LatestBlogs() {
-    // Get the 3 most recent posts
-    const latestPosts = BLOG_POSTS.slice(0, 3);
+    // The three guides the site most wants read — see PRIORITY_SLUGS in data/posts.
+    const latestPosts = BLOG_POSTS_BY_PRIORITY.slice(0, 3);
 
     return (
         <section className="py-24 bg-transparent relative overflow-hidden">
@@ -15,7 +15,7 @@ export default function LatestBlogs() {
                     <div className="max-w-2xl">
                         <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-4">Inside the Mind</p>
                         <h2 className="text-4xl md:text-5xl font-bold text-white">
-                            Latest from the <span className="text-primary-500">Blog</span>
+                            Start Here on the <span className="text-primary-500">Blog</span>
                         </h2>
                         <p className="mt-4 text-lg text-gray-400">
                             Deep dives into modern web architecture, AI-driven development, and the future of coding.

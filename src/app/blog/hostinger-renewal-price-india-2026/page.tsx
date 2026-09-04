@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 const FAQ = [
     {
         q: "How much does Hostinger charge after the first year?",
-        a: "Once your locked term ends, Hostinger charges the plan's regular renewal rate: roughly ₹449/mo for Premium, ₹649/mo for Business and ₹1,599/mo for Cloud Startup. If you bought a 48-month term, nothing changes after year one — the renewal rate only applies when the full term expires, and your free domain renews separately from year two.",
+        a: "Once your locked term ends, Hostinger charges the plan's regular renewal rate: roughly ₹449/mo for Premium, ₹649/mo for Unlimited (formerly Business) and ₹1,599/mo for Cloud Startup. If you bought a 48-month term, nothing changes after year one — the renewal rate only applies when the full term expires, and your free domain renews separately from year two.",
     },
     {
         q: "How much does Hostinger Premium cost after renewal in India?",
@@ -135,7 +135,7 @@ const jsonLd = [
 
 const RENEWAL_TABLE = [
     ["Premium (shared)", "₹149/mo", "₹449/mo", "+223%", "₹5,388"],
-    ["Business (shared)", "₹199/mo", "₹649/mo", "+226%", "₹7,788"],
+    ["Unlimited (shared)", "₹249/mo", "₹649/mo", "+161%", "₹7,788"],
     ["Cloud Startup", "₹599/mo", "₹1,599/mo", "+167%", "₹19,188"],
     ["KVM VPS (all tiers)", "from ~₹499/mo", "verify at checkout", "—", "—"],
 ];
@@ -209,7 +209,7 @@ export default function HostingerRenewalPrice() {
                     <section className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6">
                         <h2 className="text-2xl font-bold text-white mb-3">The 30-second answer</h2>
                         <ul className="space-y-2 text-gray-300 leading-7">
-                            <li>💰 <strong className="text-white">Premium renews at ~₹449/mo</strong>, Business at ~₹649/mo, Cloud Startup at ~₹1,599/mo.</li>
+                            <li>💰 <strong className="text-white">Premium renews at ~₹449/mo</strong>, Unlimited at ~₹649/mo, Cloud Startup at ~₹1,599/mo.</li>
                             <li>📅 Renewal price hits <strong className="text-white">only after your locked term ends</strong> — a 48-month purchase doesn&apos;t renew until 2030.</li>
                             <li>🛡️ The defence: <strong className="text-white">buy the longest term at the sale price</strong>. ₹149 × 48 months (~₹7,152) beats 12 months + three renewals (~₹17,952) by roughly ₹11,300.</li>
                             <li>🔔 Auto-renewal is ON by default — decide now whether you want it (hPanel → Billing → Subscriptions).</li>
@@ -258,7 +258,7 @@ export default function HostingerRenewalPrice() {
                         <h2 className="text-3xl font-bold text-white mb-4">Hostinger price after the first year</h2>
                         <p className="text-gray-300 leading-8 mb-4">
                             Buy a 12-month term and your second invoice is the first one billed at the full rate — ₹449/mo on Premium,
-                            ₹649 on Business, ₹1,599 on Cloud Startup. Nothing about your site changes; the number on the invoice does.
+                            ₹649 on <Link href="/blog/hostinger-business-plan" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Unlimited (formerly Business)</Link>, ₹1,599 on Cloud Startup. Nothing about your site changes; the number on the invoice does.
                         </p>
                         <p className="text-gray-300 leading-8">
                             And it never arrives alone. The free .com from year one renews at ~₹1,199 in the same window, so a 12-month
@@ -347,7 +347,9 @@ export default function HostingerRenewalPrice() {
                         <h2 className="text-3xl font-bold text-white mb-4">The 4-year math: 48-month term vs renewing yearly</h2>
                         <p className="text-gray-300 leading-8 mb-6">
                             Here is the comparison Hostinger&apos;s pricing page never spells out — the same 4 years of Premium
-                            hosting bought two different ways:
+                            hosting bought two different ways. To run these numbers for any plan and any number of years,
+                            use my{" "}
+                            <Link href="/tools/hosting-cost-calculator" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">free hosting cost calculator</Link>.
                         </p>
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className="rounded-2xl border border-green-500/40 bg-green-500/[0.06] p-6">

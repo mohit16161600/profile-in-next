@@ -1,4 +1,4 @@
-import { BLOG_POSTS } from "@/data/posts";
+import { BLOG_POSTS, BLOG_POSTS_BY_PRIORITY } from "@/data/posts";
 import BlogIndex from "@/components/BlogIndex";
 
 export const metadata = {
@@ -61,7 +61,7 @@ export default function BlogPage() {
             </section>
 
             <main className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-                <BlogIndex posts={BLOG_POSTS} />
+                <BlogIndex posts={BLOG_POSTS_BY_PRIORITY} />
             </main>
         </>
     );

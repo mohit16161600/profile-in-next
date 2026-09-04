@@ -255,7 +255,9 @@ export default function HostingerPlansPricing() {
                             <strong className="text-white">How much is hosting on Hostinger?</strong> In India it starts at{" "}
                             <strong className="text-white">₹149/mo</strong> for the Premium shared plan on the 48-month term, ₹249/mo for
                             Unlimited (formerly Business), and ₹599/mo for Cloud Startup; KVM VPS starts around ₹499/mo. Renewals land higher — roughly ₹449,
-                            ₹649 and ₹1,599/mo — so the table below prints both numbers side by side. Every shared plan includes free SSL
+                            ₹649 and ₹1,599/mo — so the table below prints both numbers side by side, and my{" "}
+                            <Link href="/tools/hosting-cost-calculator" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">hosting cost calculator</Link>{" "}
+                            totals them across however many years you plan to stay. Every shared plan includes free SSL
                             and a free domain for the first year.
                         </p>
                         <div className="overflow-x-auto rounded-2xl border border-white/10 mb-4">
@@ -457,7 +459,7 @@ export default function HostingerPlansPricing() {
                         </p>
                         <h3 className="text-xl font-bold text-white mb-3">Hostinger Business plan — now "Unlimited" at ₹249/mo</h3>
                         <p className="text-gray-300 leading-8">
-                            The Hostinger Business plan is now sold as Unlimited, at ₹249/mo on the 48-month term — ₹11,952 upfront, about ₹199/mo with
+                            The <Link href="/blog/hostinger-business-plan" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Hostinger Business plan</Link> is now sold as Unlimited, at ₹249/mo on the 48-month term — ₹11,952 upfront, about ₹199/mo with
                             the referral stack — renewing around ₹649/mo. The extra ₹60/mo over Premium buys NVMe storage with roughly 2x
                             faster disk I/O, daily backups instead of weekly, unlimited websites, 50 GB of space, and the AI ecommerce builder. If
                             your site earns money — a store, lead-gen pages, client projects — Business is the safer default. My verdict
