@@ -8,7 +8,6 @@ import Blog1 from "@/components/blog-posts/Blog1";
 import Blog2 from "@/components/blog-posts/Blog2";
 import Blog3 from "@/components/blog-posts/Blog3";
 import Blog4 from "@/components/blog-posts/Blog4";
-import Blog5 from "@/components/blog-posts/Blog5";
 import Blog6 from "@/components/blog-posts/Blog6";
 import Blog7 from "@/components/blog-posts/Blog7";
 import Blog9 from "@/components/blog-posts/Blog9";
@@ -22,7 +21,6 @@ const CONTENT_MAP: Record<string, React.ComponentType> = {
     "the-truth-about-ai-coding-assistants": Blog2,
     "top-javascript-libraries-frameworks-2025": Blog3,
     "best-ai-productivity-tools-2025": Blog4,
-    "hostinger-vps-hosting-review-discount": Blog5,
     "frontend-vs-backend-development-guide": Blog6,
     "is-react-worth-learning-2026": Blog7,
     "build-website-with-ai-step-by-step": Blog9,

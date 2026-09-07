@@ -7,7 +7,7 @@ const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/nodejs-hosting-india-2026";
 
 export const metadata: Metadata = {
-    title: "Node.js Hosting in India 2026: VPS vs Serverless",
+    title: "Node.js Hosting India 2026: VPS From ₹599/mo Compared",
     description:
         "A developer's guide to Node.js hosting in India — why shared hosting can't run Node, VPS vs serverless vs PaaS with real INR costs, and my setup.",
     keywords: [

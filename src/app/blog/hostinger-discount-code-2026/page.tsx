@@ -5,7 +5,7 @@ import ShareButtons from "@/components/ShareButtons";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-discount-code-2026";
-const TITLE = "Hostinger Discount Code 2026: Do Coupon Codes Actually Work?";
+const TITLE = "Hostinger Discount Code 2026: 20% Off On Top of the Sale";
 const DESCRIPTION =
   "Do Hostinger discount codes actually work in 2026? The honest answer: most listed coupon codes are dead. Here is what really cuts your price at checkout.";
 
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hostinger Discount Code 2026: Do Coupon Codes Actually Work?",
+    title: "Hostinger Discount Code 2026: 20% Off On Top of the Sale",
     description: "Coupon code vs referral link, why coupon listicles are dead, and what the discount really looks like on the Hostinger India checkout.",
     images: ["/assets/hostinger-offer.webp"],
   },
@@ -333,9 +333,9 @@ export default function HostingerDiscountCodeGuide() {
                     <td className="p-4">₹449/mo</td>
                   </tr>
                   <tr className="border-t border-white/5">
-                    <td className="p-4 font-medium text-white">Business</td>
+                    <td className="p-4 font-medium text-white">Unlimited (was Business)</td>
                     <td className="p-4 text-red-400 line-through">₹699/mo</td>
-                    <td className="p-4">₹199/mo</td>
+                    <td className="p-4">₹249/mo</td>
                     <td className="p-4 text-purple-300 font-bold">~₹199/mo</td>
                     <td className="p-4">₹649/mo</td>
                   </tr>
@@ -380,7 +380,7 @@ export default function HostingerDiscountCodeGuide() {
                 does the most useful work per rupee.
               </li>
               <li className="leading-8">
-                <strong className="text-white">WooCommerce or client work:</strong> Business at ₹199/mo — ₹11,952 for the
+                <strong className="text-white">WooCommerce or client work:</strong> Unlimited (formerly Business) at ₹249/mo — ₹11,952 for the
                 term — for NVMe storage and daily backups. The extra ₹60/mo over Premium is the cheapest insurance in
                 the lineup.
               </li>
@@ -481,7 +481,7 @@ export default function HostingerDiscountCodeGuide() {
 
           <div className="glass rounded-xl p-6 border border-white/5">
             <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
-            <ShareButtons url={CANONICAL} title="Hostinger Discount Code 2026: Do Coupon Codes Actually Work?" />
+            <ShareButtons url={CANONICAL} title="Hostinger Discount Code 2026: 20% Off On Top of the Sale" />
           </div>
         </article>
       </main>

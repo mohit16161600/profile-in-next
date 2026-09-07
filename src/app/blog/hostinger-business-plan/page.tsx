@@ -11,7 +11,7 @@ const IMAGE = "https://mohitkoli.in/assets/blog/hostinger-business-plan.png";
 const PUBLISHED = "2026-08-24T00:00:00.000Z";
 
 export const metadata: Metadata = {
-    title: "Hostinger Business Plan 2026: It's Now Called Unlimited",
+    title: "Hostinger Unlimited Plan: 64% Off (Was Business Plan)",
     description:
         "Hostinger renamed Business to Unlimited in July 2026. What changed, the real ₹199.20/mo price with a referral code, and whether it's still the tier to buy.",
     keywords: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger Business Plan 2026: It's Now Called Unlimited",
+        title: "Hostinger Unlimited Plan: 64% Off (Was Business Plan)",
         description:
             "Business was renamed Unlimited in July 2026. What changed, the real ₹199.20/mo price, and whether it's still the plan to buy.",
         url: CANONICAL,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hostinger Business Plan 2026: It's Now Called Unlimited",
+        title: "Hostinger Unlimited Plan: 64% Off (Was Business Plan)",
         description: "The rename explained, the real price, and who should still buy it.",
         images: [IMAGE],
     },
@@ -100,7 +100,7 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger Business Plan 2026: It's Now Called Unlimited",
+        headline: "Hostinger Unlimited Plan: 64% Off (Was Business Plan)",
         description: "Hostinger renamed Business to Unlimited in July 2026. What changed, the real price, and whether it's still the right plan.",
         image: IMAGE,
         datePublished: PUBLISHED,
@@ -570,7 +570,7 @@ export default function HostingerBusinessPlan() {
 
                     <div className="glass rounded-xl shadow-sm p-6 border border-white/5">
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
-                        <ShareButtons url={CANONICAL} title="Hostinger Business Plan 2026: It's Now Called Unlimited" />
+                        <ShareButtons url={CANONICAL} title="Hostinger Unlimited Plan: 64% Off (Was Business Plan)" />
                     </div>
                 </article>
             </main>

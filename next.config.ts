@@ -86,7 +86,7 @@ const nextConfig: NextConfig = {
             { source: "/blogs/blog2.html", destination: "/blog/the-truth-about-ai-coding-assistants", permanent: true },
             { source: "/blogs/blog3.html", destination: "/blog/top-javascript-libraries-frameworks-2025", permanent: true },
             { source: "/blogs/blog4.html", destination: "/blog/best-ai-productivity-tools-2025", permanent: true },
-            { source: "/blogs/blog5.html", destination: "/blog/hostinger-vps-hosting-review-discount", permanent: true },
+            { source: "/blogs/blog5.html", destination: "/blog/hostinger-kvm-vps-plans-india-2026", permanent: true },
             { source: "/blogs/blog6.html", destination: "/blog/frontend-vs-backend-development-guide", permanent: true },
             { source: "/blogs/blog7.html", destination: "/blog/is-react-worth-learning-2026", permanent: true },
             { source: "/blogs/blog8.html", destination: "/blog/will-ai-replace-your-job-2026", permanent: true },
@@ -97,7 +97,7 @@ const nextConfig: NextConfig = {
             { source: "/blog/blog2", destination: "/blog/the-truth-about-ai-coding-assistants", permanent: true },
             { source: "/blog/blog3", destination: "/blog/top-javascript-libraries-frameworks-2025", permanent: true },
             { source: "/blog/blog4", destination: "/blog/best-ai-productivity-tools-2025", permanent: true },
-            { source: "/blog/blog5", destination: "/blog/hostinger-vps-hosting-review-discount", permanent: true },
+            { source: "/blog/blog5", destination: "/blog/hostinger-kvm-vps-plans-india-2026", permanent: true },
             { source: "/blog/blog6", destination: "/blog/frontend-vs-backend-development-guide", permanent: true },
             { source: "/blog/blog7", destination: "/blog/is-react-worth-learning-2026", permanent: true },
             { source: "/blog/blog8", destination: "/blog/will-ai-replace-your-job-2026", permanent: true },
@@ -127,6 +127,8 @@ const nextConfig: NextConfig = {
             { source: "/privacy-policy.html", destination: "/privacy-policy", permanent: true },
             { source: "/privacy.html", destination: "/privacy-policy", permanent: true },
             { source: "/index.html", destination: "/", permanent: true },
+            // Thin 1,353-word VPS review consolidated into the full KVM plans guide (Sep 2026).
+            { source: "/blog/hostinger-vps-hosting-review-discount", destination: "/blog/hostinger-kvm-vps-plans-india-2026", permanent: true },
 
             // Sitemap is served at /sitemap.xml; the extensionless path was being linked.
             { source: "/sitemap", destination: "/sitemap.xml", permanent: true },

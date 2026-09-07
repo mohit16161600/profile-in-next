@@ -8,7 +8,7 @@ const CART_PREMIUM_48 = "https://www.hostinger.com/in/cart?product=hosting%3Ahos
 const CANONICAL = "https://mohitkoli.in/blog/cheap-web-hosting-under-200-india";
 
 export const metadata: Metadata = {
-    title: "Cheap Web Hosting Under ₹200/Month in India (2026)",
+    title: "Cheap Web Hosting India: Under ₹200/mo, From ₹69",
     description:
         "Cheap web hosting under ₹200/month in India — 5 real picks, what ₹99, ₹149 and ₹199 actually buy, and the renewal trap. Price-checked Aug 2026.",
     keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks",
+        title: "Cheap Web Hosting India: Under ₹200/mo, From ₹69: 5 Real Picks",
         description:
             "5 real under-₹200 hosting options in India compared — price, renewal, storage, free domain — plus the corners budget hosts cut and the smartest pick per use case.",
         url: CANONICAL,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks",
+        title: "Cheap Web Hosting India: Under ₹200/mo, From ₹69: 5 Real Picks",
         description: "₹99 vs ₹149 vs ₹199 hosting compared honestly — renewal traps, free-domain math, and the smartest budget pick for 2026.",
         images: ["/assets/blog/cheap-web-hosting-under-200-india.png"],
     },
@@ -80,7 +80,7 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks",
+        headline: "Cheap Web Hosting India: Under ₹200/mo, From ₹69: 5 Real Picks",
         description:
             "Cheap web hosting under ₹200/month in India, price-checked Aug 2026 — 5 real picks: what ₹99, ₹149 & ₹199 buy, who gives a free domain, and the renewal trap.",
         image: "https://mohitkoli.in/assets/blog/cheap-web-hosting-under-200-india.png",
@@ -225,9 +225,9 @@ export default function CheapHostingUnder200() {
                                 </thead>
                                 <tbody className="text-gray-300">
                                     {[
-                                        ["Hostinger Single", "~₹99/mo", "~2–3× intro — check checkout", "~30 GB SSD", "❌", "First blog, student project"],
+                                        ["Hostinger Single", "₹69/mo (48-mo term)", "~₹289/mo — check checkout", "10 GB SSD", "❌", "First blog, student project"],
                                         ["Hostinger Premium", "₹149/mo (48-mo term)", "~2–3× intro — lock the long term", "20 GB SSD", "✅ year 1", "Blogs, portfolios, small business"],
-                                        ["Hostinger Business", "~₹199/mo", "~2–3× intro — check checkout", "50 GB NVMe", "✅ year 1", "Business sites, WooCommerce"],
+                                        ["Hostinger Unlimited (was Business)", "₹249/mo (~₹199 with code)", "~₹649/mo — check checkout", "50 GB NVMe", "✅ year 1", "Business sites, WooCommerce"],
                                         ["GitHub Pages", "₹0", "Stays free", "Enough for static sites", "❌ bring your own", "Static portfolio, docs"],
                                         ["Vercel / Netlify (free tier)", "₹0", "Stays free", "Generous for static sites", "❌ bring your own", "Static and frontend projects"],
                                     ].map(([option, price, renewal, storage, domain, bestFor], i) => (
@@ -496,7 +496,7 @@ export default function CheapHostingUnder200() {
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
-                        <ShareButtons url={CANONICAL} title="Cheap Web Hosting Under ₹200/Month in India (2026): 5 Real Picks" />
+                        <ShareButtons url={CANONICAL} title="Cheap Web Hosting India: Under ₹200/mo, From ₹69: 5 Real Picks" />
                     </div>
                 </article>
             </main>

@@ -224,7 +224,7 @@ const HostingerDiscount = () => {
               desc="Best for first websites, test projects, and beginners who want the lowest possible starting cost."
             />
             <PlanCard
-              title="Premium or Business plan"
+              title="Premium or Unlimited plan"
               desc="Best for bloggers, freelancers, small business sites, and people who want stronger features and better bundled value."
             />
             <PlanCard
