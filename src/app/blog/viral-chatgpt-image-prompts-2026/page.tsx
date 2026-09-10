@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
+  title: "50 Viral ChatGPT Image Prompts Everyone Uses in 2026",
   description:
-    "Copy 30 ready-to-use viral ChatGPT image prompts for 2026 — action figure, Polaroid, caricature, toy and time-travel edits, plus a beginner formula.",
+    "Copy 50 viral ChatGPT image prompts for 2026 — memory caricature, pet-to-human, anti-AI film look and double-exposure edits. Free copy-paste list.",
   keywords: [
     "viral chatgpt image prompts",
     "chatgpt image prompts 2026",
@@ -22,18 +22,18 @@ export const metadata: Metadata = {
     canonical: "https://mohitkoli.in/blog/viral-chatgpt-image-prompts-2026",
   },
   openGraph: {
-    title: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
+    title: "50 Viral ChatGPT Image Prompts Everyone Uses in 2026",
     description:
-      "Copy 30 ready-to-use viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
+      "Copy 50 viral ChatGPT image prompts for 2026 — memory caricature, pet-to-human, anti-AI film look and double-exposure edits. Free copy-paste list. Beginner-friendly formula + free prompt list.",
     url: "https://mohitkoli.in/blog/viral-chatgpt-image-prompts-2026",
     type: "article",
     images: ["/assets/blog/viral-chatgpt-image-prompts-2026.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
+    title: "50 Viral ChatGPT Image Prompts Everyone Uses in 2026",
     description:
-      "Copy 30 ready-to-use viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
+      "Copy 50 viral ChatGPT image prompts for 2026 — memory caricature, pet-to-human, anti-AI film look and double-exposure edits. Free copy-paste list. Beginner-friendly formula + free prompt list.",
     images: ["/assets/blog/viral-chatgpt-image-prompts-2026.png"],
   },
 };
@@ -80,11 +80,32 @@ export default function ViralChatGPTImagePrompts2026() {
       answer:
         "Vague prompts cause generic output. Add specific lighting, lens, mood, and background details for a sharper, trendier look.",
     },
+    {
+      question: "What is ChatGPT Images 2.0 and do I need it for these prompts?",
+      answer:
+        "ChatGPT Images 2.0, powered by the gpt-image-2 model, launched on 21 April 2026 and is available on every ChatGPT plan including free. OpenAI lists 2K output, nine aspect ratios and improved text rendering, and it is the first OpenAI image model with reasoning built into the architecture. Every prompt here works on it, and the text-heavy ones such as poster and packaging edits benefit the most.",
+    },
+    {
+      question: "How does the ‘based on everything you know about me’ prompt work?",
+      answer:
+        "It leans on ChatGPT’s saved memory of your past chats rather than on an uploaded photo, so the model draws on what it has recorded about your interests and habits. Results vary wildly between accounts, which is exactly why the trend spread. If your memory is switched off or newly cleared, the output will be generic — that is the setting to check first, not the prompt.",
+    },
+    {
+      question: "Why do some people want their AI images to look worse?",
+      answer:
+        "Because polished AI output has become instantly recognisable, and recognisable means scroll-past. The anti-AI look deliberately adds film grain, flash blowout, slight motion blur and imperfect framing so an image reads as a real photo someone took. It is the fastest-growing prompt style of 2026 for exactly that reason.",
+    },
+    {
+      question: "How many images can I generate per day?",
+      answer:
+        "OpenAI does not publish a fixed public number and the caps move with demand, so treat any specific figure you read as unverified. Free accounts hit limits fastest, and paid tiers get more headroom. If generations start failing or queueing, you have reached your cap — waiting for the window to reset is the only fix.",
+    },
   ];
 
   const keyTakeaways = [
     "Viral image prompts share one formula: subject, style, lighting, background, and aspect ratio.",
-    "All 30 prompts are copy-paste ready and grouped by trend so you can remix quickly.",
+    "All 50 prompts are copy-paste ready and grouped by trend so you can remix quickly.",
+    "ChatGPT Images 2.0 (gpt-image-2) landed on 21 April 2026 and is available on every plan, including free.",
     "Upload a reference photo to keep a consistent face across different styles.",
     "Free ChatGPT users can generate images but may hit daily limits during heavy use.",
     "Avoid celebrities and copyrighted characters so prompts are not refused or risky to post.",
@@ -95,9 +116,9 @@ export default function ViralChatGPTImagePrompts2026() {
   const blogPostingSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
+    headline: "50 Viral ChatGPT Image Prompts Everyone Uses in 2026",
     description:
-      "Copy 30 ready-to-use viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
+      "Copy 50 viral ChatGPT image prompts for 2026 — memory caricature, pet-to-human, anti-AI film look and double-exposure edits. Free copy-paste list. Beginner-friendly formula + free prompt list.",
     image: "https://mohitkoli.in/assets/blog/viral-chatgpt-image-prompts-2026.png",
     datePublished: "2026-06-16",
     dateModified: "2026-06-16",
@@ -149,7 +170,7 @@ export default function ViralChatGPTImagePrompts2026() {
       {
         "@type": "ListItem",
         position: 3,
-        name: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
+        name: "50 Viral ChatGPT Image Prompts Everyone Uses in 2026",
         item: canonical,
       },
     ],
@@ -205,7 +226,7 @@ export default function ViralChatGPTImagePrompts2026() {
             Prompts
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent">
-            30 Viral ChatGPT Image Prompts
+            50 Viral ChatGPT Image Prompts
           </h1>
           <div className="flex items-center justify-center gap-4 text-gray-400 text-sm mb-8">
             <span>By Mohit Koli</span>
@@ -219,7 +240,7 @@ export default function ViralChatGPTImagePrompts2026() {
         <div className="relative w-full aspect-[1200/630] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-blue-500/10">
           <Image
             src="/assets/blog/viral-chatgpt-image-prompts-2026.svg"
-            alt="30 Viral ChatGPT Image Prompts Everyone Uses in 2026"
+            alt="50 Viral ChatGPT Image Prompts Everyone Uses in 2026"
             fill
             className="object-cover"
             priority
@@ -289,6 +310,31 @@ export default function ViralChatGPTImagePrompts2026() {
               <li>
                 <a href="#time-travel-cinematic-prompts" className="hover:text-cyan-400 transition">
                   → Time-Travel &amp; Cinematic Prompts
+                </a>
+              </li>
+              <li>
+                <a href="#whats-new-images-2" className="hover:text-cyan-400 transition">
+                  → What Changed in 2026: ChatGPT Images 2.0
+                </a>
+              </li>
+              <li>
+                <a href="#memory-personality-prompts" className="hover:text-cyan-400 transition">
+                  → Memory &amp; Personality Prompts (New)
+                </a>
+              </li>
+              <li>
+                <a href="#pet-transformation-prompts" className="hover:text-cyan-400 transition">
+                  → Pet &amp; Animal Transformations (New)
+                </a>
+              </li>
+              <li>
+                <a href="#anti-ai-look-prompts" className="hover:text-cyan-400 transition">
+                  → The Anti-AI Look (New)
+                </a>
+              </li>
+              <li>
+                <a href="#poster-double-exposure-prompts" className="hover:text-cyan-400 transition">
+                  → Poster, Double-Exposure &amp; Miniature (New)
                 </a>
               </li>
               <li>
@@ -765,6 +811,213 @@ export default function ViralChatGPTImagePrompts2026() {
             </Link>{" "}
             guide uses the exact same formula for a different aesthetic.
           </p>
+
+          {/* What changed in 2026 */}
+          <h2 id="whats-new-images-2" className="text-3xl font-bold mt-12 mb-6">
+            What Changed in 2026: ChatGPT Images 2.0
+          </h2>
+          <p className="text-gray-300 mb-4">
+            OpenAI released <strong className="text-white">ChatGPT Images 2.0</strong> on
+            21 April 2026, running on the <strong className="text-white">gpt-image-2</strong> model.
+            It is available on every ChatGPT plan, free included, so you do not need a paid
+            tier to run anything on this page.
+          </p>
+          <p className="text-gray-300 mb-4">
+            Three changes matter for the prompts below. Output goes up to 2K, there are nine
+            aspect ratios instead of a handful, and text rendering improved sharply — which is
+            why packaging, poster and album-cover prompts suddenly started working in 2026
+            after years of producing garbled lettering. It is also the first OpenAI image model
+            with reasoning built into the architecture, so longer, more specific prompts are
+            handled better than they used to be.
+          </p>
+          <div className="bg-cyan-500/10 border border-cyan-400/30 rounded-2xl p-5 mb-10">
+            <p className="text-cyan-300 font-bold mb-2">Quick tip</p>
+            <p className="text-gray-300">
+              If a prompt with words in the image still comes out misspelled, put the exact
+              text in quotes and say where it goes — for example: the words &quot;LIMITED
+              EDITION&quot; printed across the top of the box.
+            </p>
+          </div>
+
+          {/* Section 7b - Memory & personality */}
+          <h2 id="memory-personality-prompts" className="text-3xl font-bold mt-12 mb-6">
+            Memory &amp; Personality Prompts (New in 2026)
+          </h2>
+          <p className="text-gray-300 mb-4">
+            This is the biggest new category of 2026, and it works differently from everything
+            above: it uses no uploaded photo at all. Instead it draws on ChatGPT&apos;s saved
+            memory of your past conversations, so two people running the identical prompt get
+            completely different images. That unpredictability is exactly why it spread.
+          </p>
+          <p className="text-gray-300 mb-6">
+            One requirement: memory has to be switched on and have something in it. If yours is
+            off or recently cleared, you will get a generic result and assume the prompt is
+            broken. Check Settings before you blame the wording.
+          </p>
+          <div className="space-y-4 mb-10">
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">31. Caricature from memory</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Create a caricature of me based on everything you know about me from our conversations, exaggerated features, warm humorous tone, clean studio background, 4:5.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">32. How you see me</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Generate a single image that represents how you see me based on our chat history, symbolic rather than literal, soft cinematic lighting, muted colour palette, 1:1.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">33. My personality as a room</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Design a room that represents my personality based on what you know about me, isometric view, warm practical lighting, detailed props that reflect my interests, 1:1.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">34. My year in one frame</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Create a single illustrated scene summarising my year based on our conversations, storybook style, golden-hour lighting, layered background details, 16:9.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">35. Me as a product box</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Design retail packaging for a product version of me based on my personality, with the words &quot;LIMITED EDITION&quot; across the top, bright studio lighting, plain white background, 4:5.
+              </p>
+            </div>
+          </div>
+
+          {/* Section 7c - Pet transformations */}
+          <h2 id="pet-transformation-prompts" className="text-3xl font-bold mt-12 mb-6">
+            Pet &amp; Animal Transformations (New in 2026)
+          </h2>
+          <p className="text-gray-300 mb-6">
+            Pet-to-human edits took over Reddit and Threads through 2026. Upload a clear,
+            well-lit photo of your pet — front-facing works best — and let the model translate
+            personality rather than just features. The results are often unsettling, which is
+            most of the appeal.
+          </p>
+          <div className="space-y-4 mb-10">
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">36. Pet as a human</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Reimagine the pet in this photo as a human being, keeping their exact personality, colouring and expression, natural soft lighting, plain neutral background, 4:5.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">37. Pet corporate headshot</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Turn my pet into a professional corporate headshot wearing a blazer, soft key light with subtle rim light, blurred office background, 1:1.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">38. Pet action figure</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Turn my pet into a boxed collectible action figure with accessories, the pet name printed on the packaging, bright product-shot lighting, plain white background, 4:5.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">39. Owner and pet as a duo</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Create a portrait of me and my pet as a matching duo in the same outfit and pose, warm cinematic lighting, simple studio background, 4:5.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">40. Me as my pet&apos;s species</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Reimagine me as the same species as my pet, keeping my hairstyle and expression recognisable, natural daylight, plain background, 1:1.
+              </p>
+            </div>
+          </div>
+
+          {/* Section 7d - Anti-AI look */}
+          <h2 id="anti-ai-look-prompts" className="text-3xl font-bold mt-12 mb-6">
+            The Anti-AI Look (New in 2026)
+          </h2>
+          <p className="text-gray-300 mb-4">
+            The fastest-growing prompt style of 2026 is the one that tries to look worse.
+            Polished AI output has become instantly recognisable, and recognisable means people
+            scroll past it. So the trend inverted: film grain, flash blowout, slight motion
+            blur, imperfect framing.
+          </p>
+          <p className="text-gray-300 mb-6">
+            The trick is to name a specific camera failure rather than asking for
+            &quot;realistic&quot;. Realism is vague; a blown-out on-camera flash is not.
+          </p>
+          <div className="space-y-4 mb-10">
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">41. 35mm film grain</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Make this look like a candid 35mm film photograph, visible grain, slightly muted colours, natural window light, imperfect framing, 4:5.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">42. Disposable camera night out</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Recreate this as a disposable camera photo at a party, harsh direct flash, blown-out highlights, slight red-eye, dark cluttered background, 4:5.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">43. Casual phone snapshot</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Make this look like an unposed photo taken quickly on a phone, slightly crooked angle, ordinary indoor lighting, mundane background, 4:5.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">44. Early-2000s digital camera</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Recreate this as an early-2000s compact digital camera photo, slight over-sharpening, date stamp in the corner, flat on-camera flash, 4:3.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">45. Slightly imperfect portrait</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                A natural portrait of me with soft focus falloff, visible skin texture, no retouching, overcast daylight, plain wall background, 4:5.
+              </p>
+            </div>
+          </div>
+
+          {/* Section 7e - Poster, double exposure, miniature */}
+          <h2 id="poster-double-exposure-prompts" className="text-3xl font-bold mt-12 mb-6">
+            Poster, Double-Exposure &amp; Miniature (New in 2026)
+          </h2>
+          <p className="text-gray-300 mb-6">
+            These are the prompts that improved most when text rendering got better. All of
+            them put words in the image, so quote the exact wording you want and say where it
+            sits in the frame.
+          </p>
+          <div className="space-y-4 mb-10">
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">46. Double-exposure travel poster</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                A double exposure of my silhouette layered with the landmarks of Jaipur, vintage travel poster style, limited warm colour palette, city name printed along the bottom, 2:3.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">47. Vintage travel poster</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Turn this photo into a 1960s screen-printed travel poster, flat bold colours, grainy print texture, destination name in retro type across the top, 2:3.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">48. Tilt-shift miniature world</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Recreate this scene as a miniature diorama with tilt-shift blur, bright saturated colours, tiny handcrafted props, shallow depth of field, 16:9.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">49. Movie poster</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Design a cinematic movie poster starring me, dramatic low-key lighting with a strong rim light, title text at the bottom and a credits block underneath, 2:3.
+              </p>
+            </div>
+            <div className="bg-black/60 border border-cyan-400/20 rounded-2xl p-5">
+              <p className="text-cyan-300 font-bold mb-2">50. Album cover</p>
+              <p className="text-gray-300 font-mono text-sm leading-relaxed">
+                Design an album cover featuring me, moody single-source lighting, textured film grain, the album title in clean sans-serif type in the lower third, 1:1.
+              </p>
+            </div>
+          </div>
 
           {/* Section 8 - Tips */}
           <h2 id="tips-better-results" className="text-3xl font-bold mt-12 mb-6">

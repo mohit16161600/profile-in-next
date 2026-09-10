@@ -708,7 +708,7 @@ export const BLOG_POSTS: BlogPost[] = [
         title: "30 Viral ChatGPT Image Prompts Everyone Uses in 2026",
         description: "Copy 30 tested viral ChatGPT image prompts for 2026: action figure, Polaroid, caricature, toy and time-travel edits. Beginner-friendly formula + free prompt list.",
         date: "June 16, 2026",
-        updated: "September 1, 2026",
+        updated: "September 10, 2026",
         readTime: "14 min read",
         category: "AI Tips",
         views: 0,
