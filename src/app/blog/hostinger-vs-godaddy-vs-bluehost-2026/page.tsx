@@ -10,7 +10,7 @@ const CANONICAL = "https://mohitkoli.in/blog/hostinger-vs-godaddy-vs-bluehost-20
 export const metadata: Metadata = {
     title: "Hostinger vs GoDaddy India 2026: ₹69 vs ₹89/mo Compared",
     description:
-        "Hostinger ₹69/mo vs GoDaddy ₹89/mo in India 2026 — plus renewals (₹289 vs ₹299), Mumbai vs Singapore latency, and Bluehost. 4-year cost math inside.",
+        "₹69 vs ₹89 is the wrong comparison — GoDaddy's entry plan has no SSL, email or domain. Renewals, India latency and 4-year totals for all three.",
     keywords: [
         "hostinger vs godaddy",
         "godaddy vs hostinger",

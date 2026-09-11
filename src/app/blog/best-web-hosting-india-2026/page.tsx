@@ -9,7 +9,7 @@ const CANONICAL = "https://mohitkoli.in/blog/best-web-hosting-india-2026";
 export const metadata: Metadata = {
     title: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹149/mo)",
     description:
-        "7 best web hosting services in India for 2026 ranked on speed, renewal traps and real INR prices from ₹149/mo — plus the cheapest reliable pick before you pay.",
+        "Most lists rank on the intro price. These 7 Indian hosts are ranked on what they cost at renewal — including the two I would not buy, and why.",
     keywords: [
         "best web hosting india",
         "best web hosting india 2026",
@@ -179,7 +179,7 @@ const jsonLd = [
         "@type": "BlogPosting",
         headline: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹149/mo)",
         description:
-            "7 best web hosting services in India for 2026 ranked on speed, renewal traps and real INR prices from ₹149/mo — plus the cheapest reliable pick before you pay.",
+            "Most lists rank on the intro price. These 7 Indian hosts are ranked on what they cost at renewal — including the two I would not buy, and why.",
         image: "https://mohitkoli.in/assets/blog/best-web-hosting-india-2026.png",
         datePublished: "2026-06-30T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",

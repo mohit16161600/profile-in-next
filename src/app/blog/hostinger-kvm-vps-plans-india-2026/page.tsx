@@ -11,7 +11,7 @@ const VERIFIED = "7 September 2026";
 export const metadata: Metadata = {
     title: "Hostinger KVM VPS India 2026: 69% Off, From ₹599/mo",
     description:
-        "Hostinger KVM VPS prices in India — KVM 1 ₹599, KVM 2 ₹799, KVM 4 ₹1,099, KVM 8 ₹2,199/mo, with the real renewal rates and full specs. Verified September 2026.",
+        "KVM 4 more than doubles at renewal — ₹1,099 to ₹2,399. Every Hostinger VPS plan's specs, real renewal rate, and which one is worth buying.",
     keywords: [
         "hostinger kvm vps",
         "hostinger vps price",

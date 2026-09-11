@@ -12,7 +12,7 @@ const UPDATED = "2026-09-07T00:00:00.000Z";
 export const metadata: Metadata = {
     title: "Best VPS Hosting India 2026: Up to 69% OFF, ₹599/mo",
     description:
-        "Hostinger KVM from ₹599/mo (4GB RAM, up to 69% off) vs DigitalOcean, Vultr, Cloudways and Indian hosts — real INR prices with GST, renewals and forex costs.",
+        "KVM 4 is ₹1,099 now and ₹2,399 at renewal. Hostinger vs DigitalOcean, Vultr and Cloudways on real INR totals — including the forex you pay.",
     keywords: [
         "best vps hosting india",
         "best vps hosting india 2026",

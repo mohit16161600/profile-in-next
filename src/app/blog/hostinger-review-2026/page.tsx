@@ -12,7 +12,7 @@ const CANONICAL = "https://mohitkoli.in/blog/hostinger-review-2026";
 export const metadata: Metadata = {
     title: "Hostinger Review 2026: ₹69/mo & 83% Off — India Tested",
     description:
-        "Honest Hostinger review after a year of client sites in India: real speed, uptime, the ₹449/mo renewal, plans from ₹69/mo and who should skip it.",
+        "Fast, genuinely cheap, and the renewal will triple your bill. An honest Hostinger review for India — speed, limits, support, and who should skip it.",
     keywords: [
         "hostinger review 2026",
         "hostinger review",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Hostinger Review 2026: ₹69/mo & 83% Off — India Tested",
         description:
-            "Honest Hostinger review after a year of client sites in India: real speed, uptime, the ₹449/mo renewal, plans from ₹69/mo and who should skip it.",
+            "Fast, genuinely cheap, and the renewal will triple your bill. An honest Hostinger review for India — speed, limits, support, and who should skip it.",
         url: CANONICAL,
         type: "article",
         images: [{ url: "/assets/blog/hostinger-review-2026.png", width: 1200, height: 630, alt: "Hostinger review 2026 — honest developer verdict" }],
@@ -246,7 +246,7 @@ const jsonLd = [
         "@type": "BlogPosting",
         headline: "Hostinger Review 2026: ₹69/mo & 83% Off — India Tested",
         description:
-            "Honest Hostinger review after a year of client sites in India: real speed, uptime, the ₹449/mo renewal, plans from ₹69/mo and who should skip it.",
+            "Fast, genuinely cheap, and the renewal will triple your bill. An honest Hostinger review for India — speed, limits, support, and who should skip it.",
         image: "https://mohitkoli.in/assets/blog/hostinger-review-2026.png",
         datePublished: "2026-07-17T00:00:00.000Z",
         dateModified: "2026-09-07T00:00:00.000Z",

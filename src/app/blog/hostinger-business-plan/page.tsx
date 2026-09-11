@@ -13,7 +13,7 @@ const PUBLISHED = "2026-08-24T00:00:00.000Z";
 export const metadata: Metadata = {
     title: "Hostinger Unlimited Plan: 64% Off (Was Business Plan)",
     description:
-        "Hostinger renamed Business to Unlimited in July 2026. What changed, the real ₹199.20/mo price with a referral code, and whether it's still the tier to buy.",
+        "Business is now Unlimited at ₹249/mo — and it renews at ₹649. What actually changed, who should skip it, and when Premium is genuinely enough.",
     keywords: [
         "hostinger business plan",
         "hostinger business plan price",

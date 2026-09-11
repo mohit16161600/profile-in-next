@@ -10,7 +10,7 @@ const CANONICAL = "https://mohitkoli.in/blog/cheap-web-hosting-under-200-india";
 export const metadata: Metadata = {
     title: "Cheap Web Hosting India: Under ₹200/mo, From ₹69",
     description:
-        "Cheap web hosting under ₹200/month in India — 5 real picks, what ₹99, ₹149 and ₹199 actually buy, and the renewal trap. Price-checked Aug 2026.",
+        "₹99 hosting that renews at ₹399 is not cheap. 5 real picks under ₹200/mo in India, what each actually buys, and the two-year cost of each.",
     keywords: [
         "cheap web hosting india",
         "cheap web hosting under 200 india",

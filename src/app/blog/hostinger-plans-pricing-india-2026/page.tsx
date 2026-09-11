@@ -18,7 +18,7 @@ const CANONICAL = "https://mohitkoli.in/blog/hostinger-plans-pricing-india-2026"
 export const metadata: Metadata = {
     title: "Hostinger Hosting Plans India: 83% Off, From ₹69/mo",
     description:
-        "Hostinger plans & price list India 2026 — Premium ₹149, Unlimited ₹249, Cloud ₹599/mo, real renewal rates, and the monthly-billing trap before you pay.",
+        "₹149 becomes ₹449 the day your term ends. Every Hostinger India plan's real 4-year cost, which tier is a waste, and why monthly billing costs 4x more.",
     keywords: [
         "hostinger plans india",
         "hostinger india plans",
@@ -114,7 +114,7 @@ const jsonLd = [
         "@type": "BlogPosting",
         headline: "Hostinger Hosting Plans India: 83% Off, From ₹69/mo",
         description:
-            "Hostinger plans & price list India 2026 — Premium ₹149, Unlimited ₹249, Cloud ₹599/mo, real renewal rates, and the monthly-billing trap before you pay.",
+            "₹149 becomes ₹449 the day your term ends. Every Hostinger India plan's real 4-year cost, which tier is a waste, and why monthly billing costs 4x more.",
         image: "https://mohitkoli.in/assets/blog/hostinger-plans-pricing-india-2026.png",
         datePublished: "2026-06-24T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",

@@ -9,7 +9,7 @@ const CANONICAL = "https://mohitkoli.in/blog/hostinger-domain-price-india-2026";
 export const metadata: Metadata = {
     title: "Hostinger Domain Price India 2026: .in ₹99, .com ₹149",
     description:
-        "Hostinger domain price in India 2026: .in from ₹99, .com ₹149 first year. Real renewal price list, the free-domain trick, and what to check before you pay.",
+        "That ₹99 .in renews near ₹1,000. Hostinger's real domain renewal list, when the free domain is not actually free, and where to register instead.",
     keywords: [
         "hostinger .in domain price india 2026",
         "hostinger .com domain price india",
@@ -91,7 +91,7 @@ const jsonLd = [
         "@type": "BlogPosting",
         headline: "Hostinger Domain Price in India 2026: .in from ₹99, .com ₹149",
         description:
-            "Hostinger domain price in India 2026: .in from ₹99, .com ₹149 first year. Real renewal price list, the free-domain trick, and what to check before you pay.",
+            "That ₹99 .in renews near ₹1,000. Hostinger's real domain renewal list, when the free domain is not actually free, and where to register instead.",
         image: "https://mohitkoli.in/assets/blog/hostinger-domain-price-india-2026.png",
         datePublished: "2026-07-17T00:00:00.000Z",
         dateModified: "2026-08-20T00:00:00.000Z",

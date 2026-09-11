@@ -16,7 +16,7 @@ const PUBLISHED = "2026-08-24T00:00:00.000Z";
 export const metadata: Metadata = {
     title: "Hostinger Cloud Hosting India: 65% Off, From ₹599/mo",
     description:
-        "Every Hostinger Cloud plan priced for India — Startup ₹599, Professional ₹899, Enterprise ₹1,899/mo, the renewal jump, and how to stack an extra 20% off.",
+        "Cloud Startup is ₹599 now and ₹1,599 at renewal. What Cloud really gives you over Unlimited, and when a KVM VPS is the cheaper answer.",
     keywords: [
         "hostinger cloud hosting",
         "hostinger cloud hosting india",

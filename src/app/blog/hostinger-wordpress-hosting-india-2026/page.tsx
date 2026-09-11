@@ -14,7 +14,7 @@ const CANONICAL = "https://mohitkoli.in/blog/hostinger-wordpress-hosting-india-2
 
 const TITLE = "Hostinger WordPress Hosting India — 83% OFF, from ₹69/mo";
 const DESCRIPTION =
-    "Hostinger WordPress hosting India: ₹69–₹599/mo before 18% GST, measured TTFB and LCP, PHP-worker limits per plan, blog vs WooCommerce pick, free migration.";
+    "Premium handles a normal blog; WooCommerce it does not. Hostinger WordPress hosting India — PHP-worker limits per plan, real renewals, free migration.";
 
 export const metadata: Metadata = {
     title: TITLE,
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: TITLE,
-        description: "₹69–₹599/mo before GST, PHP-worker limits per plan, measured speed numbers, blog vs WooCommerce pick and free migration — before you pay.",
+        description: "Premium is enough for a blog. WooCommerce needs more — PHP-worker limits, real renewal rates and which Hostinger plan actually fits.",
         images: ["/assets/blog/hostinger-wordpress-hosting-india-2026.png"],
     },
 };

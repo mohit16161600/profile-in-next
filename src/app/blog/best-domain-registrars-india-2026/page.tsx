@@ -17,7 +17,7 @@ const NAMECHEAP = "https://namecheap.pxf.io/c/7673063/1632743/5618";
 export const metadata: Metadata = {
     title: TITLE,
     description:
-        "Renewal is the real price. .in from ₹99 and .com from ₹149 in year one, plus 18% GST. 8 registrars compared on five-year cost, .in e-KYC and UPI billing.",
+        "Year one is cheap everywhere. Only a few registrars keep the price flat at renewal — 8 compared on five-year cost, GST, UPI billing and .in e-KYC.",
     keywords: [
         "best domain registrar", "best domain registrar india", "cheapest domain registrar",
         "domain renewal price comparison", "namecheap vs godaddy vs porkbun", "porkbun review",

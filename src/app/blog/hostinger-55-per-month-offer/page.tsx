@@ -17,7 +17,7 @@ const TITLE = "Hostinger ₹55/mo: Cheapest Plan at 86% Off (2026)";
 export const metadata: Metadata = {
     title: TITLE,
     description:
-        "Hostinger's cheapest plan is ₹69/mo, or ₹55.20 with a code. The real upfront total with GST, the ₹289 renewal, and whether Single is enough for you.",
+        "₹55/mo is real, but it is one website and 10 GB — and it renews at ₹289. The full upfront total with GST, and whether Single is enough for you.",
     keywords: [
         "hostinger 55 rupees",
         "hostinger offer",
