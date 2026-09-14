@@ -92,7 +92,7 @@ export default function Hero() {
               </div>
 
               {/* Floating Badge 1 */}
-              <div className="hero-badge-right absolute top-8 -right-8 glass p-4 rounded-xl shadow-xl z-20 flex items-center gap-3 cursor-default">
+              <div className="hero-badge-right absolute top-0 -right-8 glass p-4 rounded-xl shadow-xl z-20 flex items-center gap-3 cursor-default">
                 <div className="bg-primary-500/20 p-2.5 rounded-lg text-primary-400">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                 </div>
@@ -103,7 +103,7 @@ export default function Hero() {
               </div>
 
               {/* Floating Badge 2 */}
-              <div className="hero-badge-left absolute bottom-8 -left-8 glass p-4 rounded-xl shadow-xl z-20 flex items-center gap-3 cursor-default">
+              <div className="hero-badge-left absolute bottom-0 -left-8 glass p-4 rounded-xl shadow-xl z-20 flex items-center gap-3 cursor-default">
                 <div className="bg-secondary-500/20 p-2.5 rounded-lg text-secondary-400">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
