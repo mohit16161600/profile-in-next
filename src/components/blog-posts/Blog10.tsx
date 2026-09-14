@@ -123,8 +123,8 @@ export default function Blog10() {
         </p>
 
         <h3 className="text-2xl font-semibold text-white mb-4">1. ChatGPT</h3>
-        <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> ChatGPT is an AI assistant for writing, planning, ideation, summarizing, scripting, coding, and research support.</p>
-        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How it works:</strong> You give prompts, files, or context, and it generates drafts, outlines, frameworks, offers, scripts, and strategic ideas.</p>
+        <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> ChatGPT is an AI assistant for writing, planning, ideation, summarizing, scripting, coding, and research support. Free users get GPT-5.6 Luna by default with unlimited text chats (GPT-5.6 was released on 9 July 2026), and GPT-6 Astra began rolling out to Plus, Pro, Business and Enterprise users on 3 September 2026. In India, the low-cost ChatGPT Go plan launched at ₹399/month.</p>
+        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How it works:</strong> You give prompts, files, or context, and it generates drafts, outlines, frameworks, offers, scripts, and strategic ideas. Image generation with ChatGPT Images (version 2.5 since 8 September 2026) is available on every plan, with lower limits on Free.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>How to earn money with it:</strong> Sell blog writing, SEO briefs, email sequences, product descriptions, lead magnets, outreach templates, customer support macros, and simple consulting packages.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>Real example:</strong> A freelancer can use ChatGPT to create 20 Instagram captions, 4 blog outlines, and a landing page draft for a small business client in one afternoon.</p>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-3">
@@ -134,8 +134,8 @@ export default function Blog10() {
         </ul>
 
         <h3 className="text-2xl font-semibold text-white mb-4">2. Canva AI</h3>
-        <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> Canva AI adds AI-powered design, copy, image editing, presentations, and content repurposing inside Canva.</p>
-        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How it works:</strong> Users generate layouts, edit visuals, remove backgrounds, create social content, and build print-ready assets quickly.</p>
+        <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> Canva&apos;s AI layer is now Canva AI 2.0, launched on 16 April 2026 as a research preview. It adds AI-powered design, copy, image editing, presentations, and content repurposing inside Canva.</p>
+        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How it works:</strong> Canva AI 2.0 creates and edits designs through conversation, keeps a persistent memory of your style and brand, and connects to tools such as Gmail, Slack and Zoom. Users generate layouts, edit visuals, remove backgrounds, create social content, and build print-ready assets quickly.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>How to earn money with it:</strong> Sell thumbnails, Pinterest pins, reels covers, ebook PDFs, carousels, resume templates, lead magnets, and social media kits.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>Real example:</strong> A beginner on Fiverr can package 30 branded social posts for coaches, restaurants, or local businesses using Canva templates plus AI-assisted copy.</p>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-3">
@@ -151,36 +151,36 @@ export default function Blog10() {
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>Real example:</strong> A solo marketer can use Jasper to produce weekly SEO blogs for SaaS clients and charge on a monthly retainer.</p>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-3">
           <li><strong>Pros:</strong> Strong for marketers, tone control, workflow templates.</li>
-          <li><strong>Cons:</strong> Costs more than basic tools and still needs human optimization.</li>
+          <li><strong>Cons:</strong> No free plan: Pro costs $69 per seat per month, or $59 per seat per month billed annually, with a 7-day free trial, and Business is custom-priced. Output still needs human optimization.</li>
           <li><strong>Best for:</strong> Copywriters, agencies, B2B marketers, SEO freelancers.</li>
         </ul>
 
         <h3 className="text-2xl font-semibold text-white mb-4">4. Copy.ai</h3>
-        <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> Copy.ai is built for fast sales and marketing copy generation.</p>
+        <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> Copy.ai now positions itself as a GTM (go-to-market) AI platform for sales and marketing teams. The entry Chat plan costs $29 a month ($24 a month billed annually) for up to 5 seats with unlimited chat words, and workflow features start with the Growth plan at $1,000 a month billed annually.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>How it works:</strong> You choose a use case, add product or offer details, and it returns variations for emails, ads, descriptions, and outreach.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>How to earn money with it:</strong> Sell email campaigns, ecommerce product copy, Facebook ad sets, cold outreach sequences, and lead-gen assets.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>Real example:</strong> An ecommerce freelancer can generate product descriptions for 100 SKUs and charge per catalog or per product batch.</p>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-3">
           <li><strong>Pros:</strong> Fast, practical, excellent for sales-focused assets.</li>
-          <li><strong>Cons:</strong> Less suited for deep thought leadership content.</li>
-          <li><strong>Best for:</strong> Ecommerce sellers, ad specialists, sales teams, email freelancers.</li>
+          <li><strong>Cons:</strong> No free plan is listed, and workflow features are priced for teams. Less suited for deep thought leadership content.</li>
+          <li><strong>Best for:</strong> Sales and marketing teams rather than solo beginners.</li>
         </ul>
 
         <h3 className="text-2xl font-semibold text-white mb-4">5. Pictory AI</h3>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> Pictory turns scripts, blogs, or long-form videos into short edited video content.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>How it works:</strong> It matches script sections with stock visuals, subtitles, scenes, and voiceover-ready timelines.</p>
-        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How to earn money with it:</strong> Offer faceless YouTube videos, repurposed shorts, course promos, and social snippets for creators and brands.</p>
+        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How to earn money with it:</strong> Offer faceless YouTube videos, repurposed shorts, course promos, and social snippets for creators and brands. Note that since 15 July 2025 YouTube treats mass-produced &quot;inauthentic content&quot;, including AI-generated videos made with generic templates that add no original insight, as ineligible for the YouTube Partner Program, so add genuine commentary and editing.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>Real example:</strong> A content repurposing freelancer can turn one podcast episode into 10 shorts and a highlight summary video for a business coach.</p>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-3">
           <li><strong>Pros:</strong> Saves editing time, useful for faceless channels, easy subtitling.</li>
-          <li><strong>Cons:</strong> Stock-style visuals can feel repetitive without manual polish.</li>
+          <li><strong>Cons:</strong> Stock-style visuals can feel repetitive without manual polish. Pricing is $29 a month for Starter ($25 billed annually), $59 for Professional ($35 annually) and $199 for Team ($119 annually), with a free trial on each of those plans and custom Enterprise pricing.</li>
           <li><strong>Best for:</strong> YouTube automation beginners, video editors, repurposing agencies.</li>
         </ul>
 
         <h3 className="text-2xl font-semibold text-white mb-4">6. Midjourney</h3>
-        <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> Midjourney is a high-quality AI image generation tool widely used for concept art, branding ideas, and commercial-style visuals.</p>
+        <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> Midjourney is a high-quality AI image generation tool widely used for concept art, branding ideas, and commercial-style visuals. It is now on V8.2 (released 24 July 2026), part of the V8 line that renders native 2K images in HD mode and handles quoted text better, and it gained a V8 edit model on 27 August 2026. It has also offered image-to-video through its Animate button since 18 June 2025, at roughly eight times the cost of an image.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>How it works:</strong> Users create prompts that guide style, composition, lighting, and artistic direction.</p>
-        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How to earn money with it:</strong> Sell book covers, ad creatives, poster concepts, thumbnail packs, print-on-demand art direction, and mood boards for brands.</p>
+        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How to earn money with it:</strong> Sell book covers, ad creatives, poster concepts, thumbnail packs, print-on-demand art direction, mood boards for brands, and short animated clips made with the Animate button.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>Real example:</strong> A creator can sell niche wall art bundles on Etsy after refining prompts and turning outputs into printable sets.</p>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-3">
           <li><strong>Pros:</strong> Strong image quality, premium-looking outputs, versatile style control.</li>
@@ -189,14 +189,14 @@ export default function Blog10() {
         </ul>
 
         <h3 className="text-2xl font-semibold text-white mb-4">7. Writesonic</h3>
-        <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> Writesonic is an AI writing and SEO content tool focused on blogs, landing pages, and marketing copy.</p>
+        <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> Writesonic now presents itself as an AI search visibility platform that tracks how brands appear across 10 AI platforms, including ChatGPT, Perplexity and Google AI, with an AI article writer included.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>How it works:</strong> It combines prompts, templates, and optimization features to produce web-ready content faster.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>How to earn money with it:</strong> Create SEO blog packages, affiliate articles, service pages, FAQ sections, and local SEO content for clients.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>Real example:</strong> A local SEO freelancer can create service page clusters for plumbers, dentists, or agencies and charge per page.</p>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-3">
           <li><strong>Pros:</strong> Good for marketing workflows, useful output speed, SEO-friendly use cases.</li>
-          <li><strong>Cons:</strong> Requires topic expertise to avoid bland content.</li>
-          <li><strong>Best for:</strong> SEO writers, affiliate site owners, local SEO freelancers.</li>
+          <li><strong>Cons:</strong> No free plan; plans start at $79 a month billed annually (Basic $199, Growth $399), with a free trial that needs no credit card. Still requires topic expertise to avoid bland content.</li>
+          <li><strong>Best for:</strong> Agencies and affiliate site owners tracking AI-search visibility.</li>
         </ul>
 
         <h3 className="text-2xl font-semibold text-white mb-4">8. Notion AI</h3>
@@ -206,18 +206,18 @@ export default function Blog10() {
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>Real example:</strong> A creator can package a freelancer OS, content calendar, and lead tracker as a premium template bundle on Gumroad.</p>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-3">
           <li><strong>Pros:</strong> Great for productizing knowledge, recurring template income, client ops.</li>
-          <li><strong>Cons:</strong> Needs good organization skills to stand out.</li>
+          <li><strong>Cons:</strong> Full Notion AI (Notion Agent, AI Meeting Notes and Enterprise Search) is included only in the Business plan ($20 per member per month, or $16 billed annually) and Enterprise; Free and Plus users get only a limited AI trial, and there is no separate Notion AI add-on. Selling Notion templates does not require Notion AI, because templates work on the Free and Plus plans. Needs good organization skills to stand out.</li>
           <li><strong>Best for:</strong> Coaches, consultants, template sellers, productivity creators.</li>
         </ul>
 
         <h3 className="text-2xl font-semibold text-white mb-4">9. Runway</h3>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>What it is:</strong> Runway is an AI video generation and editing platform used for motion graphics, short-form video, and creative production.</p>
-        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How it works:</strong> It offers text-to-video, editing, masking, and visual generation workflows for creators and teams.</p>
-        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How to earn money with it:</strong> Sell UGC-style ads, promo clips, visual explainers, music snippets, product launches, and faceless social content.</p>
+        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How it works:</strong> Runway is a credit-based, multi-model platform offering its own Gen-4.5 and Aleph 2.0 models alongside third-party models such as Seedance 2.5 and Nano Banana Pro, for text-to-video, editing, and visual generation workflows.</p>
+        <p className="text-gray-300 mb-3 leading-relaxed"><strong>How to earn money with it:</strong> Sell UGC-style ads, promo clips, visual explainers, music snippets, product launches, and faceless social content. OpenAI shut down the Sora app on 26 April 2026 and the Sora API ends on 24 September 2026, so tools like Runway are the practical choice for AI video services now.</p>
         <p className="text-gray-300 mb-3 leading-relaxed"><strong>Real example:</strong> A freelancer can create 15-second AI-enhanced product promos for Shopify brands that need fresh creatives every week.</p>
         <ul className="list-disc list-inside text-gray-300 space-y-2 mb-3">
           <li><strong>Pros:</strong> High visual upside, strong creative possibilities, rising demand.</li>
-          <li><strong>Cons:</strong> Can be expensive and needs editing taste to look professional.</li>
+          <li><strong>Cons:</strong> Free plan is only 125 one-time credits; paid plans are Standard $12/month ($15 billed monthly), Pro $28 ($35) and Max $76 ($95), with no unlimited tier. Needs editing taste to look professional.</li>
           <li><strong>Best for:</strong> Video creators, ad editors, motion designers, content studios.</li>
         </ul>
 
@@ -237,6 +237,17 @@ export default function Blog10() {
             <strong>Smart stack idea:</strong> Use Perplexity for research, ChatGPT or Jasper for drafting, Canva AI or Midjourney for visuals, and Pictory or Runway for distribution-ready video content. That combination is one of the most practical ways to <strong>make money using AI tools</strong> in 2026.
           </p>
         </div>
+
+        <h3 className="text-2xl font-semibold text-white mt-8 mb-4">What changed in 2026 (quick update)</h3>
+        <ul className="list-disc list-inside text-gray-300 space-y-2 mb-3">
+          <li><strong>ChatGPT:</strong> OpenAI released GPT-5.6 on 9 July 2026, made GPT-5.6 Luna the default for free users with unlimited text chats on 6 August 2026, and began rolling out GPT-6 Astra to Plus, Pro, Business and Enterprise users on 3 September 2026.</li>
+          <li><strong>ChatGPT Images:</strong> Images 2.0 (21 April 2026) and Images 2.5 (8 September 2026) are available on every ChatGPT plan.</li>
+          <li><strong>Midjourney:</strong> Now on V8.2 (24 July 2026), with native 2K via HD mode since V8 and image-to-video since June 2025.</li>
+          <li><strong>Canva:</strong> Canva AI 2.0 launched as a research preview on 16 April 2026.</li>
+          <li><strong>Runway:</strong> Runs Gen-4.5 plus third-party models on credit plans from $12/month billed annually.</li>
+          <li><strong>Sora:</strong> OpenAI closed the Sora app on 26 April 2026, with the API ending 24 September 2026.</li>
+          <li><strong>Team-priced tools:</strong> Copy.ai&apos;s Chat plan costs $29/month, Writesonic&apos;s cheapest plan (Starter) is $79/month with no free plan, and Notion&apos;s full AI features require the Business plan at $20 per member per month, so beginners are better served starting with ChatGPT and Canva.</li>
+        </ul>
       </section>
 
       <section id="start-earning" className="mb-12">
@@ -249,7 +260,7 @@ export default function Blog10() {
         <ol className="list-decimal list-inside text-gray-300 space-y-3 mb-4">
           <li><strong>Pick one income path.</strong> Choose freelancing, affiliate marketing, blogging, YouTube automation, or digital product selling.</li>
           <li><strong>Select one problem to solve.</strong> For example: social media content for local businesses, SEO articles for coaches, or faceless shorts for creators.</li>
-          <li><strong>Build a simple tool stack.</strong> Start with two or three tools, not ten. Example: ChatGPT + Canva AI + Notion AI.</li>
+          <li><strong>Build a simple tool stack.</strong> Start with two or three tools, not ten. Example: ChatGPT + Canva AI + Notion (the free plan is enough for templates).</li>
           <li><strong>Create 3 sample assets.</strong> Make a portfolio using mock client examples, your own brand, or demo offers.</li>
           <li><strong>Package the offer clearly.</strong> Example: 12 SEO blog posts per month, 30 social media posts, or 8 YouTube shorts.</li>
           <li><strong>Start outreach.</strong> Use LinkedIn, Instagram DMs, email, Upwork, Fiverr, Facebook groups, or local business directories.</li>
@@ -271,7 +282,7 @@ export default function Blog10() {
         <ul className="list-disc list-inside text-gray-300 space-y-3 mb-4">
           <li><strong>Freelance content writing:</strong> Use ChatGPT, Jasper, and Writesonic for outlines, drafts, SEO FAQs, and editing support.</li>
           <li><strong>Affiliate marketing blogs:</strong> Build comparison articles, tutorials, and keyword-focused content with AI-assisted research and writing.</li>
-          <li><strong>YouTube automation:</strong> Create scripts with ChatGPT, edit with Pictory or Runway, and design thumbnails in Canva or Midjourney.</li>
+          <li><strong>YouTube automation:</strong> Create scripts with ChatGPT, edit with Pictory or Runway, and design thumbnails in Canva or Midjourney. Since 15 July 2025, YouTube treats mass-produced, template-driven AI videos with no original insight as ineligible for the Partner Program, so every video needs genuine commentary, editing and your own point of view to earn.</li>
           <li><strong>Digital product selling:</strong> Sell Notion templates, prompt libraries, ebook bundles, worksheets, social kits, and printable planners.</li>
           <li><strong>Thumbnail and ad creative services:</strong> Use Canva AI and Midjourney to produce high-CTR graphics for creators and brands.</li>
           <li><strong>Local business marketing:</strong> Offer social posts, landing page copy, Google Business content, and promo videos to nearby businesses.</li>
@@ -349,6 +360,7 @@ export default function Blog10() {
           <li><strong>Using too many tools:</strong> Tool overload kills momentum. Start lean.</li>
           <li><strong>Skipping human judgment:</strong> Editing, taste, structure, and strategic thinking still matter.</li>
           <li><strong>Forgetting legal basics:</strong> Check image licensing, commercial rights, and brand usage rules.</li>
+          <li><strong>Ignoring platform monetisation rules:</strong> Under YouTube&apos;s inauthentic content policy, clarified on 15 July 2025, mass-produced or repetitive videos, including AI-generated ones made from generic templates without the creator&apos;s own insight, are not eligible for monetisation. Videos that use AI or templates to deliver an original, well-researched or creative narrative remain eligible, so add your own voice, edits and research to every AI-assisted video.</li>
           <li><strong>Chasing virality instead of offers:</strong> A small paying client is more valuable than random views.</li>
           <li><strong>Not building trust assets:</strong> A portfolio, testimonials, process page, and sample work increase conversions.</li>
         </ul>
@@ -359,30 +371,27 @@ export default function Blog10() {
 
       <section id="internal-links" className="mb-12">
         <h2 className="text-3xl font-bold text-white mb-6">
-          Internal Linking Suggestions
+          Related guides
         </h2>
         <p className="text-gray-300 mb-4 leading-relaxed">
-          To strengthen on-page SEO and keep readers moving through your site, connect this article with related guides:
+          If you want to go deeper, these guides pair well with this one:
         </p>
         <ul className="list-disc list-inside text-gray-300 space-y-3">
           <li>
-            Link to{" "}
             <Link href="/blog/best-ai-productivity-tools-2025" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
-              Best AI Tools for Students, Developers, and Digital Marketers in 2025
+              Best AI Tools for Students, Developers and Marketers (2026 Update)
             </Link>{" "}
             for readers comparing broader productivity stacks.
           </li>
           <li>
-            Link to{" "}
             <Link href="/blog/build-website-with-ai-step-by-step" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
               How to Use AI to Build a Full Website in 30 Minutes
             </Link>{" "}
             for users who want to turn AI skills into web service income.
           </li>
           <li>
-            Link to{" "}
             <Link href="/blog/will-ai-replace-your-job-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
-              Will AI Replace Web Developers in 2026?
+              Will AI Replace Your Job? The Real Truth (2026)
             </Link>{" "}
             for career-focused readers who want long-term context.
           </li>
@@ -416,7 +425,7 @@ export default function Blog10() {
 
         <h3 className="text-2xl font-semibold text-white mb-3">How many AI tools do I really need?</h3>
         <p className="text-gray-300 mb-4 leading-relaxed">
-          Two or three is enough to start. A lean setup keeps costs low and forces you to focus on one offer instead of chasing endless features.
+          Two or three is enough to start. A lean setup keeps costs low and forces you to focus on one offer instead of chasing endless features. The free starter stack is ChatGPT Free (GPT-5.6 Luna plus limited free image creation) and Canva. Paid tools are worth adding only after the first client pays: Jasper Pro ($59/seat/month billed yearly or $69 monthly), Writesonic (from $79/month billed annually), Copy.ai (from $29/month, with no free plan listed), and Notion&apos;s Business plan ($20 per member per month, which includes Notion AI).
         </p>
 
         <h3 className="text-2xl font-semibold text-white mb-3">Are AI-generated visuals and videos safe for commercial use?</h3>

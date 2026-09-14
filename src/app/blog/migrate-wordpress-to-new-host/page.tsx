@@ -7,6 +7,7 @@ const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/migrate-wordpress-to-new-host";
 const IMAGE = "https://mohitkoli.in/assets/blog/migrate-wordpress-to-new-host.png";
 const PUBLISHED = "2026-08-24T00:00:00.000Z";
+const MODIFIED = "2026-09-13T00:00:00.000Z";
 
 export const metadata: Metadata = {
     title: "How to Migrate WordPress to a New Host Without Downtime",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
         url: CANONICAL,
         type: "article",
         publishedTime: PUBLISHED,
-        modifiedTime: PUBLISHED,
+        modifiedTime: MODIFIED,
         images: [{ url: IMAGE, width: 1200, height: 630, alt: "Migrating a WordPress site to a new host, step by step" }],
     },
     twitter: {
@@ -52,7 +53,7 @@ const METHODS = [
         who: "Almost everyone",
         effort: "Lowest",
         risk: "Lowest",
-        time: "2–48 hours",
+        time: "Under 2 hours (typical WordPress)",
         cost: "Free with most hosts",
         note: "You submit a request; the new host's team moves the site for you.",
         best: true,
@@ -64,7 +65,7 @@ const METHODS = [
         risk: "Medium",
         time: "30–90 min",
         cost: "Free tier available",
-        note: "All-in-One WP Migration, Duplicator or Migrate Guru. Watch the free upload limits.",
+        note: "All-in-One WP Migration and Backup, Duplicator or Migrate Guru. Watch your host's upload limits.",
         best: false,
     },
     {
@@ -86,7 +87,7 @@ const FAQ = [
     },
     {
         q: "How long does a WordPress migration take?",
-        a: "A managed migration handled by your new host typically takes between 2 and 48 hours depending on site size. A plugin migration on a small site takes 30 to 90 minutes of your own time. DNS propagation then adds up to 24-48 hours, though in practice most users see the new server within a few hours.",
+        a: "Hostinger says a simple automatic WordPress migration is typically done in less than two hours, while cPanel-based sites built with other CMSs usually take more than 20 hours. A plugin migration on a small site takes 30 to 90 minutes of your own time. DNS propagation then adds up to 24-48 hours, though in practice most users see the new server within a few hours.",
     },
     {
         q: "Is WordPress migration really free?",
@@ -102,7 +103,7 @@ const FAQ = [
     },
     {
         q: "What is the maximum file size for All-in-One WP Migration?",
-        a: "The free version caps uploads at 256MB. Sites larger than that either need the paid extension, a different plugin such as Duplicator, or a host-managed migration. This limit is the single most common reason a DIY plugin migration stalls halfway.",
+        a: "The free All-in-One WP Migration and Backup plugin does not set an import size limit of its own — the ceiling is your host's PHP upload settings. Sites too large for those settings either need the Unlimited Extension ($69 a year for up to 50 sites), which transfers data in small chunks to get past those server limits, a different plugin such as Migrate Guru, or a host-managed migration. Hitting that host limit is the single most common reason a DIY plugin migration stalls halfway.",
     },
     {
         q: "Should I migrate during business hours?",
@@ -123,7 +124,7 @@ const jsonLd = [
             "Three ways to move a WordPress site to new hosting — free host migration, a plugin, or a manual transfer — plus the DNS sequence that avoids downtime.",
         image: IMAGE,
         datePublished: PUBLISHED,
-        dateModified: PUBLISHED,
+        dateModified: MODIFIED,
         author: {
             "@type": "Person",
             name: "Mohit Koli",
@@ -214,6 +215,8 @@ export default function MigrateWordPressToNewHost() {
                             <span>•</span>
                             <span>August 24, 2026</span>
                             <span>•</span>
+                            <span>Updated September 13, 2026</span>
+                            <span>•</span>
                             <span>11 min read</span>
                         </div>
                     </header>
@@ -231,7 +234,7 @@ export default function MigrateWordPressToNewHost() {
                     <p className="mb-10 text-sm text-gray-500 border-l-2 border-primary-500/40 pl-4">
                         This article contains affiliate links. If you buy hosting through one of them I may earn a
                         commission at no extra cost to you — and in most cases you get a discount that is not on the
-                        public price. Pricing was checked against Hostinger India in August 2026; always confirm the
+                        public price. Pricing was checked against Hostinger India in September 2026; always confirm the
                         current figure at checkout.
                     </p>
 
@@ -240,7 +243,7 @@ export default function MigrateWordPressToNewHost() {
                     <div className="mb-10 rounded-2xl border border-emerald-500/25 bg-emerald-500/[0.06] p-5 sm:flex sm:items-center sm:justify-between sm:gap-6">
                         <div className="mb-4 sm:mb-0">
                             <p className="font-semibold text-white leading-6">Moving hosts? Hostinger does the migration for you, free</p>
-                            <p className="mt-1 text-sm text-gray-400 leading-6">Plans from ₹119.20/mo · free domain for a year · 30 days to change your mind</p>
+                            <p className="mt-1 text-sm text-gray-400 leading-6">Premium from ₹149/mo · free domain for a year · 30 days to change your mind</p>
                         </div>
                         <a
                             href={REFERRAL_URL}
@@ -320,7 +323,14 @@ export default function MigrateWordPressToNewHost() {
                             </li>
                             <li>
                                 <strong className="text-white">Note your current PHP and WordPress versions.</strong> A site
-                                running PHP 7.4 that lands on a PHP 8.3 server can throw fatal errors from old plugins.
+                                still running PHP 8.0 or 8.1 can throw fatal errors from old plugins on a newer server — and
+                                as of September 2026 Hostinger&apos;s hPanel offers only PHP 8.2 to 8.5 (8.3 by default for new
+                                sites), so test the old site on PHP 8.2 or newer before moving. WordPress 7.0
+                                &ldquo;Armstrong&rdquo; (20 May 2026) dropped PHP 7.2 and 7.3: the minimum is now 7.4, the
+                                recommended version is 8.3, and PHP 8.4 and 8.5 are fully supported. The current release is
+                                WordPress 7.1 &ldquo;Mary Lou&rdquo; (19 August 2026), with 7.1.1 scheduled for 17 September
+                                2026. If an old site is stuck on WordPress 6.x because its server runs PHP below 7.4, fix the
+                                PHP version before migrating rather than after.
                             </li>
                             <li>
                                 <strong className="text-white">Lower your DNS TTL to 300 seconds, a day early.</strong> This
@@ -346,11 +356,20 @@ export default function MigrateWordPressToNewHost() {
                             team copies the site across. You do not touch files, databases, or FTP at any point.
                         </p>
                         <p className="text-gray-300 leading-8 mb-5">
-                            On Hostinger this lives in hPanel under <span className="font-mono text-sm">Account → Migrate Website</span>.
-                            You submit the request and their team handles it end to end; the documentation says to allow
-                            between 2 and 48 hours depending on how large the site is. Two things to sort out first: turn
+                            On Hostinger this lives in hPanel under <span className="font-mono text-sm">Websites → Migrate Website</span>,
+                            and you track progress under <span className="font-mono text-sm">Websites → Migrations</span>.
+                            You submit one request per website (up to five active at a time) and their team handles it;
+                            Hostinger says a simple WordPress migration is typically done in less than two hours, while
+                            cPanel-based sites on other CMSs usually take more than 20 hours. Two things to sort out first: turn
                             off two-factor authentication and any anti-bot protection on the old host, and make sure there
                             is enough free disk space on the source server for the export to be built.
+                        </p>
+                        <p className="text-gray-300 leading-8 mb-5">
+                            You can hand over WordPress admin login details, cPanel login details, or your own backup
+                            archive (.zip, .tar, .tar.gz, .tgz, .7z or .gz) plus a .sql database file. The service is
+                            free on Web, Cloud and Agency plans but not on VPS, and as of September 2026 it does not
+                            support WordPress multisite (use Method 3) or WordPress.com-hosted sites, and it does not move
+                            email — mailboxes have to be recreated separately.
                         </p>
 
                         <div className="rounded-2xl border border-primary-500/30 bg-gradient-to-br from-purple-900/25 to-indigo-900/15 p-7 mb-5">
@@ -358,8 +377,11 @@ export default function MigrateWordPressToNewHost() {
                             <p className="text-gray-300 leading-8 mb-5">
                                 Free managed migration, an India (Mumbai) data-centre option, a free domain for the first
                                 year and a 30-day money-back window make Hostinger the low-risk default for a standard
-                                WordPress site. Shared plans start at <strong className="text-white">₹149/mo</strong> on the
-                                48-month term; if you are moving a store or a busy site, the{" "}
+                                WordPress site. The refund covers the hosting plan; a free .com, .net or .org domain is only
+                                refundable within 96 hours of registration, and its standard price may be deducted from a
+                                hosting refund. Single (₹69/mo) is the cheapest tier but hosts one website with no free
+                                domain, so Premium at <strong className="text-white">₹149/mo</strong> (3 websites, 20 GB,
+                                free domain for the first year) on the 48-month term is the realistic starting point; if you are moving a store or a busy site, the{" "}
                                 <Link href="/blog/hostinger-cloud-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
                                     Cloud tier from ₹599/mo
                                 </Link>{" "}
@@ -374,7 +396,7 @@ export default function MigrateWordPressToNewHost() {
                                 Check Hostinger Plans →
                             </a>
                             <p className="mt-3 text-xs text-gray-500">
-                                Referral link — applies an extra discount at checkout. Confirm the total before you pay.
+                                Affiliate link. Confirm the total at checkout before you pay.
                             </p>
                         </div>
 
@@ -409,19 +431,19 @@ export default function MigrateWordPressToNewHost() {
                                 </thead>
                                 <tbody className="text-gray-300">
                                     <tr className="border-t border-white/5">
-                                        <td className="p-4 font-semibold text-white">All-in-One WP Migration</td>
-                                        <td className="p-4">256MB upload cap</td>
+                                        <td className="p-4 font-semibold text-white">All-in-One WP Migration and Backup</td>
+                                        <td className="p-4">No cap of its own; limited by your host&apos;s PHP upload settings</td>
                                         <td className="p-4">Small blogs and brochure sites. Easiest interface of the three.</td>
                                     </tr>
                                     <tr className="border-t border-white/5">
                                         <td className="p-4 font-semibold text-white">Duplicator</td>
-                                        <td className="p-4">No hard cap on the free tier</td>
-                                        <td className="p-4">Medium sites, and anyone who hit the 256MB wall above.</td>
+                                        <td className="p-4">500MB for DupArchive-format archives; no fixed cap with ZipArchive; multisite needs Pro</td>
+                                        <td className="p-4">Medium sites, and anyone who hit the host upload limit above.</td>
                                     </tr>
                                     <tr className="border-t border-white/5">
                                         <td className="p-4 font-semibold text-white">Migrate Guru</td>
-                                        <td className="p-4">Free, runs on their servers</td>
-                                        <td className="p-4">Large sites — the transfer does not run through your browser.</td>
+                                        <td className="p-4">Free (as of September 2026: v6.72, tested up to WordPress 7.1, 200,000+ installs); sites up to 200GB</td>
+                                        <td className="p-4">Large sites — the transfer runs on its own servers, not through your browser.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -435,8 +457,8 @@ export default function MigrateWordPressToNewHost() {
                             <li>Go to Settings → Permalinks and click Save twice to regenerate rewrite rules.</li>
                         </ol>
                         <p className="text-gray-300 leading-8 mt-5">
-                            If the export stalls or the import times out, it is almost always the 256MB cap or a PHP
-                            execution-time limit. Switch to Duplicator or Migrate Guru rather than fighting it.
+                            If the export stalls or the import times out, it is almost always your host&apos;s PHP upload
+                            limit or an execution-time limit. Switch to Duplicator or Migrate Guru rather than fighting it.
                         </p>
                     </section>
 
@@ -468,7 +490,7 @@ export default function MigrateWordPressToNewHost() {
                             affected.
                         </p>
                         <ol className="space-y-3 text-gray-300 leading-8 list-decimal list-inside mb-5">
-                            <li><strong className="text-white">Test the copy first.</strong> Preview it on the new host&apos;s temporary URL, or add an entry to your computer&apos;s hosts file pointing your real domain at the new server IP. You will see the new site while everyone else still sees the old one.</li>
+                            <li><strong className="text-white">Test the copy first.</strong> Preview it on the new host&apos;s temporary URL, or add an entry to your computer&apos;s hosts file pointing your real domain at the new server IP. You will see the new site while everyone else still sees the old one. On Hostinger, a temporary domain ends in .hostingersite.com and opens from hPanel via Websites → Dashboard → Preview; for the hosts-file route, take the IP from Websites → Dashboard → Plan Details → Website Details, add it against both domain.tld and www.domain.tld, and revert those lines once you are done.</li>
                             <li><strong className="text-white">Click through the pages that matter.</strong> Homepage, a post, a category, the contact form, and checkout if you have one.</li>
                             <li><strong className="text-white">Then change nameservers</strong> at your registrar to the new host&apos;s.</li>
                             <li><strong className="text-white">Leave both servers running</strong> during propagation. Some visitors hit the old host and some the new one for a few hours — which is fine, and exactly why you do not cancel the old plan.</li>
@@ -549,7 +571,7 @@ export default function MigrateWordPressToNewHost() {
                         <h2 className="text-3xl font-bold text-white mb-4">Five problems and their fixes</h2>
                         <div className="grid gap-4 sm:grid-cols-2">
                             {[
-                                ["White screen after import", "Almost always a PHP version mismatch or a plugin conflict. Switch the new server's PHP to match the old one, then upgrade gradually."],
+                                ["White screen after import", "Almost always a PHP version mismatch or a plugin conflict. Hostinger no longer lets you select PHP 8.1 or lower, so update or replace the failing plugin rather than trying to downgrade PHP."],
                                 ["Cannot log in on the new site", "The import replaced the user table. Use your old site's username and password, not the ones from the clean install."],
                                 ["Images show but links 404", "Permalink rewrite rules did not carry over. Settings → Permalinks → Save, twice."],
                                 ["Mixed-content warnings", "Some URLs are still http. Run a search-replace for the http version of your domain, then reissue SSL."],
@@ -597,7 +619,7 @@ export default function MigrateWordPressToNewHost() {
                             <h3 className="text-2xl font-bold text-white mb-3">Ready to move?</h3>
                             <p className="text-gray-300 leading-8 mb-6">
                                 Free managed migration, a Mumbai data-centre option, free SSL, a free domain for year one
-                                and 30 days to change your mind. Shared plans from ₹149/mo, Cloud from ₹599/mo.
+                                and 30 days to change your mind. Premium from ₹149/mo, Cloud from ₹599/mo.
                             </p>
                             <a
                                 href={REFERRAL_URL}

@@ -43,12 +43,12 @@ export default function HowToUseChatGPTBeginners2026() {
     {
       question: "Is ChatGPT free to use in 2026?",
       answer:
-        "Yes, ChatGPT has a free plan that covers everyday chatting and limited image and voice use. Paid plans like Go and Plus add higher limits and newer models.",
+        "Yes. As of September 2026 the free plan gives unlimited everyday text chats on GPT-5.6 Luna, plus limited image creation, uploads and voice, and ads may appear in some countries. Go raises those tool limits; Plus and Pro add the stronger GPT-5.6 Sol and GPT-6 Astra models.",
     },
     {
       question: "What is the cheapest paid ChatGPT plan?",
       answer:
-        "In 2026 OpenAI offers ChatGPT Go, its cheapest paid tier, priced at ₹399/month in India — and from November 2025 OpenAI began offering Indian users 12 months of Go free, after which it auto-renews at ₹399/month unless cancelled. Check the official pricing page before you subscribe, as promotions change.",
+        "ChatGPT Go is OpenAI's cheapest paid tier ($8/month in the US, with localized pricing in some countries). It launched in India in August 2025 at ₹399/month including GST. OpenAI's 12-month free Go offer for India ran from November 2025 until 21 January 2026 and is no longer open, so check chatgpt.com/pricing while logged in for the current rupee price. Subscriptions renew monthly at the standard rate unless you cancel.",
     },
     {
       question: "Do I need to install an app?",
@@ -73,12 +73,12 @@ export default function HowToUseChatGPTBeginners2026() {
     {
       question: "Is my data private on ChatGPT?",
       answer:
-        "Your chats may be used to improve models unless you opt out in settings. Avoid sharing passwords or sensitive personal data.",
+        "Your chats may be used to improve models unless you opt out: go to Settings > Data Controls on the web (or your profile > Data Controls on mobile) and turn off 'Improve the model for everyone'; the setting applies across all your devices. Temporary Chats are not used for training and are deleted after 30 days. Avoid sharing passwords or sensitive personal data.",
     },
     {
       question: "Can ChatGPT browse the internet?",
       answer:
-        "Yes, in 2026 ChatGPT can search the web for current information, though availability depends on your plan and settings.",
+        "Yes. Web search is available on every ChatGPT plan, including Free, so it can pull up-to-date information into its answers.",
     },
   ];
 
@@ -90,7 +90,7 @@ export default function HowToUseChatGPTBeginners2026() {
       "New to ChatGPT? This 2026 beginner guide shows how to sign up, write prompts, use voice, memory and free vs paid plans step by step. Start using ChatGPT today.",
     image: "https://mohitkoli.in/assets/blog/how-to-use-chatgpt-beginners-2026.png",
     datePublished: "2026-06-14",
-    dateModified: "2026-06-14",
+    dateModified: "2026-09-13",
     author: {
       "@type": "Person",
       name: "Mohit Koli",
@@ -159,7 +159,7 @@ export default function HowToUseChatGPTBeginners2026() {
   };
 
   const keyTakeaways = [
-    "ChatGPT has a capable free plan; paid Go and Plus tiers add higher limits and newer models.",
+    "ChatGPT's free plan includes unlimited text chats on GPT-5.6 Luna; Go adds higher tool limits and longer memory, while Plus and Pro unlock the stronger GPT-5.6 Sol and GPT-6 Astra models.",
     "Good prompts state a goal, give context, set a format, and include an example.",
     "Voice, image, and file uploads make ChatGPT useful beyond plain text.",
     "Memory and Projects personalize answers but can be turned off for privacy.",
@@ -208,7 +208,7 @@ export default function HowToUseChatGPTBeginners2026() {
           <div className="flex items-center justify-center gap-4 text-gray-400 text-sm mb-8 flex-wrap">
             <span>By Mohit Koli</span>
             <span>•</span>
-            <span>June 14, 2026</span>
+            <span>Updated September 13, 2026</span>
             <span>•</span>
             <span>16 min read</span>
           </div>
@@ -253,7 +253,7 @@ export default function HowToUseChatGPTBeginners2026() {
               </li>
               <li>
                 <a href="#free-vs-paid" className="hover:text-emerald-400 transition">
-                  → Free vs Go vs Plus: Which to Pick
+                  → Free vs Go vs Plus vs Pro: Which to Pick
                 </a>
               </li>
               <li>
@@ -324,6 +324,19 @@ export default function HowToUseChatGPTBeginners2026() {
               refining.
             </p>
           </div>
+          <h3 className="text-2xl font-bold mt-10 mb-4">
+            Which model am I actually talking to?
+          </h3>
+          <p className="text-gray-300 mb-6">
+            You may notice model names in ChatGPT. Free and Go use{" "}
+            <strong>GPT-5.6 Luna</strong>, which became their default the week of 6
+            August 2026, with a <strong>Think</strong> option for harder questions
+            (in the + menu on mobile, and on the web since 14 August 2026). Plus and
+            Pro use <strong>GPT-5.6 Sol</strong>, with a slider for how much thought
+            it puts into an answer. <strong>GPT-6 Astra</strong> was introduced on 3
+            September 2026 and is rolling out to Plus, Pro, Business and Enterprise
+            users. The good news: you do not need to pick a model on day one.
+          </p>
 
           {/* Create account */}
           <h2 id="create-account" className="text-3xl font-bold mt-12 mb-6">
@@ -391,12 +404,13 @@ export default function HowToUseChatGPTBeginners2026() {
 
           {/* Free vs paid */}
           <h2 id="free-vs-paid" className="text-3xl font-bold mt-12 mb-6">
-            Free vs Go vs Plus: Which to Pick
+            Free vs Go vs Plus vs Pro: Which to Pick
           </h2>
           <p className="text-gray-300 mb-6">
             One of the most common beginner questions is whether you should pay.
-            Short answer: start free. In 2026 OpenAI offers three popular consumer
-            tiers, and the right one depends on how heavily you use it. Pricing and
+            Short answer: start free. As of September 2026 OpenAI offers four consumer
+            tiers (Free, Go, Plus and Pro), and the right one depends on how heavily
+            you use it. Pricing and
             exact limits change over time, so always confirm the latest numbers on
             the official pricing page before subscribing.
           </p>
@@ -416,16 +430,21 @@ export default function HowToUseChatGPTBeginners2026() {
                   <td className="p-4">Curious beginners</td>
                   <td className="p-4 text-green-400">$0</td>
                   <td className="p-4">
-                    Everyday chatting, limited image and voice use, basic web search
+                    Unlimited text chats with GPT-5.6 Luna, a Think option for harder
+                    questions, web search, limited uploads, limited and slower image
+                    generation, limited voice (GPT-Live-1 mini), limited memory (27K
+                    context, about 12 pages of input), and ads in some countries
                   </td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-emerald-300">Go</td>
-                  <td className="p-4">Light daily users in select regions</td>
+                  <td className="p-4">Light daily users</td>
                   <td className="p-4">~$8/month</td>
                   <td className="p-4">
-                    Higher message limits and more generous image and file use than
-                    free
+                    The same GPT-5.6 Luna model as Free, plus more image creation, more
+                    uploads and data analysis, up to 3 hours a day of voice, voice with
+                    video, longer memory and context (54K), and projects and scheduled
+                    tasks. May include ads; no GPT-5.6 Sol or GPT-6 Astra
                   </td>
                 </tr>
                 <tr>
@@ -433,20 +452,58 @@ export default function HowToUseChatGPTBeginners2026() {
                   <td className="p-4">Heavy or professional users</td>
                   <td className="p-4">~$20/month</td>
                   <td className="p-4">
-                    Top usage limits, newest models, advanced voice and faster
-                    responses
+                    GPT-5.6 Sol with a slider for reasoning effort, GPT-6 Astra (rolling
+                    out since 3 September 2026), expanded messages and uploads, more
+                    complex and accurate image creation, expanded deep research,
+                    projects and scheduled tasks, ChatGPT Work, up to 3 hours a day of
+                    GPT-Live-1 voice, and no ads
+                  </td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-emerald-300">Pro</td>
+                  <td className="p-4">Heaviest users</td>
+                  <td className="p-4">From $100/month</td>
+                  <td className="p-4">
+                    5x more usage than Plus, Pro reasoning powered by GPT-6 Astra, and
+                    unlimited, faster image creation
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p className="text-gray-400 text-sm mb-6">
+            Dollar prices are US prices. Since 10 September 2026, new sign-ups and
+            upgrades to the $200 Pro tier (Pro 20x) are temporarily paused, while the
+            $100 Pro tier stays open.
+          </p>
+          <h3 className="text-2xl font-bold mt-10 mb-4">
+            Two things beginners should know about the free plan in 2026
+          </h3>
+          <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
+            <li>
+              <strong>Text chat is unlimited.</strong> On Free and Go, text chat has
+              been unlimited since the week after 6 August 2026 (subject to abuse
+              guardrails). The limits you will actually hit are image generation, file
+              uploads, voice time and data analysis.
+            </li>
+            <li>
+              <strong>Ads may appear.</strong> OpenAI announced ads for the Free and Go
+              tiers on 16 January 2026, began testing them in the US in February 2026,
+              and has since rolled them out in the UK, Canada, Australia and New
+              Zealand. The help center says ads may appear on Free in certain
+              countries, while Plus, Pro, Business and Enterprise stay ad-free.
+            </li>
+          </ul>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-10">
             <p className="text-gray-300">
               <strong>My honest opinion:</strong> use the free plan for at least a
-              week. If you find yourself hitting limits or wanting newer models, the{" "}
-              <strong>ChatGPT Go</strong> plan, priced at ₹399/month in India — and free for 12 months for Indian users under an offer that began in November 2025 — available in
-              select regions including India, is a friendly middle step before
-              jumping to Plus. Treat this as guidance, not a guarantee, since OpenAI
+              week. If you keep hitting image, upload or voice limits,{" "}
+              <strong>ChatGPT Go</strong> is a friendly middle step. It is available
+              in every country ChatGPT supports, at $8/month in the US (localized in
+              some markets). OpenAI&apos;s 12-month free Go offer for India ran from
+              November 2025 until 21 January 2026 and is no longer open, so check
+              chatgpt.com/pricing while logged in for the current rupee price. If you
+              want the stronger GPT-5.6 Sol or GPT-6 Astra models, you need Plus. Treat this as guidance, not a guarantee, since OpenAI
               adjusts plans and availability over time.
             </p>
           </div>
@@ -587,9 +644,13 @@ export default function HowToUseChatGPTBeginners2026() {
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
               <h3 className="text-xl font-bold mb-2 text-emerald-400">Voice</h3>
               <p className="text-gray-400 text-sm">
-                In the mobile app, tap the voice icon and just talk. You can ask
-                questions out loud and ChatGPT replies in a natural voice, which is
-                perfect for practicing a language or while cooking.
+                On the app or at chatgpt.com, tap the Voice icon in the message box and
+                start talking. Voice runs inside the chat, lets you interrupt
+                naturally, can use web search and memory, and shows the reply as text
+                so you can switch to typing. Free accounts get limited voice time; Go
+                and Plus get up to 3 hours a day. Sharing live video or your screen
+                needs a paid plan and works only in the iOS and Android apps using the
+                Advanced voice option (Settings &gt; Voice).
               </p>
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
@@ -612,8 +673,14 @@ export default function HowToUseChatGPTBeginners2026() {
           <div className="bg-gradient-to-r from-emerald-600/20 to-cyan-600/20 border-l-4 border-emerald-500 p-6 my-8 rounded-r-2xl">
             <h3 className="text-xl font-bold mb-2">Generating images too</h3>
             <p className="text-gray-200">
-              ChatGPT can also create pictures from a description, though free usage
-              is limited. If image creation excites you, see our guide to{" "}
+              ChatGPT can also create pictures from a description. ChatGPT Images 2.0
+              (gpt-image-2) launched on 21 April 2026 on every plan including Free,
+              with 2K output, nine aspect ratios and much better text. ChatGPT Images
+              2.5 followed on 8 September 2026 with sharper detail, more precise
+              editing, faster generation, ready-made Templates (Images &gt; Templates)
+              and, on mobile, a Sketch tool (type @ and select Sketch) that turns a
+              drawing into an image. Free image generation is still limited and
+              slower. If image creation excites you, see our guide to{" "}
               <Link
                 href="/blog/viral-chatgpt-image-prompts-2026"
                 className="text-emerald-300 underline hover:text-emerald-200"
@@ -635,16 +702,24 @@ export default function HowToUseChatGPTBeginners2026() {
           <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
             <li>
               <strong>Memory</strong> is when ChatGPT remembers small facts you share,
-              like your name, your job, or that you prefer short answers. This makes
-              future chats feel more personal. You can review what it remembers and
-              turn memory off entirely in Settings if you prefer a clean slate every
-              time.
+              like your name, your job, or that you prefer short answers. It keeps an
+              automatically updated memory summary under Settings &gt; Personalization
+              &gt; Memory. You can type what to change, highlight text to correct it,
+              tap the book icon under a reply to see which sources personalized it, or
+              choose &quot;Delete and turn off memory&quot; from the three-dot menu (on
+              the web, rolling out on mobile). Memory is limited on Free and larger on
+              Go and Plus. A standard temporary chat does not use or create memories;
+              since 27 August 2026 you can also start a personalized temporary chat
+              that uses your memories but still creates none.
             </li>
             <li>
               <strong>Projects</strong> are simply folders that keep related chats and
-              files together. For example, you might create a project for your
-              business plan and another for your travel ideas, so things stay tidy
-              and on-topic.
+              uploaded PDFs, spreadsheets and docs together, and they are available on
+              every plan, including Free, when you are logged in. For example, you
+              might create a project for your business plan and another for your
+              travel ideas. Project instructions override your custom instructions,
+              and since 14 August 2026 you can switch a project between default and
+              project-only memory in Project settings.
             </li>
           </ul>
           <p className="text-gray-300 mb-6">
@@ -696,7 +771,8 @@ export default function HowToUseChatGPTBeginners2026() {
               </h3>
               <p className="text-gray-400 text-sm">
                 Ask it to teach you a topic from scratch, then quiz you to check
-                what you understood.
+                what you understood. Study mode asks guiding questions instead of
+                just giving answers.
               </p>
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
@@ -755,6 +831,16 @@ export default function HowToUseChatGPTBeginners2026() {
             </div>
           </div>
           <p className="text-gray-300 mb-6">
+            <strong>For students and parents:</strong> study mode has been available
+            on the Free plan since 29 July 2025, and since 14 August 2026 all consumer
+            plans can ask ChatGPT to quiz them with interactive quizzes on web and
+            mobile. ChatGPT for Teens began rolling out on 18 August 2026: when an
+            eligible account is identified as under 18, ChatGPT switches on a teen
+            experience with study hours, homework reminders that suggest study mode,
+            break reminders and optional parental controls. Parents cannot read the
+            teen&apos;s conversations.
+          </p>
+          <p className="text-gray-300 mb-6">
             If you want to turn these skills into income, our guide on the{" "}
             <Link
               href="/blog/best-ai-tools-to-make-money-online-2026"
@@ -800,8 +886,9 @@ export default function HowToUseChatGPTBeginners2026() {
               called a <strong>hallucination</strong>. It is not lying on purpose, it
               simply predicts likely text. Always double-check anything important,
               especially medical, legal, financial, or recent news details. Also
-              remember your chats may be used to improve the models unless you opt
-              out in Settings, so never paste passwords or sensitive data.
+              remember your chats may be used to improve the models unless you turn off
+              &quot;Improve the model for everyone&quot; in Settings &gt; Data
+              Controls, so never paste passwords or sensitive data.
             </p>
           </div>
 

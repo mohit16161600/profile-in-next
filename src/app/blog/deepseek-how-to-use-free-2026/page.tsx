@@ -71,20 +71,25 @@ export default function DeepSeekHowToUseFree2026() {
         "Yes, DeepSeek is accessible in India and popular among budget-conscious users because the core app is free.",
     },
     {
-      question: "What is DeepThink mode?",
+      question: "Does DeepSeek still have DeepThink?",
       answer:
-        "DeepThink is DeepSeek's reasoning mode that shows the model working through a problem step by step, which improves accuracy on complex questions.",
+        "No. DeepSeek replaced the DeepThink button with Instant and Expert modes in April 2026, and its September 2026 app update unified Instant, Expert and Vision into a single mode that shows its thinking and collapses it automatically, so there is nothing to switch on.",
     },
     {
       question: "Can DeepSeek write code?",
       answer:
         "Yes, DeepSeek handles coding tasks well, including writing, explaining, and debugging code in popular languages.",
     },
+    {
+      question: "What is the newest DeepSeek model?",
+      answer:
+        "The newest DeepSeek model is DeepSeek-V4.1-Flash, released on 10 September 2026, a 552B-parameter mixture-of-experts model with native image understanding. It follows DeepSeek-V4 (24 April 2026), which made a 1-million-token context the default across DeepSeek's services. Free app users do not choose a model or a mode, because the app's modes were unified in September 2026.",
+    },
   ];
 
   const keyTakeaways = [
     "DeepSeek's app and website are free for most chatting, reasoning, and coding tasks.",
-    "Its standout strength is transparent step-by-step reasoning via DeepThink mode.",
+    "Its standout strengths are transparent step-by-step reasoning and a 1-million-token context window, which has been the default across all official DeepSeek services since V4 launched on 24 April 2026.",
     "It is a strong budget pick for Indian students and developers.",
     "As with any AI, avoid sharing sensitive data given its own privacy terms.",
     "Available on Android, iOS, and web, so you can start in minutes.",
@@ -98,7 +103,7 @@ export default function DeepSeekHowToUseFree2026() {
       "Learn how to use DeepSeek free in 2026: sign up, best uses, step-by-step reasoning and tips. A budget-friendly beginner guide to the free DeepSeek AI app.",
     image: "https://mohitkoli.in/assets/blog/deepseek-how-to-use-free-2026.png",
     datePublished: "2026-06-10",
-    dateModified: "2026-06-10",
+    dateModified: "2026-09-14",
     author: {
       "@type": "Person",
       name: "Mohit Koli",
@@ -210,6 +215,8 @@ export default function DeepSeekHowToUseFree2026() {
             <span>•</span>
             <span>June 10, 2026</span>
             <span>•</span>
+            <span>Updated September 14, 2026</span>
+            <span>•</span>
             <span>13 min read</span>
           </div>
         </header>
@@ -239,11 +246,12 @@ export default function DeepSeekHowToUseFree2026() {
             <h2 className="text-2xl font-bold mb-4 text-indigo-400">Table of Contents</h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-300">
               <li><a href="#what-is-deepseek" className="hover:text-indigo-400 transition">→ What Is DeepSeek?</a></li>
+              <li><a href="#which-deepseek-model" className="hover:text-indigo-400 transition">→ Which DeepSeek Model in 2026?</a></li>
               <li><a href="#is-deepseek-free" className="hover:text-indigo-400 transition">→ Is DeepSeek Really Free?</a></li>
               <li><a href="#how-to-sign-up" className="hover:text-indigo-400 transition">→ How to Sign Up &amp; Get Started</a></li>
               <li><a href="#deepseek-features" className="hover:text-indigo-400 transition">→ Key Features Worth Knowing</a></li>
               <li><a href="#best-uses" className="hover:text-indigo-400 transition">→ Best Everyday Uses</a></li>
-              <li><a href="#reasoning-mode" className="hover:text-indigo-400 transition">→ Using DeepThink Mode</a></li>
+              <li><a href="#reasoning-mode" className="hover:text-indigo-400 transition">→ Reasoning in DeepSeek (One Unified Mode)</a></li>
               <li><a href="#deepseek-vs-chatgpt-free" className="hover:text-indigo-400 transition">→ DeepSeek vs ChatGPT Free</a></li>
               <li><a href="#privacy-safety" className="hover:text-indigo-400 transition">→ Privacy &amp; Safety</a></li>
               <li><a href="#tips-tricks" className="hover:text-indigo-400 transition">→ Tips for Better Answers</a></li>
@@ -279,6 +287,24 @@ export default function DeepSeekHowToUseFree2026() {
             </p>
           </div>
 
+          {/* Which model */}
+          <h2 id="which-deepseek-model" className="text-3xl font-bold mt-12 mb-6">Which DeepSeek Model Are You Actually Using in 2026?</h2>
+          <p className="text-gray-300 mb-6">
+            DeepSeek released <strong>V4</strong> in preview on 24 April 2026 as two open-weight models:
+            V4-Pro (1.6T total / 49B active parameters) and V4-Flash (284B total / 13B active). With V4, a
+            <strong> 1-million-token context</strong> became the default across all official DeepSeek services.
+          </p>
+          <p className="text-gray-300 mb-6">
+            Then on 10 September 2026 came <strong>DeepSeek-V4.1-Flash</strong>, a 552B-parameter mixture-of-experts
+            model with 8B active parameters for input and 16B for output, native image understanding, a context
+            window of up to 1 million tokens, and open weights on Hugging Face. DeepSeek says tests by multiple
+            parties put V4.1-Flash ahead of V4-Pro on performance, cost, speed and total runtime.
+          </p>
+          <p className="text-gray-300 mb-6">
+            The good news for beginners: as a free app user you do not pick a model number, and since September
+            2026 you do not pick a mode either, because the app&apos;s Instant, Expert and Vision modes were unified.
+          </p>
+
           {/* Is DeepSeek Free */}
           <h2 id="is-deepseek-free" className="text-3xl font-bold mt-12 mb-6">Is DeepSeek Really Free?</h2>
           <p className="text-gray-300 mb-6">
@@ -289,7 +315,11 @@ export default function DeepSeekHowToUseFree2026() {
           </p>
           <p className="text-gray-300 mb-6">
             There is a separate, paid <strong>API</strong> aimed at developers who want to plug DeepSeek into their
-            own apps and run it at scale — but that is a different product. For simply opening the app and asking
+            own apps and run it at scale — but that is a different product. As of September 2026, its main API model{" "}
+            <code>deepseek-flash</code> (DeepSeek-V4.1-Flash) costs $0.15–$0.30 per million input tokens on a cache
+            miss, $0.003–$0.006 on a cache hit and $0.60–$1.20 per million output tokens, with off-peak rates at half
+            the peak rates (peak hours are 01:00–04:00 and 06:00–10:00 UTC, Monday to Friday). The old{" "}
+            <code>deepseek-chat</code> and <code>deepseek-reasoner</code> API names were retired on 24 July 2026. For simply opening the app and asking
             questions, you can ignore the API entirely. If you love free tools, you will also enjoy my roundup of
             the{" "}
             <Link href="/blog/top-25-free-ai-tools-2026" className="text-sky-400 hover:text-sky-300 underline underline-offset-4">
@@ -314,9 +344,9 @@ export default function DeepSeekHowToUseFree2026() {
                   <td className="p-4">Pay per use</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-semibold text-indigo-300">DeepThink reasoning</td>
+                  <td className="p-4 font-semibold text-indigo-300">Deep reasoning (thinking mode)</td>
                   <td className="p-4 text-green-400">Included</td>
-                  <td className="p-4">Pay per use</td>
+                  <td className="p-4">Thinking mode, billed per token</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-indigo-300">Coding help</td>
@@ -363,8 +393,8 @@ export default function DeepSeekHowToUseFree2026() {
             <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
               <div className="bg-sky-500/20 p-2 rounded-lg text-sky-400 font-bold min-w-10 text-center">4</div>
               <div>
-                <p className="font-bold">Toggle DeepThink when you need it</p>
-                <p className="text-sm text-gray-400">For harder problems, switch on the DeepThink button before you send your message so the model reasons step by step.</p>
+                <p className="font-bold">Just ask — no mode switch needed</p>
+                <p className="text-sm text-gray-400">Since DeepSeek&apos;s September 2026 app update, its Instant, Expert and Vision modes are unified, so there is no DeepThink button or mode switch to set, and the thinking process collapses automatically. For harder problems such as maths, logic, planning or debugging, ask DeepSeek to reason step by step.</p>
               </div>
             </div>
           </div>
@@ -384,8 +414,8 @@ export default function DeepSeekHowToUseFree2026() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
-              <p className="font-bold text-indigo-400 mb-2">DeepThink (Reasoning)</p>
-              <p className="text-sm text-gray-400">A mode that visibly works through a problem step by step, which boosts accuracy on math, logic, and tricky multi-step questions.</p>
+              <p className="font-bold text-indigo-400 mb-2">Step-by-step reasoning</p>
+              <p className="text-sm text-gray-400">DeepSeek shows its working for maths, logic and tricky code, and since the September 2026 app update this happens in one unified mode rather than a separate Expert or DeepThink mode.</p>
             </div>
             <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
               <p className="font-bold text-sky-400 mb-2">Web search</p>
@@ -434,15 +464,20 @@ export default function DeepSeekHowToUseFree2026() {
           </p>
 
           {/* Reasoning Mode */}
-          <h2 id="reasoning-mode" className="text-3xl font-bold mt-12 mb-6">Using DeepThink (Reasoning) Mode</h2>
+          <h2 id="reasoning-mode" className="text-3xl font-bold mt-12 mb-6">Reasoning in DeepSeek (One Unified Mode)</h2>
           <p className="text-gray-300 mb-6">
-            DeepThink is the feature most people fall in love with. When you turn it on, DeepSeek does not just blurt
-            out an answer — it <strong>thinks out loud</strong>, laying out the steps it takes to reach a conclusion.
+            In April 2026 DeepSeek replaced the old DeepThink button with Instant Mode for quick replies and Expert
+            Mode for complex problems. In its September 2026 app update it unified Instant, Expert and Vision into a
+            single mode that shows its thinking and collapses it automatically. The 1-million-token context also
+            means you can paste very long documents.
+          </p>
+          <p className="text-gray-300 mb-6">
+            So DeepSeek does not just blurt out an answer — it <strong>thinks out loud</strong>, laying out the steps it takes to reach a conclusion.
             For a beginner, this is gold: you can actually follow the logic and learn from it, instead of trusting a
             black box.
           </p>
           <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
-            <li><strong>Turn it on for hard problems:</strong> Use DeepThink for math, logic puzzles, multi-step planning, and tricky debugging. For simple questions, leave it off to get faster answers.</li>
+            <li><strong>Ask for steps on hard problems:</strong> For math, logic puzzles, multi-step planning, and tricky debugging, ask DeepSeek to reason step by step — there is no separate switch to turn on.</li>
             <li><strong>Read the steps, not just the result:</strong> The reasoning trace helps you spot where an answer might be going wrong, which makes it easier to ask a sharper follow-up.</li>
             <li><strong>Be patient:</strong> Reasoning takes a few extra seconds because the model is genuinely working through the problem. That short wait usually buys you a more reliable answer.</li>
           </ul>
@@ -453,7 +488,7 @@ export default function DeepSeekHowToUseFree2026() {
               Ask: &quot;A shirt costs 800 rupees after a 20 percent discount. What was the original price? Show your steps.&quot;
             </p>
             <p className="text-gray-400 text-sm">
-              With DeepThink on, DeepSeek lays out the math (800 divided by 0.8) and explains why, so you understand
+              Asked this, DeepSeek lays out the math (800 divided by 0.8) and explains why, so you understand
               the method — not just the final number, 1000 rupees.
             </p>
           </div>
@@ -475,15 +510,15 @@ export default function DeepSeekHowToUseFree2026() {
               </thead>
               <tbody className="divide-y divide-white/10">
                 <tr>
-                  <td className="p-4 text-gray-300">Step-by-step reasoning and math, fully free</td>
+                  <td className="p-4 text-gray-300">Deep reasoning on a 1M-token context, fully free</td>
                   <td className="p-4 text-sky-300 font-semibold">DeepSeek</td>
                 </tr>
                 <tr>
-                  <td className="p-4 text-gray-300">A broad toolkit (voice, images, wide ecosystem)</td>
+                  <td className="p-4 text-gray-300">A broad toolkit (unlimited everyday text chats on GPT-5.6 Luna, web search, limited image creation, voice chats and file uploads)</td>
                   <td className="p-4 text-violet-300 font-semibold">ChatGPT</td>
                 </tr>
                 <tr>
-                  <td className="p-4 text-gray-300">A budget pick with no nudge toward a subscription</td>
+                  <td className="p-4 text-gray-300">A free chatbot with no paid consumer tier to upsell you</td>
                   <td className="p-4 text-sky-300 font-semibold">DeepSeek</td>
                 </tr>
                 <tr>
@@ -493,6 +528,15 @@ export default function DeepSeekHowToUseFree2026() {
               </tbody>
             </table>
           </div>
+          <h3 className="text-2xl font-bold mt-8 mb-4">What Changed on the ChatGPT Side in 2026</h3>
+          <p className="text-gray-300 mb-6">
+            Since August 2026, ChatGPT Free has given unlimited everyday text chats on GPT-5.6 Luna (the fastest,
+            lowest-cost GPT-5.6 model) plus a Think button for harder questions, along with web search, limited voice
+            chats and limited image generation, now ChatGPT Images 2.5 (launched 8 September 2026 for all tiers). File
+            uploads, image generation, deep research and other tools still have usage limits, ads may appear, and
+            OpenAI may use chats for training unless you opt out in Data Controls. So DeepSeek&apos;s remaining edge is
+            its free 1-million-token context and having no paid consumer tier — not that ChatGPT lacks free reasoning.
+          </p>
           <p className="text-gray-300 mb-6">
             This is intentionally a high-level view. If you want a deep, feature-by-feature breakdown, read my
             dedicated{" "}
@@ -516,10 +560,26 @@ export default function DeepSeekHowToUseFree2026() {
           </p>
           <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
             <li><strong>Do not share sensitive data:</strong> Keep passwords, financial details, government IDs, medical records, and confidential company information out of the chat.</li>
-            <li><strong>Assume chats may be stored:</strong> Treat anything you type as something that could be retained to improve the service. Check the settings for data and history controls.</li>
+            <li><strong>Know where chats are stored:</strong> DeepSeek&apos;s privacy policy (last updated 10 February 2026) says it collects, processes and stores personal data in the People&apos;s Republic of China. You can delete your chat history in settings, delete your account, opt out of your data being used for model training, or contact privacy@deepseek.com.</li>
             <li><strong>Verify important answers:</strong> Like all AI, DeepSeek can be confidently wrong. Double-check facts, code, and numbers before you rely on them.</li>
             <li><strong>Mind your workplace rules:</strong> Some companies restrict which AI tools you can use for work. When in doubt, ask first.</li>
           </ul>
+          <h3 className="text-2xl font-bold mt-8 mb-4">What DeepSeek&apos;s Own Privacy Policy Says</h3>
+          <p className="text-gray-300 mb-6">
+            According to the policy (last updated 10 February 2026), DeepSeek collects account details (email or phone
+            number, password, date of birth), your text and voice input, prompts, uploaded files, photos and chat
+            history, device and network data such as IP address and device identifiers, approximate location based on
+            IP address, and usage logs and cookies. It says it will not extract voiceprint or facial-recognition
+            information from voice or photo input. The China storage point is the one most worth knowing.
+          </p>
+          <h3 className="text-2xl font-bold mt-8 mb-4">Where DeepSeek Is Restricted</h3>
+          <p className="text-gray-300 mb-6">
+            Several governments have restricted DeepSeek, mostly on official systems rather than for private users.
+            Italy&apos;s data protection authority ordered an immediate limitation on processing Italian users&apos; data
+            on 30 January 2025, and Australia directed government entities in February 2025 to block and remove
+            DeepSeek products from government systems and devices. The practical takeaway: do not use DeepSeek on a
+            work or government device unless your employer allows it.
+          </p>
           <div className="bg-gradient-to-r from-indigo-600/20 to-violet-600/20 border-l-4 border-violet-500 p-6 my-8 rounded-r-2xl">
             <h3 className="text-xl font-bold mb-2">The simple rule</h3>
             <p className="text-gray-200">
@@ -542,7 +602,7 @@ export default function DeepSeekHowToUseFree2026() {
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
               <h3 className="text-lg font-bold mb-2 text-indigo-400">Ask it to show steps</h3>
-              <p className="text-gray-400 text-sm">Adding &quot;show your reasoning step by step&quot; (and turning on DeepThink) leads to clearer, more checkable answers.</p>
+              <p className="text-gray-400 text-sm">Adding &quot;show your reasoning step by step&quot; to a prompt leads to clearer, more checkable answers.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
               <h3 className="text-lg font-bold mb-2 text-violet-400">Iterate with follow-ups</h3>

@@ -87,7 +87,7 @@ export default function Blog7() {
                <strong>Short answer: yes, learning React is worth it in 2026 — but only if your goal is frontend jobs, freelance web work, or serious full-stack products, and only if you learn it on top of solid JavaScript.</strong> React is no longer the newest or the simplest option, yet it still has the largest hiring ecosystem, the deepest library support, and the clearest path into Next.js and React Native. The honest nuance: React alone is not enough anymore. In 2026, employers hire for React plus TypeScript plus a framework like Next.js, not React in isolation.
             </p>
             <p className="text-gray-300 mb-4 leading-relaxed">
-               Even with Svelte 5, Vue 3.5, and Solid pushing fresh ideas into frontend development, React continues to dominate where it matters most: hiring demand, ecosystem depth, long-term maintainability, and production adoption.
+               Even with Svelte 5, Vue 3.6 (Vapor Mode, a release candidate as of September 2026) and Solid 2.0 (also a release candidate) pushing fresh ideas into frontend development, React continues to dominate where it matters most: hiring demand, ecosystem depth, long-term maintainability, and production adoption.
             </p>
             <p className="text-gray-300 mb-4 leading-relaxed">
                The better question is not whether React is good — it is whether React is the smartest place to spend the next six months of your learning time. That depends far less on the framework than on what you actually want out of it, which is why this guide spends as much time on who should skip React as on who should learn it.
@@ -165,10 +165,17 @@ export default function Blog7() {
             <h3 className="text-2xl font-semibold text-white mb-4">What makes React stronger now:</h3>
             <ul className="list-disc list-inside text-gray-300 space-y-3 mb-6">
                <li><strong>Server Components:</strong> Less JavaScript ships to the browser, which improves performance and keeps data fetching closer to the source.</li>
-               <li><strong>Server Actions:</strong> Form submissions and mutations are much simpler in full-stack React apps.</li>
-               <li><strong>React Compiler:</strong> Manual memoization is less of a day-to-day burden because the compiler can optimize common patterns for you.</li>
+               <li><strong>Server Functions (Server Actions):</strong> Form submissions and mutations are much simpler in full-stack React apps. React now calls these Server Functions and they are stable in React 19, while the Next.js docs still use the Server Actions name for form submissions and mutations.</li>
+               <li><strong>React Compiler:</strong> Manual memoization is less of a day-to-day burden because the compiler can optimize common patterns for you. React Compiler 1.0 has been stable since 7 October 2025.</li>
                <li><strong>Better framework integration:</strong> Next.js and similar tools make React feel more complete for routing, data fetching, caching, and deployment.</li>
                <li><strong>Mature ecosystem:</strong> The tooling around testing, design systems, accessibility, and component libraries is still far ahead.</li>
+            </ul>
+            <h3 className="text-2xl font-semibold text-white mb-4">What changed in React between late 2025 and September 2026</h3>
+            <ul className="list-disc list-inside text-gray-300 space-y-3 mb-6">
+               <li><strong>React 19.2 (1 October 2025):</strong> added <code>&lt;Activity/&gt;</code> for pre-rendering hidden UI while keeping its state, <code>useEffectEvent</code> for non-reactive logic inside Effects, and Chrome DevTools performance tracks.</li>
+               <li><strong>React Compiler 1.0 (7 October 2025):</strong> stable, on by default in Expo SDK 54 and later, with compiler-enabled templates available in create-vite and create-next-app.</li>
+               <li><strong>React Foundation:</strong> announced on 7 October 2025; on 24 February 2026 React, React Native and JSX formally moved from Meta to the foundation, hosted by the Linux Foundation, with Amazon, Callstack, Expo, Huawei, Meta, Microsoft, Software Mansion and Vercel as Platinum founding members. That is a strong signal of long-term relevance instead of short-term hype.</li>
+               <li><strong>React 19.3 (9 September 2026):</strong> made View Transitions and Fragment Refs stable, added the <code>browser()</code> API to opt a component out of server rendering, added Trusted Types support, and lets Server Components render Context directly.</li>
             </ul>
             <p className="text-gray-300 leading-relaxed">
                This is the real reason <strong>&quot;is React still worth learning in 2026&quot;</strong> keeps getting asked: React did not stand still, but it also did not throw away the ecosystem everyone already depends on. The practical catch is that a lot of tutorials still teach the 2020 version. If you learn React from an older course, you will spend months on patterns the ecosystem has already moved past — check the publish date before you commit forty hours to a playlist.
@@ -189,7 +196,7 @@ export default function Blog7() {
                         <th className="px-4 py-3 font-semibold">Feature</th>
                         <th className="px-4 py-3 font-semibold">React 2026</th>
                         <th className="px-4 py-3 font-semibold">Svelte 5+</th>
-                        <th className="px-4 py-3 font-semibold">Vue 3.5</th>
+                        <th className="px-4 py-3 font-semibold">Vue 3.5 / 3.6 RC</th>
                         <th className="px-4 py-3 font-semibold">Solid</th>
                      </tr>
                   </thead>
@@ -220,7 +227,7 @@ export default function Blog7() {
                         <td className="px-4 py-3 text-slate-300">Careers, SaaS apps, teams, full-stack products</td>
                         <td className="px-4 py-3 text-slate-300">Lean apps, DX-focused projects</td>
                         <td className="px-4 py-3 text-slate-300">Balanced DX plus strong structure</td>
-                        <td className="px-4 py-3 text-slate-300">Performance-focused experimentation</td>
+                        <td className="px-4 py-3 text-slate-300">Performance-focused experimentation (Solid 2.0 is a release candidate as of September 2026)</td>
                      </tr>
                   </tbody>
                </table>
@@ -261,6 +268,15 @@ export default function Blog7() {
                   </tbody>
                </table>
             </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 mt-6">
+               <h3 className="text-2xl font-semibold text-white mb-4">What the numbers say (latest published surveys)</h3>
+               <p className="text-gray-300 mb-4 leading-relaxed">
+                  The Stack Overflow 2025 Developer Survey (over 49,000 responses, the latest published edition as of September 2026 — the 2026 results have not been published yet) found React used by 44.7% of all respondents and 46.9% of professional developers. Next.js followed at 20.8% / 21.5%, Angular at 18.2% / 19.8%, Vue.js at 17.6% / 18.4% and Svelte at 7.2% / 6.9%. That is the evidence behind the &quot;Highest&quot; hiring-demand cell above.
+               </p>
+               <p className="text-gray-300 leading-relaxed">
+                  In State of JS 2025, React was used by 83.6% of respondents, while Solid was used by about 10% but had the highest satisfaction for the fifth year running, and Next.js satisfaction fell from 68% to 55%. In State of React 2025, 48.4% of respondents were on React 19.x and 41.3% on React 18.x. Popularity and admiration are different questions — which is exactly why the best career pick and the most loved framework are not always the same.
+               </p>
+            </div>
          </section>
 
          <section id="job-market" className="mb-12">
@@ -282,7 +298,7 @@ export default function Blog7() {
                <li>Large companies already have mature React codebases and need developers who can extend them safely.</li>
                <li>Startups still like React because the talent pool is huge and product iteration is fast.</li>
                <li>Freelancers benefit because many client projects are built on React, Next.js, or related component ecosystems.</li>
-               <li>React skills transfer well into React Native, which expands your opportunities beyond web-only roles.</li>
+               <li>React skills transfer well into React Native, which expands your opportunities beyond web-only roles. React Native 0.84 (11 February 2026) made Hermes V1 the default JavaScript engine and continued stripping out Legacy Architecture code, 0.87 (11 August 2026) made the Strict TypeScript API the default, and Expo SDK 55 supports only the New Architecture — so React Native now uses the same modern React skills as the web.</li>
             </ul>
             <h3 className="text-2xl font-semibold text-white mb-4">React jobs in India: the honest picture</h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
@@ -360,10 +376,11 @@ export default function Blog7() {
             </p>
             <ol className="list-decimal list-inside text-gray-300 space-y-3 mb-6">
                <li><strong>Master JavaScript fundamentals.</strong> Variables, arrays, objects, async code, modules, and DOM basics still matter.</li>
+               <li><strong>Start with the right tooling (no create-react-app).</strong> Create React App was deprecated by the React team on 14 February 2025, which now recommends a framework (Next.js, React Router, Expo) or a build tool (Vite, Parcel, Rsbuild). For pure React practice use Vite 8 (<code>npm create vite@latest</code>) — stable since 12 March 2026, with the Rust-based Rolldown bundler, up to 10–30x faster builds, and most plugins working unchanged. Any tutorial that opens with <code>npx create-react-app</code> predates this change.</li>
                <li><strong>Learn components and props.</strong> Build small reusable UI pieces before chasing advanced patterns.</li>
                <li><strong>Understand state and rendering.</strong> Learn when state belongs locally, globally, or on the server.</li>
-               <li><strong>Use TypeScript early.</strong> It improves code quality and hiring readiness.</li>
-               <li><strong>Build with Next.js.</strong> Modern React work usually means routing, layouts, data fetching, and server rendering.</li>
+               <li><strong>Use TypeScript early.</strong> It improves code quality and hiring readiness. TypeScript 7.0, released on 8 July 2026, is a native Go port that makes full builds roughly 8x–12x faster and turns on strict mode by default, so write strict TypeScript from day one.</li>
+               <li><strong>Build with Next.js.</strong> Modern React work usually means routing, layouts, data fetching, and server rendering. Scaffold real projects with <code>npx create-next-app@latest</code> on Next.js 16 — 16.3 (August 2026) is the current release, and Next.js 15 reaches end-of-life on 21 October 2026.</li>
                <li><strong>Study forms, accessibility, and testing.</strong> These are the areas that separate tutorial knowledge from job-ready skill.</li>
                <li><strong>Create real projects.</strong> Dashboards, portfolios, ecommerce clones, and CRUD apps still teach the most.</li>
                <li><strong>Deploy what you build.</strong> A project running on a live URL teaches you more than ten local demos. When your React or Next.js apps need a real server, our guide to{" "}
@@ -393,9 +410,7 @@ export default function Blog7() {
             </p>
             <pre className="not-prose overflow-x-auto rounded-xl border border-white/10 bg-slate-950 p-4 text-sm text-slate-200 mb-6">
                {`export default async function ProductsPage() {
-  const res = await fetch("https://api.example.com/products", {
-    cache: "no-store",
-  });
+  const res = await fetch("https://api.example.com/products");
 
   const products = await res.json();
 
@@ -409,6 +424,9 @@ export default function Blog7() {
   );
 }`}
             </pre>
+            <p className="text-gray-300 mb-6 leading-relaxed">
+               Notice there is no <code>cache: &quot;no-store&quot;</code> option. Since Next.js 16 (October 2025), <code>fetch</code> in Server Components is dynamic by default (&quot;auto no cache&quot;), so that old habit is usually unnecessary. Caching is opt-in through <code>cache: &quot;force-cache&quot;</code>, <code>next: {"{ revalidate }"}</code>, or the <code>&quot;use cache&quot;</code> directive with Cache Components (<code>cacheComponents: true</code>). Next.js 16.3 (3 August 2026) added opt-in Instant Navigations on top of that model, and the Next.js team says those behaviours will become the default in a future major version.
+            </p>
 
             <h3 className="text-2xl font-semibold text-white mb-4">2. Keep client components focused</h3>
             <p className="text-gray-300 mb-4 leading-relaxed">

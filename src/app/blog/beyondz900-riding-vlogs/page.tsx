@@ -10,7 +10,7 @@ const CANONICAL = "https://mohitkoli.in/blog/beyondz900-riding-vlogs";
 export const metadata: Metadata = {
     title: "BeyondZ900 Riding Vlogs: Why the Channel Is Worth It",
     description:
-        "BeyondZ900 documents daily rides and road trips on YouTube and Instagram. What the channel is about, why riding vlogs work, and how to start your own.",
+        "BeyondZ900 is my riding channel: daily Shorts, POV rides and Ola scooter journeys on YouTube and Instagram. Why riding vlogs work, and how to start one.",
     keywords: [
         "BeyondZ900",
         "BeyondZ900 youtube",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "BeyondZ900 Riding Vlogs: Daily Rides, Road Trips & Why This Channel Is Worth Following",
         description:
-            "A rider documenting daily rides and road trips on YouTube and Instagram — plus a complete look at why riding vlogs are India's most authentic content genre.",
+            "My own riding channel, 'Ride With Mohit': daily riding Shorts and cinematic POV rides on YouTube and Instagram, plus a look at why riding vlogs work in India.",
         url: CANONICAL,
         type: "article",
         images: [{ url: "/assets/blog/beyondz900-riding-vlogs.png", width: 1200, height: 630, alt: "BeyondZ900 — riding vlogs, daily rides and road trips" }],
@@ -51,15 +51,15 @@ export const metadata: Metadata = {
 const FAQ = [
     {
         q: "Who is BeyondZ900?",
-        a: "BeyondZ900 is a rider and content creator who documents the riding life — daily rides, road trips and everything that happens between the helmet going on and coming off. The content lives on YouTube (@BeyondZ900) and Instagram (@beyondz900), shot from the rider's own point of view.",
+        a: "BeyondZ900, branded 'Ride With Mohit' in its YouTube description, is my own riding channel. It posts daily riding Shorts, cinematic POV rides, Ola scooter journeys and night rides, many of them around Delhi. The YouTube channel was created on 29 April 2017 and, as of September 2026, has about 120 subscribers, 182 videos and roughly 2.76 lakh total views. The content lives on YouTube (@BeyondZ900) and Instagram (@beyondz900).",
     },
     {
         q: "What kind of content does BeyondZ900 make?",
-        a: "Riding vlogs — daily ride content and trip videos: real roads, real traffic, real weather, fuel stops, and the small unscripted moments that make riding videos worth watching. It's rider-perspective content, not studio talk. Instagram carries the short clips and day-to-day updates between full YouTube uploads.",
+        a: "Riding vlogs — daily ride content and trip videos: real roads, real traffic, real weather, fuel stops, and the small unscripted moments that make riding videos worth watching. It's rider-perspective content, not studio talk. Instagram carries the reels and day-to-day updates between YouTube uploads.",
     },
     {
         q: "Where can I watch BeyondZ900?",
-        a: "On YouTube at youtube.com/@BeyondZ900 for the full-length vlogs, and on Instagram at instagram.com/beyondz900 for reels, ride clips and quick updates. Subscribing on YouTube and turning on the notification bell is the reliable way to catch new rides.",
+        a: "Find daily riding Shorts and cinematic POV rides on YouTube at youtube.com/@BeyondZ900, and reels and day-to-day updates on Instagram at instagram.com/beyondz900. Subscribing on YouTube and turning on the notification bell is the reliable way to catch new rides.",
     },
     {
         q: "What is a motovlog, exactly?",
@@ -71,7 +71,7 @@ const FAQ = [
     },
     {
         q: "How can I support a small riding channel like BeyondZ900?",
-        a: "Engagement matters more than money at this stage: subscribe, like the videos you enjoy, leave a comment (even a short one — comments are a strong algorithm signal), share rides you liked with riding groups, and follow on Instagram. Early engagement directly decides how often the platform shows a small creator to new viewers.",
+        a: "Engagement matters more than money at this stage: subscribe, like the videos you enjoy, leave a comment (it mainly helps the creator and the community; YouTube's documented recommendation signals include watch time, likes and sharing, not comments), share rides you liked with riding groups, and follow on Instagram. Early engagement directly decides how often the platform shows a small creator to new viewers.",
     },
     {
         q: "Can I suggest a route or ride idea to BeyondZ900?",
@@ -89,10 +89,10 @@ const jsonLd = [
         "@type": "BlogPosting",
         headline: "BeyondZ900 Riding Vlogs: Daily Rides, Road Trips & Why This Channel Is Worth Following",
         description:
-            "BeyondZ900 is a rider documenting daily rides and road trips on YouTube and Instagram. What the channel is about, why riding vlogs are booming in India, and how to follow.",
+            "BeyondZ900 is my own riding channel, posting daily riding Shorts and cinematic POV rides on YouTube and Instagram. What the channel is about, why riding vlogs are booming in India, and how to follow.",
         image: "https://mohitkoli.in/assets/blog/beyondz900-riding-vlogs.png",
         datePublished: "2026-08-09T00:00:00.000Z",
-        dateModified: "2026-08-09T00:00:00.000Z",
+        dateModified: "2026-09-13T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
@@ -111,9 +111,11 @@ const jsonLd = [
         },
         about: {
             "@type": "Person",
-            name: "BeyondZ900",
-            description: "Rider and content creator making daily ride vlogs and road trip videos on YouTube and Instagram.",
-            sameAs: [YOUTUBE_URL, INSTAGRAM_URL],
+            name: "Mohit Koli",
+            alternateName: "BeyondZ900",
+            url: "https://mohitkoli.in/profile",
+            description: "Author of this blog; runs the BeyondZ900 ('Ride With Mohit') riding channel with daily riding Shorts and cinematic POV rides on YouTube and Instagram.",
+            sameAs: [YOUTUBE_URL, INSTAGRAM_URL, "https://mohitkoli.in"],
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
         keywords:
@@ -158,7 +160,7 @@ export default function BeyondZ900Spotlight() {
                         </ol>
                     </nav>
 
-                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Creator Spotlight · August 9, 2026</p>
+                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Creator Spotlight · August 9, 2026 · Updated September 13, 2026</p>
                     <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
                         BeyondZ900 Riding Vlogs: Daily Rides, Road Trips, and Why This Is the Kind of Channel Worth Catching Early
                     </h1>
@@ -170,7 +172,7 @@ export default function BeyondZ900Spotlight() {
                         on Indian internet right now, and how to follow the ride.
                     </p>
                     <p className="text-xs text-gray-500 mb-8 border-l-2 border-white/10 pl-3">
-                        Not sponsored — just a creator spotlight. Links in this article go straight to the official BeyondZ900 channels.
+                        Full disclosure: BeyondZ900 is my own riding channel (its YouTube description calls it &apos;Ride With Mohit&apos;), so this is me explaining what I make and why riding vlogs work, not an independent review.
                     </p>
 
                     <div className="relative w-full aspect-[1200/630] mb-10 rounded-2xl overflow-hidden border border-white/10">
@@ -187,9 +189,9 @@ export default function BeyondZ900Spotlight() {
                     <section className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6">
                         <h2 className="text-2xl font-bold text-white mb-3">The 30-second intro</h2>
                         <ul className="space-y-2 text-gray-300 leading-7">
-                            <li>🏍️ <strong className="text-white">Who:</strong> BeyondZ900 — a rider who films the riding life from the saddle.</li>
+                            <li>🏍️ <strong className="text-white">Who:</strong> BeyondZ900 (&apos;Ride With Mohit&apos;), my own riding channel, filmed from the saddle.</li>
                             <li>🎥 <strong className="text-white">What:</strong> daily ride vlogs, road trips, and the in-between moments other channels edit out.</li>
-                            <li>📺 <strong className="text-white">Where:</strong> <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">YouTube — @BeyondZ900</a> for full vlogs · <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Instagram — @beyondz900</a> for clips and updates.</li>
+                            <li>📺 <strong className="text-white">Where:</strong> <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">YouTube — @BeyondZ900</a> for daily riding Shorts and POV rides · <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Instagram — @beyondz900</a> for clips and updates.</li>
                             <li>⭐ <strong className="text-white">Why follow:</strong> genuine, unscripted rider-perspective content — the kind worth catching before everyone else does.</li>
                         </ul>
                     </section>
@@ -205,9 +207,15 @@ export default function BeyondZ900Spotlight() {
                             flips, and the unplanned moments every rider recognises instantly.
                         </p>
                         <p className="text-gray-300 leading-8 mb-4">
+                            To say it plainly: BeyondZ900, branded &apos;Ride With Mohit&apos;, is my own channel. It posts daily
+                            riding Shorts, cinematic POV rides, Ola scooter journeys and night rides, many of them around Delhi,
+                            so it covers bike and scooter rides alike. The YouTube channel was created on 29 April 2017 and, as of
+                            September 2026, has about 120 subscribers, 182 videos and roughly 2.76 lakh total views.
+                        </p>
+                        <p className="text-gray-300 leading-8 mb-4">
                             The channel splits its life across two platforms the way most modern riding creators do: YouTube
-                            carries the full-length ride vlogs and trip videos — the sit-down-and-watch content — while Instagram
-                            handles the fast lane: reels, ride clips, route glimpses and day-to-day updates between uploads.
+                            carries the daily riding Shorts and cinematic POV rides, while Instagram carries the reels and
+                            day-to-day updates.
                             Follow both and you get the complete picture; follow either and you still get the ride.
                         </p>
                         <p className="text-gray-300 leading-8">
@@ -225,7 +233,7 @@ export default function BeyondZ900Spotlight() {
                                 ["🌅 Daily ride vlogs", "The bread and butter — regular rides through real roads and real traffic, narrated from the saddle. This is the format that builds the day-to-day connection between a riding creator and the audience."],
                                 ["🗺️ Trip & travel rides", "Longer hauls and destination rides — the planning, the route, the stops, the roadside food, and the road itself. Trip videos are where riding vlogs turn into travel storytelling."],
                                 ["⛽ The in-between moments", "Fuel stops, chai breaks, weather changes, small talk with fellow riders — the texture most channels cut out is exactly what makes a ride feel real."],
-                                ["📱 Instagram quick hits", "Short clips, reels and day-to-day updates between the full YouTube uploads — the fastest way to stay connected with where the channel is riding this week."],
+                                ["📱 Instagram quick hits", "Short clips, reels and day-to-day updates between YouTube uploads — the fastest way to stay connected with where the channel is riding this week."],
                             ].map(([title, body]) => (
                                 <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                                     <h3 className="text-lg font-semibold text-white mb-2">{title}</h3>
@@ -261,7 +269,7 @@ export default function BeyondZ900Spotlight() {
                         </p>
                         <ol className="space-y-4 mb-4">
                             {[
-                                ["Relatability at massive scale", "India is a two-wheeler country. Tens of millions of people spend part of every day on a bike or scooter — so rider-perspective video mirrors daily life in a way studio content never can."],
+                                ["Relatability at massive scale", "India is a two-wheeler country: it sold a record 2.17 crore two-wheelers (2,17,05,974 units) in FY2025-26 alone, up 10.7% on the previous year, according to SIAM — so rider-perspective video mirrors daily life in a way studio content never can."],
                                 ["Road-trip aspiration", "Mountain passes, coastal highways, monsoon ghats — India's riding routes are bucket-list material. Trip vlogs let viewers scout roads they dream about riding, and re-live ones they already have."],
                                 ["Authenticity you can't fake", "A helmet camera at speed doesn't allow retakes. Reactions are real, mistakes stay in, weather does what it wants. In an era of scripted 'authenticity', the motovlog is one of the few formats where honesty is built into the medium itself."],
                                 ["Low barrier, high ceiling", "Anyone with a bike and an action camera can start — but only consistency, personality and genuine love for riding keep an audience. That filter keeps the genre refreshingly real."],
@@ -323,7 +331,7 @@ export default function BeyondZ900Spotlight() {
                         <div className="rounded-3xl border border-primary-500/40 bg-gradient-to-br from-primary-900/40 to-indigo-900/30 p-8 text-center">
                             <h2 className="text-3xl font-bold text-white mb-3">Follow the ride</h2>
                             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                                Full vlogs on YouTube, daily clips on Instagram — pick your platform (or both) and catch the
+                                Daily riding Shorts and POV rides on YouTube, reels and day-to-day updates on Instagram — pick your platform (or both) and catch the
                                 channel while it&apos;s still early.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -357,7 +365,7 @@ export default function BeyondZ900Spotlight() {
                         <div className="grid sm:grid-cols-2 gap-4">
                             {[
                                 ["👍 Like the videos you finish", "The simplest signal YouTube uses to decide whether to show a small channel to new viewers."],
-                                ["💬 Leave a comment", "Comments are among the strongest algorithm signals — and on a small channel, the creator actually reads and replies. Route suggestions are gold."],
+                                ["💬 Leave a comment", "YouTube says its recommendations learn from signals such as clicks, watch time, survey responses, sharing, likes and dislikes; comments aren't on that list. A comment mainly helps the creator and the community, and on a channel this small I read them. Route suggestions are gold."],
                                 ["🔔 Subscribe + bell", "Subscribers who return quickly after an upload tell the platform the channel deserves reach."],
                                 ["📤 Share to riding groups", "One share into a WhatsApp riding group or biker community does more for a small channel than a hundred passive views."],
                             ].map(([title, body]) => (
@@ -366,6 +374,16 @@ export default function BeyondZ900Spotlight() {
                                     <p className="text-sm text-gray-300 leading-6">{body}</p>
                                 </div>
                             ))}
+                        </div>
+                        <div className="mt-4 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6">
+                            <h3 className="text-lg font-semibold text-white mb-2">🔥 Hype, the button built for small channels (once they qualify)</h3>
+                            <p className="text-sm text-gray-300 leading-6">
+                                YouTube&apos;s Hype feature is available in India: viewers can hype a long-form video a limited
+                                number of times for free during its first 7 days, top-hyped videos appear on a leaderboard under
+                                Explore, and channels with fewer subscribers get more bonus points. Only YouTube Partner Program
+                                channels with 500 to 500,000 subscribers are eligible, and Shorts cannot be hyped. That makes it
+                                a next milestone for BeyondZ900, and a reason to publish some long-form rides alongside the Shorts.
+                            </p>
                         </div>
                     </section>
 
@@ -394,6 +412,54 @@ export default function BeyondZ900Spotlight() {
                                 </li>
                             ))}
                         </ol>
+
+                        <h3 className="text-2xl font-bold text-white mt-8 mb-4">The action-camera field in September 2026</h3>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            Any action cam works, and a phone on a chest or handlebar mount remains a perfectly good way to
+                            start. If you do want a dedicated camera, three current options suit riders (US prices):
+                        </p>
+                        <div className="overflow-x-auto rounded-2xl border border-white/10 mb-6">
+                            <table className="w-full text-left text-sm">
+                                <thead className="bg-white/5 text-gray-200">
+                                    <tr>
+                                        <th className="p-4 font-semibold">Camera</th>
+                                        <th className="p-4">Why riders look at it</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-gray-300">
+                                    {[
+                                        ["DJI Osmo Action 6", "DJI's first action camera with a variable aperture (f/2.0-f/4.0), a 1/1.1-inch square sensor, 20 m waterproofing, 4-hour battery life and 50 GB of built-in storage."],
+                                        ["Insta360 X6", "On sale 12 August 2026 at US$699.99 Standard / US$799.99 Essentials. Shoots 8K50 360 video on dual 1/1.1-inch Sony sensors, up to 5K60 in single-lens mode, and adds motorcycle features: a holographic speed dashboard, auto-looping dashcam mode, automatic licence-plate blur and a Hidden Engine Mic."],
+                                        ["GoPro MISSION 1 series", "On retail shelves from 28 May 2026 (MISSION 1 US$599.99, MISSION 1 PRO US$699.99). 50 MP 1-inch sensor and GP3 processor, recording up to 8K30 on MISSION 1 and 8K60 on MISSION 1 PRO. GoPro's Hero line still tops out at the HERO13 Black."],
+                                    ].map(([cam, why], i) => (
+                                        <tr key={cam} className={`border-t border-white/5 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
+                                            <td className="p-4 font-medium text-white">{cam}</td>
+                                            <td className="p-4">{why}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3 className="text-2xl font-bold text-white mt-8 mb-4">What YouTube actually pays for, and what changes on 1 February 2027</h3>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            As of September 2026, YouTube&apos;s fan-funding tier needs <strong className="text-white">500 subscribers</strong>,
+                            3 public uploads in the last 90 days, and either 3,000 watch hours in 12 months or 3 million Shorts
+                            views in 90 days. Ad revenue sharing needs <strong className="text-white">1,000 subscribers</strong> plus either
+                            4,000 watch hours in 12 months or 10 million Shorts views in 90 days, and the two view types never
+                            combine, so a Shorts-led channel and a long-form channel are climbing separate ladders.
+                        </p>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            YouTube announced on 10 August 2026 that from 1 February 2027, new applicants for ad revenue sharing
+                            will need <strong className="text-white">8,000 watch hours in the last 365 days or 20 million Shorts views in the
+                            last 90 days</strong>. Creators already in the programme are unaffected, fan-funding and Shopping thresholds
+                            stay the same, and creators get 60% of net Premium Lite revenue (Premium stays at 30%).
+                        </p>
+                        <p className="text-gray-300 leading-8">
+                            For honest context: with about 120 subscribers in September 2026, BeyondZ900 is still working toward
+                            the first tier.
+                        </p>
+
                         <p className="text-gray-300 leading-8 mt-6">
                             And if the creator path pulls you in beyond riding, the fundamentals of building an audience are the
                             same everywhere — I&apos;ve written about the money side of content in{" "}

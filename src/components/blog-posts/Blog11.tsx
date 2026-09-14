@@ -25,7 +25,23 @@ const faqSchema = {
       name: "Is WhatsApp marketing automation allowed in 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, but businesses must follow WhatsApp Business Platform rules, template approval requirements, and opt-in policies. Structured support, sales, booking, and notification workflows are the safest approach.",
+        text: "Yes, but businesses must follow WhatsApp Business Platform rules, template approval requirements, and opt-in policies. Since 15 January 2026, WhatsApp's Business Solution Terms (last modified 6 March 2026) prohibit AI providers from using the WhatsApp Business Platform to offer AI assistants when the AI is the primary rather than incidental function, except for users with EEA or Brazil phone numbers. Businesses using AI bots for their own support, bookings, order tracking, notifications, and sales remain allowed.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I connect ChatGPT or another general AI assistant to WhatsApp?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Not as the main function. WhatsApp's Business Solution Terms prohibit AI providers from using the Business Solution when general-purpose AI is the primary functionality (users with EEA or Brazil numbers are an exception), while AI that powers your own support, sales, or booking bot is fine.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Meta Business Agent free, and do I still need a third-party tool?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Getting started with Meta Business Agent (announced 3 June 2026) is free and paid subscriptions are coming, but since 1 August 2026 Business Agent messages are billed at $2 per 1M tokens (about 4-5 US cents per message). Third-party tools still matter for team inboxes, broadcasts, CRM sync, and custom flows.",
       },
     },
     {
@@ -51,13 +67,13 @@ const tools = [
   {
     name: "WATI",
     bestFor: "Support + sales teams",
-    pricing: "Paid plans",
+    pricing: "Prices vary by region. In India: Growth Rs.2,199/month billed annually (Rs.2,999 month-to-month), Pro Rs.4,899/month billed annually (Rs.6,499 monthly), Business Rs.14,799/month billed annually (Rs.18,499 monthly), plus a Rs.999 one-time Single User plan with no subscription that returns Rs.999 as message credits (up to about 500 messages). 7-day free trial, zero setup fees; message charges are billed on top.",
     features: "No-code bots, AI agents, team inbox, campaigns",
     overview:
       "WATI is one of the most visible platforms in the WhatsApp automation space. It is built around business messaging, support, sales, and automation, making it a practical choice for small and mid-sized teams that want results quickly.",
     bullets: [
       "No-code chatbot builder for WhatsApp flows",
-      "AI support agent and AI copilot features",
+      "Astra AI Agents (a separately priced add-on on Pro and Business for web, WhatsApp and voice) plus AI Co-pilot credits (500/month on Pro, 1,500/month on Business)",
       "Shared inbox for teams and handoffs",
       "Campaigns and Click-to-WhatsApp ad workflows",
     ],
@@ -68,7 +84,7 @@ const tools = [
   {
     name: "Interakt",
     bestFor: "India-focused businesses",
-    pricing: "Paid plans",
+    pricing: "Growth Rs.2,799/month plus taxes, Advanced Rs.3,799/month plus taxes (8% off on quarterly and 20% off on yearly billing), Enterprise on request, and a Sales CRM plan at Rs.2,499/month plus taxes with 5 sales agents. Unlimited agents on its WhatsApp plans, a free trial, and WhatsApp AI Agents as a paid add-on only on Growth and Advanced.",
     features: "AI agents, no-code bot, CRM, order and support flows",
     overview:
       "Interakt is especially attractive for Indian businesses and growing SMBs that want WhatsApp commerce, support, and lead capture in one place. Its AI layer and workflow builder make it beginner-friendly.",
@@ -85,7 +101,7 @@ const tools = [
   {
     name: "respond.io",
     bestFor: "Omnichannel teams",
-    pricing: "Paid plans",
+    pricing: "Starter $79/month billed yearly ($99 month-to-month) for 5 users includes the WhatsApp Cloud API but not AI Agents or Workflows. Growth $159/month billed yearly ($199 monthly) for 10 users and 1,000 monthly active contacts is the cheapest plan with AI Agents and Workflows. Advanced $279/month billed yearly ($349 monthly); Enterprise custom. 7-day free trial of Growth features; Meta's WhatsApp fees are charged separately.",
     features: "AI agent, workflow automation, inbox, multichannel routing",
     overview:
       "respond.io is a good fit if you do not want to automate only WhatsApp. It is built for teams handling conversations across multiple channels while still giving WhatsApp automation serious attention.",
@@ -136,7 +152,7 @@ const tools = [
   {
     name: "Landbot",
     bestFor: "No-code lead capture",
-    pricing: "Free trial and paid plans",
+    pricing: "Free-forever plan (100 chats a month, 1 seat, no AI chats, WhatsApp test number only) and a 14-day trial on paid plans. Starter EUR32/month billed annually (EUR40 monthly), Professional EUR80/month annually (EUR100 monthly), Professional WA EUR160/month annually with one WhatsApp number included, Business from EUR400/month. WhatsApp on Professional costs an extra EUR100/month; extra AI chats cost EUR0.10 each.",
     features: "No-code builder, team inbox, analytics, notifications",
     overview:
       "Landbot focuses heavily on conversational flow building. It is especially useful for lead capture, qualification, support, and marketing journeys where message design matters a lot.",
@@ -154,13 +170,13 @@ const tools = [
     name: "Twilio",
     bestFor: "Developers and custom stacks",
     pricing: "Usage-based and developer-oriented",
-    features: "WhatsApp API, AI assistants, custom integrations, programmable messaging",
+    features: "WhatsApp API, Agent Connect and Conversation Orchestrator (generally available 6 May 2026), custom integrations, programmable messaging",
     overview:
-      "Twilio is not the easiest path for total beginners, but it is one of the most powerful if you want deep customization. It works well for teams that want to build their own AI workflow, integrate CRMs, and control the infrastructure.",
+      "Twilio is not the easiest path for total beginners, but it is one of the most powerful if you want deep customization. It works well for teams that want to build their own AI workflow, integrate CRMs, and control the infrastructure. On 6 May 2026 Twilio made Agent Connect (an open-source, model-agnostic framework for plugging any AI agent into voice and messaging channels), Conversation Orchestrator, Conversation Memory and Conversation Intelligence generally available, and on 14 August 2026 Bulk Messaging gained WhatsApp content-template support with cross-channel fallback such as WhatsApp to SMS.",
     bullets: [
       "WhatsApp Business Platform integration",
       "Programmable messaging for WhatsApp",
-      "AI Assistants support for custom deployments",
+      "Agent Connect and Conversation Orchestrator (GA May 2026) for plugging your own AI agent into Twilio's messaging channels, including WhatsApp, with routing, escalation and human handoff",
       "Flexible developer tooling and APIs",
     ],
     pros: ["Extremely flexible", "Developer-friendly", "Strong integration potential"],
@@ -170,8 +186,8 @@ const tools = [
   {
     name: "Tidio",
     bestFor: "Support-focused small businesses",
-    pricing: "Free and paid tiers",
-    features: "WhatsApp inbox, flows, support automation, multi-number support",
+    pricing: "Free plan (50 one-off Lyro AI Agent conversations and 100 Flows visitors a month), Starter $24.17/month and Growth from $49.17/month when billed annually, Plus from $300/month plus usage, and custom-priced Premium. 7-day free trial with no card; WhatsApp integration on every plan including Free; stand-alone Lyro AI Agent from $32.50/month for 50 AI conversations.",
+    features: "WhatsApp inbox, Flows, Lyro AI Agent, ticketing",
     overview:
       "Tidio is known more as a support and live chat platform, but its WhatsApp integration can still be useful for businesses that want to automate replies and centralize conversations inside one helpdesk environment.",
     bullets: [
@@ -187,15 +203,16 @@ const tools = [
   {
     name: "WhatsApp Business Platform",
     bestFor: "Official foundation",
-    pricing: "Meta conversation or messaging fees plus provider costs",
+    pricing: "Since 1 July 2025, Meta charges per delivered template message, priced by category (marketing, utility or authentication) and the recipient's country. Free-form service replies and utility templates sent inside the 24-hour customer service window are free until 30 September 2026 and billed per message from 1 October 2026 at the market's utility/authentication rate. Provider costs are extra.",
     features: "Official API, templates, notifications, structured automation",
     overview:
-      "This is not a plug-and-play AI tool by itself, but it is the official base layer that most serious WhatsApp automation tools depend on. If you want compliant, scalable WhatsApp business automation, you need to understand this platform.",
+      "This is not a plug-and-play AI tool by itself, but it is the official base layer that most serious WhatsApp automation tools depend on. If you want compliant, scalable WhatsApp business automation, you need to understand this platform. Meta also offers its own AI layer, Meta Business Agent, which it expanded to businesses of all sizes on 3 June 2026 with free sign-up; on the Platform, Business Agent messages have cost $2 per million tokens (about 4-5 US cents a message) since 1 August 2026. From 1 October 2026, service replies and utility templates sent inside the 24-hour window are also billed per message.",
     bullets: [
       "Official business messaging infrastructure",
       "Template-based outbound communication",
       "Structured conversations for support and sales",
       "Foundation for advanced automation tools",
+      "72-hour free entry point window after a Click-to-WhatsApp ad keeps message delivery free (Business Agent token charges still apply)",
     ],
     pros: ["Official", "Scalable", "Most reliable route for serious business messaging"],
     cons: ["Not beginner-simple on its own", "Usually works best through a provider or platform"],
@@ -230,6 +247,7 @@ export default function Blog11() {
         <h2 className="text-3xl font-bold text-white mb-6">Table of Contents</h2>
         <ul className="space-y-3 text-primary-400">
           <li><a href="#why-it-matters" className="hover:text-primary-300 transition-colors">Why WhatsApp Business Automation Matters</a></li>
+          <li><a href="#whats-new-2026" className="hover:text-primary-300 transition-colors">What Changed in WhatsApp Automation in 2026</a></li>
           <li><a href="#comparison" className="hover:text-primary-300 transition-colors">Comparison Table of the Best AI Tools</a></li>
           <li><a href="#tools" className="hover:text-primary-300 transition-colors">Top AI Tools for WhatsApp Business Automation</a></li>
           <li><a href="#setup-guide" className="hover:text-primary-300 transition-colors">Step-by-Step Beginner Setup Guide</a></li>
@@ -258,6 +276,28 @@ export default function Blog11() {
         </p>
       </section>
 
+      <section id="whats-new-2026" className="mb-12">
+        <h2 className="text-3xl font-bold text-white mb-6">
+          What Changed in WhatsApp Automation in 2026 (Read This Before Picking a Tool)
+        </h2>
+        <h3 className="text-2xl font-semibold text-white mb-3">1. General-purpose AI chatbots are restricted</h3>
+        <p className="text-gray-300 mb-4 leading-relaxed">
+          Since 15 January 2026, WhatsApp&apos;s{" "}
+          <a href="https://www.whatsapp.com/legal/business-solution-terms" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
+            Business Solution Terms
+          </a>{" "}
+          (last modified 6 March 2026) bar &quot;AI Providers&quot; (makers of large language models, generative AI platforms and general-purpose AI assistants) from using the platform when that AI is the primary rather than incidental functionality, with an exception for users on EEA or Brazil numbers. Bots that do a business job, such as support, bookings, order tracking, notifications, or sales, remain allowed.
+        </p>
+        <h3 className="text-2xl font-semibold text-white mb-3">2. Meta now has its own AI agent</h3>
+        <p className="text-gray-300 mb-4 leading-relaxed">
+          Meta announced Meta Business Agent on 3 June 2026 for WhatsApp, Messenger and now Instagram. Getting started is free, paid subscriptions are promised &quot;in the coming months&quot;, and Meta says over one million businesses already use it. The Meta Business Agent Platform, which connects to systems like Shopify and Zendesk, launched on 1 July 2026. Since 1 August 2026, Business Agent messages cost $2.00 per 1M tokens, about 4-5 US cents per message. It is a free front door for small businesses, but the tools in this list still matter for team inboxes, broadcasts, CRM sync and custom flows.
+        </p>
+        <h3 className="text-2xl font-semibold text-white mb-3">3. In-window replies stop being free on 1 October 2026</h3>
+        <p className="text-gray-300 leading-relaxed">
+          Per-message pricing has applied since 1 July 2025. From 1 October 2026 Meta will also charge per message for service replies and utility messages sent inside the 24-hour customer service window, at each market&apos;s utility and authentication rate. Messages in the 72-hour free entry point window from Click to WhatsApp ads or Facebook call-to-action buttons stay free for message delivery, though Business Agent token charges still apply. Budget per reply, keep bots concise, and use those entry points where you can.
+        </p>
+      </section>
+
       <section id="comparison" className="mb-12">
         <h2 className="text-3xl font-bold text-white mb-6">
           Powerful Comparison Table: Best AI Tools for WhatsApp Business Automation
@@ -279,19 +319,19 @@ export default function Blog11() {
               <tr className="border-t border-slate-800">
                 <td className="px-4 py-3">🟢 WATI</td>
                 <td className="px-4 py-3">Support and sales teams</td>
-                <td className="px-4 py-3">Paid</td>
+                <td className="px-4 py-3">From Rs.2,199/month billed annually in India; Rs.999 one-time single-user plan; 7-day trial</td>
                 <td className="px-4 py-3">AI agents, no-code bots, inbox, campaigns</td>
               </tr>
               <tr className="border-t border-slate-800 bg-slate-900/60">
                 <td className="px-4 py-3">🟠 Interakt</td>
                 <td className="px-4 py-3">SMBs and D2C brands</td>
-                <td className="px-4 py-3">Paid</td>
+                <td className="px-4 py-3">Growth Rs.2,799/month + tax; AI Agents are a paid add-on on Growth and Advanced</td>
                 <td className="px-4 py-3">AI workflows, support agents, commerce use cases</td>
               </tr>
               <tr className="border-t border-slate-800">
                 <td className="px-4 py-3">🔵 respond.io</td>
                 <td className="px-4 py-3">Omnichannel operations</td>
-                <td className="px-4 py-3">Paid</td>
+                <td className="px-4 py-3">Starter $79/month billed yearly includes the WhatsApp API; AI Agents need Growth at $159/month billed yearly; 7-day trial</td>
                 <td className="px-4 py-3">Inbox, workflow automation, lead routing</td>
               </tr>
               <tr className="border-t border-slate-800 bg-slate-900/60">
@@ -309,25 +349,25 @@ export default function Blog11() {
               <tr className="border-t border-slate-800 bg-slate-900/60">
                 <td className="px-4 py-3">🟡 Landbot</td>
                 <td className="px-4 py-3">No-code lead generation</td>
-                <td className="px-4 py-3">Trial + paid</td>
+                <td className="px-4 py-3">Free plan; WhatsApp from Professional WA at EUR160/month billed annually</td>
                 <td className="px-4 py-3">Visual flows, inbox, analytics, notifications</td>
               </tr>
               <tr className="border-t border-slate-800">
                 <td className="px-4 py-3">🛠️ Twilio</td>
                 <td className="px-4 py-3">Developers and custom stacks</td>
                 <td className="px-4 py-3">Usage-based</td>
-                <td className="px-4 py-3">API, AI assistants, custom integrations</td>
+                <td className="px-4 py-3">API, Agent Connect / Conversation Orchestrator, custom integrations</td>
               </tr>
               <tr className="border-t border-slate-800 bg-slate-900/60">
                 <td className="px-4 py-3">💬 Tidio</td>
                 <td className="px-4 py-3">Support automation</td>
-                <td className="px-4 py-3">Free + paid</td>
+                <td className="px-4 py-3">Free plan including WhatsApp; Starter $24.17/month billed annually</td>
                 <td className="px-4 py-3">Flows, inbox, support-first setup</td>
               </tr>
               <tr className="border-t border-slate-800">
                 <td className="px-4 py-3">✅ WhatsApp Business Platform</td>
                 <td className="px-4 py-3">Official infrastructure</td>
-                <td className="px-4 py-3">Platform fees</td>
+                <td className="px-4 py-3">Per message (category × country); in-window replies billed from 1 October 2026</td>
                 <td className="px-4 py-3">Templates, business messaging, API foundation</td>
               </tr>
             </tbody>
@@ -460,6 +500,8 @@ export default function Blog11() {
           <li><strong>Making the bot too robotic.</strong> Short, warm, natural replies usually perform better.</li>
           <li><strong>No fallback to a human.</strong> This creates frustration during edge cases.</li>
           <li><strong>Choosing a tool only by hype.</strong> Pick based on your use case: support, marketing, or custom AI.</li>
+          <li><strong>Building a general-purpose AI assistant on the WhatsApp Business API.</strong> Meta&apos;s terms have prohibited this since 15 January 2026 outside the EEA and Brazil; keep the bot scoped to your own business&apos;s support and sales tasks.</li>
+          <li><strong>Assuming replies inside the 24-hour window stay free.</strong> From 1 October 2026 Meta charges per message for service replies and in-window utility templates, so track cost per resolved conversation, not just template spend.</li>
         </ul>
       </section>
 
@@ -564,8 +606,22 @@ export default function Blog11() {
         <h3 className="text-2xl font-semibold text-white mb-3">
           Do I need the WhatsApp Business Platform API?
         </h3>
-        <p className="text-gray-300 leading-relaxed">
+        <p className="text-gray-300 mb-4 leading-relaxed">
           If you want serious scaling, team use, AI automation, broadcasts, or advanced workflows, yes, most businesses eventually work through the official WhatsApp Business Platform directly or through an approved provider.
+        </p>
+
+        <h3 className="text-2xl font-semibold text-white mb-3">
+          Can I connect ChatGPT or another general AI assistant to WhatsApp?
+        </h3>
+        <p className="text-gray-300 mb-4 leading-relaxed">
+          Not as the main function. WhatsApp&apos;s Business Solution Terms prohibit AI providers from using the Business Solution when general-purpose AI is the primary functionality (users with EEA or Brazil numbers are an exception), while AI that powers your own support, sales, or booking bot is fine.
+        </p>
+
+        <h3 className="text-2xl font-semibold text-white mb-3">
+          Is Meta Business Agent free, and do I still need a third-party tool?
+        </h3>
+        <p className="text-gray-300 leading-relaxed">
+          Getting started with Meta Business Agent (announced 3 June 2026) is free and paid subscriptions are coming, but since 1 August 2026 Business Agent messages are billed at $2 per 1M tokens (about 4-5 US cents per message). Third-party tools still matter for team inboxes, broadcasts, CRM sync, and custom flows.
         </p>
       </section>
 

@@ -30,10 +30,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Stripe payment integration kab karni chahiye?",
+      name: "Razorpay ya payment gateway integration kab karni chahiye?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Stripe ya kisi bhi payment gateway ko tab add karo jab product listing, cart, and checkout summary ka base flow stable ho jaye.",
+        text: "Razorpay ya kisi bhi payment gateway ko tab add karo jab product listing, cart, and checkout summary ka base flow stable ho jaye. Stripe India me invite-only hai, isliye Indian store ke liye Razorpay practical first gateway hai.",
       },
     },
   ],
@@ -95,9 +95,22 @@ export default function Blog15() {
           MongoDB me products store honge. Name, price, image, stock, category jaise fields ko document format me rakhna beginner ke liye easy hota hai.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mb-3">Stripe (Optional)</h3>
+        <h3 className="text-2xl font-semibold text-white mb-3">Payment Gateway (Optional)</h3>
+        <p className="text-gray-300 mb-4 leading-relaxed">
+          Payment ke liye Indian store me Razorpay practical first choice hai, aur use baad me add kiya ja sakta hai. Pehle foundation build karo. Payment tabhi smooth lagegi jab listing aur cart pehle se sahi kaam kar rahe hon.
+        </p>
+
+        <h3 className="text-2xl font-semibold text-white mb-3">Versions used in this guide (September 2026)</h3>
+        <ul className="list-disc list-inside text-gray-300 space-y-3 mb-4">
+          <li>React 19.3 (released 9 September 2026)</li>
+          <li>Vite 8 (released 12 March 2026, Rolldown bundler, Node.js 20.19+ ya 22.12+ chahiye)</li>
+          <li>Node.js 24 &apos;Krypton&apos; LTS install karo. Node.js 26 5 May 2026 se Current hai aur October 2026 me LTS banega.</li>
+          <li>Express 5.2.1 (Node.js 18+)</li>
+          <li>Mongoose 9.10.0 (Node.js 20.19+)</li>
+          <li>react-router 8.3.1 (v8 me react-router-dom package remove ho gaya)</li>
+        </ul>
         <p className="text-gray-300 leading-relaxed">
-          Payment ke liye Stripe ya Razorpay baad me add kiya ja sakta hai. Pehle foundation build karo. Payment tabhi smooth lagegi jab listing aur cart pehle se sahi kaam kar rahe hon.
+          React team ne Create React App ko 14 February 2025 ko sunset kar diya tha, isliye ye guide Vite use karti hai.
         </p>
       </section>
 
@@ -105,19 +118,30 @@ export default function Blog15() {
         <h2 className="text-3xl font-bold text-white mb-6">Project Setup (Step by Step)</h2>
 
         <h3 className="text-2xl font-semibold text-white mb-3">1. Frontend Setup</h3>
-        <pre className="bg-slate-950/80 text-slate-100 p-4 rounded-xl overflow-x-auto mb-6"><code className="language-bash">{`npx create-react-app client
+        <pre className="bg-slate-950/80 text-slate-100 p-4 rounded-xl overflow-x-auto mb-6"><code className="language-bash">{`npm create vite@latest client -- --template react
 cd client
-npm install axios react-router-dom`}</code></pre>
+npm install
+npm install axios react-router`}</code></pre>
         <p className="text-gray-300 mb-4 leading-relaxed">
-          `axios` API calls ke liye aur `react-router-dom` future pages jaise cart, product details, login ke liye helpful rahega.
+          `axios` API calls ke liye aur `react-router` future pages jaise cart, product details, login ke liye helpful rahega. React Router v8 (17 June 2026) me `react-router-dom` package remove ho gaya, isliye import bhi `react-router` se karo, jaise `import {"{ BrowserRouter, Routes, Route }"} from &quot;react-router&quot;`.
         </p>
 
         <h3 className="text-2xl font-semibold text-white mb-3">2. Backend Setup</h3>
         <pre className="bg-slate-950/80 text-slate-100 p-4 rounded-xl overflow-x-auto mb-6"><code className="language-bash">{`mkdir server
 cd server
 npm init -y
-npm install express mongoose cors dotenv
-npm install -D nodemon`}</code></pre>
+npm install express mongoose cors`}</code></pre>
+        <p className="text-gray-300 mb-4 leading-relaxed">
+          September 2026 me ye command Express 5 (5.2.1) aur Mongoose 9 (9.10.0) install karti hai. Mongoose 9 ke liye Node.js 20.19 ya newer chahiye, isliye pehle `node -v` check karo. `nodemon` aur `dotenv` ab optional hain.
+        </p>
+
+        <h3 className="text-2xl font-semibold text-white mb-3">Run the server without nodemon (Node 22+)</h3>
+        <pre className="bg-slate-950/80 text-slate-100 p-4 rounded-xl overflow-x-auto mb-4"><code className="language-json">{`"scripts": {
+  "dev": "node --watch --env-file=.env server.js"
+}`}</code></pre>
+        <p className="text-gray-300 mb-6 leading-relaxed">
+          `--watch` file change hone par server restart karta hai (Node 22.0.0 se stable), aur `--env-file` `.env` ko `process.env` me load karta hai (Node 24.10.0 aur 22.21.0 se non-experimental). Is script ke saath `require(&quot;dotenv&quot;).config()` ki zarurat nahi, isliye neeche `server.js` me wo line comment me hai. Purane Node par nodemon aur dotenv fallback hain.
+        </p>
 
         <h3 className="text-2xl font-semibold text-white mb-3">3. Basic Folder Structure</h3>
         <pre className="bg-slate-950/80 text-slate-100 p-4 rounded-xl overflow-x-auto mb-4"><code className="language-text">{`project/
@@ -130,7 +154,8 @@ npm install -D nodemon`}</code></pre>
         Home.jsx
         Cart.jsx
       App.jsx
-      index.js
+      main.jsx
+    index.html
   server/
     models/
       Product.js
@@ -139,7 +164,7 @@ npm install -D nodemon`}</code></pre>
     server.js
     .env`}</code></pre>
         <p className="text-gray-300 leading-relaxed">
-          Ye structure beginner-friendly hai aur future scaling ke liye bhi clean base deta hai.
+          Vite React project me entry file `src/main.jsx` hoti hai, aur `index.html` `public/` me nahi balki `client/` root par hoti hai. Ye structure beginner-friendly hai aur future scaling ke liye bhi clean base deta hai.
         </p>
       </section>
 
@@ -230,7 +255,8 @@ export default ProductCard;`}</code></pre>
         <pre className="bg-slate-950/80 text-slate-100 p-4 rounded-xl overflow-x-auto mb-6"><code className="language-js">{`const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-require("dotenv").config();
+// .env ko "npm run dev" (node --watch --env-file=.env) load karega.
+// Purane Node par: npm install dotenv, phir yahan require("dotenv").config();
 
 const app = express();
 
@@ -282,6 +308,9 @@ module.exports = router;`}</code></pre>
         <p className="text-gray-300 leading-relaxed">
           Is route ko `server.js` me import karke use karo:
           <code className="ml-2">app.use("/api/products", productRoutes);</code>
+        </p>
+        <p className="text-gray-300 mt-4 leading-relaxed">
+          Express 5 note: async handler me error throw ho ya awaited promise reject ho, to error automatically error-handling middleware tak chala jata hai. Isliye `const products = await Product.find(); res.json(products);` bina try/catch ya `next(err)` ke bhi kaam karta hai.
         </p>
       </section>
 
@@ -366,9 +395,12 @@ function App() {
           Login and signup add karne ke liye aap JWT-based authentication use kar sakte ho. Isse user account, order history, aur saved address manage kar payega.
         </p>
 
-        <h3 className="text-2xl font-semibold text-white mb-3">Payment Integration Overview</h3>
+        <h3 className="text-2xl font-semibold text-white mb-3">Payment Integration Overview (Razorpay first)</h3>
+        <p className="text-gray-300 mb-4 leading-relaxed">
+          Payment gateway integrate karte waqt general flow hota hai: cart items lo, backend me total calculate karo, payment session create karo, success callback ke baad order save karo. India audience ke liye Razorpay, ya UPI wala koi aur Indian gateway, practical default hai. Stripe tabhi option hai jab Stripe ne aapke business ko invite kiya ho (focus international expansion par hai), isliye ye beginner path nahi hai.
+        </p>
         <p className="text-gray-300 leading-relaxed">
-          Payment gateway integrate karte waqt general flow hota hai: cart items lo, backend me total calculate karo, payment session create karo, success callback ke baad order save karo. India audience ke liye Stripe ke saath Razorpay bhi kaafi popular choice hai.
+          Razorpay ki standard pricing: har successful domestic transaction par 2% plus 18% GST, koi setup, annual maintenance ya refund fee nahi, aur international cards par up to 3%. Razorpay ke blog ke according, jo merchants 1 July 2026 ya uske baad KYC complete karke activate hote hain, unhe ₹199 plus tax ki one-time KYC fee ke baad domestic payments par ₹5 lakh cumulative volume ya 90 days (jo pehle ho) tak koi platform fee nahi lagti, one redemption per PAN ya bank account, uske baad standard 2% plus GST. Ye offer pricing page par nahi dikhta, isliye dashboard me confirm karo.
         </p>
       </section>
 
@@ -377,7 +409,7 @@ function App() {
 
         <h3 className="text-2xl font-semibold text-white mb-3">CORS Error Fix</h3>
         <p className="text-gray-300 mb-4 leading-relaxed">
-          Agar browser me error aaye ki frontend backend se baat nahi kar paa raha, to backend me `cors()` middleware enable karo. React app usually `localhost:3000` par hoti hai aur server `localhost:5000` par, isliye ye issue common hai.
+          Agar browser me error aaye ki frontend backend se baat nahi kar paa raha, to backend me `cors()` middleware enable karo. Vite dev server `localhost:5173` par chalta hai aur Express API `localhost:5000` par, dono different origins hain, isliye development me bhi `cors()` chahiye (ya Vite ka `server.proxy` `/api` requests ko port 5000 par forward kar sakta hai).
         </p>
 
         <h3 className="text-2xl font-semibold text-white mb-3">Module Not Found Fix</h3>
@@ -395,6 +427,13 @@ function App() {
         <p className="text-gray-300 leading-relaxed">
           `.env` file me `MONGO_URI` sahi hai ya nahi check karo. Atlas use kar rahe ho to network access aur username-password bhi verify karo.
         </p>
+
+        <h3 className="text-2xl font-semibold text-white mb-3 mt-4">Express 5 / Mongoose 9 upgrade gotchas</h3>
+        <ul className="list-disc list-inside text-gray-300 space-y-3">
+          <li>Express 5 me route syntax badla hai: wildcards ka naam dena padta hai (`/*` ki jagah `/*splat`), optional `?` ab braces me likhte hain jaise `/:file{"{"}.:ext{"}"}`, aur paths me regex characters support nahi hote. Async errors automatically error handler tak jaate hain, isliye `.catch(next)` optional hai.</li>
+          <li>Mongoose 9 me pre middleware ko `next()` nahi milta (async functions use karo), `findOneAndUpdate` me `new: true` deprecated hai isliye `returnDocument: &apos;after&apos;` use karo, aur update pipelines default me blocked hain jab tak `{"{ updatePipeline: true }"}` pass na karo.</li>
+          <li>Purana snippet unexplained errors de, to tutorial wale versions pin karo.</li>
+        </ul>
       </section>
 
       <section id="conclusion" className="mb-12">
@@ -453,7 +492,7 @@ function App() {
           Is project ko deploy kaha kar sakte hain?
         </h3>
         <p className="text-gray-300 leading-relaxed">
-          Frontend ko Vercel ya Netlify par, backend ko Render, Railway, ya VPS par, aur database ko MongoDB Atlas par deploy kar sakte ho.
+          Frontend ko Vercel ya Netlify par, backend ko Render, Railway, ya VPS par, aur database ko MongoDB Atlas par deploy kar sakte ho. Kuch caveats: Render free web service 15 minutes bina traffic ke spin down ho jati hai aur wake hone me about a minute lagta hai; Railway ka free plan one-time $5, 30-day trial ke baad $1 credit per month deta hai (Hobby $5/month); Vercel ka $0 Hobby plan personal, non-commercial use ke liye hai, isliye real store ke liye Pro ($20/month) ya apni hosting chahiye; aur Atlas free cluster me 0.5 GB storage milta hai.
         </p>
       </section>
 

@@ -43,17 +43,17 @@ export default function BestAIVideoGenerators2026() {
     {
       question: "What is the best free AI video generator in 2026?",
       answer:
-        "Veo and Kling both offer strong free tiers in 2026, with Kling often topping quality leaderboards; the best pick depends on your style and region availability.",
+        "Kling offers limited free credits (watermark removal and 1080p are for paid members), and Google's no-cost Omni route is YouTube Shorts Remix / YouTube Create rather than the Gemini app. On quality, Kling 3.0 Pro ranks 10th on the Artificial Analysis text-to-video leaderboard (mid-September 2026).",
     },
     {
       question: "Can I make AI videos for free?",
       answer:
-        "Yes, several tools have free tiers with daily credits, though free videos may be shorter, watermarked, or lower resolution.",
+        "Yes, several tools have free tiers or free credits, though free videos may be shorter, watermarked, or lower resolution.",
     },
     {
       question: "Is Sora 2 available everywhere?",
       answer:
-        "No — OpenAI discontinued the Sora consumer app on 26 April 2026, so it is not available anywhere. Veo, Kling and Runway are the practical replacements, and all three work in India.",
+        "No — OpenAI discontinued the Sora consumer app on 26 April 2026, so it is not available anywhere. Kling, Google's Gemini Omni Flash and Runway are the practical replacements.",
     },
     {
       question: "Do free AI videos have a watermark?",
@@ -63,7 +63,7 @@ export default function BestAIVideoGenerators2026() {
     {
       question: "Which AI video tool has the best quality?",
       answer:
-        "Kling 3.0 has ranked at the top of quality leaderboards in 2026, with Veo close behind, though results vary by prompt and subject.",
+        "As of mid-September 2026 the Artificial Analysis text-to-video leaderboard (blind user votes, with audio) ranks Wan 3.0 first and Gemini Omni Flash second, followed by MiniMax H3 Max, MiniMax H3 and Seedance 2.0, with Kling 3.0 Pro 10th and Veo 3.1 17th.",
     },
     {
       question: "How long can AI-generated videos be?",
@@ -73,7 +73,21 @@ export default function BestAIVideoGenerators2026() {
     {
       question: "Can I add sound to AI videos?",
       answer:
-        "Yes, newer models like Veo can generate synced audio, a major 2026 upgrade that made text-to-video far more usable.",
+        "Yes. As of September 2026 synced audio is standard among the leading models, including Gemini Omni Flash, Kling 3.0, MiniMax H3 (native stereo) and Wan 3.0, and Artificial Analysis now ranks them on a separate 'with audio' leaderboard.",
+    },
+    {
+      question: "Is Veo still available?",
+      answer:
+        "Yes, Veo 3.1 is still offered in Google Flow and the Gemini API, but the Gemini app now uses Gemini Omni and Veo 3 is deprecated.",
+    },
+    {
+      question: "Can I use Gemini Omni for free?",
+      answer:
+        "Only for remixing in YouTube Shorts Remix and YouTube Create if you are 18+; in the Gemini app it needs Google AI Plus, Pro or Ultra.",
+    },
+    {
+      question: "When does the Sora API stop working?",
+      answer: "On 24 September 2026. The Sora app and web experience already closed on 26 April 2026.",
     },
     {
       question: "Are AI video generators free for commercial use?",
@@ -83,8 +97,8 @@ export default function BestAIVideoGenerators2026() {
   ];
 
   const keyTakeaways = [
-    "Veo and Kling lead the free AI video space in 2026, with Kling often topping quality leaderboards.",
-    "Sora was discontinued in April 2026, so Veo and Kling are now the realistic picks for Indian users.",
+    "Kling still offers limited free credits and Google's Gemini Omni Flash is free only for remixing inside YouTube Shorts Remix and YouTube Create, while the September 2026 quality leaders on the Artificial Analysis arena are Wan 3.0, Gemini Omni Flash and MiniMax H3.",
+    "Sora was discontinued in April 2026, so Kling (free credits) and Google Gemini Omni Flash (free remixing in YouTube Shorts Remix and YouTube Create, paid in the Gemini app) are now the realistic picks.",
     "Free tiers usually add watermarks and cap clip length and resolution.",
     "Newer models generate synced audio, a big 2026 leap for text-to-video.",
     "You can make a first AI video free in minutes with a clear, specific prompt.",
@@ -101,7 +115,7 @@ export default function BestAIVideoGenerators2026() {
       "The best free AI video generators in 2026 compared: Veo, Kling, Runway and the tools that replaced Sora. See which is best and make your first video free.",
     image: image,
     datePublished: "2026-06-02",
-    dateModified: "2026-06-02",
+    dateModified: "2026-09-13",
     author: {
       "@type": "Person",
       name: "Mohit Koli",
@@ -205,6 +219,8 @@ export default function BestAIVideoGenerators2026() {
             <span>•</span>
             <span>June 2, 2026</span>
             <span>•</span>
+            <span>Updated 13 September 2026</span>
+            <span>•</span>
             <span>16 min read</span>
           </div>
         </header>
@@ -222,7 +238,7 @@ export default function BestAIVideoGenerators2026() {
 
         <section className="prose prose-invert max-w-none">
           <p className="text-xl text-gray-300 leading-relaxed mb-8">
-            Text-to-video has gone from a fun gimmick to something genuinely usable in 2026 — and the best part is that you can try the top models for <strong>free</strong>. Whether you want a cinematic 8-second clip for a reel, a product demo, or a quick test of an idea, tools like <strong>Google Veo</strong>, <strong>Kling AI</strong>, and the wave of <strong>Sora 2 alternatives</strong> let you generate a video without spending a rupee. This guide focuses on what actually matters for beginners: which free tier is best, what limits to expect, and how to make your first clip today.
+            Text-to-video has gone from a fun gimmick to something genuinely usable in 2026 — and the best part is that you can try the top models for <strong>free</strong>. Whether you want a cinematic 8-second clip for a reel, a product demo, or a quick test of an idea, tools like <strong>Google Gemini Omni Flash</strong> (formerly Veo), <strong>Kling AI</strong>, and the wave of <strong>Sora 2 alternatives</strong> let you generate a video without spending a rupee. This guide focuses on what actually matters for beginners: which free tier is best, what limits to expect, and how to make your first clip today.
           </p>
 
           <div className="bg-gradient-to-r from-fuchsia-600/15 to-rose-600/15 border border-pink-500/20 rounded-2xl p-6 mb-10">
@@ -242,7 +258,7 @@ export default function BestAIVideoGenerators2026() {
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-300">
               <li><a href="#quick-picks" className="hover:text-pink-400 transition">→ Quick Picks: Best for Each Need</a></li>
               <li><a href="#comparison-table" className="hover:text-pink-400 transition">→ Comparison Table</a></li>
-              <li><a href="#veo" className="hover:text-pink-400 transition">→ Google Veo</a></li>
+              <li><a href="#veo" className="hover:text-pink-400 transition">→ Google Gemini Omni Flash (Formerly Veo)</a></li>
               <li><a href="#kling" className="hover:text-pink-400 transition">→ Kling AI</a></li>
               <li><a href="#sora-alternatives" className="hover:text-pink-400 transition">→ Sora Is Gone — What Replaced It</a></li>
               <li><a href="#other-free-tools" className="hover:text-pink-400 transition">→ Other Strong Free Tools</a></li>
@@ -255,25 +271,36 @@ export default function BestAIVideoGenerators2026() {
 
           <h2 id="quick-picks" className="text-3xl font-bold mt-12 mb-6">Quick Picks: Best for Each Need</h2>
           <p className="text-gray-300 mb-6">
-            Short on time? Here is the fast answer. These are my current picks based on hands-on testing through mid-2026 — treat leaderboard rankings as today's standings, not a permanent verdict, because new model versions ship constantly.
+            Short on time? Here is the fast answer. These are my current picks as of September 2026 — treat leaderboard rankings as today's standings, not a permanent verdict, because new model versions ship constantly.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
-              <p className="font-bold text-pink-400 mb-2">🏆 Best Overall Quality</p>
-              <p className="text-sm text-gray-400"><strong>Kling AI</strong> — consistently strong motion and detail, and it has topped several public quality leaderboards in 2026.</p>
+              <p className="font-bold text-pink-400 mb-2">🏆 Strong Quality on Free Credits</p>
+              <p className="text-sm text-gray-400"><strong>Kling AI</strong> (Kling 3.0) — remains a strong option you can start on free credits, but as of September 2026 it ranks 10th on the Artificial Analysis text-to-video leaderboard, behind Wan 3.0, Gemini Omni Flash and MiniMax H3.</p>
             </div>
             <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
               <p className="font-bold text-fuchsia-400 mb-2">🔊 Best for Audio + Video</p>
-              <p className="text-sm text-gray-400"><strong>Google Veo</strong> — generates synced sound and dialogue, which makes finished clips feel far more complete.</p>
+              <p className="text-sm text-gray-400"><strong>Google Gemini Omni Flash</strong> (successor to Veo in the Gemini app) — lets you edit clips through conversation, and Omni 1.1 Flash (August 2026) added scene extension, first-and-last-frame control and 4K upscaling.</p>
             </div>
             <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
               <p className="font-bold text-rose-400 mb-2">🇮🇳 Best for India Access</p>
-              <p className="text-sm text-gray-400"><strong>Veo and Kling</strong> — both are widely accessible. Sora is no longer an option: OpenAI shut it down in April 2026.</p>
+              <p className="text-sm text-gray-400"><strong>Kling and Gemini Omni Flash</strong> — Kling lets you start on free credits; Omni Flash rolled out globally to Google AI Plus, Pro and Ultra subscribers in the Gemini app and Google Flow, and free users 18+ can remix with it in YouTube Shorts Remix and YouTube Create. Sora is no longer an option after OpenAI shut the app on 26 April 2026.</p>
             </div>
             <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
               <p className="font-bold text-purple-400 mb-2">🎬 Best for Beginners</p>
-              <p className="text-sm text-gray-400"><strong>Pika and Runway</strong> — friendly interfaces, templates, and free daily credits to learn the ropes.</p>
+              <p className="text-sm text-gray-400"><strong>Pika and Runway</strong> — friendly interfaces and templates, but neither gives daily free credits: Pika&apos;s free plan is 80 credits per month and Runway&apos;s is 125 one-time credits.</p>
             </div>
+          </div>
+
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-10">
+            <h3 className="text-xl font-bold mb-3 text-pink-300">What changed since June 2026</h3>
+            <ul className="list-disc pl-6 text-gray-300 space-y-2">
+              <li><strong>19 May 2026:</strong> Google introduced Gemini Omni Flash at I/O, replacing Veo as the Gemini app&apos;s video model for Google AI Plus, Pro and Ultra subscribers, with free remixing in YouTube Shorts Remix and YouTube Create (18+).</li>
+              <li><strong>31 July 2026:</strong> MiniMax released MiniMax H3 (Hailuo 3.0) with up to 15-second, 2K clips and native stereo audio.</li>
+              <li><strong>2 August 2026:</strong> The EU AI Act&apos;s Article 50 transparency rules apply (with a grace period to December 2026 for marking by generative systems already on the market).</li>
+              <li><strong>13 August 2026:</strong> Alibaba announced Wan 3.0, which makes 30-second clips with audio at 480p-1080p via Alibaba Cloud Model Studio ($0.05-$0.20 per second) and reached Runway on 24 August. It is not a free tool.</li>
+              <li><strong>24 September 2026:</strong> The Sora API is removed, five months after the Sora app closed on 26 April.</li>
+            </ul>
           </div>
 
           <h2 id="comparison-table" className="text-3xl font-bold mt-12 mb-6">Comparison Table</h2>
@@ -292,58 +319,88 @@ export default function BestAIVideoGenerators2026() {
               </thead>
               <tbody className="divide-y divide-white/10">
                 <tr>
-                  <td className="p-4 font-semibold text-pink-300">Google Veo</td>
-                  <td className="p-4">Free credits via Gemini app</td>
+                  <td className="p-4 font-semibold text-pink-300">Google Gemini Omni Flash (formerly Veo)</td>
+                  <td className="p-4">Free remixing in YouTube Shorts Remix / YouTube Create (18+); Gemini app needs Google AI Plus, Pro or Ultra</td>
                   <td className="p-4 text-green-400">Yes (synced)</td>
                   <td className="p-4">Cinematic clips with sound</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-pink-300">Kling AI</td>
-                  <td className="p-4">Daily free credits</td>
-                  <td className="p-4">Limited</td>
-                  <td className="p-4 text-green-400">Top-tier visual quality</td>
+                  <td className="p-4">Limited free credits</td>
+                  <td className="p-4 text-green-400">Yes (native, Kling 3.0)</td>
+                  <td className="p-4 text-green-400">Strong visual quality</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-gray-500">Sora 2 <span className="text-xs uppercase tracking-wider">(discontinued)</span></td>
-                  <td className="p-4 text-gray-500">Shut down Apr 2026</td>
+                  <td className="p-4 text-gray-500">App shut down 26 Apr 2026; API ends 24 Sep 2026</td>
                   <td className="p-4 text-gray-500">—</td>
                   <td className="p-4 text-gray-500">No longer available</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-pink-300">Runway</td>
-                  <td className="p-4">Free credits + watermark</td>
+                  <td className="p-4">125 one-time credits (do not renew)</td>
                   <td className="p-4">Add-on</td>
                   <td className="p-4">Editing + video tools</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-pink-300">Pika</td>
-                  <td className="p-4">Daily free credits</td>
+                  <td className="p-4">80 credits per month (480p, image-to-video only)</td>
                   <td className="p-4">Limited</td>
                   <td className="p-4 text-green-400">Beginner-friendly effects</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-pink-300">Hailuo / MiniMax</td>
-                  <td className="p-4">Free credits</td>
-                  <td className="p-4">Limited</td>
-                  <td className="p-4">Smooth motion clips</td>
+                  <td className="p-4">Free tier (watermarked downloads)</td>
+                  <td className="p-4 text-green-400">Yes (native stereo, MiniMax H3)</td>
+                  <td className="p-4">Top-4 quality, 2K, up to 15 s clips</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <h2 id="veo" className="text-3xl font-bold mt-12 mb-6">Google Veo</h2>
+          <h3 className="text-xl font-bold mb-3 text-pink-300">Leaderboard snapshot (Artificial Analysis, mid-September 2026)</h3>
+          <p className="text-gray-300 mb-4">
+            These rankings come from blind user votes and change weekly. The top-ranked Wan 3.0 and Seedance 2.0 are not free tools.
+          </p>
+          <div className="overflow-x-auto mb-10 border border-white/10 rounded-2xl">
+            <table className="w-full text-left">
+              <thead className="bg-white/5">
+                <tr>
+                  <th className="p-4 font-bold text-white">Leaderboard</th>
+                  <th className="p-4 font-bold text-white">Standings</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-white/10">
+                <tr>
+                  <td className="p-4 font-semibold text-pink-300">Text-to-video (with audio)</td>
+                  <td className="p-4">1 Wan 3.0, 2 Gemini Omni Flash, 3 MiniMax H3 Max, 4 MiniMax H3, 5 Seedance 2.0 … 10 Kling 3.0 Pro, 17 Veo 3.1</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-pink-300">Text-to-video (without audio)</td>
+                  <td className="p-4">Wan 3.0 and Gemini Omni Flash also lead</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-pink-300">Image-to-video (with audio)</td>
+                  <td className="p-4">1 MiniMax H3 Max, 2 Seedance 2.0, 3 MiniMax H3, 4 HiDream-O1-Video, 5 Gemini Omni Flash, 6 Wan 3.0 … Veo 3.1 11th, Kling 3.0 variants 15th-22nd</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 id="veo" className="text-3xl font-bold mt-12 mb-6">Google Gemini Omni Flash (Formerly Veo)</h2>
           <p className="text-gray-300 mb-6">
-            Google&apos;s <strong>Veo</strong> is one of the most beginner-friendly ways to make a high-quality AI video for free, because you can access it right inside the Gemini app with a Google account. The headline feature in 2026 is <strong>synced audio</strong> — Veo can generate matching sound effects, ambience, and even short dialogue, which is a genuine leap over the silent clips that defined the previous generation of text-to-video.
+            As of September 2026 the Gemini app makes videos with <strong>Gemini Omni</strong> (currently Omni 1.1 Flash), which Google introduced at I/O on 19 May 2026 to replace <strong>Veo</strong> in the app, and video generation there needs a Google AI Plus, Pro or Ultra plan. The no-cost way to use Omni is remixing in YouTube Shorts Remix and the YouTube Create app (18+), while Veo 3.1 remains available in Google Flow and the Gemini API, and Veo 3 is marked deprecated. The headline feature is <strong>synced audio</strong> — the model can generate matching sound effects, ambience, and even short dialogue, which is a genuine leap over the silent clips that defined the previous generation of text-to-video.
           </p>
           <div className="bg-gradient-to-r from-fuchsia-600/20 to-rose-600/20 border-l-4 border-pink-500 p-6 my-8 rounded-r-2xl">
             <h3 className="text-xl font-bold mb-2">💡 Why audio matters</h3>
             <p className="text-gray-200 italic">
-              A silent clip almost always needs extra editing before it feels finished. When the model adds footsteps, wind, or a line of dialogue automatically, your free clip is closer to publish-ready straight out of the box — a big reason Veo feels so usable in 2026.
+              A silent clip almost always needs extra editing before it feels finished. When the model adds footsteps, wind, or a line of dialogue automatically, your free clip is closer to publish-ready straight out of the box — a big reason Omni Flash feels so usable.
             </p>
           </div>
           <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
             <li><strong>Strengths:</strong> Natural motion, strong prompt following, synced audio, and easy access through Gemini.</li>
-            <li><strong>Free limits:</strong> A capped number of daily generations and shorter clip lengths; higher quotas and longer clips need a paid Google plan.</li>
+            <li><strong>Free limits:</strong> There is no free video generation in the Gemini app: it requires a Google AI Plus, Pro or Ultra plan, and Google does not publish a fixed daily video count. Free users 18+ can instead remix with Omni in YouTube Shorts Remix or YouTube Create.</li>
+            <li><strong>What Omni adds:</strong> It creates video from any mix of text, images, video and audio, lets you edit a clip through conversation, and embeds a SynthID watermark in every video. Omni 1.1 Flash adds scene extension up to 40 seconds and 4K upscaling.</li>
             <li><strong>Best use:</strong> Cinematic b-roll, short story moments, and anything where sound carries the scene.</li>
           </ul>
           <p className="text-gray-300 mb-6">
@@ -352,15 +409,16 @@ export default function BestAIVideoGenerators2026() {
 
           <h2 id="kling" className="text-3xl font-bold mt-12 mb-6">Kling AI</h2>
           <p className="text-gray-300 mb-6">
-            <strong>Kling AI</strong> has been the quality story of 2026. Its newer versions, including <strong>Kling 3.0</strong>, have ranked at the very top of several public video-quality leaderboards, and in practice the clips show it — fluid motion, fewer warping artifacts, and impressive handling of complex scenes like crowds, water, and fast camera moves. It offers a generous daily free credit system, so you can experiment without paying.
+            <strong>Kling 3.0</strong>, launched by Kuaishou on 5 February 2026, is still a top-10 text-to-video model, but as of September 2026 Wan 3.0, Gemini Omni Flash, MiniMax H3 and Seedance 2.0 rank above it on Artificial Analysis. Its clips are known for fluid motion and handling of complex scenes like crowds, water, and fast camera moves. It offers limited free credits, so you can experiment without paying.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="border border-white/10 rounded-2xl overflow-hidden">
               <div className="bg-pink-600/20 p-4 text-center font-bold">Kling Pros</div>
               <div className="p-4 text-green-400 text-sm space-y-2">
-                <p>✔ Top-ranked visual quality in 2026</p>
+                <p>✔ Top-10 text-to-video model (Sept 2026)</p>
                 <p>✔ Strong, natural motion</p>
-                <p>✔ Daily free credits to test</p>
+                <p>✔ Native audio, including speech in several languages</p>
+                <p>✔ Limited free credits to test</p>
                 <p>✔ Good image-to-video support</p>
               </div>
             </div>
@@ -368,24 +426,24 @@ export default function BestAIVideoGenerators2026() {
               <div className="bg-rose-600/20 p-4 text-center font-bold">Kling Cons</div>
               <div className="p-4 text-red-400 text-sm space-y-2">
                 <p>✘ Free clips are short and watermarked</p>
-                <p>✘ Audio is more limited than Veo</p>
+                <p>✘ Watermark removal and 1080p are paid-only</p>
                 <p>✘ Queue times can be long on free tier</p>
               </div>
             </div>
           </div>
           <p className="text-gray-300 mb-6">
-            For most people chasing the best free <em>visual</em> quality, Kling is the one to try first. Just remember leaderboard positions move with every model update, so the gap between Kling and Veo narrows and widens release to release.
+            If you want strong <em>visual</em> quality on free credits, Kling is a good one to try. Just remember leaderboard positions move with every model update, so the gap between Kling and the leaders narrows and widens release to release.
           </p>
 
           <h2 id="sora-alternatives" className="text-3xl font-bold mt-12 mb-6">Sora Is Gone — What Replaced It</h2>
           <p className="text-gray-300 mb-6">
-            OpenAI&apos;s <strong>Sora 2</strong> made the most talked-about clips of its era, and then it went away: OpenAI announced the shutdown in March 2026 and <strong>discontinued the app on 26 April 2026</strong>, with the API following in September. If you are still seeing guides about invite codes, they are out of date — and anyone selling access is scamming you. The good news is that the alternatives closed the quality gap while everyone was queueing for invites.
+            OpenAI&apos;s <strong>Sora 2</strong> made the most talked-about clips of its era, and then it went away: OpenAI announced the shutdown on 24 March 2026, <strong>shut the Sora app and web experience on 26 April 2026</strong>, and removes the Videos API and all sora-2 and sora-2-pro models on 24 September 2026. If you are still seeing guides about invite codes, they are out of date — and anyone selling access is scamming you. The good news is that the alternatives closed the quality gap while everyone was queueing for invites.
           </p>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-8">
             <h3 className="text-xl font-bold mb-3 text-pink-300">Use these instead</h3>
             <ul className="list-disc pl-6 text-gray-300 space-y-2">
-              <li><strong>Kling AI</strong> — closest in raw quality and openly accessible.</li>
-              <li><strong>Google Veo</strong> — best when you need sound baked in.</li>
+              <li><strong>Kling AI</strong> — strong quality and you can start on free credits.</li>
+              <li><strong>Google Gemini Omni Flash</strong> — best when you need sound baked in.</li>
               <li><strong>Hailuo (MiniMax)</strong> — smooth motion and a friendly free tier.</li>
               <li><strong>Runway</strong> — great if you also want editing tools in one place.</li>
             </ul>
@@ -403,28 +461,42 @@ export default function BestAIVideoGenerators2026() {
               <div className="bg-pink-500/20 p-2 rounded-lg text-pink-400 font-bold">PIK</div>
               <div>
                 <p className="font-bold">Pika</p>
-                <p className="text-sm text-gray-400">One of the most approachable tools, with templates and fun effects. Daily free credits make it perfect for learning how prompts translate to motion.</p>
+                <p className="text-sm text-gray-400">One of the most approachable tools, with templates and effects. Its free plan gives 80 credits per month (not per day) at 480p, image-to-video only, watermarked and without commercial rights, on the Pika 2.5 model.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
               <div className="bg-fuchsia-500/20 p-2 rounded-lg text-fuchsia-400 font-bold">RWY</div>
               <div>
                 <p className="font-bold">Runway</p>
-                <p className="text-sm text-gray-400">More of a full creative suite. Beyond generation it offers editing, motion brush, and inpainting, so it is ideal if you want to refine clips, not just create them.</p>
+                <p className="text-sm text-gray-400">More of a full creative suite. Beyond generation it offers editing, motion brush, and inpainting, so it is ideal if you want to refine clips, not just create them. The free plan is 125 one-time credits that do not renew; paid plans start at Standard $12/month billed annually. It also hosts third-party models such as Wan 3.0 and MiniMax H3 Max.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
               <div className="bg-rose-500/20 p-2 rounded-lg text-rose-400 font-bold">HAI</div>
               <div>
                 <p className="font-bold">Hailuo (MiniMax)</p>
-                <p className="text-sm text-gray-400">Known for smooth, stable motion on the free tier. A solid Sora alternative when you want clean movement without artifacts.</p>
+                <p className="text-sm text-gray-400">Hailuo now runs MiniMax H3 (released 31 July 2026), which takes text, images, video and audio as input and produces clips of up to 15 seconds at up to 2K with native stereo sound. It ranks among the top four on the Artificial Analysis text-to-video leaderboard as of September 2026. Free downloads are watermarked; paid plans from $14.99/month remove it.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
               <div className="bg-purple-500/20 p-2 rounded-lg text-purple-400 font-bold">LUM</div>
               <div>
-                <p className="font-bold">Luma Dream Machine</p>
-                <p className="text-sm text-gray-400">Fast generations and good camera control. Handy for quick concept tests before you commit credits elsewhere.</p>
+                <p className="font-bold">Luma Dream Machine <span className="text-xs uppercase tracking-wider text-gray-500">(paid only)</span></p>
+                <p className="text-sm text-gray-400">Luma has no free plan as of September 2026: its plans are Plus $30/month, Pro $90/month and Ultra $300/month ($25, $75 and $250 billed yearly), with Ray3.2 and Ray3.14 among its models.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+              <div className="bg-pink-500/20 p-2 rounded-lg text-pink-400 font-bold">WAN</div>
+              <div>
+                <p className="font-bold">Wan 3.0 (Alibaba) <span className="text-xs uppercase tracking-wider text-gray-500">(no free tier)</span></p>
+                <p className="text-sm text-gray-400">Announced 13 August 2026, it generates 30-second clips with audio at up to 1080p and accepts documents as input. It is available through the Alibaba Cloud Model Studio API ($0.05-$0.20 per second) and inside Runway since 24 August 2026, with no free consumer tier announced.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+              <div className="bg-fuchsia-500/20 p-2 rounded-lg text-fuchsia-400 font-bold">SEE</div>
+              <div>
+                <p className="font-bold">Seedance (ByteDance) <span className="text-xs uppercase tracking-wider text-gray-500">(not free)</span></p>
+                <p className="text-sm text-gray-400">ByteDance brought Seedance 2.0 to CapCut on 26 March 2026 in a phased regional rollout, and launched Seedance 2.5 on Dreamina on 31 July 2026 with 30-second clips for subscriber accounts.</p>
               </div>
             </div>
           </div>
@@ -434,13 +506,13 @@ export default function BestAIVideoGenerators2026() {
 
           <h2 id="make-first-video" className="text-3xl font-bold mt-12 mb-6">How to Make Your First AI Video Free</h2>
           <p className="text-gray-300 mb-6">
-            You can have a finished clip in minutes. Here is the simplest path using a free tool such as Veo (via Gemini) or Kling — the steps are nearly identical across most generators.
+            You can have a finished clip in minutes. Here is the simplest path using a free tool such as Kling or Omni Flash (via YouTube Create) — the steps are nearly identical across most generators.
           </p>
           <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-3xl border border-white/10 mb-12">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="h-10 w-10 shrink-0 rounded-full bg-pink-500 flex items-center justify-center font-bold">1</div>
-                <p className="text-gray-300"><strong>Sign in.</strong> Open the tool and log in with a free account. For Veo, that means the Gemini app with a Google account; for Kling, a quick email sign-up.</p>
+                <p className="text-gray-300"><strong>Sign in.</strong> Open the tool and log in with a free account. For Google&apos;s Omni Flash at no cost, that means remixing in YouTube Shorts Remix or YouTube Create (18+), since video in the Gemini app needs a Google AI Plus, Pro or Ultra plan; for Kling, a quick email sign-up.</p>
               </div>
               <div className="flex items-start gap-4">
                 <div className="h-10 w-10 shrink-0 rounded-full bg-fuchsia-500 flex items-center justify-center font-bold">2</div>
@@ -505,12 +577,12 @@ export default function BestAIVideoGenerators2026() {
                   <td className="p-4">Free output may be lower resolution; HD or higher is typically paid.</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-semibold text-pink-300">Daily credits</td>
-                  <td className="p-4">A capped number of generations per day that reset on a schedule.</td>
+                  <td className="p-4 font-semibold text-pink-300">Credits</td>
+                  <td className="p-4">A capped credit allowance; some plans are monthly or one-time rather than daily.</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-pink-300">Provenance metadata</td>
-                  <td className="p-4">AI videos commonly carry hidden provenance signals even when no logo is shown.</td>
+                  <td className="p-4">Google&apos;s Gemini Omni Flash video carries an imperceptible SynthID watermark that can be checked by asking &quot;Is this made with AI?&quot; in Gemini, even when no logo is shown.</td>
                 </tr>
               </tbody>
             </table>
@@ -518,6 +590,12 @@ export default function BestAIVideoGenerators2026() {
           <p className="text-gray-300 mb-6">
             On <strong>commercial use</strong>, do not assume free equals royalty-free. Rights depend on each tool&apos;s terms and your plan, so read the licensing and avoid generating real people or recognizable brands to stay on the safe side. If you plan to turn AI video into income, my guide to the <Link href="/blog/best-ai-tools-to-make-money-online-2026" className="text-pink-400 underline hover:text-pink-300">best AI tools to make money online in 2026</Link> covers how to use clips responsibly in a real workflow.
           </p>
+          <div className="bg-gradient-to-r from-fuchsia-600/20 to-rose-600/20 border-l-4 border-pink-500 p-6 my-8 rounded-r-2xl">
+            <h3 className="text-xl font-bold mb-2">⚖️ Labelling rules now apply (EU AI Act Article 50)</h3>
+            <p className="text-gray-200">
+              From 2 August 2026 the EU AI Act&apos;s Article 50 transparency rules apply: providers must apply a machine-readable mark to AI-generated or manipulated content and deployers must disclose deepfakes, with fines of up to EUR 15 million or 3% of worldwide annual turnover (generative AI systems already on the market before that date have a grace period for marking until December 2026). For an Indian creator publishing to EU audiences, the practical takeaway is to keep SynthID and C2PA metadata intact and clearly label synthetic clips of real people or events.
+            </p>
+          </div>
 
           <h2 id="faqs" className="text-3xl font-bold mt-12 mb-10 border-t border-white/10 pt-10">FAQs</h2>
           <div className="space-y-6 mb-12">

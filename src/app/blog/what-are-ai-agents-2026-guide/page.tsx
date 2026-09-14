@@ -58,7 +58,7 @@ export default function WhatAreAIAgents2026Guide() {
     {
       question: "What are examples of AI agents in 2026?",
       answer:
-        "Examples include ChatGPT Agent Mode, Operator-style web agents, and no-code business bots that handle support and scheduling.",
+        "Examples include ChatGPT Work (OpenAI's agent inside ChatGPT, launched 9 July 2026), Gemini Spark (Google's 24/7 personal agent, available as of September 2026 to Google AI Ultra and Google AI Pro subscribers in many countries), Claude Opus 5 from Anthropic, coding agents such as Codex and Claude Code, and no-code business bots that handle support and scheduling.",
     },
     {
       question: "Do I need coding to use AI agents?",
@@ -78,14 +78,14 @@ export default function WhatAreAIAgents2026Guide() {
     {
       question: "How do I start using an AI agent?",
       answer:
-        "Begin with a no-code builder or ChatGPT's agent features, pick one simple repetitive task, and expand once you trust the results.",
+        "Begin with a no-code builder or ChatGPT Work (Free and Go accounts get limited Work access in the ChatGPT desktop app), pick one simple repetitive task, and expand once you trust the results.",
     },
   ];
 
   const keyTakeaways = [
     "An AI agent understands a goal, plans, and takes actions, going beyond a chatbot's text replies.",
     "Agentic AI is the defining 2026 narrative as tools start doing work, not just answering.",
-    "Real examples include ChatGPT Agent Mode, web agents, and no-code business bots.",
+    "Real examples include ChatGPT Work, Gemini Spark, coding agents like Codex and Claude Code, and no-code business bots.",
     "You can start with no coding by using ready agents or visual builders.",
     "Give agents limited permissions and review actions, since they can make mistakes.",
   ];
@@ -108,7 +108,7 @@ export default function WhatAreAIAgents2026Guide() {
               "What are AI agents? This 2026 beginner guide explains how AI agents work, real examples, top tools and how to start using them, in plain simple language.",
             image: imageUrl,
             datePublished: "2026-06-04",
-            dateModified: "2026-06-04",
+            dateModified: "2026-09-13",
             author: {
               "@type": "Person",
               name: "Mohit Koli",
@@ -450,7 +450,7 @@ export default function WhatAreAIAgents2026Guide() {
                   <td className="p-4 font-semibold text-indigo-300">Example</td>
                   <td className="p-4">Basic FAQ bot</td>
                   <td className="p-4">Voice assistant</td>
-                  <td className="p-4 text-green-400">ChatGPT Agent Mode</td>
+                  <td className="p-4 text-green-400">ChatGPT Work / Gemini Spark</td>
                 </tr>
               </tbody>
             </table>
@@ -482,9 +482,13 @@ export default function WhatAreAIAgents2026Guide() {
                 Web Browsing Agents
               </h3>
               <p className="text-gray-400 text-sm">
-                Tools in the style of ChatGPT Agent Mode and Operator can open a
-                browser, navigate sites, fill forms, and compile results, like
-                gathering prices from five stores into one table while you grab coffee.
+                Browser-driving agents now live inside the main assistants. OpenAI
+                retired its Atlas browser on 9 August 2026 and moved browser-based
+                agentic work into ChatGPT Work and the ChatGPT desktop app (multiple
+                tabs, downloads and account login support), and OpenAI says GPT-6
+                Astra, introduced on 3 September 2026, is state-of-the-art on computer
+                use and browsing, handling tasks like filling out online forms and
+                updating customer records in a CRM.
               </p>
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
@@ -547,9 +551,16 @@ export default function WhatAreAIAgents2026Guide() {
               <div>
                 <p className="font-bold">Built-in Agent Modes</p>
                 <p className="text-sm text-gray-400">
-                  The big assistants now ship agent features. ChatGPT Agent Mode and
-                  browser-acting tools let you give a goal and watch the AI do it. Best
-                  for: trying agents with zero setup.
+                  The big assistants now ship agent features: ChatGPT Work (OpenAI,
+                  since 9 July 2026) takes a goal, works across your connected apps and
+                  files for hours and can run Scheduled Tasks while you are away; Gemini
+                  Spark (Google, announced 19 May 2026) is a 24/7 personal agent that, as
+                  of September 2026, is available to Google AI Ultra and Google AI Pro
+                  subscribers in many countries; and Claude runs on Opus 5 (24 July
+                  2026). ChatGPT Work is on web and mobile for paid plans, while in the
+                  ChatGPT desktop app for Windows and Mac, Chat, Work and Codex are
+                  available on every plan, including Free. Best for: trying agents with
+                  zero setup.
                 </p>
               </div>
             </div>
@@ -578,6 +589,50 @@ export default function WhatAreAIAgents2026Guide() {
                   want maximum control.
                 </p>
               </div>
+            </div>
+          </div>
+
+          <h3 className="text-2xl font-bold mt-10 mb-4">
+            What the Big Three Ship Right Now (September 2026)
+          </h3>
+          <div className="space-y-4 mb-10">
+            <div className="p-5 bg-white/5 rounded-xl border border-white/10">
+              <p className="font-bold text-blue-400 mb-2">ChatGPT Work (OpenAI)</p>
+              <p className="text-sm text-gray-400">
+                Launched 9 July 2026, powered by GPT-5.6. OpenAI says it &quot;can take
+                action across your apps and files, stay with a project for hours if
+                needed, and turn a goal into finished work&quot;. It creates sheets,
+                slides, docs and web apps, and its Scheduled Tasks can turn new
+                Microsoft Teams and Slack messages into updated docs or slides. It is
+                built with Codex technology, which OpenAI says more than 5 million
+                people use every week (over 1 million outside software development).
+                It reached Pro, Enterprise and Edu first on web and mobile, then Plus
+                and Business, while the Windows and Mac desktop app offers Chat, Work
+                and Codex on every plan, including Free.
+              </p>
+            </div>
+            <div className="p-5 bg-white/5 rounded-xl border border-white/10">
+              <p className="font-bold text-indigo-400 mb-2">Gemini Spark (Google)</p>
+              <p className="text-sm text-gray-400">
+                Announced 19 May 2026 as &quot;a 24/7 personal AI agent&quot;. It runs
+                recurring tasks and triggers, learns custom skills, works across Gmail,
+                Docs and Slides, connects to Canva, OpenTable and Instacart, and keeps
+                working when your device is closed or locked. As of September 2026 it
+                is available to Google AI Ultra subscribers in most countries where
+                Gemini Apps are supported (not the EEA, Nigeria, Switzerland or the UK)
+                and to Google AI Pro subscribers in the US and 160+ other countries.
+              </p>
+            </div>
+            <div className="p-5 bg-white/5 rounded-xl border border-white/10">
+              <p className="font-bold text-purple-400 mb-2">Claude Opus 5 (Anthropic)</p>
+              <p className="text-sm text-gray-400">
+                Released 24 July 2026. It is the default model on Claude Max and the
+                strongest on Claude Pro, and is available in Claude.ai, Claude Code and
+                the API at $5/$25 per million tokens. An effort setting lets you trade
+                cost against capability, and Anthropic says it &quot;outperforms every
+                other model at any given cost&quot; on the OSWorld 2.0 computer-use
+                benchmark.
+              </p>
             </div>
           </div>
 
@@ -756,6 +811,18 @@ export default function WhatAreAIAgents2026Guide() {
             </p>
           </div>
 
+          <h3 className="text-2xl font-bold mt-10 mb-4">Regulation Has Teeth Now</h3>
+          <p className="text-gray-300 mb-6">
+            Since 2 August 2026 the European Commission&apos;s AI Office has been able to
+            enforce the EU AI Act&apos;s obligations for general-purpose AI model
+            providers, with fines of up to EUR 15 million or 3% of worldwide annual
+            turnover (whichever is higher), while prohibited AI practices carry fines
+            of up to EUR 35 million or 7%. These rules bind the companies that build
+            and sell AI models in the EU, not individual users in India, but they are
+            part of why vendors are adding approval steps, transparency features and
+            audit logs to their agents.
+          </p>
+
           <h2 id="future" className="text-3xl font-bold mt-12 mb-6">
             Where Agentic AI Is Heading
           </h2>
@@ -766,6 +833,38 @@ export default function WhatAreAIAgents2026Guide() {
             of one agent doing everything, expect setups where a &quot;manager&quot; agent
             delegates pieces to specialist agents, much like a small team of coworkers.
           </p>
+
+          <h3 className="text-2xl font-bold mt-10 mb-4">What Changed in Summer 2026</h3>
+          <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
+            <li>
+              <strong>Better computer use.</strong> On 3 September 2026 OpenAI
+              introduced GPT-6 Astra, which it describes as state-of-the-art on computer
+              use, browsing and software engineering, with examples such as filling out
+              online forms, updating customer records in a CRM and installing and
+              testing software. It is rolling out to ChatGPT Plus, Pro, Business and
+              Enterprise and through the OpenAI API, Microsoft Azure and AWS Bedrock.
+              OpenAI reports 1.9x faster task completion than the GPT-5.6 Sol
+              experience on the Mind2Web benchmark when paired with its updated Codex
+              harness.
+            </li>
+            <li>
+              <strong>Agent teams became a product.</strong> On 10 September 2026 OpenAI
+              released the Agents API in public beta, giving developers the same harness
+              that powers Codex, with subagents that parallelise work and infrastructure
+              built to keep agents running for days, at no additional fee beyond the
+              tokens and tools used. That is the &quot;manager agent&quot; pattern above,
+              now shipping.
+            </li>
+            <li>
+              <strong>The buttons keep changing.</strong> OpenAI has consolidated its
+              agent products: Operator was folded into ChatGPT agent, ChatGPT agent is
+              no longer available (users are pointed to ChatGPT Work, launched 9 July
+              2026), and the Atlas browser was scheduled to stop working on 9 August
+              2026 in favour of browser features in ChatGPT and the new ChatGPT desktop
+              app. The lesson: learn the skill of describing goals and supervising, not
+              one specific button.
+            </li>
+          </ul>
           <p className="text-gray-300 mb-6">
             The other big shift is in <em>how we work</em> rather than whether we work.
             As agents handle more of the repetitive middle, human time moves toward

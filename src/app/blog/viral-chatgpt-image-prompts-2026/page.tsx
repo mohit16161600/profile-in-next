@@ -83,7 +83,7 @@ export default function ViralChatGPTImagePrompts2026() {
     {
       question: "What is ChatGPT Images 2.0 and do I need it for these prompts?",
       answer:
-        "ChatGPT Images 2.0, powered by the gpt-image-2 model, launched on 21 April 2026 and is available on every ChatGPT plan including free. OpenAI lists 2K output, nine aspect ratios and improved text rendering, and it is the first OpenAI image model with reasoning built into the architecture. Every prompt here works on it, and the text-heavy ones such as poster and packaging edits benefit the most.",
+        "ChatGPT Images 2.0, powered by the gpt-image-2 model, launched on 21 April 2026 and is available on every ChatGPT plan including free. OpenAI lists 2K output, nine aspect ratios and improved text rendering, and it is the first OpenAI image model with reasoning built into the architecture. OpenAI then released ChatGPT Images 2.5 on 8 September 2026, which is now the current model: it preserves the subject of a reference photo more faithfully, follows edits more reliably across several turns, and generates up to 50% faster than 2.0. Every prompt here works on both, and photo-edit prompts benefit most from 2.5.",
     },
     {
       question: "How does the ‘based on everything you know about me’ prompt work?",
@@ -105,7 +105,7 @@ export default function ViralChatGPTImagePrompts2026() {
   const keyTakeaways = [
     "Viral image prompts share one formula: subject, style, lighting, background, and aspect ratio.",
     "All 50 prompts are copy-paste ready and grouped by trend so you can remix quickly.",
-    "ChatGPT Images 2.0 (gpt-image-2) landed on 21 April 2026 and is available on every plan, including free.",
+    "ChatGPT Images 2.0 (gpt-image-2) landed on 21 April 2026, and Images 2.5 followed on 8 September 2026 as the current model — both available on every plan, including free.",
     "Upload a reference photo to keep a consistent face across different styles.",
     "Free ChatGPT users can generate images but may hit daily limits during heavy use.",
     "Avoid celebrities and copyrighted characters so prompts are not refused or risky to post.",
@@ -829,6 +829,14 @@ export default function ViralChatGPTImagePrompts2026() {
             after years of producing garbled lettering. It is also the first OpenAI image model
             with reasoning built into the architecture, so longer, more specific prompts are
             handled better than they used to be.
+          </p>
+          <p className="text-gray-300 mb-4">
+            <strong className="text-white">Update, 8 September 2026:</strong> OpenAI released{" "}
+            <strong className="text-white">ChatGPT Images 2.5</strong>, now the current model in
+            ChatGPT. For the photo-edit prompts on this page it matters most in two ways: it keeps
+            the person in your reference photo looking like themselves more reliably, and it holds
+            onto earlier instructions when you refine an image over several turns. OpenAI also says
+            generation is up to 50% faster than Images 2.0.
           </p>
           <div className="bg-cyan-500/10 border border-cyan-400/30 rounded-2xl p-5 mb-10">
             <p className="text-cyan-300 font-bold mb-2">Quick tip</p>

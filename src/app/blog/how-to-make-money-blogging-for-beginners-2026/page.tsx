@@ -7,6 +7,7 @@ const CANONICAL = "https://mohitkoli.in/blog/how-to-make-money-blogging-for-begi
 // crops badly into a 1.91:1 card — social scrapers get a dedicated crop instead.
 const IMAGE = "https://mohitkoli.in/assets/make-money-blogging-2026-og.jpg";
 const PUBLISHED = "2026-04-13T00:00:00.000Z";
+const MODIFIED = "2026-09-13T00:00:00.000Z";
 
 export const metadata: Metadata = {
   title: "How to Make Money Blogging for Beginners (2026 Guide)",
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     url: CANONICAL,
     type: "article",
     publishedTime: PUBLISHED,
-    modifiedTime: PUBLISHED,
+    modifiedTime: MODIFIED,
     images: [{ url: IMAGE, width: 1200, height: 630, alt: "How to make money blogging in 2026 — beginner guide" }],
   },
   twitter: {
@@ -80,7 +81,7 @@ export default function BloggingGuide2026() {
                 "Learn how to start a blog and earn money in 2026 — monetization, blogging tips for beginners, and income in India.",
               image: IMAGE,
               datePublished: PUBLISHED,
-              dateModified: PUBLISHED,
+              dateModified: MODIFIED,
               author: {
                 "@type": "Person",
                 name: "Mohit Koli",
@@ -139,7 +140,7 @@ export default function BloggingGuide2026() {
           <div className="flex items-center justify-center gap-4 text-gray-400 text-sm mb-8">
             <span>By Mohit Koli</span>
             <span>•</span>
-            <span>April 13, 2026</span>
+            <span>April 13, 2026 (Updated September 13, 2026)</span>
             <span>•</span>
             <span>20 min read</span>
           </div>
@@ -192,12 +193,14 @@ export default function BloggingGuide2026() {
             <p className="text-gray-200 italic">
               Don't just write for Google; write for Humans. AI can generate text, but it can't share personal experiences.
               Google's 2026 algorithm prioritizes <strong>E-E-A-T</strong> (Experience, Expertise, Authoritativeness, and Trustworthiness).
+              Google&apos;s Search Status Dashboard lists two core updates in 2026 (starting 27 March and 21 May, each lasting about 12 days),
+              three spam updates (24 March, 24 June and 18 August) and a Discover update that started 5 February 2026 and ran about 22 days.
             </p>
           </div>
 
           <h2 id="why-2026" className="text-3xl font-bold mt-12 mb-6">Why blogging is profitable in 2026</h2>
           <p className="text-gray-300 mb-6">
-            You might think social media like TikTok or Instagram is the only way to earn wealth today. However, blogging remains the king of
+            You might think short videos on Instagram Reels or YouTube Shorts are the only way to earn wealth today. However, blogging remains the king of
             <strong> long-form content</strong>. Here is why:
           </p>
           <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
@@ -206,6 +209,28 @@ export default function BloggingGuide2026() {
             <li><strong>High ROI in India:</strong> With millions of new internet users in India every month, the demand for content in English and Hindi is skyrocketing.</li>
             <li><strong>AI Integration:</strong> You can now use AI to research and draft content 10x faster than before.</li>
           </ul>
+
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-10">
+            <h3 className="text-xl font-bold mb-3 text-white">The 2026 reality check: AI Overviews and AI Mode</h3>
+            <p className="text-gray-300 mb-4">
+              Google now answers many searches itself. An Ahrefs study updated in February 2026, covering 300,000 keywords with Google Search Console
+              data from December 2023 and December 2025, found that an AI Overview correlates with a <strong>58% lower average click-through rate</strong> for
+              the top-ranking page, up from 34.5% in its April 2025 study.
+            </p>
+            <p className="text-gray-300 mb-4">
+              On 6 May 2026 Google added five link features to AI Overviews and AI Mode: suggestions for where to go next at the end of responses,
+              highlights from news sources you subscribe to, previews of perspectives from public discussions and social media, more inline links next to
+              the relevant text, and desktop hover previews showing a site&apos;s name.
+            </p>
+            <p className="text-gray-300 mb-4">
+              AI Mode is available in India and supports Hindi. It opened to everyone in English without a Labs sign-up on 8 July 2025, and on
+              8 October 2025 expanded to Bengali, Kannada, Malayalam, Marathi, Tamil, Telugu and Urdu, while Search Live launched in India in English and Hindi.
+            </p>
+            <p className="text-gray-300">
+              <strong>What this means for you:</strong> skip pure &quot;what is X&quot; posts that an AI answer can absorb. Write from real experience,
+              compare options, cover local and Hindi-language topics, and build an email list so your traffic isn&apos;t 100% Google.
+            </p>
+          </div>
 
           <h2 id="how-to-start" className="text-3xl font-bold mt-12 mb-6">How to start a blog (Step-by-Step)</h2>
           <p className="text-gray-300 mb-4">Starting a blog is easier than buying a smartphone. You only need three things:</p>
@@ -219,12 +244,18 @@ export default function BloggingGuide2026() {
               <h3 className="text-xl font-bold mb-2">2. Web Hosting</h3>
               <p className="text-gray-400">The "house" where your website files live. I highly recommend <a href="https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY" target="_blank" rel="nofollow sponsored noopener" className="text-blue-400 underline">Hostinger</a> for its speed and affordability.</p>
               <Link href="/blog/hostinger-discount-code-2026" className="inline-block mt-3 text-blue-400 font-semibold hover:underline">
-                Read: How to get Hostinger at 90% discount →
+                Read: the cheapest way to get Hostinger in 2026 →
               </Link>
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-blue-500/50 transition">
               <h3 className="text-xl font-bold mb-2">3. Platform (CMS)</h3>
-              <p className="text-gray-400">Use <strong>WordPress.org</strong>. It’s free, customizable, and powers over 40% of the internet.</p>
+              <p className="text-gray-400">Use <strong>WordPress.org</strong>. It’s free, customizable, and powers about 40% of all websites and nearly 59% of sites whose CMS is known (W3Techs, September 2026).</p>
+              <p className="text-gray-400 mt-3">
+                The current version is WordPress 7.1 &quot;Mary Lou&quot;, released 19 August 2026 (7.0 &quot;Armstrong&quot; came out on 20 May 2026). 7.1 adds
+                responsive styling controls without custom CSS, an admin bar that stays visible across editors, a media-editing modal for cropping, flipping and
+                rotating, native AVIF, HEIC and HDR image support, rich-text Notes with @mentions, and new Playlist and Tabs blocks. Install the latest version
+                your host offers and keep automatic updates switched on.
+              </p>
             </div>
           </div>
 
@@ -257,11 +288,23 @@ export default function BloggingGuide2026() {
           <div className="space-y-8 mb-12 text-gray-300">
             <div>
               <h3 className="text-2xl font-semibold mb-2 text-white">1. Google AdSense</h3>
-              <p>Google shows ads on your site and pays you for every click or view. It’s the easiest way to start for beginners.</p>
+              <p>Google shows ads on your site and, since 2024, pays you mainly per impression (eCPM, an effective cost per thousand impressions) rather than per click. Publishers receive 80% of AdSense for content revenue after the advertiser platform&apos;s fee, so page views and higher-paying audiences drive your earnings. It’s the easiest way to start for beginners.</p>
+              <p className="mt-3">
+                <strong>The next step after AdSense:</strong> Journey by Mediavine requires 1,000 sessions within 30 days from Tier 1 countries (including the US,
+                Canada, UK and Australia), so visitors from India alone do not count toward it. Full Mediavine ad management requires at least $5,000 in annual
+                ad revenue, and for sites launched after 1 January 2026, Mediavine&apos;s revenue share for sites earning under $100,000 a year is 75%. If most of
+                your readers are Indian, affiliate links and digital products will usually pay better than premium ad networks.
+              </p>
             </div>
             <div>
               <h3 className="text-2xl font-semibold mb-2 text-white">2. Affiliate Marketing</h3>
               <p>Promote products (like Amazon or Hosting) and earn a commission when someone buys through your link. This is where the real money is.</p>
+              <p className="mt-3">
+                <strong>Amazon heads-up:</strong> since 14 April 2026, Amazon.com Associates pays onsite commission only on direct purchases of the same product
+                variant (ASIN) you linked, requires products to be shipped and paid for within 180 days, and excludes purchases referred through paid or boosted
+                ads. Amazon.in&apos;s Associates Operating Agreement is still the November 2021 version, under which products added to the cart during the 24-hour
+                session and ordered within 89 days still qualify, so bloggers linking to amazon.in are not affected by the US change.
+              </p>
               <Link href="/blog/hostinger-discount-code-2026" className="text-blue-400 underline">See an example of Affiliate Marketing here.</Link>
             </div>
             <div>
@@ -344,8 +387,8 @@ export default function BloggingGuide2026() {
               <Link href="/blog/hostinger-discount-code-2026" className="bg-white text-blue-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition shadow-lg">
                 Start Your Blog Now 🚀
               </Link>
-              <Link href="/services" className="bg-blue-800 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-900 transition border border-blue-400/30">
-                Need Help? Hire Me
+              <Link href="/tools/hosting-cost-calculator" className="bg-blue-800 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-900 transition border border-blue-400/30">
+                Estimate Your Hosting Cost
               </Link>
             </div>
           </div>
@@ -357,7 +400,7 @@ export default function BloggingGuide2026() {
           <ul className="space-y-2 text-gray-300 list-disc list-inside">
             <li><Link href="/blog/best-seo-tools-india-2026" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Best SEO tools in India</Link> — priced in rupees, with the free options first.</li>
             <li><Link href="/blog/best-keyword-research-tools-2026" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Best keyword research tools</Link> — including the free ones that actually matter.</li>
-            <li><Link href="/blog/semrush-review-2026" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Semrush review</Link> — when a ₹12,000/mo tool starts paying for itself.</li>
+            <li><Link href="/blog/semrush-review-2026" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Semrush review</Link> — when a ~₹13,000/mo tool (the entry &quot;SEO&quot; plan, $139/month billed monthly) starts paying for itself.</li>
             <li><Link href="/blog/hostinger-55-per-month-offer" className="text-blue-400 hover:text-blue-300 underline underline-offset-4">Hostinger at ₹55/mo</Link> — the cheapest way to get a blog online.</li>
           </ul>
         </section>

@@ -48,12 +48,12 @@ export default function DeepSeekVsChatGPT2026() {
     {
       question: "Which is more free, DeepSeek or ChatGPT?",
       answer:
-        "DeepSeek is free for almost all tasks, while ChatGPT's free tier has tighter limits on advanced models, images, and voice.",
+        "Both give unlimited everyday text chat. ChatGPT Free (GPT-5.6 Luna) has done so since August 2026 but limits images, voice, file uploads and Codex and may show ads, while DeepSeek's app is free with no paid plan but cannot generate images.",
     },
     {
       question: "Which is better for coding?",
       answer:
-        "Both code well; ChatGPT has a richer tooling ecosystem, while DeepSeek offers strong free coding help, making it great on a budget.",
+        "Both are useful for coding for free. ChatGPT Free includes GPT-5.6 Luna plus limited Codex access, while DeepSeek's V4 family, including DeepSeek-V4-Pro (generally available since 13 August 2026 with low, high and max thinking effort) and DeepSeek-V4.1-Flash (10 September 2026), has MIT-licensed open weights and can be used in third-party coding tools through the API.",
     },
     {
       question: "Which is safer for privacy?",
@@ -78,13 +78,18 @@ export default function DeepSeekVsChatGPT2026() {
     {
       question: "Which has better image and voice features?",
       answer:
-        "ChatGPT leads on built-in image generation and advanced voice, while DeepSeek focuses primarily on text and reasoning.",
+        "ChatGPT. It offers ChatGPT Images 2.5 and voice chats on every plan including Free (with limits), while DeepSeek can read images but not create them.",
+    },
+    {
+      question: "Does the free DeepSeek app use the latest models?",
+      answer:
+        "It runs DeepSeek's V4-generation models, and DeepSeek released V4.1-Flash on 10 September 2026. ChatGPT's newest model, GPT-6 Astra, is for paid plans only, and Free users get GPT-5.6 Luna.",
     },
   ];
 
   const keyTakeaways = [
     "DeepSeek wins on free cost and transparent reasoning; ChatGPT wins on features and ecosystem.",
-    "ChatGPT's free tier has tighter limits than DeepSeek's largely-free app.",
+    "ChatGPT Free has offered unlimited everyday text chats since August 2026, so the remaining gap is in image generation, voice, file uploads and top paid models; DeepSeek stays free and reads images but does not generate them.",
     "Both code well, but ChatGPT has broader tooling while DeepSeek is budget-friendly.",
     "Privacy differs: OpenAI is US-governed, DeepSeek is China-based, so avoid sensitive data on both.",
     "Using both and comparing answers is a smart, free strategy.",
@@ -98,7 +103,7 @@ export default function DeepSeekVsChatGPT2026() {
       "DeepSeek vs ChatGPT 2026 compared on speed, reasoning, coding, cost and privacy. See which free AI wins for students and everyday users in India and beyond.",
     image: "https://mohitkoli.in/assets/blog/deepseek-vs-chatgpt-2026.png",
     datePublished: "2026-06-08",
-    dateModified: "2026-06-08",
+    dateModified: "2026-09-14",
     author: {
       "@type": "Person",
       name: "Mohit Koli",
@@ -207,7 +212,7 @@ export default function DeepSeekVsChatGPT2026() {
           <div className="flex items-center justify-center gap-4 text-gray-400 text-sm mb-8">
             <span>By Mohit Koli</span>
             <span>•</span>
-            <span>June 8, 2026</span>
+            <span>Updated September 14, 2026</span>
             <span>•</span>
             <span>15 min read</span>
           </div>
@@ -228,8 +233,9 @@ export default function DeepSeekVsChatGPT2026() {
           <p className="text-xl text-gray-300 leading-relaxed mb-8">
             If you only want to use <strong>one free AI chatbot</strong> in 2026,
             the choice usually comes down to two names: <strong>DeepSeek</strong>{" "}
-            and <strong>ChatGPT</strong>. One is a budget-friendly newcomer that
-            shocked the world by giving away powerful reasoning for free, the
+            and <strong>ChatGPT</strong>. One is the Chinese AI lab whose open-weight V4
+            models, released under the MIT licence with a 1-million-token
+            context, are free to use in its own app, and the
             other is the most polished AI assistant on the planet. So which one
             actually deserves a spot on your phone? This is a balanced,
             head-to-head comparison written for students, freelancers, and
@@ -244,6 +250,11 @@ export default function DeepSeekVsChatGPT2026() {
               <li>
                 <a href="#quick-verdict" className="hover:text-rose-400 transition">
                   → Quick Verdict
+                </a>
+              </li>
+              <li>
+                <a href="#what-changed" className="hover:text-rose-400 transition">
+                  → What Changed Since June 2026
                 </a>
               </li>
               <li>
@@ -300,8 +311,11 @@ export default function DeepSeekVsChatGPT2026() {
           </h2>
           <p className="text-gray-300 mb-6">
             Here is the short answer before we dig into details. In my opinion,
-            for a free user in mid-2026, <strong>both DeepSeek and ChatGPT are
-            genuinely excellent</strong>, but they win for different reasons.
+            as of September 2026, <strong>both DeepSeek and ChatGPT are
+            genuinely excellent</strong> and both are free to start: the DeepSeek
+            app and chat.deepseek.com run DeepSeek&apos;s V4-generation models,
+            and ChatGPT Free runs GPT-5.6 Luna with unlimited everyday text
+            chats. They still win for different reasons.
             DeepSeek is the better pick when <strong>cost is your top concern</strong>{" "}
             and you want strong, transparent reasoning without hitting a paywall.
             ChatGPT is the better pick when you want the most <strong>polished,
@@ -318,7 +332,7 @@ export default function DeepSeekVsChatGPT2026() {
                 <li>You want maximum value for zero rupees.</li>
                 <li>You love seeing the AI&apos;s step-by-step reasoning.</li>
                 <li>You mostly do text, math, study help, and coding.</li>
-                <li>You hit usage limits on other free chatbots too often.</li>
+                <li>You want a free chatbot with no subscription upsell: DeepSeek has no paid consumer plan, and its privacy policy says it does not engage in targeted advertising.</li>
               </ul>
             </div>
             <div className="bg-gradient-to-br from-emerald-600/15 to-teal-600/10 border border-emerald-500/30 rounded-2xl p-6">
@@ -345,6 +359,47 @@ export default function DeepSeekVsChatGPT2026() {
             </p>
           </div>
 
+          {/* WHAT CHANGED */}
+          <h2 id="what-changed" className="text-3xl font-bold mt-12 mb-6">
+            What Changed Since June 2026
+          </h2>
+          <p className="text-gray-300 mb-6">
+            Both tools moved fast over the summer. Here is what is new if you
+            read an older comparison:
+          </p>
+          <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
+            <li>
+              <strong>DeepSeek V4 family:</strong> V4 models (previewed 24 April
+              2026) have MIT-licensed open weights and a 1M-token context.
+              V4-Pro became generally available on 13 August 2026 with low, high
+              and max thinking effort, and V4.1-Flash was released on 10
+              September 2026.
+            </li>
+            <li>
+              <strong>DeepSeek API changes (developers only):</strong> the old
+              deepseek-chat and deepseek-reasoner API names were retired on 24
+              July 2026, and peak/off-peak API pricing started on 16 August 2026.
+              None of this affects the free app.
+            </li>
+            <li>
+              <strong>GPT-5.6:</strong> OpenAI launched GPT-5.6 (Luna, Terra,
+              Sol) on 9 July 2026, and in August 2026 gave Free and Go users
+              GPT-5.6 Luna with unlimited text chats and a Think button.
+            </li>
+            <li>
+              <strong>GPT-6 Astra:</strong> rollout began on 3 September 2026 to
+              Plus, Pro, Business, Enterprise and API users only, not Free.
+            </li>
+            <li>
+              <strong>ChatGPT Images 2.5:</strong> launched for all tiers on 8
+              September 2026.
+            </li>
+            <li>
+              <strong>Ads in India:</strong> OpenAI announced on 27 August 2026
+              that ads would start appearing on ChatGPT Free and Go in India.
+            </li>
+          </ul>
+
           {/* COMPARISON TABLE */}
           <h2 id="comparison-table" className="text-3xl font-bold mt-12 mb-6">
             Side-by-Side Comparison Table
@@ -367,8 +422,8 @@ export default function DeepSeekVsChatGPT2026() {
               <tbody className="divide-y divide-white/10">
                 <tr>
                   <td className="p-4 font-semibold text-rose-300">Free cost</td>
-                  <td className="p-4">Very generous, mostly free</td>
-                  <td className="p-4">Good, but tighter caps</td>
+                  <td className="p-4">Free, no paid tier</td>
+                  <td className="p-4">Unlimited text; images, voice, files limited</td>
                   <td className="p-4 text-green-400">DeepSeek</td>
                 </tr>
                 <tr>
@@ -391,7 +446,7 @@ export default function DeepSeekVsChatGPT2026() {
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-rose-300">Images &amp; voice</td>
-                  <td className="p-4">Text-focused</td>
+                  <td className="p-4">Reads images; cannot generate images</td>
                   <td className="p-4">Built-in image &amp; voice</td>
                   <td className="p-4 text-emerald-400">ChatGPT</td>
                 </tr>
@@ -406,6 +461,48 @@ export default function DeepSeekVsChatGPT2026() {
                   <td className="p-4">China-based terms</td>
                   <td className="p-4">US-based terms</td>
                   <td className="p-4 text-gray-300">Depends on you</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="text-2xl font-bold mt-10 mb-4">
+            Which model you actually get for free (September 2026)
+          </h3>
+          <div className="overflow-x-auto mb-10 border border-white/10 rounded-2xl">
+            <table className="w-full text-left">
+              <thead className="bg-white/5">
+                <tr>
+                  <th className="p-4 font-bold text-white">What you get</th>
+                  <th className="p-4 font-bold text-white">DeepSeek app &amp; web</th>
+                  <th className="p-4 font-bold text-white">ChatGPT Free</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-white/10">
+                <tr>
+                  <td className="p-4 font-semibold text-rose-300">Model</td>
+                  <td className="p-4">V4-generation models</td>
+                  <td className="p-4">GPT-5.6 Luna, unlimited everyday text, Think button</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-rose-300">Images</td>
+                  <td className="p-4">Reads images only</td>
+                  <td className="p-4">Limited image generation (ChatGPT Images 2.5)</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-rose-300">Voice &amp; coding</td>
+                  <td className="p-4">Open-weight models usable via API</td>
+                  <td className="p-4">Limited voice chats, limited Codex</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-rose-300">Top models</td>
+                  <td className="p-4">No paid consumer plan</td>
+                  <td className="p-4">GPT-5.6 Sol and GPT-6 Astra need a paid plan</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-rose-300">Ads</td>
+                  <td className="p-4">No targeted advertising (privacy policy)</td>
+                  <td className="p-4">Ads may appear</td>
                 </tr>
               </tbody>
             </table>
@@ -438,8 +535,8 @@ export default function DeepSeekVsChatGPT2026() {
             <div className="p-6 bg-white/5 border border-white/10 rounded-2xl">
               <p className="font-bold text-rose-400 mb-2 text-lg">DeepSeek free tier</p>
               <p className="text-sm text-gray-400">
-                DeepSeek made its name by giving away strong reasoning at little
-                to no cost. For everyday chat, study help, and coding, the free
+                DeepSeek sells no consumer subscription, so the app and
+                chat.deepseek.com are simply free. For everyday chat, study help, and coding, the free
                 app rarely makes you feel like you are missing a paid wall. This
                 is a huge deal if your budget is zero.
               </p>
@@ -447,27 +544,36 @@ export default function DeepSeekVsChatGPT2026() {
             <div className="p-6 bg-white/5 border border-white/10 rounded-2xl">
               <p className="font-bold text-emerald-400 mb-2 text-lg">ChatGPT free tier</p>
               <p className="text-sm text-gray-400">
-                ChatGPT&apos;s free plan is excellent for general questions, but
-                advanced models, heavy image generation, and voice usage hit
-                limits faster. Once you cool down, you are back in business, yet
-                power users will feel the ceiling sooner than on DeepSeek.
+                ChatGPT Free now gives unlimited everyday text chats on GPT-5.6
+                Luna, but image generation (ChatGPT Images 2.5 since 8 September
+                2026), file uploads, voice chats, deep research and Codex still
+                have separate usage limits. Ads may appear on the Free plan, and
+                OpenAI may use chats to improve its models unless you opt out in
+                Data Controls.
               </p>
             </div>
           </div>
           <p className="text-gray-300 mb-6">
             On the <strong>India and budget angle</strong>, this matters a lot.
-            A monthly subscription priced in dollars is a meaningful expense for
-            a student or early freelancer. DeepSeek&apos;s largely-free approach
-            means you can lean on it daily without worrying about a recurring
-            bill. If you do decide to pay later, both offer affordable upgrade
-            paths, but you can postpone that decision much longer with DeepSeek.
+            ChatGPT Go launched in India in August 2025 at ₹399/month (GST
+            included), payable by card or UPI. Go gives unlimited everyday text
+            chats plus higher limits than Free for image generation, file uploads
+            and data analysis, and the plan may include ads. OpenAI&apos;s
+            12-month free Go offer for India opened in November 2025 and closed
+            to new redemptions on 21 January 2026, so each free year ends 12
+            months after the date it was claimed, after which Go bills monthly
+            unless cancelled. If you claimed it, check when your own free year
+            ends. DeepSeek has no equivalent paid plan: its only paid product is
+            the developer API, where deepseek-flash starts at $0.15 per million
+            input tokens and $0.60 per million output tokens off-peak, with
+            peak-hour rates double. ChatGPT&apos;s upgrade path is Go, then Plus.
           </p>
           <div className="bg-gradient-to-r from-orange-600/20 to-rose-600/20 border-l-4 border-orange-500 p-6 my-8 rounded-r-2xl">
             <h3 className="text-xl font-bold mb-2">Budget tip</h3>
             <p className="text-gray-200">
-              Treat the free tiers as two separate fuel tanks. When one tool
-              throttles you, switch to the other and keep working. Two free
-              accounts effectively double your daily AI capacity at zero cost.
+              Treat the free tiers as two separate fuel tanks. When you hit
+              ChatGPT&apos;s image, voice, file or Codex limits, switch to
+              DeepSeek and keep working at zero cost.
             </p>
           </div>
           <p className="text-gray-300 mb-6">
@@ -535,10 +641,10 @@ export default function DeepSeekVsChatGPT2026() {
             Coding Performance
           </h2>
           <p className="text-gray-300 mb-6">
-            As a full stack developer, this is the area I test most. The good
-            news is that <strong>both tools write solid code for free</strong>. I
-            have used both to scaffold components, debug errors, and explain
-            unfamiliar code, and the day-to-day quality is close.
+            As a full stack developer, this is the area I care about most. The good
+            news is that <strong>both tools write solid code for free</strong>,
+            whether you need to scaffold components, debug errors, or explain
+            unfamiliar code.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="border border-white/10 rounded-2xl overflow-hidden">
@@ -578,7 +684,9 @@ export default function DeepSeekVsChatGPT2026() {
             My verdict: for pure free coding help, DeepSeek is fantastic value
             and is my recommendation when budget is the deciding factor. ChatGPT
             edges ahead once you factor in its broader ecosystem of plugins,
-            editor integrations, and helper tools. If you are weighing how much
+            connected apps, and OpenAI&apos;s Codex coding agent, which is
+            available even on the Free plan for quick coding tasks with limited
+            usage. If you are weighing how much
             to trust any of these assistants with real projects, I shared a
             candid view in{" "}
             <Link
@@ -596,7 +704,7 @@ export default function DeepSeekVsChatGPT2026() {
           </h2>
           <p className="text-gray-300 mb-6">
             For emails, captions, summaries, and general writing, ChatGPT has a
-            slight edge in my testing. Its prose tends to read a touch more
+            slight edge in my opinion. Its prose tends to read a touch more
             natural and needs less cleanup before you send it. That polish is
             exactly why it became the default assistant for so many people.
           </p>
@@ -657,9 +765,11 @@ export default function DeepSeekVsChatGPT2026() {
           </p>
           <p className="text-gray-300 mb-6">
             DeepSeek, by contrast, keeps its focus on <strong>text and
-            reasoning</strong>. That focus is part of why it performs so well on
-            logic for free, but it means you will reach for another tool when you
-            need to generate an image or talk hands-free. Its ecosystem is
+            reasoning</strong>, though it can now understand images
+            (DeepSeek-V4.1-Flash natively reads images). It still cannot generate
+            images, whereas ChatGPT creates images on every plan including Free
+            with ChatGPT Images 2.5, launched 8 September 2026. So you will reach
+            for another tool when you need to generate an image. Its ecosystem is
             growing, just not as mature as ChatGPT&apos;s yet.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -704,11 +814,29 @@ export default function DeepSeekVsChatGPT2026() {
           <p className="text-gray-300 mb-6">
             Privacy deserves a clear-eyed look. <strong>ChatGPT</strong> is
             operated by OpenAI and governed by its US-based policies.{" "}
-            <strong>DeepSeek</strong> is a Chinese service operating under its
-            own terms and the laws of its home country. These are simply
+            <strong>DeepSeek</strong>&apos;s privacy policy (last updated 10
+            February 2026) says it collects, processes and stores personal data
+            in the People&apos;s Republic of China. These are simply
             different legal environments, and which one you trust more is a
             personal call.
           </p>
+          <h3 className="text-2xl font-bold mt-8 mb-4">
+            What each privacy policy actually says
+          </h3>
+          <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
+            <li>
+              <strong>DeepSeek:</strong> data is stored in the People&apos;s
+              Republic of China, and you can delete chat history in settings and
+              opt out of your data being used for model training.
+            </li>
+            <li>
+              <strong>ChatGPT Free and Go:</strong> OpenAI may use conversations
+              to improve its models unless you opt out in Data Controls. Ads may
+              appear based on the current conversation (tested in the US from 9
+              February 2026 and announced for India on 27 August 2026). Plus,
+              Pro, Business and Enterprise plans are ad-free.
+            </li>
+          </ul>
           <p className="text-gray-300 mb-6">
             My practical advice is the same for both, and for every AI chatbot:
             do not paste sensitive personal data, passwords, financial details,

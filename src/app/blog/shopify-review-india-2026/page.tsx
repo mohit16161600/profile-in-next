@@ -6,6 +6,7 @@ import ShareButtons from "@/components/ShareButtons";
 const CANONICAL = "https://mohitkoli.in/blog/shopify-review-india-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/shopify-review-india-2026.png";
 const PUBLISHED = "2026-08-24T00:00:00.000Z";
+const MODIFIED = "2026-09-14T00:00:00.000Z";
 
 export const metadata: Metadata = {
     title: "Shopify Review India 2026: Costs, Fees and the Catch",
@@ -15,13 +16,13 @@ export const metadata: Metadata = {
         "shopify review india", "shopify review 2026", "shopify india pricing", "is shopify worth it india",
         "shopify transaction fee india", "shopify payments india", "shopify basic plan india",
         "shopify pros and cons", "shopify for indian sellers", "shopify hidden costs",
-        "shopify alternatives india", "start online store india",
+        "shopify alternatives india", "start online store india", "shopify grow plan india",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
         title: "Shopify Review India 2026: Costs, Fees and the Catch",
         description: "What Indian sellers actually pay once the transaction fee, gateway and GST are counted.",
-        url: CANONICAL, type: "article", publishedTime: PUBLISHED, modifiedTime: PUBLISHED,
+        url: CANONICAL, type: "article", publishedTime: PUBLISHED, modifiedTime: MODIFIED,
         images: [{ url: IMAGE, width: 1200, height: 630, alt: "Shopify reviewed for Indian sellers in 2026" }],
     },
     twitter: {
@@ -40,17 +41,18 @@ const RATINGS: [string, string, string][] = [
 ];
 
 const FAQ = [
-    { q: "How much does Shopify cost in India?", a: "Basic is ₹1,499/month on annual billing or ₹1,994/month billed monthly. The Shopify plan is around ₹7,447/month and Advanced around ₹30,164/month. Those are subscription figures only — the transaction fee, payment gateway charges, GST and apps are all additional." },
+    { q: "How much does Shopify cost in India?", a: "Basic is ₹1,499/month on annual billing or ₹1,994/month billed monthly. Grow is ₹7,447/month billed monthly or ₹5,599/month on yearly billing; Advanced is ₹30,164/month billed monthly or ₹22,680/month yearly. Those are subscription figures only — the transaction fee, payment gateway charges, GST and apps are all additional." },
     { q: "Why do Indian sellers pay a Shopify transaction fee?", a: "Because Shopify Payments is not available in India. Shopify waives its transaction fee when you use their own payment product; since Indian merchants cannot, the fee applies to every order. On Basic that is 2%, on top of what Razorpay, PayU or Cashfree charge you separately." },
     { q: "Is Shopify worth it for a small Indian store?", a: "It depends on volume. Below roughly ₹1 lakh a month in revenue the fixed costs are a large share of your margin, and WooCommerce on cheap hosting is dramatically cheaper. Between ₹1 and ₹5 lakh the convenience genuinely earns its keep. Above that, the percentage fee becomes the thing to optimise." },
     { q: "What are Shopify's hidden costs?", a: "Not hidden exactly, but easy to underestimate: the transaction fee, paid apps (which add up fast — several at ₹1,000-₹2,000/month each), a premium theme, GST on the subscription, and your payment gateway's own percentage. Budget realistically at two to five times the sticker price." },
     { q: "Can I use Razorpay or PayU with Shopify?", a: "Yes — Shopify supports a range of Indian gateways and setting one up is straightforward. Just remember that using any third-party gateway is precisely what triggers Shopify's own transaction fee, so you are paying two percentages on each sale." },
     { q: "Is Shopify good for SEO?", a: "It is competent. You get editable titles, meta descriptions, alt text and a clean sitemap. The limitation is structural: Shopify enforces certain URL patterns (like /products/ and /collections/) that you cannot change. For most stores this matters far less than having good product pages and content." },
     { q: "What is the best Shopify alternative in India?", a: "WooCommerce on WordPress, if you can manage a site — free software, no transaction fee, and hosting from a few hundred rupees a month. It trades money for time and technical responsibility. For a comparison of what each really costs, see the dedicated breakdown." },
-    { q: "Does GST apply to the Shopify subscription in India?", a: "Yes — 18% GST is added to the subscription invoice for Indian merchants, so Basic's ₹1,499 annual-billing rate lands around ₹1,769 a month on paper. It is claimable as input credit if you are GST-registered, but it is real cash flow either way. Factor it in whenever you compare plans." },
+    { q: "Does GST apply to the Shopify subscription in India?", a: "Shopify charges GST on its fees to stores located in India unless you add your GSTIN under Settings > Billing > Billing profile > Tax ID. GST on invoices issued before you add the GSTIN is valid and is not reversed or refunded, so add it early. Sellers without a GSTIN carry it as a real cost — at India's standard 18% GST rate, Basic's ₹1,499 annual-billing rate lands around ₹1,769 a month. Factor it in whenever you compare plans." },
+    { q: "How do I pay the Shopify bill from India?", a: "Shopify bills Indian stores in INR through Razorpay. You can pay with UPI (set up as a UPI mandate for automatic debits) or a Visa, Mastercard or RuPay card that supports recurring payments. Charges above ₹15,000 need an extra authentication step after a pre-debit SMS, and for bills above ₹1,00,000 Shopify suggests a credit card rather than UPI. Since 30 October 2025, paying an invoice redirects you straight to your payment provider to authenticate, cutting confirmation time from over 30 hours to about 30 seconds. While you are in billing, add your GSTIN under Settings > Billing > Billing profile > Tax ID so future invoices are not charged GST." },
     { q: "Can I offer Cash on Delivery on Shopify in India?", a: "Yes. COD can be enabled as a manual payment method, and several apps add COD-specific controls like order verification and pincode rules. Just budget for the COD reality every Indian seller learns: return-to-origin rates are meaningfully higher than on prepaid orders, and each failed delivery costs you two-way shipping." },
     { q: "How long does it take to actually launch?", a: "The store itself is a one-day build — theme, products, pages. The real timeline is set by payment gateway approval, which typically takes a few working days of KYC review after you submit business and bank details. Start the gateway application on day one, in parallel with building the store." },
-    { q: "Does Shopify have a free trial?", a: "Shopify typically offers a short free trial and has run promotional first-month pricing at various points. Terms change frequently, so check their India pricing page directly rather than trusting a figure quoted in an article — including this one." },
+    { q: "Does Shopify have a free trial?", a: "As of September 2026, Shopify India offers a 3-day free trial followed by ₹20/month for the first 3 months. Its pricing page also advertises credits of 1% back on sales, capped at ₹1,10,000 on Basic, ₹1,70,000 on Grow, ₹2,30,000 on Advanced and ₹3,40,000 on Plus. Terms change, so check the India pricing page before signing up rather than trusting a figure quoted in an article — including this one." },
 ];
 
 const jsonLd = [
@@ -58,7 +60,7 @@ const jsonLd = [
         "@context": "https://schema.org", "@type": "BlogPosting",
         headline: "Shopify Review India 2026: Costs, Fees and the Catch",
         description: "What Indian sellers actually pay on Shopify once transaction fees, gateways and GST are counted.",
-        image: IMAGE, datePublished: PUBLISHED, dateModified: PUBLISHED,
+        image: IMAGE, datePublished: PUBLISHED, dateModified: MODIFIED,
         author: { "@type": "Person", name: "Mohit Koli", url: "https://mohitkoli.in/profile", jobTitle: "Senior Full Stack Developer", sameAs: ["https://github.com/mohit16161600", "https://www.linkedin.com/in/mohit-koli-b47260213", "https://x.com/mohitko86979490"] },
         publisher: { "@type": "Person", name: "Mohit Koli", logo: { "@type": "ImageObject", url: "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg" } },
         mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
@@ -111,7 +113,7 @@ export default function ShopifyReviewIndia() {
 
                     <p className="mb-10 text-sm text-gray-500 border-l-2 border-primary-500/40 pl-4">
                         Contains affiliate links; I may earn a commission at no extra cost to you. Pricing checked against
-                        Shopify&apos;s India pages in August 2026. This review is based on published pricing, documented
+                        Shopify&apos;s India pages in September 2026. This review is based on published pricing, documented
                         features and fee structures rather than a store of my own.
                     </p>
 
@@ -133,16 +135,24 @@ export default function ShopifyReviewIndia() {
                                     <tr><th className="p-4 font-semibold">Plan</th><th className="p-4">Annual billing</th><th className="p-4">Monthly billing</th><th className="p-4">Who it is for</th></tr>
                                 </thead>
                                 <tbody className="text-gray-300">
-                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Basic</td><td className="p-4">₹1,499/mo</td><td className="p-4">₹1,994/mo</td><td className="p-4">New stores</td></tr>
-                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Shopify</td><td className="p-4">—</td><td className="p-4">₹7,447/mo</td><td className="p-4">Growing volume, lower fee %</td></tr>
-                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Advanced</td><td className="p-4">—</td><td className="p-4">₹30,164/mo</td><td className="p-4">High volume, lowest fee %</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Basic</td><td className="p-4">₹1,499/mo</td><td className="p-4">₹1,994/mo</td><td className="p-4">New stores (2% transaction fee)</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Grow</td><td className="p-4">₹5,599/mo</td><td className="p-4">₹7,447/mo</td><td className="p-4">Growing volume (1% transaction fee)</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Advanced</td><td className="p-4">₹22,680/mo</td><td className="p-4">₹30,164/mo</td><td className="p-4">High volume (0.6% transaction fee)</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Plus</td><td className="p-4" colSpan={2}>From ₹1,75,000/mo</td><td className="p-4">Largest stores (0.2% — the lowest fee)</td></tr>
                                 </tbody>
                             </table>
                         </div>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            Shopify renamed its mid-tier &ldquo;Shopify&rdquo; plan to &ldquo;Grow&rdquo; in April 2025, so
+                            older guides may still use the old name. Shopify Plus starts at ₹1,75,000 a month in India.
+                        </p>
                         <p className="text-gray-300 leading-8">
-                            Annual billing on Basic saves about 25%. The higher tiers exist mainly to reduce the
-                            transaction fee, so above a certain revenue the expensive plan genuinely costs less overall —
-                            do that arithmetic with your own numbers rather than assuming Basic is cheapest.
+                            Yearly billing saves about 25% on Basic, Grow and Advanced. The higher tiers exist mainly to
+                            reduce the third-party transaction fee — 2% on Basic, 1% on Grow, 0.6% on Advanced and 0.2% on
+                            Plus. By simple arithmetic on those prices (not a Shopify statement), Grow becomes cheaper than
+                            Basic above roughly ₹4.1 lakh a month in sales on yearly billing (₹5.45 lakh on monthly
+                            billing), and Advanced beats Grow above roughly ₹42.7 lakh a month on yearly billing. Do that
+                            arithmetic with your own numbers rather than assuming Basic is cheapest.
                         </p>
                     </section>
 
@@ -165,6 +175,16 @@ export default function ShopifyReviewIndia() {
                     </section>
 
                     <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">What changed in 2026 (and what it means for an Indian store)</h2>
+                        <ul className="space-y-3 text-gray-300 leading-8 list-disc list-inside">
+                            <li><strong className="text-white">17 June 2026 — Spring &apos;26 Edition.</strong> 150+ updates, including Shopify Catalog and the Universal Commerce Protocol switched on by default for all merchants so products can surface in AI channels such as ChatGPT, Copilot and the Gemini app, an expanded Sidekick, and Campaign Autopilot for Facebook, Instagram, Shop and email campaigns.</li>
+                            <li><strong className="text-white">30 June 2026 — Shopify Scripts deprecated.</strong> All published scripts were deactivated; Shopify Functions is the replacement.</li>
+                            <li><strong className="text-white">7 July 2026 — Payfuture on Shopify.</strong> A new integration lets merchants in India enable UPI and NetBanking through a single connection.</li>
+                            <li><strong className="text-white">26 August 2026 — Thank you and Order status page deadline.</strong> Remaining stores were upgraded automatically, and script tags stopped running on the Order status page for non-Plus stores. If your conversion tracking went quiet in late August, move it to web pixels.</li>
+                        </ul>
+                    </section>
+
+                    <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-4">What a real store pays: worked example</h2>
                         <p className="text-gray-300 leading-8 mb-5">
                             Percentages hide the pain, so here is the arithmetic for a store doing{" "}
@@ -178,19 +198,19 @@ export default function ShopifyReviewIndia() {
                                 </thead>
                                 <tbody className="text-gray-300">
                                     <tr className="border-t border-white/5"><td className="p-4 font-medium text-white">Subscription (annual billing)</td><td className="p-4">₹1,499</td><td className="p-4">Basic plan, before GST</td></tr>
-                                    <tr className="border-t border-white/5"><td className="p-4 font-medium text-white">GST on subscription</td><td className="p-4">~₹270</td><td className="p-4">18% on the subscription invoice</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-medium text-white">GST on subscription</td><td className="p-4">~₹270</td><td className="p-4">India&apos;s 18% GST rate — only if you have not added a GSTIN to your Shopify billing profile</td></tr>
                                     <tr className="border-t border-white/5"><td className="p-4 font-medium text-white">Shopify transaction fee</td><td className="p-4 text-amber-300">₹4,000</td><td className="p-4">2% of ₹2,00,000 — the India-specific cost</td></tr>
                                     <tr className="border-t border-white/5"><td className="p-4 font-medium text-white">Payment gateway fee</td><td className="p-4">~₹4,000</td><td className="p-4">Typically around 2%, varies by gateway and method</td></tr>
                                     <tr className="border-t border-white/5"><td className="p-4 font-medium text-white">Apps (assume two paid)</td><td className="p-4">~₹2,000</td><td className="p-4">Reviews, bundles, marketing apps add up fast</td></tr>
-                                    <tr className="border-t border-white/5"><td className="p-4 font-bold text-white">Total</td><td className="p-4 font-bold text-red-300">~₹11,770</td><td className="p-4">≈ 5.9% of revenue, before shipping and ads</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-bold text-white">Total</td><td className="p-4 font-bold text-red-300">~₹11,770</td><td className="p-4">≈ 5.9% of revenue, before shipping and ads (about ₹11,500 with a GSTIN on file)</td></tr>
                                 </tbody>
                             </table>
                         </div>
                         <p className="text-gray-300 leading-8">
                             Two things jump out. The subscription — the number everyone compares — is barely 15% of the
                             real monthly cost. And the two percentage fees scale with revenue, which is why the same
-                            store at ₹5 lakh a month suddenly finds the mid-tier Shopify plan (lower transaction fee)
-                            cheaper overall. Run this table with your own revenue before choosing a plan.
+                            store at ₹5 lakh a month can find the mid-tier Grow plan (1% transaction fee instead of Basic&apos;s
+                            2%) cheaper overall on yearly billing, where the break-even is roughly ₹4.1 lakh a month. Run this table with your own revenue before choosing a plan.
                         </p>
                     </section>
 
@@ -202,9 +222,9 @@ export default function ShopifyReviewIndia() {
                         </p>
                         <ol className="space-y-3 text-gray-300 leading-8 list-decimal list-inside mb-5">
                             <li><strong className="text-white">Start the trial</strong> and pick your store name — you can connect a proper domain later, so do not overthink it today.</li>
-                            <li><strong className="text-white">Choose a free theme first.</strong> Dawn (the default) converts fine. Buy a premium theme after revenue, not before.</li>
+                            <li><strong className="text-white">Choose a free theme first</strong> — such as Dawn or one of the 10 free Horizon themes Shopify introduced on 21 May 2025 — and buy a premium theme only after the store is making sales.</li>
                             <li><strong className="text-white">Add 5-10 products properly</strong> rather than 50 badly — sharp photos on a clean background, honest descriptions, GST-inclusive pricing.</li>
-                            <li><strong className="text-white">Apply to a payment gateway</strong> — Razorpay, PayU or Cashfree. This is the step with a real wait: KYC review typically takes a few days, and they will ask for business and bank details, usually including GST information.</li>
+                            <li><strong className="text-white">Apply to a payment gateway</strong> — Razorpay, PayU or Cashfree. Razorpay&apos;s official Shopify app is called &ldquo;All-in-one Razorpay Payment Gateway&rdquo; and accepts UPI, cards, wallets and netbanking; since 7 July 2026, Payfuture&apos;s Shopify app has also let Indian merchants enable UPI and NetBanking through a single connection. This is the step with a real wait: KYC review typically takes a few days, and they will ask for business and bank details, usually including GST information.</li>
                             <li><strong className="text-white">Set up shipping.</strong> Most Indian stores plug in an aggregator like Shiprocket or Delhivery through the app store rather than negotiating courier rates directly.</li>
                             <li><strong className="text-white">Configure taxes</strong> — enable India GST settings so invoices come out right, and confirm the details with your CA rather than a blog (including this one).</li>
                             <li><strong className="text-white">Place a real test order</strong> — pay, receive the emails, process the refund — before you spend a rupee on ads.</li>

@@ -5,14 +5,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "How to Build an AI Agent Without Coding in 2026 (Free)",
   description:
-    "Build a working AI agent without coding in 2026. Free beginner guide using Lindy, Botpress and AgentGPT with real templates like a support and WhatsApp bot.",
+    "Build an AI agent without code in 2026 using Botpress, Meta's WhatsApp Business AI and Google Opal, with a support bot and WhatsApp bot walkthrough.",
   keywords: [
     "build ai agent without coding",
     "no code ai agent 2026",
     "how to build ai agent",
     "free ai agent builder",
     "ai agent for beginners",
-    "lindy ai agent tutorial",
+    "meta business agent whatsapp",
     "botpress chatbot tutorial",
     "make ai agent no code",
     "ai agent templates",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "How to Build an AI Agent Without Coding in 2026 (Free)",
     description:
-      "Build a working AI agent without coding in 2026. Free beginner guide using Lindy, Botpress and AgentGPT with real templates like a support and WhatsApp bot.",
+      "Build an AI agent without code in 2026 using Botpress, Meta's WhatsApp Business AI and Google Opal, with a support bot and WhatsApp bot walkthrough.",
     url: "https://mohitkoli.in/blog/how-to-build-ai-agent-no-code-2026",
     type: "article",
     images: ["/assets/blog/how-to-build-ai-agent-no-code-2026.png"],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How to Build an AI Agent Without Coding in 2026 (Free)",
     description:
-      "Build a working AI agent without coding in 2026. Free beginner guide using Lindy, Botpress and AgentGPT with real templates like a support and WhatsApp bot.",
+      "Build an AI agent without code in 2026 using Botpress, Meta's WhatsApp Business AI and Google Opal, with a support bot and WhatsApp bot walkthrough.",
     images: ["/assets/blog/how-to-build-ai-agent-no-code-2026.png"],
   },
 };
@@ -43,7 +43,7 @@ export default function BuildAIAgentNoCode2026() {
     {
       question: "Can I build an AI agent without coding?",
       answer:
-        "Yes. No-code platforms like Lindy, Botpress, and AgentGPT let you build working agents using visual builders and templates, no programming required.",
+        "Yes. No-code platforms like Botpress, Google Opal and Meta's Business AI for WhatsApp let you build working agents using visual builders and guided setup, no programming required. Lindy is also no-code but has no free plan, and AgentGPT is archived.",
     },
     {
       question: "Are there free AI agent builders?",
@@ -83,7 +83,7 @@ export default function BuildAIAgentNoCode2026() {
   ];
 
   const keyTakeaways = [
-    "No-code tools like Lindy, Botpress, and AgentGPT let anyone build working AI agents free.",
+    "Botpress (free plan), Meta's Business AI for WhatsApp (free to start) and Google Opal let anyone build AI agents without code; Lindy is paid-only and AgentGPT is archived.",
     "An AI agent does more than chat; it takes actions across your tools to finish tasks.",
     "You can launch a template-based support or WhatsApp agent in about an hour.",
     "Building agents for local businesses on retainer is a fast-growing 2026 income model.",
@@ -95,10 +95,10 @@ export default function BuildAIAgentNoCode2026() {
     "@type": "BlogPosting",
     headline: "How to Build an AI Agent Without Coding in 2026 (Free)",
     description:
-      "Build a working AI agent without coding in 2026. Free beginner guide using Lindy, Botpress and AgentGPT with real templates like a support and WhatsApp bot.",
+      "Build an AI agent without code in 2026 using Botpress, Meta's WhatsApp Business AI and Google Opal, with a support bot and WhatsApp bot walkthrough.",
     image: "https://mohitkoli.in/assets/blog/how-to-build-ai-agent-no-code-2026.png",
     datePublished: "2026-06-06",
-    dateModified: "2026-06-06",
+    dateModified: "2026-09-13",
     author: {
       "@type": "Person",
       name: "Mohit Koli",
@@ -123,7 +123,7 @@ export default function BuildAIAgentNoCode2026() {
       "@id": "https://mohitkoli.in/blog/how-to-build-ai-agent-no-code-2026",
     },
     keywords:
-      "build ai agent without coding, no code ai agent 2026, how to build ai agent, free ai agent builder, ai agent for beginners, lindy ai agent tutorial, botpress chatbot tutorial, make ai agent no code, ai agent templates, what are ai agents",
+      "build ai agent without coding, no code ai agent 2026, how to build ai agent, free ai agent builder, ai agent for beginners, meta business agent whatsapp, botpress chatbot tutorial, make ai agent no code, ai agent templates, what are ai agents",
     articleSection: "AI Tools",
     inLanguage: "en-IN",
   };
@@ -208,6 +208,7 @@ export default function BuildAIAgentNoCode2026() {
             <span>•</span>
             <span>16 min read</span>
           </div>
+          <p className="text-gray-500 text-xs">Updated September 13, 2026</p>
         </header>
 
         <div className="relative w-full aspect-[1200/630] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-emerald-500/10">
@@ -339,9 +340,19 @@ export default function BuildAIAgentNoCode2026() {
           <h2 id="best-free-tools" className="text-3xl font-bold mt-12 mb-6">Best Free No-Code Agent Tools</h2>
           <p className="text-gray-300 mb-6">
             There are dozens of platforms, but three stand out for beginners in 2026
-            because they balance power, a usable free tier, and a gentle learning curve.
-            Here is how they compare.
+            because they balance power and a gentle learning curve. Pricing has shifted
+            a lot this year, so check the Free Tier column before you pick one.
           </p>
+
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-10">
+            <h3 className="text-xl font-bold mb-4 text-emerald-300">What changed in 2026 (read this before you pick a tool)</h3>
+            <ul className="list-disc pl-6 text-gray-300 space-y-3">
+              <li><strong>Lindy has no free plan.</strong> Paid plans start at $29.99 per user per month with 3,000 credits.</li>
+              <li><strong>Botpress repriced.</strong> Workspaces created after 14 May 2026 are billed per conversation with AI usage bundled. The Free plan is $0 for 25 conversations and 3 AI agents; Plus is $150/month billed annually.</li>
+              <li><strong>AgentGPT is archived.</strong> Its GitHub repository is archived and unmaintained, so do not build on it.</li>
+              <li><strong>OpenAI is retiring Agent Builder.</strong> On 3 June 2026 OpenAI announced its no-code Agent Builder is deprecated and will shut down on 30 November 2026, pointing users to the Agents SDK or ChatGPT workspace agents, which are only for Business, Enterprise, Edu and Teachers plans.</li>
+            </ul>
+          </div>
 
           <div className="overflow-x-auto mb-10 border border-white/10 rounded-2xl">
             <table className="w-full text-left">
@@ -357,19 +368,19 @@ export default function BuildAIAgentNoCode2026() {
                 <tr>
                   <td className="p-4 font-semibold text-emerald-300">Lindy</td>
                   <td className="p-4">Email & workflow automation</td>
-                  <td className="p-4 text-green-400">Yes, limited tasks</td>
+                  <td className="p-4 text-red-400">No: 7-day trial, then $29.99/user/mo (3,000 credits)</td>
                   <td className="p-4">Easy</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-emerald-300">Botpress</td>
                   <td className="p-4">Customer support & WhatsApp</td>
-                  <td className="p-4 text-green-400">Yes, monthly credits</td>
+                  <td className="p-4 text-green-400">Yes: $0, 25 conversations, 3 AI agents</td>
                   <td className="p-4">Easy-Medium</td>
                 </tr>
                 <tr>
-                  <td className="p-4 font-semibold text-emerald-300">AgentGPT</td>
-                  <td className="p-4">Autonomous task experiments</td>
-                  <td className="p-4 text-green-400">Yes, capped runs</td>
+                  <td className="p-4 font-semibold text-emerald-300">Google Opal</td>
+                  <td className="p-4">Experiments & learning how agents plan</td>
+                  <td className="p-4">No pricing listed (Google Labs experiment)</td>
                   <td className="p-4">Easy</td>
                 </tr>
               </tbody>
@@ -386,33 +397,35 @@ export default function BuildAIAgentNoCode2026() {
                   <p>✔ Natural-language setup</p>
                 </div>
                 <div className="text-red-400">
-                  <p>✘ Free task limit fills fast</p>
+                  <p>✘ No free plan (paid from $29.99/user/mo)</p>
                 </div>
               </div>
             </div>
             <div className="border border-white/10 rounded-2xl overflow-hidden">
               <div className="bg-emerald-600/20 p-4 text-center font-bold">Botpress</div>
               <div className="p-4 space-y-3 text-sm">
-                <p className="text-gray-300">A visual builder built for chat. The best free option for support bots and WhatsApp integration.</p>
+                <p className="text-gray-300">A visual builder built for chat. A strong free option for a support bot: the $0 Free plan includes 25 conversations, and the plan comparison lists the WhatsApp channel on every plan, including Free.</p>
                 <div className="text-green-400">
                   <p>✔ WhatsApp & web chat</p>
                   <p>✔ Knowledge-base upload</p>
                 </div>
                 <div className="text-red-400">
                   <p>✘ Slight learning curve</p>
+                  <p>✘ Human handoff needs Plus</p>
                 </div>
               </div>
             </div>
             <div className="border border-white/10 rounded-2xl overflow-hidden">
-              <div className="bg-teal-600/20 p-4 text-center font-bold">AgentGPT</div>
+              <div className="bg-teal-600/20 p-4 text-center font-bold">Google Opal</div>
               <div className="p-4 space-y-3 text-sm">
-                <p className="text-gray-300">Give it a goal and watch it break the task into steps. Great for learning how agents think.</p>
+                <p className="text-gray-300">A Google Labs no-code tool for building AI mini-apps, rolling out in India since 7 October 2025. It replaces AgentGPT here, whose GitHub project is archived.</p>
                 <div className="text-green-400">
-                  <p>✔ Zero setup to try</p>
-                  <p>✔ Fun for experiments</p>
+                  <p>✔ Agent step that works out which tools and models it needs (added 24 February 2026)</p>
+                  <p>✔ Memory, dynamic routing and interactive chat</p>
                 </div>
                 <div className="text-red-400">
-                  <p>✘ Less production-ready</p>
+                  <p>✘ Labs experiment, no pricing published</p>
+                  <p>✘ No WhatsApp or website chat deployment like Botpress</p>
                 </div>
               </div>
             </div>
@@ -451,7 +464,7 @@ export default function BuildAIAgentNoCode2026() {
               <div className="bg-emerald-500/20 p-2 rounded-lg text-emerald-400 font-bold">3</div>
               <div>
                 <p className="font-bold">A free account</p>
-                <p className="text-sm text-gray-400">Sign up for Botpress or Lindy with your email. No credit card needed on the free tier.</p>
+                <p className="text-sm text-gray-400">Sign up for Botpress with your email and start on the Free plan with no upfront commitment. (Lindy has no free plan and offers only a 7-day free trial.)</p>
               </div>
             </div>
             <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
@@ -466,7 +479,11 @@ export default function BuildAIAgentNoCode2026() {
           <h2 id="build-support-bot" className="text-3xl font-bold mt-12 mb-6">Build a Customer Support Agent</h2>
           <p className="text-gray-300 mb-6">
             We will use <strong>Botpress</strong> for this build because its free tier and
-            knowledge-base feature make it ideal for support. The goal: an agent that
+            knowledge-base feature make it ideal for support. The Free plan (25
+            conversations, 3 AI agents, 100 MB of vector storage for the knowledge base,
+            hard-capped with no add-ons) is enough to build and test; running it for real
+            traffic means upgrading to Plus, which includes 250 conversations a month for
+            $150/month billed annually. The goal: an agent that
             answers common questions on your website and escalates anything tricky to a
             human. Follow these steps.
           </p>
@@ -474,7 +491,7 @@ export default function BuildAIAgentNoCode2026() {
             <li><strong>Create a new bot.</strong> After signing in, click New Bot and choose the support assistant template. This gives you a working flow to edit instead of a blank page.</li>
             <li><strong>Add your knowledge.</strong> Open the Knowledge Base panel and upload your FAQ document or paste your website URL. The agent reads it and uses it to answer.</li>
             <li><strong>Write the system instruction.</strong> In plain language, tell it who it is: "You are the support assistant for Acme Shoes. Be friendly, answer only from the knowledge base, and never invent prices."</li>
-            <li><strong>Add a human handoff.</strong> Drag in a handoff node so that when the agent is unsure, it collects the visitor's email and flags a team member.</li>
+            <li><strong>Add a human handoff.</strong> Botpress&apos;s official Human-in-the-Loop handoff requires the Plus plan or higher. On the Free plan, have the flow collect the visitor&apos;s email and end the chat as the fallback.</li>
             <li><strong>Add a lead-capture step.</strong> Before ending a chat, have the agent ask if the visitor wants a callback, then save the details.</li>
             <li><strong>Preview and tweak.</strong> Use the built-in emulator to chat with your agent and refine instructions until replies feel right.</li>
           </ol>
@@ -492,14 +509,44 @@ export default function BuildAIAgentNoCode2026() {
           <h2 id="build-whatsapp-bot" className="text-3xl font-bold mt-12 mb-6">Build a WhatsApp Bot</h2>
           <p className="text-gray-300 mb-6">
             WhatsApp is where most customers in many markets actually talk to businesses.
-            Botpress can publish your agent straight to a WhatsApp Business number. Here is
-            the flow.
+            There are two no-code routes: Meta&apos;s own Business AI inside the WhatsApp
+            Business app, or a Botpress agent connected to a WhatsApp Business number.
+          </p>
+
+          <h3 className="text-2xl font-bold mt-8 mb-4">The zero-tool option: Meta&apos;s own Business AI inside WhatsApp</h3>
+          <p className="text-gray-300 mb-6">
+            On 14 May 2026 Meta launched Business AI on WhatsApp for eligible small
+            businesses in India. In the WhatsApp Business app, open the Tools tab, choose
+            &quot;Your Business AI&quot; and follow the guided setup, no coding needed. It then
+            answers customer questions 24/7, recommends products, captures leads and books
+            appointments in all native Indian languages, and you can step in, adjust it or
+            turn it off at any time. UPI payments inside the chat were announced as coming soon.
+          </p>
+          <p className="text-gray-300 mb-6">
+            On 3 June 2026 Meta expanded Meta Business Agent to businesses of all sizes
+            globally across WhatsApp, Messenger and Instagram, saying getting started is
+            free and paid subscriptions will follow. Its developer docs list business
+            information, FAQs, websites and files as knowledge sources, allow handoff to
+            your app, and exclude finance, government, health, alcohol, gambling,
+            over-the-counter drug and matrimony businesses. On the WhatsApp Business
+            Platform, Meta has charged for Business Agent messages at $2 per million tokens
+            (about 4-5 US cents a message) since 1 August 2026. Try this first if you only
+            need WhatsApp FAQs; use Botpress when you need custom flows, web chat or
+            Sheets logging.
+          </p>
+
+          <h3 className="text-2xl font-bold mt-8 mb-4">The Botpress route</h3>
+          <p className="text-gray-300 mb-6">
+            Botpress can publish your agent to a WhatsApp Business number. Your bot cannot
+            send messages to WhatsApp users until Meta has verified your business, and
+            replies can also fail if your WhatsApp Business account has a payment-method
+            problem. Here is the flow.
           </p>
           <ol className="list-decimal pl-6 text-gray-300 space-y-4 mb-8">
-            <li><strong>Set up WhatsApp Business.</strong> You need a WhatsApp Business account connected through Meta. Botpress walks you through linking it inside the Channels settings.</li>
+            <li><strong>Set up WhatsApp Business.</strong> You need a WhatsApp Business account connected through Meta. In Botpress Studio open Explore Hub, install the WhatsApp integration and select Authorize WhatsApp; Meta then has to verify your business before the bot can send messages.</li>
             <li><strong>Reuse your support agent.</strong> The same bot you built above can serve WhatsApp; you simply enable the WhatsApp channel rather than rebuilding logic.</li>
             <li><strong>Add quick-reply buttons.</strong> WhatsApp supports buttons. Offer choices like Track Order, Talk to Human, or See Catalog to keep chats fast.</li>
-            <li><strong>Respect templates.</strong> WhatsApp requires approved templates for proactive messages. For replies inside a 24-hour window you are free, so design around customer-initiated chats first.</li>
+            <li><strong>Respect templates.</strong> WhatsApp requires approved templates for proactive messages, which Meta has billed per delivered message since 1 July 2025. Free-form replies and utility templates inside the 24-hour customer service window are free only until 30 September 2026; from 1 October 2026 Meta charges for them per message. Messages sent in the 72-hour free entry point window opened by a Click-to-WhatsApp ad or Facebook call-to-action button remain free.</li>
             <li><strong>Test on your own phone.</strong> Message the number, walk through every path, and confirm the handoff actually reaches you.</li>
           </ol>
           <p className="text-gray-300 mb-6">
@@ -541,6 +588,18 @@ export default function BuildAIAgentNoCode2026() {
             Update it whenever your prices or policies change, otherwise the agent will
             confidently quote last year's pricing.
           </p>
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-10">
+            <p className="text-gray-300">
+              <strong className="text-emerald-300">If your employer already pays for ChatGPT Business, Enterprise or Edu:</strong>{" "}
+              you can use workspace agents, launched by OpenAI on 22 April 2026 as an
+              evolution of GPTs. Click Agents in the ChatGPT sidebar, describe a workflow in
+              plain English, and ChatGPT helps define the steps, connect tools, set schedules
+              and require approval before sensitive actions such as sending an email. The
+              agents run in the cloud on Codex, can be shared across the organisation and
+              used in ChatGPT or Slack, and have used credit-based pricing since 6 May 2026.
+              They are not available on personal Free, Go, Plus or Pro plans.
+            </p>
+          </div>
 
           <h2 id="test-and-launch" className="text-3xl font-bold mt-12 mb-6">Testing & Launching Your Agent</h2>
           <p className="text-gray-300 mb-6">

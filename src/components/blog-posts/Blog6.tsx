@@ -44,6 +44,14 @@ const faqSchema = {
         text: "Pay depends more on experience, location, and specialization than the label itself. Backend roles can sometimes pay slightly more, but modern frontend engineers with strong React, TypeScript, performance, and design system skills are also highly paid.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Does AI change whether I should learn frontend or backend first?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. The Stack Overflow 2025 Developer Survey found 84% of respondents use or plan to use AI tools, but only about 3% highly trust AI output, so developers still need strong fundamentals to review generated code. GitHub's Octoverse 2025 reports TypeScript became the most-used language on GitHub by monthly contributors in August 2025, so learning TypeScript early helps on either side.",
+      },
+    },
   ],
 };
 
@@ -79,6 +87,7 @@ export default function Blog6() {
           <li><a href="#comparison" className="hover:text-primary-300 transition-colors">Frontend vs Backend Comparison</a></li>
           <li><a href="#examples" className="hover:text-primary-300 transition-colors">Real Examples</a></li>
           <li><a href="#roadmap" className="hover:text-primary-300 transition-colors">What Should You Learn First?</a></li>
+          <li><a href="#ai" className="hover:text-primary-300 transition-colors">Does AI Change Which Side to Learn First?</a></li>
           <li><a href="#tips" className="hover:text-primary-300 transition-colors">Tips and Tricks</a></li>
           <li><a href="#faq" className="hover:text-primary-300 transition-colors">FAQ</a></li>
         </ul>
@@ -112,7 +121,7 @@ export default function Blog6() {
           <ul className="list-disc list-inside text-gray-300 space-y-2">
             <li><strong>HTML and CSS:</strong> Structure and styling</li>
             <li><strong>JavaScript:</strong> Logic and interaction</li>
-            <li><strong>Frameworks:</strong> React, Vue, Angular, Next.js</li>
+            <li><strong>Frameworks:</strong> React (19.3), Next.js (16.3), Vue (3.5; 3.6 Vapor Mode still a release candidate), Angular (22)</li>
             <li><strong>Responsive design:</strong> Mobile and desktop support</li>
             <li><strong>Accessibility:</strong> Building usable interfaces for everyone</li>
             <li><strong>Performance:</strong> Faster rendering and cleaner UI behavior</li>
@@ -166,8 +175,8 @@ export default function Blog6() {
               </tr>
               <tr className="border-t border-slate-800 bg-slate-900/60">
                 <td className="px-4 py-3 font-medium text-slate-100">Typical tech</td>
-                <td className="px-4 py-3 text-slate-300">HTML, CSS, JavaScript, React, Tailwind</td>
-                <td className="px-4 py-3 text-slate-300">Node.js, Python, PHP, SQL, APIs</td>
+                <td className="px-4 py-3 text-slate-300">HTML, CSS, JavaScript/TypeScript, React, Tailwind</td>
+                <td className="px-4 py-3 text-slate-300">Node.js/TypeScript, Python, PHP, SQL, APIs</td>
               </tr>
               <tr className="border-t border-slate-800">
                 <td className="px-4 py-3 font-medium text-slate-100">Feedback loop</td>
@@ -220,6 +229,24 @@ export default function Blog6() {
             </tbody>
           </table>
         </div>
+        <p className="text-gray-300 mt-4 leading-relaxed">
+          Why TypeScript sits on both sides: according to GitHub&apos;s Octoverse 2025 report, August 2025 was the first month TypeScript became the most used language on GitHub by contributor count, overtaking Python by about 42,000 contributors.
+        </p>
+
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-6 mt-6">
+          <h3 className="text-2xl font-semibold text-white mb-4">The 2026 toolchain at a glance (as of September 2026)</h3>
+          <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <li><strong>React 19.3</strong> (9 September 2026): makes &lt;ViewTransition&gt; and Fragment Refs stable, and adds use(browser()) and Trusted Types support.</li>
+            <li><strong>Next.js 16.3</strong> (3 August 2026): opt-in Instant Navigations, up to 90% less dev-server memory, and a version-matched AGENTS.md for AI coding agents.</li>
+            <li><strong>Angular 22</strong> (3 June 2026): the active line, with v21 in long-term support.</li>
+            <li><strong>Vue 3.5</strong> is the stable line; Vue 3.6 with Vapor Mode is still a release candidate, so it is not stable yet.</li>
+            <li><strong>TypeScript 7.0</strong> (8 July 2026): a native Go port with 8x&ndash;12x faster full builds.</li>
+            <li><strong>Node.js 26</strong> (5 May 2026, Temporal API on by default): becomes LTS in October 2026. From Node.js 27 (April 2027) there is one major release per year and every release is LTS.</li>
+          </ul>
+          <p className="text-gray-300 mt-4 leading-relaxed">
+            You do not need to chase these versions as a beginner. Just install the current stable or LTS lines and focus on fundamentals.
+          </p>
+        </div>
       </section>
 
       <section id="examples" className="mb-12">
@@ -258,9 +285,9 @@ export default function Blog6() {
         <ol className="list-decimal list-inside text-gray-300 space-y-3 mb-6">
           <li><strong>Start with HTML, CSS, and JavaScript.</strong> These are the shared language of web development.</li>
           <li><strong>Build simple frontend projects.</strong> Landing pages, forms, portfolios, and small apps are perfect early practice.</li>
-          <li><strong>Learn a framework like React.</strong> This makes you more job-ready and teaches component thinking.</li>
+          <li><strong>Learn a framework like React.</strong> This makes you more job-ready and teaches component thinking. Start a project with <code>npx create-next-app@latest</code> (Next.js App Router), <code>npx create-react-router@latest</code> (React Router) or <code>npm create vite@latest</code> for a plain single-page app. Create React App was deprecated by the React team on 14 February 2025, so skip tutorials that use it.</li>
           <li><strong>Connect to APIs.</strong> This becomes your bridge from frontend into backend thinking.</li>
-          <li><strong>Then learn backend basics.</strong> Start with Node.js, databases, authentication, and CRUD patterns.</li>
+          <li><strong>Then learn backend basics.</strong> Start with Node.js, databases, authentication, and CRUD patterns. Install the current Node.js LTS line (Node.js 26 becomes LTS in October 2026).</li>
         </ol>
         <div className="rounded-2xl border border-amber-500/30 bg-amber-900/10 p-6">
           <p className="text-amber-200 leading-relaxed">
@@ -281,6 +308,26 @@ export default function Blog6() {
           <li>Backend salaries rise when you can handle APIs, architecture, data modeling, security, and scaling.</li>
           <li>Full stack roles can be very valuable once you can contribute meaningfully on both sides.</li>
         </ul>
+      </section>
+
+      <section id="ai" className="mb-12">
+        <h2 className="text-3xl font-bold text-white mb-6">
+          Does AI Change Which Side You Should Learn First?
+        </h2>
+        <p className="text-gray-300 mb-4 leading-relaxed">
+          AI coding tools are now part of everyday development. The Stack Overflow 2025 Developer Survey (49,000+ responses from 177 countries) found that 84% of respondents use or plan to use AI tools and 47.1% use them daily. Yet only about 3% highly trust AI output, and 45.7% distrust it. In practice, that means a growing part of the job is reviewing code a tool produced, and that needs the same fundamentals on either side.
+        </p>
+        <ul className="list-disc list-inside text-gray-300 space-y-3 mb-4">
+          <li>GitHub&apos;s Octoverse 2025 reports that nearly 80% of new developers on GitHub use Copilot within their first week, and that more than 180 million developers build on GitHub.</li>
+          <li>The same report notes TypeScript became the most-used language by monthly contributors in August 2025, citing research that 94% of LLM-generated compilation errors were type-check failures. Takeaway: learn TypeScript early, whichever side you start on.</li>
+          <li>Next.js 16.3 (3 August 2026) now writes a version-matched AGENTS.md block so coding agents read the right docs, a sign that frameworks are being built around AI-assisted workflows.</li>
+        </ul>
+        <p className="text-gray-300 leading-relaxed">
+          AI does not flip the frontend-first recommendation. It raises the value of fundamentals like HTML, CSS, JavaScript, HTTP and data modelling, because you have to judge whether what the tool produced is right. For the bigger career picture, read{" "}
+          <Link href="/blog/will-ai-replace-your-job-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-2">
+            Will AI Replace Web Developers in 2026?
+          </Link>
+        </p>
       </section>
 
       <section id="tips" className="mb-12">

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Blog2() {
     return (
@@ -12,18 +13,26 @@ export default function Blog2() {
                     witnessed something alarming: we're getting worse at the fundamentals of programming.
                 </p>
                 <p className="text-gray-300 mb-4 leading-relaxed">
-                    Recent research reveals that 66% of developers find AI-generated code "almost right, but not
-                    quite," and 45% spend more time debugging AI code than writing it from scratch. Even more
-                    concerning, studies show that when experienced developers use AI tools, they actually take
-                    19% longer to complete complex tasks.
+                    In the Stack Overflow 2025 Developer Survey (about 49,000 respondents), 84% of developers
+                    said they use or plan to use AI tools, yet 66% named &quot;AI solutions that are almost right,
+                    but not quite&quot; as their top frustration and 45.2% said debugging AI-generated code is more
+                    time-consuming.
+                </p>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                    Speed is murkier than the hype suggests. METR&apos;s early-2025 study found experienced
+                    open-source developers took 19% longer with AI tools while believing AI had sped them up by
+                    20%; its February 2026 update with late-2025 tools pointed the other way, but METR calls that
+                    &quot;only very weak evidence&quot; (more in the FAQ below).
                 </p>
                 <div className="bg-red-900/20 border-l-4 border-red-500/30 p-6 mb-6">
-                    <h3 className="text-lg font-semibold text-red-200 mb-2">The AI Reality Check:</h3>
+                    <h3 className="text-lg font-semibold text-red-200 mb-2">The AI Reality Check (2026 numbers):</h3>
                     <ul className="list-disc list-inside text-red-300 space-y-1">
-                        <li>40% of AI-generated code contains security vulnerabilities.</li>
-                        <li>AI-assisted commits are merged 4x faster, often bypassing proper reviews.</li>
-                        <li>Junior developers are losing fundamental problem-solving skills.</li>
-                        <li>Critical thinking and code comprehension are declining across the board.</li>
+                        <li>Veracode, July 2026: AI code passes security tests only 56% of the time.</li>
+                        <li>Faros AI, May 2026: under high AI adoption, 31% more PRs merged with no review; bugs
+                            per PR up 54%.</li>
+                        <li>Anthropic, January 2026: juniors who learned a new library with AI scored 17 points
+                            lower on comprehension.</li>
+                        <li>Stack Overflow 2025 survey: only about 3% highly trust AI output.</li>
                     </ul>
                 </div>
             </section>
@@ -54,6 +63,20 @@ export default function Blog2() {
                     that leads to those solutions. This is creating a generation of developers who can implement
                     but can't architect.
                 </p>
+
+                <h3 className="text-2xl font-semibold text-gray-100 mb-4">What the Evidence Says: Anthropic&apos;s 2026 Skill-Formation Trial</h3>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                    In a randomized controlled trial published on 29 January 2026, Anthropic had 52 mostly junior
+                    engineers build features with Trio, an async Python library new to them. The AI-assisted group
+                    scored 50% on a follow-up quiz versus 67% for those coding by hand, with the biggest gap on
+                    debugging questions, and was only about two minutes faster (not statistically significant).
+                </p>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                    Three usage patterns preserved learning: asking follow-up questions about generated code,
+                    asking for code plus an explanation, and asking only conceptual questions while fixing errors
+                    yourself. How someone used AI influenced how much they retained, which is the idea behind tip
+                    3 in section 6. The irony: this evidence comes from the company that makes Claude Code.
+                </p>
             </section>
 
             <section id="security-vulnerabilities" className="mb-12">
@@ -66,12 +89,15 @@ export default function Blog2() {
 
                 <h3 className="text-2xl font-semibold text-gray-100 mb-4">The Dangerous Statistics</h3>
                 <p className="text-gray-300 mb-4 leading-relaxed">
-                    Recent security audits reveal that projects using AI coding assistants show:
+                    Recent industry reports show:
                 </p>
                 <ul className="list-disc list-inside text-gray-300 space-y-2 mb-4">
-                    <li>A 40% increase in secrets exposure (API keys, passwords).</li>
-                    <li>A 2.5x higher rate of critical vulnerabilities.</li>
-                    <li>60% more security-related review comments needed.</li>
+                    <li>GitGuardian (March 2026): Claude Code-assisted commits leaked secrets at 3.2% against a
+                        1.5% baseline for all public commits.</li>
+                    <li>CodeRabbit (December 2025): critical and major findings 1.4-1.7x higher in AI-co-authored
+                        PRs.</li>
+                    <li>CodeRabbit: about 1.7x more review issues per AI-authored PR, with security issues up to
+                        2.74x higher.</li>
                     <li>Frequent use of deprecated and unsafe libraries.</li>
                 </ul>
 
@@ -116,6 +142,21 @@ export default function Blog2() {
                     because they've lost a helpful tool, but because they've lost what feels like an essential
                     capability. This psychological dependence is perhaps the most concerning aspect of the AI
                     coding revolution.
+                </p>
+
+                <h3 className="text-2xl font-semibold text-gray-100 mb-4">2026: The Tools Stopped Autocompleting and Started Doing the Whole Job</h3>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                    The dependence problem is bigger now because coding assistants became autonomous agents.
+                    GitHub Copilot moved to token-based AI Credits billing on 1 June 2026 and added a $100 Max
+                    tier. Cursor 3 (2 April 2026) added an Agents Window for running many agents in parallel, and
+                    on 10 September 2026 Cursor launched Projects, where a coordinator agent plans work over months
+                    and delegates it to other agents. From 14 August 2026, Claude Code made auto mode, where a
+                    classifier approves or blocks actions instead of prompting you, the default for new sessions
+                    on Pro, Max and Team plans.
+                </p>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                    When the assistant plans, edits and opens the pull request, &quot;understand before you
+                    accept&quot; means reading whole diffs, not one suggested line.
                 </p>
 
                 <div className="bg-yellow-900/20 border-l-4 border-yellow-500/30 p-6 mb-6">
@@ -182,6 +223,11 @@ export default function Blog2() {
                 <ul className="list-disc list-inside text-gray-300 space-y-2 mb-4">
                     <li><strong>Code Review Everything:</strong> AI-generated code should always go through the
                         same rigorous review process as human-written code.</li>
+                    <li><strong>Budget for Review, Not Just Generation:</strong> Faros AI&apos;s May 2026 data
+                        shows that under high AI adoption median time in PR review rose 441.5% and PRs are 51.3%
+                        larger. Keep PRs small, have the author write a
+                        plain-English summary of what the AI changed, and use AI review tools as a first pass,
+                        never the only pass.</li>
                     <li><strong>Automated Security Scans:</strong> Implement security scanning tools in your
                         CI/CD pipeline to catch vulnerabilities in AI-generated code.</li>
                     <li><strong>Pair Programming with AI:</strong> Use AI as a third participant in pair
@@ -206,8 +252,8 @@ export default function Blog2() {
                 <div className="space-y-4">
                     <div>
                         <h3 className="font-semibold text-lg">Can AI assistants introduce security risks?</h3>
-                        <p className="text-gray-400 mt-1">Yes. Studies show that a significant percentage of
-                            AI-generated code contains security vulnerabilities. This is because AI models are
+                        <p className="text-gray-400 mt-1">Yes. Veracode&apos;s July 2026 report found roughly 44% of
+                            AI code-generation tasks introduced a security vulnerability. This is because AI models are
                             trained on vast amounts of public code, which includes insecure patterns.
                             Over-reliance on AI without proper code review can lead to vulnerabilities like data
                             exposure and insecure dependencies.</p>
@@ -227,6 +273,15 @@ export default function Blog2() {
                             forgetting basic syntax, losing the ability to decompose complex problems, and a
                             decline in critical thinking and code comprehension skills, as the AI handles these
                             cognitive tasks.</p>
+                    </div>
+                    <div>
+                        <h3 className="font-semibold text-lg">Did the METR study really show AI makes developers slower?</h3>
+                        <p className="text-gray-400 mt-1">Yes and no. METR&apos;s July 2025 trial found experienced
+                            open-source developers took 19% longer with early-2025 AI tools, even though they
+                            believed AI had sped them up by 20%. In a 24 February 2026 update with later tools, METR
+                            estimated returning developers were 18% faster (confidence interval from 38% faster to 9%
+                            slower), but called this only very weak evidence because of selection effects. The robust
+                            takeaway is the perception gap: developers are poor judges of how much AI helps them.</p>
                     </div>
                 </div>
             </section>
@@ -287,22 +342,22 @@ export default function Blog2() {
             <div className="mb-12">
                 <h3 className="text-2xl font-bold text-gray-100 mb-6">Related Articles</h3>
                 <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors">
-                        <h4 className="text-lg font-semibold text-gray-100 mb-2 hover:text-blue-600 cursor-pointer">
-                            The Psychology of Programming: Why Developers Resist Change
+                    <Link href="/blog/what-are-ai-agents-2026-guide" className="block bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors">
+                        <h4 className="text-lg font-semibold text-gray-100 mb-2 hover:text-blue-600">
+                            What Are AI Agents? The Complete 2026 Beginner Guide
                         </h4>
-                        <p className="text-gray-400 text-sm mb-2">January 18, 2025 • 10 min read</p>
-                        <p className="text-gray-400">Explore the cognitive biases that affect how developers adopt
-                            new technologies...</p>
-                    </div>
-                    <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors">
-                        <h4 className="text-lg font-semibold text-gray-100 mb-2 hover:text-blue-600 cursor-pointer">
-                            Security-First AI Coding: Protecting Your Applications
+                        <p className="text-gray-400 text-sm mb-2">June 4, 2026 • 15 min read</p>
+                        <p className="text-gray-400">How AI agents work, real examples, top tools and how to start
+                            using them, in plain simple language.</p>
+                    </Link>
+                    <Link href="/blog/ai-in-web-development-comprehensive-guide" className="block bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors">
+                        <h4 className="text-lg font-semibold text-gray-100 mb-2 hover:text-blue-600">
+                            Complete Guide to AI in Web Development: How AI is Revolutionizing Coding
                         </h4>
-                        <p className="text-gray-400 text-sm mb-2">January 20, 2025 • 8 min read</p>
-                        <p className="text-gray-400">Learn how to audit and secure AI-generated code in your
-                            projects...</p>
-                    </div>
+                        <p className="text-gray-400 text-sm mb-2">Sep 15, 2025 • 12 min read</p>
+                        <p className="text-gray-400">How artificial intelligence is changing web development, from
+                            code generation to automated testing.</p>
+                    </Link>
                 </div>
             </div>
         </>

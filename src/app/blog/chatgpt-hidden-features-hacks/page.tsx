@@ -52,7 +52,7 @@ export default function ChatGPTGodModeHacks() {
     },
     {
       question: "How do I unlock hidden ChatGPT features?",
-      answer: "Most hidden ChatGPT features are unlocked in two places: Settings > Personalization (Memory, Custom Instructions, and persona 'Keyword Activators'), and the prompt itself (JSON mode for structured output, SVG code generation, Advanced Data Analysis for files, and recursive self-critique prompts). No plugins or jailbreaks needed—you activate them by asking for them explicitly."
+      answer: "Most hidden ChatGPT features live in a handful of places: Settings > Personalization (Custom Instructions with the Enable customization toggle, persona 'Keyword Activators', and the Memory summary), Projects (whose instructions override your global ones), ChatGPT Voice, scheduled tasks, and the prompt itself (JSON output, SVG code generation, data analysis for files, and recursive self-critique prompts). No plugins or jailbreaks needed—you activate them by asking for them explicitly."
     },
     {
       question: "How can I make ChatGPT remember my coding style?",
@@ -64,7 +64,7 @@ export default function ChatGPTGodModeHacks() {
     },
     {
       question: "What are the best ChatGPT hacks for developers?",
-      answer: "The best hacks include 'JSON Mode' for structured data, using 'Advanced Data Analysis' to debug large log files, and asking the AI to 'Refactor this code using the SOLID principles and provide a comparison table of changes.'"
+      answer: "The best hacks include 'JSON Mode' for structured data, using data analysis (the built-in Python tool, formerly called Advanced Data Analysis and Code Interpreter) to debug large log files, and asking the AI to 'Refactor this code using the SOLID principles and provide a comparison table of changes.'"
     },
     {
       question: "Is ChatGPT Vision safe for sensitive documents?",
@@ -72,7 +72,11 @@ export default function ChatGPTGodModeHacks() {
     },
     {
       question: "Does the god mode prompt work on the free ChatGPT plan?",
-      answer: "Yes. The god mode prompt is plain text, so it works on the free plan—paste it at the start of any chat or into Custom Instructions. A few of the heavier hidden features pair better with a paid plan (larger file uploads for Advanced Data Analysis, deeper Memory), but the prompt itself upgrades response quality on every tier."
+      answer: "Yes. The god mode prompt is plain text, so it works on the free plan—paste it at the start of any chat or into Custom Instructions. The free plan currently runs GPT-5.6 Luna (its default since the week of 6 August 2026) and allows up to 1,500 characters of custom instructions, which the prompt fits comfortably. A few of the heavier hidden features pair better with a paid plan (such as interactive tables and charts in data analysis), but the prompt itself upgrades response quality on every tier."
+    },
+    {
+      question: "How long can the ChatGPT god mode prompt be?",
+      answer: "Custom instructions can be up to 1,500 characters on Free and Go, and up to 5,000 characters on Plus, Pro, Business, Enterprise and Education (raised on 15 July 2026). The god mode prompt in this guide is under 700 characters, so it fits on every plan."
     }
   ];
 
@@ -85,7 +89,9 @@ export default function ChatGPTGodModeHacks() {
     { id: "recursive-prompting", title: "Recursive Prompting Frameworks" },
     { id: "memory-hacks", title: "Memory Hacks for Long-Term Projects" },
     { id: "dev-secrets", title: "Developer 'Under-the-Hood' Secrets" },
-    { id: "future", title: "The Future of Hidden AI Features" },
+    { id: "vision-hacks", title: "Multimodal Vision Hacks" },
+    { id: "voice-roleplay", title: "ChatGPT Voice (GPT-Live): The Interview Coach" },
+    { id: "future", title: "What OpenAI Shipped, Then Un-shipped, in 2026" },
     { id: "faq", title: "FAQ Section" }
   ];
 
@@ -113,7 +119,7 @@ export default function ChatGPTGodModeHacks() {
               }
             },
             "datePublished": "2026-05-10",
-            "dateModified": "2026-08-20T00:00:00.000Z",
+            "dateModified": "2026-09-13T00:00:00.000Z",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://mohitkoli.in/blog/chatgpt-hidden-features-hacks"
@@ -189,10 +195,10 @@ export default function ChatGPTGodModeHacks() {
             <span>|</span>
             <time dateTime="2026-05-10">MAY 10, 2026</time>
             <span>|</span>
-            <time dateTime="2026-08-20" className="text-green-500">UPDATED: AUGUST 20, 2026</time>
+            <time dateTime="2026-09-13" className="text-green-500">UPDATED: SEPTEMBER 13, 2026</time>
             <span>|</span>
             <span className="flex items-center gap-1">
-              READ_TIME: 9 MIN
+              READ_TIME: 11 MIN
             </span>
           </div>
         </header>
@@ -277,11 +283,17 @@ export default function ChatGPTGodModeHacks() {
             "You are my senior expert partner, not a generic assistant. Follow these rules in every reply: 1. Skip disclaimers, intros and filler—start directly with the answer. 2. For code, give the complete, production-ready block first; explain only if I ask. 3. If my request is vague, ask exactly one clarifying question, then proceed with the most likely interpretation. 4. Challenge me—if my approach is weak, say so and propose a stronger one. 5. Assume senior-level knowledge of my field; never over-explain basics. 6. Before finalizing, silently review your answer for errors and fix them. 7. For complex tasks, end with a 'Next 3 Actions' list. Stay in this mode for the entire conversation."
           </div>
           <p className="text-lg text-gray-400 mb-6 leading-relaxed">
-            <strong>Where to paste it:</strong> For a one-off session, make it the first message of a new chat. To make it permanent, go to Settings {">"} Personalization {">"} Custom Instructions and drop it in the "How would you like ChatGPT to respond?" box—now every new chat starts in god mode automatically.
+            <strong>Where to paste it:</strong> For a one-off session, make it the first message of a new chat. To make it permanent, open Settings {">"} Personalization on web or desktop (on the mobile apps, Settings {">"} Customize ChatGPT), make sure Enable customization is on, and paste the prompt into the Custom Instructions field—changes apply immediately to all chats, including existing ones. Free and Go accounts can save up to 1,500 characters and Plus, Pro, Business, Enterprise and Education accounts up to 5,000 (raised from 1,500 on 15 July 2026). The prompt above is under 700 characters, so it fits on the free plan with room to spare.
           </p>
           <p className="text-lg text-gray-400 mb-12 leading-relaxed">
             Why it works: each rule kills a default behavior that wastes your time—filler intros, over-explained basics, and the "happy to help" padding. Be clear about what it does <em>not</em> do, though. It won't make the model smarter, and it won't unlock anything OpenAI has deliberately locked. It changes the shape and tone of what comes back, not the underlying capability. That's still a real win when you're reading fifty replies a day. Treat it as your base layer, then stack task-specific prompts from my library of the <Link href="/blog/best-chatgpt-prompts-2026" className="text-green-400 underline hover:text-green-300">best ChatGPT prompts for 2026</Link> on top of it.
           </p>
+          <div className="p-8 bg-white/5 rounded-2xl border border-white/10 mb-12">
+            <h3 className="text-green-400 font-bold mb-4">Which model is answering you in September 2026</h3>
+            <p className="text-gray-400 leading-relaxed">
+              GPT-5.6 Sol first reached paid ChatGPT plans on 9 July 2026. On 6 August 2026 OpenAI said GPT-5.6 Luna would replace GPT-5.5 Instant as the default for Free and Go users that week, with unlimited text chats and a Think button from the following week (limits still apply to file uploads, images and other tools). Plus and Pro got an updated GPT-5.6 Sol that powers both quick answers and deeper reasoning, with a slider for effort. GPT-6 Astra was introduced on 3 September 2026, first for a limited set of organizations, and is rolling out to Plus, Pro, Business and Enterprise. The god mode prompt works the same on Luna and Sol—the Think option or effort slider is the real &quot;more brain&quot; control.
+            </p>
+          </div>
 
           <hr className="border-white/5 my-20" />
 
@@ -297,7 +309,7 @@ export default function ChatGPTGodModeHacks() {
             <p className="text-gray-300 italic mb-6">
               "When I ask for code, don't explain anything unless I ask. Just give me the raw code in a single block. If there are multiple ways to do something, provide the most performant one. Always assume I have a senior level understanding of React, Node, and Python."
             </p>
-            <p className="text-sm text-gray-500">— Save this in your 'How would you like ChatGPT to respond?' section.</p>
+            <p className="text-sm text-gray-500">— Save this in Settings {">"} Personalization {">"} Custom Instructions.</p>
           </div>
           <p className="text-lg text-gray-400 mb-12 leading-relaxed font-bold">
             Most people don't know this: You can toggle different personas just by using "Keyword Activators" in your instructions. For example, tell it: "If I start a prompt with [DEV], act as a Senior Software Architect. If I start with [C], act as a Creative Director."
@@ -333,7 +345,7 @@ export default function ChatGPTGodModeHacks() {
             <span className="text-green-500">05.</span> Dynamic SVG & Visual Data Hacks
           </h2>
           <p className="text-lg text-gray-400 mb-6 leading-relaxed">
-            DALL-E 3 is cool, but it's not "functional." If you want an icon, a logo, or a specific diagram, ask for <strong>SVG code</strong>.
+            ChatGPT Images (now on version 2.5, released 8 September 2026) is cool, but a raster image is not "functional." If you want an icon, a logo, or a specific diagram you can edit, ask for <strong>SVG code</strong>.
           </p>
           <ul className="list-disc pl-8 space-y-4 text-gray-400 mb-12 text-lg">
             <li><strong>Instant Icons:</strong> "Generate the SVG code for a minimalist 'Hacker' icon in neon green."</li>
@@ -343,6 +355,18 @@ export default function ChatGPTGodModeHacks() {
           <p className="text-lg text-gray-400 mb-12 leading-relaxed">
             And when you do want pure image generation, prompt structure is everything—my collection of <Link href="/blog/viral-chatgpt-image-prompts-2026" className="text-green-400 underline hover:text-green-300">viral ChatGPT image prompts for 2026</Link> breaks down the exact wording patterns behind the trends flooding Instagram right now.
           </p>
+          <div className="p-8 bg-green-500/5 rounded-2xl border border-green-500/20 mb-12">
+            <h3 className="text-green-400 font-bold mb-4">Images 2.5: the controls people miss</h3>
+            <p className="text-gray-400 mb-4 leading-relaxed">
+              Images 2.5 adds sharper detail, more precise multi-turn editing and up to 50% lower latency than Images 2.0, and it is better at editing only what you asked while keeping the rest. Images 2.0 (21 April 2026) is on every plan including Free, with 2K output and nine aspect ratios. The official DALL·E GPT was retired on 30 August 2026.
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-400">
+              <li><strong>Sketch:</strong> draw a rough reference right in ChatGPT, then describe the final image.</li>
+              <li><strong>Templates:</strong> Images {">"} Templates, for formats like posters and product photos.</li>
+              <li><strong>Comments on the image:</strong> place a comment directly on a generated image for a focused edit (on mobile, open the image full-screen).</li>
+              <li><strong>Share the prompt:</strong> share the prompt along with an image.</li>
+            </ul>
+          </div>
 
           <hr className="border-white/5 my-20" />
 
@@ -369,11 +393,17 @@ export default function ChatGPTGodModeHacks() {
             <span className="text-green-500">07.</span> Memory Hacks for Long-Term Projects
           </h2>
           <p className="text-lg text-gray-400 mb-6 leading-relaxed">
-            Memory is what turns ChatGPT from a search box into something that actually knows your project. Tell it your stack, your users, and your constraints once, and you stop burning the first three messages of every chat on context. One caveat worth saying out loud: memory persists, so keep genuinely confidential material—client data, credentials, anything under NDA—out of it.
+            Memory is what turns ChatGPT from a search box into something that actually knows your project. Tell it your stack, your users, and your constraints once, and you stop burning the first three messages of every chat on context. One caveat worth saying out loud: memory persists, so keep genuinely confidential material—client data, credentials, anything under NDA—out of it. Since 27 August 2026 there is a middle path: start a temporary chat as <strong>personalized</strong>. It uses your memories, custom instructions and plugins (so the god mode prompt still applies) but creates no new memories and stays out of your history unless you save it. Temporary chats are non-personalized by default, personalization can only be set when the chat starts, and a saved temporary chat becomes a regular chat that follows your normal memory settings.
           </p>
           <p className="text-lg text-gray-400 mb-12 leading-relaxed">
-            <strong>The part people miss:</strong> you can manage what it forgets. Go to Settings {">"} Personalization {">"} Memory, and you can delete individual memories or wipe the lot. Audit it every few weeks. Stale memories—an old employer, a project you abandoned, a framework you've since dropped—quietly bend answers in the wrong direction, and that's a miserable thing to debug when you've forgotten what the model still thinks is true about you.
+            <strong>The part people miss:</strong> you can manage what it remembers. Settings {">"} Personalization {">"} Memory now shows a memory summary that ChatGPT updates automatically and time-stamps. To change it, type what you want changed into the box at the bottom or highlight text in the summary to correct it. To wipe it, choose &quot;Delete and turn off memory&quot; from the three-dot menu—this does not delete past chats, and turning memory back on can rebuild memories from the chats that remain. A book icon under any response shows which sources (custom instructions, past chats, files, memories) personalized it, and the legacy per-item list is still under Settings {">"} Memory {">"} Saved memories. Read and edit the summary every few weeks. Stale memories—an old employer, a project you abandoned, a framework you've since dropped—quietly bend answers in the wrong direction, and that's a miserable thing to debug when you've forgotten what the model still thinks is true about you.
           </p>
+          <div className="p-8 bg-white/5 rounded-2xl border border-white/10 mb-12">
+            <h3 className="text-green-400 font-bold mb-4">Projects: memory that stays inside one job</h3>
+            <p className="text-gray-400 leading-relaxed">
+              Projects are available on all free and paid ChatGPT plans. Each project holds chats, uploaded reference material (PDFs, spreadsheets, docs, images, pasted text, and links to Slack channels or Google Drive files) and project instructions set from the three-dot menu {">"} Project settings. Those instructions apply only inside that project and <strong>override your global custom instructions</strong>—a clean way to run a different persona per client or codebase without touching your god mode prompt. Projects have built-in memory of their chats and files, and project-only memory keeps context from leaking in or out. You can also save a ChatGPT response as a project source and move existing chats into a project. Since 14 July 2026, sidebar search covers chats, projects, images and documents on web, iOS and Android.
+            </p>
+          </div>
 
           <hr className="border-white/5 my-20" />
 
@@ -389,6 +419,10 @@ export default function ChatGPTGodModeHacks() {
             <div className="p-6 bg-green-500/5 border border-green-500/20 rounded-xl">
               <h3 className="text-green-500 mb-2">DOCKER MAGIC</h3>
               <p className="text-xs text-gray-400">Upload your source code and say "Generate a multi-stage Dockerfile optimized for production size."</p>
+            </div>
+            <div className="p-6 bg-green-500/5 border border-green-500/20 rounded-xl md:col-span-2">
+              <h3 className="text-green-500 mb-2">DATA ANALYSIS</h3>
+              <p className="text-xs text-gray-400">Data analysis (the built-in Python tool, formerly called Advanced Data Analysis and Code Interpreter) runs Python in a stateful Jupyter environment and accepts spreadsheets (.xls, .xlsx, .csv), PDFs and text or data files (.json, .xml, .yaml, .txt, .md). On Plus and Pro it can show pandas DataFrames as interactive tables, and bar, line, pie and scatter charts can be toggled with &quot;Switch to interactive chart&quot; or &quot;Switch to static chart&quot;.</p>
             </div>
           </div>
 
@@ -410,24 +444,38 @@ export default function ChatGPTGodModeHacks() {
           <hr className="border-white/5 my-20" />
 
           <h2 id="voice-roleplay" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
-            <span className="text-green-500">10.</span> Advanced Voice Mode: The Interview Coach
+            <span className="text-green-500">10.</span> ChatGPT Voice (GPT-Live): The Interview Coach
           </h2>
           <p className="text-gray-400 mb-6 leading-relaxed">
             If you are still typing everything, you are leaving the most underused feature on the table. The hidden
-            use case for Advanced Voice is <strong className="text-white">roleplay</strong>: ask ChatGPT to act as a
+            use case for ChatGPT Voice (powered by GPT-Live-1 or GPT-Live-1 mini, depending on your plan) is <strong className="text-white">roleplay</strong>: ask ChatGPT to act as a
             tough hiring manager for the exact role you are chasing, then practise your answers out loud. It pushes
             back on weak answers, asks follow-ups, and you get to fail privately before you succeed publicly. The
             same trick works for language practice, salary negotiation and client pitches.
           </p>
+          <p className="text-gray-400 mb-6 leading-relaxed">
+            GPT-Live (launched 8 July 2026) is full-duplex: it listens while speaking, signals attention with phrases like &quot;mhmm&quot;, stays quiet when you need a moment, and lets you interrupt it—much closer to a real interview. It hands search or reasoning to a text model in the background while it keeps talking; since 9 September 2026 that model is GPT-5.6 or GPT-6 Astra (where your plan allows), set with the same controls as text chat. Replies appear as text in the same chat, Voice can use web search and memory, and since 7 August 2026 it accepts file uploads and works inside Projects—so upload the job description first, then start the roleplay.
+          </p>
+          <ul className="list-disc pl-8 space-y-2 text-gray-400 mb-12">
+            <li><strong className="text-white">Daily limits (as of 9 September 2026):</strong> Free gets limited GPT-Live-1 mini, Go 3 hours of mini, Plus 3 hours of GPT-Live-1, Pro $100 15 hours, and Pro $200 unlimited.</li>
+            <li><strong className="text-white">Video and screen sharing:</strong> still only in the older &quot;Advanced&quot; option (Settings {">"} Voice) on iOS and Android.</li>
+            <li><strong className="text-white">Voices:</strong> there are nine to choose from.</li>
+          </ul>
 
           <hr className="border-white/5 my-20" />
 
           <h2 id="future" className="text-3xl font-bold mt-20 mb-8 text-white flex items-center gap-3">
-            <span className="text-green-500">11.</span> The Future of Hidden AI Features
+            <span className="text-green-500">11.</span> What OpenAI Shipped, Then Un-shipped, in 2026
           </h2>
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-            My bet for late 2026 is <strong>agentic memory</strong>—where ChatGPT remembers not just what you said but what it <em>did</em> for you. Less "here's a draft" and more "I noticed you haven't touched the blog in three days; want me to start the next post from those notes we made last week?" That's a guess, not a roadmap leak, so hold it loosely.
+            The &quot;ChatGPT starts the conversation&quot; idea already had its run. <strong>Pulse</strong>, the proactive daily briefing OpenAI previewed for Pro users on 25 September 2025, was sunset on 17 June 2026 (Pro users kept access for 14 more days) as proactive updates moved into <strong>scheduled tasks</strong>.
           </p>
+          <ul className="list-disc pl-8 space-y-4 text-gray-400 mb-8 text-lg">
+            <li><strong>Scheduled tasks:</strong> they live on a Scheduled page in the sidebar and can run once, on a recurrence, or as monitors that search the web or check connected apps and notify you only when something changed—including in windows such as &quot;morning&quot;. They launched for Plus, Pro, Business and Enterprise; since 25 August 2026 Free users can have up to three active tasks (once, or at most once a day). Free, Go, Plus and Pro users can share tasks.</li>
+            <li><strong>The Pulse replacement hack:</strong> OpenAI suggests asking ChatGPT to schedule a daily briefing based on your interests and past chats.</li>
+            <li><strong>Webhook triggers:</strong> Plus and Pro can create webhook-triggered tasks in ChatGPT Work for new Gmail messages, Slack channel messages or GitHub pull-request activity.</li>
+            <li><strong>ChatGPT Work (9 July 2026):</strong> an agent that researches, works across connected apps and files, and produces documents, spreadsheets, presentations and Sites. On web and mobile it is for paid plans only; Free and Go get limited access in the desktop app.</li>
+          </ul>
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
             Whether OpenAI keeps this lead is a separate battle. If you're deciding where to invest your workflow, my head-to-head of <Link href="/blog/chatgpt-vs-gemini-vs-claude-best-ai-2026" className="text-green-400 underline hover:text-green-300">ChatGPT vs Gemini vs Claude in 2026</Link> compares them on coding, memory, and reasoning—because god mode techniques transfer, but each model has different hidden strengths.
           </p>

@@ -5,11 +5,12 @@ import Link from "next/link";
 const CANONICAL = "https://mohitkoli.in/blog/chatgpt-vs-gemini-vs-claude-best-ai-2026";
 const IMAGE = "https://mohitkoli.in/assets/mohitkoli-chatgpt-gemini-claude.webp";
 const PUBLISHED = "2026-04-25T00:00:00.000Z";
+const MODIFIED = "2026-09-14T00:00:00.000Z";
 
 export const metadata: Metadata = {
   title: "ChatGPT vs Gemini vs Claude: The Ultimate 2026 AI Showdown",
   description:
-    "ChatGPT, Gemini and Claude compared for 2026 on coding, writing, reasoning and price — with a clear recommendation for each kind of work.",
+    "ChatGPT (GPT-6 Astra), Gemini 3.1 Pro and Claude Fable 5.1 compared for 2026 on coding, writing, reasoning and price, with a clear pick for each task.",
   keywords: [
     "ChatGPT vs Gemini vs Claude",
     "best AI in 2026",
@@ -23,6 +24,9 @@ export const metadata: Metadata = {
     "ChatGPT alternatives",
     "Google Gemini vs ChatGPT",
     "Anthropic Claude vs OpenAI ChatGPT",
+    "GPT-6 Astra",
+    "Claude Fable 5.1",
+    "Gemini 3.1 Pro",
   ],
   alternates: {
     canonical: CANONICAL,
@@ -30,11 +34,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChatGPT vs Gemini vs Claude: The Ultimate 2026 AI Showdown",
     description:
-      "ChatGPT, Gemini and Claude compared for 2026 on coding, writing, reasoning and price — with a clear recommendation for each kind of work.",
+      "ChatGPT (GPT-6 Astra), Gemini 3.1 Pro and Claude Fable 5.1 compared for 2026 on coding, writing, reasoning and price, with a clear pick for each task.",
     url: CANONICAL,
     type: "article",
     publishedTime: PUBLISHED,
-    modifiedTime: PUBLISHED,
+    modifiedTime: MODIFIED,
     images: [{ url: IMAGE, width: 1200, height: 630, alt: "ChatGPT vs Gemini vs Claude compared for 2026" }],
   },
   twitter: {
@@ -50,27 +54,27 @@ export default function AIComparison2026() {
   const faqData = [
     {
       question: "Which AI is the most accurate in 2026?",
-      answer: "Claude Opus 5 (released July 2026) currently leads most published reasoning benchmarks and is the strongest of the three for complex research and data-heavy work. Treat any 'most accurate' claim as workload-dependent — test it on your own task before committing.",
+      answer: "As of September 2026, Claude Fable 5.1 (released 1 September 2026) is Anthropic's most capable generally available model, available on Pro through usage credits and on Max at up to 50% of weekly limits, while Claude Opus 5 (24 July 2026) is the strongest model included in Pro. OpenAI's newest flagship, GPT-6 Astra, arrived in early September 2026, so the top spot between Fable 5.1 and GPT-6 Astra is too new to call. Treat any 'most accurate' claim as workload-dependent — test it on your own task before committing.",
     },
     {
       question: "Is ChatGPT still better than Gemini?",
-      answer: "For general tasks, voice interaction and agentic workflows, ChatGPT (GPT-5.6) is the stronger all-rounder. For long documents, video analysis and anything touching Google Workspace, Gemini 3 wins on integration alone.",
+      answer: "For general tasks, voice interaction and agentic workflows, ChatGPT (GPT-5.6) is the stronger all-rounder. For long documents, video analysis and anything touching Google Workspace, Gemini 3.1 Pro wins on integration alone.",
     },
     {
       question: "Can Claude generate images?",
-      answer: "No — Claude stays focused on text and code and has no image generation. For images, use ChatGPT's built-in GPT Image generation or Google's Nano Banana Pro inside Gemini.",
+      answer: "No — Claude stays focused on text and code and has no image generation. For images, use ChatGPT Images 2.5 in ChatGPT, or Nano Banana Pro and Nano Banana 2 inside Gemini.",
     },
     {
       question: "Which AI is best for coding in 2026?",
-      answer: "Claude Opus 5 is widely considered the leader for coding, helped by strong reasoning and the Artifacts feature for live code previews. GPT-5.6 has closed much of the gap, so the honest answer is that both are excellent and the difference now shows up mostly on long, multi-file work.",
+      answer: "As of September 2026, Claude Fable 5.1 is Anthropic's strongest coding model (73.4% on CursorBench 3.2.0), Claude Opus 5 is the strongest model fully included in Claude Pro, and OpenAI's comparable model is GPT-6 Astra; Google's Gemini 3.8 Flash (2 September 2026) is pitched at long-horizon software engineering. Claude and OpenAI are close enough that the honest answer is that both are excellent and the difference now shows up mostly on long, multi-file work.",
     },
     {
       question: "Is there a free version of GPT-5.6?",
-      answer: "Yes. As of mid-August 2026, GPT-5.6 (Luna) is the default for free and ChatGPT Go users, with usage caps. Heavier reasoning modes and higher limits need a paid plan.",
+      answer: "Yes. Since August 2026, GPT-5.6 Luna has been the default for Free and ChatGPT Go users, with unlimited everyday text chats and a Think option for harder questions. GPT-5.6 Sol and GPT-6 Astra (introduced September 2026 and rolling out to paid plans) require Plus or higher.",
     },
     {
-      question: "How does Gemini 3 compare to GPT-5.6?",
-      answer: "Gemini 3 leads on context length — around 1M tokens, enough for entire document sets or long video — while GPT-5.6 focuses on reasoning depth and agentic execution. Pick Gemini when the input is huge, GPT-5.6 when the thinking is hard.",
+      question: "How does Gemini 3.1 Pro compare to GPT-5.6?",
+      answer: "Context is now a three-way tie at about 1 million tokens, so the real differences lie elsewhere: Gemini 3.1 Pro's native video understanding and Google Workspace integration, GPT-6 Astra's reasoning and computer use for agentic work, and Claude's strength at long, multi-file coding.",
     },
     {
       question: "Which AI is best for students?",
@@ -105,7 +109,7 @@ export default function AIComparison2026() {
                 "Discover the best AI in 2026. We compare ChatGPT, Google Gemini, and Anthropic Claude on coding, writing, and accuracy.",
               image: IMAGE,
               datePublished: PUBLISHED,
-              dateModified: PUBLISHED,
+              dateModified: MODIFIED,
               author: {
                 "@type": "Person",
                 name: "Mohit Koli",
@@ -166,6 +170,8 @@ export default function AIComparison2026() {
             <span>•</span>
             <span>April 25, 2026</span>
             <span>•</span>
+            <span>Updated September 14, 2026</span>
+            <span>•</span>
             <span>25 min read</span>
           </div>
         </header>
@@ -207,23 +213,31 @@ export default function AIComparison2026() {
 
           <h2 id="what-is-chatgpt" className="text-3xl font-bold mt-12 mb-6">What is ChatGPT in 2026? (The All-Rounder)</h2>
           <p className="text-gray-300 mb-6">
-            OpenAI’s ChatGPT remains the household name. In 2026, it is no longer just a text box; it’s a multimodal powerhouse. With the GPT-5 generation now at <strong>GPT-5.6</strong> — rolled out to free and Go users in mid-August 2026 — ChatGPT has become the closest thing to an "OS for your life." It excels in memory, personalization, and the ability to browse the live web with near-human intuition.
+            OpenAI’s ChatGPT remains the household name. In 2026, it is no longer just a text box; it’s a multimodal powerhouse. OpenAI released the <strong>GPT-5.6</strong> family on 9 July 2026 in three tiers — Sol (flagship), Terra (lower cost) and Luna (fastest and cheapest) — and on 6 August 2026 said GPT-5.6 Luna would become the default for Free and Go users, with unlimited text chats starting the following week. ChatGPT has become the closest thing to an "OS for your life." It excels in memory, personalization, and the ability to browse the live web with near-human intuition.
           </p>
 
           <h2 id="what-is-gemini" className="text-3xl font-bold mt-12 mb-6">What is Gemini in 2026? (The Google Ecosystem King)</h2>
           <p className="text-gray-300 mb-6">
-            Google Gemini has evolved into the most "connected" AI. Because it lives inside Google Workspace (Docs, Gmail, Sheets) and powers the latest Android devices, its context is unmatched. In 2026, Gemini 3&apos;s <strong>~1-million token context window</strong> lets you upload entire document sets or hours of video and ask questions about specific passages and frames.
+            Google Gemini has evolved into the most "connected" AI. Because it lives inside Google Workspace (Docs, Gmail, Sheets) and powers the latest Android devices, its integration is unmatched. In 2026, Gemini 3.1 Pro&apos;s <strong>1-million-token context window</strong> lets you upload entire document sets or hours of video and ask questions about specific passages and frames.
           </p>
 
           <h2 id="what-is-claude" className="text-3xl font-bold mt-12 mb-6">What is Claude in 2026? (The Ethical Intellectual)</h2>
           <p className="text-gray-300 mb-6">
-            Anthropic&apos;s <strong>Claude Opus 5</strong> (July 2026), alongside the faster Sonnet 5, has solidified its spot as the "Writer's AI." Known for its "Artifacts" feature and superior coding reasoning, Claude is the most human-sounding of the trio. It avoids the "robotic" fluff that often plagues ChatGPT and offers a level of nuance in logic that makes it the favorite for researchers and high-level developers.
+            Anthropic&apos;s September 2026 lineup is <strong>Claude Fable 5.1</strong> (1 September 2026; the top model, on Pro via usage credits and on Max), <strong>Claude Opus 5</strong> (24 July 2026; the strongest model on Pro), Claude Sonnet 5 (available from the Free plan up) and Claude Haiku 4.5 — and Claude has solidified its spot as the "Writer's AI." Known for its "Artifacts" feature and superior coding reasoning, Claude is the most human-sounding of the trio. It avoids the "robotic" fluff that often plagues ChatGPT and offers a level of nuance in logic that makes it the favorite for researchers and high-level developers.
           </p>
+
+          <h3 className="text-2xl font-bold mt-10 mb-4">What Changed by September 2026</h3>
+          <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
+            <li><strong>Anthropic:</strong> Claude Fable 5 launched on 9 June 2026 and Claude Opus 5 on 24 July 2026 ($5/$25 per million tokens, like Opus 4.8, with an effort setting). Claude Fable 5.1 followed on 1 September 2026 for Pro, Max, Team and Enterprise users at $10/$50 per million tokens; Anthropic says it scores 73.4% on CursorBench 3.2.0 (Fable 5: 70.5%) and 52.6% on Terminal-Bench-Science 0.1 (Fable 5: 24.7%).</li>
+            <li><strong>OpenAI:</strong> GPT-5.6 shipped in Sol, Terra and Luna tiers on 9 July 2026. On 6 August OpenAI made GPT-5.6 Luna the Free and Go default, saying responses with a factual error were 68% less common with Sol than GPT-5.5 Instant on finance, medical and legal prompts. GPT-6 Astra arrived in early September 2026, described by OpenAI as &quot;our most capable model, built for the hardest end-to-end work&quot;, with a 1,050,000-token context, 128K output, $10/$50 per million tokens and an April 30, 2026 knowledge cutoff.</li>
+            <li><strong>Google:</strong> Gemini 3.5 Pro was announced on 19 May 2026, but Google&apos;s model page still says &quot;3.5 Pro coming soon&quot;, so Gemini 3.1 Pro (1M input, 64k output) remains its Pro model. The Flash line moved to 3.7 Flash (13 August) and 3.8 Flash (GA 2 September, &quot;engineered for long-horizon software engineering&quot;), and a Gemini Windows app arrived on 10 September 2026 (Alt + Space).</li>
+          </ul>
+          <p className="text-gray-300 mb-6">The honest September verdict: Fable 5.1 versus GPT-6 Astra is too new to call, so test your own task.</p>
 
           <div className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 border-l-4 border-purple-500 p-6 my-8 rounded-r-2xl">
             <h3 className="text-xl font-bold mb-2">💡 Surprising 2026 Result:</h3>
             <p className="text-gray-200 italic">
-              On published reasoning and agentic benchmarks, <strong>Claude Opus 5</strong> currently sits at the top of the pack, and that matches what most developers report on long multi-file refactors. It is a lead, not a rout — GPT-5.6 is close enough that the right answer is to run your own real task through both before you commit a workflow to either.
+              As of September 2026, the two newest flagship models are Anthropic&apos;s <strong>Claude Fable 5.1</strong> (1 September 2026) and OpenAI&apos;s <strong>GPT-6 Astra</strong> (early September 2026), while Claude Opus 5 stands out on ARC-AGI 3, where Anthropic says its score is three times that of the next-best model. Neither lead is settled — run your own real task through both before you commit a workflow to either.
             </p>
           </div>
 
@@ -234,8 +248,8 @@ export default function AIComparison2026() {
                 <tr>
                   <th className="p-4 font-bold text-white">Feature</th>
                   <th className="p-4 font-bold text-white">ChatGPT (GPT-5.6)</th>
-                  <th className="p-4 font-bold text-white">Gemini 3</th>
-                  <th className="p-4 font-bold text-white">Claude (4 Opus)</th>
+                  <th className="p-4 font-bold text-white">Gemini 3.1 Pro</th>
+                  <th className="p-4 font-bold text-white">Claude (Fable 5.1 / Opus 5)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/10">
@@ -247,9 +261,9 @@ export default function AIComparison2026() {
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-purple-300">Context Window</td>
-                  <td className="p-4">256k+</td>
-                  <td className="p-4 text-green-400">10 Million+</td>
-                  <td className="p-4">1 Million+</td>
+                  <td className="p-4">1.05M (API)</td>
+                  <td className="p-4">1M</td>
+                  <td className="p-4">1M</td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold text-purple-300">Coding Power</td>
@@ -267,9 +281,14 @@ export default function AIComparison2026() {
             </table>
           </div>
 
+          <h3 className="text-2xl font-bold mt-8 mb-4">Context Window Is No Longer Gemini&apos;s Moat</h3>
+          <p className="text-gray-300 mb-6">
+            Gemini&apos;s 1-million-token window was once unique, but by September 2026 GPT-5.6 Sol and GPT-6 Astra (1,050,000 tokens on the API, 128K output), Claude Fable 5.1, Opus 5 and Sonnet 5 (1M tokens, 128K output; Haiku 4.5 is 200K) and Gemini 3.1 Pro (1M input, 64k output) are effectively equal. What still differs: Gemini reads video natively and lives inside Google Workspace, Claude&apos;s 1M tokens are roughly 555k words on its current tokenizer, and ChatGPT&apos;s in-app window varies by plan. Judge on task quality, not the context number.
+          </p>
+
           <h2 id="coding-writing" className="text-3xl font-bold mt-12 mb-6">Coding & Writing: Who Wins?</h2>
           <p className="text-gray-300 mb-6">
-            For developers, <strong>Claude Opus 5</strong> is the gold standard. Its ability to handle large codebases and provide live previews is a game-changer.
+            For developers, <strong>Claude</strong> is a top pick: Fable 5.1 is Anthropic&apos;s strongest coding model and Opus 5 the strongest fully included in Pro, though Fable 5.1 versus GPT-6 Astra is too new to call. Its ability to handle large codebases and provide live previews is a game-changer.
             However, for <strong>writing</strong>, Claude also wins for its human-like cadence. ChatGPT is still better for structuring SEO articles and high-speed drafting.
           </p>
 
@@ -289,12 +308,12 @@ export default function AIComparison2026() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
-              <p className="font-bold text-orange-400 mb-2">🎨 ChatGPT (GPT Image)</p>
-              <p className="text-sm text-gray-400">Superior at following complex, multi-subject instructions. Great for specific graphic design needs.</p>
+              <p className="font-bold text-orange-400 mb-2">🎨 ChatGPT (ChatGPT Images 2.5)</p>
+              <p className="text-sm text-gray-400">Available on all plans including Free (with lower limits on Free), with strong text rendering and faster, more precise editing than Images 2.0.</p>
             </div>
             <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
-              <p className="font-bold text-blue-400 mb-2">📸 Gemini (Nano Banana Pro)</p>
-              <p className="text-sm text-gray-400">Wins on photorealism. If you need an image that looks like a real 35mm photograph, Gemini is your tool.</p>
+              <p className="font-bold text-blue-400 mb-2">📸 Gemini (Nano Banana Pro &amp; Nano Banana 2)</p>
+              <p className="text-sm text-gray-400">Nano Banana Pro targets quality and Nano Banana 2 speed. Wins on photorealism. If you need an image that looks like a real 35mm photograph, Gemini is your tool.</p>
             </div>
           </div>
 
@@ -321,31 +340,72 @@ export default function AIComparison2026() {
 
           <h2 id="pricing" className="text-3xl font-bold mt-12 mb-6">Pricing & Free Plans in 2026</h2>
           <p className="text-gray-300 mb-6">
-            Most Pro plans have settled at <strong>$20/month</strong>, but the value proposition varies:
+            The paid tiers sit in a similar price band, but what you get for the money varies:
           </p>
           <div className="space-y-4 mb-10">
             <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
               <div className="bg-purple-500/20 p-2 rounded-lg text-purple-400 font-bold">GPT</div>
               <div>
                 <p className="font-bold">ChatGPT Plus</p>
-                <p className="text-sm text-gray-400">Includes GPT Image generation, Advanced Voice and agentic workflows. Best value for general users.</p>
+                <p className="text-sm text-gray-400">Includes ChatGPT Images 2.5, Advanced Voice and agentic workflows. Best value for general users.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
               <div className="bg-blue-500/20 p-2 rounded-lg text-blue-400 font-bold">GEM</div>
               <div>
-                <p className="font-bold">Google One AI Premium</p>
-                <p className="text-sm text-gray-400">Includes 2TB storage and Gemini integration in Docs/Gmail. Best for Google users.</p>
+                <p className="font-bold">Google AI Pro</p>
+                <p className="text-sm text-gray-400">₹1,950/month in India. Includes 5 TB storage, Gemini 3.1 Pro with a 1-million-token context window and Gemini in Gmail and Docs. Best for Google users.</p>
               </div>
             </div>
             <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
               <div className="bg-green-500/20 p-2 rounded-lg text-green-400 font-bold">CLA</div>
               <div>
                 <p className="font-bold">Claude Pro</p>
-                <p className="text-sm text-gray-400">Highest usage limits for Opus models and priority access to Artifacts. Best for Pros.</p>
+                <p className="text-sm text-gray-400">$20/month ($17/month billed annually). Includes Opus, Sonnet, Haiku and Claude Code, with Fable 5.1 through usage credits. For higher limits, Claude Max starts at $100/month for 5x or 20x Pro&apos;s usage. Best for Pros.</p>
               </div>
             </div>
           </div>
+
+          <h3 className="text-2xl font-bold mt-8 mb-4">Plan Snapshot (September 2026)</h3>
+          <div className="overflow-x-auto mb-6 border border-white/10 rounded-2xl">
+            <table className="w-full text-left text-sm">
+              <thead className="bg-white/5">
+                <tr>
+                  <th className="p-4 font-bold text-white">Tier</th>
+                  <th className="p-4 font-bold text-white">ChatGPT</th>
+                  <th className="p-4 font-bold text-white">Gemini</th>
+                  <th className="p-4 font-bold text-white">Claude</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-white/10 text-gray-300">
+                <tr>
+                  <td className="p-4 font-semibold text-purple-300">Free</td>
+                  <td className="p-4">GPT-5.6 Luna, unlimited text chats, ChatGPT Images</td>
+                  <td className="p-4">Gemini 3.6 Flash, 15 GB storage</td>
+                  <td className="p-4">Sonnet and Haiku</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-purple-300">Entry</td>
+                  <td className="p-4">—</td>
+                  <td className="p-4">Google AI Plus: ₹399/month (400 GB)</td>
+                  <td className="p-4">—</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-purple-300">Mid</td>
+                  <td className="p-4">Plus: GPT-5.6 Sol, lists GPT-6 Astra</td>
+                  <td className="p-4">Google AI Pro: ₹1,950/month (Gemini 3.1 Pro, 1M context, 5 TB)</td>
+                  <td className="p-4">Pro: $20/month or $17/month annual (Opus 5, Sonnet 5, Haiku 4.5, Claude Code; Fable 5.1 via usage credits)</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-purple-300">Top</td>
+                  <td className="p-4">—</td>
+                  <td className="p-4">Google AI Ultra: from ₹6,500/month (20 TB; top tier ₹19,500)</td>
+                  <td className="p-4">Max: from $100/month (5x or 20x Pro usage)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-gray-400 text-sm mb-10">Anthropic bills in USD, so no rupee price is given for Claude.</p>
 
           <h2 id="pros-cons" className="text-3xl font-bold mt-12 mb-6">Pros and Cons of Each</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -359,7 +419,7 @@ export default function AIComparison2026() {
                   <p>✔ Best for Task Execution</p>
                 </div>
                 <div className="text-red-400 text-sm">
-                  <p>✘ Smaller Context Window</p>
+                  <p>✘ In-App Context Varies by Plan</p>
                   <p>✘ Can be "Lazy" with Code</p>
                 </div>
               </div>
@@ -404,15 +464,15 @@ export default function AIComparison2026() {
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
               <h3 className="text-xl font-bold mb-2 text-purple-400">For Developers</h3>
-              <p className="text-gray-400 text-sm">Claude Opus 5 leads on complex, multi-file logic. GPT-5.6 is close behind and often faster on small tasks.</p>
+              <p className="text-gray-400 text-sm">Claude Fable 5.1 is Anthropic&apos;s strongest coding model and Opus 5 the strongest fully included in Pro. GPT-6 Astra is OpenAI&apos;s comparable model.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
               <h3 className="text-xl font-bold mb-2 text-green-400">For Content Creators</h3>
-              <p className="text-gray-400 text-sm">ChatGPT&apos;s speed and built-in GPT Image generation make it the best for fast-paced content production.</p>
+              <p className="text-gray-400 text-sm">ChatGPT&apos;s speed and built-in ChatGPT Images 2.5 make it the best for fast-paced content production.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
               <h3 className="text-xl font-bold mb-2 text-pink-400">For Data Scientists</h3>
-              <p className="text-gray-400 text-sm">Gemini 3&apos;s ~1M token window lets it swallow document sets and long video that the others have to be fed in pieces.</p>
+              <p className="text-gray-400 text-sm">Gemini 3.1 Pro&apos;s 1M-token window, native video understanding and Google Workspace integration make it strong for document sets and long video.</p>
             </div>
           </div>
 
@@ -437,7 +497,7 @@ export default function AIComparison2026() {
 
           <h2 className="text-3xl font-bold mt-12 mb-6 text-center">Final Winner in 2026</h2>
           <p className="text-gray-300 text-center mb-10 italic">
-            There is no single winner, and anyone telling you otherwise is selling something. For raw reasoning and code, <strong>Claude Opus 5</strong> currently holds the crown; for versatility, voice and sheer breadth of integrations, <strong>ChatGPT</strong> does; for anything involving huge inputs or Google Workspace, <strong>Gemini 3</strong> wins by default.
+            There is no single winner, and anyone telling you otherwise is selling something. For raw reasoning and code, the contest is now <strong>Claude Fable 5.1</strong> against <strong>GPT-6 Astra</strong>, both too new to call; for versatility, voice and breadth of integrations, <strong>ChatGPT</strong> leads; for Google Workspace and native video, <strong>Gemini 3.1 Pro</strong> wins; and on context length all three are effectively tied.
           </p>
 
           <h2 id="faq" className="text-3xl font-bold mt-12 mb-10 border-t border-white/10 pt-10">Frequently Asked Questions</h2>

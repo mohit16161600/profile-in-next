@@ -48,7 +48,7 @@ export default function BestChatGPTPrompts2026() {
     {
       question: "Do these prompts work on the free ChatGPT plan?",
       answer:
-        "Yes, all prompts work on free ChatGPT, though heavy or long tasks may run faster and longer on paid plans.",
+        "Yes, all prompts work on free ChatGPT, though heavy or long tasks may run faster and longer on paid plans. As of September 2026 the free plan runs GPT-5.6 Luna with unlimited everyday text chats (subject to abuse-prevention safeguards); for harder prompts use the Think option (the + menu on mobile, or Think on the web). File uploads, image generation, voice and data analysis still have separate limits. Plus and Pro use GPT-5.6 Sol with a slider for how much thought it puts into a reply; the Extra High level is limited to Pro.",
     },
     {
       question: "What makes a prompt effective?",
@@ -68,7 +68,7 @@ export default function BestChatGPTPrompts2026() {
     {
       question: "How do I get longer, detailed answers?",
       answer:
-        "Ask ChatGPT to think step by step, specify a word count, and request sections or tables. Follow up with 'continue' for more depth.",
+        "Pick a higher reasoning level, specify a word count, and request sections or tables. Follow up with 'continue' for more depth.",
     },
     {
       question: "Should I save my best prompts?",
@@ -79,6 +79,11 @@ export default function BestChatGPTPrompts2026() {
       question: "Will these prompts still work in late 2026?",
       answer:
         "The formula stays valid even as models update; you may only need to adjust wording for newer ChatGPT features.",
+    },
+    {
+      question: "Which ChatGPT model should I use with these prompts in 2026?",
+      answer:
+        "As of September 2026, Free and Go use GPT-5.6 Luna with a Think option for harder tasks. Plus and Pro use GPT-5.6 Sol with a slider for reasoning effort (Extra High is Pro-only). GPT-6 Astra, introduced on 3 September 2026, is rolling out to Plus, Pro, Business and Enterprise, with Pro getting Pro reasoning powered by GPT-6 Astra. The prompts work on all of them: use a higher reasoning level for planning, maths and code review, and Instant for quick rewrites.",
     },
   ];
 
@@ -102,7 +107,7 @@ export default function BestChatGPTPrompts2026() {
       "Get 70+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
     image: image,
     datePublished: "2026-06-12",
-    dateModified: "2026-06-12",
+    dateModified: "2026-09-13",
     author: {
       "@type": "Person",
       name: "Mohit Koli",
@@ -207,6 +212,8 @@ export default function BestChatGPTPrompts2026() {
               <span>•</span>
               <span>June 12, 2026</span>
               <span>•</span>
+              <span>Updated September 13, 2026</span>
+              <span>•</span>
               <span>22 min read</span>
             </div>
           </div>
@@ -275,6 +282,19 @@ export default function BestChatGPTPrompts2026() {
           <p className="text-gray-300 mb-6">
             New to ChatGPT entirely? Start with our friendly walkthrough on <Link href="/blog/how-to-use-chatgpt-beginners-2026" className="text-purple-400 underline hover:text-purple-300">how to use ChatGPT for beginners</Link> before you dive into the advanced prompts at the bottom of this guide.
           </p>
+
+          {/* 2026 update box */}
+          <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 border-l-4 border-purple-500 p-6 my-8 rounded-r-2xl">
+            <h3 className="text-xl font-bold mb-4">🆕 What Changed in ChatGPT Since June 2026 (and Why It Matters for Prompts)</h3>
+            <ul className="list-disc pl-6 text-gray-200 space-y-2">
+              <li><strong>10 June 2026:</strong> the model picker was simplified to Instant, Medium, High and Extra High.</li>
+              <li><strong>9 July 2026:</strong> GPT-5.6 Sol began rolling out to paid plans (not Free or Go), and ChatGPT Work launched on paid plans for longer multi-step deliverables. ChatGPT agent is no longer available; OpenAI now points users to Work.</li>
+              <li><strong>15 July 2026:</strong> the custom instructions limit went from 1,500 to 5,000 characters for Plus, Pro, Business, Enterprise and Education.</li>
+              <li><strong>August 2026:</strong> Plus and Pro got an updated GPT-5.6 Sol with a reasoning slider, GPT-5.6 Luna became the default for Free and Go, and Free and Go then got unlimited everyday text chats plus a Think button (on the web from 14 August 2026).</li>
+              <li><strong>3 September 2026:</strong> OpenAI introduced GPT-6 Astra, rolling out to Plus, Pro, Business and Enterprise. Plus gets Astra inside ChatGPT Work and Codex, while Free and Go stay on GPT-5.6 Luna.</li>
+            </ul>
+            <p className="text-gray-200 mt-4">Every prompt on this page still works unchanged, because the Role + Context + Format + Constraints formula does not depend on any one model.</p>
+          </div>
 
           <h2 id="prompt-writing-formula" className="text-3xl font-bold mt-12 mb-6">The Prompt Formula Behind Great Results</h2>
           <p className="text-gray-300 mb-6">
@@ -372,6 +392,21 @@ export default function BestChatGPTPrompts2026() {
             ))}
           </div>
 
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-10">
+            <p className="text-purple-300 font-semibold mb-2">🎓 Study Mode Tip: Turn These Prompts Into a Tutor Session</p>
+            <p className="text-gray-300 mb-4">
+              Want a tutor rather than just an answer? Study mode is available on all ChatGPT plans worldwide on web, iOS and Android, and works with every model. Instead of just giving answers, it guides you with Socratic-style questions, layered explanations and understanding checks.
+            </p>
+            <ul className="list-disc pl-6 text-gray-300 space-y-2 mb-4">
+              <li><strong>Web:</strong> type @study in the composer (or press + and type &quot;study&quot;) and select Study, or go to chatgpt.com/studymode.</li>
+              <li><strong>iOS and Android:</strong> tap + and choose Study.</li>
+              <li><strong>Note:</strong> it is not available in Temporary Chats, GPTs or Projects.</li>
+            </ul>
+            <p className="text-gray-300">
+              Since 14 August 2026, every consumer plan can also ask ChatGPT for interactive quizzes answered inside the chat. Pair Study mode with prompts 2 (quiz me), 6 (Feynman check) and 8 (exam coach) above.
+            </p>
+          </div>
+
           <h2 id="money-business-prompts" className="text-3xl font-bold mt-12 mb-6">Money & Business Prompts</h2>
           <p className="text-gray-300 mb-6">
             Whether you freelance, run a side hustle, or own a business, these prompts help you find ideas, pitch clients, and price your work. They are a starting point — pair them with real effort. For full earning methods, see our guide on the <Link href="/blog/best-ai-tools-to-make-money-online-2026" className="text-purple-400 underline hover:text-purple-300">best AI tools to make money online</Link>.
@@ -435,6 +470,9 @@ export default function BestChatGPTPrompts2026() {
           <p className="text-gray-300 mb-6">
             Need eye-catching visuals to go with your captions? Steal ideas from our list of <Link href="/blog/viral-chatgpt-image-prompts-2026" className="text-purple-400 underline hover:text-purple-300">viral ChatGPT image prompts</Link> and turn plain posts into thumb-stoppers.
           </p>
+          <p className="text-gray-300 mb-6">
+            Image prompts are now a first-class feature on every plan. ChatGPT Images 2.0 (gpt-image-2) launched on 21 April 2026 on every plan including Free, with 2K output, nine aspect ratios and much better text rendering, so ad copy and product mock-ups come out legible. ChatGPT Images 2.5 followed on 8 September 2026 with sharper detail, more precise editing, faster generation, Templates (Images &gt; Templates), Sketch on mobile (type @ and select Sketch) and a Share a prompt option. Existing image-generation limits are unchanged, and Free image generation remains limited and slower. Try combining prompt 8 (three ad angles) with one image prompt per angle.
+          </p>
 
           <h2 id="coding-prompts" className="text-3xl font-bold mt-12 mb-6">Coding & Developer Prompts</h2>
           <p className="text-gray-300 mb-6">
@@ -495,13 +533,15 @@ export default function BestChatGPTPrompts2026() {
             Once the basics feel natural, these techniques push ChatGPT to deliver noticeably better answers. They apply to almost every prompt in this guide.
           </p>
           <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
-            <li><strong>Chain of thought:</strong> Add &quot;think step by step and show your reasoning&quot; for math, logic, and planning tasks.</li>
+            <li><strong>Chain of thought:</strong> Add &quot;think step by step and show your reasoning&quot; for math, logic, and planning tasks. 2026 update: current ChatGPT reasoning models think internally, and OpenAI&apos;s own guidance says prompting them to &quot;think step by step&quot; is unnecessary; pick a higher reasoning level instead (Think on Free and Go, Medium or High on Plus, up to Extra High on Pro), and state your success criteria so the model keeps iterating until it meets them.</li>
             <li><strong>Few-shot examples:</strong> Show 1 to 3 examples of the output you want, then say &quot;now do the same for [new input]&quot;.</li>
             <li><strong>Role priming:</strong> Start with &quot;Act as a [specific expert]&quot; to unlock a more specialized tone and depth.</li>
             <li><strong>Ask for questions first:</strong> End with &quot;ask me clarifying questions before answering&quot; to avoid generic output.</li>
             <li><strong>Output format control:</strong> Request tables, JSON, bullet lists, or a specific word count to get usable results instantly.</li>
             <li><strong>Iterate, do not restart:</strong> Refine with &quot;make it shorter&quot;, &quot;more formal&quot;, or &quot;add data&quot; instead of rewriting the whole prompt.</li>
             <li><strong>Self-critique loop:</strong> Ask &quot;now critique your own answer and improve it&quot; for a stronger second draft.</li>
+            <li><strong>Use Projects as your prompt library:</strong> Projects are available on all free and paid ChatGPT plans (you must be logged in). Upload reference files, keep related chats together, and add project instructions from the three-dot menu &gt; Project settings. OpenAI&apos;s own example instruction is &quot;Act like my marketing mentor. Be concise. Use bullet points. Ask clarifying questions.&quot; Project instructions apply only inside that project and override your global custom instructions, so paste your Role, Context and Constraints once and send just the task each time.</li>
+            <li><strong>Pick the reasoning level instead of begging for it:</strong> use Think on Free and Go, Medium or High on Plus, and up to Extra High on Pro. Paid users can also let Instant switch to Medium automatically for complex requests (a setting under General). OpenAI&apos;s guidance says reasoning models often do not need few-shot examples, so try a prompt without examples first and add them only if the output misses.</li>
           </ul>
 
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-10">

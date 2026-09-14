@@ -6,7 +6,7 @@ import ShareButtons from "@/components/ShareButtons";
 const CANONICAL = "https://mohitkoli.in/blog/how-to-get-sora-2-invite-code-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/how-to-get-sora-2-invite-code-2026.png";
 const PUBLISHED = "2026-06-01T00:00:00.000Z";
-const UPDATED = "2026-08-24T00:00:00.000Z";
+const UPDATED = "2026-09-13T00:00:00.000Z";
 
 export const metadata: Metadata = {
   title: "What Happened to Sora? OpenAI Shut It Down (2026)",
@@ -49,26 +49,26 @@ export const metadata: Metadata = {
 const TIMELINE = [
   ["24 March 2026", "OpenAI posts a short farewell on X announcing the Sora app is shutting down."],
   ["26 April 2026", "The Sora web and mobile experiences are discontinued. Generation stops for everyone."],
-  ["24 September 2026", "The Sora API is scheduled to be discontinued — the last piece of Sora to go."],
+  ["24 September 2026", "The Videos API and the sora-2 and sora-2-pro models are scheduled to be removed — 11 days after this update, and the last piece of Sora to go."],
 ];
 
 const ALTERNATIVES = [
   {
-    name: "Google Veo",
+    name: "Google Gemini Omni (and Veo 3.1)",
     tone: "from-sky-600/20",
-    pros: ["Genuinely strong free tier", "Excellent realism and motion", "Built into the Google/Gemini ecosystem"],
-    best: "The closest like-for-like replacement, and the easiest one to start with today.",
+    pros: ["Omni Flash ranks second on the Artificial Analysis text-to-video leaderboard", "Edit a clip through conversation", "Works in the Gemini app, Google Flow and YouTube"],
+    best: "The closest like-for-like replacement. Video in the Gemini app needs Google AI Plus (₹399/month in India), Pro (₹1,950/month) or Ultra (from ₹6,500/month); the no-cost route is remixing in YouTube Shorts Remix or YouTube Create (18+), with SynthID watermarks on Omni videos.",
   },
   {
     name: "Kling",
     tone: "from-amber-600/20",
-    pros: ["Free credits to experiment with", "Very good on fast, dynamic motion", "Works in India and most regions"],
-    best: "Heavy experimentation before you pay anything. Kling 3.0 landed in February 2026.",
+    pros: ["Limited free credits (amounts set by platform announcement)", "Very good on fast, dynamic motion", "Works in India and most regions"],
+    best: "Trying things before you pay. Kling 3.0 was launched by Kuaishou on 5 February 2026; 1080p output and watermark removal are paid-only.",
   },
   {
     name: "Runway",
     tone: "from-purple-600/20",
-    pros: ["Mature editing tools around the generator", "Strong control over shots and motion", "Established creator workflows"],
+    pros: ["Own flagship model Gen-4.5 (released 1 December 2025, all paid plans and the API)", "Partner models added since May 2026, including Seedance 2.0, Gemini Omni Flash, Wan 3.0 and MiniMax H3 Max", "One editing suite with many of the current leaderboard leaders"],
     best: "People who want a real editing suite, not just a prompt box.",
   },
 ];
@@ -84,11 +84,11 @@ const FAQ = [
   },
   {
     q: "Why did OpenAI shut down Sora?",
-    a: "Cost and demand, mostly. Reporting around the shutdown put Sora's running cost at roughly $1 million a day against about $2.1 million in total revenue, with active users falling sharply after the initial hype. Copyright and deepfake problems, a collapsed Disney partnership, and OpenAI's focus on profitability ahead of an IPO all pushed the same direction.",
+    a: "Cost and demand, mostly. The Wall Street Journal reported Sora was losing roughly $1 million a day, while Appfigures data reported by TechCrunch put lifetime in-app purchases at about $2.1 million, with downloads falling sharply after the initial hype. Copyright and deepfake problems, a collapsed Disney partnership, and OpenAI's focus on profitability ahead of an IPO all pushed the same direction.",
   },
   {
     q: "What happens to videos I made in Sora?",
-    a: "OpenAI told users to export their content before the shutdown dates, and confirmed that data associated with Sora accounts would be permanently deleted afterwards. If you did not export in time, assume those files are gone — there is no recovery route.",
+    a: "OpenAI told users to export their content before the shutdown dates, and confirmed that data associated with Sora accounts would be permanently deleted afterwards. If you did not export yet, check sora.chatgpt.com/sunset — OpenAI says it will email users before any final export window begins, and permanently deletes all Sora data after any such window.",
   },
   {
     q: "Was Sora 2 ever available in India?",
@@ -96,7 +96,7 @@ const FAQ = [
   },
   {
     q: "What is the best Sora alternative in 2026?",
-    a: "Google Veo is the closest replacement for most people: strong quality, a real free tier and wide availability. Kling is the best pick if you want to experiment heavily on free credits, and it handles fast motion particularly well. Runway suits anyone who wants proper editing tools around the generator rather than just a prompt box.",
+    a: "Google's Gemini Omni Flash is the closest replacement for most people — second on the Artificial Analysis text-to-video leaderboard, with conversational editing and global availability — but video generation in the Gemini app needs a paid Google AI plan (Plus from ₹399/month in India), and the free way to try it is remixing in YouTube Shorts Remix or the YouTube Create app (18+). Kling is worth a look on its limited free credits (watermarked output), and it handles fast motion particularly well. Runway suits anyone who wants proper editing tools around the generator rather than just a prompt box.",
   },
   {
     q: "Are people still selling Sora invite codes?",
@@ -104,7 +104,7 @@ const FAQ = [
   },
   {
     q: "Will OpenAI bring Sora back?",
-    a: "There has been no announcement of a return, and the video technology has largely been folded into OpenAI's broader model work rather than kept as a standalone consumer app. Treat any claim of a relaunch as rumour until OpenAI says so directly.",
+    a: "No return of Sora has been announced. OpenAI's deprecation notice for the Videos API lists no recommended replacement, and its creative launches since then — ChatGPT Images 2.0 on 21 April 2026 and ChatGPT Images 2.5 on 8 September 2026 — are image tools, not video. Treat any claim of a relaunch as rumour until OpenAI says so directly.",
   },
 ];
 
@@ -190,7 +190,7 @@ export default function WhatHappenedToSora() {
             <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-gray-400">
               <span>By Mohit Koli</span>
               <span>•</span>
-              <span>Updated August 24, 2026</span>
+              <span>Updated September 13, 2026</span>
               <span>•</span>
               <span>8 min read</span>
             </div>
@@ -212,7 +212,7 @@ export default function WhatHappenedToSora() {
             <p className="text-gray-200 leading-8">
               An earlier version of this article explained how to get Sora 2 invite codes. That advice is now obsolete —
               the product it described has been switched off. Rather than quietly delete the page, I have rewritten it
-              with what is actually true in August 2026, because plenty of people are still searching for those codes
+              with what is actually true in September 2026, because plenty of people are still searching for those codes
               and deserve a straight answer instead of another dead listicle.
             </p>
           </div>
@@ -229,7 +229,8 @@ export default function WhatHappenedToSora() {
               ))}
             </div>
             <p className="mt-6 text-gray-300 leading-8">
-              Sora launched in late 2025 and was gone from consumer hands inside six months. For a product that
+              Sora 2 launched on 30 September 2025; OpenAI announced the shutdown less than six months later, on 24
+              March 2026, and the app was gone by 26 April 2026 — under seven months from launch to shutdown. For a product that
               dominated tech headlines and had people trading invite codes like concert tickets, that is a remarkably
               short life — and a useful reminder about building a workflow on top of a single vendor&apos;s hype cycle.
             </p>
@@ -240,16 +241,20 @@ export default function WhatHappenedToSora() {
             <h2 className="text-3xl font-bold mb-6">Why OpenAI killed it</h2>
             <p className="text-gray-300 leading-8 mb-6">
               The honest summary is that Sora cost far more to run than it ever earned, and the audience did not stay.
-              Reporting around the shutdown put the running cost at roughly{" "}
-              <strong className="text-white">$1 million per day</strong> against about{" "}
-              <strong className="text-white">$2.1 million in total revenue</strong> across its whole life. Video
+              The Wall Street Journal reported Sora was losing roughly{" "}
+              <strong className="text-white">$1 million per day</strong>, while Appfigures data reported by TechCrunch on
+              24 March 2026 put its lifetime in-app purchases at about{" "}
+              <strong className="text-white">$2.1 million</strong>. The same Appfigures data showed downloads peaking at
+              about 3.33 million in November 2025 and falling to about 1.13 million by February 2026. Video
               generation is brutally expensive compute, and a free-to-browse social feed of AI clips was never going to
-              cover that.
+              cover that. The official Sora account&apos;s farewell on X simply read:
+              &quot;We&apos;re saying goodbye to the Sora app. To everyone who created with Sora, shared it, and built
+              community around it: thank you.&quot;
             </p>
             <ul className="space-y-3 text-gray-300 leading-8 list-disc list-inside mb-6">
               <li><strong className="text-white">Usage fell off a cliff</strong> after the novelty wore off — the feed filled with low-effort clips and people stopped coming back.</li>
               <li><strong className="text-white">Copyright and deepfake problems</strong> kept generating headlines OpenAI did not want, particularly around recognisable characters and real people.</li>
-              <li><strong className="text-white">The Disney partnership collapsed</strong>, removing the licensed-content path that might have made the feed worth visiting.</li>
+              <li><strong className="text-white">The Disney partnership collapsed</strong>, removing the licensed-content path that might have made the feed worth visiting. On 11 December 2025 Disney and OpenAI had announced a three-year licence letting Sora generate short videos with more than 200 Disney, Marvel, Pixar and Star Wars characters, plus a planned $1 billion Disney equity investment in OpenAI; the deal went with Sora, and TechCrunch reported that no money appears to have changed hands.</li>
               <li><strong className="text-white">Profitability pressure ahead of an IPO</strong> made an expensive, unprofitable side product an obvious thing to cut.</li>
             </ul>
             <p className="text-gray-300 leading-8">
@@ -264,9 +269,19 @@ export default function WhatHappenedToSora() {
             <p className="text-gray-300 leading-8">
               OpenAI told users to export their content before the shutdown dates and confirmed that data associated
               with Sora accounts would be permanently deleted afterwards. If you exported in time, you are fine. If you
-              did not, those files are gone — there is no recovery request, no support ticket that brings them back.
+              did not, check the export route below before giving up — but once any final export window has passed, the
+              data is deleted and no support ticket brings it back.
               It is worth taking that as a general lesson: anything you generate in a hosted AI tool and actually care
               about should be downloaded the day you make it.
+            </p>
+            <p className="text-gray-300 leading-8 mt-6">
+              OpenAI&apos;s help article points to <strong className="text-white">sora.chatgpt.com/sunset</strong> and
+              its Export button, says it will email users before any final export window begins if one is offered, and
+              says all data associated with your use of Sora is permanently deleted after any such window. For
+              developers, the Videos API and the <code>sora-2</code>, <code>sora-2-pro</code>,{" "}
+              <code>sora-2-2025-10-06</code>, <code>sora-2-2025-12-08</code> and <code>sora-2-pro-2025-10-06</code>{" "}
+              models are removed on 24 September 2026 with no recommended replacement — download any stored video
+              assets before then.
             </p>
           </section>
 
@@ -304,6 +319,17 @@ export default function WhatHappenedToSora() {
               Here is the genuinely good news: the gap between Sora and its rivals was always smaller than the hype
               suggested, and the best alternatives are available to everyone right now — no invite, no waitlist.
             </p>
+            <h3 className="text-2xl font-bold mb-4">Where Sora actually ranks now</h3>
+            <p className="text-gray-300 leading-8 mb-6">
+              On the{" "}
+              <a href="https://artificialanalysis.ai/video/leaderboard/text-to-video" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-amber-300 underline underline-offset-4">
+                Artificial Analysis text-to-video leaderboard
+              </a>{" "}
+              (blind user votes, with audio; snapshot from mid-September 2026), Wan 3.0 ranks first (Elo 1242), Gemini
+              Omni Flash second (1237), MiniMax H3 Max third (1231), MiniMax H3 fourth (1225), Seedance 2.0 fifth (1220)
+              and Kling 3.0 Pro tenth (1108). Sora 2 sits 14th (1098) and Sora 2 Pro 21st (1079). The model you can no
+              longer use is also no longer near the top.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               {ALTERNATIVES.map((alt) => (
                 <div key={alt.name} className="border border-white/10 rounded-2xl overflow-hidden">
@@ -317,6 +343,19 @@ export default function WhatHappenedToSora() {
                 </div>
               ))}
             </div>
+            <p className="text-gray-300 leading-8 mb-6">
+              <strong className="text-white">Gemini Omni: Google&apos;s newest video model.</strong> Google announced
+              Gemini Omni at I/O on 19 May 2026 as a model that can create from any input, starting with video, with
+              conversational editing. Omni Flash rolled out globally to Google AI Plus, Pro and Ultra subscribers in the
+              Gemini app and Google Flow, and at no cost to users 18+ in YouTube Shorts Remix and the YouTube Create app.
+              Gemini Omni 1.1 Flash reached developers on 27 August 2026 (<code>gemini-omni-1.1-flash</code>) with scene
+              extension in 10-second steps up to 40 seconds, first-and-last-frame control, 4K upscaling and a cheaper
+              360p preview mode. Google&apos;s API docs now recommend Omni Flash as the default video model and keep Veo
+              3.1 for scene extension, last-frame control and legacy pipelines; in Flow, Veo 3.1 Lite, Fast and Quality
+              (4, 6 or 8 seconds) sit alongside Omni Flash 1.1 (up to 10 seconds). In India, Google AI Plus is ₹399/month
+              (200 Flow credits), Pro ₹1,950/month (1,000 Flow credits) and Ultra from ₹6,500/month. There is no free
+              video generation in the Gemini app or the Gemini API — YouTube is the free door.
+            </p>
             <p className="text-gray-300 leading-8">
               I have compared these and several others in detail in my roundup of the{" "}
               <Link href="/blog/best-ai-video-generators-2026" className="text-orange-400 hover:text-amber-300 underline underline-offset-4">
@@ -339,10 +378,10 @@ export default function WhatHappenedToSora() {
               <ul className="space-y-4">
                 {[
                   "Sora 2 invite codes do not exist any more — the app was discontinued on 26 April 2026.",
-                  "The API follows on 24 September 2026, so nothing Sora-branded survives past this year.",
+                  "The API follows on 24 September 2026 — later this month — so nothing Sora-branded survives past this year.",
                   "It closed because it cost roughly $1M/day to run and earned a fraction of that.",
                   "Anyone still selling Sora access in 2026 is scamming you. There is nothing to unlock.",
-                  "Google Veo and Kling are free, available today, and good enough for almost everything Sora was used for.",
+                  "Gemini Omni Flash (paid Google AI plan, or free remixing in YouTube Shorts and YouTube Create) and Kling 3.0 (limited free credits, watermarked output) are available today with no invite, and both rank above Sora 2 on the Artificial Analysis leaderboard.",
                   "Export anything you generate in a hosted AI tool the day you make it.",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-3 text-gray-200 leading-8">

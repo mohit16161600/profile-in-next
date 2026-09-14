@@ -5,6 +5,7 @@ import Link from "next/link";
 const CANONICAL = "https://mohitkoli.in/blog/will-ai-replace-your-job-2026";
 const IMAGE = "https://mohitkoli.in/assets/ai-replace-job.webp";
 const PUBLISHED = "2026-05-01T00:00:00.000Z";
+const MODIFIED = "2026-09-13T00:00:00.000Z";
 
 export const metadata: Metadata = {
   title: "Will AI Replace Your Job? The Real Truth (2026)",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     url: CANONICAL,
     type: "article",
     publishedTime: PUBLISHED,
-    modifiedTime: PUBLISHED,
+    modifiedTime: MODIFIED,
     images: [{ url: IMAGE, width: 1200, height: 630, alt: "Will AI replace your job in 2026 — the real answer" }],
   },
   twitter: {
@@ -68,7 +69,7 @@ export default function AIJobTruth2026() {
   ];
 
   const jobComparison = [
-    { role: "Customer Support", risk: "High", reason: "AI agents handle 90% of queries instantly.", future: "Transition to CX Strategy." },
+    { role: "Customer Support", risk: "High", reason: "AI agents take much of the routine, high-volume tier; humans handle disputes and complex cases.", future: "Transition to CX Strategy." },
     { role: "Graphic Designer", risk: "Medium", reason: "AI generates images, but needs human direction.", future: "Mastering AI-driven branding." },
     { role: "Software Developer", risk: "Medium", reason: "AI writes boilerplate code; humans solve architecture.", future: "Becoming an AI System Architect." },
     { role: "Nurse/Doctor", risk: "Low", reason: "Requires physical empathy and complex judgment.", future: "AI-assisted diagnostics." },
@@ -91,7 +92,7 @@ export default function AIJobTruth2026() {
                 "The real truth about AI and jobs in 2026 — which roles are at risk, which are safe, and how to future-proof your career.",
               image: IMAGE,
               datePublished: PUBLISHED,
-              dateModified: PUBLISHED,
+              dateModified: MODIFIED,
               author: {
                 "@type": "Person",
                 name: "Mohit Koli",
@@ -151,6 +152,8 @@ export default function AIJobTruth2026() {
             <span>By Mohit Koli</span>
             <span>•</span>
             <span>May 1, 2026</span>
+            <span>•</span>
+            <span>Updated Sept 13, 2026</span>
             <span>•</span>
             <span>35 min read</span>
           </div>
@@ -212,7 +215,7 @@ export default function AIJobTruth2026() {
 
           <h2 id="why-the-fear" className="text-3xl font-bold mt-12 mb-6">Why People Fear the Jobocalypse</h2>
           <p className="text-gray-300 mb-6">
-            The fear is real because the numbers are real. In May 2023, IBM said it expected to pause or slow hiring for around 7,800 back-office roles it believed AI could handle over the following years. Plenty of companies have signalled something similar since. Why?
+            The fear is real because the numbers are real. Through August 2026, US employers cited AI in 116,175 announced job cuts, about 22% of all cuts, making it the leading stated reason year to date; AI was the top monthly reason from March to July 2026 before falling to fourth in August with 3,462 cuts (Challenger, Gray &amp; Christmas, 2 September 2026). Earlier, in May 2023, IBM said it expected to pause or slow hiring for around 7,800 back-office roles it believed AI could handle over the following years. Plenty of companies have signalled something similar since. Why?
           </p>
           <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
             <li><strong>Speed:</strong> AI can do in 2 seconds what takes a human 2 hours.</li>
@@ -232,7 +235,7 @@ export default function AIJobTruth2026() {
             </div>
             <div className="p-6 bg-red-500/5 border border-red-500/20 rounded-xl">
               <h3 className="font-bold text-red-400 mb-2">2. Basic Customer Service</h3>
-              <p className="text-sm text-gray-400">If you follow a script, an AI can follow it better. Voice AI is now indistinguishable from humans on the phone.</p>
+              <p className="text-sm text-gray-400">If you follow a script, an AI can follow it well, but Klarna&apos;s experience shows customers notice when quality drops: in May 2025 it resumed hiring human support staff after its AI-first push, and in June 2025 its CEO said human customer service &quot;is always going to be a VIP thing&quot;. In February 2026 Salesforce said Agentforce had reduced its support case volume and it no longer needed to actively backfill support engineer roles.</p>
             </div>
             <div className="p-6 bg-red-500/5 border border-red-500/20 rounded-xl">
               <h3 className="font-bold text-red-400 mb-2">3. Entry-Level Translation</h3>
@@ -240,9 +243,17 @@ export default function AIJobTruth2026() {
             </div>
             <div className="p-6 bg-red-500/5 border border-red-500/20 rounded-xl">
               <h3 className="font-bold text-red-400 mb-2">4. Routine Accounting</h3>
-              <p className="text-sm text-gray-400">Tax prep and basic bookkeeping are now 99% automated by AI-driven finance software.</p>
+              <p className="text-sm text-gray-400">Routine bookkeeping, invoice matching and first-pass tax preparation are heavily automated by AI-driven finance software; the human work that remains is review, exceptions and advice.</p>
             </div>
           </div>
+
+          <h3 className="text-2xl font-bold mt-10 mb-4">What the 2026 Data Shows: Entry-Level Jobs Are the Canaries</h3>
+          <p className="text-gray-300 mb-6">
+            Stanford Digital Economy Lab&apos;s August 2026 &quot;Canaries in the Coal Mine&quot; update (12 August 2026, payroll data through June 2026) finds employment of 22- to 25-year-olds in the most AI-exposed occupations about 19% below where it would be had it kept pace with similar workers in less-exposed jobs — up from 15% a year earlier. Experienced workers show no comparable gap.
+          </p>
+          <p className="text-gray-300 mb-6">
+            The researchers see no widespread economy-wide displacement. The adjustment runs mainly through reduced hiring of young workers rather than more separations, and declines concentrate in work built on codified, documented knowledge, while roles relying on tacit knowledge gained through practice held up. That fits this guide&apos;s argument: the risk is to routine tasks and to landing the first job, not to experienced judgement. My takeaway for freshers: build proof of practical skill — projects, internships — rather than stacking certificates.
+          </p>
 
           <h2 id="safe-jobs" className="text-3xl font-bold mt-12 mb-6 text-green-500">Jobs That Are SAFE from AI (The Green List)</h2>
           <p className="text-gray-300 mb-6">
@@ -305,11 +316,31 @@ export default function AIJobTruth2026() {
           <div className="space-y-6 mb-10">
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
               <p className="font-bold text-white mb-2">Klarna (Fintech) — and the walk-back:</p>
-              <p className="text-gray-400">In February 2024, Klarna&apos;s AI assistant handled 2.3 million chats in its first month — the workload of roughly 700 agents — and the company claimed $40M in savings. Then in May 2025 it reversed course and began rehiring humans. CEO Sebastian Siemiatkowski admitted the cost-first push had lowered quality: the AI handled volume but not complexity. Klarna now runs a triage model — AI takes routine queries, humans take disputes, fraud and hardship cases. That reversal is the most useful data point in this article, and it says exactly what this guide argues: AI absorbed the repetitive tier, not the judgement.</p>
+              <p className="text-gray-400">In February 2024, Klarna&apos;s AI assistant handled 2.3 million chats in its first month — the workload of roughly 700 agents — and the company claimed $40M in savings. Then in May 2025 it reversed course and began rehiring humans. CEO Sebastian Siemiatkowski admitted the cost-first push had lowered quality: the AI handled volume but not complexity. Klarna now runs a triage model — AI takes routine queries, humans take disputes, fraud and hardship cases. In June 2025 Siemiatkowski said human customer service &quot;is always going to be a VIP thing&quot;, positioning AI as the cheap tier and humans as the premium tier. By February 2026 Klarna was recruiting its own customers as flexible, Uber-style customer service agents, had about 3,000 employees, and its CEO expected headcount to fall below 2,000 by 2030. That reversal is the most useful data point in this article, and it says exactly what this guide argues: AI absorbed the repetitive tier, not the judgement.</p>
             </div>
             <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
               <p className="font-bold text-white mb-2">GitHub (Microsoft):</p>
-              <p className="text-gray-400">Microsoft has said AI assists with roughly 30% of the code in its own repositories — a real figure, and very different from the &quot;AI writes most of the world&apos;s code&quot; claim that circulates online. The shift for junior developers is real but narrower than the headlines suggest: less time typing boilerplate, much more time reviewing, testing and correcting generated code.</p>
+              <p className="text-gray-400">At Meta&apos;s LlamaCon on 29 April 2025, Microsoft CEO Satya Nadella said 20–30% of the code in Microsoft&apos;s repositories was written by software, meaning AI — a real figure, and very different from the &quot;AI writes most of the world&apos;s code&quot; claim that circulates online. The shift for junior developers is real but narrower than the headlines suggest: less time typing boilerplate, much more time reviewing, testing and correcting generated code.</p>
+            </div>
+            <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+              <p className="font-bold text-white mb-2">2026: The Year Companies Started Naming AI in Layoffs:</p>
+              <p className="text-gray-400 mb-3">TechCrunch&apos;s running list (25 July 2026) records 2026 layoffs where employers cited AI:</p>
+              <ul className="list-disc pl-6 text-gray-400 space-y-2 mb-3 text-sm">
+                <li><strong>Amazon:</strong> 16,000 corporate jobs on 28 January (CEO Andy Jassy had said in June 2025 that generative AI would mean &quot;fewer people doing some of the jobs&quot;).</li>
+                <li><strong>Salesforce:</strong> fewer than 1,000 on 10 February, saying Agentforce meant it no longer needed to actively backfill support engineer roles.</li>
+                <li><strong>Block:</strong> 4,000 jobs, nearly half its workforce, on 26–27 February.</li>
+                <li><strong>PayPal:</strong> about 20% of staff (4,500+) over two to three years, announced 5 May, to &quot;aggressively adopt AI&quot;.</li>
+                <li><strong>Meta:</strong> about 8,000 (10%) on 20–21 May, while moving about 7,000 people into AI roles.</li>
+                <li><strong>Oracle:</strong> 21,000 (13%) over 12 months, disclosed 22 June, citing &quot;the adoption and deployment of AI technologies&quot;.</li>
+                <li><strong>Microsoft:</strong> about 4,800 roles (2.1%) on 9 July, saying they were &quot;not being replaced by AI&quot;.</li>
+                <li><strong>Monday.com:</strong> about 20% (just over 600) in the week of 22 July, though its co-founder said the move was not made &quot;to replace people with AI&quot;.</li>
+              </ul>
+              <p className="text-gray-400">Challenger, Gray &amp; Christmas counted 155,126 announced US technology job cuts through August 2026 (up 52% year on year, 29% of all cuts). Notice the nuance: some of these layoffs are about freeing money for AI spending rather than AI doing the work, and Microsoft and Monday.com explicitly denied replacing people with AI. That is exactly why &quot;tasks, not jobs&quot; still holds.</p>
+            </div>
+            <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+              <p className="font-bold text-white mb-2">India: TCS Shrinks, AI/ML Hiring Grows:</p>
+              <p className="text-gray-400 mb-3">TCS ended FY26 (31 March 2026) with 584,519 employees, 23,460 fewer than a year earlier, after a restructuring that included voluntary exits mainly at mid-to-senior levels. In April 2026 its CHRO said the layoff cycle had concluded, that the drop cannot be fully attributed to the restructuring, and that TCS added 2,356 people in Q4, has made 25,000 campus offers and remains on track to hire about 40,000 freshers a year.</p>
+              <p className="text-gray-400">Meanwhile Naukri JobSpeak for June 2026 shows white-collar hiring up 6% year on year (index 3,027 vs 2,854) and AI/ML roles up 25% — one of the most consistently high-performing segments over two years — with Kolkata +12%, Hyderabad +11%, Chennai +10% and Bengaluru +7%. The takeaway: generic services headcount is being trimmed while AI-skilled roles keep growing. Same task-vs-job split, Indian IT edition.</p>
             </div>
           </div>
 
@@ -321,7 +352,7 @@ export default function AIJobTruth2026() {
                 <li>✅ 4-Day Work Weeks (due to high productivity)</li>
                 <li>✅ Elimination of "Drudge Work"</li>
                 <li>✅ Personalized Learning & Healthcare</li>
-                <li>✅ New Job Categories (AI Ethics, Prompt Eng)</li>
+                <li>✅ New Job Categories (AI Ethics, AI/ML Engineering; Naukri JobSpeak shows AI/ML roles +25% YoY in June 2026)</li>
               </ul>
             </div>
             <div className="border border-red-500/20 bg-red-500/5 p-6 rounded-2xl">
@@ -341,6 +372,13 @@ export default function AIJobTruth2026() {
           </p>
           <p className="text-gray-300 mb-6">
             The job market isn't shrinking; it's *re-organizing.* We are moving away from "Knowing" (AI knows everything) and toward "Doing" and "Deciding." The person who can tell the AI exactly what to do and judge if it's correct is the new king of the economy.
+          </p>
+          <h3 className="text-2xl font-bold mt-10 mb-4">How Workers Who Use AI Feel About It (Anthropic Economic Index, June 2026)</h3>
+          <p className="text-gray-300 mb-6">
+            Anthropic&apos;s Economic Index report &quot;Cadences&quot; (26 June 2026) surveyed Claude users: 86% reported speed gains, 82% broader scope and 69% quality gains; 57% felt AI made their skills more valuable and 68% said they learn more with AI. Over a third expect AI to be able to do most or nearly all of their work tasks within a year — yet only 10% rated losing their job in the next year as likely or very likely, below the roughly 13.4% US annualised job-separation rate.
+          </p>
+          <p className="text-gray-300 mb-6">
+            Two findings back up this guide. Early-career workers reported that AI can do the highest share of their work and expressed the most concern about job loss. And the people who delegate the most to Claude were the most optimistic about their labour-market future. One caveat: the sample skews toward computer and mathematical occupations (about 30% of respondents versus 4% of US employment) and management (23%). If you haven&apos;t picked a tool yet, start with our <Link href="/blog/chatgpt-vs-gemini-vs-claude-best-ai-2026" className="text-orange-400 underline decoration-orange-400/30 hover:decoration-orange-400 transition">ChatGPT vs Gemini vs Claude comparison</Link>.
           </p>
 
           <h2 id="how-to-stay-safe" className="text-3xl font-bold mt-12 mb-6">How to Stay Safe: Skills to Learn Today</h2>
@@ -383,23 +421,23 @@ export default function AIJobTruth2026() {
 
           {/* Statistics Section */}
           <div className="bg-white/5 border border-white/10 p-8 rounded-3xl mb-12 text-center">
-            <h3 className="text-2xl font-bold mb-2">Projections, not measurements</h3>
-            <p className="text-sm text-gray-400 mb-8">Figures below are the World Economic Forum&apos;s Future of Jobs projections — forecasts about this decade, not counts of what has already happened.</p>
+            <h3 className="text-2xl font-bold mb-2">Projections to 2030, Plus One Survey Figure</h3>
+            <p className="text-sm text-gray-400 mb-8">The job figures below are the World Economic Forum&apos;s Future of Jobs Report 2025 projections to 2030 (a net gain of 78 million jobs) — forecasts, not counts of what has already happened. The 88% figure is a survey result from McKinsey, not a projection.</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
               <div>
-                <p className="text-4xl font-bold text-orange-500 mb-2">85M</p>
-                <p className="text-sm text-gray-400 uppercase tracking-widest font-semibold">Jobs Displaced</p>
+                <p className="text-4xl font-bold text-orange-500 mb-2">92M</p>
+                <p className="text-sm text-gray-400 uppercase tracking-widest font-semibold">Jobs Displaced by 2030</p>
               </div>
               <div>
-                <p className="text-4xl font-bold text-green-500 mb-2">97M</p>
-                <p className="text-sm text-gray-400 uppercase tracking-widest font-semibold">New Roles Created</p>
+                <p className="text-4xl font-bold text-green-500 mb-2">170M</p>
+                <p className="text-sm text-gray-400 uppercase tracking-widest font-semibold">New Roles Created by 2030</p>
               </div>
               <div>
-                <p className="text-4xl font-bold text-blue-500 mb-2">70%</p>
-                <p className="text-sm text-gray-400 uppercase tracking-widest font-semibold">AI Adoption Rate</p>
+                <p className="text-4xl font-bold text-blue-500 mb-2">88%</p>
+                <p className="text-sm text-gray-400 uppercase tracking-widest font-semibold">Organisations Using AI in at Least One Function (McKinsey)</p>
               </div>
             </div>
-            <p className="mt-8 text-xs text-gray-500 italic">*Source: Realistic 2026 projection based on WEF and McKinsey data trendlines.</p>
+            <p className="mt-8 text-xs text-gray-500 italic">*Sources: World Economic Forum, Future of Jobs Report 2025 (January 2025), projections to 2030; McKinsey, The State of AI in 2025 (November 2025).</p>
           </div>
 
           <h2 id="faq" className="text-3xl font-bold mt-12 mb-10 border-t border-white/10 pt-10">Frequently Asked Questions</h2>

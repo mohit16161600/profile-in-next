@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Nano Banana Saree Trend: 12 Free Gemini Prompts (2026)",
   description:
-    "Try the viral Nano Banana saree trend free! Copy 12 tested Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
+    "Try the viral Nano Banana saree trend free! Copy 12 Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
   keywords: [
     "nano banana saree prompt",
     "nano banana saree trend",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nano Banana Saree Trend: 12 Free Gemini Prompts (2026)",
     description:
-      "Try the viral Nano Banana saree trend free! Copy 12 tested Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
+      "Try the viral Nano Banana saree trend free! Copy 12 Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
     url: "https://mohitkoli.in/blog/nano-banana-saree-trend-prompts-2026",
     type: "article",
     images: ["/assets/blog/nano-banana-saree-trend-prompts-2026.png"],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nano Banana Saree Trend: 12 Free Gemini Prompts (2026)",
     description:
-      "Try the viral Nano Banana saree trend free! Copy 12 tested Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
+      "Try the viral Nano Banana saree trend free! Copy 12 Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
     images: ["/assets/blog/nano-banana-saree-trend-prompts-2026.png"],
   },
 };
@@ -48,12 +48,12 @@ export default function NanoBananaSareeTrendPrompts2026() {
     {
       question: "What is Nano Banana?",
       answer:
-        "Nano Banana is the nickname for Google's Gemini image model. Nano Banana 2 launched in early 2026 with sharper, more realistic photo edits, which fueled the saree and figurine trends.",
+        "Nano Banana is the nickname for Google's Gemini image models. The original (Gemini 2.5 Flash Image) arrived in the Gemini app on 26 August 2025 with edits that keep a person looking like themselves. Nano Banana Pro (Gemini 3 Pro Image) followed on 20 November 2025, Nano Banana 2 (Gemini 3.1 Flash Image) became the default in the Gemini app on 26 February 2026, and Nano Banana 2 Lite, Google's fastest and most cost-efficient Gemini image model, launched on 30 June 2026.",
     },
     {
       question: "Which app do I use for the saree trend?",
       answer:
-        "Use the official Google Gemini app on Android or iOS, or gemini.google.com on desktop. Avoid third-party clones that may charge or steal your photos.",
+        "Use the official Google Gemini app on Android or iOS, gemini.google.com, or the official Gemini desktop apps for Windows and macOS. Avoid third-party clones that may charge you or misuse your photos.",
     },
     {
       question: "Why do my saree photos look distorted?",
@@ -73,7 +73,7 @@ export default function NanoBananaSareeTrendPrompts2026() {
     {
       question: "Do Nano Banana images have a watermark?",
       answer:
-        "Yes, Gemini-generated images include an invisible SynthID watermark and often a visible badge so platforms can identify AI content.",
+        "Yes. Gemini images always carry an invisible SynthID watermark and Content Credentials. The visible watermark can be switched off in Settings > Media Watermark, but in India that switch appears only for Google AI Ultra subscribers, so on free, Plus and Pro plans in India the visible mark is applied automatically.",
     },
     {
       question: "Why does Nano Banana sometimes refuse my prompt?",
@@ -83,7 +83,12 @@ export default function NanoBananaSareeTrendPrompts2026() {
     {
       question: "Does the saree trend work with Nano Banana Pro?",
       answer:
-        "Yes — the prompts in this guide work unchanged in the newer Pro model inside Gemini. If your account has it, it is worth trying for tricky details like jewellery and fabric texture; if not, the standard model still produces everything shown here.",
+        "Yes, the prompts in this guide work with it, but Nano Banana Pro is for paid plans only: with Google AI Plus, Pro or Ultra and the Gemini model set to Pro, you can redo an image with Nano Banana Pro. Free accounts get Nano Banana 2 (model set to Flash or Pro) or Nano Banana 2 Lite (Flash-Lite), and once you reach your daily Nano Banana 2 quota you cannot redo images with Nano Banana Pro either.",
+    },
+    {
+      question: "Can I turn off the Gemini watermark in India?",
+      answer:
+        "Only the visible badge. The invisible SynthID watermark and Content Credentials are always present on Gemini images. The visible badge can be turned off in Settings > Media Watermark, but in India that setting is shown only to Google AI Ultra subscribers, so on free, Plus and Pro plans in India the visible mark stays.",
     },
     {
       question: "Why does my face look different in the output?",
@@ -98,7 +103,7 @@ export default function NanoBananaSareeTrendPrompts2026() {
   ];
 
   const keyTakeaways = [
-    "The Nano Banana saree trend runs free inside the official Google Gemini app using the Nano Banana 2 image model.",
+    "The Nano Banana saree trend runs free in the Gemini app: image requests use Nano Banana 2 when the model is set to Flash or Pro, and Nano Banana 2 Lite on Flash-Lite. Free downloads are 1K (2K with a Google AI plan), and redoing with Nano Banana Pro needs a paid plan.",
     "A strong prompt names the subject, saree style, lighting, background, and aspect ratio for realistic results.",
     "Copy-paste the 12 ready prompts, then tweak fabric and backdrop to make each photo unique.",
     "Use a clear front-facing source photo to avoid distortion, and re-roll if the face warps.",
@@ -167,11 +172,11 @@ export default function NanoBananaSareeTrendPrompts2026() {
             "@type": "BlogPosting",
             headline: "Nano Banana Saree Trend: 12 Free Gemini Prompts (2026)",
             description:
-              "Try the viral Nano Banana saree trend free! Copy 12 tested Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
+              "Try the viral Nano Banana saree trend free! Copy 12 Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
             image:
               "https://mohitkoli.in/assets/blog/nano-banana-saree-trend-prompts-2026.png",
             datePublished: "2026-06-18",
-            dateModified: "2026-06-18",
+            dateModified: "2026-09-13",
             author: {
               "@type": "Person",
               name: "Mohit Koli",
@@ -279,6 +284,7 @@ export default function NanoBananaSareeTrendPrompts2026() {
             <span>•</span>
             <span>12 min read</span>
           </div>
+          <p className="text-gray-500 text-sm -mt-4">Updated September 13, 2026</p>
         </header>
 
         <div className="relative w-full aspect-[1200/630] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-rose-500/10">
@@ -333,14 +339,26 @@ export default function NanoBananaSareeTrendPrompts2026() {
             </ul>
           </div>
 
+          {/* Sept 2026 update */}
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-12">
+            <h2 className="text-2xl font-bold mb-4 text-rose-400">What Changed Since June 2026 (Sept 2026 update)</h2>
+            <ul className="list-disc pl-6 text-gray-300 space-y-3">
+              <li><strong>30 June 2026:</strong> Nano Banana 2 Lite, Google&apos;s fastest and most cost-efficient Gemini image model, launched. In the Gemini app it is what you get when the model is set to Flash-Lite.</li>
+              <li><strong>Media Watermark setting:</strong> Gemini now has a setting that hides the visible badge, while SynthID and Content Credentials remain. In India, only Google AI Ultra subscribers see it.</li>
+              <li><strong>Nano Banana Pro is paid:</strong> Google&apos;s help pages list Nano Banana Pro redo as a paid-plan feature. Free users get Nano Banana 2 or 2 Lite and 1K downloads (2K with a plan), and photo editing is limited to users 18 and over.</li>
+              <li><strong>10 September 2026:</strong> a Gemini Windows app with Nano Banana built in arrived (press Alt + Space).</li>
+              <li><strong>Scale:</strong> Google said in August 2026 that Gemini generates 150 million+ images every day.</li>
+            </ul>
+          </div>
+
           <h2 id="what-is-nano-banana-saree-trend" className="text-3xl font-bold mt-12 mb-6">What Is the Nano Banana Saree Trend?</h2>
           <p className="text-gray-300 mb-6">
             <strong>Nano Banana</strong> is the popular nickname for Google&apos;s Gemini image
-            model. It first earned the name in 2025 for its uncanny ability to edit a real
-            photo while keeping the person&apos;s face recognizable. In early 2026, Google
-            shipped <strong>Nano Banana 2</strong>, a sharper, more photorealistic version
-            that handles fabric texture, lighting, and skin tone far more convincingly than
-            before. That single upgrade is what kicked off the saree wave.
+            models. The saree trend runs on Gemini&apos;s likeness-preserving photo editing,
+            which Google first shipped free in the Gemini app on 26 August 2025 as the original
+            Nano Banana. <strong>Nano Banana 2</strong> (26 February 2026) made it faster and
+            sharper, with output from 512px to 4K, character resemblance for up to five people,
+            and default status for image requests in the Gemini app.
           </p>
           <p className="text-gray-300 mb-6">
             The <strong>Nano Banana saree trend</strong> is simple: you upload a normal
@@ -369,9 +387,11 @@ export default function NanoBananaSareeTrendPrompts2026() {
             A few things came together at exactly the right time. First, the saree is
             emotional. A retro saree portrait instantly reminds people of old family albums,
             classic cinema, and their mothers&apos; and grandmothers&apos; photographs. That
-            nostalgia makes the image deeply shareable. Second, the upgrade to Nano Banana 2
-            made faces look natural instead of plastic, so people felt comfortable posting the
-            results as their own.
+            nostalgia makes the image deeply shareable. Second, Gemini&apos;s image editing keeps a
+            person recognisable (Google&apos;s own words are &quot;all while still looking like
+            you&quot;), so people felt comfortable posting the results as their own. That came
+            with the original Nano Banana in August 2025, and Nano Banana 2 (February 2026)
+            carries it forward with faster, sharper output.
           </p>
           <p className="text-gray-300 mb-6">
             Then the snowball effect took over. As creators, and reportedly several Bollywood
@@ -403,7 +423,7 @@ export default function NanoBananaSareeTrendPrompts2026() {
               <tbody className="divide-y divide-white/10">
                 <tr>
                   <td className="p-4 font-semibold text-rose-300">Google Gemini app</td>
-                  <td className="p-4">Official app on Android or iOS, or gemini.google.com on desktop</td>
+                  <td className="p-4">Android or iOS app, gemini.google.com in any browser, or the Gemini desktop apps for Windows (launched 10 September 2026; press Alt + Space) and macOS</td>
                   <td className="p-4 text-green-400">Free</td>
                 </tr>
                 <tr>
@@ -429,6 +449,23 @@ export default function NanoBananaSareeTrendPrompts2026() {
               <strong>Heads up on limits:</strong> free Gemini users sometimes hit a daily
               image cap when the servers are busy. If you get a limit message, wait a few hours
               and try again, or generate during off-peak hours late at night.
+            </p>
+          </div>
+          <div className="bg-gradient-to-r from-amber-600/20 to-rose-600/20 border-l-4 border-amber-500 p-6 mb-10 rounded-r-2xl">
+            <h3 className="text-xl font-bold mb-2">Which Nano Banana model am I actually using?</h3>
+            <p className="text-gray-200 mb-3">
+              According to Gemini Help, the model picker decides the image model:
+            </p>
+            <ul className="list-disc pl-6 text-gray-200 space-y-2 mb-3">
+              <li><strong>Flash-Lite</strong> uses Nano Banana 2 Lite (optimised for speed).</li>
+              <li><strong>Flash or Pro</strong> uses Nano Banana 2 (balancing speed with higher quality). This is the one to use for saree portraits.</li>
+              <li><strong>Pro with a Google AI plan</strong> adds the option to redo an image with Nano Banana Pro.</li>
+            </ul>
+            <p className="text-gray-200">
+              Downloads are 1K without a plan and 2K with Google AI Plus, Pro or Ultra. Once you
+              hit your daily Nano Banana 2 quota you cannot redo images with Nano Banana Pro, and
+              Google does not publish a fixed quota number. Generating images requires being 13
+              or older, while editing images is not available to users under 18.
             </p>
           </div>
 
@@ -598,7 +635,8 @@ export default function NanoBananaSareeTrendPrompts2026() {
           <ul className="list-disc pl-6 text-gray-300 space-y-3 mb-8">
             <li><strong>Use only the official app.</strong> Download Gemini from the Google Play Store or Apple App Store, or use gemini.google.com. Third-party &quot;Nano Banana&quot; clones may charge money or quietly harvest your photos.</li>
             <li><strong>Upload only photos you own.</strong> Avoid uploading someone else&apos;s picture without their consent. It is both unkind and, in many cases, against the rules.</li>
-            <li><strong>Expect a watermark.</strong> Gemini images carry an invisible <strong>SynthID</strong> watermark and often a visible AI badge, so platforms can identify the image as AI-generated. This is by design and you cannot reliably remove it.</li>
+            <li><strong>Expect a watermark.</strong> The invisible <strong>SynthID</strong> watermark and Content Credentials are always applied to Gemini images, and the Media Watermark setting does not affect them. The visible badge can be turned off in Settings &gt; Media watermark, but in India that setting is shown only to Google AI Ultra subscribers, so free users in India will always see the visible mark.</li>
+            <li><strong>Media Watermark setting (India note).</strong> This setting turns off the visible watermark on generated images, videos and music, but it never removes SynthID watermarks or Content Credentials. In India, South Korea and Vietnam it appears only for Google AI Ultra subscribers, so everyone else in India gets the visible watermark automatically. On desktop it is at the bottom left under Settings &gt; Media watermark; on mobile, open the menu and go to Settings.</li>
             <li><strong>Review your data settings.</strong> Google processes uploads under its privacy policy. Check Gemini&apos;s activity and data controls, and avoid uploading sensitive or private images.</li>
             <li><strong>Be ready for refusals.</strong> Gemini may decline prompts that name real celebrities, request explicit content, or break its safety rules. Just rephrase to a generic, original subject.</li>
             <li><strong>Label AI content honestly.</strong> When you post, a simple &quot;made with AI&quot; note builds trust with your audience.</li>
@@ -607,9 +645,11 @@ export default function NanoBananaSareeTrendPrompts2026() {
           <div className="bg-gradient-to-r from-fuchsia-600/20 to-rose-600/20 border-l-4 border-fuchsia-500 p-6 my-8 rounded-r-2xl">
             <h3 className="text-xl font-bold mb-2">🔒 Trust note</h3>
             <p className="text-gray-200">
-              Treat any tool that promises to &quot;remove the AI watermark&quot; with deep
-              suspicion. Those services are often scams, and tampering with disclosure markers
-              defeats the purpose of honest content. Keep it clean and you keep your account
+              Treat any third-party tool that promises to &quot;remove the AI watermark&quot; with
+              deep suspicion. The only legitimate way to drop the visible mark is Gemini&apos;s own
+              Settings &gt; Media watermark toggle, which users in India see only with an AI Ultra
+              subscription, and it does not remove the invisible SynthID watermark or Content
+              Credentials embedded in the image. Keep it clean and you keep your account
               safe.
             </p>
           </div>

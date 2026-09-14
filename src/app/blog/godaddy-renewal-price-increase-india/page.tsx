@@ -10,7 +10,7 @@ const CANONICAL = "https://mohitkoli.in/blog/godaddy-renewal-price-increase-indi
 export const metadata: Metadata = {
     title: "GoDaddy Domain Renewal Price India 2026: Why Cost Jumps 2–4×",
     description:
-        "GoDaddy domain renewal price in India 2026: .com renews at ₹1,000–₹1,400, hosting jumps 2–4×. Check your real renewal cost and cut it before you pay.",
+        "GoDaddy renewal price in India 2026: .com renews at ₹1,599/yr and hosting jumps 2–4× (Economy ₹219 → ₹599). Check your real cost before you pay.",
     keywords: [
         "godaddy domain renewal price india",
         "godaddy renewal cost",
@@ -23,12 +23,13 @@ export const metadata: Metadata = {
         "transfer domain from godaddy",
         "godaddy price increase",
         "godaddy alternative india",
+        "verisign .com price increase 2026",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
         title: "GoDaddy Domain Renewal Price India 2026: Why Cost Jumps 2–4×",
         description:
-            "A .com renews at ₹1,000–₹1,400 and hosting jumps 2–4× at GoDaddy. Check your real renewal cost, lower it, or move — the full playbook.",
+            "A .com renews at ₹1,599/yr and hosting jumps 2–4× at GoDaddy. Check your real renewal cost, lower it, or move — the full playbook.",
         url: CANONICAL,
         type: "article",
         images: [{ url: "/assets/blog/godaddy-renewal-price-increase-india.png", width: 1200, height: 630, alt: "GoDaddy domain renewal price increase in India explained" }],
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "GoDaddy Domain Renewal Price India 2026: Why Cost Jumps 2–4×",
-        description: "Why GoDaddy renewal cost jumps 2–4× in India, what a .com really renews at (₹1,000–₹1,400), and when transferring out is the smarter move.",
+        description: "Why GoDaddy renewal cost jumps 2–4× in India, what a .com really renews at (₹1,599/yr), and when transferring out is the smarter move.",
         images: ["/assets/blog/godaddy-renewal-price-increase-india.png"],
     },
 };
@@ -44,15 +45,15 @@ export const metadata: Metadata = {
 const FAQ = [
     {
         q: "Why is my GoDaddy renewal price so high?",
-        a: "GoDaddy's first-term prices are promotional — ₹99–₹299 style offers designed to win the sale. Renewals happen at the regular rate, which is often 2–4× higher. This intro-vs-renewal gap is industry-wide, but GoDaddy's regular rates in India tend to sit at the expensive end, and extras like backups or email are often separate paid add-ons.",
+        a: "GoDaddy's first-term prices are promotional — ₹99–₹299 style offers designed to win the sale. Renewals happen at the regular rate, which is often 2–4× higher. This intro-vs-renewal gap is industry-wide, but GoDaddy's regular rates in India tend to sit at the expensive end, and extras such as email (not listed on the Starter plan) or add-ons you never use can pile onto the invoice.",
     },
     {
         q: "How much does GoDaddy charge to renew a .com in India?",
-        a: "Typically ₹1,000–₹1,400 per year. The .com registry sets a wholesale floor price, so no registrar renews far below that — GoDaddy's ₹0.99–₹199 first-year offers were one-time promos, not the real rate. Check your exact figure in Account → Renewals & Billing, and compare it against the renewal (not transfer) price at 2–3 other registrars before deciding anything.",
+        a: "GoDaddy India lists a .com at ₹1,599 per year after the first-year offer. The .com registry sets a wholesale floor price, so no registrar renews far below that — and GoDaddy's current ₹1 first-year .com requires a 3-year purchase, with the two additional years at ₹1,599 each. Check your exact figure in Domain Portfolio (Columns icon → tick Renewal Price → Save), and compare it against the renewal (not transfer) price at 2–3 other registrars before deciding anything.",
     },
     {
         q: "How do I check what my GoDaddy renewal will actually cost?",
-        a: "Log in → Account → Renewals & Billing. Every product shows its renewal price and date there. Do this at least a month before expiry — renewal quotes at the regular rate are the number that matters, not the price you originally paid.",
+        a: "Sign in to Domain Portfolio, select the Columns icon above your domain list, tick Renewal Price, select Save, and read the Renewal Price column (it excludes add-ons such as Domain Protection or Premium DNS). Do this at least a month before expiry — renewal quotes at the regular rate are the number that matters, not the price you originally paid.",
     },
     {
         q: "Can I get a discount on GoDaddy renewal?",
@@ -68,11 +69,11 @@ const FAQ = [
     },
     {
         q: "Is Hostinger cheaper than GoDaddy at renewal in India?",
-        a: "Generally yes for hosting: Hostinger Premium renews around ₹449/mo with SSL, backups and email included, while comparable GoDaddy shared plans renew higher and charge separately for some of those features. For domains, compare per-extension — .com renewals are similar everywhere (₹1,000–₹1,400) because the registry sets the floor price.",
+        a: "Generally yes for hosting: Hostinger Premium renews around ₹449/mo with SSL, weekly backups and email (free for year 1) included, while GoDaddy's shared plans renew at ₹299–₹1,099/mo on a 3-year term. For domains, compare per-extension — GoDaddy India lists a .com renewal at ₹1,599/yr; because the registry sets the floor price, compare that against other registrars' renewal (not first-year) prices.",
     },
     {
         q: "Will my website go down if I don't renew on time?",
-        a: "Hosting stops at expiry (some hosts give a short grace window). Domains get a grace period (often ~30 days) then a redemption period where recovery costs extra, then public re-release. Never play chicken with an expiry date on a domain you care about — set reminders 30 days out.",
+        a: "Hosting stops at expiry (some hosts give a short grace window). GoDaddy's standard domain timeline is tighter than most people assume: auto-renewal is attempted on the expiry date; at 5 days the domain is parked and its website and email stop working; a final auto-renew attempt happens at 12 days; from 18 days it can only be recovered by paying an extra redemption fee; it enters GoDaddy's expired-domain auction at 26 days and a final closeout auction at 36 days; after 72 days it is removed and can no longer be renewed. Never play chicken with an expiry date on a domain you care about — set reminders 30 days out.",
     },
 ];
 
@@ -82,10 +83,10 @@ const jsonLd = [
         "@type": "BlogPosting",
         headline: "GoDaddy Domain Renewal Price India 2026: Why Cost Jumps 2–4×",
         description:
-            "GoDaddy domain renewal price in India 2026: .com renews at ₹1,000–₹1,400, hosting jumps 2–4×. Check your real renewal cost and cut it before you pay.",
+            "GoDaddy renewal price in India 2026: .com renews at ₹1,599/yr and hosting jumps 2–4× (Economy ₹219 → ₹599). Check your real cost before you pay.",
         image: "https://mohitkoli.in/assets/blog/godaddy-renewal-price-increase-india.png",
         datePublished: "2026-08-09T00:00:00.000Z",
-        dateModified: "2026-08-20T00:00:00.000Z",
+        dateModified: "2026-09-13T00:00:00.000Z",
         author: {
             "@type": "Person",
             name: "Mohit Koli",
@@ -144,13 +145,13 @@ export default function GodaddyRenewalPrice() {
                         </ol>
                     </nav>
 
-                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Problem Solver · Updated August 20, 2026</p>
+                    <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-3">Problem Solver · Updated September 13, 2026</p>
                     <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
                         GoDaddy Domain Renewal Price in India: Why Your Bill Jumped 2–4× — and What You Can Do About It
                     </h1>
                     <p className="text-lg text-gray-300 leading-8 mb-3">
-                        The renewal email is where GoDaddy gets you. You bought the domain for ₹199 and hosting for ₹149/mo, and
-                        twelve months later the invoice wants{" "}
+                        The renewal email is where GoDaddy gets you. You bought GoDaddy&apos;s Economy hosting at ₹219/mo, and when the
+                        term ends the renewal quote wants{" "}
                         <strong className="text-white">2–4× that</strong> — that gap is the GoDaddy domain renewal price in India
                         nobody mentions at checkout. Nothing broke: this is how the intro-price model works, and GoDaddy plays it
                         harder than most. I have walked several clients through exactly this invoice, so here is the playbook —
@@ -158,15 +159,15 @@ export default function GodaddyRenewalPrice() {
                     </p>
                     <p className="text-xs text-gray-500 mb-8 border-l-2 border-white/10 pl-3">
                         Disclosure: some links use my Hostinger referral code — you get an extra discount, I earn a small commission at
-                        no extra cost to you. GoDaddy prices vary by account and running offers — figures here are typical patterns, always
-                        verify your own Renewals &amp; Billing page.
+                        no extra cost to you. GoDaddy prices vary by account and running offers — figures here are GoDaddy India&apos;s listed prices as of
+                        September 2026, always verify your own renewal quote.
                     </p>
 
                     {/* Early CTA — the first affiliate link used to sit most of the way down
                         the page, which is no use to a reader who already knows what they want. */}
                     <div className="mb-10 rounded-2xl border border-emerald-500/25 bg-emerald-500/[0.06] p-5 sm:flex sm:items-center sm:justify-between sm:gap-6">
                         <div className="mb-4 sm:mb-0">
-                            <p className="font-semibold text-white leading-6">Leaving GoDaddy? Hostinger is ₹55.20/mo with the discount</p>
+                            <p className="font-semibold text-white leading-6">Leaving GoDaddy? Hostinger Premium is ₹149/mo on 48 months</p>
                             <p className="mt-1 text-sm text-gray-400 leading-6">Free migration, free domain for a year, and a renewal rate that is not 4x the intro</p>
                         </div>
                         <a
@@ -193,8 +194,8 @@ export default function GodaddyRenewalPrice() {
                     <section className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6">
                         <h2 className="text-2xl font-bold text-white mb-3">The 30-second answer</h2>
                         <ul className="space-y-2 text-gray-300 leading-7">
-                            <li>💰 <strong className="text-white">The numbers:</strong> a .com typically renews at ₹1,000–₹1,400/yr in India; hosting renews at 2–4× the intro rate (₹149/mo → ₹298–₹596/mo band).</li>
-                            <li>💡 <strong className="text-white">It&apos;s not a mistake</strong> — intro prices are promos; renewals are the regular rate. Check yours: Account → Renewals &amp; Billing.</li>
+                            <li>💰 <strong className="text-white">The numbers:</strong> GoDaddy India lists a .com renewal at ₹1,599/yr; shared hosting renews at 2.6–3.4× the intro rate (Economy ₹219/mo → ₹599/mo on a 3-year term).</li>
+                            <li>💡 <strong className="text-white">It&apos;s not a mistake</strong> — intro prices are promos; renewals are the regular rate. Check a domain&apos;s: Domain Portfolio → Columns icon → tick Renewal Price.</li>
                             <li>📞 <strong className="text-white">Ask before you pay:</strong> retention chat can sometimes apply offers; multi-year renewals during sales soften the rate.</li>
                             <li>🚚 <strong className="text-white">Domain-only user?</strong> Transferring out is easy (unlock → auth code → transfer, includes +1 year at the new registrar).</li>
                             <li>🏠 <strong className="text-white">Hosting too?</strong> Compare renewed-vs-renewed prices — that&apos;s where GoDaddy usually loses to Hostinger in India.</li>
@@ -205,12 +206,13 @@ export default function GodaddyRenewalPrice() {
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-4">GoDaddy domain renewal price in India: the real numbers</h2>
                         <p className="text-gray-300 leading-8 mb-6">
-                            A .com bought on one of GoDaddy&apos;s famous ₹0.99–₹199 first-year offers typically renews at{" "}
-                            <strong className="text-white">₹1,000–₹1,400 per year</strong> in India. That is not GoDaddy being greedy
+                            GoDaddy India currently advertises a .com at ₹1 for the first year, and lists the regular rate at{" "}
+                            <strong className="text-white">₹1,599 per year</strong> after that. That is not GoDaddy being greedy
                             about domains specifically — the .com registry sets a wholesale floor, so no registrar renews far below it.
                             The first-year price was a one-time promo, never the real rate. Other extensions follow the same shape at
                             their own registry-driven rates, and every add-on attached to the domain renews as its own line item. Your
-                            exact number is always in Account → Renewals &amp; Billing.
+                            exact number is in Domain Portfolio: select the Columns icon above your domain list, tick Renewal Price,
+                            select Save, and read the Renewal Price column (it excludes add-ons such as Domain Protection or Premium DNS).
                         </p>
                         <div className="overflow-x-auto rounded-2xl border border-white/10">
                             <table className="w-full text-left text-sm">
@@ -223,7 +225,7 @@ export default function GodaddyRenewalPrice() {
                                 </thead>
                                 <tbody className="text-gray-300">
                                     {[
-                                        [".com", "₹0.99–₹199 offers", "₹1,000–₹1,400/yr (typical)"],
+                                        [".com", "₹1 (3-year purchase required)", "₹1,599/yr"],
                                         ["Other extensions (.in, .net, .org)", "promo varies by sale", "registry-driven — verify your quote"],
                                         ["Add-ons (privacy, email trials)", "often free or trial in year 1", "billed as separate renewal lines"],
                                     ].map(([label, first, renew], i) => (
@@ -236,6 +238,14 @@ export default function GodaddyRenewalPrice() {
                                 </tbody>
                             </table>
                         </div>
+                        <h3 className="text-xl font-bold text-white mt-8 mb-3">The ₹1 .com is a 3-year commitment</h3>
+                        <p className="text-gray-300 leading-8">
+                            The ₹1 headline is real, but a 3-year purchase is required and the two additional years cost ₹1,599
+                            each. So the checkout math is ₹1 + ₹1,599 + ₹1,599 = <strong className="text-white">about ₹3,199 up front</strong>{" "}
+                            for three years (roughly ₹1,066 a year averaged) before taxes, then ₹1,599/yr is the listed regular rate.
+                            You are prepaying two full-price years to get the offer, so compare that 3-year total with another
+                            registrar&apos;s 3-year total, not with its first-year sticker price.
+                        </p>
                         <p className="text-gray-300 leading-8 mt-4">
                             Before transferring anywhere, compare the renewal column, not the transfer offer — my{" "}
                             <Link href="/blog/hostinger-domain-price-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
@@ -245,31 +255,47 @@ export default function GodaddyRenewalPrice() {
                         </p>
                     </section>
 
+                    {/* Verisign .com wholesale rise */}
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Verisign&apos;s .com wholesale price rise on 1 November 2026</h2>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            Verisign, the .com registry, announced on 23 April 2026 that the wholesale fee for every new and renewal
+                            .com registration will rise from <strong className="text-white">$10.26 to $10.97 on 1 November 2026</strong>.
+                            Its agreement allows increases of up to 7% in each of the final four years of each six-year pricing period,
+                            so further rises are possible each year through 2029.
+                        </p>
+                        <p className="text-gray-300 leading-8">
+                            Registrars set their own retail prices, so nobody can tell you today what any registrar will charge after
+                            November. What you can do: if you plan to keep a .com, renewing it for several years before 1 November 2026
+                            at a price you are happy with is a reasonable hedge — at any registrar, not just GoDaddy.
+                        </p>
+                    </section>
+
                     {/* Hosting renewal cost */}
                     <section className="mb-12">
                         <h2 className="text-3xl font-bold text-white mb-4">GoDaddy hosting renewal price: where it really hurts</h2>
                         <p className="text-gray-300 leading-8 mb-6">
                             A domain stings you once a year. Hosting bills you twelve times, so the same multiplier does far more damage.
-                            Run the common pattern: a shared plan picked up at ₹149/mo, renewed at the typical 2–4× regular rate, lands
-                            in the <strong className="text-white">₹298–₹596/mo band</strong> — and that&apos;s before add-ons like
-                            backups and email join the invoice as separate lines. Compare renewal quote against renewal quote, never
+                            On a 3-year term, GoDaddy India&apos;s shared plans renew at{" "}
+                            <strong className="text-white">2.6–3.4× their intro price</strong> — Economy goes from ₹219/mo to ₹599/mo. Compare renewal quote against renewal quote, never
                             against the sticker you originally paid.
                         </p>
                         <div className="overflow-x-auto rounded-2xl border border-white/10">
                             <table className="w-full text-left text-sm">
                                 <thead className="bg-white/5 text-gray-200">
                                     <tr>
-                                        <th className="p-4 font-semibold">Hosting renewal math</th>
-                                        <th className="p-4">Typical pattern (India)</th>
+                                        <th className="p-4 font-semibold">Plan (India)</th>
+                                        <th className="p-4">Intro → renewal (per month)</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-gray-300">
                                     {[
-                                        ["Intro price you paid (example)", "₹149/mo"],
-                                        ["Typical renewal multiplier", "2–4× the intro rate"],
-                                        ["Renewal band at that multiplier", "₹298–₹596/mo"],
-                                        ["Add-ons billed on top", "backups, email, some SSL configurations"],
-                                        ["Same-spec escape: Hostinger Premium", "₹149/mo on the 48-mo sale lock, renews ~₹449/mo"],
+                                        ["GoDaddy Starter (3-yr term)", "₹89 → ₹299 (3.4×)"],
+                                        ["GoDaddy Economy (3-yr term)", "₹219 → ₹599 (2.7×)"],
+                                        ["GoDaddy Deluxe (3-yr term)", "₹329 → ₹849 (2.6×)"],
+                                        ["GoDaddy Ultimate (3-yr term)", "₹399 → ₹1,099 (2.75×)"],
+                                        ["Escape hatch: Hostinger Premium", "₹149 on 48 months → ₹449"],
+                                        ["Escape hatch: Hostinger Unlimited", "₹249 → ₹649"],
                                     ].map(([label, value], i) => (
                                         <tr key={label} className={`border-t border-white/5 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
                                             <td className="p-4 font-medium text-white">{label}</td>
@@ -279,6 +305,10 @@ export default function GodaddyRenewalPrice() {
                                 </tbody>
                             </table>
                         </div>
+                        <p className="text-sm text-gray-400 leading-7 mt-3">
+                            SSL note: before buying, check whether SSL is included for the full term on the GoDaddy plan you pick —
+                            not just the first year — so the renewal does not add an SSL line on top of the plan price.
+                        </p>
                         <p className="text-gray-300 leading-8 mt-4">
                             Plan-by-plan intro and renewal figures for the alternative — and exactly what&apos;s bundled at each tier —
                             are in my{" "}
@@ -298,8 +328,8 @@ export default function GodaddyRenewalPrice() {
                         </p>
                         <ul className="space-y-3 text-gray-300 leading-7 mb-4">
                             <li className="flex gap-3"><span className="text-red-400 flex-shrink-0">1.</span><span><strong className="text-white">Higher regular rates.</strong> Their post-promo price for economy shared hosting sits above what most rivals charge at their own renewal — so you land on an expensive regular rate, not just a bigger one.</span></li>
-                            <li className="flex gap-3"><span className="text-red-400 flex-shrink-0">2.</span><span><strong className="text-white">Unbundling.</strong> Website backups, some SSL configurations, and email are separate paid products — the renewal invoice grows line by line, not just per plan.</span></li>
-                            <li className="flex gap-3"><span className="text-red-400 flex-shrink-0">3.</span><span><strong className="text-white">Aggressive first-year domain offers.</strong> The famous ₹0.99–₹199 first-year domains renew at standard registry-driven rates (₹1,000+ for .com) — the discount was one-time.</span></li>
+                            <li className="flex gap-3"><span className="text-red-400 flex-shrink-0">2.</span><span><strong className="text-white">Unbundling.</strong> Some SSL configurations are separate paid products, and email is not listed on the entry Starter plan — the renewal invoice can grow line by line, not just per plan.</span></li>
+                            <li className="flex gap-3"><span className="text-red-400 flex-shrink-0">3.</span><span><strong className="text-white">Aggressive first-year domain offers.</strong> The ₹1 first-year .com requires a 3-year purchase with the extra years at ₹1,599 each, and ₹1,599/yr is the listed rate after that — the discount is one-time.</span></li>
                         </ul>
                         <p className="text-gray-300 leading-8">
                             None of this is illegal or hidden — it&apos;s in the checkout fine print. But if nobody told you to read
@@ -353,8 +383,8 @@ export default function GodaddyRenewalPrice() {
                                     {[
                                         ["Renewal rate pattern", "higher, verify your quote", "~₹449/mo"],
                                         ["Free SSL included", "varies by plan/offer", "✅ all plans"],
-                                        ["Backups included", "❌ paid add-on", "✅ weekly"],
-                                        ["Email included", "❌ Microsoft 365 add-on", "✅ (free year 1, cheap after)"],
+                                        ["Backups included", "✅ daily (all plans)", "✅ weekly (Unlimited: daily)"],
+                                        ["Email included", "free email listed on Economy and up (not Starter) — check the term", "✅ 2 mailboxes per website, free for 1 year"],
                                         ["Control panel", "cPanel (classic)", "hPanel (modern)"],
                                         ["Escape hatch", "—", "48-mo lock at sale price"],
                                     ].map(([label, gd, ho], i) => (
