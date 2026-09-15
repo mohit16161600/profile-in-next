@@ -238,7 +238,7 @@ export default async function LocationPage({ params }: { params: Promise<{ locat
 
                     <dl className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                         {[
-                            ["2+ years", "Shipping production web apps"],
+                            ["3+ years", "Shipping production web apps"],
                             ["20+ projects", "Delivered end to end"],
                             ["B.Tech CSE", "BPIT, GGSIPU affiliated"],
                             ["Next.js + Laravel", "Primary production stack"],

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Mohit Koli - Professional Web Developer, Programmer & Coder",
-    description: "Professional Web Developer, Coder, and Full Stack Programmer with 2+ years of experience. Specializing in React, PHP, Laravel, Node.js, and modern web technologies.",
+    description: "Professional Web Developer, Coder, and Full Stack Programmer with 3+ years of experience. Specializing in React, PHP, Laravel, Node.js, and modern web technologies.",
     type: "website",
     url: "https://mohitkoli.in/",
     siteName: "Mohit Koli Portfolio",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Mohit Koli - Professional Web Developer | Coder | Programmer",
-    description: "Expert Web Developer and Full Stack Programmer with 2+ years of experience. High-end React and scalable PHP/Laravel engineering.",
+    description: "Expert Web Developer and Full Stack Programmer with 3+ years of experience. High-end React and scalable PHP/Laravel engineering.",
     images: ["/assets/og-default.png"],
     creator: "@mohitko86979490",
     site: "@mohitko86979490",

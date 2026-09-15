@@ -56,7 +56,7 @@ export default function About() {
           <div className="space-y-6">
             <div className="grid grid-cols-2 gap-6">
               <div className="reveal reveal-d1 glass p-6 rounded-2xl hover:scale-105 transition-transform duration-300 border border-primary-500/20">
-                <div className="text-4xl font-bold text-primary-500 mb-2">02+</div>
+                <div className="text-4xl font-bold text-primary-500 mb-2">03+</div>
                 <div className="text-sm font-medium text-gray-400">Years of Experience</div>
               </div>
               <div className="reveal reveal-d2 glass p-6 rounded-2xl shadow-sm hover:scale-105 transition-transform duration-300 border border-secondary-500/20">

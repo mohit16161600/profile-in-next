@@ -59,7 +59,7 @@ export default function Hero() {
             <div className="hero-item hero-item-5 mt-12 flex items-center justify-center lg:justify-start gap-8 text-gray-400 text-sm font-medium">
               <div className="flex items-center gap-2">
                 <span className="p-1 rounded-full bg-primary-500/20 text-primary-400"><svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg></span>
-                2+ Years Exp
+                3+ Years Exp
               </div>
               <div className="flex items-center gap-2">
                 <span className="p-1 rounded-full bg-secondary-500/20 text-secondary-400"><svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg></span>

@@ -136,7 +136,7 @@ export default function ServiceHighlights() {
                 <div className="text-xs uppercase tracking-[0.2em] text-gray-500 mt-1">Delivered Projects</div>
               </div>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <div className="text-2xl font-bold text-white">2+</div>
+                <div className="text-2xl font-bold text-white">3+</div>
                 <div className="text-xs uppercase tracking-[0.2em] text-gray-500 mt-1">Years Experience</div>
               </div>
             </div>
