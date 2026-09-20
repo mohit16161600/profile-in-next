@@ -327,6 +327,7 @@ export default function BestSeoToolsIndia() {
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-white mb-4">Related reading</h2>
                         <ul className="space-y-2 text-gray-300 list-disc list-inside">
+                            <li><Link href="/blog/semrush-review-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">What Semrush costs in India</Link> — the full ladder in ₹, including the 18% GST nobody quotes.</li>
                             <li><Link href="/blog/how-to-make-money-blogging-for-beginners-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">How to make money blogging</Link> — where SEO tools fit in the wider plan.</li>
                             <li><Link href="/blog/best-web-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Best web hosting in India</Link> — site speed is a ranking input too.</li>
                             <li><Link href="/blog/migrate-wordpress-to-new-host" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Migrating WordPress safely</Link> — protecting rankings when you change host.</li>

@@ -1,12 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import CopyCode from "@/components/CopyCode";
+import {
+    HOSTINGER_CODE,
+    VPS_OS_TEMPLATES,
+    VPS_PLANS,
+    VPS_REFERRAL_URL,
+    VPS_REGIONS,
+    VPS_VERIFIED,
+    VPS_VERIFIED_ISO,
+    inr,
+    withCode,
+} from "@/data/hostinger-vps";
 
-const REFERRAL_URL = "https://www.hostinger.com/in/vps-hosting?REFERRALCODE=mohitkoli";
+const REFERRAL_URL = VPS_REFERRAL_URL;
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-kvm-vps-plans-india-2026";
+const HINGLISH = "/blog/hostinger-vps-review-hindi-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/best-vps-hosting-india-2026.png";
 const PUBLISHED = "2026-09-07T00:00:00.000Z";
-const VERIFIED = "7 September 2026";
+const VERIFIED = VPS_VERIFIED;
 
 export const metadata: Metadata = {
     title: "Hostinger KVM VPS India 2026: 69% Off, From ₹599/mo",
@@ -27,6 +40,10 @@ export const metadata: Metadata = {
         "which hostinger vps plan is best",
         "hostinger vps specs",
         "kvm vps india price",
+        "hostinger vps review",
+        "hostinger vps coupon code",
+        "hostinger vps one year price",
+        "hostinger vps security features",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
@@ -36,7 +53,7 @@ export const metadata: Metadata = {
         url: CANONICAL,
         type: "article",
         publishedTime: PUBLISHED,
-        modifiedTime: PUBLISHED,
+        modifiedTime: VPS_VERIFIED_ISO,
         images: [{ url: IMAGE, width: 1200, height: 630, alt: "Hostinger KVM VPS plans and prices in India 2026" }],
     },
     twitter: {
@@ -47,46 +64,52 @@ export const metadata: Metadata = {
     },
 };
 
-/**
- * Every figure verified against hostinger.com/in/vps-hosting on 7 September 2026.
- * `code` is the sale price with the extra 20% applied. Renewal rates are the
- * published 2-year renewal figures — the number that decides the real cost.
- */
-const PLANS = [
-    {
-        name: "KVM 1", sale: 599, regular: 1649, off: "64%", renewal: 999, code: "₹479.20",
-        vcpu: "1 vCPU core", ram: "4 GB RAM", disk: "50 GB NVMe", bw: "4 TB bandwidth",
+/** Editorial text per plan; every number comes from src/data/hostinger-vps.ts. */
+const PLAN_COPY: Record<string, { badge: string; best: string; take: string; highlight: boolean }> = {
+    "KVM 1": {
         badge: "", best: "Testing, staging boxes, low-traffic personal projects",
         take: "Genuinely usable, but 4 GB fills up fast once a database and a build process share it.",
         highlight: false,
     },
-    {
-        name: "KVM 2", sale: 799, regular: 2099, off: "62%", renewal: 1199, code: "₹639.20",
-        vcpu: "2 vCPU cores", ram: "8 GB RAM", disk: "100 GB NVMe", bw: "8 TB bandwidth",
+    "KVM 2": {
         badge: "BEST STARTER", best: "A single production app, WordPress, small SaaS",
         take: "The cheapest plan I would put a real production app on. Most people should start here.",
         highlight: false,
     },
-    {
-        name: "KVM 4", sale: 1099, regular: 3499, off: "69%", renewal: 2399, code: "₹879.20",
-        vcpu: "4 vCPU cores", ram: "16 GB RAM", disk: "200 GB NVMe", bw: "16 TB bandwidth",
+    "KVM 4": {
         badge: "BEST VALUE", best: "Growing apps, agencies, stores, several sites on one box",
         take: "The deepest discount in the range and the point where builds, backups and traffic stop competing.",
         highlight: true,
     },
-    {
-        name: "KVM 8", sale: 2199, regular: 6199, off: "65%", renewal: 4399, code: "₹1,759.20",
-        vcpu: "8 vCPU cores", ram: "32 GB RAM", disk: "400 GB NVMe", bw: "32 TB bandwidth",
+    "KVM 8": {
         badge: "HIGH LOAD", best: "High traffic, large databases, multiple services on one server",
         take: "Buy this only when you already know why you need it — the renewal is ₹4,399/mo.",
         highlight: false,
     },
-] as const;
+};
+
+const PLANS = VPS_PLANS.map((p) => ({
+    ...PLAN_COPY[p.name],
+    name: p.name,
+    sale: p.sale,
+    regular: p.regular,
+    off: `${p.off}%`,
+    renewal: p.renewal,
+    code: inr(withCode(p.sale)),
+    vcpu: `${p.vcpu} vCPU core${p.vcpu > 1 ? "s" : ""}`,
+    ram: `${p.ramGb} GB RAM`,
+    disk: `${p.diskGb} GB NVMe`,
+    bw: `${p.bandwidthTb} TB bandwidth`,
+}));
 
 const FAQ = [
     {
         q: "How much does Hostinger VPS cost in India?",
         a: "On the current sale, KVM 1 is ₹599/mo, KVM 2 is ₹799/mo, KVM 4 is ₹1,099/mo and KVM 8 is ₹2,199/mo. Those rates require paying the full term upfront and apply to your first purchase only — the plans renew at ₹999, ₹1,199, ₹2,399 and ₹4,399 per month respectively. Prices verified on Hostinger's India VPS page in September 2026.",
+    },
+    {
+        q: "How much is Hostinger VPS for one year?",
+        a: "At the sale rates, twelve months costs ₹7,188 on KVM 1, ₹9,588 on KVM 2, ₹13,188 on KVM 4 and ₹26,388 on KVM 8, before 18% GST. The same year at the renewal rates is ₹11,988, ₹14,388, ₹28,788 and ₹52,788. The cart shows the exact term and total before you pay.",
     },
     {
         q: "Which Hostinger KVM plan is best?",
@@ -105,12 +128,32 @@ const FAQ = [
         a: "Hostinger states AMD EPYC processors in HPE and Dell servers, NVMe SSD storage on every plan, and a 1 Gbps network across the range. The hardware is the same whether you buy KVM 1 or KVM 8 — what changes between plans is how much of it is allocated to you.",
     },
     {
+        q: "What security features does Hostinger VPS include?",
+        a: "Every KVM plan lists a malware scanner that automatically detects and removes malicious files, built-in firewall management, Wanguard DDoS filtering, free weekly backups and manual snapshots you can roll back to in minutes. Those tools reduce the work, but OS updates and your application's own security are still your job on an unmanaged server.",
+    },
+    {
+        q: "Does Hostinger VPS have an uptime SLA?",
+        a: "Hostinger's VPS plan page does not state an uptime percentage or SLA as of 17 September 2026, so treat any 99.9% figure quoted elsewhere as unconfirmed for VPS. If contractual uptime matters for your business, read Hostinger's current terms of service before relying on one.",
+    },
+    {
         q: "Does Hostinger VPS support Windows Server?",
         a: "No. Hostinger's KVM VPS plans are built for Linux — Ubuntu, Debian, AlmaLinux, Rocky Linux and CentOS are the usual choices. If you need Windows Server, this is not the provider for that workload.",
     },
     {
+        q: "Which operating systems can I install on Hostinger VPS?",
+        a: "Hostinger offers one-click templates for Linux distributions including Ubuntu, Debian, AlmaLinux, Rocky Linux, CentOS, Fedora and Alpine Linux, plus control panels and applications. The template list changes over time, so check the selector in hPanel if you need a specific distribution.",
+    },
+    {
+        q: "Where are Hostinger VPS data centres?",
+        a: "Hostinger lists VPS data centre regions in North America, Europe, Asia and South America. Pick the region closest to most of your visitors — latency to the server matters more for dynamic requests than any spec difference between neighbouring plans.",
+    },
+    {
         q: "Is Hostinger VPS managed or unmanaged?",
-        a: "Unmanaged, in the sense that matters: you get root access and you own OS updates, firewall rules, and whatever breaks at 3 AM. hPanel makes provisioning, reinstalls and backups much easier than a bare terminal, and there is an AI assistant for common tasks, but nobody is patching your server for you. Budget the time or stay on managed shared hosting.",
+        a: "Unmanaged, in the sense that matters: you get root access and you own OS updates, server configuration, and whatever breaks at 3 AM. hPanel adds firewall management, a malware scanner, backups and the Hostinger Agent AI assistant, which makes the work much easier than a bare terminal, but nobody is patching your server for you. Budget the time or stay on managed shared hosting.",
+    },
+    {
+        q: "How many visitors can a Hostinger VPS handle?",
+        a: "There is no honest fixed number. Capacity depends on your application, caching, database queries, page weight and traffic pattern far more than on the plan name. Load-test your real app, watch CPU and RAM, and move up a tier when either stays pinned.",
     },
     {
         q: "Can I upgrade my Hostinger VPS plan later?",
@@ -133,10 +176,28 @@ const FAQ = [
         a: "Opening Hostinger through a referral link applies an additional 20% on top of whatever sale price is showing, which is what turns ₹1,099 into roughly ₹879/mo on KVM 4. It applies to a fresh purchase, shows in the cart before you pay, and stacks on the sale rather than replacing it. It does not apply to renewals.",
     },
     {
+        q: "How do I use the code MOHITKOLI?",
+        a: "Open Hostinger through any button on this page and the discount is applied automatically. If the order summary does not show it, enter MOHITKOLI in the coupon field under the order summary. Only one code can be attached to an order, and no code applies to a renewal — confirm the discounted total before you pay.",
+    },
+    {
         q: "Is GST added on top of Hostinger VPS prices?",
         a: "Yes — 18% GST is added at checkout on Indian billing, so the invoice lands above the listed figure. If you have a GSTIN you can enter it during checkout. Factor it in when comparing against providers that quote in dollars.",
     },
 ];
+
+const TOC = [
+    ["plans", "Hostinger VPS price list"],
+    ["features", "What every KVM plan includes"],
+    ["renewal", "Renewal price — the year-two number"],
+    ["which-plan", "Which KVM plan to buy"],
+    ["kvm", "Why KVM matters"],
+    ["vs-budget-vps", "Hostinger vs a typical budget VPS"],
+    ["performance", "Hardware, network and security"],
+    ["limits", "What Hostinger VPS does not do"],
+    ["discount-code", "How to get the extra 20% off"],
+    ["verdict", "Verdict, pros and cons"],
+    ["faq", "FAQ"],
+] as const;
 
 const jsonLd = {
     "@context": "https://schema.org",
@@ -145,10 +206,11 @@ const jsonLd = {
             "@type": "BlogPosting",
             headline: "Hostinger KVM VPS Plans in India (2026): KVM 1, 2, 4 and 8 Compared",
             description:
-                "Every Hostinger KVM VPS plan priced for India with real renewal rates, full specs, and which plan is actually worth buying.",
+                "Every Hostinger KVM VPS plan priced for India with real renewal rates, full specs, security features, and which plan is actually worth buying.",
             image: IMAGE,
             datePublished: PUBLISHED,
-            dateModified: PUBLISHED,
+            dateModified: VPS_VERIFIED_ISO,
+            inLanguage: "en-IN",
             author: { "@type": "Person", name: "Mohit Koli", url: "https://mohitkoli.in" },
             publisher: { "@type": "Person", name: "Mohit Koli", url: "https://mohitkoli.in" },
             mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
@@ -164,8 +226,8 @@ const jsonLd = {
             offers: {
                 "@type": "AggregateOffer",
                 priceCurrency: "INR",
-                lowPrice: "599",
-                highPrice: "2199",
+                lowPrice: String(VPS_PLANS[0].sale),
+                highPrice: String(VPS_PLANS[VPS_PLANS.length - 1].sale),
                 offerCount: PLANS.length,
                 availability: "https://schema.org/InStock",
                 url: CANONICAL,
@@ -248,14 +310,35 @@ export default function HostingerKvmVpsPlans() {
                         <strong className="text-white">every KVM plan&apos;s sale price, its renewal rate, and its full specs</strong>{" "}
                         — then says plainly which one most people should actually buy, and which one is a trap.
                     </p>
-                    <p className="text-sm text-gray-500 mb-8">
+                    <p className="text-sm text-gray-500 mb-4">
                         Disclosure: links on this page carry my referral code, which applies an extra discount for you
                         and pays me a commission at no extra cost. Every price was checked on Hostinger&apos;s India VPS
                         page on {VERIFIED} and can change — confirm in the cart before paying.
                     </p>
+                    <p className="text-sm text-gray-400 mb-8">
+                        Prefer Hinglish?{" "}
+                        <Link href={HINGLISH} className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                            Read this guide in Hinglish →
+                        </Link>
+                    </p>
+
+                    {/* ---------- Table of contents ---------- */}
+                    <nav aria-label="Table of contents" className="mb-12 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                        <p className="text-sm font-bold uppercase tracking-[0.2em] text-gray-400 mb-4">On this page</p>
+                        <ol className="grid gap-2 sm:grid-cols-2 text-gray-300">
+                            {TOC.map(([id, label], i) => (
+                                <li key={id}>
+                                    <a href={`#${id}`} className="hover:text-primary-300">
+                                        <span className="mr-2 font-mono text-primary-400">{String(i + 1).padStart(2, "0")}</span>
+                                        {label}
+                                    </a>
+                                </li>
+                            ))}
+                        </ol>
+                    </nav>
 
                     {/* ---------- 30-second answer ---------- */}
-                    <section className="mb-12 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6">
+                    <section className="mb-10 rounded-2xl border border-primary-500/30 bg-primary-500/[0.06] p-6">
                         <h2 className="text-2xl font-bold text-white mb-4">The 30-second answer</h2>
                         <ul className="space-y-3 text-gray-300 leading-7">
                             <li>
@@ -279,8 +362,39 @@ export default function HostingerKvmVpsPlans() {
                         <Cta label="See Live KVM VPS Prices →" note="Opens with the extra discount applied — verify the figure in the cart" />
                     </section>
 
-                    {/* ---------- Plan cards ---------- */}
+                    {/* ---------- Best picks + quick links ---------- */}
                     <section className="mb-14">
+                        <div className="grid gap-4 md:grid-cols-3 mb-6">
+                            {[
+                                ["Best budget pick", "KVM 2", "₹799/mo · 2 vCPU · 8 GB RAM — the realistic floor for a production app."],
+                                ["Best overall value", "KVM 4", "₹1,099/mo · 4 vCPU · 16 GB RAM — the biggest discount in the range."],
+                                ["Best for scale", "KVM 8", "₹2,199/mo · 8 vCPU · 32 GB RAM — for heavy databases and many services."],
+                            ].map(([label, plan, why]) => (
+                                <div key={plan} className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                                    <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary-400 mb-2">{label}</p>
+                                    <p className="text-2xl font-bold text-white mb-2">{plan}</p>
+                                    <p className="text-sm text-gray-300 leading-6">{why}</p>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                            {PLANS.map((p) => (
+                                <a
+                                    key={p.name}
+                                    href={REFERRAL_URL}
+                                    target="_blank"
+                                    rel="nofollow sponsored noopener"
+                                    className={`rounded-xl px-4 py-3 text-center transition ${p.highlight ? "bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-500 hover:to-indigo-400" : "bg-white/10 hover:bg-white/20"}`}
+                                >
+                                    <span className="block font-bold text-white">Get {p.name}</span>
+                                    <span className="block text-sm text-gray-200">{inr(p.sale)}/mo · {p.off} off</span>
+                                </a>
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* ---------- Plan cards ---------- */}
+                    <section id="plans" className="mb-14 scroll-mt-28">
                         <h2 className="text-3xl font-bold text-white mb-4">Hostinger VPS price list — every KVM plan</h2>
                         <p className="text-gray-300 leading-8 mb-6">
                             Sale prices require the full term paid upfront. The green line is what the plan costs
@@ -328,8 +442,38 @@ export default function HostingerKvmVpsPlans() {
                         </div>
                     </section>
 
+                    {/* ---------- Included on every plan ---------- */}
+                    <section id="features" className="mb-14 scroll-mt-28">
+                        <h2 className="text-3xl font-bold text-white mb-4">What every Hostinger KVM plan includes</h2>
+                        <p className="text-gray-300 leading-8 mb-6">
+                            The plans differ only in how much CPU, RAM, storage and bandwidth you get. Everything below
+                            comes with all four, as listed on Hostinger&apos;s VPS page on {VERIFIED}.
+                        </p>
+                        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                            {[
+                                ["Full root access", "Install any software, configure the server however you need, no restricted panel in the way."],
+                                ["Dedicated IP address", "Every KVM client gets one — useful for SSL, email reputation and firewall allow-lists."],
+                                ["NVMe SSD storage", "On every tier, not just the top one. Random database reads are where NVMe earns its keep."],
+                                ["Free weekly backups", "Automated weekly backups at no extra cost, with daily backups available as an option."],
+                                ["Manual snapshots", "Take a snapshot before a risky change and revert to it in minutes if something breaks."],
+                                ["Malware scanner", "Automatically detects and removes malicious files on the server."],
+                                ["Firewall management", "Built-in firewall management in hPanel to block unwanted traffic."],
+                                ["Wanguard DDoS filtering", "Filters harmful traffic before it reaches your server."],
+                                ["Hostinger Agent + public API", "An AI assistant in hPanel for server tasks, and a public API for automation."],
+                                ["One-click templates", `Linux distributions (${VPS_OS_TEMPLATES.slice(0, 4).join(", ")} and more), control panels and apps.`],
+                                ["Global data centres", `Regions in ${VPS_REGIONS.join(", ")}.`],
+                                ["30-day money-back guarantee", "Enough time to deploy your real application and see whether the plan fits."],
+                            ].map(([title, body]) => (
+                                <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                                    <h3 className="text-base font-bold text-white mb-2">{title}</h3>
+                                    <p className="text-sm text-gray-300 leading-6">{body}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+
                     {/* ---------- Renewal math ---------- */}
-                    <section className="mb-14">
+                    <section id="renewal" className="mb-14 scroll-mt-28">
                         <h2 className="text-3xl font-bold text-white mb-4">Hostinger VPS renewal price — the year-two number</h2>
                         <p className="text-gray-300 leading-8 mb-6">
                             Every VPS comparison stops at the sale price. Here is the same plan priced across a full
@@ -372,7 +516,7 @@ export default function HostingerKvmVpsPlans() {
                     </section>
 
                     {/* ---------- Which plan ---------- */}
-                    <section className="mb-14">
+                    <section id="which-plan" className="mb-14 scroll-mt-28">
                         <h2 className="text-3xl font-bold text-white mb-4">Which Hostinger KVM plan should you buy?</h2>
                         <div className="overflow-x-auto rounded-2xl border border-white/10 mb-6">
                             <table className="w-full text-left text-sm">
@@ -404,7 +548,7 @@ export default function HostingerKvmVpsPlans() {
                     </section>
 
                     {/* ---------- KVM vs OpenVZ ---------- */}
-                    <section className="mb-14">
+                    <section id="kvm" className="mb-14 scroll-mt-28">
                         <h2 className="text-3xl font-bold text-white mb-4">Why &quot;KVM&quot; in the plan name actually matters</h2>
                         <p className="text-gray-300 leading-8 mb-4">
                             KVM stands for Kernel-based Virtual Machine, and it is the single most important spec on
@@ -444,10 +588,49 @@ export default function HostingerKvmVpsPlans() {
                         </p>
                     </section>
 
+                    {/* ---------- vs typical budget VPS ---------- */}
+                    <section id="vs-budget-vps" className="mb-14 scroll-mt-28">
+                        <h2 className="text-3xl font-bold text-white mb-4">Hostinger vs a typical budget VPS</h2>
+                        <p className="text-gray-300 leading-8 mb-6">
+                            At this price point most hosts cut something — the hypervisor, the disks, or the extras.
+                            The right-hand column is what is common at the low end of the market, not a claim about
+                            any one provider, so check it against whoever you are comparing.
+                        </p>
+                        <div className="overflow-x-auto rounded-2xl border border-white/10">
+                            <table className="w-full text-left text-sm">
+                                <thead className="bg-white/5 text-gray-200">
+                                    <tr>
+                                        <th className="p-4 font-semibold">Feature</th>
+                                        <th className="p-4">Hostinger KVM VPS</th>
+                                        <th className="p-4">Common at the budget end</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-gray-300">
+                                    {[
+                                        ["Virtualisation", "KVM, hardware-level isolation", "Often container-based (OpenVZ / LXC)"],
+                                        ["Storage", "NVMe SSD on every plan", "SATA SSD is still common"],
+                                        ["Resources", "vCPU and RAM allocated per plan", "Burstable or oversold resources"],
+                                        ["Backups", "Free weekly backups + manual snapshots", "Often a paid add-on"],
+                                        ["Security", "Malware scanner, firewall management, Wanguard DDoS filtering", "Frequently extra, or do-it-yourself"],
+                                        ["Management", "hPanel, Hostinger Agent AI assistant, public API", "Bare SSH, or a paid control-panel licence"],
+                                        ["Setup", "One-click OS, panel and app templates", "Manual installation"],
+                                        ["Renewal", "₹999–₹4,399/mo after the sale term", "Varies — always check before buying"],
+                                    ].map(([f, h, t], i) => (
+                                        <tr key={f} className={`border-t border-white/5 ${i % 2 === 0 ? "bg-white/[0.02]" : ""}`}>
+                                            <td className="p-4 font-medium text-white">{f}</td>
+                                            <td className="p-4 text-green-400">{h}</td>
+                                            <td className="p-4 text-gray-400">{t}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
                     {/* ---------- Hardware ---------- */}
-                    <section className="mb-14">
+                    <section id="performance" className="mb-14 scroll-mt-28">
                         <h2 className="text-3xl font-bold text-white mb-4">Hardware and network — what is under every plan</h2>
-                        <div className="grid gap-6 md:grid-cols-2">
+                        <div className="grid gap-6 md:grid-cols-2 mb-6">
                             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
                                 <h3 className="text-lg font-bold text-white mb-3">Stated hardware</h3>
                                 <ul className="space-y-2 text-sm text-gray-300 leading-7">
@@ -456,22 +639,37 @@ export default function HostingerKvmVpsPlans() {
                                     <li>• 1 Gbps network speed across the range</li>
                                     <li>• Dedicated IP address on every plan</li>
                                     <li>• Full root access, any supported Linux distribution</li>
+                                    <li>• Data centre regions: {VPS_REGIONS.join(", ")}</li>
                                 </ul>
                             </div>
                             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-                                <h3 className="text-lg font-bold text-white mb-3">What that means in practice</h3>
-                                <p className="text-sm text-gray-300 leading-7">
-                                    The hardware does not change between KVM 1 and KVM 8 — only your slice of it does.
-                                    So the performance question is never &quot;is the server good&quot;, it is &quot;did
-                                    I buy enough RAM&quot;. NVMe on every tier matters more than it sounds: database
-                                    reads are random, and that is exactly where NVMe pulls away from SATA SSD.
-                                </p>
+                                <h3 className="text-lg font-bold text-white mb-3">Security and reliability</h3>
+                                <ul className="space-y-2 text-sm text-gray-300 leading-7">
+                                    <li>• Malware scanner that detects and removes malicious files</li>
+                                    <li>• Built-in firewall management</li>
+                                    <li>• Wanguard DDoS filtering</li>
+                                    <li>• Free weekly backups, daily backups optional</li>
+                                    <li>• Manual snapshots with roll-back in minutes</li>
+                                    <li>• 30-day money-back guarantee</li>
+                                </ul>
                             </div>
                         </div>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            The hardware does not change between KVM 1 and KVM 8 — only your slice of it does. So the
+                            performance question is never &quot;is the server good&quot;, it is &quot;did I buy enough
+                            RAM&quot;. NVMe on every tier matters more than it sounds: database reads are random, and that
+                            is exactly where NVMe pulls away from SATA SSD.
+                        </p>
+                        <p className="text-sm text-gray-400 leading-7 rounded-xl border border-amber-500/30 bg-amber-500/[0.06] p-4">
+                            <strong className="text-amber-300">On uptime:</strong> Hostinger&apos;s VPS plan page does not
+                            state an uptime percentage or SLA (checked {VERIFIED}). Some reviews quote 99.9% — if
+                            contractual uptime matters to your business, read Hostinger&apos;s terms of service before you
+                            rely on a number.
+                        </p>
                     </section>
 
                     {/* ---------- Honest limits ---------- */}
-                    <section className="mb-14">
+                    <section id="limits" className="mb-14 scroll-mt-28">
                         <h2 className="text-3xl font-bold text-white mb-4">Four things Hostinger VPS does not do</h2>
                         <ul className="space-y-4 text-gray-300 leading-7">
                             <li>
@@ -480,8 +678,9 @@ export default function HostingerKvmVpsPlans() {
                             </li>
                             <li>
                                 <strong className="text-white">Nobody manages it for you.</strong> Root access cuts both
-                                ways. OS patches, firewall rules, and the 3 AM outage are yours. hPanel and the AI
-                                assistant reduce the friction; they do not remove the responsibility.
+                                ways. OS updates, server configuration, and the 3 AM outage are yours. The firewall
+                                manager, malware scanner and AI assistant reduce the friction; they do not remove the
+                                responsibility.
                             </li>
                             <li>
                                 <strong className="text-white">The renewal is not a discount.</strong> KVM 4 more than
@@ -495,15 +694,72 @@ export default function HostingerKvmVpsPlans() {
                         </ul>
                     </section>
 
+                    {/* ---------- Discount code ---------- */}
+                    <section id="discount-code" className="mb-14 scroll-mt-28 rounded-3xl border border-primary-500/40 bg-gradient-to-br from-purple-900/40 to-indigo-900/30 p-6 sm:p-8">
+                        <h2 className="text-3xl font-bold text-white mb-3 text-center">How to get the extra 20% off</h2>
+                        <p className="text-gray-300 leading-8 mb-6 text-center max-w-2xl mx-auto">
+                            Opening Hostinger through any button on this page applies an extra 20% on top of the sale
+                            price automatically — KVM 4 drops from ₹1,099 to {inr(withCode(1099))}/mo. Nothing to type.
+                        </p>
+                        <CopyCode code={HOSTINGER_CODE} />
+                        <ol className="mt-8 space-y-3 text-gray-300 leading-7 max-w-2xl mx-auto list-decimal list-inside">
+                            <li>Open Hostinger through a button on this page.</li>
+                            <li>Pick your KVM plan and the term you want.</li>
+                            <li>Check that the order summary shows the discounted price.</li>
+                            <li>
+                                If it does not, enter <strong className="text-white">{HOSTINGER_CODE}</strong> in the coupon
+                                field under the order summary.
+                            </li>
+                        </ol>
+                        <p className="mt-6 text-sm text-gray-400 leading-7 max-w-2xl mx-auto">
+                            Only one code can be attached to an order, and no code applies to a renewal. Referral
+                            discounts are intended for new customers — if you already have a Hostinger account, confirm
+                            the discount actually appears before you pay. 18% GST is added at checkout.
+                        </p>
+                        <Cta label="Open Hostinger VPS →" note="Discount applied automatically · 30-day money-back guarantee" />
+                    </section>
+
                     {/* ---------- Verdict ---------- */}
-                    <section className="mb-14 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-                        <h2 className="text-2xl font-bold text-white mb-4">Verdict</h2>
+                    <section id="verdict" className="mb-14 scroll-mt-28 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                        <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+                            <h2 className="text-2xl font-bold text-white">Verdict</h2>
+                            <div className="text-right">
+                                <p className="text-4xl font-bold text-white">4.5<span className="text-xl text-gray-400"> / 5</span></p>
+                                <p className="text-xs text-gray-500">My overall rating · specs and prices verified {VERIFIED}</p>
+                            </div>
+                        </div>
                         <p className="text-gray-300 leading-8 mb-4">
                             Across the Indian market, this is a strong price-to-spec ratio with genuine KVM
                             virtualisation and NVMe on every tier — the two specs that most budget VPS providers quietly
                             compromise. The honest weaknesses are the renewal rates and the fact that nobody is
                             administering the server for you.
                         </p>
+                        <div className="grid gap-6 md:grid-cols-2 mb-6">
+                            <div>
+                                <h3 className="text-lg font-bold text-green-400 mb-3">Pros</h3>
+                                <ul className="space-y-2 text-sm text-gray-300 leading-6">
+                                    <li>✓ Genuine KVM virtualisation with allocated vCPU and RAM</li>
+                                    <li>✓ NVMe storage and a 1 Gbps network on every plan</li>
+                                    <li>✓ Free weekly backups plus manual snapshots</li>
+                                    <li>✓ Malware scanner, firewall management and DDoS filtering included</li>
+                                    <li>✓ Dedicated IP, full root access and a public API</li>
+                                    <li>✓ One-click OS, control-panel and app templates</li>
+                                    <li>✓ 62–69% sale discounts, plus an extra 20% through a referral link</li>
+                                    <li>✓ 30-day money-back guarantee</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold text-red-400 mb-3">Cons</h3>
+                                <ul className="space-y-2 text-sm text-gray-300 leading-6">
+                                    <li>✗ Renewals jump sharply — KVM 4 goes from ₹1,099 to ₹2,399/mo</li>
+                                    <li>✗ Unmanaged: OS updates and configuration are your job</li>
+                                    <li>✗ No Windows Server</li>
+                                    <li>✗ No uptime SLA stated on the VPS plan page</li>
+                                    <li>✗ Sale prices need the whole term paid upfront</li>
+                                    <li>✗ Live chat and tickets only — no phone support</li>
+                                </ul>
+                            </div>
+                        </div>
                         <p className="text-gray-300 leading-8">
                             <strong className="text-white">Buy KVM 2</strong> if this is your first production server.{" "}
                             <strong className="text-white">Buy KVM 4</strong> if you are running client work or a store
@@ -515,7 +771,7 @@ export default function HostingerKvmVpsPlans() {
                     </section>
 
                     {/* ---------- FAQ ---------- */}
-                    <section className="mb-14">
+                    <section id="faq" className="mb-14 scroll-mt-28">
                         <h2 className="text-3xl font-bold text-white mb-6">Hostinger VPS — frequently asked questions</h2>
                         <div className="space-y-4">
                             {FAQ.map((f) => (
@@ -533,6 +789,12 @@ export default function HostingerKvmVpsPlans() {
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-white mb-4">Keep reading</h2>
                         <ul className="space-y-3 text-gray-300 leading-7">
+                            <li>
+                                <Link href={HINGLISH} className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
+                                    Hostinger VPS ki poori kundali
+                                </Link>{" "}
+                                — the same guide, written in Hinglish.
+                            </li>
                             <li>
                                 <Link href="/blog/best-vps-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">
                                     Best VPS hosting in India 2026

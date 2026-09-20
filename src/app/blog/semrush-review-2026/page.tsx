@@ -6,35 +6,39 @@ import ShareButtons from "@/components/ShareButtons";
 const CANONICAL = "https://mohitkoli.in/blog/semrush-review-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/semrush-review-2026.png";
 const PUBLISHED = "2026-08-24T00:00:00.000Z";
-const MODIFIED = "2026-09-13T00:00:00.000Z";
+const MODIFIED = "2026-09-20T00:00:00.000Z";
 
 export const metadata: Metadata = {
-    title: "Semrush Review 2026: Is ₹13,000/mo Worth It in India?",
+    // Retargeted to the pricing intent: every query this page earns impressions for is
+    // "semrush price/pricing india", not "semrush review".
+    title: "Semrush Price in India 2026: ₹1.6 Lakh a Year After GST",
     description:
-        "Semrush costs $139/mo — about ₹13,300 at Sept 2026 rates. What you get, the $45/user seat trap, the new Semrush One AI plans, and cheaper tools that do the job.",
+        "Nobody quotes the 18% GST or the forex markup. Every Semrush tier in ₹, the $45/user seat trap, and the cheaper tools that do the same job for Indian sites.",
     keywords: [
         "semrush review", "semrush review 2026", "semrush price india", "is semrush worth it",
         "semrush pricing", "semrush free trial", "semrush vs ahrefs", "semrush alternatives",
         "semrush for beginners", "semrush keyword magic tool", "semrush india cost", "semrush pros and cons",
         "semrush one", "semrush adobe", "semrush ai visibility toolkit",
+        "semrush pricing india", "semrush india pricing", "semrush price in india", "semrush india",
+        "semrush cost in india", "semrush gst india", "semrush plans price",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Semrush Review 2026: Is ₹13,000/mo Worth It in India?",
+        title: "Semrush Price in India 2026: ₹1.6 Lakh a Year After GST",
         description: "Real pricing, the per-seat trap, and whether an Indian blogger should actually buy it.",
         url: CANONICAL, type: "article", publishedTime: PUBLISHED, modifiedTime: MODIFIED,
         images: [{ url: IMAGE, width: 1200, height: 630, alt: "Semrush reviewed for Indian users in 2026" }],
     },
     twitter: {
-        card: "summary_large_image", title: "Semrush Review 2026: Is ₹13,000/mo Worth It in India?",
+        card: "summary_large_image", title: "Semrush Price in India 2026: ₹1.6 Lakh a Year After GST",
         description: "What Semrush costs in rupees, and who should actually pay it.", images: [IMAGE],
     },
 };
 
 const FAQ = [
-    { q: "How much does Semrush cost in India?", a: "Semrush prices in US dollars, not rupees. The entry SEO plan is $139/month, dropping to roughly $117/month on annual billing. At about ₹95-96 per dollar (September 2026) that is roughly ₹13,300/month on monthly billing or ₹11,200/month on annual billing, before your card's forex markup. There is no India-specific pricing tier." },
+    { q: "How much does Semrush cost in India?", a: "Semrush prices in US dollars, not rupees. The entry SEO plan is $139/month, dropping to roughly $117/month on annual billing. At about ₹95-96 per dollar (September 2026) that is roughly ₹13,300/month on monthly billing or ₹11,200/month on annual billing, before your card's forex markup. There is no India-specific pricing tier, and 18% GST is added on top because this is an imported digital service." },
     { q: "Is Semrush worth it for a beginner?", a: "Usually not. If you have fewer than about 20 published posts, the bottleneck is content, not research speed — and Google Search Console gives you your own performance data free. Semrush earns its price once you are publishing regularly and need to know what competitors rank for. Start with Search Console and a cheaper tool." },
-    { q: "Does Semrush have a free trial?", a: "Yes. The public site typically offers a 7-day trial, and partner or referral links often carry an extended trial on the Pro or Guru plans. If you intend to test it, start from a referral link — the longer window costs nothing and gives you time to form a real opinion." },
+    { q: "Does Semrush have a free trial?", a: "Yes. The public site typically offers a 7-day trial, and partner or referral links often carry an extended trial on the paid plans. If you intend to test it, start from a referral link — the longer window costs nothing and gives you time to form a real opinion." },
     { q: "What is the biggest hidden cost of Semrush?", a: "Per-user seats. The advertised price covers one user; each additional user is $45/month on the entry SEO plan (up to $100/user on the top tiers), so an agency of four pays about $274/month, not $139. If more than one person needs access, price the seats before you compare Semrush against anything else." },
     { q: "Semrush or Ahrefs — which should I buy?", a: "Semrush if you want one subscription covering keyword research, site audit, rank tracking and competitor analysis. Ahrefs if backlink analysis is the main job — its link index remains the deepest. Most people need one, and Semrush covers more ground per rupee." },
     { q: "What are the best cheaper Semrush alternatives?", a: "Mangools at about $29.90/month on annual billing ($49 monthly) covers keyword research, rank tracking and basic backlinks well enough for a solo blog. SE Ranking at around $103/month on annual billing targets agencies wanting similar features with white-label reporting. Neither matches Semrush's database size, which may or may not matter to you." },
@@ -46,7 +50,7 @@ const FAQ = [
 const jsonLd = [
     {
         "@context": "https://schema.org", "@type": "BlogPosting",
-        headline: "Semrush Review 2026: Is ₹13,000/mo Worth It in India?",
+        headline: "Semrush Price in India 2026: ₹1.6 Lakh a Year After GST",
         description: "What Semrush costs, what it does, the per-seat pricing trap and who should actually buy it.",
         image: IMAGE, datePublished: PUBLISHED, dateModified: MODIFIED,
         author: { "@type": "Person", name: "Mohit Koli", url: "https://mohitkoli.in/profile", jobTitle: "Senior Full Stack Developer", sameAs: ["https://github.com/mohit16161600", "https://www.linkedin.com/in/mohit-koli-b47260213", "https://x.com/mohitko86979490"] },
@@ -60,7 +64,7 @@ const jsonLd = [
         itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: "https://mohitkoli.in/" },
             { "@type": "ListItem", position: 2, name: "Blog", item: "https://mohitkoli.in/blog" },
-            { "@type": "ListItem", position: 3, name: "Semrush Review", item: CANONICAL },
+            { "@type": "ListItem", position: 3, name: "Semrush Price in India", item: CANONICAL },
         ],
     },
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: FAQ.map((i) => ({ "@type": "Question", name: i.q, acceptedAnswer: { "@type": "Answer", text: i.a } })) },
@@ -76,14 +80,14 @@ export default function SemrushReview() {
                         <ol className="flex flex-wrap items-center gap-2">
                             <li><Link href="/" className="hover:text-primary-400">Home</Link></li><li>/</li>
                             <li><Link href="/blog" className="hover:text-primary-400">Blog</Link></li><li>/</li>
-                            <li className="text-gray-300">Semrush Review</li>
+                            <li className="text-gray-300">Semrush Price in India</li>
                         </ol>
                     </nav>
 
                     <header className="mb-8">
                         <p className="text-sm uppercase tracking-[0.3em] text-primary-400 mb-4">SEO</p>
                         <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
-                            Semrush Review 2026: Is It Worth ₹13,000 a Month in India?
+                            Semrush Price in India (2026): What a Year Really Costs After GST
                         </h1>
                         <p className="text-lg text-gray-300 leading-8">
                             Semrush is the most complete SEO platform you can buy, and for most Indian bloggers it is
@@ -137,6 +141,50 @@ export default function SemrushReview() {
                             <Link href="/blog/hostinger-plans-pricing-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">shared hosting</Link>{" "}
                             costs. That framing is worth sitting with before you subscribe.
                         </p>
+                    </section>
+
+                    <section className="mb-12">
+                        <h2 className="text-3xl font-bold text-white mb-4">Semrush price in India: what you actually pay after GST</h2>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            Every price Semrush advertises is a US dollar price. There is no India tier and no rupee
+                            billing. Two things happen on the way to your card that nobody quotes: <strong className="text-white">18% GST</strong>{" "}
+                            on imported digital services, and your card&apos;s forex markup. Here is the full ladder as
+                            listed on 20 September 2026, converted at ₹96 per dollar, with the GST column most
+                            comparisons leave out.
+                        </p>
+                        <div className="overflow-x-auto rounded-2xl border border-white/10 mb-4">
+                            <table className="w-full text-left text-sm">
+                                <thead className="bg-white/5 text-gray-200">
+                                    <tr>
+                                        <th className="p-4 font-semibold">Plan</th>
+                                        <th className="p-4">Monthly billing</th>
+                                        <th className="p-4">Annual billing</th>
+                                        <th className="p-4 text-amber-300">Annual rate + 18% GST</th>
+                                        <th className="p-4">Sites / keywords</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-gray-300">
+                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">SEO</td><td className="p-4">$139 · ~₹13,344</td><td className="p-4">$117.33 · ~₹11,264</td><td className="p-4 text-amber-300">~₹13,292/mo</td><td className="p-4">5 / 500</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Starter</td><td className="p-4">$199 · ~₹19,104</td><td className="p-4">$165.17 · ~₹15,856</td><td className="p-4 text-amber-300">~₹18,710/mo</td><td className="p-4">5 / 500 + AI visibility</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Pro+</td><td className="p-4">$299 · ~₹28,704</td><td className="p-4">$248.17 · ~₹23,824</td><td className="p-4 text-amber-300">~₹28,112/mo</td><td className="p-4">15 / 1,500</td></tr>
+                                    <tr className="border-t border-white/5"><td className="p-4 font-semibold text-white">Advanced</td><td className="p-4" colSpan={3}>No public price — Semrush quotes this tier on request</td><td className="p-4">40 / 5,000</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p className="text-gray-300 leading-8 mb-4">
+                            So the honest answer to &ldquo;what does Semrush cost in India&rdquo; is not $139. The cheapest
+                            real way in is the SEO plan billed annually, and that is{" "}
+                            <strong className="text-white">about ₹1.6 lakh for the first year</strong> once GST is added —
+                            paid upfront, in one go. On monthly billing the same plan runs roughly ₹15,700 a month.
+                        </p>
+                        <div className="rounded-2xl border border-amber-400/30 bg-amber-400/5 p-6">
+                            <h3 className="text-lg font-bold text-white mb-2">Three things that change the number</h3>
+                            <ul className="space-y-2 text-gray-300 list-disc list-inside">
+                                <li><strong className="text-white">GST is not optional.</strong> Imported digital services attract 18% IGST. If you are GST-registered you can claim it back as input credit, so the effective cost drops to the pre-GST figure. If you are not registered — most solo bloggers and freelancers — you simply pay it.</li>
+                                <li><strong className="text-white">Forex markup stacks on top.</strong> Most Indian credit cards add 2-3.5% on international charges, and some also levy a flat cross-border fee. Check your card&apos;s terms; on the Pro+ annual bill that markup alone is worth several thousand rupees.</li>
+                                <li><strong className="text-white">The rupee rate moves.</strong> These figures use ₹96 per dollar. Semrush does not reprice when the rupee slides, so your bill rises even in a year when Semrush changes nothing.</li>
+                            </ul>
+                        </div>
                     </section>
 
                     <section className="mb-12">
@@ -321,7 +369,7 @@ export default function SemrushReview() {
 
                     <div className="glass rounded-xl shadow-sm p-6 border border-white/5">
                         <h2 className="text-lg font-bold text-white mb-4">Share this review</h2>
-                        <ShareButtons url={CANONICAL} title="Semrush Review 2026: Is ₹13,000/mo Worth It in India?" />
+                        <ShareButtons url={CANONICAL} title="Semrush Price in India 2026: ₹1.6 Lakh a Year After GST" />
                     </div>
                 </article>
             </main>

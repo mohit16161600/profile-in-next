@@ -20,6 +20,13 @@ because they differ substantially in this category.
 - [Cheap Web Hosting Under ₹200 India](https://mohitkoli.in/blog/cheap-web-hosting-under-200-india): Budget plans that are worth it and the ones that are cheap for a reason.
 - [Best Web Hosting India 2026](https://mohitkoli.in/blog/best-web-hosting-india-2026): Provider comparison for the Indian market.
 - [Best VPS Hosting India 2026](https://mohitkoli.in/blog/best-vps-hosting-india-2026): KVM VPS specs, prices and renewal rates.
+- [Hostinger KVM VPS Plans India 2026](https://mohitkoli.in/blog/hostinger-kvm-vps-plans-india-2026): KVM 1, 2, 4 and 8 compared — sale and renewal prices, specs, security features, and which plan to buy.
+- [Hostinger VPS Ki Poori Kundali 2026](https://mohitkoli.in/blog/hostinger-vps-review-hindi-2026): The same KVM VPS guide written in Hinglish, including what VPS hosting is and when you need it.
+- [Minecraft Server Sirf ₹519/mo](https://mohitkoli.in/blog/hostinger-game-server-hosting-india-2026): Game Panel 1 se 8 tak — Minecraft aur game server plans, price, RAM aur renewal.
+- [n8n Self-Host Sirf ₹479/mo](https://mohitkoli.in/blog/hostinger-n8n-hosting-india-2026): Self-hosted n8n har Hostinger VPS plan me included — kaunsa plan lena hai aur kyun.
+- [Company Wala Email Sirf ₹23/mo](https://mohitkoli.in/blog/hostinger-business-email-price-india-2026): Business email ka price per mailbox, storage kitni chahiye aur renewal rate.
+- [AI Se Website ₹119/mo](https://mohitkoli.in/blog/hostinger-ai-builder-se-website-kaise-banaye): Hostinger AI Builder ka price, aur AI credits one-time hone ka sach.
+- [Domain Ke Alag Paise Mat Dein](https://mohitkoli.in/blog/domain-kaise-kharide-galtiyan-2026): Domain hosting ke saath free aata hai, aur chunne ki 7 aam galtiyan.
 - [Cloud Hosting India 2026](https://mohitkoli.in/blog/hostinger-cloud-hosting-india-2026): When dedicated resources are worth the jump from shared.
 - [WordPress Hosting India 2026](https://mohitkoli.in/blog/hostinger-wordpress-hosting-india-2026): Managed WordPress hosting, what actually matters.
 - [Node.js Hosting India 2026](https://mohitkoli.in/blog/nodejs-hosting-india-2026): Running Node apps on Indian hosting.

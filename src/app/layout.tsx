@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mohit Koli | Freelance Web Developer, Programmer & Coder",
-  description: "Mohit Koli is a top Web Developer, Programmer, and Software Coder specializing in React, Next.js, PHP, and Laravel. Contract Mohit Koli for expert web services.",
+  title: "Mohit Koli — Full Stack Web Developer & Tech Writer",
+  description: "Mohit Koli is a full stack developer working in React, Next.js, PHP and Laravel, and writing hosting, domain and SEO guides with real Indian pricing.",
   keywords: ["Mohit Koli", "mohit koli", "mohitkoli.in", "Web Developer", "Programmer", "Coder", "Software Coder", "Full Stack Developer", "React Developer", "PHP Developer", "Laravel Developer", "JavaScript Programmer", "Node.js Developer", "Frontend Developer", "Backend Developer", "Portfolio", "Software Engineer", "Freelance Developer"],
   authors: [{ name: "Mohit Koli", url: "https://mohitkoli.in" }],
   publisher: "Mohit Koli",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         url: "/assets/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Mohit Koli - Freelance Full Stack Developer, React, Next.js, PHP and Laravel",
+        alt: "Mohit Koli - Full Stack Developer, React, Next.js, PHP and Laravel",
         type: "image/png",
       },
     ],
@@ -141,7 +141,7 @@ export default function RootLayout({
                     "https://x.com/mohitko86979490",
                     "https://www.instagram.com/mohit12162/"
                 ],
-                "description": "Senior Full Stack Developer and Freelance Web Specialist expert in React, Next.js, and PHP Laravel Development.",
+                "description": "Senior Full Stack Developer working in React, Next.js and PHP Laravel, and author of hosting, domain and SEO guides for India.",
                 "knowsAbout": ["Web Development", "React", "Next.js", "PHP", "Laravel", "Node.js", "SEO", "UI/UX Design"]
               },
               {

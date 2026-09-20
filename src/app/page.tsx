@@ -12,9 +12,11 @@ import HomeFaq from "@/components/HomeFaq";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Freelance Web Developer in India | Mohit Koli",
+  // Brand-first: "/" ranks almost entirely for name queries ("mohit koli"), and the
+  // exact name needs to lead the title for Google to treat this as the entity's home.
+  title: "Mohit Koli — Full Stack Web Developer in India",
   description:
-    "Mohit Koli is a freelance web developer in India building Next.js, React, PHP and Laravel websites, dashboards and custom web applications.",
+    "Mohit Koli — full stack web developer in India. Next.js, React, PHP and Laravel builds, plus hands-on hosting, domain and SEO guides with real Indian pricing.",
   keywords: [
     "freelance web developer in India",
     "full stack developer India",
@@ -34,18 +36,18 @@ export const metadata: Metadata = {
     canonical: "https://mohitkoli.in/",
   },
   openGraph: {
-    title: "Freelance Web Developer in India | Mohit Koli",
+    title: "Mohit Koli — Full Stack Web Developer in India",
     description:
-      "Freelance web developer building high-performance Next.js, React, and Laravel websites, dashboards, and SEO-friendly digital experiences for modern businesses.",
+      "Full stack web developer building high-performance Next.js, React and Laravel applications, and writing hosting, domain and SEO guides priced for India.",
     url: "https://mohitkoli.in/",
     type: "website",
-    images: [{ url: "/assets/og-default.png", width: 1200, height: 630, alt: "Mohit Koli — freelance web developer in India" }],
+    images: [{ url: "/assets/og-default.png", width: 1200, height: 630, alt: "Mohit Koli — full stack web developer in India" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Freelance Web Developer in India | Mohit Koli",
+    title: "Mohit Koli — Full Stack Web Developer in India",
     description:
-      "Freelance web developer building high-performance Next.js, React, and Laravel websites, dashboards, and SEO-friendly digital experiences for modern businesses.",
+      "Full stack web developer building high-performance Next.js, React and Laravel applications, and writing hosting, domain and SEO guides priced for India.",
   },
 };
 
@@ -55,7 +57,7 @@ const structuredData = [
     "@type": "Person",
     name: "Mohit Koli",
     url: "https://mohitkoli.in/",
-    jobTitle: "Freelance Full Stack Web Developer",
+    jobTitle: "Full Stack Web Developer",
     knowsAbout: [
       "Next.js",
       "React",
