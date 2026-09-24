@@ -3,6 +3,7 @@ import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 import HostingerCta from "@/components/HostingerCta";
 import { OFFERS_VERIFIED, OFFERS_VERIFIED_ISO, REF, SHARED_PLANS, inr, priceWithCode } from "@/data/hostinger-offers";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/domain-kaise-kharide-galtiyan-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/best-domain-registrars-india-2026.png";
@@ -286,6 +287,7 @@ export default function DomainKaiseKharide() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title={TITLE} />
                     </div>
+                    <RelatedPosts slug="domain-kaise-kharide-galtiyan-2026" />
                 </article>
             </main>
         </>

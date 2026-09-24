@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 // Lands directly on the price table with the referral code already applied — the page
 // shows a "Referral code applied" badge, so the reader can verify the discount is real
@@ -1178,6 +1179,7 @@ export default function Hostinger55Offer() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this offer</h2>
                         <ShareButtons url={CANONICAL} title={TITLE} />
                     </div>
+                    <RelatedPosts slug="hostinger-55-per-month-offer" />
                 </article>
             </main>
         </>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const REFERRAL_URL_ALT = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
@@ -633,6 +634,7 @@ export default function HostingerCloudHostingIndia() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title="Hostinger Cloud Hosting India: 65% Off, From ₹599/mo" />
                     </div>
+                    <RelatedPosts slug="hostinger-cloud-hosting-india-2026" />
                 </article>
             </main>
         </>

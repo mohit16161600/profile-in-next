@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/how-to-transfer-domain-from-godaddy";
 const IMAGE = "https://mohitkoli.in/assets/blog/how-to-transfer-domain-from-godaddy.png";
@@ -774,6 +775,7 @@ export default function TransferDomainFromGoDaddy() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title="Transfer Domain From GoDaddy: 6 Steps, ₹969, No Downtime" />
                     </div>
+                    <RelatedPosts slug="how-to-transfer-domain-from-godaddy" />
                 </article>
             </main>
         </>

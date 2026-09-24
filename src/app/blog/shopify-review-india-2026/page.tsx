@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/shopify-review-india-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/shopify-review-india-2026.png";
@@ -349,6 +350,7 @@ export default function ShopifyReviewIndia() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this review</h2>
                         <ShareButtons url={CANONICAL} title="Shopify Review India 2026: Costs, Fees and the Catch" />
                     </div>
+                    <RelatedPosts slug="shopify-review-india-2026" />
                 </article>
             </main>
         </>

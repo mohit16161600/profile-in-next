@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/best-vps-hosting-india-2026";
@@ -1153,6 +1154,7 @@ export default function BestVpsHostingIndia() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title="Best VPS Hosting India 2026: Up to 69% OFF, ₹599/mo" />
                     </div>
+                    <RelatedPosts slug="best-vps-hosting-india-2026" />
                 </article>
             </main>
         </>

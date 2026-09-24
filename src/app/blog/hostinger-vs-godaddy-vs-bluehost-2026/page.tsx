@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const BLUEHOST_URL = "https://bluehost.sjv.io/c/7673063/1376228/11352";
@@ -1260,6 +1261,7 @@ export default function HostingerVsGodaddyVsBluehost() {
                         <h3 className="text-lg font-bold text-white mb-4">Share This Comparison</h3>
                         <ShareButtons url={CANONICAL} title="Hostinger vs GoDaddy India 2026: ₹69 vs ₹89/mo Compared (+ Bluehost)" />
                     </div>
+                    <RelatedPosts slug="hostinger-vs-godaddy-vs-bluehost-2026" />
                 </article>
             </main>
         </>

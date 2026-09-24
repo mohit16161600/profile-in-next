@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/best-domain-registrars-india-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/best-domain-registrars-india-2026.png";
@@ -845,6 +846,7 @@ export default function BestDomainRegistrars() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this comparison</h2>
                         <ShareButtons url={CANONICAL} title={TITLE} />
                     </div>
+                    <RelatedPosts slug="best-domain-registrars-india-2026" />
                 </article>
             </main>
         </>

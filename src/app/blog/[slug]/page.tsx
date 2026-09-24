@@ -15,6 +15,7 @@ import Blog10 from "@/components/blog-posts/Blog10";
 import Blog11 from "@/components/blog-posts/Blog11";
 import Blog14 from "@/components/blog-posts/Blog14";
 import Blog15 from "@/components/blog-posts/Blog15";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CONTENT_MAP: Record<string, React.ComponentType> = {
     "ai-in-web-development-comprehensive-guide": Blog1,
@@ -365,6 +366,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                             </section>
                         )}
 
+                        <RelatedPosts slug={post.slug} />
                     </article>
 
                     <BlogSidebar />

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const REFERRAL_URL_ALT = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
@@ -549,6 +550,7 @@ export default function HostingerRenewalPrice() {
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
                         <ShareButtons url={CANONICAL} title="Hostinger Renewal Price in India 2026: ₹149 Jumps to ₹449/mo" />
                     </div>
+                    <RelatedPosts slug="hostinger-renewal-price-india-2026" />
                 </article>
             </main>
         </>

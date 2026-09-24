@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 import HostingerCta from "@/components/HostingerCta";
+import RelatedPosts from "@/components/RelatedPosts";
 import {
     EMAIL_PLANS,
     OFFERS_VERIFIED,
@@ -335,6 +336,7 @@ export default function HostingerBusinessEmail() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title={TITLE} />
                     </div>
+                    <RelatedPosts slug="hostinger-business-email-price-india-2026" />
                 </article>
             </main>
         </>

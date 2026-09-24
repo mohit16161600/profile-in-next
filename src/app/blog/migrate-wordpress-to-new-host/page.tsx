@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/migrate-wordpress-to-new-host";
@@ -647,6 +648,7 @@ export default function MigrateWordPressToNewHost() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title="How to Migrate WordPress to a New Host Without Downtime" />
                     </div>
+                    <RelatedPosts slug="migrate-wordpress-to-new-host" />
                 </article>
             </main>
         </>

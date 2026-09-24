@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mohit Koli — Full Stack Web Developer & Tech Writer",
-  description: "Mohit Koli is a full stack developer working in React, Next.js, PHP and Laravel, and writing hosting, domain and SEO guides with real Indian pricing.",
+  title: "Mohit Koli | Freelance Web Developer, Programmer & Coder",
+  description: "Mohit Koli is a top Web Developer, Programmer, and Software Coder specializing in React, Next.js, PHP, and Laravel. Contract Mohit Koli for expert web services.",
   keywords: ["Mohit Koli", "mohit koli", "mohitkoli.in", "Web Developer", "Programmer", "Coder", "Software Coder", "Full Stack Developer", "React Developer", "PHP Developer", "Laravel Developer", "JavaScript Programmer", "Node.js Developer", "Frontend Developer", "Backend Developer", "Portfolio", "Software Engineer", "Freelance Developer"],
   authors: [{ name: "Mohit Koli", url: "https://mohitkoli.in" }],
   publisher: "Mohit Koli",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         url: "/assets/og-default.png",
         width: 1200,
         height: 630,
-        alt: "Mohit Koli - Full Stack Developer, React, Next.js, PHP and Laravel",
+        alt: "Mohit Koli - Freelance Full Stack Developer, React, Next.js, PHP and Laravel",
         type: "image/png",
       },
     ],
@@ -127,6 +127,9 @@ export default function RootLayout({
               {
                 "@context": "https://schema.org",
                 "@type": "Person",
+                // Single canonical identity for the whole site. Anything that needs to point
+                // at Mohit references this @id instead of declaring another Person.
+                "@id": "https://mohitkoli.in/#person",
                 "name": "Mohit Koli",
                 "url": "https://mohitkoli.in",
                 "image": "https://mohitkoli.in/assets/mohit-koli-profile-photo.jpg",
@@ -135,13 +138,17 @@ export default function RootLayout({
                     "@type": "Organization",
                     "name": "Sheopals Pvt Ltd"
                 },
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Bhagwan Parshuram Institute of Technology"
+                },
                 "sameAs": [
                     "https://github.com/mohit16161600",
                     "https://www.linkedin.com/in/mohit-koli-b47260213",
                     "https://x.com/mohitko86979490",
                     "https://www.instagram.com/mohit12162/"
                 ],
-                "description": "Senior Full Stack Developer working in React, Next.js and PHP Laravel, and author of hosting, domain and SEO guides for India.",
+                "description": "Senior Full Stack Developer and Freelance Web Specialist expert in React, Next.js, and PHP Laravel Development.",
                 "knowsAbout": ["Web Development", "React", "Next.js", "PHP", "Laravel", "Node.js", "SEO", "UI/UX Design"]
               },
               {
@@ -169,6 +176,7 @@ export default function RootLayout({
                 "url": "https://mohitkoli.in",
                 "priceRange": "$$",
                 "telephone": "+91 8383868837",
+                "provider": { "@id": "https://mohitkoli.in/#person" },
                 "address": {
                   "@type": "PostalAddress",
                   "addressCountry": "IN"
@@ -179,6 +187,10 @@ export default function RootLayout({
                 "@type": "WebSite",
                 "name": "Mohit Koli | Senior Full Stack Developer",
                 "url": "https://mohitkoli.in",
+                // Ties the site itself back to the one Person entity, so a brand query has
+                // a single unambiguous owner instead of a site and a person that never meet.
+                "author": { "@id": "https://mohitkoli.in/#person" },
+                "publisher": { "@id": "https://mohitkoli.in/#person" },
                 "potentialAction": {
                     "@type": "SearchAction",
                     "target": "https://mohitkoli.in/blog?q={search_term_string}",

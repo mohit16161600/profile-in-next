@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/how-to-get-sora-2-invite-code-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/how-to-get-sora-2-invite-code-2026.png";
@@ -412,6 +413,7 @@ export default function WhatHappenedToSora() {
             <h2 className="text-lg font-bold text-white mb-4">Share this</h2>
             <ShareButtons url={CANONICAL} title="What Happened to Sora? OpenAI Shut It Down (2026)" />
           </div>
+            <RelatedPosts slug="how-to-get-sora-2-invite-code-2026" />
         </article>
       </main>
     </>

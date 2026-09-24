@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in/pricing?REFERRALCODE=mohitkoli";
 // Direct cart link for THIS plan (Unlimited, 48-month term = the ₹199.20/mo figure quoted here)
@@ -572,6 +573,7 @@ export default function HostingerBusinessPlan() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title="Hostinger Unlimited Plan: 64% Off (Was Business Plan)" />
                     </div>
+                    <RelatedPosts slug="hostinger-business-plan" />
                 </article>
             </main>
         </>

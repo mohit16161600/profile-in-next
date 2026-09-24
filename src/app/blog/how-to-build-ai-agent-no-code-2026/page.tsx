@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedPosts from "@/components/RelatedPosts";
 
 export const metadata: Metadata = {
   title: "How to Build an AI Agent Without Coding in 2026 (Free)",
@@ -718,6 +719,7 @@ export default function BuildAIAgentNoCode2026() {
             <Link href="/terms" className="hover:text-emerald-400">Terms of Service</Link>
           </div>
         </footer>
+          <RelatedPosts slug="how-to-build-ai-agent-no-code-2026" />
       </article>
     </main>
   );

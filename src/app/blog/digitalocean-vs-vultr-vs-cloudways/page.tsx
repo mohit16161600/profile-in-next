@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const REFERRAL_VPS = "https://www.hostinger.com/in/vps-hosting?REFERRALCODE=mohitkoli";
@@ -810,6 +811,7 @@ export default function DoVsVultrVsCloudways() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this comparison</h2>
                         <ShareButtons url={CANONICAL} title="DigitalOcean vs Vultr vs Cloudways: Which to Pick in 2026" />
                     </div>
+                    <RelatedPosts slug="digitalocean-vs-vultr-vs-cloudways" />
                 </article>
             </main>
         </>

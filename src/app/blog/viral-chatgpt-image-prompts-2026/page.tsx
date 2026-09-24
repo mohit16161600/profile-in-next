@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedPosts from "@/components/RelatedPosts";
 
 export const metadata: Metadata = {
   title: "50 Viral ChatGPT Image Prompts Everyone Uses in 2026",
@@ -1160,6 +1161,7 @@ export default function ViralChatGPTImagePrompts2026() {
             </Link>
           </div>
         </footer>
+          <RelatedPosts slug="viral-chatgpt-image-prompts-2026" />
       </article>
     </main>
   );

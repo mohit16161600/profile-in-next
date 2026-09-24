@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/best-keyword-research-tools-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/best-keyword-research-tools-2026.png";
@@ -298,6 +299,7 @@ export default function BestKeywordResearchTools() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title="Best Keyword Research Tools 2026 (Free and Paid)" />
                     </div>
+                    <RelatedPosts slug="best-keyword-research-tools-2026" />
                 </article>
             </main>
         </>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-domain-price-india-2026";
@@ -514,6 +515,7 @@ export default function HostingerDomainPriceIndia() {
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
                         <ShareButtons url={CANONICAL} title="Hostinger Domain Price in India 2026: .in from ₹99, .com ₹149" />
                     </div>
+                    <RelatedPosts slug="hostinger-domain-price-india-2026" />
                 </article>
             </main>
         </>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 // Every plan card gets its own cart link now — a reader who has already decided on
@@ -1093,6 +1094,7 @@ export default function HostingerWordpressHosting() {
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
                         <ShareButtons url={CANONICAL} title={TITLE} />
                     </div>
+                    <RelatedPosts slug="hostinger-wordpress-hosting-india-2026" />
                 </article>
             </main>
         </>

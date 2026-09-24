@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 import HostingerCta from "@/components/HostingerCta";
+import RelatedPosts from "@/components/RelatedPosts";
 import {
     AI_CREDITS,
     OFFERS_VERIFIED,
@@ -298,6 +299,7 @@ export default function HostingerAiBuilder() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title={TITLE} />
                     </div>
+                    <RelatedPosts slug="hostinger-ai-builder-se-website-kaise-banaye" />
                 </article>
             </main>
         </>

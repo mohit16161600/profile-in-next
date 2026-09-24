@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const REFERRAL_PRICING_URL = "https://www.hostinger.com/in/pricing?REFERRALCODE=mohitkoli";
@@ -880,6 +881,7 @@ export default function ShopifyVsWooCommerce() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this comparison</h2>
                         <ShareButtons url={CANONICAL} title="Shopify vs WooCommerce India 2026: The Real Monthly Cost" />
                     </div>
+                    <RelatedPosts slug="shopify-vs-woocommerce" />
                 </article>
             </main>
         </>

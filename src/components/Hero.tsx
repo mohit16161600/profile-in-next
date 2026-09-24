@@ -31,7 +31,9 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary-500"></span>
               </span>
-              Available for New Projects
+              {/* Not "available for new projects" — Mohit is in a full-time role and a public
+                  availability badge is a risk at work. The live dot now signals an active site. */}
+              Full Stack Developer · India
             </div>
 
             <h1 className="hero-item hero-item-2 text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight tracking-tight">

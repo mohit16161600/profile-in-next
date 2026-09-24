@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedPosts from "@/components/RelatedPosts";
 
 export const metadata: Metadata = {
   title: "70+ Best ChatGPT Prompts for 2026 (Copy & Paste List)",
@@ -593,6 +594,7 @@ export default function BestChatGPTPrompts2026() {
             <Link href="/terms" className="hover:text-purple-400">Terms of Service</Link>
           </div>
         </footer>
+          <RelatedPosts slug="best-chatgpt-prompts-2026" />
       </article>
     </main>
   );

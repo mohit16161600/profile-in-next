@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedPosts from "@/components/RelatedPosts";
 
 export const metadata: Metadata = {
   title: "What Are AI Agents? The Complete 2026 Beginner Guide",
@@ -949,6 +950,7 @@ export default function WhatAreAIAgents2026Guide() {
             </Link>
           </div>
         </footer>
+          <RelatedPosts slug="what-are-ai-agents-2026-guide" />
       </article>
     </main>
   );

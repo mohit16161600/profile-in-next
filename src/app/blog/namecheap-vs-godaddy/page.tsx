@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/namecheap-vs-godaddy";
 const IMAGE = "https://mohitkoli.in/assets/blog/namecheap-vs-godaddy.png";
@@ -906,6 +907,7 @@ export default function NamecheapVsGoDaddy() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this comparison</h2>
                         <ShareButtons url={CANONICAL} title="Namecheap vs GoDaddy India 2026: The Real 5-Year Cost" />
                     </div>
+                    <RelatedPosts slug="namecheap-vs-godaddy" />
                 </article>
             </main>
         </>

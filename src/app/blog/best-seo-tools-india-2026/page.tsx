@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/best-seo-tools-india-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/best-seo-tools-india-2026.png";
@@ -338,6 +339,7 @@ export default function BestSeoToolsIndia() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title="Best SEO Tools in India 2026: Real Prices in ₹ and $" />
                     </div>
+                    <RelatedPosts slug="best-seo-tools-india-2026" />
                 </article>
             </main>
         </>

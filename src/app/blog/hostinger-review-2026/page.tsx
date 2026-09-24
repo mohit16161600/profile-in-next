@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const REFERRAL_URL_HOSTING = "https://www.hostinger.com/in/web-hosting?REFERRALCODE=mohitkoli";
@@ -1206,6 +1207,7 @@ export default function HostingerReview2026() {
                         <h3 className="text-lg font-bold text-white mb-4">Share This Review</h3>
                         <ShareButtons url={CANONICAL} title="Hostinger Review 2026: Honest Developer Verdict" />
                     </div>
+                    <RelatedPosts slug="hostinger-review-2026" />
                 </article>
             </main>
         </>

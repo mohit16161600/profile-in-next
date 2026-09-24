@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/how-to-make-money-blogging-for-beginners-2026";
 // The hero file is a square 1024x1024 (and actually a JPEG behind a .png name), which
@@ -412,6 +413,7 @@ export default function BloggingGuide2026() {
             <Link href="/terms" className="hover:text-blue-400">Terms of Service</Link>
           </div>
         </footer>
+          <RelatedPosts slug="how-to-make-money-blogging-for-beginners-2026" />
       </article>
     </main>
   );

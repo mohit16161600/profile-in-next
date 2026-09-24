@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CART_PREMIUM_48 = "https://www.hostinger.com/in/cart?product=hosting%3Ahostinger_premium&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06612-907a-715a-826c-c2ae423f3289"; // for the Premium-specific CTA only
@@ -498,6 +499,7 @@ export default function CheapHostingUnder200() {
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
                         <ShareButtons url={CANONICAL} title="Cheap Web Hosting India: Under ₹200/mo, From ₹69: 5 Real Picks" />
                     </div>
+                    <RelatedPosts slug="cheap-web-hosting-under-200-india" />
                 </article>
             </main>
         </>

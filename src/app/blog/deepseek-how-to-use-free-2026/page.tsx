@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedPosts from "@/components/RelatedPosts";
 
 export const metadata: Metadata = {
   title: "DeepSeek AI: How to Use It Free in 2026 (Beginner Guide)",
@@ -678,6 +679,7 @@ export default function DeepSeekHowToUseFree2026() {
             <Link href="/terms" className="hover:text-indigo-400">Terms of Service</Link>
           </div>
         </footer>
+          <RelatedPosts slug="deepseek-how-to-use-free-2026" />
       </article>
     </main>
   );

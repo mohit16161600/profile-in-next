@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedPosts from "@/components/RelatedPosts";
 
 export const metadata: Metadata = {
   title: "Nano Banana Saree Trend: 12 Free Gemini Prompts (2026)",
@@ -736,6 +737,7 @@ export default function NanoBananaSareeTrendPrompts2026() {
             <Link href="/terms" className="hover:text-rose-400">Terms of Service</Link>
           </div>
         </footer>
+          <RelatedPosts slug="nano-banana-saree-trend-prompts-2026" />
       </article>
     </main>
   );

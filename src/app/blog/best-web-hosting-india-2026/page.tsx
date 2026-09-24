@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/best-web-hosting-india-2026";
@@ -638,6 +639,7 @@ export default function BestWebHostingIndia() {
                         <h3 className="text-lg font-bold text-white mb-4">Share This Ranking</h3>
                         <ShareButtons url={CANONICAL} title="7 Best Web Hosting Services in India (2026) — Tested & Ranked" />
                     </div>
+                    <RelatedPosts slug="best-web-hosting-india-2026" />
                 </article>
             </main>
         </>

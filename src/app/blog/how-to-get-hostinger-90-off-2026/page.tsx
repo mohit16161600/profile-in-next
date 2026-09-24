@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const VPS_URL = "https://www.hostinger.com/in/vps-hosting?REFERRALCODE=mohitkoli";
@@ -981,6 +982,7 @@ export default function Hostinger90OffGuide() {
                         <h3 className="text-lg font-bold text-white mb-4">Share This Deal</h3>
                         <ShareButtons url={CANONICAL} title="Hostinger 90% OFF 2026: Real Price ₹55/mo (83%+20%)" />
                     </div>
+                    <RelatedPosts slug="how-to-get-hostinger-90-off-2026" />
                 </article>
             </main>
         </>

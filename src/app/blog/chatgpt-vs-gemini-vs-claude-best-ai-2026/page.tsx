@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/chatgpt-vs-gemini-vs-claude-best-ai-2026";
 const IMAGE = "https://mohitkoli.in/assets/mohitkoli-chatgpt-gemini-claude.webp";
@@ -534,6 +535,7 @@ export default function AIComparison2026() {
             <Link href="/terms" className="hover:text-purple-400">Terms of Service</Link>
           </div>
         </footer>
+          <RelatedPosts slug="chatgpt-vs-gemini-vs-claude-best-ai-2026" />
       </article>
     </main>
   );

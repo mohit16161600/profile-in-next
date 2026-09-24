@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 // Plan-specific cart links, 48-month term (the term the card prices quote).
@@ -741,6 +742,7 @@ export default function HostingerPlansPricing() {
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
                         <ShareButtons url={CANONICAL} title="Hostinger Hosting Plans India: 83% Off, From ₹69/mo" />
                     </div>
+                    <RelatedPosts slug="hostinger-plans-pricing-india-2026" />
                 </article>
             </main>
         </>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const YOUTUBE_URL = "https://www.youtube.com/@BeyondZ900";
 const INSTAGRAM_URL = "https://www.instagram.com/beyondz900/";
@@ -504,6 +505,7 @@ export default function BeyondZ900Spotlight() {
                         <h3 className="text-lg font-bold text-white mb-4">Share This Spotlight</h3>
                         <ShareButtons url={CANONICAL} title="BeyondZ900 Riding Vlogs: Daily Rides, Road Trips & Why This Channel Is Worth Following" />
                     </div>
+                    <RelatedPosts slug="beyondz900-riding-vlogs" />
                 </article>
             </main>
         </>

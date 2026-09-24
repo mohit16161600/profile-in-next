@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrintButton from "@/components/PrintButton";
+import RelatedPosts from "@/components/RelatedPosts";
 
 export const metadata: Metadata = {
   title: "ChatGPT Hidden Features 2026: God Mode Prompt + Pro Hacks",
@@ -522,6 +523,7 @@ export default function ChatGPTGodModeHacks() {
             <Link href="/sitemap" className="hover:text-green-500">Sitemap</Link>
           </div>
         </footer>
+          <RelatedPosts slug="chatgpt-hidden-features-hacks" />
       </article>
     </main>
   );

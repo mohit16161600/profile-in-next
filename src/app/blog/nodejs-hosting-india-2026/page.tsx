@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/nodejs-hosting-india-2026";
@@ -404,6 +405,7 @@ sudo certbot --nginx -d yourdomain.in`}</code></pre>
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
                         <ShareButtons url={CANONICAL} title="Node.js Hosting in India (2026): Why Shared Hosting Fails & What Works" />
                     </div>
+                    <RelatedPosts slug="nodejs-hosting-india-2026" />
                 </article>
             </main>
         </>

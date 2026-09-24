@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PrintButton from "@/components/PrintButton";
+import RelatedPosts from "@/components/RelatedPosts";
 
 export const metadata: Metadata = {
   title: "25 Free AI Tools That Replace Paid Subscriptions (2026)",
@@ -839,6 +840,7 @@ export default function Top25FreeAITools2026() {
             <Link href="/sitemap">Sitemap</Link>
           </div>
         </footer>
+          <RelatedPosts slug="top-25-free-ai-tools-2026" />
       </article>
 
       {/* Social Post Previews (Hidden for SEO only) */}

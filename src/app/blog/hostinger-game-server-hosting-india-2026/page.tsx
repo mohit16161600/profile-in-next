@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 import HostingerCta from "@/components/HostingerCta";
+import RelatedPosts from "@/components/RelatedPosts";
 import {
     GAME_PLANS,
     OFFERS_VERIFIED,
@@ -361,6 +362,7 @@ export default function HostingerGameServer() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title={TITLE} />
                     </div>
+                    <RelatedPosts slug="hostinger-game-server-hosting-india-2026" />
                 </article>
             </main>
         </>

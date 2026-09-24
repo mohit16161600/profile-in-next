@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 import CopyCode from "@/components/CopyCode";
+import RelatedPosts from "@/components/RelatedPosts";
 import {
     HOSTINGER_CODE,
     VPS_PLANS,
@@ -837,6 +838,7 @@ export default function HostingerVpsReviewHindi() {
                     </section>
 
                     <ShareButtons title="Hostinger VPS Ki Poori Kundali 2026" url={CANONICAL} />
+                    <RelatedPosts slug="hostinger-vps-review-hindi-2026" />
                 </article>
             </main>
         </>

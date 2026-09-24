@@ -12,11 +12,9 @@ import HomeFaq from "@/components/HomeFaq";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  // Brand-first: "/" ranks almost entirely for name queries ("mohit koli"), and the
-  // exact name needs to lead the title for Google to treat this as the entity's home.
-  title: "Mohit Koli — Full Stack Web Developer in India",
+  title: "Freelance Web Developer in India | Mohit Koli",
   description:
-    "Mohit Koli — full stack web developer in India. Next.js, React, PHP and Laravel builds, plus hands-on hosting, domain and SEO guides with real Indian pricing.",
+    "Mohit Koli is a freelance web developer in India building Next.js, React, PHP and Laravel websites, dashboards and custom web applications.",
   keywords: [
     "freelance web developer in India",
     "full stack developer India",
@@ -36,66 +34,27 @@ export const metadata: Metadata = {
     canonical: "https://mohitkoli.in/",
   },
   openGraph: {
-    title: "Mohit Koli — Full Stack Web Developer in India",
+    title: "Freelance Web Developer in India | Mohit Koli",
     description:
-      "Full stack web developer building high-performance Next.js, React and Laravel applications, and writing hosting, domain and SEO guides priced for India.",
+      "Freelance web developer building high-performance Next.js, React, and Laravel websites, dashboards, and SEO-friendly digital experiences for modern businesses.",
     url: "https://mohitkoli.in/",
     type: "website",
-    images: [{ url: "/assets/og-default.png", width: 1200, height: 630, alt: "Mohit Koli — full stack web developer in India" }],
+    images: [{ url: "/assets/og-default.png", width: 1200, height: 630, alt: "Mohit Koli — freelance web developer in India" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mohit Koli — Full Stack Web Developer in India",
+    title: "Freelance Web Developer in India | Mohit Koli",
     description:
-      "Full stack web developer building high-performance Next.js, React and Laravel applications, and writing hosting, domain and SEO guides priced for India.",
+      "Freelance web developer building high-performance Next.js, React, and Laravel websites, dashboards, and SEO-friendly digital experiences for modern businesses.",
   },
 };
 
+// The Person and ProfessionalService entities used to be declared here AND in layout.tsx,
+// with different jobTitles and a different `url` (trailing slash). On a brand query that
+// reads as two separate people claiming the same site, and the copy Google could pick
+// from this file had no `image` — so no photo to show. Both now live once, in layout.tsx,
+// keyed by @id, and this file only adds the page-specific FAQ.
 const structuredData = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Mohit Koli",
-    url: "https://mohitkoli.in/",
-    jobTitle: "Full Stack Web Developer",
-    knowsAbout: [
-      "Next.js",
-      "React",
-      "Laravel",
-      "PHP",
-      "JavaScript",
-      "Technical SEO",
-      "Web Application Development",
-    ],
-    worksFor: {
-      "@type": "Organization",
-      name: "Sheopals Pvt Ltd",
-    },
-    alumniOf: {
-      "@type": "CollegeOrUniversity",
-      name: "Bhagwan Parshuram Institute of Technology",
-    },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    name: "Mohit Koli Web Development Services",
-    url: "https://mohitkoli.in/",
-    areaServed: "India",
-    description:
-      "Freelance web development services for business websites, Next.js applications, React frontends, Laravel backends, dashboards, and SEO-friendly websites.",
-    provider: {
-      "@type": "Person",
-      name: "Mohit Koli",
-    },
-    serviceType: [
-      "Web Development",
-      "Frontend Development",
-      "Full Stack Development",
-      "Technical SEO",
-      "Website Performance Optimization",
-    ],
-  },
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",

@@ -4,6 +4,7 @@ import ShareButtons from "@/components/ShareButtons";
 import HostingerCta from "@/components/HostingerCta";
 import { VPS_PLANS } from "@/data/hostinger-vps";
 import { OFFERS_VERIFIED, OFFERS_VERIFIED_ISO, REF, inr, offWithCode, priceWithCode } from "@/data/hostinger-offers";
+import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-n8n-hosting-india-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/best-vps-hosting-india-2026.png";
@@ -304,6 +305,7 @@ export default function HostingerN8n() {
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
                         <ShareButtons url={CANONICAL} title={TITLE} />
                     </div>
+                    <RelatedPosts slug="hostinger-n8n-hosting-india-2026" />
                 </article>
             </main>
         </>

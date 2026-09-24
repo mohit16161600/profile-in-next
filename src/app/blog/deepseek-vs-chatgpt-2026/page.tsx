@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RelatedPosts from "@/components/RelatedPosts";
 
 export const metadata: Metadata = {
   title: "DeepSeek vs ChatGPT 2026: Which Free AI Is Better?",
@@ -978,6 +979,7 @@ export default function DeepSeekVsChatGPT2026() {
             </Link>
           </div>
         </footer>
+          <RelatedPosts slug="deepseek-vs-chatgpt-2026" />
       </article>
     </main>
   );
