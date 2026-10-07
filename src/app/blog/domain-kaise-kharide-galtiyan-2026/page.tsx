@@ -7,7 +7,7 @@ import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/domain-kaise-kharide-galtiyan-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/best-domain-registrars-india-2026.png";
-const TITLE = "Domain Ke Alag Paise Mat Dein — Hosting Ke Saath Free Aata Hai";
+const TITLE = "Domain Ke Paise Mat Dein: Hosting Me Free Aata Hai";
 const DESCRIPTION =
     "Har Hostinger plan me domain free listed hai, phir bhi log alag se kharid lete hain. Domain chunne ki 7 galtiyan aur renewal ka trap — Sept 2026 verified.";
 
@@ -165,7 +165,7 @@ export default function DomainKaiseKharide() {
                             Domains · India · {OFFERS_VERIFIED} ko verified
                         </p>
                         <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4">
-                            Domain Ke Alag Paise Mat Dein — Hosting Ke Saath Free Aata Hai
+                            Domain Ke Paise Mat Dein: Hosting Me Free Aata Hai
                         </h1>
                         <p className="text-lg text-gray-300 leading-8">
                             Zyadatar log pehle kahin se domain kharidte hain, phir kahin aur se hosting, aur ek saal ka

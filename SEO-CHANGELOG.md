@@ -367,3 +367,33 @@ pages. **Not done in this pass** — it is a structural change, and mixing it wi
 18 factual corrections in one deploy would make the result unreadable. Queued as
 EXP-015 after the 4 Nov review.
 
+
+---
+
+## 2026-10-07 — Batch 4: CTR titles outside the live tests (EXP-016 … EXP-018)
+
+Applied the CTR framework **only to pages not already carrying a live experiment**,
+so EXP-001…013 keep measuring cleanly. Every new title is backed by a section
+that genuinely exists on the page — no invented claim, no invented number.
+
+| EXP | Page | Impr | Clicks | Pos | Old title | New title | Why |
+|---|---|---|---|---|---|---|---|
+| 016 | best-seo-tools-india-2026 | 98 | **0** | 8.61 | Best SEO Tools in India 2026: Real Prices in ₹ and $ | Cheapest SEO Tools in India 2026: Start With the Free Ones | Its real queries are cost-led (`cheapest seo tool in india` pos 7.64, `seo software cost` pos 3.2), not "best". The page's own strongest section is "Start with the free ones. Seriously." — the title was hiding it. |
+| 017 | deepseek-vs-chatgpt-2026 | 21 | **0** | 5.29 | DeepSeek vs ChatGPT 2026: Which Free AI Is Better? | DeepSeek vs ChatGPT 2026: Where the Free Tier Runs Out | Position 5.29 with zero clicks across three months. The old title asked the same generic question as every competing result. The page has a dedicated "Free Tier & Cost" section, so the new title promises something specific. |
+| 018 | is-react-worth-learning-2026 | 82 | 1 | 8.4 | Is React Worth Learning in 2026? An Honest Answer | Is React Worth Learning in 2026? Who Should Skip It | "An Honest Answer" promises nothing. The page has a section literally titled "Who Should NOT Learn React First" — the most distinctive thing on it. |
+
+### Title length fixes (no experiment — these were being truncated)
+
+| Page | Was | Now |
+|---|---|---|
+| domain-kaise-kharide-galtiyan-2026 | 62 chars | 50 — "Domain Ke Paise Mat Dein: Hosting Me Free Aata Hai" |
+| hostinger-ai-builder-se-website-kaise-banaye | 63 chars | 58 — "AI Se Website ₹119/mo: 5 Credits Ka Sach Pehle Padh Lein" |
+
+Blog-card titles in `posts.ts` synced to match.
+
+### Build note
+
+The first attempt at EXP-018 produced "Who Should Skip It Who Should Skip It" —
+a second replacement matched inside the output of the first. Caught in the
+rendered-title check and corrected before commit. Title now renders at 51 chars.
+

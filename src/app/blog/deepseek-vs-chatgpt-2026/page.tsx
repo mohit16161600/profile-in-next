@@ -4,7 +4,7 @@ import Link from "next/link";
 import RelatedPosts from "@/components/RelatedPosts";
 
 export const metadata: Metadata = {
-  title: "DeepSeek vs ChatGPT 2026: Which Free AI Is Better?",
+  title: "DeepSeek vs ChatGPT 2026: Where the Free Tier Runs Out",
   description:
     "DeepSeek vs ChatGPT 2026 compared on speed, reasoning, coding, cost and privacy. See which free AI wins for students and everyday users in India and beyond.",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://mohitkoli.in/blog/deepseek-vs-chatgpt-2026",
   },
   openGraph: {
-    title: "DeepSeek vs ChatGPT 2026: Which Free AI Is Better?",
+    title: "DeepSeek vs ChatGPT 2026: Where the Free Tier Runs Out",
     description:
       "DeepSeek vs ChatGPT 2026 compared on speed, reasoning, coding, cost and privacy. See which free AI wins for students and everyday users in India and beyond.",
     url: "https://mohitkoli.in/blog/deepseek-vs-chatgpt-2026",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DeepSeek vs ChatGPT 2026: Which Free AI Is Better?",
+    title: "DeepSeek vs ChatGPT 2026: Where the Free Tier Runs Out",
     description:
       "DeepSeek vs ChatGPT 2026 compared on speed, reasoning, coding, cost and privacy. See which free AI wins for students and everyday users in India and beyond.",
     images: ["/assets/blog/deepseek-vs-chatgpt-2026.png"],
@@ -99,7 +99,7 @@ export default function DeepSeekVsChatGPT2026() {
   const blogPostingSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: "DeepSeek vs ChatGPT 2026: Which Free AI Is Better?",
+    headline: "DeepSeek vs ChatGPT 2026: Where the Free Tier Runs Out",
     description:
       "DeepSeek vs ChatGPT 2026 compared on speed, reasoning, coding, cost and privacy. See which free AI wins for students and everyday users in India and beyond.",
     image: "https://mohitkoli.in/assets/blog/deepseek-vs-chatgpt-2026.png",
@@ -153,7 +153,7 @@ export default function DeepSeekVsChatGPT2026() {
       {
         "@type": "ListItem",
         position: 3,
-        name: "DeepSeek vs ChatGPT 2026: Which Free AI Is Better?",
+        name: "DeepSeek vs ChatGPT 2026: Where the Free Tier Runs Out",
         item: "https://mohitkoli.in/blog/deepseek-vs-chatgpt-2026",
       },
     ],
@@ -222,7 +222,7 @@ export default function DeepSeekVsChatGPT2026() {
         <div className="relative w-full aspect-[1200/630] mb-12 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-rose-500/10">
           <Image
             src="/assets/blog/deepseek-vs-chatgpt-2026.svg"
-            alt="DeepSeek vs ChatGPT 2026: Which Free AI Is Better?"
+            alt="DeepSeek vs ChatGPT 2026: Where the Free Tier Runs Out"
             fill
             className="object-cover"
             priority

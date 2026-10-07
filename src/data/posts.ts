@@ -115,7 +115,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 65,
-        title: "AI Se Website ₹119/mo Me: Par 5 Credits Ka Sach Pehle Padh Lein",
+        title: "AI Se Website ₹119/mo: 5 Credits Ka Sach Pehle Padh Lein",
         description: "Hostinger AI Builder prompt se site bana deta hai. Premium ₹119.20/mo, par AI credits one-time milte hain — har mahine nahi. Poora sach.",
         date: "September 20, 2026",
         updated: "September 20, 2026",
@@ -136,7 +136,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 66,
-        title: "Domain Ke Alag Paise Mat Dein — Hosting Ke Saath Free Aata Hai",
+        title: "Domain Ke Paise Mat Dein: Hosting Me Free Aata Hai",
         description: "Har Hostinger plan me domain free listed hai, phir bhi log alag se kharid lete hain. Domain chunne ki 7 galtiyan aur renewal ka trap.",
         date: "September 20, 2026",
         updated: "September 20, 2026",
@@ -1316,7 +1316,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 7,
-        title: 'Is React Worth Learning in 2026? An Honest Answer',
+        title: 'Is React Worth Learning in 2026? Who Should Skip It',
         description: "Is learning React worth it in 2026? Short answer: yes, but not for everyone. An honest look at jobs in India, React vs Next.js, and who should skip React first.",
         date: 'Jan 5, 2026',
         updated: "September 14, 2026",

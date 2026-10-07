@@ -10,9 +10,9 @@ const PUBLISHED = "2026-08-24T00:00:00.000Z";
 const MODIFIED = "2026-09-13T00:00:00.000Z";
 
 export const metadata: Metadata = {
-    title: "Best SEO Tools in India 2026: Real Prices in ₹ and $",
+    title: "Cheapest SEO Tools in India 2026: Start With the Free Ones",
     description:
-        "Semrush, Ahrefs, SE Ranking, Mangools and Surfer compared on actual monthly cost — plus which ones a solo blogger or small agency in India can genuinely afford.",
+        "Semrush, Ahrefs, Mangools and SE Ranking priced in ₹ for India — plus the free tools that cover most of what a solo blogger needs before paying for anything.",
     keywords: [
         "best seo tools india", "best seo tools 2026", "seo tools price india", "cheap seo tools india",
         "semrush price india", "ahrefs price india", "se ranking price", "mangools price",
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Best SEO Tools in India 2026: Real Prices in ₹ and $",
+        title: "Cheapest SEO Tools in India 2026: Start With the Free Ones",
         description: "Semrush, Ahrefs, SE Ranking, Mangools and Surfer on real monthly cost — and what a solo blogger can afford.",
         url: CANONICAL, type: "article", publishedTime: PUBLISHED, modifiedTime: MODIFIED,
         images: [{ url: IMAGE, width: 1200, height: 630, alt: "Best SEO tools compared for India in 2026" }],
     },
     twitter: {
-        card: "summary_large_image", title: "Best SEO Tools in India 2026: Real Prices in ₹ and $",
+        card: "summary_large_image", title: "Cheapest SEO Tools in India 2026: Start With the Free Ones",
         description: "Five SEO tools, real prices, and which one fits an Indian budget.", images: [IMAGE],
     },
 };
@@ -55,7 +55,7 @@ const FAQ = [
 const jsonLd = [
     {
         "@context": "https://schema.org", "@type": "BlogPosting",
-        headline: "Best SEO Tools in India 2026: Real Prices in ₹ and $",
+        headline: "Cheapest SEO Tools in India 2026: Start With the Free Ones",
         description: "Semrush, Ahrefs, SE Ranking, Mangools and Surfer compared on actual monthly cost.",
         image: IMAGE, datePublished: PUBLISHED, dateModified: MODIFIED,
         author: { "@type": "Person", name: "Mohit Koli", url: "https://mohitkoli.in/profile", jobTitle: "Senior Full Stack Developer", sameAs: ["https://github.com/mohit16161600", "https://www.linkedin.com/in/mohit-koli-b47260213", "https://x.com/mohitko86979490"] },
@@ -337,7 +337,7 @@ export default function BestSeoToolsIndia() {
 
                     <div className="glass rounded-xl shadow-sm p-6 border border-white/5">
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
-                        <ShareButtons url={CANONICAL} title="Best SEO Tools in India 2026: Real Prices in ₹ and $" />
+                        <ShareButtons url={CANONICAL} title="Cheapest SEO Tools in India 2026: Start With the Free Ones" />
                     </div>
                     <RelatedPosts slug="best-seo-tools-india-2026" />
                 </article>

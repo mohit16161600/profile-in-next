@@ -16,7 +16,7 @@ import {
 
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-ai-builder-se-website-kaise-banaye";
 const IMAGE = "https://mohitkoli.in/assets/blog/how-to-build-ai-agent-no-code-2026.png";
-const TITLE = "AI Se Website ₹119/mo Me: Par 5 Credits Ka Sach Pehle Padh Lein";
+const TITLE = "AI Se Website ₹119/mo: 5 Credits Ka Sach Pehle Padh Lein";
 const DESCRIPTION =
     "Hostinger AI Builder prompt se site bana deta hai. Premium ₹119.20/mo, par AI credits one-time milte hain — har mahine nahi. Poora sach, Sept 2026 verified.";
 
