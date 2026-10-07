@@ -1222,7 +1222,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 14,
-        title: "Mohit Koli: Backend Developer, Laravel PHP Engineer, Creator, and Freelance Web Specialist",
+        title: "Mohit Koli: Backend Developer, Laravel & PHP Engineer",
         seoTitle: "Mohit Koli — Backend Developer & Laravel PHP Engineer",
         description: "Mohit Koli — career journey, Laravel and PHP expertise, freelance work, professional background and public contact details.",
         date: "March 30, 2026",
@@ -1295,9 +1295,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 9,
-        title: "How to Use AI to Build a Full Website in 30 Minutes (Step-by-Step Guide – 2026)",
+        title: "Build a Website With AI in 30 Minutes (Step-by-Step, 2026)",
         seoTitle: "Build a Full Website With AI in 30 Minutes (2026 Guide)",
-        description: "Learn how to build a professional website in under 30 minutes using AI tools like ChatGPT, Claude, and Midjourney. A complete 2026 guide for beginners.",
+        description: "A real 30-minute build: pick the tool, write the prompt, fix what the AI gets wrong, and get it live. The step most guides skip — hosting — is covered too.",
         date: "Feb 12, 2026",
         updated: "September 14, 2026",
         readTime: "5 min read",

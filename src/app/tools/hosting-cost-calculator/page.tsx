@@ -5,7 +5,7 @@ import Calculator from "./Calculator";
 const CANONICAL = "https://mohitkoli.in/tools/hosting-cost-calculator";
 
 export const metadata: Metadata = {
-    title: "Hosting Cost Calculator India — Intro vs Renewal Price",
+    title: "Free Hosting Cost Calculator: Real ₹ Price, No Signup",
     description:
         "Free calculator: see what web hosting really costs over 1-10 years in India. Compares the discounted long-term price against standard renewal rates, with GST.",
     keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hosting Cost Calculator India — Intro vs Renewal Price",
+        title: "Free Hosting Cost Calculator: Real ₹ Price, No Signup",
         description:
             "Pick a plan and a number of years. See the long-term price against the standard renewal rate, the upfront invoice, and GST — all with September 2026 India pricing.",
         url: CANONICAL,
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hosting Cost Calculator India — Intro vs Renewal",
+        title: "Free Hosting Cost Calculator — Real Price in ₹",
         description: "What hosting actually costs over 1-10 years, including the renewal rate nobody advertises.",
         images: ["/assets/blog/hostinger-renewal-price-india-2026.png"],
     },
