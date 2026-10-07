@@ -16,6 +16,13 @@ export interface BlogPost {
     category: string;
     views: number;
     keywords: string[];
+    /**
+     * Q&A pairs for FAQPage schema on posts that render through the [slug] route.
+     * Every entry MUST mirror a question and answer that is actually visible on the
+     * page — Google treats schema for hidden content as a violation. Pages with their
+     * own page.tsx build this inline instead.
+     */
+    faq?: { q: string; a: string }[];
     slug: string; // Changed from href
     imageSrc: string;
 }
@@ -1384,6 +1391,12 @@ export const BLOG_POSTS: BlogPost[] = [
             'best javascript developers 2026',
             'javascript ecosystem 2026',
         ],
+        faq: [
+            { q: "Which JavaScript framework is best for beginners in 2026?", a: "For beginners, React remains an excellent choice due to its vast community, extensive documentation, and abundant learning resources. Its component-based architecture is also a fundamental concept in modern web development that is valuable to learn early on. Do not start with Create React App, which the React team deprecated on 14 February 2025; scaffold with Vite (npm create vite@latest) or a framework such as Next.js, React Router or Expo." },
+            { q: "Are older libraries like jQuery still relevant?", a: "While jQuery is not recommended for new, modern applications, it is still highly relevant for maintaining legacy projects. jQuery 4.0.0 arrived on 17 January 2026, and W3Techs (September 2026) reports jQuery on 65.7% of all websites, so understanding jQuery can be a valuable skill for certain roles, especially in agencies or enterprise environments." },
+            { q: "How do I choose between React, Vue, and Svelte?", a: "Choose React for large-scale applications with a need for a massive ecosystem and a large talent pool. Choose Vue for projects that require a balance of flexibility and structure with a gentler learning curve. Choose Svelte for performance-critical applications where a smaller bundle size and faster runtime performance are top priorities." },
+            { q: "Which Node.js version should I use in late 2026?", a: "Run Node.js 24 (LTS) today and standardise new projects on Node.js 26 once it becomes LTS in October 2026 (it enables the Temporal API by default). Node.js 20 reached end-of-life in April 2026, so upgrade any remaining apps. From Node.js 27, every release will become LTS, with one major release per year." },
+        ],
         slug: 'top-javascript-libraries-frameworks-2025',
         imageSrc: '/assets/mohitkolib3.jpg',
     },
@@ -1398,6 +1411,12 @@ export const BLOG_POSTS: BlogPost[] = [
         category: 'AI Coding',
         views: 4500,
         keywords: ['ai coding', 'copilot', 'programming', 'skills', 'future'],
+        faq: [
+            { q: "Can AI assistants introduce security risks?", a: "Yes. Veracode’s July 2026 report found roughly 44% of AI code-generation tasks introduced a security vulnerability. This is because AI models are trained on vast amounts of public code, which includes insecure patterns. Over-reliance on AI without proper code review can lead to vulnerabilities like data exposure and insecure dependencies." },
+            { q: "How can junior developers use AI tools responsibly?", a: "Junior developers should focus on building fundamental skills before heavily relying on AI. It’s recommended to limit AI usage initially and practice coding manually. When using AI, they should treat it as a tutor by asking it to explain concepts rather than just generating code, and always ensure they understand the code before accepting it." },
+            { q: "What is ’skill degradation’ in the context of AI coding?", a: "Skill degradation refers to the weakening of a developer’s core programming abilities due to over-dependence on AI tools. This includes forgetting basic syntax, losing the ability to decompose complex problems, and a decline in critical thinking and code comprehension skills, as the AI handles these cognitive tasks." },
+            { q: "Did the METR study really show AI makes developers slower?", a: "Yes and no. METR’s July 2025 trial found experienced open-source developers took 19% longer with early-2025 AI tools, even though they believed AI had sped them up by 20%. In a 24 February 2026 update with later tools, METR estimated returning developers were 18% faster (confidence interval from 38% faster to 9% slower), but called this only very weak evidence because of selection effects. The robust takeaway is the perception gap: developers are poor judges of how much AI helps them." },
+        ],
         slug: 'the-truth-about-ai-coding-assistants',
         imageSrc: '/assets/AiBLog.png',
     },
@@ -1412,6 +1431,12 @@ export const BLOG_POSTS: BlogPost[] = [
         category: 'AI Development',
         views: 1500,
         keywords: ['ai', 'web development', 'coding', 'automation', 'future'],
+        faq: [
+            { q: "Is AI going to replace web developers?", a: "No, AI is not expected to replace web developers. Instead, it is becoming a powerful assistant that handles repetitive tasks, allowing developers to focus on creative problem-solving, complex architecture, and user experience strategy. AI empowers developers to be more productive and innovative." },
+            { q: "What are the best AI tools for a beginner web developer?", a: "For beginners, free starting points are GitHub Copilot Free, OpenAI Codex on the ChatGPT Free plan, Cursor’s free Hobby plan and Google Antigravity’s $0 Individual plan (details below), while Claude Code needs a paid Claude subscription or an Anthropic Console account. Visual Studio Code’s built-in IntelliSense and AI-powered extensions are also highly beneficial for learning and productivity." },
+            { q: "Which AI coding tools are free in 2026?", a: "GitHub Copilot Free ($0; 2,000 completions a month, limited chat and agent credits, automatic model selection), OpenAI Codex on the ChatGPT Free plan (for quick coding tasks), Cursor Hobby (free, limited agent requests, no credit card) and Google Antigravity Individual ($0; unlimited tab completions, weekly rate limits). Claude Code requires a Claude subscription or Anthropic Console account, and Tabnine has no individual plan." },
+            { q: "How does AI improve website performance?", a: "AI improves website performance by automating tasks like image compression, suggesting intelligent caching strategies, recommending code-splitting for faster load times, and optimizing database queries. These actions lead to better Core Web Vitals scores and an improved user experience." },
+        ],
         slug: 'ai-in-web-development-comprehensive-guide',
         imageSrc: '/assets/b1.png',
     },

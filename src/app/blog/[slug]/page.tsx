@@ -222,11 +222,31 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         ],
     };
 
+    // These posts render a real FAQ section inside their Blog component, but the route
+    // never described it to Google. The pairs live in posts.ts and must match the
+    // questions actually visible on the page — schema that describes invisible content
+    // is a structured-data violation, not a shortcut.
+    const faqSchema = post.faq?.length
+        ? {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: post.faq.map((item) => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: { "@type": "Answer", text: item.a },
+            })),
+        }
+        : null;
+
+    const schema = faqSchema
+        ? [articleSchema, breadcrumbSchema, faqSchema]
+        : [articleSchema, breadcrumbSchema];
+
     return (
         <>
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, breadcrumbSchema]) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-8">
                 <div className="lg:grid lg:grid-cols-4 lg:gap-8">
