@@ -23,7 +23,7 @@ const PUBLISHED = "2026-09-07T00:00:00.000Z";
 const VERIFIED = VPS_VERIFIED;
 
 export const metadata: Metadata = {
-    title: "Hostinger KVM VPS India 2026: 69% Off, From ₹599/mo",
+    title: "Hostinger KVM VPS India 2026: Which Plan, and the Catch",
     description:
         "KVM 4 more than doubles at renewal — ₹1,099 to ₹2,399. Every Hostinger VPS plan's specs, real renewal rate, and which one is worth buying.",
     keywords: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger KVM VPS India 2026: 69% Off, From ₹599/mo",
+        title: "Hostinger KVM VPS India 2026: Which Plan, and the Catch",
         description:
             "Every Hostinger KVM VPS plan priced for India — KVM 1 to KVM 8, sale price, renewal rate, specs and which one is actually worth buying.",
         url: CANONICAL,

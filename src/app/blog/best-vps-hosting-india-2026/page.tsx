@@ -11,7 +11,7 @@ const PUBLISHED = "2026-08-24T00:00:00.000Z";
 const UPDATED = "2026-09-07T00:00:00.000Z";
 
 export const metadata: Metadata = {
-    title: "Best VPS Hosting India 2026: Up to 69% OFF, ₹599/mo",
+    title: "Best VPS Hosting India 2026: What 4 Years Really Costs",
     description:
         "KVM 4 is ₹1,099 now and ₹2,399 at renewal. Hostinger vs DigitalOcean, Vultr and Cloudways on real INR totals — including the forex you pay.",
     keywords: [
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Best VPS Hosting India 2026: Up to 69% OFF, ₹599/mo",
+        title: "Best VPS Hosting India 2026: What 4 Years Really Costs",
         description:
             "Hostinger KVM from ₹599/mo vs DigitalOcean, Vultr, Cloudways and Indian hosts — real INR prices with GST, renewals and forex costs.",
         url: CANONICAL,
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Best VPS Hosting India 2026: Up to 69% OFF, ₹599/mo",
+        title: "Best VPS Hosting India 2026: What 4 Years Really Costs",
         description: "Hostinger KVM vs DigitalOcean vs Vultr vs Cloudways — real INR prices, GST and renewals.",
         images: [IMAGE],
     },
@@ -228,7 +228,7 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Best VPS Hosting India 2026: Up to 69% OFF, ₹599/mo",
+        headline: "Best VPS Hosting India 2026: What 4 Years Really Costs",
         description:
             "Hostinger KVM, DigitalOcean, Vultr, Cloudways and Indian hosts compared on actual pricing, GST, specs and renewal rates.",
         image: IMAGE,
@@ -1152,7 +1152,7 @@ export default function BestVpsHostingIndia() {
 
                     <div className="glass rounded-xl shadow-sm p-6 border border-white/5">
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
-                        <ShareButtons url={CANONICAL} title="Best VPS Hosting India 2026: Up to 69% OFF, ₹599/mo" />
+                        <ShareButtons url={CANONICAL} title="Best VPS Hosting India 2026: What 4 Years Really Costs" />
                     </div>
                     <RelatedPosts slug="best-vps-hosting-india-2026" />
                 </article>

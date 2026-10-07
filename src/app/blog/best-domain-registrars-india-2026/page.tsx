@@ -8,7 +8,7 @@ const CANONICAL = "https://mohitkoli.in/blog/best-domain-registrars-india-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/best-domain-registrars-india-2026.png";
 const PUBLISHED = "2026-08-24T00:00:00.000Z";
 const UPDATED = "2026-09-07T00:00:00.000Z";
-const TITLE = "Best Domain Registrar India 2026: .in ₹99, .com ₹149";
+const TITLE = "Best Domain Registrars India 2026: Ranked by Renewal Cost";
 
 const HOSTINGER = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const HOSTINGER_TRANSFER = "https://www.hostinger.com/in/domain-transfer?REFERRALCODE=mohitkoli";
