@@ -9,7 +9,7 @@ const BLUEHOST_URL = "https://bluehost.sjv.io/c/7673063/1376228/11352";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-vs-godaddy-vs-bluehost-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger vs GoDaddy India 2026: ₹69 vs ₹89/mo Compared",
+    title: "Hostinger vs GoDaddy vs Bluehost India: 4-Year Cost",
     description:
         "₹69 vs ₹89 is the wrong comparison — GoDaddy's entry plan has no SSL, email or domain. Renewals, India latency and 4-year totals for all three.",
     keywords: [
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger vs GoDaddy India 2026: ₹69 vs ₹89/mo Compared",
+        title: "Hostinger vs GoDaddy vs Bluehost India: 4-Year Cost",
         description: "Hostinger vs GoDaddy head-to-head for India: ₹69 vs ₹89 intro, ₹289 vs ₹299 renewal, Mumbai vs Singapore latency, GST at checkout — plus Bluehost compared.",
         url: CANONICAL,
         type: "article",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hostinger vs GoDaddy India 2026: ₹69 vs ₹89/mo Compared",
+        title: "Hostinger vs GoDaddy vs Bluehost India: 4-Year Cost",
         description: "Head-to-head for India: real INR pricing, the renewal cliff, Mumbai vs Singapore latency — plus Bluehost compared.",
         images: ["/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.png"],
     },
@@ -152,7 +152,7 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger vs GoDaddy India 2026: ₹69 vs ₹89/mo Compared (+ Bluehost)",
+        headline: "Hostinger vs GoDaddy vs Bluehost India: 4-Year Cost (+ Bluehost)",
         description:
             "Hostinger ₹69/mo vs GoDaddy ₹89/mo in India 2026 — full plan ladders, renewal cliffs, Mumbai vs Singapore latency, GST at checkout and the 4-year cost math, plus Bluehost compared.",
         image: "https://mohitkoli.in/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.png",
@@ -1259,7 +1259,7 @@ export default function HostingerVsGodaddyVsBluehost() {
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Comparison</h3>
-                        <ShareButtons url={CANONICAL} title="Hostinger vs GoDaddy India 2026: ₹69 vs ₹89/mo Compared (+ Bluehost)" />
+                        <ShareButtons url={CANONICAL} title="Hostinger vs GoDaddy vs Bluehost India: 4-Year Cost (+ Bluehost)" />
                     </div>
                     <RelatedPosts slug="hostinger-vs-godaddy-vs-bluehost-2026" />
                 </article>

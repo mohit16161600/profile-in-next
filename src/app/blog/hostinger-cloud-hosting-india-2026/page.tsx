@@ -15,7 +15,7 @@ const IMAGE = "https://mohitkoli.in/assets/blog/hostinger-cloud-hosting-india-20
 const PUBLISHED = "2026-08-24T00:00:00.000Z";
 
 export const metadata: Metadata = {
-    title: "Hostinger Cloud Hosting India: 65% Off, From ₹599/mo",
+    title: "Hostinger Cloud Hosting India: ₹599 Now, ₹1,599 Later",
     description:
         "Cloud Startup is ₹599 now and ₹1,599 at renewal. What Cloud really gives you over Unlimited, and when a KVM VPS is the cheaper answer.",
     keywords: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger Cloud Hosting India: 65% Off, From ₹599/mo",
+        title: "Hostinger Cloud Hosting India: ₹599 Now, ₹1,599 Later",
         description:
             "Every Hostinger Cloud plan priced for India — Startup, Professional and Enterprise, the renewal jump nobody mentions, and how to stack an extra 20% off.",
         url: CANONICAL,
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hostinger Cloud Hosting India: 65% Off, From ₹599/mo",
+        title: "Hostinger Cloud Hosting India: ₹599 Now, ₹1,599 Later",
         description:
             "Cloud Startup, Professional and Enterprise priced in INR, the renewal math over 4 years, and the extra 20% referral discount.",
         images: [IMAGE],
@@ -147,7 +147,7 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger Cloud Hosting India: 65% Off, From ₹599/mo",
+        headline: "Hostinger Cloud Hosting India: ₹599 Now, ₹1,599 Later",
         description:
             "Every Hostinger Cloud plan priced for India — Startup, Professional and Enterprise, the renewal jump, and how to stack an extra 20% off.",
         image: IMAGE,
@@ -632,7 +632,7 @@ export default function HostingerCloudHostingIndia() {
 
                     <div className="glass rounded-xl shadow-sm p-6 border border-white/5">
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>
-                        <ShareButtons url={CANONICAL} title="Hostinger Cloud Hosting India: 65% Off, From ₹599/mo" />
+                        <ShareButtons url={CANONICAL} title="Hostinger Cloud Hosting India: ₹599 Now, ₹1,599 Later" />
                     </div>
                     <RelatedPosts slug="hostinger-cloud-hosting-india-2026" />
                 </article>

@@ -1427,6 +1427,7 @@ export const BLOG_POSTS: BlogPost[] = [
  */
 export const PRIORITY_SLUGS = [
     "hostinger-plans-pricing-india-2026",
+    "how-to-transfer-domain-from-godaddy",
     "hostinger-renewal-price-india-2026",
     "hostinger-kvm-vps-plans-india-2026",
     "hostinger-vps-review-hindi-2026",

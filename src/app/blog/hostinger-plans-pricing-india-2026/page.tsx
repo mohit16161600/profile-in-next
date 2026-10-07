@@ -17,7 +17,7 @@ const CART_AGENCY_PROFESSIONAL = "https://www.hostinger.com/in/cart?product=host
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-plans-pricing-india-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger Hosting Plans India: 83% Off, From ₹69/mo",
+    title: "Hostinger Plans India 2026: Sale Price vs Renewal Price",
     description:
         "₹149 becomes ₹449 the day your term ends. Every Hostinger India plan's real 4-year cost, which tier is a waste, and why monthly billing costs 4x more.",
     keywords: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger Hosting Plans India: 83% Off, From ₹69/mo",
+        title: "Hostinger Plans India 2026: Sale Price vs Renewal Price",
         description:
             "Premium ₹149, Unlimited ₹249, Cloud ₹599/mo — the full India price list with renewal rates, term math, and which plan fits your project.",
         url: CANONICAL,
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hostinger Hosting Plans India: 83% Off, From ₹69/mo",
+        title: "Hostinger Plans India 2026: Sale Price vs Renewal Price",
         description: "Every Hostinger plan with real India pricing — intro vs renewal rates, monthly billing truth, KVM VPS specs, and which plan to buy.",
         images: ["/assets/blog/hostinger-plans-pricing-india-2026.png"],
     },
@@ -113,7 +113,7 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger Hosting Plans India: 83% Off, From ₹69/mo",
+        headline: "Hostinger Plans India 2026: Sale Price vs Renewal Price",
         description:
             "₹149 becomes ₹449 the day your term ends. Every Hostinger India plan's real 4-year cost, which tier is a waste, and why monthly billing costs 4x more.",
         image: "https://mohitkoli.in/assets/blog/hostinger-plans-pricing-india-2026.png",
@@ -740,7 +740,7 @@ export default function HostingerPlansPricing() {
 
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
-                        <ShareButtons url={CANONICAL} title="Hostinger Hosting Plans India: 83% Off, From ₹69/mo" />
+                        <ShareButtons url={CANONICAL} title="Hostinger Plans India 2026: Sale Price vs Renewal Price" />
                     </div>
                     <RelatedPosts slug="hostinger-plans-pricing-india-2026" />
                 </article>

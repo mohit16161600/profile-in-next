@@ -19,7 +19,10 @@ import { BLOG_POSTS, PRIORITY_SLUGS, type BlogPost } from "@/data/posts";
  */
 
 const PICKS = 6;
-const MIN_INBOUND = 3;
+// EXP-010: raised 3 -> 5. Four pages that have sat at this floor for 2-4 months have
+// never earned a single impression; starving a page of internal links is one of the
+// few on-site reasons Google skips indexing it.
+const MIN_INBOUND = 5;
 
 const score = (current: BlogPost, candidate: BlogPost) => {
     let s = 0;

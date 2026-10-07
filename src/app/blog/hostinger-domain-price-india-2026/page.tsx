@@ -8,7 +8,7 @@ const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-domain-price-india-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger Domain Price India 2026: .in ₹99, .com ₹149",
+    title: "Hostinger Domain Price India: Year 1 vs Renewal, by TLD",
     description:
         "That ₹99 .in renews near ₹1,000. Hostinger's real domain renewal list, when the free domain is not actually free, and where to register instead.",
     keywords: [
