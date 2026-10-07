@@ -7,23 +7,24 @@ import RelatedPosts from "@/components/RelatedPosts";
 export const metadata: Metadata = {
   title: "25 Free AI Tools That Replace Paid Subscriptions (2026)",
   description: "Stop wasting money! Discover the top 25 free AI tools in 2026 that replace expensive software like Photoshop, Midjourney, and Canva Pro. Save thousands today!",
-  keywords: [
-    "free ai tools",
-    "best ai tools 2026",
-    "ai tools list",
-    "ai tools for productivity",
-    "ai websites free",
-    "free alternatives to expensive software",
-    "ai software replacement",
-    "best free ai websites",
-    "trending ai tools",
-    "ai tools for business",
-    "ai tools for students",
-    "ai tools for developers",
-    "ai tools replacing photoshop",
-    "ai tools replacing video editors",
-    "ai tools to make money online"
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "free ai tools 2026",
+
+        // SECONDARY — H2s and body
+        "free ai tools", "best ai tools 2026", "ai tools list", "ai tools for productivity",
+        "ai websites free", "ai software replacement", "best free ai websites", "trending ai tools",
+
+        // LONG-TAIL — FAQ and specific sections
+        "free alternatives to expensive software", "ai tools replacing video editors",
+        "ai tools to make money online",
+
+        // SUPPORTING / semantic
+        "ai tools for business", "ai tools for students", "ai tools for developers",
+        "ai tools replacing photoshop",
+    ],
   alternates: {
     canonical: "https://mohitkoli.in/blog/top-25-free-ai-tools-2026",
   },

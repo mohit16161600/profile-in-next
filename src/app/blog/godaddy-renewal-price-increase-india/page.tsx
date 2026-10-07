@@ -12,19 +12,20 @@ export const metadata: Metadata = {
     title: "GoDaddy Domain Renewal Price India 2026: Why Cost Jumps 2–4×",
     description:
         "GoDaddy renewal price in India 2026: .com renews at ₹1,599/yr and hosting jumps 2–4× (Economy ₹219 → ₹599). Check your real cost before you pay.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "godaddy domain renewal price india",
-        "godaddy renewal cost",
-        "godaddy renewal price india",
-        "godaddy domain renewal price",
-        "godaddy hosting renewal price india",
-        "why is godaddy renewal so expensive",
-        "godaddy renewal discount",
-        "godaddy vs hostinger renewal price",
-        "transfer domain from godaddy",
-        "godaddy price increase",
+
+        // SECONDARY — H2s and body
+        "godaddy renewal cost", "godaddy renewal price india", "godaddy domain renewal price",
+        "godaddy renewal discount", "transfer domain from godaddy", "godaddy price increase",
         "godaddy alternative india",
-        "verisign .com price increase 2026",
+
+        // LONG-TAIL — FAQ and specific sections
+        "godaddy hosting renewal price india", "why is godaddy renewal so expensive",
+        "godaddy vs hostinger renewal price", "verisign .com price increase 2026",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

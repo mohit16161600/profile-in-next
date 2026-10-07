@@ -22,18 +22,19 @@ const DESCRIPTION =
 export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "hostinger game server hosting",
-        "minecraft server hosting india",
-        "minecraft server hosting price india",
-        "hostinger game panel price",
-        "sasta minecraft server india",
-        "minecraft server kaise banaye",
-        "game server hosting india 2026",
-        "hostinger minecraft vps",
-        "game panel 2 price",
-        "minecraft hosting kitne ka hai",
-        "india me game server hosting",
+
+        // SECONDARY — H2s and body
+        "minecraft server hosting india", "hostinger game panel price", "sasta minecraft server india",
+        "minecraft server kaise banaye", "hostinger minecraft vps", "game panel 2 price",
+
+        // LONG-TAIL — FAQ and specific sections
+        "minecraft server hosting price india", "game server hosting india 2026",
+        "minecraft hosting kitne ka hai", "india me game server hosting",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

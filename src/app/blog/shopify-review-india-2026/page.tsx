@@ -10,24 +10,32 @@ const PUBLISHED = "2026-08-24T00:00:00.000Z";
 const MODIFIED = "2026-09-14T00:00:00.000Z";
 
 export const metadata: Metadata = {
-    title: "Shopify Review India 2026: Costs, Fees and the Catch",
+    title: "Shopify Review India 2026: The 2% Every Order Costs You",
     description:
         "Shopify Basic is ₹1,994/mo, but Shopify Payments does not work in India so 2% goes on every order. What Indian sellers actually pay.",
+    // Keyword tiers — PRIMARY must stay in title, H1 and intro.
     keywords: [
-        "shopify review india", "shopify review 2026", "shopify india pricing", "is shopify worth it india",
-        "shopify transaction fee india", "shopify payments india", "shopify basic plan india",
-        "shopify pros and cons", "shopify for indian sellers", "shopify hidden costs",
+        // PRIMARY
+        "shopify review india",
+
+        // SECONDARY — H2s and body
+        "shopify india pricing", "shopify transaction fee india", "shopify payments india",
+        "is shopify worth it india", "shopify basic plan india", "shopify hidden costs",
+        "shopify for indian sellers",
+
+        // LONG-TAIL — FAQ and specific sections
         "shopify alternatives india", "start online store india", "shopify grow plan india",
+        "shopify pros and cons", "shopify review 2026",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Shopify Review India 2026: Costs, Fees and the Catch",
+        title: "Shopify Review India 2026: The 2% Every Order Costs You",
         description: "What Indian sellers actually pay once the transaction fee, gateway and GST are counted.",
         url: CANONICAL, type: "article", publishedTime: PUBLISHED, modifiedTime: MODIFIED,
         images: [{ url: IMAGE, width: 1200, height: 630, alt: "Shopify reviewed for Indian sellers in 2026" }],
     },
     twitter: {
-        card: "summary_large_image", title: "Shopify Review India 2026: Costs, Fees and the Catch",
+        card: "summary_large_image", title: "Shopify Review India 2026: The 2% Every Order Costs You",
         description: "The real monthly cost for Indian sellers, honestly counted.", images: [IMAGE],
     },
 };
@@ -59,7 +67,7 @@ const FAQ = [
 const jsonLd = [
     {
         "@context": "https://schema.org", "@type": "BlogPosting",
-        headline: "Shopify Review India 2026: Costs, Fees and the Catch",
+        headline: "Shopify Review India 2026: The 2% Every Order Costs You",
         description: "What Indian sellers actually pay on Shopify once transaction fees, gateways and GST are counted.",
         image: IMAGE, datePublished: PUBLISHED, dateModified: MODIFIED,
         author: { "@type": "Person", name: "Mohit Koli", url: "https://mohitkoli.in/profile", jobTitle: "Senior Full Stack Developer", sameAs: ["https://github.com/mohit16161600", "https://www.linkedin.com/in/mohit-koli-b47260213", "https://x.com/mohitko86979490"] },
@@ -348,7 +356,7 @@ export default function ShopifyReviewIndia() {
 
                     <div className="glass rounded-xl shadow-sm p-6 border border-white/5">
                         <h2 className="text-lg font-bold text-white mb-4">Share this review</h2>
-                        <ShareButtons url={CANONICAL} title="Shopify Review India 2026: Costs, Fees and the Catch" />
+                        <ShareButtons url={CANONICAL} title="Shopify Review India 2026: The 2% Every Order Costs You" />
                     </div>
                     <RelatedPosts slug="shopify-review-india-2026" />
                 </article>

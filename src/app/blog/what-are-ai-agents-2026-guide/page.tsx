@@ -7,18 +7,19 @@ export const metadata: Metadata = {
   title: "What Are AI Agents? The Complete 2026 Beginner Guide",
   description:
     "What are AI agents? This 2026 beginner guide explains how AI agents work, real examples, top tools and how to start using them, in plain simple language.",
-  keywords: [
-    "what are ai agents",
-    "ai agents explained",
-    "ai agents 2026",
-    "ai agent beginner guide",
-    "how do ai agents work",
-    "agentic ai explained",
-    "ai agent examples",
-    "best ai agents 2026",
-    "ai agents vs chatbots",
-    "autonomous ai agents",
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "what are ai agents",
+
+        // SECONDARY — H2s and body
+        "ai agents explained", "ai agents 2026", "ai agent beginner guide", "agentic ai explained",
+        "ai agent examples", "best ai agents 2026", "ai agents vs chatbots", "autonomous ai agents",
+
+        // LONG-TAIL — FAQ and specific sections
+        "how do ai agents work",
+    ],
   alternates: {
     canonical: "https://mohitkoli.in/blog/what-are-ai-agents-2026-guide",
   },

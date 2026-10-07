@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 import RelatedPosts from "@/components/RelatedPosts";
+import VerdictCard from "@/components/VerdictCard";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 // Every plan card gets its own cart link now — a reader who has already decided on
@@ -20,39 +21,32 @@ const DESCRIPTION =
 export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "hostinger wordpress hosting india",
-        "hostinger wordpress hosting price in india",
-        "hostinger wordpress hosting",
-        "is hostinger good for wordpress in india",
-        "which hostinger plan is best for wordpress",
-        "hostinger wordpress hosting review 2026",
-        "best wordpress hosting india 2026",
-        "hostinger litespeed wordpress",
-        "hostinger woocommerce hosting",
-        "hostinger woocommerce hosting india",
-        "hostinger free wordpress migration",
-        "wordpress hosting price india",
-        "how many visitors can hostinger premium handle",
-        "hostinger managed wordpress vs shared hosting",
-        "hostinger india server location mumbai",
-        "hostinger wordpress migration how long",
-        "hostinger price with gst india",
-        "hostinger unlimited plan wordpress",
+
+        // SECONDARY — H2s and body
+        "hostinger wordpress hosting", "hostinger litespeed wordpress", "hostinger woocommerce hosting",
+        "hostinger woocommerce hosting india", "hostinger free wordpress migration",
+        "wordpress hosting price india", "hostinger unlimited plan wordpress",
         "hostinger single plan wordpress",
-        "hostinger vs bluehost wordpress india",
-        "hostinger vs godaddy which is better in india",
-        "hostinger object cache wordpress",
-        "hostinger wp-cli ssh git wordpress",
-        "hostinger wordpress staging",
-        "hostinger litespeed cache settings wordpress",
-        "hostinger resource limit reached wordpress",
-        "hostinger wordpress ttfb india",
-        "hostinger yearly plan price",
-        "hostinger monthly plan wordpress",
-        "hostinger cloud startup wordpress",
-        "hostinger wordpress multisite",
-        "hostinger ai website builder wordpress",
+
+        // LONG-TAIL — FAQ and specific sections
+        "hostinger wordpress hosting price in india", "is hostinger good for wordpress in india",
+        "which hostinger plan is best for wordpress", "hostinger wordpress hosting review 2026",
+        "best wordpress hosting india 2026", "how many visitors can hostinger premium handle",
+        "hostinger managed wordpress vs shared hosting", "hostinger india server location mumbai",
+        "hostinger wordpress migration how long", "hostinger price with gst india",
+        "hostinger vs bluehost wordpress india", "hostinger vs godaddy which is better in india",
+        "hostinger wp-cli ssh git wordpress", "hostinger litespeed cache settings wordpress",
+        "hostinger resource limit reached wordpress", "hostinger ai website builder wordpress",
+
+        // SUPPORTING / semantic
+        "hostinger object cache wordpress", "hostinger wordpress staging", "hostinger wordpress ttfb india",
+        "hostinger yearly plan price", "hostinger monthly plan wordpress",
+        "hostinger cloud startup wordpress", "hostinger wordpress multisite",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
@@ -1070,7 +1064,7 @@ export default function HostingerWordpressHosting() {
                     <section className="mb-10">
                         <h2 className="text-2xl font-bold text-white mb-4">Keep reading (hosting series)</h2>
                         <ul className="space-y-3 text-primary-400">
-                            <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — the full verdict after a year of client sites</Link></li>
+                            <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — the full what the pricing page does not say</Link></li>
                             <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing in India 2026 — which plan to buy</Link></li>
                             <li><Link href="/blog/hostinger-renewal-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Renewal Price in India — the real cost after year one</Link></li>
                             <li><Link href="/blog/hostinger-kvm-vps-plans-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger KVM VPS Plans in India — when shared hosting is not enough</Link></li>
@@ -1088,6 +1082,20 @@ export default function HostingerWordpressHosting() {
                             <li><Link href="/blog/hostinger-55-per-month-offer" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Hostinger at ₹55/mo</Link> — the current offer across every plan.</li>
                         </ul>
                     </section>
+
+
+                    <VerdictCard
+
+
+                        items={[
+                            { name: "Hostinger WordPress hosting", score: "4.5", body: "Hostinger is shared hosting with genuine WordPress automation layered on top, priced far below dedicated managed WordPress hosts. LiteSpeed with LSCache, a Mumbai data centre, free unlimited migrations and WP-CLI, SSH and Git make it a strong pick for blogs and small WooCommerce stores. The trade-offs are real: renewal prices roughly triple, support is general hosting support with no phone line, daily backups are retained for only seven days, and shared PHP-worker limits mean membership, LMS and busy stores need Cloud Startup or a KVM VPS." },
+
+
+                        ]}
+
+
+                    />
+
 
 
                     <div className="glass rounded-xl p-6 border border-white/5">

@@ -26,18 +26,22 @@ const DESCRIPTION =
 export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "hostinger vps review in hindi",
-        "hostinger vps price in hindi",
-        "hostinger vps kya hai",
-        "vps hosting kya hai",
-        "hostinger kvm 2 review hindi",
-        "hostinger vps kaise kharide",
+        // PRIMARY
         "hostinger vps price india",
-        "kaunsa hostinger vps plan le",
-        "hostinger vps renewal price hindi",
-        "shared hosting aur vps mein fark",
-        "hostinger vps discount code",
+
+        // SECONDARY — H2s and body
+        "hostinger vps kya hai", "vps hosting kya hai", "hostinger vps kaise kharide",
+        "hostinger vps price india", "hostinger vps discount code",
+
+        // LONG-TAIL — FAQ and specific sections
+        "hostinger vps price in hindi", "hostinger kvm 2 review hindi", "kaunsa hostinger vps plan le",
+        "hostinger vps renewal price hindi", "shared hosting aur vps mein fark",
+
+        // SUPPORTING / semantic
+        "hostinger vps review in hindi",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

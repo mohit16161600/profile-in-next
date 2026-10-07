@@ -14,18 +14,22 @@ const DESCRIPTION =
 export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "domain kaise kharide",
-        "domain name kaise chune",
+        // PRIMARY
         "free domain with hosting india",
-        "hostinger free domain",
-        "domain kharidne se pehle",
-        "domain renewal price trap",
-        "sasta domain india",
-        "domain name kharidne ki galtiyan",
-        "in domain ya com domain",
-        "pehla domain kaise le",
+
+        // SECONDARY — H2s and body
+        "domain name kaise chune", "hostinger free domain", "domain kharidne se pehle",
+        "domain renewal price trap", "sasta domain india", "pehla domain kaise le",
+
+        // LONG-TAIL — FAQ and specific sections
+        "free domain with hosting india", "domain name kharidne ki galtiyan", "in domain ya com domain",
         "domain aur hosting ek saath",
+
+        // SUPPORTING / semantic
+        "domain kaise kharide",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

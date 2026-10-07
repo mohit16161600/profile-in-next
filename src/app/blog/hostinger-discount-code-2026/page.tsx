@@ -6,23 +6,27 @@ import RelatedPosts from "@/components/RelatedPosts";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-discount-code-2026";
-const TITLE = "Hostinger Discount Code 2026: 20% Off On Top of the Sale";
+const TITLE = "Hostinger Coupon Codes: Why Most Do Not Work in 2026";
 const DESCRIPTION =
   "Do Hostinger discount codes actually work in 2026? The honest answer: most listed coupon codes are dead. Here is what really cuts your price at checkout.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  keywords: [
-    "hostinger discount code",
-    "hostinger coupon code 2026",
-    "hostinger promo code",
-    "hostinger referral code",
-    "does hostinger have a coupon code",
-    "hostinger discount code india",
-    "hostinger coupon code working",
-    "hostinger checkout discount",
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "do hostinger coupon codes work",
+
+        // SECONDARY — H2s and body
+        "hostinger discount code", "hostinger coupon code 2026", "hostinger promo code",
+        "hostinger referral code", "hostinger discount code india", "hostinger coupon code working",
+        "hostinger checkout discount",
+
+        // LONG-TAIL — FAQ and specific sections
+        "does hostinger have a coupon code",
+    ],
   alternates: {
     canonical: CANONICAL,
   },
@@ -36,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hostinger Discount Code 2026: 20% Off On Top of the Sale",
+    title: "Hostinger Coupon Codes: Why Most Do Not Work in 2026",
     description: "Coupon code vs referral link, why coupon listicles are dead, and what the discount really looks like on the Hostinger India checkout.",
     images: ["/assets/hostinger-offer.webp"],
   },
@@ -467,7 +471,7 @@ export default function HostingerDiscountCodeGuide() {
               <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing India 2026 — which plan should you actually buy?</Link></li>
               <li><Link href="/blog/hostinger-renewal-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Renewal Price in India — what happens after the discount ends</Link></li>
               <li><Link href="/blog/hostinger-domain-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Domain Price India 2026 — .com, .in &amp; .store real costs</Link></li>
-              <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — honest verdict after a year of client sites</Link></li>
+              <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — what the pricing page does not say</Link></li>
               <li><Link href="/blog/best-web-hosting-india-2026" className="hover:text-primary-300 underline underline-offset-4">7 Best Web Hosting Services in India (2026) — tested &amp; ranked</Link></li>
             </ul>
           </section>
@@ -482,7 +486,7 @@ export default function HostingerDiscountCodeGuide() {
 
           <div className="glass rounded-xl p-6 border border-white/5">
             <h3 className="text-lg font-bold text-white mb-4">Share This Guide</h3>
-            <ShareButtons url={CANONICAL} title="Hostinger Discount Code 2026: 20% Off On Top of the Sale" />
+            <ShareButtons url={CANONICAL} title="Hostinger Coupon Codes: Why Most Do Not Work in 2026" />
           </div>
             <RelatedPosts slug="hostinger-discount-code-2026" />
         </article>

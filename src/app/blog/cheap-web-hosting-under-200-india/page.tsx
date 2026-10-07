@@ -12,17 +12,19 @@ export const metadata: Metadata = {
     title: "Cheap Web Hosting India: Under ₹200/mo, From ₹69",
     description:
         "₹99 hosting that renews at ₹399 is not cheap. 5 real picks under ₹200/mo in India, what each actually buys, and the two-year cost of each.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "cheap web hosting india",
-        "cheap web hosting under 200 india",
-        "web hosting under 200 rupees",
-        "cheapest web hosting in india",
-        "cheapest hosting india 2026",
-        "hosting under 200 per month india",
-        "cheap hosting with free domain india",
-        "budget web hosting india",
-        "cheap hosting for students india",
-        "cheap wordpress hosting india",
+
+        // SECONDARY — H2s and body
+        "cheapest hosting india 2026", "budget web hosting india", "cheap wordpress hosting india",
+
+        // LONG-TAIL — FAQ and specific sections
+        "cheap web hosting under 200 india", "web hosting under 200 rupees",
+        "cheapest web hosting in india", "hosting under 200 per month india",
+        "cheap hosting with free domain india", "cheap hosting for students india",
         "affordable web hosting india 2026",
     ],
     alternates: { canonical: CANONICAL },

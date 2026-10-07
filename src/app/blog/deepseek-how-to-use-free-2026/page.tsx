@@ -7,18 +7,20 @@ export const metadata: Metadata = {
   title: "DeepSeek AI: How to Use It Free in 2026 (Beginner Guide)",
   description:
     "Learn how to use DeepSeek free in 2026: sign up, best uses, step-by-step reasoning and tips. A budget-friendly beginner guide to the free DeepSeek AI app.",
-  keywords: [
-    "how to use deepseek free",
-    "deepseek ai beginner guide",
-    "deepseek app tutorial 2026",
-    "deepseek free ai",
-    "how to use deepseek",
-    "deepseek best uses",
-    "deepseek for students",
-    "deepseek vs chatgpt free",
-    "deepseek reasoning model",
-    "is deepseek safe to use",
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "how to use deepseek free",
+
+        // SECONDARY — H2s and body
+        "deepseek ai beginner guide", "deepseek app tutorial 2026", "deepseek free ai",
+        "deepseek best uses", "deepseek for students", "deepseek vs chatgpt free",
+        "deepseek reasoning model",
+
+        // LONG-TAIL — FAQ and specific sections
+        "how to use deepseek", "is deepseek safe to use",
+    ],
   alternates: {
     canonical: "https://mohitkoli.in/blog/deepseek-how-to-use-free-2026",
   },

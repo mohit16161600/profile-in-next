@@ -14,34 +14,50 @@ const NAMECHEAP = "https://namecheap.pxf.io/c/7673063/1632743/5618";
 const DYNADOT = "https://www.dynadot.com/?s7f7O16308s7px";
 
 export const metadata: Metadata = {
-    title: "Namecheap vs GoDaddy India 2026: The Real 5-Year Cost",
+    title: "Namecheap vs GoDaddy India: UPI, GST and the 5-Year Cost",
     description:
-        "Renewals decide this, not promos. Rupee costs, UPI and GST rules, .in privacy limits, transfer steps and the free-domain route, compared honestly.",
+        "Renewals decide this, not the promo price. Which one takes UPI, which gives a GST invoice you can claim, and what five years actually costs in rupees.",
+    // Keyword tiers. Meta keywords carry no ranking weight on their own — this exists so
+    // the page's intent is explicit, and so the PRIMARY term stays in the title, H1 and intro.
     keywords: [
-        "namecheap vs godaddy", "godaddy vs namecheap", "namecheap or godaddy", "namecheap vs godaddy 2026",
-        "namecheap vs godaddy price", "cheapest domain registrar", "godaddy renewal price",
-        "namecheap renewal price", "godaddy alternative", "domain registrar comparison india",
-        "whois privacy free", "transfer domain from godaddy to namecheap",
-        "namecheap vs godaddy india", "godaddy vs namecheap pricing india",
-        "does namecheap accept upi payments in india", "godaddy domain renewal price india",
-        "godaddy .com renewal price", "cheapest domain registrar india", "namecheap vs godaddy hosting",
-        "is namecheap better than godaddy", "namecheap servers in india",
-        "can i buy a .in domain on namecheap", ".in domain price india", "godaddy gst invoice domain",
-        "godaddy domain transfer", "free domain with hosting india",
-        "godaddy redemption fee expired domain", "what are the disadvantages of namecheap",
-        "why do business websites avoid godaddy", "is namecheap affiliated with godaddy",
-        "which is better for indian bloggers godaddy or namecheap", "namecheap vs godaddy for beginners",
-        "godaddy discount domain club worth it", "namecheap whois privacy free",
+        // PRIMARY
+        "namecheap vs godaddy",
+
+        // SECONDARY — belong in H2s and body
+        "namecheap vs godaddy india", "godaddy vs namecheap pricing india", "cheapest domain registrar india",
+        "godaddy domain renewal price india", "namecheap renewal price", "domain registrar comparison india",
+        "is namecheap better than godaddy",
+
+        // LONG-TAIL — belong in FAQ and specific sections
+        "does namecheap accept upi payments in india", "can i buy a .in domain on namecheap",
+        "godaddy gst invoice domain", "which is better for indian bloggers godaddy or namecheap",
+        "what are the disadvantages of namecheap", "godaddy redemption fee expired domain",
+        "namecheap whois privacy free", "transfer domain from godaddy to namecheap",
+        "godaddy discount domain club worth it", "why do business websites avoid godaddy",
+
+        // SUPPORTING / semantic
+        "godaddy vs namecheap",
+        "namecheap or godaddy",
+        "namecheap vs godaddy 2026",
+        "namecheap vs godaddy price",
+        "cheapest domain registrar",
+        "godaddy renewal price",
+        "whois privacy free",
+        "godaddy .com renewal price",
+        "namecheap vs godaddy hosting",
+        "is namecheap affiliated with godaddy",
+        "godaddy alternative", ".in domain price india", "free domain with hosting india",
+        "namecheap servers in india", "godaddy domain transfer", "namecheap vs godaddy for beginners",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Namecheap vs GoDaddy India 2026: The Real 5-Year Cost",
+        title: "Namecheap vs GoDaddy India: UPI, GST and the 5-Year Cost",
         description: "Renewals decide this, not promos. Rupee costs, UPI, GST invoices, .in privacy limits and transfers compared.",
         url: CANONICAL, type: "article", publishedTime: PUBLISHED, modifiedTime: MODIFIED,
         images: [{ url: IMAGE, width: 1200, height: 630, alt: "Namecheap vs GoDaddy compared for Indian buyers in 2026" }],
     },
     twitter: {
-        card: "summary_large_image", title: "Namecheap vs GoDaddy India 2026: The Real 5-Year Cost",
+        card: "summary_large_image", title: "Namecheap vs GoDaddy India: UPI, GST and the 5-Year Cost",
         description: "The renewal, not the promo, is the comparison that matters.", images: [IMAGE],
     },
 };
@@ -78,7 +94,7 @@ const AUTHOR = {
 const jsonLd = [
     {
         "@context": "https://schema.org", "@type": "BlogPosting",
-        headline: "Namecheap vs GoDaddy India 2026: The Real 5-Year Cost",
+        headline: "Namecheap vs GoDaddy India: UPI, GST and the 5-Year Cost",
         description: "Renewal pricing in rupees, UPI and GST rules, .in privacy exclusions, transfer steps and the free-domain route compared for two of the biggest registrars.",
         image: IMAGE, datePublished: PUBLISHED, dateModified: MODIFIED,
         author: AUTHOR,
@@ -905,7 +921,7 @@ export default function NamecheapVsGoDaddy() {
 
                     <div className="glass rounded-xl shadow-sm p-6 border border-white/5">
                         <h2 className="text-lg font-bold text-white mb-4">Share this comparison</h2>
-                        <ShareButtons url={CANONICAL} title="Namecheap vs GoDaddy India 2026: The Real 5-Year Cost" />
+                        <ShareButtons url={CANONICAL} title="Namecheap vs GoDaddy India: UPI, GST and the 5-Year Cost" />
                     </div>
                     <RelatedPosts slug="namecheap-vs-godaddy" />
                 </article>

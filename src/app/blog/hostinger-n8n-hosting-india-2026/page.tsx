@@ -8,25 +8,29 @@ import RelatedPosts from "@/components/RelatedPosts";
 
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-n8n-hosting-india-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/best-vps-hosting-india-2026.png";
-const TITLE = "n8n Self-Host Sirf ₹479/mo: Unlimited Workflows, Fix Bill";
+const TITLE = "n8n Hosting India ₹479/mo: Unlimited Workflows, Fix Bill";
 const DESCRIPTION =
     "Har VPS plan me n8n free included. KVM 1 ₹479.20/mo par, execution ke hisaab se paisa nahi. Kaunsa plan lena hai aur kya galat ho sakta hai — Sept 2026 verified.";
 
 export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "n8n hosting india",
-        "n8n self hosted vps",
-        "hostinger n8n",
-        "n8n kaise host kare",
-        "n8n hosting price india",
-        "sasta n8n hosting",
-        "self hosted n8n india",
-        "n8n vps india 2026",
-        "ai automation hosting india",
-        "n8n vs make vs zapier",
+
+        // SECONDARY — H2s and body
+        "n8n self hosted vps", "n8n kaise host kare", "n8n hosting price india", "sasta n8n hosting",
+        "self hosted n8n india", "n8n vps india 2026", "ai automation hosting india",
         "n8n queue mode hosting",
+
+        // LONG-TAIL — FAQ and specific sections
+        "n8n vs make vs zapier",
+
+        // SUPPORTING / semantic
+        "hostinger n8n",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

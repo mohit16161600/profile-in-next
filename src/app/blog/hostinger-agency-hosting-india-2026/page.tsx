@@ -18,17 +18,21 @@ const DESCRIPTION =
 export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "hostinger agency hosting",
-        "hostinger pro hosting",
-        "hostinger reseller program",
-        "white label hosting india",
-        "reseller hosting india price",
+
+        // SECONDARY — H2s and body
+        "hostinger pro hosting", "hostinger reseller program", "white label hosting india",
+        "reseller hosting india price", "agency hosting india 2026", "hostinger agency startup price",
+        "multiple websites hosting india", "unbranded client dashboard hosting",
+
+        // LONG-TAIL — FAQ and specific sections
         "client sites ek plan me",
-        "agency hosting india 2026",
-        "hostinger agency startup price",
-        "multiple websites hosting india",
-        "unbranded client dashboard hosting",
+
+        // SUPPORTING / semantic
         "hostinger agency vs vps",
     ],
     alternates: { canonical: CANONICAL },

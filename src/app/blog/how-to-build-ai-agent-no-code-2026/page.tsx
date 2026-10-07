@@ -7,18 +7,20 @@ export const metadata: Metadata = {
   title: "How to Build an AI Agent Without Coding in 2026 (Free)",
   description:
     "Build an AI agent without code in 2026 using Botpress, Meta's WhatsApp Business AI and Google Opal, with a support bot and WhatsApp bot walkthrough.",
-  keywords: [
-    "build ai agent without coding",
-    "no code ai agent 2026",
-    "how to build ai agent",
-    "free ai agent builder",
-    "ai agent for beginners",
-    "meta business agent whatsapp",
-    "botpress chatbot tutorial",
-    "make ai agent no code",
-    "ai agent templates",
-    "what are ai agents",
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "how to build an ai agent without coding",
+
+        // SECONDARY — H2s and body
+        "free ai agent builder", "ai agent for beginners", "meta business agent whatsapp",
+        "botpress chatbot tutorial", "ai agent templates",
+
+        // LONG-TAIL — FAQ and specific sections
+        "build ai agent without coding", "no code ai agent 2026", "how to build ai agent",
+        "make ai agent no code", "what are ai agents",
+    ],
   alternates: {
     canonical: "https://mohitkoli.in/blog/how-to-build-ai-agent-no-code-2026",
   },

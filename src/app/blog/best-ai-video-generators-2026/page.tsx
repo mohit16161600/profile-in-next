@@ -7,18 +7,19 @@ export const metadata: Metadata = {
   title: "Best Free AI Video Generators 2026 (Veo, Kling, Runway)",
   description:
     "The best free AI video generators in 2026 compared: Veo, Kling, Runway and the tools that replaced Sora. See which is best and make your first video free.",
-  keywords: [
-    "best free ai video generator 2026",
-    "best ai video generators 2026",
-    "free ai video generator",
-    "veo 3 ai video",
-    "kling ai video generator",
-    "sora 2 alternatives",
-    "text to video ai free",
-    "ai video maker no watermark",
-    "how to make ai video free",
-    "best text to video ai 2026",
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "best free ai video generators",
+
+        // SECONDARY — H2s and body
+        "free ai video generator", "veo 3 ai video", "kling ai video generator", "sora 2 alternatives",
+
+        // LONG-TAIL — FAQ and specific sections
+        "best free ai video generator 2026", "best ai video generators 2026", "text to video ai free",
+        "ai video maker no watermark", "how to make ai video free", "best text to video ai 2026",
+    ],
   alternates: {
     canonical: "https://mohitkoli.in/blog/best-ai-video-generators-2026",
   },

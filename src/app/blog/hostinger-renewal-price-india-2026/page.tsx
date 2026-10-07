@@ -16,19 +16,20 @@ export const metadata: Metadata = {
     title: "Hostinger Renewal Price in India 2026: ₹149 Jumps to ₹449/mo",
     description:
         "Hostinger renewal price in India 2026: Premium jumps from ₹149 to ₹449/mo after year 1. Full hosting + domain renewal rate list and 5 legit ways to avoid it.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "hostinger renewal price",
-        "hostinger renewal price india",
-        "hostinger renewal price in india",
-        "hostinger renew price",
-        "hostinger renewal cost",
-        "hostinger price after first year",
-        "hostinger premium renewal price",
-        "hostinger business renewal price",
-        "hostinger domain renewal price in india",
-        "hostinger domain renewal price",
-        "how to avoid hostinger renewal price",
-        "hostinger renewal discount",
+
+        // SECONDARY — H2s and body
+        "hostinger renewal price india", "hostinger renew price", "hostinger renewal cost",
+        "hostinger premium renewal price", "hostinger business renewal price",
+        "hostinger domain renewal price", "hostinger renewal discount",
+
+        // LONG-TAIL — FAQ and specific sections
+        "hostinger renewal price in india", "hostinger price after first year",
+        "hostinger domain renewal price in india", "how to avoid hostinger renewal price",
         "web hosting renewal price india",
     ],
     alternates: { canonical: CANONICAL },
@@ -532,7 +533,7 @@ export default function HostingerRenewalPrice() {
                             <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing in India 2026 — which plan should you buy?</Link></li>
                             <li><Link href="/blog/how-to-get-hostinger-90-off-2026" className="hover:text-primary-300 underline underline-offset-4">How to Get 90% OFF on Hostinger — the exact discount-stacking steps</Link></li>
                             <li><Link href="/blog/hostinger-domain-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Domain Price India 2026 — registration vs renewal for every extension</Link></li>
-                            <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — honest verdict after a year of client sites</Link></li>
+                            <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — what the pricing page does not say</Link></li>
                             <li><Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger vs GoDaddy vs Bluehost — 2026 India comparison</Link></li>
                         </ul>
                     </section>

@@ -7,18 +7,21 @@ export const metadata: Metadata = {
   title: "Nano Banana Saree Trend: 12 Free Gemini Prompts (2026)",
   description:
     "Try the viral Nano Banana saree trend free! Copy 12 Gemini prompts for retro 90s Bollywood saree photos. Step-by-step guide to go viral in 2026.",
-  keywords: [
-    "nano banana saree prompt",
-    "nano banana saree trend",
-    "gemini saree photo prompt",
-    "nano banana 2 prompts",
-    "retro 90s bollywood ai photo",
-    "viral ai saree photo prompt",
-    "nano banana ai photo trend",
-    "free gemini image prompts 2026",
-    "nano banana saree prompt copy paste",
-    "how to make nano banana saree photo",
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "nano banana saree trend prompt",
+
+        // SECONDARY — H2s and body
+        "nano banana saree prompt", "nano banana saree trend", "gemini saree photo prompt",
+        "nano banana 2 prompts",
+
+        // LONG-TAIL — FAQ and specific sections
+        "retro 90s bollywood ai photo", "viral ai saree photo prompt", "nano banana ai photo trend",
+        "free gemini image prompts 2026", "nano banana saree prompt copy paste",
+        "how to make nano banana saree photo",
+    ],
   alternates: {
     canonical: "https://mohitkoli.in/blog/nano-banana-saree-trend-prompts-2026",
   },

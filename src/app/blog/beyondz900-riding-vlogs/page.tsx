@@ -12,25 +12,23 @@ export const metadata: Metadata = {
     title: "BeyondZ900 Riding Vlogs: Why the Channel Is Worth It",
     description:
         "BeyondZ900 is my riding channel: daily Shorts, POV rides and Ola scooter journeys on YouTube and Instagram. Why riding vlogs work, and how to start one.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "BeyondZ900",
-        "BeyondZ900 youtube",
-        "BeyondZ900 youtube channel",
-        "BeyondZ900 instagram",
-        "BeyondZ900 rider",
-        "BeyondZ900 riding vlogs",
-        "riding vlogs",
-        "riding vlogs india",
-        "motovlog india",
-        "what is a motovlog",
-        "daily ride vlogs",
-        "bike ride vlogs india",
-        "bike trip vlogs india",
-        "road trip vlogs india",
-        "how to start a motovlog channel",
+
+        // SECONDARY — H2s and body
+        "BeyondZ900 youtube channel", "BeyondZ900 riding vlogs", "riding vlogs india", "daily ride vlogs",
+        "bike ride vlogs india", "bike trip vlogs india", "road trip vlogs india",
         "best riding vloggers india",
-        "motorcycle vlogger india",
-        "helmet camera vlogs",
+
+        // LONG-TAIL — FAQ and specific sections
+        "what is a motovlog", "how to start a motovlog channel",
+
+        // SUPPORTING / semantic
+        "BeyondZ900 youtube", "BeyondZ900 instagram", "BeyondZ900 rider", "riding vlogs", "motovlog india",
+        "motorcycle vlogger india", "helmet camera vlogs",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

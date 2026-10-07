@@ -13,12 +13,23 @@ export const metadata: Metadata = {
     title: "Semrush vs Ahrefs 2026: Which One Should You Buy?",
     description:
         "Keyword data, backlinks, pricing and free tiers — plus what Adobe's takeover of Semrush means, and the affiliate conflict that skews other articles.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "semrush vs ahrefs", "ahrefs vs semrush", "semrush or ahrefs", "semrush vs ahrefs 2026",
-        "semrush vs ahrefs pricing", "which is better semrush or ahrefs", "ahrefs free plan",
-        "semrush keyword magic tool", "best seo tool for backlinks", "semrush vs ahrefs for beginners",
-        "ahrefs affiliate program", "seo tool comparison india", "semrush one", "ahrefs starter plan",
-        "adobe semrush",
+        // PRIMARY
+        "semrush vs ahrefs",
+
+        // SECONDARY — H2s and body
+        "ahrefs vs semrush", "semrush or ahrefs", "semrush vs ahrefs 2026", "semrush vs ahrefs pricing",
+        "ahrefs free plan", "semrush keyword magic tool", "ahrefs affiliate program",
+        "seo tool comparison india",
+
+        // LONG-TAIL — FAQ and specific sections
+        "which is better semrush or ahrefs", "best seo tool for backlinks",
+        "semrush vs ahrefs for beginners",
+
+        // SUPPORTING / semantic
+        "semrush one", "ahrefs starter plan", "adobe semrush",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

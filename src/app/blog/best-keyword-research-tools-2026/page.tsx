@@ -13,12 +13,22 @@ export const metadata: Metadata = {
     title: "Best Keyword Research Tools 2026 (Free and Paid)",
     description:
         "The free tools that cover most of the job, the paid ones worth upgrading to, and a repeatable process for finding keywords a small site can genuinely rank for.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "best keyword research tools", "free keyword research tools", "keyword research tools 2026",
-        "keyword research tools india", "google keyword planner free", "kwfinder review",
-        "keyword difficulty tool", "long tail keyword tool", "how to do keyword research",
-        "best free seo keyword tool", "keyword research for bloggers", "low competition keywords",
-        "ahrefs starter plan", "search console generative ai report",
+        // PRIMARY
+        "best keyword research tools",
+
+        // SECONDARY — H2s and body
+        "free keyword research tools", "keyword research tools 2026", "keyword research tools india",
+        "google keyword planner free", "keyword difficulty tool", "long tail keyword tool",
+        "keyword research for bloggers", "low competition keywords",
+
+        // LONG-TAIL — FAQ and specific sections
+        "how to do keyword research", "best free seo keyword tool", "search console generative ai report",
+
+        // SUPPORTING / semantic
+        "kwfinder review", "ahrefs starter plan",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

@@ -11,17 +11,18 @@ export const metadata: Metadata = {
     title: "Node.js Hosting India 2026: VPS From ₹599/mo Compared",
     description:
         "A developer's guide to Node.js hosting in India — why shared hosting can't run Node, VPS vs serverless vs PaaS with real INR costs, and my setup.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "nodejs hosting india",
-        "node js hosting india price",
-        "best vps for nodejs india",
-        "host nodejs app india",
-        "nodejs hosting cheap india",
-        "hostinger nodejs hosting",
-        "vps for nodejs 2026",
-        "deploy nodejs app vps",
-        "nodejs vs shared hosting",
-        "nextjs hosting india",
+
+        // SECONDARY — H2s and body
+        "host nodejs app india", "nodejs hosting cheap india", "hostinger nodejs hosting",
+        "vps for nodejs 2026", "deploy nodejs app vps", "nodejs vs shared hosting", "nextjs hosting india",
+
+        // LONG-TAIL — FAQ and specific sections
+        "node js hosting india price", "best vps for nodejs india",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

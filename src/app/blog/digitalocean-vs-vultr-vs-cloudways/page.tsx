@@ -16,33 +16,28 @@ export const metadata: Metadata = {
     title: "$6 vs $5 vs $11: DigitalOcean vs Vultr vs Cloudways",
     description:
         "DigitalOcean $6, Vultr $5, Cloudways $11 for the same 1GB server. Real prices, 18% GST, India regions, and why Cloudways is now owned by DigitalOcean.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "digitalocean vs vultr",
-        "digitalocean vs cloudways",
-        "vultr vs cloudways",
+        // PRIMARY
         "digitalocean vs vultr vs cloudways",
-        "cheapest cloud vps 2026",
-        "managed vs unmanaged cloud hosting",
-        "digitalocean pricing 2026",
-        "vultr pricing 2026",
-        "cloudways pricing 2026",
-        "best cloud hosting for developers",
-        "digitalocean $200 credit",
-        "cloudways referral credit",
-        "cloudways digitalocean vs vultr",
-        "is cloudways owned by digitalocean",
-        "digitalocean pricing india gst",
-        "hostinger vps vs digitalocean",
-        "digitalocean alternatives india inr",
-        "cheapest vps india rupees billing",
-        "managed vs unmanaged vps hosting",
-        "digitalocean bangalore vs vultr mumbai latency",
-        "digitalocean $200 credit 60 days",
-        "cloudways hidden fees bandwidth overage",
-        "vps price per gb ram",
-        "how much ram does a wordpress vps need",
+
+        // SECONDARY — H2s and body
+        "digitalocean vs vultr", "digitalocean vs cloudways", "vultr vs cloudways",
+        "cheapest cloud vps 2026", "digitalocean pricing 2026", "vultr pricing 2026",
+        "cloudways pricing 2026", "digitalocean $200 credit",
+
+        // LONG-TAIL — FAQ and specific sections
+        "managed vs unmanaged cloud hosting", "best cloud hosting for developers",
+        "is cloudways owned by digitalocean", "cheapest vps india rupees billing",
+        "managed vs unmanaged vps hosting", "digitalocean bangalore vs vultr mumbai latency",
+        "digitalocean $200 credit 60 days", "cloudways hidden fees bandwidth overage",
+        "vps price per gb ram", "how much ram does a wordpress vps need", "cloudways free trial 3 days",
+
+        // SUPPORTING / semantic
+        "cloudways referral credit", "cloudways digitalocean vs vultr", "digitalocean pricing india gst",
+        "hostinger vps vs digitalocean", "digitalocean alternatives india inr",
         "cheapest digitalocean droplet",
-        "cloudways free trial 3 days",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

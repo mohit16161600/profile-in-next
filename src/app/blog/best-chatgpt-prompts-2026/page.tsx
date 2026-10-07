@@ -7,18 +7,20 @@ export const metadata: Metadata = {
   title: "70+ Best ChatGPT Prompts for 2026 (Copy & Paste List)",
   description:
     "Get 70+ best ChatGPT prompts for 2026 you can copy and paste: work, study, money, marketing, coding and writing. A mega list to 10x your ChatGPT results.",
-  keywords: [
-    "best chatgpt prompts",
-    "chatgpt prompts 2026",
-    "chatgpt prompts copy paste",
-    "best chatgpt prompts for work",
-    "chatgpt prompts for students",
-    "chatgpt prompts for business",
-    "useful chatgpt prompts list",
-    "chatgpt prompts to make money",
-    "chatgpt marketing prompts",
-    "chatgpt writing prompts 2026",
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "best chatgpt prompts",
+
+        // SECONDARY — H2s and body
+        "chatgpt prompts 2026", "chatgpt prompts copy paste", "chatgpt prompts for students",
+        "chatgpt prompts for business", "useful chatgpt prompts list", "chatgpt marketing prompts",
+        "chatgpt writing prompts 2026",
+
+        // LONG-TAIL — FAQ and specific sections
+        "best chatgpt prompts for work", "chatgpt prompts to make money",
+    ],
   alternates: {
     canonical: "https://mohitkoli.in/blog/best-chatgpt-prompts-2026",
   },

@@ -14,13 +14,19 @@ export const metadata: Metadata = {
   title: "How to Make Money Blogging for Beginners (2026 Guide)",
   description:
     "Learn how to start a blog and earn money in 2026. This complete beginner guide covers monetization, blogging tips for beginners, and income in India.",
-  keywords: [
-    "make money blogging for beginners",
-    "how to start a blog and earn money",
-    "blogging income in India",
-    "best ways to monetize a blog",
-    "blogging tips for beginners 2026",
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "how to make money blogging",
+
+        // SECONDARY — H2s and body
+        "blogging income in India",
+
+        // LONG-TAIL — FAQ and specific sections
+        "make money blogging for beginners", "how to start a blog and earn money",
+        "best ways to monetize a blog", "blogging tips for beginners 2026",
+    ],
   alternates: {
     canonical: CANONICAL,
   },

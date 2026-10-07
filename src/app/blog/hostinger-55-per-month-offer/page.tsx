@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 import RelatedPosts from "@/components/RelatedPosts";
+import VerdictCard from "@/components/VerdictCard";
 
 // Lands directly on the price table with the referral code already applied — the page
 // shows a "Referral code applied" badge, so the reader can verify the discount is real
@@ -19,37 +20,30 @@ export const metadata: Metadata = {
     title: TITLE,
     description:
         "₹55/mo is real, but it is one website and 10 GB — and it renews at ₹289. The full upfront total with GST, and whether Single is enough for you.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "hostinger 55 rupees",
-        "hostinger offer",
-        "hostinger 55 per month",
-        "cheapest web hosting india",
-        "hostinger single plan price",
-        "hostinger discount code 2026",
-        "hostinger 86 off",
-        "hostinger referral code",
-        "cheapest hosting india 2026",
-        "hostinger price india",
-        "hostinger lowest price",
-        "hostinger sale 2026",
-        "hostinger cheapest plan",
-        "hostinger single plan price india",
-        "hostinger 69 per month plan",
-        "is hostinger single plan enough",
-        "hostinger single vs premium",
-        "cheapest web hosting india 2026",
-        "hostinger price with gst india",
-        "hostinger monthly plan",
-        "hostinger yearly plan price",
-        "hostinger single plan free domain",
-        "hostinger single plan limits",
-        "how many visitors hostinger single plan",
-        "hostinger single plan renewal price 289",
-        "hostinger plans india",
-        "hostinger cheapest hosting plan for beginners",
-        "hostinger single plan wordpress",
-        "hostinger upgrade single to premium",
+        // PRIMARY
+        "hostinger 55 per month offer",
+
+        // SECONDARY — H2s and body
+        "hostinger 55 rupees", "hostinger 55 per month", "cheapest web hosting india",
+        "hostinger single plan price", "hostinger discount code 2026", "hostinger 86 off",
+        "hostinger referral code", "cheapest hosting india 2026",
+
+        // LONG-TAIL — FAQ and specific sections
+        "hostinger single plan price india", "hostinger 69 per month plan",
+        "is hostinger single plan enough", "cheapest web hosting india 2026",
+        "hostinger price with gst india", "hostinger single plan free domain",
+        "how many visitors hostinger single plan", "hostinger single plan renewal price 289",
+        "hostinger cheapest hosting plan for beginners", "hostinger upgrade single to premium",
         "hostinger total cost 48 months india",
+
+        // SUPPORTING / semantic
+        "hostinger offer", "hostinger price india", "hostinger lowest price", "hostinger sale 2026",
+        "hostinger cheapest plan", "hostinger single vs premium", "hostinger monthly plan",
+        "hostinger yearly plan price", "hostinger single plan limits", "hostinger plans india",
+        "hostinger single plan wordpress",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
@@ -1174,6 +1168,16 @@ export default function Hostinger55Offer() {
                             <li><Link href="/tools/hosting-cost-calculator" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Hosting cost calculator</Link> — model the term and renewal maths yourself.</li>
                         </ul>
                     </section>
+
+                    <VerdictCard
+
+                        items={[
+                            { name: "Hostinger Single plan", score: "4.5", body: "Single at ₹55.20/mo is the cheapest honest entry point in Indian shared hosting, but it is one website, 1 GB of RAM, two databases and 100 GB of bandwidth, billed four years upfront before 18% GST, and it renews at ₹289/mo. Correct for a single lean site; the wrong purchase for WooCommerce or a second project." },
+
+                        ]}
+
+                    />
+
 
                     <div className="glass rounded-xl shadow-sm p-6 border border-white/5">
                         <h2 className="text-lg font-bold text-white mb-4">Share this offer</h2>

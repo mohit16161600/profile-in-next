@@ -11,36 +11,29 @@ const CANONICAL = "https://mohitkoli.in/blog/how-to-get-hostinger-90-off-2026";
 export const metadata: Metadata = {
     title: "Hostinger 90% OFF 2026: Real Price ₹55/mo (83%+20%)",
     description:
-        "Hostinger's 90% OFF is an 83% sale plus an extra 20% discount. Real September 2026 India prices from ₹55/mo, GST-inclusive totals, and the renewal catch.",
+        "Hostinger's 90% OFF is an 83% sale plus an extra 20% discount. Real October 2026 India prices from ₹55/mo, GST-inclusive totals, and the renewal catch.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "hostinger 90 off",
-        "hostinger 90 percent off",
-        "hostinger referral code 2026",
-        "hostinger maximum discount",
-        "how to buy hostinger hosting",
-        "hostinger extra 20 percent off",
-        "hostinger free domain offer",
-        "hostinger lowest price india",
-        "hostinger deal 2026",
-        "hostinger referral discount stack",
-        "hostinger coupon code india",
-        "is hostinger 90 off real",
-        "hostinger maximum discount 48 months",
-        "hostinger price with gst india",
-        "hostinger renewal coupon code",
-        "can i use two hostinger coupons",
-        "hostinger coupon code not working",
-        "hostinger student discount india",
-        "hostinger black friday 2026 india",
-        "hostinger vps coupon code",
-        "hostinger free domain refund",
-        "hostinger domain renewal price in india",
-        "hostinger monthly plan price",
-        "hostinger unlimited plan price",
+
+        // SECONDARY — H2s and body
+        "hostinger 90 percent off", "hostinger referral code 2026", "hostinger maximum discount",
+        "hostinger free domain offer", "hostinger lowest price india", "hostinger deal 2026",
+        "hostinger referral discount stack", "hostinger coupon code india",
+
+        // LONG-TAIL — FAQ and specific sections
+        "how to buy hostinger hosting", "hostinger extra 20 percent off", "is hostinger 90 off real",
+        "hostinger maximum discount 48 months", "hostinger price with gst india",
+        "can i use two hostinger coupons", "hostinger coupon code not working",
+        "hostinger black friday 2026 india", "hostinger domain renewal price in india",
         "hostinger extra 20 percent off referral",
-        "cheapest hostinger plan india",
-        "hostinger single plan price",
-        "hostinger discount code",
+
+        // SUPPORTING / semantic
+        "hostinger renewal coupon code", "hostinger student discount india", "hostinger vps coupon code",
+        "hostinger free domain refund", "hostinger monthly plan price", "hostinger unlimited plan price",
+        "cheapest hostinger plan india", "hostinger single plan price", "hostinger discount code",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
@@ -94,7 +87,7 @@ const FAQ = [
     },
     {
         q: "Which plan and billing term gives the biggest discount?",
-        a: "The 48-month term always carries the deepest per-month discount. As of September 2026, Premium is ₹149/mo on the 48-month term (75% off ₹599) before the extra 20% is applied. Shorter terms get noticeably smaller discounts and monthly billing gets close to none, because the discount is really a four-year price lock rather than a giveaway.",
+        a: "The 48-month term always carries the deepest per-month discount. As of October 2026, Premium is ₹149/mo on the 48-month term (75% off ₹599) before the extra 20% is applied. Shorter terms get noticeably smaller discounts and monthly billing gets close to none, because the discount is really a four-year price lock rather than a giveaway.",
     },
     {
         q: "Do I get a free domain with the discount?",
@@ -140,7 +133,7 @@ const jsonLd = [
         "@type": "BlogPosting",
         headline: "Hostinger 90% OFF 2026: Real Price ₹55/mo (83%+20%)",
         description:
-            "Hostinger's 90% OFF headline is an 83% sale plus a separate 20% discount. Real September 2026 India prices, GST-inclusive checkout totals, renewal rates and the one-coupon-per-order rule.",
+            "Hostinger's 90% OFF headline is an 83% sale plus a separate 20% discount. Real October 2026 India prices, GST-inclusive checkout totals, renewal rates and the one-coupon-per-order rule.",
         image: "https://mohitkoli.in/assets/blog/how-to-get-hostinger-90-off-2026.png",
         datePublished: "2026-07-02T00:00:00.000Z",
         dateModified: "2026-09-07T00:00:00.000Z",
@@ -404,11 +397,11 @@ export default function Hostinger90OffGuide() {
                         48-month term and the cheapest plan on the Indian site goes from ₹399/mo to
                         <strong className="text-white"> ₹55.20/mo — about 86% off</strong>. That is the real number, and this page shows
                         the arithmetic behind it, the GST-inclusive total that actually leaves your bank account, and the renewal price
-                        nobody advertising &quot;90% OFF&quot; wants to talk about. Prices re-checked 7 September 2026.
+                        nobody advertising &quot;90% OFF&quot; wants to talk about. Prices re-checked 4 October 2026 against hostinger.com/in/web-hosting.
                     </p>
                     <p className="text-xs text-gray-500 mb-8 border-l-2 border-white/10 pl-3">
                         Disclosure: this post contains my referral link. If you buy through it I earn a commission at no extra cost to you —
-                        and you get the extra 20% discount that a direct visit does not. Prices below were checked on 7 September 2026 and
+                        and you get the extra 20% discount that a direct visit does not. Prices below were checked on 4 October 2026 and
                         change with Hostinger&apos;s sale cycles. All prices exclude 18% GST unless stated.
                     </p>
 
@@ -426,7 +419,7 @@ export default function Hostinger90OffGuide() {
                     {/* Coupon card */}
                     <section aria-label="Hostinger deal summary" className="mb-12">
                         <div className="rounded-3xl border-2 border-dashed border-purple-400/50 bg-gradient-to-br from-purple-900/30 via-indigo-900/20 to-black/40 p-8 text-center">
-                            <p className="text-sm uppercase tracking-[0.3em] text-purple-300 mb-2">Live Deal · September 2026</p>
+                            <p className="text-sm uppercase tracking-[0.3em] text-purple-300 mb-2">Live Deal · October 2026</p>
                             <p className="text-5xl md:text-6xl font-extrabold text-white mb-2">86% OFF TODAY</p>
                             <p className="text-gray-300 mb-1">
                                 Single: ₹399 → ₹69 sale <span className="text-white font-semibold">→ ₹55.20/mo with the extra 20%</span> · 48-month term
@@ -470,7 +463,7 @@ export default function Hostinger90OffGuide() {
 
                     {/* Plans */}
                     <section className="mb-12">
-                        <h2 className="text-3xl font-bold text-white mb-4">The lowest price you can actually pay in September 2026</h2>
+                        <h2 className="text-3xl font-bold text-white mb-4">The lowest price you can actually pay in October 2026</h2>
                         <p className="text-gray-300 leading-8 mb-6">
                             Every figure below is the 48-month term, pre-GST. The &quot;stacked&quot; column is the sale price with the extra
                             20% applied — the lowest legitimate number on the Indian site. The renewal column is the one to read twice, because
@@ -963,7 +956,7 @@ export default function Hostinger90OffGuide() {
                     <section className="mb-10">
                         <h2 className="text-2xl font-bold text-white mb-4">Keep reading (hosting series)</h2>
                         <ul className="space-y-3 text-primary-400">
-                            <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — honest verdict after a year of client sites</Link></li>
+                            <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — what the pricing page does not say</Link></li>
                             <li><Link href="/blog/hostinger-renewal-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Renewal Price in India — lock the discount before it matters</Link></li>
                             <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing India 2026 — which plan should you actually buy?</Link></li>
                             <li><Link href="/blog/hostinger-domain-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Domain Price India 2026 — .com, .in &amp; .store real costs</Link></li>

@@ -10,26 +10,44 @@ const IMAGE = "https://mohitkoli.in/assets/blog/cloudways-review-2026.png";
 const PUBLISHED = "2026-08-24T00:00:00.000Z";
 const MODIFIED = "2026-09-07T00:00:00.000Z";
 
-const TITLE = "Cloudways Review 2026: What $11/mo Really Costs in India";
+const TITLE = "Cloudways Review India 2026: When $11/mo Becomes $25";
 
 export const metadata: Metadata = {
     title: TITLE,
     description:
         "Cloudways starts at $11/mo. The real India bill after forex, the 3-day free trial, Autonomous at $99, add-on costs, and when Hostinger KVM wins instead.",
+    // Keyword tiers — PRIMARY must stay in title, H1 and intro.
     keywords: [
-        "cloudways review", "cloudways review 2026", "cloudways pricing", "is cloudways worth it",
-        "cloudways vs digitalocean", "cloudways india", "cloudways managed hosting review",
-        "cloudways wordpress hosting", "cloudways alternatives", "cloudways referral credit",
-        "managed cloud hosting review", "cloudways pros and cons",
-        "cloudways pricing india", "cloudways price per month in rupees", "how much does cloudways cost",
-        "cloudways vs hostinger", "cloudways flexible vs autonomous", "cloudways autonomous pricing",
-        "cloudways free trial 3 days", "does cloudways have cpanel", "does cloudways include email hosting",
-        "cloudways hidden fees", "cloudways true monthly cost", "cloudways alternatives india",
-        "cloudways vs kinsta", "cloudways vs vultr", "cloudways promo code 2026",
-        "cloudways referral $25 credit", "cloudways node js hosting", "cloudways bangalore data center",
-        "cloudways gst invoice india", "cloudways complaints", "cloudways review india",
-        "managed cloud hosting india", "cloudways rackspace email addon",
-        "cloudways cloudflare enterprise addon price", "cloudways owned by digitalocean",
+        // PRIMARY
+        "cloudways review",
+
+        // SECONDARY — H2s and body
+        "cloudways pricing india", "cloudways vs digitalocean", "is cloudways worth it", "cloudways india",
+        "cloudways hidden fees", "cloudways true monthly cost", "cloudways flexible vs autonomous",
+
+        // LONG-TAIL — FAQ and specific sections
+        "cloudways price per month in rupees", "does cloudways have cpanel",
+        "does cloudways include email hosting", "cloudways free trial 3 days",
+        "how much does cloudways cost", "cloudways autonomous pricing", "cloudways referral credit",
+
+        // SUPPORTING / semantic
+        "cloudways pricing",
+        "cloudways managed hosting review",
+        "cloudways alternatives",
+        "cloudways promo code 2026",
+        "cloudways referral $25 credit",
+        "cloudways node js hosting",
+        "cloudways bangalore data center",
+        "cloudways gst invoice india",
+        "cloudways complaints",
+        "cloudways review india",
+        "managed cloud hosting india",
+        "cloudways rackspace email addon",
+        "cloudways cloudflare enterprise addon price",
+        "cloudways owned by digitalocean",
+        "cloudways review 2026", "cloudways vs hostinger", "cloudways vs kinsta", "cloudways vs vultr",
+        "cloudways alternatives india", "managed cloud hosting review", "cloudways wordpress hosting",
+        "cloudways pros and cons",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

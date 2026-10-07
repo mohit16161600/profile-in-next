@@ -73,7 +73,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 63,
-        title: "Company Wala Email Sirf ₹23/mo: 84% Off Ka Poora Hisaab",
+        title: "Hostinger Business Email ₹23/mo: 84% Off Ka Hisaab",
         description: "name@apnibrand.com ₹23.20/mo par. Teeno plan ka storage, renewal rate, aur kitni GB aapko sach me chahiye — bina bakwaas ke.",
         date: "September 20, 2026",
         updated: "September 20, 2026",
@@ -94,7 +94,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 64,
-        title: "n8n Self-Host Sirf ₹479/mo: Unlimited Workflows, Fix Bill",
+        title: "n8n Hosting India ₹479/mo: Unlimited Workflows, Fix Bill",
         description: "Har Hostinger VPS plan me n8n free included. KVM 1 ₹479.20/mo, execution ke hisaab se paisa nahi. Kaunsa plan lena hai aur kya galat ho sakta hai.",
         date: "September 20, 2026",
         updated: "September 20, 2026",
@@ -115,7 +115,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 65,
-        title: "AI Se Website ₹119/mo: 5 Credits Ka Sach Pehle Padh Lein",
+        title: "Hostinger AI Builder ₹119/mo: 5 Credits Ka Sach",
         description: "Hostinger AI Builder prompt se site bana deta hai. Premium ₹119.20/mo, par AI credits one-time milte hain — har mahine nahi. Poora sach.",
         date: "September 20, 2026",
         updated: "September 20, 2026",
@@ -178,7 +178,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 68,
-        title: "Gemini 3.1 Ke 7 Chhupe Feature: Thinking Max Aur Agentic Vision",
+        title: "Gemini 3.1 Pro Ke 7 Chhupe Feature: Thinking Max Aur Vision",
         description: "Gemini 3.1 Pro me Canvas, Gems, Agentic Vision aur thinking_level max — wo feature jo 90% log kholte hi nahi. Kab kaunsa use karna hai, seedha bataya.",
         date: "October 4, 2026",
         updated: "October 4, 2026",
@@ -1164,7 +1164,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 17,
-        title: "ChatGPT vs Gemini vs Claude: The Ultimate 2026 AI Showdown",
+        title: "ChatGPT vs Gemini vs Claude 2026: Which One for Which Job",
         description: "ChatGPT, Gemini and Claude compared for 2026 on coding, writing, reasoning and price — with a clear recommendation for each kind of work.",
         date: "April 25, 2026",
         updated: "September 14, 2026",
@@ -1270,7 +1270,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     {
         id: 12,
-        title: "Best AI Tools to Make Money Online in 2026: 10 Proven Picks",
+        title: "Best AI Tools to Make Money Online 2026: 10 Honest Picks",
         description: "Discover the best AI tools to make money online in 2026 with proven side hustles, income ideas, real examples, and beginner-friendly strategies.",
         date: "March 25, 2026",
         updated: "September 14, 2026",

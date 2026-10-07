@@ -16,25 +16,26 @@ import {
 
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-ai-builder-se-website-kaise-banaye";
 const IMAGE = "https://mohitkoli.in/assets/blog/how-to-build-ai-agent-no-code-2026.png";
-const TITLE = "AI Se Website ₹119/mo: 5 Credits Ka Sach Pehle Padh Lein";
+const TITLE = "Hostinger AI Builder ₹119/mo: 5 Credits Ka Sach";
 const DESCRIPTION =
     "Hostinger AI Builder prompt se site bana deta hai. Premium ₹119.20/mo, par AI credits one-time milte hain — har mahine nahi. Poora sach, Sept 2026 verified.";
 
 export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "hostinger ai builder",
-        "ai se website kaise banaye",
-        "hostinger ai website builder price",
-        "bina code website kaise banaye",
-        "ai website builder india",
-        "hostinger ai credits",
-        "prompt se website banana",
-        "hostinger website builder price india",
-        "vibe coding website",
-        "ai builder vs wordpress",
-        "sasta website builder india",
+
+        // SECONDARY — H2s and body
+        "ai website builder india", "hostinger ai credits", "prompt se website banana",
+        "vibe coding website", "ai builder vs wordpress", "sasta website builder india",
+
+        // LONG-TAIL — FAQ and specific sections
+        "ai se website kaise banaye", "hostinger ai website builder price",
+        "bina code website kaise banaye", "hostinger website builder price india",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

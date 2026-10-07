@@ -7,24 +7,24 @@ import RelatedPosts from "@/components/RelatedPosts";
 export const metadata: Metadata = {
   title: "ChatGPT Hidden Features 2026: God Mode Prompt + Pro Hacks",
   description: "Copy the ChatGPT god mode prompt (2026) and unlock the hidden ChatGPT features most users never find — memory hacks, JSON mode, SVG tricks and pro AI workflows.",
-  keywords: [
-    "chatgpt god mode prompt 2026",
-    "chatgpt god mode prompt",
-    "ChatGPT hidden features",
-    "chatgpt hidden features 2026",
-    "hidden chatgpt features",
-    "ChatGPT God Mode",
-    "ChatGPT hacks",
-    "Advanced ChatGPT features",
-    "AI productivity hacks",
-    "Hidden ChatGPT tricks",
-    "ChatGPT developer tricks",
-    "ChatGPT secret modes",
-    "ChatGPT custom instructions prompt",
-    "ChatGPT prompts 2026",
-    "how to use ChatGPT better",
-    "AI tools 2026"
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "chatgpt god mode prompt 2026",
+
+        // SECONDARY — H2s and body
+        "chatgpt god mode prompt", "ChatGPT hidden features", "chatgpt hidden features 2026",
+        "hidden chatgpt features", "ChatGPT God Mode", "Advanced ChatGPT features", "AI productivity hacks",
+        "Hidden ChatGPT tricks",
+
+        // LONG-TAIL — FAQ and specific sections
+        "how to use ChatGPT better",
+
+        // SUPPORTING / semantic
+        "ChatGPT hacks", "ChatGPT developer tricks", "ChatGPT secret modes",
+        "ChatGPT custom instructions prompt", "ChatGPT prompts 2026", "AI tools 2026",
+    ],
   alternates: {
     canonical: "https://mohitkoli.in/blog/chatgpt-hidden-features-hacks",
   },

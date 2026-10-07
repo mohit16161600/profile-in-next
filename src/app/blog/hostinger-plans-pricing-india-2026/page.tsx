@@ -21,26 +21,24 @@ export const metadata: Metadata = {
     title: "Hostinger Plans India 2026: Sale Price vs Renewal Price",
     description:
         "₹149 becomes ₹449 the day your term ends. Every Hostinger India plan's real 4-year cost, which tier is a waste, and why monthly billing costs 4x more.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "hostinger plans india",
-        "hostinger india plans",
-        "hostinger plan india",
-        "hostinger pricing",
-        "hostinger pricing plans",
-        "hostinger plans",
-        "hostinger price in india",
-        "hostinger price list india 2026",
-        "hostinger hosting prices",
-        "hostinger premium web hosting price",
-        "hostinger business plan pricing",
-        "hostinger subscription plan",
-        "hostinger pay monthly",
-        "hostinger 2 year plan",
-        "how much is hosting on hostinger",
-        "hostinger business email pricing india 2026",
-        "hostinger bd price",
-        "hostinger renewal price",
-        "hostinger kvm plans",
+
+        // SECONDARY — H2s and body
+        "hostinger india plans", "hostinger plan india", "hostinger pricing plans",
+        "hostinger price in india", "hostinger hosting prices", "hostinger business plan pricing",
+        "hostinger subscription plan", "hostinger pay monthly",
+
+        // LONG-TAIL — FAQ and specific sections
+        "hostinger price list india 2026", "hostinger premium web hosting price",
+        "how much is hosting on hostinger", "hostinger business email pricing india 2026",
+
+        // SUPPORTING / semantic
+        "hostinger pricing", "hostinger plans", "hostinger 2 year plan", "hostinger bd price",
+        "hostinger renewal price", "hostinger kvm plans",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

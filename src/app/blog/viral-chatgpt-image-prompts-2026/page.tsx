@@ -7,18 +7,20 @@ export const metadata: Metadata = {
   title: "50 Viral ChatGPT Image Prompts Everyone Uses in 2026",
   description:
     "Copy 50 viral ChatGPT image prompts for 2026 — memory caricature, pet-to-human, anti-AI film look and double-exposure edits. Free copy-paste list.",
-  keywords: [
-    "viral chatgpt image prompts",
-    "chatgpt image prompts 2026",
-    "trending ai photo prompts",
-    "chatgpt action figure prompt",
-    "polaroid ai prompt chatgpt",
-    "caricature chatgpt prompt",
-    "best chatgpt image prompts copy paste",
-    "ai photo trend prompts 2026",
-    "chatgpt dalle prompts list",
-    "toy figure ai prompt",
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "viral chatgpt image prompts",
+
+        // SECONDARY — H2s and body
+        "chatgpt image prompts 2026", "trending ai photo prompts", "chatgpt action figure prompt",
+        "polaroid ai prompt chatgpt", "caricature chatgpt prompt", "chatgpt dalle prompts list",
+        "toy figure ai prompt",
+
+        // LONG-TAIL — FAQ and specific sections
+        "best chatgpt image prompts copy paste", "ai photo trend prompts 2026",
+    ],
   alternates: {
     canonical: "https://mohitkoli.in/blog/viral-chatgpt-image-prompts-2026",
   },

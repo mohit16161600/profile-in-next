@@ -13,20 +13,23 @@ export const metadata: Metadata = {
   title: "What Happened to Sora? OpenAI Shut It Down (2026)",
   description:
     "Sora 2 invite codes no longer exist — OpenAI discontinued the Sora app on 26 April 2026. What happened, why, and the best alternatives to use instead.",
-  keywords: [
-    "what happened to sora",
-    "sora shut down",
-    "is sora 2 still available",
-    "sora 2 invite code",
-    "sora 2 invite code 2026",
-    "openai sora discontinued",
-    "why did openai shut down sora",
-    "sora alternatives",
-    "best sora alternative 2026",
-    "sora 2 india",
-    "sora invite code scam",
-    "ai video generator after sora",
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "what happened to sora",
+
+        // SECONDARY — H2s and body
+        "sora shut down", "sora 2 invite code", "openai sora discontinued", "best sora alternative 2026",
+        "sora 2 india", "sora invite code scam",
+
+        // LONG-TAIL — FAQ and specific sections
+        "what happened to sora", "is sora 2 still available", "sora 2 invite code 2026",
+        "why did openai shut down sora", "ai video generator after sora",
+
+        // SUPPORTING / semantic
+        "sora alternatives",
+    ],
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "What Happened to Sora? OpenAI Shut It Down (2026)",

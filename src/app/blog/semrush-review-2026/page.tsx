@@ -15,12 +15,23 @@ export const metadata: Metadata = {
     title: "Semrush Price in India 2026: ₹1.6 Lakh a Year After GST",
     description:
         "Nobody quotes the 18% GST or the forex markup. Every Semrush tier in ₹, the $45/user seat trap, and the cheaper tools that do the same job for Indian sites.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "semrush review", "semrush review 2026", "semrush price india", "is semrush worth it",
-        "semrush pricing", "semrush free trial", "semrush vs ahrefs", "semrush alternatives",
-        "semrush for beginners", "semrush keyword magic tool", "semrush india cost", "semrush pros and cons",
-        "semrush one", "semrush adobe", "semrush ai visibility toolkit",
-        "semrush pricing india", "semrush india pricing", "semrush price in india", "semrush india",
+        // PRIMARY
+        "semrush pricing india",
+
+        // SECONDARY — H2s and body
+        "semrush review 2026", "semrush price india", "semrush free trial", "semrush vs ahrefs",
+        "semrush for beginners", "semrush keyword magic tool", "semrush india cost",
+        "semrush pros and cons",
+
+        // LONG-TAIL — FAQ and specific sections
+        "is semrush worth it",
+
+        // SUPPORTING / semantic
+        "semrush review", "semrush pricing", "semrush alternatives", "semrush one", "semrush adobe",
+        "semrush ai visibility toolkit", "semrush india pricing", "semrush price in india", "semrush india",
         "semrush cost in india", "semrush gst india", "semrush plans price",
     ],
     alternates: { canonical: CANONICAL },

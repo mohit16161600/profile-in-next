@@ -26,20 +26,31 @@ export const metadata: Metadata = {
     title: "Shopify vs WooCommerce India 2026: ₹1,769 vs ₹176/mo",
     description:
         "Shopify Basic is ₹1,769/mo with GST plus 2.36% per order — Shopify Payments still is not in India. WooCommerce: ₹176/mo hosting. The full 2026 math.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "shopify vs woocommerce", "shopify vs woocommerce india", "shopify price india",
-        "woocommerce cost india", "shopify transaction fee india", "shopify payments india",
-        "best ecommerce platform india", "woocommerce vs shopify 2026", "cheapest way to start online store india",
-        "shopify alternatives india", "ecommerce website cost india", "online store monthly cost",
-        "shopify pricing india 2026", "how much does shopify cost per month in india",
-        "woocommerce india setup cost", "shopify vs woocommerce which is cheaper",
-        "shopify grow plan india price", "shopify plus price india", "does shopify charge gst in india",
-        "woocommerce gst invoice india", "shopify vs woocommerce seo",
-        "shopify vs woocommerce speed core web vitals", "woocommerce hosting requirements india",
-        "does woocommerce need vps", "migrate shopify to woocommerce", "cash on delivery woocommerce india",
-        "rto cost cod ecommerce india", "razorpay vs cashfree vs payu fees",
-        "best ecommerce platform india 2026", "shopify vs woocommerce for d2c brands india",
-        "shopify vs woocommerce dropshipping india", "is shopify worth it for small business india",
+        // PRIMARY
+        "shopify vs woocommerce india",
+
+        // SECONDARY — H2s and body
+        "shopify vs woocommerce", "shopify price india", "woocommerce cost india",
+        "shopify transaction fee india", "shopify payments india", "best ecommerce platform india",
+        "woocommerce vs shopify 2026", "shopify alternatives india",
+
+        // LONG-TAIL — FAQ and specific sections
+        "cheapest way to start online store india", "how much does shopify cost per month in india",
+        "shopify vs woocommerce which is cheaper", "shopify grow plan india price",
+        "does shopify charge gst in india", "shopify vs woocommerce speed core web vitals",
+        "does woocommerce need vps", "cash on delivery woocommerce india", "rto cost cod ecommerce india",
+        "razorpay vs cashfree vs payu fees", "best ecommerce platform india 2026",
+        "shopify vs woocommerce for d2c brands india", "shopify vs woocommerce dropshipping india",
+        "is shopify worth it for small business india",
+
+        // SUPPORTING / semantic
+        "ecommerce website cost india", "online store monthly cost", "shopify pricing india 2026",
+        "woocommerce india setup cost", "shopify plus price india", "woocommerce gst invoice india",
+        "shopify vs woocommerce seo", "woocommerce hosting requirements india",
+        "migrate shopify to woocommerce",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

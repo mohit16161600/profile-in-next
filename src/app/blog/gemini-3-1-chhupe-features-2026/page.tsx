@@ -8,25 +8,25 @@ const IMAGE = "https://mohitkoli.in/assets/blog/chatgpt-hidden-features-hacks.pn
 const PUBLISHED = "2026-10-04T00:00:00.000Z";
 const VERIFIED = "4 October 2026";
 
-const TITLE = "Gemini 3.1 Ke 7 Chhupe Feature: Thinking Max Aur Agentic Vision";
+const TITLE = "Gemini 3.1 Pro Ke 7 Chhupe Feature: Thinking Max Aur Vision";
 const DESCRIPTION =
     "Gemini 3.1 Pro me Canvas, Gems, Agentic Vision aur thinking_level max — wo feature jo 90% log kholte hi nahi. Copy-paste prompts ke saath, Oct 2026 verified.";
 
 export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "gemini 3.1 pro features",
-        "gemini hidden features",
-        "gemini tips and tricks 2026",
-        "gemini 3.1 kya hai",
-        "gemini canvas kaise use kare",
-        "gemini gems kya hai",
-        "agentic vision gemini",
-        "gemini thinking level",
-        "gemini 3.1 pro vs chatgpt",
-        "gemini chhupe features",
-        "google gemini hacks hindi",
+
+        // SECONDARY — H2s and body
+        "gemini hidden features", "gemini 3.1 kya hai", "gemini gems kya hai", "agentic vision gemini",
+        "gemini thinking level", "gemini chhupe features", "google gemini hacks hindi",
+
+        // LONG-TAIL — FAQ and specific sections
+        "gemini tips and tricks 2026", "gemini canvas kaise use kare", "gemini 3.1 pro vs chatgpt",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

@@ -472,3 +472,99 @@ Target:          the ~39 impressions on account-change and ownership queries
 Result:          pending
 ```
 
+
+---
+
+## 2026-10-07 — Batch 5: keyword tiers + CTR titles across the remaining pages
+
+**NOT COMMITTED.** Working tree only — Mohit commits.
+
+### Keyword tiering — all 52 pages
+
+Every flat `keywords` array is now split into PRIMARY / SECONDARY / LONG-TAIL /
+SUPPORTING, via `scripts/tier-keywords.mjs`.
+
+The meta keywords tag carries no ranking weight on its own. The point of the
+exercise is the **one explicit PRIMARY term per page**, which the title, H1 and
+intro are then checked against — that check is what actually matters.
+
+PRIMARY was never guessed. Where Search Console shows what a page really ranks
+for, that query became the primary (38 pages mapped explicitly in the script).
+
+### Primary-in-title audit
+
+A new check compares each page's PRIMARY against its rendered title and H1.
+
+| | Before | After |
+|---|---|---|
+| PRIMARY weak in both title and H1 | 10 | **2** |
+| Titles over 62 characters | 1 | **0** |
+
+The 2 remaining are matcher artefacts, not real gaps:
+`hostinger-55-per-month-offer` ("₹55/mo" vs "55 per month" — and it is the site's
+best CTR at 8%, so it stays untouched) and `gemini-3-1-chhupe-features-2026`.
+
+### Titles fixed because the product name was missing entirely
+
+These pages never named their own product in the title, so they could not match
+the query they exist for:
+
+| Page | Was | Now |
+|---|---|---|
+| hostinger-ai-builder-se-website-kaise-banaye | AI Se Website ₹119/mo: 5 Credits Ka Sach Pehle Padh Lein | Hostinger AI Builder ₹119/mo: 5 Credits Ka Sach |
+| hostinger-business-email-price-india-2026 | Company Wala Email Sirf ₹23/mo: 84% Off Ka Poora Hisaab | Hostinger Business Email ₹23/mo: 84% Off Ka Hisaab |
+| hostinger-n8n-hosting-india-2026 | n8n Self-Host Sirf ₹479/mo: Unlimited Workflows, Fix Bill | n8n Hosting India ₹479/mo: Unlimited Workflows, Fix Bill |
+| gemini-3-1-chhupe-features-2026 | Gemini 3.1 Ke 7 Chhupe Feature… | Gemini 3.1 **Pro** Ke 7 Chhupe Feature: Thinking Max Aur Vision |
+
+All three Hostinger pages have zero impressions in three months. Each is 3–17
+days old, but a title with no product name in it was never going to match
+`hostinger ai builder`, `hostinger business email price` or `n8n hosting india`.
+
+### CTR titles (EXP-020 … EXP-024)
+
+| EXP | Page | Impr | Clicks | Pos | New title | Hook source |
+|---|---|---|---|---|---|---|
+| 020 | namecheap-vs-godaddy | 33 | **0** | 7.06 | Namecheap vs GoDaddy India: UPI, GST and the 5-Year Cost | Page has sections "Does Namecheap accept UPI?" and "GST invoices and input tax credit" — unique to India, and the title hid both. |
+| 021 | shopify-review-india-2026 | 71 | 1 | 9.8 | Shopify Review India 2026: The 2% Every Order Costs You | "the Catch" said nothing. The catch is specific and verified on the page: Shopify Payments does not work in India, so 2% applies to every order. |
+| 022 | cloudways-review-2026 | 53 | 1 | 7.62 | Cloudways Review India 2026: When $11/mo Becomes $25 | The page's strongest section is literally "The Add-Ons: What Turns an $11 Bill Into a $25 One". |
+| 023 | chatgpt-vs-gemini-vs-claude-best-ai-2026 | 18 | 1 | 11.67 | ChatGPT vs Gemini vs Claude 2026: Which One for Which Job | "The Ultimate AI Showdown" is hype that promises nothing specific. |
+| 024 | hostinger-discount-code-2026 | 1 | 0 | 26 | Hostinger Coupon Codes: Why Most Do Not Work in 2026 | The old title promised a code; the page's own answer is that coupon codes are dead and the referral is what works. Title and content were arguing opposite things. |
+
+### An unsupported claim removed
+
+`best-ai-tools-to-make-money-online-2026` was titled "10 **Proven** Picks".
+Proven by whom, against what? Nothing on the page substantiates it. Now
+"10 Honest Picks".
+
+### A claim checked and kept
+
+`how-to-get-sora-2-invite-code-2026` is titled "What Happened to Sora? OpenAI
+Shut It Down (2026)". Verified: OpenAI announced Sora's discontinuation on
+24 March 2026, the apps closed 26 April 2026, and the API closes 24 September
+2026. The claim is accurate and stays.
+
+Its PRIMARY keyword was `sora invite code`, which is now meaningless — nobody
+needs an invite to a discontinued product. Changed to `what happened to sora`.
+
+### Two other PRIMARY corrections
+
+- `hostinger-vps-review-hindi-2026`: was `hostinger vps review in hindi`. Mohit
+  has said not to use "review in Hindi" labels, so the page's own primary term
+  contradicted that. Now `hostinger vps price india`.
+- `domain-kaise-kharide-galtiyan-2026`: was `domain kaise kharide`, but the page
+  argues you should not buy a domain separately at all. Now
+  `free domain with hosting india`, which is what it actually says.
+
+### Deliberately left alone
+
+| Page | Impr | CTR | Why |
+|---|---|---|---|
+| godaddy-renewal-price-increase-india | 95 | 1.05% @ 8.99 | Title already differentiator-led ("Why Cost Jumps 2–4×"), description carries real numbers. CTR is in the normal band for position 9. Changing a working page is churn. |
+| best-web-hosting-india-2026 | 75 | **4.0%** | Second-best CTR on the site. |
+| hostinger-55-per-month-offer | 25 | **8.0%** | Best CTR on the site. |
+| chatgpt-hidden-features-hacks, viral-chatgpt-image-prompts-2026, homepage | — | — | Control group until 4 Nov. |
+
+### Build
+
+Compiled successfully. 0 titles over 62 characters. 52 pages carry tiered keywords.
+

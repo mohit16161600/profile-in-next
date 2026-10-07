@@ -9,31 +9,30 @@ const PUBLISHED = "2026-04-25T00:00:00.000Z";
 const MODIFIED = "2026-09-14T00:00:00.000Z";
 
 export const metadata: Metadata = {
-  title: "ChatGPT vs Gemini vs Claude: The Ultimate 2026 AI Showdown",
+  title: "ChatGPT vs Gemini vs Claude 2026: Which One for Which Job",
   description:
     "ChatGPT (GPT-6 Astra), Gemini 3.1 Pro and Claude Fable 5.1 compared for 2026 on coding, writing, reasoning and price, with a clear pick for each task.",
-  keywords: [
-    "ChatGPT vs Gemini vs Claude",
-    "best AI in 2026",
-    "ChatGPT vs Gemini",
-    "Claude vs ChatGPT",
-    "Gemini AI review",
-    "Claude AI review",
-    "which AI is best",
-    "best AI chatbot",
-    "AI tools comparison",
-    "ChatGPT alternatives",
-    "Google Gemini vs ChatGPT",
-    "Anthropic Claude vs OpenAI ChatGPT",
-    "GPT-6 Astra",
-    "Claude Fable 5.1",
-    "Gemini 3.1 Pro",
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "ChatGPT vs Gemini vs Claude",
+
+        // SECONDARY — H2s and body
+        "best AI in 2026", "ChatGPT vs Gemini", "Claude vs ChatGPT", "Gemini AI review", "Claude AI review",
+        "best AI chatbot", "AI tools comparison", "Google Gemini vs ChatGPT",
+
+        // LONG-TAIL — FAQ and specific sections
+        "which AI is best", "Anthropic Claude vs OpenAI ChatGPT",
+
+        // SUPPORTING / semantic
+        "ChatGPT alternatives", "GPT-6 Astra", "Claude Fable 5.1", "Gemini 3.1 Pro",
+    ],
   alternates: {
     canonical: CANONICAL,
   },
   openGraph: {
-    title: "ChatGPT vs Gemini vs Claude: The Ultimate 2026 AI Showdown",
+    title: "ChatGPT vs Gemini vs Claude 2026: Which One for Which Job",
     description:
       "ChatGPT (GPT-6 Astra), Gemini 3.1 Pro and Claude Fable 5.1 compared for 2026 on coding, writing, reasoning and price, with a clear pick for each task.",
     url: CANONICAL,
@@ -44,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ChatGPT vs Gemini vs Claude: The Ultimate 2026 AI Showdown",
+    title: "ChatGPT vs Gemini vs Claude 2026: Which One for Which Job",
     description:
       "ChatGPT, Gemini and Claude compared on coding, writing, reasoning and price — with a clear winner for each job.",
     images: [IMAGE],
@@ -105,7 +104,7 @@ export default function AIComparison2026() {
             {
               "@context": "https://schema.org",
               "@type": "BlogPosting",
-              headline: "ChatGPT vs Gemini vs Claude: The Ultimate 2026 AI Showdown",
+              headline: "ChatGPT vs Gemini vs Claude 2026: Which One for Which Job",
               description:
                 "Discover the best AI in 2026. We compare ChatGPT, Google Gemini, and Anthropic Claude on coding, writing, and accuracy.",
               image: IMAGE,
@@ -164,7 +163,7 @@ export default function AIComparison2026() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="mb-10 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-            ChatGPT vs Gemini vs Claude: The Ultimate 2026 AI Showdown
+            ChatGPT vs Gemini vs Claude 2026: Which One for Which Job
           </h1>
           <div className="flex items-center justify-center gap-4 text-gray-400 text-sm mb-8">
             <span>By Mohit Koli</span>

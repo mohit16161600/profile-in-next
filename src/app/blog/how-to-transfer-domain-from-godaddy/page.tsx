@@ -12,24 +12,35 @@ export const metadata: Metadata = {
     title: "Transfer Domain From GoDaddy: 6 Steps, ₹969, No Downtime",
     description:
         "Move your domain off GoDaddy in 6 steps and 5–7 days. ₹969 at Hostinger plus GST — and the nameserver step that keeps your site and email online.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "transfer domain from godaddy", "how to transfer domain from godaddy", "godaddy domain transfer",
-        "godaddy transfer authorization code", "move domain away from godaddy", "godaddy to namecheap transfer",
-        "domain transfer 60 day rule", "domain transfer without downtime", "godaddy epp code",
-        "domain transfer cost", "unlock domain godaddy", "godaddy alternative registrar",
-        "can you transfer domain from godaddy", "transfer domain from godaddy to namecheap",
-        "transfer domain from godaddy to hostinger", "how to transfer my domain from godaddy",
-        "transfer my domain away from godaddy", "godaddy domain transfer authorization code",
-        "godaddy domain transfer cost india", "godaddy domain renewal price india",
-        "godaddy 60 day transfer lock", "how to avoid godaddy 60 day transfer lock",
-        "transfer domain to another godaddy account", "godaddy domain push",
+        // PRIMARY
+        "transfer domain from godaddy",
+
+        // SECONDARY — H2s and body
+        "godaddy domain transfer", "godaddy transfer authorization code", "godaddy to namecheap transfer",
+        "domain transfer without downtime", "godaddy epp code", "domain transfer cost",
+        "unlock domain godaddy", "godaddy alternative registrar",
+
+        // LONG-TAIL — FAQ and specific sections
+        "how to transfer domain from godaddy", "move domain away from godaddy",
+        "domain transfer 60 day rule", "can you transfer domain from godaddy",
+        "transfer domain from godaddy to namecheap", "transfer domain from godaddy to hostinger",
+        "how to transfer my domain from godaddy", "transfer my domain away from godaddy",
+        "godaddy domain transfer authorization code", "godaddy domain transfer cost india",
+        "godaddy domain renewal price india", "godaddy 60 day transfer lock",
+        "how to avoid godaddy 60 day transfer lock", "transfer domain to another godaddy account",
         "move domain from godaddy without interrupting email",
-        "godaddy privacy protection blocking transfer", "domains by proxy cancel",
-        "domain transfer stuck or pending", "clienttransferprohibited meaning",
+        "godaddy privacy protection blocking transfer", "domain transfer stuck or pending",
         "cancel godaddy domain transfer refund", "bulk transfer domains from godaddy",
         "how long does a godaddy domain transfer take", "transfer .in domain from godaddy",
-        "hostinger domain transfer price india", "godaddy domain transfer status",
-        "godaddy domain transfer without downtime india", "domain transfer mx records email",
+        "hostinger domain transfer price india", "godaddy domain transfer without downtime india",
+        "domain transfer mx records email",
+
+        // SUPPORTING / semantic
+        "godaddy domain push", "domains by proxy cancel", "clienttransferprohibited meaning",
+        "godaddy domain transfer status",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

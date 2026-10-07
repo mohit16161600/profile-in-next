@@ -11,22 +11,21 @@ export const metadata: Metadata = {
     title: "Best Web Hosting in India 2026: Top 7 Ranked (From ₹149/mo)",
     description:
         "Most lists rank on the intro price. These 7 Indian hosts are ranked on what they cost at renewal — including the two I would not buy, and why.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "best web hosting india",
-        "best web hosting india 2026",
-        "best web hosting in india",
-        "best hosting provider in india",
-        "best hosting provider in india 2026",
-        "best hosting provider in india 2022",
-        "which web hosting is best in india",
-        "which hosting is cheapest in india",
-        "cheapest hosting in india",
-        "cheapest web hosting india",
-        "best hosting for beginners india",
-        "best wordpress hosting india",
-        "web hosting india price comparison",
-        "web hosting comparison india 2026",
-        "best hosting for small business india",
+
+        // SECONDARY — H2s and body
+        "cheapest hosting in india", "cheapest web hosting india", "best wordpress hosting india",
+
+        // LONG-TAIL — FAQ and specific sections
+        "best web hosting india 2026", "best web hosting in india", "best hosting provider in india",
+        "best hosting provider in india 2026", "best hosting provider in india 2022",
+        "which web hosting is best in india", "which hosting is cheapest in india",
+        "best hosting for beginners india", "web hosting india price comparison",
+        "web hosting comparison india 2026", "best hosting for small business india",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
@@ -617,7 +616,7 @@ export default function BestWebHostingIndia() {
                             <li><Link href="/blog/hostinger-discount-code-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Discount Code 2026 — every working way to pay less</Link></li>
                             <li><Link href="/blog/how-to-get-hostinger-90-off-2026" className="hover:text-primary-300 underline underline-offset-4">How to Get 90% OFF on Hostinger — the discount-stacking walkthrough</Link></li>
                             <li><Link href="/blog/hostinger-plans-pricing-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Plans &amp; Pricing India 2026 — which plan to buy</Link></li>
-                            <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — honest verdict after a year of real sites</Link></li>
+                            <li><Link href="/blog/hostinger-review-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Review 2026 — what the pricing page does not say</Link></li>
                             <li><Link href="/blog/hostinger-domain-price-india-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger Domain Price India 2026 — .com, .in &amp; .store real costs</Link></li>
                             <li><Link href="/blog/hostinger-vs-godaddy-vs-bluehost-2026" className="hover:text-primary-300 underline underline-offset-4">Hostinger vs GoDaddy vs Bluehost — the detailed head-to-head</Link></li>
                             <li><Link href="/blog/hostinger-vps-hosting-review-discount" className="hover:text-primary-300 underline underline-offset-4">Hostinger KVM VPS Review — for developers</Link></li>

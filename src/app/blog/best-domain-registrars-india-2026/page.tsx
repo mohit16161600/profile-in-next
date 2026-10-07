@@ -19,23 +19,33 @@ export const metadata: Metadata = {
     title: TITLE,
     description:
         "Year one is cheap everywhere. Only a few registrars keep the price flat at renewal — 8 compared on five-year cost, GST, UPI billing and .in e-KYC.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
+        "best domain registrar in india",
+
+        // SECONDARY — H2s and body
         "best domain registrar", "best domain registrar india", "cheapest domain registrar",
-        "domain renewal price comparison", "namecheap vs godaddy vs porkbun", "porkbun review",
-        "dynadot review", "where to buy domain india", "cheapest .com domain", "domain price comparison 2026",
+        "domain renewal price comparison", "cheapest .com domain", "domain price comparison 2026",
+        "domain price in india", "flat renewal domain registrar",
+
+        // LONG-TAIL — FAQ and specific sections
+        "namecheap vs godaddy vs porkbun", "where to buy domain india",
         "domain registrar with no price increase", "best place to buy domain",
-        "cheapest domain registrar in india", "domain price in india",
-        "how much does a .com domain cost in india", "best domain registrar for .in domains",
-        "flat renewal domain registrar", "domain renewal price comparison india",
-        "cheapest .in domain registration", "gst on domain registration india",
-        "does godaddy support upi payments in india", "domain registrar that accepts upi",
-        "in domain kyc verification nixi", "e-kyc for .in domain",
+        "cheapest domain registrar in india", "how much does a .com domain cost in india",
+        "best domain registrar for .in domains", "domain renewal price comparison india",
+        "gst on domain registration india", "does godaddy support upi payments in india",
+        "domain registrar that accepts upi", "in domain kyc verification nixi",
         "can i register a .in domain from outside india", ".in vs .com which is better for seo in india",
-        "transfer domain from godaddy", "how long does a domain transfer take",
-        "what happens if i forget to renew my domain", "domain redemption fee india",
-        "free domain with hosting india", "is porkbun safe", "dynadot flat pricing",
+        "how long does a domain transfer take", "what happens if i forget to renew my domain",
+        "free domain with hosting india", "is porkbun safe", "is cloudflare registrar actually free",
+        "namecheap vs godaddy price india",
+
+        // SUPPORTING / semantic
+        "porkbun review", "dynadot review", "cheapest .in domain registration", "e-kyc for .in domain",
+        "transfer domain from godaddy", "domain redemption fee india", "dynadot flat pricing",
         "spaceship domain registrar review", "cloudflare registrar at-cost pricing",
-        "is cloudflare registrar actually free", "namecheap vs godaddy price india",
         "bigrock domain price renewal", "whois privacy free registrar",
     ],
     alternates: { canonical: CANONICAL },

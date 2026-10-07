@@ -13,11 +13,21 @@ export const metadata: Metadata = {
     title: "Cheapest SEO Tools in India 2026: Start With the Free Ones",
     description:
         "Semrush, Ahrefs, Mangools and SE Ranking priced in ₹ for India — plus the free tools that cover most of what a solo blogger needs before paying for anything.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
+        "cheapest seo tool in india",
+
+        // SECONDARY — H2s and body
         "best seo tools india", "best seo tools 2026", "seo tools price india", "cheap seo tools india",
-        "semrush price india", "ahrefs price india", "se ranking price", "mangools price",
-        "best seo tools for beginners", "best seo tools for bloggers", "affordable seo tools india",
-        "seo tools comparison 2026",
+        "semrush price india", "ahrefs price india", "se ranking price", "affordable seo tools india",
+
+        // LONG-TAIL — FAQ and specific sections
+        "best seo tools for beginners", "best seo tools for bloggers",
+
+        // SUPPORTING / semantic
+        "mangools price", "seo tools comparison 2026",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

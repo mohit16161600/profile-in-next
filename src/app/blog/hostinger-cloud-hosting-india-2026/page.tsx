@@ -18,22 +18,23 @@ export const metadata: Metadata = {
     title: "Hostinger Cloud Hosting India: ₹599 Now, ₹1,599 Later",
     description:
         "Cloud Startup is ₹599 now and ₹1,599 at renewal. What Cloud really gives you over Unlimited, and when a KVM VPS is the cheaper answer.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "hostinger cloud hosting",
-        "hostinger cloud hosting india",
-        "hostinger cloud hosting price",
-        "hostinger cloud hosting price india",
-        "cloud hosting price in india",
-        "hostinger cloud startup",
-        "hostinger cloud professional",
-        "hostinger cloud enterprise",
-        "hostinger cloud startup vs professional",
-        "best cloud hosting india 2026",
-        "cheap cloud hosting india",
-        "cloud hosting vs vps india",
-        "hostinger cloud hosting review",
-        "is hostinger cloud hosting worth it",
-        "hostinger cloud renewal price",
+
+        // SECONDARY — H2s and body
+        "hostinger cloud hosting india", "hostinger cloud hosting price", "hostinger cloud startup",
+        "hostinger cloud professional", "hostinger cloud enterprise", "cheap cloud hosting india",
+        "hostinger cloud hosting review", "hostinger cloud renewal price",
+
+        // LONG-TAIL — FAQ and specific sections
+        "hostinger cloud hosting price india", "cloud hosting price in india",
+        "hostinger cloud startup vs professional", "best cloud hosting india 2026",
+        "cloud hosting vs vps india", "is hostinger cloud hosting worth it",
+
+        // SUPPORTING / semantic
         "managed cloud hosting india",
     ],
     alternates: { canonical: CANONICAL },

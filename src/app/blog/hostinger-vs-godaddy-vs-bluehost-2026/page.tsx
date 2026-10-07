@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 import RelatedPosts from "@/components/RelatedPosts";
+import VerdictCard from "@/components/VerdictCard";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const BLUEHOST_URL = "https://bluehost.sjv.io/c/7673063/1376228/11352";
@@ -12,36 +13,30 @@ export const metadata: Metadata = {
     title: "Hostinger vs GoDaddy vs Bluehost India: 4-Year Cost",
     description:
         "₹69 vs ₹89 is the wrong comparison — GoDaddy's entry plan has no SSL, email or domain. Renewals, India latency and 4-year totals for all three.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "hostinger vs godaddy",
-        "godaddy vs hostinger",
-        "hostinger vs godaddy 2026",
-        "hostinger vs godaddy which is better",
-        "is hostinger cheaper than godaddy",
-        "hostinger vs godaddy india",
-        "hostinger vs bluehost",
-        "bluehost vs hostinger 2026",
-        "godaddy vs hostinger india",
-        "best hosting comparison india",
-        "hostinger vs godaddy which is better in india",
-        "godaddy hosting price in india",
-        "hostinger vs godaddy renewal price",
-        "hostinger vs bluehost india",
-        "godaddy vs bluehost",
-        "hostinger vs godaddy for wordpress",
-        "hostinger vs godaddy speed test",
-        "does godaddy have a data center in india",
-        "transfer domain from godaddy to hostinger",
-        "godaddy vs hostinger domain price",
-        "godaddy renewal price india",
-        "hostinger single plan 69",
-        "godaddy starter plan 89",
-        "which is better hostinger godaddy or bluehost",
-        "hostinger vs godaddy customer support",
-        "hostinger vs godaddy uptime",
+        // PRIMARY
+        "hostinger vs godaddy vs bluehost",
+
+        // SECONDARY — H2s and body
+        "hostinger vs godaddy", "godaddy vs hostinger", "hostinger vs godaddy 2026",
+        "hostinger vs godaddy india", "hostinger vs bluehost", "bluehost vs hostinger 2026",
+        "godaddy vs hostinger india", "best hosting comparison india",
+
+        // LONG-TAIL — FAQ and specific sections
+        "hostinger vs godaddy which is better", "is hostinger cheaper than godaddy",
+        "hostinger vs godaddy which is better in india", "godaddy hosting price in india",
+        "hostinger vs godaddy renewal price", "hostinger vs godaddy for wordpress",
+        "hostinger vs godaddy speed test", "does godaddy have a data center in india",
+        "transfer domain from godaddy to hostinger", "godaddy vs hostinger domain price",
+        "which is better hostinger godaddy or bluehost", "hostinger vs godaddy customer support",
         "best hosting for beginners india",
-        "hostinger monthly plan",
-        "hostinger vs godaddy ecommerce",
+
+        // SUPPORTING / semantic
+        "hostinger vs bluehost india", "godaddy vs bluehost", "godaddy renewal price india",
+        "hostinger single plan 69", "godaddy starter plan 89", "hostinger vs godaddy uptime",
+        "hostinger monthly plan", "hostinger vs godaddy ecommerce",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
@@ -152,7 +147,7 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger vs GoDaddy vs Bluehost India: 4-Year Cost (+ Bluehost)",
+        headline: "Hostinger vs GoDaddy vs Bluehost India: 4-Year Cost",
         description:
             "Hostinger ₹69/mo vs GoDaddy ₹89/mo in India 2026 — full plan ladders, renewal cliffs, Mumbai vs Singapore latency, GST at checkout and the 4-year cost math, plus Bluehost compared.",
         image: "https://mohitkoli.in/assets/blog/hostinger-vs-godaddy-vs-bluehost-2026.png",
@@ -1257,9 +1252,24 @@ export default function HostingerVsGodaddyVsBluehost() {
                     </section>
 
 
+                    <VerdictCard
+
+
+                        items={[
+                            { name: "Hostinger", score: "4.7", body: "The best price-to-spec shared hosting in India in 2026, and the only one of the three with a Mumbai data centre. Marked down for having no phone support at all, for a 319% renewal jump on the entry Single plan, and because the headline ₹69 and ₹149 rates require a 48-month term paid upfront." },
+                            { name: "GoDaddy", score: "4.0", body: "Reliable hosting with the best domain portfolio tooling in the business and the only Indian phone line of the three, and third-party monitoring put its uptime slightly ahead of Hostinger. Marked down for renewals that climb 158% to 236%, for a ₹89 Starter tier that excludes SSL, email and a domain, and for having no Indian data centre." },
+
+
+                        ]}
+
+
+                    />
+
+
+
                     <div className="glass rounded-xl p-6 border border-white/5">
                         <h3 className="text-lg font-bold text-white mb-4">Share This Comparison</h3>
-                        <ShareButtons url={CANONICAL} title="Hostinger vs GoDaddy vs Bluehost India: 4-Year Cost (+ Bluehost)" />
+                        <ShareButtons url={CANONICAL} title="Hostinger vs GoDaddy vs Bluehost India: 4-Year Cost" />
                     </div>
                     <RelatedPosts slug="hostinger-vs-godaddy-vs-bluehost-2026" />
                 </article>

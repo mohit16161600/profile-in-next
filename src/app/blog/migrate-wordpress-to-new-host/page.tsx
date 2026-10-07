@@ -14,19 +14,20 @@ export const metadata: Metadata = {
     title: "How to Migrate WordPress to a New Host Without Downtime",
     description:
         "Three ways to move a WordPress site to new hosting — free host migration, a plugin, or manual transfer — plus the DNS order that avoids downtime.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "migrate wordpress to new host",
-        "how to move wordpress to new hosting",
-        "transfer wordpress site to new host",
-        "wordpress migration without downtime",
-        "wordpress migration india",
-        "free wordpress migration",
-        "move website to new hosting",
-        "wordpress migration plugin",
-        "all in one wp migration",
-        "duplicator wordpress migration",
+        // PRIMARY
+        "migrate wordpress site to new host",
+
+        // SECONDARY — H2s and body
+        "wordpress migration without downtime", "wordpress migration india", "free wordpress migration",
+        "wordpress migration plugin", "duplicator wordpress migration", "wordpress migration checklist",
+
+        // LONG-TAIL — FAQ and specific sections
+        "migrate wordpress to new host", "how to move wordpress to new hosting",
+        "transfer wordpress site to new host", "move website to new hosting", "all in one wp migration",
         "change web hosting without losing data",
-        "wordpress migration checklist",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

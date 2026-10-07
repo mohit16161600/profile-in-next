@@ -15,20 +15,22 @@ export const metadata: Metadata = {
     title: "Hostinger Business Plan 2026: It’s Now Called Unlimited",
     description:
         "Business is now Unlimited at ₹249/mo — and it renews at ₹649. What actually changed, who should skip it, and when Premium is genuinely enough.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "hostinger business plan",
-        "hostinger business plan price",
-        "hostinger business hosting",
-        "hostinger business plan india",
-        "hostinger business vs premium",
-        "hostinger unlimited plan",
-        "hostinger unlimited vs business",
-        "hostinger business plan review",
-        "is hostinger business plan worth it",
-        "hostinger business plan renewal price",
-        "hostinger business plan features",
-        "what happened to hostinger business plan",
-        "hostinger business plan for woocommerce",
+
+        // SECONDARY — H2s and body
+        "hostinger business plan price", "hostinger business hosting", "hostinger business plan india",
+        "hostinger business vs premium", "hostinger unlimited plan", "hostinger unlimited vs business",
+        "hostinger business plan review", "hostinger business plan features",
+
+        // LONG-TAIL — FAQ and specific sections
+        "is hostinger business plan worth it", "hostinger business plan renewal price",
+        "what happened to hostinger business plan", "hostinger business plan for woocommerce",
+
+        // SUPPORTING / semantic
         "hostinger business plan discount",
     ],
     alternates: { canonical: CANONICAL },

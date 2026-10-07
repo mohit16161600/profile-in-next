@@ -26,24 +26,22 @@ export const metadata: Metadata = {
     title: "Hostinger KVM VPS India 2026: Which Plan, and the Catch",
     description:
         "KVM 4 more than doubles at renewal — ₹1,099 to ₹2,399. Every Hostinger VPS plan's specs, real renewal rate, and which one is worth buying.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "hostinger kvm vps",
-        "hostinger vps price",
-        "hostinger vps price india",
-        "hostinger kvm 1",
-        "hostinger kvm 2",
-        "hostinger kvm 4",
-        "hostinger kvm 8",
-        "hostinger vps plans",
-        "hostinger vps hosting india",
-        "hostinger vps renewal price",
-        "hostinger kvm vps review",
-        "which hostinger vps plan is best",
-        "hostinger vps specs",
-        "kvm vps india price",
-        "hostinger vps review",
-        "hostinger vps coupon code",
-        "hostinger vps one year price",
+
+        // SECONDARY — H2s and body
+        "hostinger vps price", "hostinger vps price india", "hostinger kvm 1", "hostinger kvm 2",
+        "hostinger kvm 4", "hostinger kvm 8", "hostinger vps plans", "hostinger vps hosting india",
+
+        // LONG-TAIL — FAQ and specific sections
+        "which hostinger vps plan is best", "hostinger vps one year price",
+
+        // SUPPORTING / semantic
+        "hostinger vps renewal price", "hostinger kvm vps review", "hostinger vps specs",
+        "kvm vps india price", "hostinger vps review", "hostinger vps coupon code",
         "hostinger vps security features",
     ],
     alternates: { canonical: CANONICAL },

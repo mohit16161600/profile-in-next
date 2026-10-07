@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 import RelatedPosts from "@/components/RelatedPosts";
+import VerdictCard from "@/components/VerdictCard";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const CANONICAL = "https://mohitkoli.in/blog/best-vps-hosting-india-2026";
@@ -14,38 +15,29 @@ export const metadata: Metadata = {
     title: "Best VPS Hosting India 2026: What 4 Years Really Costs",
     description:
         "KVM 4 is ₹1,099 now and ₹2,399 at renewal. Hostinger vs DigitalOcean, Vultr and Cloudways on real INR totals — including the forex you pay.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "best vps hosting india",
-        "best vps hosting india 2026",
-        "vps hosting price india",
-        "cheap vps hosting india",
-        "hostinger kvm vps price",
-        "digitalocean vs vultr",
-        "managed vs unmanaged vps",
-        "vps for wordpress india",
-        "best vps for developers india",
-        "vps hosting comparison 2026",
-        "linux vps india",
-        "vps renewal price",
-        "vps hosting price in india",
-        "cheapest vps hosting in india",
-        "hostinger vps price india",
-        "hostinger kvm vps review",
-        "hostinger vps renewal price",
-        "vps hosting india gst",
-        "vps vs shared hosting india",
-        "how much ram do i need for a vps",
-        "best vps for woocommerce india",
-        "vps india mumbai data center",
-        "hostinger vs digitalocean vs vultr",
-        "managed vs unmanaged vps india",
-        "kvm vps vs openvz",
-        "windows vps india forex mt4",
-        "free vps trial india no credit card",
-        "cpanel licence cost on vps",
+
+        // SECONDARY — H2s and body
+        "vps hosting price india", "cheap vps hosting india", "hostinger kvm vps price",
+        "digitalocean vs vultr", "managed vs unmanaged vps", "vps for wordpress india",
+        "vps hosting comparison 2026", "linux vps india",
+
+        // LONG-TAIL — FAQ and specific sections
+        "best vps hosting india 2026", "best vps for developers india", "vps hosting price in india",
+        "cheapest vps hosting in india", "vps vs shared hosting india", "how much ram do i need for a vps",
+        "best vps for woocommerce india", "vps india mumbai data center",
+        "hostinger vs digitalocean vs vultr", "managed vs unmanaged vps india",
+        "windows vps india forex mt4", "free vps trial india no credit card", "cpanel licence cost on vps",
+        "vps hosting india upi payment", "best vps hosting provider in india",
+
+        // SUPPORTING / semantic
+        "vps renewal price", "hostinger vps price india", "hostinger kvm vps review",
+        "hostinger vps renewal price", "vps hosting india gst", "kvm vps vs openvz",
         "milesweb vs hostinger vps",
-        "vps hosting india upi payment",
-        "best vps hosting provider in india",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
@@ -1149,6 +1141,16 @@ export default function BestVpsHostingIndia() {
                             <li><Link href="/tools/hosting-cost-calculator" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Hosting cost calculator</Link> — model the full term including the renewal.</li>
                         </ul>
                     </section>
+
+                    <VerdictCard
+
+                        items={[
+                            { name: "Hostinger KVM VPS", score: "4.5", body: "Hostinger KVM gives the most RAM per rupee of any VPS sold in India at this price, bills in rupees with no forex markup, and now has a Mumbai data-centre region. The trade-offs are real: the headline rate needs a multi-year term paid upfront, the renewal rate is substantially higher, and the tooling is still thinner than DigitalOcean's. For most Indian buyers who want root access without dollar billing, KVM 1 at 599 rupees a month is the right buy; developers who will actually use an API and snapshots should pay the premium for DigitalOcean." },
+
+                        ]}
+
+                    />
+
 
                     <div className="glass rounded-xl shadow-sm p-6 border border-white/5">
                         <h2 className="text-lg font-bold text-white mb-4">Share this guide</h2>

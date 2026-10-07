@@ -11,20 +11,21 @@ export const metadata: Metadata = {
     title: "Hostinger Domain Price India: Year 1 vs Renewal, by TLD",
     description:
         "That ₹99 .in renews near ₹1,000. Hostinger's real domain renewal list, when the free domain is not actually free, and where to register instead.",
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
-        "hostinger .in domain price india 2026",
-        "hostinger .com domain price india",
-        "hostinger domain price",
-        "hostinger domain pricing",
+        // PRIMARY
         "hostinger domain price in india",
-        "hostinger domain hosting plans",
-        "hostinger domain renewal price in india",
-        ".in domain price india",
-        ".com domain price india 2026",
-        "cheapest domain registration india",
-        "hostinger free domain offer",
-        "hostinger vs godaddy domain price india",
+
+        // SECONDARY — H2s and body
+        "hostinger domain price", "hostinger domain pricing", "hostinger domain hosting plans",
+        ".in domain price india", "cheapest domain registration india", "hostinger free domain offer",
         "hostinger domain transfer price",
+
+        // LONG-TAIL — FAQ and specific sections
+        "hostinger .in domain price india 2026", "hostinger .com domain price india",
+        "hostinger domain renewal price in india", ".com domain price india 2026",
+        "hostinger vs godaddy domain price india",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

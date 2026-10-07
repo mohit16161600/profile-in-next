@@ -15,25 +15,26 @@ import {
 
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-business-email-price-india-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/hostinger-domain-price-india-2026.png";
-const TITLE = "Company Wala Email Sirf ₹23/mo: 84% Off Ka Poora Hisaab";
+const TITLE = "Hostinger Business Email ₹23/mo: 84% Off Ka Hisaab";
 const DESCRIPTION =
     "name@apnibrand.com sirf ₹23.20/mo par. Teeno plan ka storage, renewal rate, aur kitni GB aapko sach me chahiye — bina bakwaas ke. Sept 2026 verified.";
 
 export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
+    // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+    // one explicit PRIMARY term, which the title, H1 and intro are then written around.
     keywords: [
+        // PRIMARY
         "hostinger business email price",
-        "hostinger business email india",
-        "business email price india",
-        "custom domain email price",
-        "apne domain ka email kaise banaye",
-        "hostinger email hosting price",
-        "professional email india cost",
-        "hostinger mail plans",
-        "business email kitne ka hai",
-        "email hosting india 2026",
-        "hostinger email storage",
+
+        // SECONDARY — H2s and body
+        "hostinger business email india", "business email price india", "custom domain email price",
+        "hostinger email hosting price", "professional email india cost", "hostinger mail plans",
+        "email hosting india 2026", "hostinger email storage",
+
+        // LONG-TAIL — FAQ and specific sections
+        "apne domain ka email kaise banaye", "business email kitne ka hai",
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {

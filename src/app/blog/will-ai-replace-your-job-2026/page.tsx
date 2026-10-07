@@ -11,18 +11,20 @@ const MODIFIED = "2026-09-13T00:00:00.000Z";
 export const metadata: Metadata = {
   title: "Will AI Replace Your Job? The Real Truth (2026)",
   description: "Worried about AI taking your job? Discover the real truth about AI and jobs in 2026. See which roles are safe and how to future-proof your career today!",
-  keywords: [
-    "Will AI replace jobs",
-    "AI and jobs 2026",
-    "jobs safe from AI",
-    "AI future jobs",
-    "AI job loss truth",
-    "impact of AI on jobs",
-    "future proof career AI",
-    "artificial intelligence job market",
-    "AI taking over jobs",
-    "can AI replace human creativity"
-  ],
+  // Keyword tiers. Meta keywords do not rank on their own — this exists so the page has
+  // one explicit PRIMARY term, which the title, H1 and intro are then written around.
+    keywords: [
+        // PRIMARY
+        "will ai replace your job",
+
+        // SECONDARY — H2s and body
+        "Will AI replace jobs", "AI and jobs 2026", "jobs safe from AI", "AI future jobs",
+        "AI job loss truth", "future proof career AI", "artificial intelligence job market",
+        "AI taking over jobs",
+
+        // LONG-TAIL — FAQ and specific sections
+        "impact of AI on jobs", "can AI replace human creativity",
+    ],
   alternates: {
     canonical: CANONICAL,
   },
