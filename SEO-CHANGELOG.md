@@ -273,3 +273,97 @@ Review **2026-11-04**. The revised hypothesis gives a sharper prediction:
 pages whose titles now carry a referral-only price or a renewal rate should
 move; pages still showing vendor-visible numbers should not.
 
+
+---
+
+## 2026-10-07 — EXP-014, MAJOR: hostinger-plans-pricing-india-2026
+
+**Backup commit:** `c4c7fff` — "Backup before EXP-014"
+**Baseline:** 715 impressions · 1 click · CTR 0.14% · position 34.63 (3 months)
+**Title/H1:** unchanged — EXP-005 is still measuring the title. This experiment
+changes **content and facts only**, so the two variables stay separable.
+
+### Why this is a correctness fix before it is an SEO experiment
+
+An audit against Hostinger's live India pages found the page was wrong about
+its own subject in six places, and claimed experience that cannot be evidenced.
+
+| # | Was | Now | Source |
+|---|---|---|---|
+| 1 | No Single plan at all; "hosting starts at ₹149" | Single added: ₹69/mo, renews ₹289, 1 site, 10 GB SSD | /in/web-hosting |
+| 2 | Unlimited: "5 mailboxes free for 1 year" | Unlimited mailboxes per website (1st year) | /in/web-hosting |
+| 3 | Cloud Startup: "100 websites" | Unlimited websites | /in/web-hosting |
+| 4 | Cloud Startup: "free domain + dedicated IP" | Free domain (1st year) — dedicated IP is listed on Agency plans, not verified here | /in/web-hosting, /in/pro |
+| 5 | "KVM VPS starts around ₹499/mo" (×4) | ₹599/mo, renews ₹999/mo | /in/vps-hosting |
+| 6 | KVM renewals "Varies by term" / "See live pricing" | ₹999 and ₹1,199–₹4,399 | /in/vps-hosting |
+
+### Unsupported first-hand claims removed
+
+None of these were evidenced anywhere on the site:
+
+- "I have deployed client projects on every tier"
+- "it is the plan I use in my …"
+- "My verdict after a year of running client sites on these plans"
+- Related-link anchor: "honest verdict after a year of client sites"
+
+### Claims softened to what can actually be substantiated
+
+- **Referral:** "you get an extra ~20% discount on top of the sale" →
+  "it applies up to 20% off at checkout on top of the sale price". The stacked
+  figure was asserting checkout behaviour that has not been verified end to end.
+  Same change to "with the referral discount stacked", "with the referral stack",
+  and the comparison-chart label.
+- **Refund:** "the money-back guarantee is a full refund — the trial is
+  genuinely free" → now states the 30-day guarantee **with** its exclusions
+  (domain registrations) and tells the reader to check the current policy.
+
+### Last-verified date
+
+Was "July 2, 2026" and "last verified July 2026" in two places. Now **4 October
+2026**, with the two source URLs named inline. The date was changed only
+because every fast-changing figure on the page was actually re-checked today.
+
+### Verification
+
+| Check | Result |
+|---|---|
+| Build | compiled successfully |
+| Title | Hostinger Plans India 2026: Sale Price vs Renewal Price (unchanged, EXP-005) |
+| H1 | Hostinger Plans & Pricing in India (2026): Full Price List & Which Plan to Buy |
+| Canonical | `https://mohitkoli.in/blog/hostinger-plans-pricing-india-2026` ✓ |
+| Single plan renders | yes (₹289 renewal present) |
+| Stale ₹499 remaining | **0** |
+| Stale "July 2026" remaining | **0** |
+| Unsupported first-hand claims remaining | **0** |
+| Affiliate links with `rel="nofollow sponsored noopener"` | 8 |
+| Schema | BlogPosting, FAQPage, BreadcrumbList intact |
+| Internal blog links | 16 |
+
+### Hypothesis
+
+```text
+Experiment ID:   EXP-014
+Cohort:          MAJOR (content + facts; multi-variable, labelled as such)
+Hypothesis:      The page ranked 34.63 while being factually wrong about the entry
+                 price of the product it exists to explain. A page that omits the
+                 cheapest plan cannot satisfy "hostinger plans india" intent.
+                 Correcting the facts and adding the missing tier should improve
+                 intent match on the India-qualified queries where it already
+                 reaches position 9.65.
+Expected effect: position improvement on "hostinger plans india" (71 impressions,
+                 position 9.65, 0 clicks) within 28 days.
+Risk:            Low-moderate. No title, URL, canonical or schema change. Rollback
+                 is `git revert` to c4c7fff.
+Deployed:        2026-10-07
+Measurement:     28 days (review 2026-11-04)
+Result:          pending
+```
+
+### Still outstanding on this page (not done today)
+
+Phase-2 asked to compress the VPS / Agency / domain / email / discount sections
+into summaries that link out, so this hub stops competing with the dedicated
+pages. **Not done in this pass** — it is a structural change, and mixing it with
+18 factual corrections in one deploy would make the result unreadable. Queued as
+EXP-015 after the 4 Nov review.
+
