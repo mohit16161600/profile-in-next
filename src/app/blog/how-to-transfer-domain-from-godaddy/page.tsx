@@ -493,7 +493,7 @@ export default function TransferDomainFromGoDaddy() {
                     </section>
 
                     <section className="mb-12">
-                        <h2 className="text-3xl font-bold text-white mb-4">Transferring a domain to another GoDaddy account (a &ldquo;push&rdquo;)</h2>
+                        <h2 className="text-3xl font-bold text-white mb-4">GoDaddy to GoDaddy: changing a domain&rsquo;s account or owner (a &ldquo;push&rdquo;)</h2>
                         <p className="text-gray-300 leading-8 mb-4">
                             <strong className="text-white">Moving a domain between two GoDaddy accounts is not a
                             registrar transfer at all.</strong> It is an account change: free, no authorisation code, no
@@ -501,8 +501,9 @@ export default function TransferDomainFromGoDaddy() {
                             minutes rather than days.
                         </p>
                         <p className="text-gray-300 leading-8 mb-4">
-                            You would do this when you sell a domain, when you hand a client the domain you registered on
-                            their behalf, or when you split a portfolio across accounts. The sender opens the domain in
+                            This is also how domain ownership changes hands inside GoDaddy — you would do it when you sell a
+                            domain, when you hand a client the domain you registered on their behalf, or when you split a
+                            portfolio across accounts. The sender opens the domain in
                             Domain Portfolio, chooses the option to transfer it to another GoDaddy account, and enters
                             the recipient&apos;s GoDaddy account email — adding their customer number is optional and
                             speeds things up. The recipient accepts from the emailed link or from Pending Account Changes

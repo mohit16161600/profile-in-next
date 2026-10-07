@@ -397,3 +397,78 @@ The first attempt at EXP-018 produced "Who Should Skip It Who Should Skip It" �
 a second replacement matched inside the output of the first. Caught in the
 rendered-title check and corrected before commit. Title now renders at 51 chars.
 
+
+---
+
+## 2026-10-07 — EXP-019: how-to-transfer-domain-from-godaddy
+
+**Baseline:** 615 impressions · 2 clicks · position 44.05 (3 months) — the site's
+third-largest page by impressions, and the worst-positioned large one.
+
+### What the query data shows
+
+The 615 impressions are not one intent. They are three:
+
+| Intent | Approx. impressions | Positions |
+|---|---|---|
+| Transfer away from GoDaddy to another registrar | ~450 | 38–48 |
+| Move a domain between two GoDaddy accounts | ~22 | 37–52 |
+| Change domain ownership / transfer to another person | ~17 | 41–47 |
+
+### What was done — and what was not
+
+The page already carries a verified, visible section covering the account-change
+and ownership case (free, no auth code, Domain Portfolio → transfer to another
+GoDaddy account, recipient accepts from the emailed link or Pending Account
+Changes, lapses in ~10 days, does not add a year, does not clear the 60-day lock).
+
+The content was fine. The **heading never used the words people search**:
+
+- Was: "Transferring a domain to another GoDaddy account (a "push")"
+- Now: "GoDaddy to GoDaddy: changing a domain's account or owner (a "push")"
+
+The opening paragraph now names ownership change explicitly, which the section
+already described in substance ("when you sell a domain, when you hand a client
+the domain you registered on their behalf").
+
+**No new facts were added.** Only verified content already on the page was
+re-worded to match search language.
+
+### A separate page was considered and rejected
+
+Splitting the account/ownership intent onto its own URL is defensible —
+HostAdvice runs a dedicated page for it. It was **not** done, for one reason:
+GoDaddy's own help article could not be retrieved (the fetch geo-redirected to a
+Dutch page with no usable content), so the current UI steps could not be verified
+from a primary source. Writing a step-by-step from memory would be fabricated
+instructions for a destructive action on someone's domain.
+
+### MANUAL ACTION #2 — needed before the split page can be written
+
+**Where:** godaddy.com, logged in
+**What to capture:**
+1. Domain Portfolio → open any domain → find the account-change option. Note the
+   exact menu label.
+2. Note what the confirmation screen asks for (email only, or email + customer number).
+3. Note the stated expiry of a pending request.
+
+**Why:** these are the only facts missing. With them the dedicated page can be
+written and should pick up the ~39 impressions currently ranking 37–52.
+
+### Honest limit on this page
+
+The main cluster — ~450 impressions across 50+ "transfer domain from godaddy"
+variants — sits at position 38–48 against GoDaddy's own help docs and Forbes
+Advisor. That is an authority gap. No heading, title or structure change moves a
+page from 44 to page 1 against those competitors. EXP-009 (internal prominence)
+is the on-site lever already running; beyond it, this page needs external links.
+
+```text
+Experiment ID:   EXP-019
+Cohort:          MEDIUM (heading + intro wording; content unchanged)
+Deployed:        2026-10-07
+Measurement:     28 days (review 2026-11-04)
+Target:          the ~39 impressions on account-change and ownership queries
+Result:          pending
+```
+
