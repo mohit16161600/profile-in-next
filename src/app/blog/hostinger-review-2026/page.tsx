@@ -11,7 +11,7 @@ const REFERRAL_URL_BEGINNER = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIF
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-review-2026";
 
 export const metadata: Metadata = {
-    title: "Hostinger Review 2026: ₹69/mo & 83% Off — India Tested",
+    title: "Hostinger Review 2026: What the Pricing Page Does Not Say",
     description:
         "Fast, genuinely cheap, and the renewal will triple your bill. An honest Hostinger review for India — speed, limits, support, and who should skip it.",
     keywords: [
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     ],
     alternates: { canonical: CANONICAL },
     openGraph: {
-        title: "Hostinger Review 2026: ₹69/mo & 83% Off — India Tested",
+        title: "Hostinger Review 2026: What the Pricing Page Does Not Say",
         description:
             "Fast, genuinely cheap, and the renewal will triple your bill. An honest Hostinger review for India — speed, limits, support, and who should skip it.",
         url: CANONICAL,
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Hostinger Review 2026: ₹69/mo & 83% Off — India Tested",
+        title: "Hostinger Review 2026: What the Pricing Page Does Not Say",
         description: "A year of running real client sites on Hostinger — pricing, renewals, resource limits, support, AI Builder, and is it worth it?",
         images: ["/assets/blog/hostinger-review-2026.png"],
     },
@@ -245,7 +245,7 @@ const jsonLd = [
     {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        headline: "Hostinger Review 2026: ₹69/mo & 83% Off — India Tested",
+        headline: "Hostinger Review 2026: What the Pricing Page Does Not Say",
         description:
             "Fast, genuinely cheap, and the renewal will triple your bill. An honest Hostinger review for India — speed, limits, support, and who should skip it.",
         image: "https://mohitkoli.in/assets/blog/hostinger-review-2026.png",

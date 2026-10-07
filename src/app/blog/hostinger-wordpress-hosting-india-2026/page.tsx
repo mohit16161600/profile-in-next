@@ -13,7 +13,7 @@ const CART_UNLIMITED_48 = "https://www.hostinger.com/in/cart?product=hosting%3Ah
 const CART_CLOUD_48 = "https://www.hostinger.com/in/cart?product=hosting%3Ahostinger_cloud_startup&period=48&referral_type=cart_link&REFERRALCODE=mohitkoli&referral_id=01a06612-907a-715a-826c-c2ae423f3289";
 const CANONICAL = "https://mohitkoli.in/blog/hostinger-wordpress-hosting-india-2026";
 
-const TITLE = "Hostinger WordPress Hosting India — 83% OFF, from ₹69/mo";
+const TITLE = "Hostinger WordPress India: ₹119/mo, Renews at ₹449";
 const DESCRIPTION =
     "Premium handles a normal blog; WooCommerce it does not. Hostinger WordPress hosting India — PHP-worker limits per plan, real renewals, free migration.";
 

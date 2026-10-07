@@ -19,7 +19,7 @@ const ENGLISH = "/blog/hostinger-kvm-vps-plans-india-2026";
 const IMAGE = "https://mohitkoli.in/assets/blog/best-vps-hosting-india-2026.png";
 const PUBLISHED = VPS_VERIFIED_ISO;
 const VERIFIED = VPS_VERIFIED;
-const TITLE = "Hostinger VPS Ki Poori Kundali: ₹479 Se Shuru, 69% Tak Off";
+const TITLE = "Hostinger VPS ₹479/mo: Renewal ₹999 Ka Poora Hisaab";
 const DESCRIPTION =
     "KVM 1 sirf ₹479.20/mo, KVM 4 par 69% off + extra 20%. Renewal par bill kitna badhega, kaunsa plan lein aur kaunsa nahi — sab ek jagah. Sept 2026 verified.";
 

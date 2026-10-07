@@ -190,3 +190,86 @@ Whether these four are **not indexed** or **indexed but never in the top 100**
 changes the treatment completely, and only GSC URL Inspection can tell us. Until
 Mohit reports that, rewriting them would be guesswork. See MANUAL ACTION #1.
 
+
+---
+
+## 2026-10-07 — Batch 3, Hostinger cluster only (EXP-011 … EXP-013)
+
+### Hypothesis corrected
+
+`hostinger-55-per-month-offer` disproves the original wording. Its title is
+price-led — "Hostinger ₹55/mo: Cheapest Plan at 86% Off (2026)" — and it has the
+**best CTR in the entire Hostinger cluster: 8.0%** (2 clicks / 25 impressions,
+position 8.96).
+
+The difference is not price vs no-price. It is **whose number it is**:
+
+| Number in title | Who else shows it | Example | CTR |
+|---|---|---|---|
+| ₹55, 86% off | nobody — it only exists after the referral code | hostinger-55-per-month-offer | **8.0%** |
+| ₹449 renewal | nobody — Hostinger does not advertise renewals | hostinger-renewal-price-india-2026 | 1.54% |
+| ₹69, 83% off | Hostinger's own homepage | hostinger-wordpress-hosting | 0% @ pos 43.79 |
+| ₹599, 69% off | Hostinger's own VPS page | best-vps-hosting | 0% @ pos 6.88 |
+
+> **Revised hypothesis:** a title fails when it repeats a number the vendor
+> also displays, because the vendor outranks us and shows the same figure. It
+> works when the number is one only this site can state — the post-referral
+> price, or the renewal rate.
+
+This refines EXP-001…008 rather than invalidating them; all of those replaced
+vendor-visible numbers. It also predicts which pages should be left alone.
+
+### Changes
+
+| EXP | Page | Impr | Clicks | Pos | New title |
+|---|---|---|---|---|---|
+| 011 | hostinger-wordpress-hosting-india-2026 | 39 | 0 | 43.79 | Hostinger WordPress India: ₹119/mo, Renews at ₹449 |
+| 012 | hostinger-review-2026 | 29 | 1 | 32.55 | Hostinger Review 2026: What the Pricing Page Does Not Say |
+| 013 | hostinger-vps-review-hindi-2026 | 25 | 0 | 9.28 | Hostinger VPS ₹479/mo: Renewal ₹999 Ka Poora Hisaab |
+
+- **EXP-011** — both old numbers (83% off, ₹69) are Hostinger's own. Replaced
+  with ₹119 (Premium after the referral 20%) and ₹449 (the renewal rate).
+- **EXP-013** — ₹479 was already unique, but "69% Tak Off" was Hostinger's
+  figure. Swapped for the ₹999 renewal.
+
+### EXP-012 is also a correctness fix, not only a CTR test
+
+The old title claimed **"India Tested"**. A grep of the page found that phrase
+in the title, Open Graph, Twitter card and schema headline — and **nowhere in
+the page body**. There is no test, no methodology, no measurement, no date.
+
+That is an unsupported first-hand-experience claim, which both playbooks
+prohibit (`MohitKoli_SEO_Growth_Master_Prompt.md` §14, Phase-2 §15). It has been
+removed from all four places. This change would have been correct regardless of
+its effect on CTR.
+
+### Not changed, and why
+
+| Page | Impr | CTR | Pos | Reason |
+|---|---|---|---|---|
+| hostinger-55-per-month-offer | 25 | **8.0%** | 8.96 | Best CTR in the cluster. It is the evidence for the revised hypothesis. |
+| best-web-hosting-india-2026 | 75 | **4.0%** | 17.59 | Second-best CTR. Working. |
+| cheap-web-hosting-under-200-india | 75 | 2.67% | 5.79 | Above site average. |
+| hostinger-renewal-price-india-2026 | 259 | 1.54% | 14.74 | Already renewal-led. Control for the pattern. |
+| nodejs-hosting-india-2026 | 10 | 0% | 17.0 | Too little data to test anything. |
+| hostinger-discount-code-2026 | 1 | 0% | 26.0 | 1 impression in 3 months. Merge candidate, not a title problem. |
+
+### Verification
+
+- Build compiled successfully
+- All three titles render at 54–57 characters
+- `India Tested` occurrences in `hostinger-review-2026`: 4 → **0**
+- No content, schema type, canonical or URL changes
+
+### Hostinger cluster coverage after Batches 1–3
+
+11 of the ~20 Hostinger-cluster pages now carry a live experiment
+(EXP-001…008, 011…013). Six are deliberately held as evidence or controls. The
+rest have too little data to test.
+
+### Measurement
+
+Review **2026-11-04**. The revised hypothesis gives a sharper prediction:
+pages whose titles now carry a referral-only price or a renewal rate should
+move; pages still showing vendor-visible numbers should not.
+
