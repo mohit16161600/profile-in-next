@@ -412,7 +412,7 @@ export default function HostingerCloudHostingIndia() {
                                         ["Run Node.js, Docker", "❌", "❌", "✅"],
                                         ["Managed updates &amp; security", "✅", "✅", "❌ You manage it"],
                                         ["hPanel + 1-click WordPress", "✅", "✅", "Optional"],
-                                        ["Starting price", "₹149/mo", "₹599/mo", "~₹499/mo"],
+                                        ["Starting price", "₹149/mo", "₹599/mo", "₹599/mo"],
                                     ].map((row) => (
                                         <tr key={row[0]} className="border-t border-white/5">
                                             <td className="p-4 font-medium text-white" dangerouslySetInnerHTML={{ __html: row[0] }} />

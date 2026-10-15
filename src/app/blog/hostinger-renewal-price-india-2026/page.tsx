@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareButtons from "@/components/ShareButtons";
 import RelatedPosts from "@/components/RelatedPosts";
+import { VPS_PLANS, inr } from "@/data/hostinger-vps";
 
 const REFERRAL_URL = "https://www.hostinger.com/in?REFERRALCODE=mohitkoli";
 const REFERRAL_URL_ALT = "https://www.hostinger.com/in?REFERRALCODE=HOSTFIFTY";
@@ -135,11 +136,25 @@ const jsonLd = [
     },
 ];
 
+// Derived from the VPS price data rather than retyped, because the hand-written
+// figure here had drifted to ₹499 while the plans themselves start at ₹599.
+const vpsSale = VPS_PLANS.map((p) => p.sale);
+const vpsRenewal = VPS_PLANS.map((p) => p.renewal);
+const vpsJump = VPS_PLANS.map((p) => Math.round((p.renewal / p.sale - 1) * 100));
+const span = (ns: number[], suffix = "") =>
+    `${inr(Math.min(...ns))}–${inr(Math.max(...ns))}${suffix}`;
+
 const RENEWAL_TABLE = [
     ["Premium (shared)", "₹149/mo", "₹449/mo", "+223%", "₹5,388"],
     ["Unlimited (shared)", "₹249/mo", "₹649/mo", "+161%", "₹7,788"],
     ["Cloud Startup", "₹599/mo", "₹1,599/mo", "+167%", "₹19,188"],
-    ["KVM VPS (all tiers)", "from ~₹499/mo", "verify at checkout", "—", "—"],
+    [
+        `KVM VPS (${VPS_PLANS[0].name}–${VPS_PLANS[VPS_PLANS.length - 1].name})`,
+        span(vpsSale, "/mo"),
+        span(vpsRenewal, "/mo"),
+        `+${Math.min(...vpsJump)}% to +${Math.max(...vpsJump)}%`,
+        span(vpsRenewal.map((n) => n * 12)),
+    ],
 ];
 
 const DOMAIN_RENEWALS = [

@@ -48,7 +48,7 @@ const FAQ = [
     },
     {
         q: "What is the cheapest way to host Node.js in India?",
-        a: "Three realistic paths: (1) Vercel/Netlify free tier if your app fits the serverless model (Next.js API routes, hobby traffic); (2) a small VPS like Hostinger KVM 1 (~₹499/mo on sale) for full control; (3) Render/Railway free-to-hobby tiers (~$5-7/mo) with cold starts. For production client work in India, the VPS usually wins on cost-per-performance.",
+        a: "Three realistic paths: (1) Vercel/Netlify free tier if your app fits the serverless model (Next.js API routes, hobby traffic); (2) a small VPS like Hostinger KVM 1 (₹599/mo on sale) for full control; (3) Render/Railway free-to-hobby tiers (~$5-7/mo) with cold starts. For production client work in India, the VPS usually wins on cost-per-performance.",
     },
     {
         q: "Which VPS is best for Node.js in India?",
@@ -121,7 +121,7 @@ const jsonLd = [
 
 const OPTIONS = [
     ["Shared hosting", "₹99–₹199/mo", "❌ Can't run Node", "PHP/WordPress sites only — no long-running processes, no custom ports"],
-    ["VPS (Hostinger KVM)", "~₹499–₹1,099/mo", "✅ Best control", "Production apps, APIs, websockets, Docker, databases on one box"],
+    ["VPS (Hostinger KVM)", "₹599–₹1,099/mo", "✅ Best control", "Production apps, APIs, websockets, Docker, databases on one box"],
     ["Vercel / Netlify", "Free–$20/mo+", "✅ Best DX", "Next.js, serverless APIs, hobby → startup; watch costs at scale"],
     ["Render / Railway", "Free–$7/mo+", "✅ Easiest classic Node", "Express/Nest apps without server admin; cold starts on free tier"],
 ];
@@ -255,7 +255,7 @@ export default function NodejsHostingIndia() {
                         </p>
                         <div className="grid sm:grid-cols-3 gap-4 mb-6">
                             {[
-                                ["1 vCPU / 4 GB (KVM 1)", "~₹499/mo", "One small app + SQLite/managed DB. Side projects, bots, cron workers, staging."],
+                                ["1 vCPU / 4 GB (KVM 1)", "₹599/mo", "One small app + SQLite/managed DB. Side projects, bots, cron workers, staging."],
                                 ["2 vCPU / 8 GB (KVM 2)", "sweet spot", "Production app + PostgreSQL/MySQL + Nginx on one box. Handles most Indian startup traffic."],
                                 ["4 vCPU / 16 GB (KVM 4)", "scale tier", "Multiple apps, Docker Compose stacks, busy APIs, WooCommerce backends."],
                             ].map(([spec, price, why]) => (

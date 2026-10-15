@@ -102,7 +102,7 @@ Nobody on your side knows Linux. An unmanaged VPS means OS updates, security pat
 
 On price in India: entry VPS plans start around ₹599/month against roughly ₹69 for entry shared — so about nine times the cost, before counting your own time. The renewal gap is gentler on VPS though: the entry VPS roughly multiplies by 1.7 at renewal, while entry shared multiplies by 4.2.
 
-I wrote up the full VPS plan-by-plan breakdown with renewal rates here: https://mohitkoli.in/blog/hostinger-kvm-vps-plans-india-2026
+Those two multipliers come from a renewal-rate table I keep for the Indian market, shared and VPS side by side: https://mohitkoli.in/blog/hostinger-renewal-price-india-2026
 
 ====================================================================
 ANSWER 5
