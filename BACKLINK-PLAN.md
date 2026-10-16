@@ -56,7 +56,7 @@ Rule: same name, same photo, same link, everywhere. Consistency is the signal.
 | dev.to | **dofollow** | ✅ posted 24 Sep | `drafts/devto-hosting-gst-india.md` |
 | Medium | nofollow | ✅ posted | `drafts/medium-hostinger-renewal-ranking.md` |
 | Hashnode | **dofollow** | ✅ posted 14 Oct | `drafts/hashnode-selfhost-n8n.md` |
-| Quora | nofollow | 🔄 2 of 5 posted 14 Oct | `drafts/quora-answers-hosting.md` — answers 2 and 4 on 15 Oct, answer 5 on 16 Oct. Max two a day. |
+| Quora | nofollow | 🔄 4 of 5 posted (2 on 14 Oct, 2 on 15 Oct) | `drafts/quora-answers-hosting.md` — answer 5 left, post it 16 Oct. Max two a day. |
 
 dev.to and Hashnode are the only two here that pass link equity. Medium and
 Quora pass traffic, not equity — still worth it, because traffic to a Hostinger
@@ -83,7 +83,8 @@ It currently gets 46 impressions in three months. It deserves far more.
 - [x] **Product Hunt launch — scheduled 14 Oct, goes live 20 Oct.** Name "Hosting Cost Calculator", tagline "What web hosting really costs in India, renewals included", 2 screenshots (4-year and 1-year views), 60-word description, first comment written with the referral disclosed up front. Shoutouts to Next.js, Tailwind CSS and Claude — each one leaves a founder review with a link back on that product's page.
   - On the day: open the Launch Day dashboard and answer every comment. Share the link on X, LinkedIn and Instagram.
   - Never ask for upvotes, never use upvote groups or growth services — PH removes launches from the homepage for it.
-- [ ] **Free-tool directories** — submit to ToolsForCreators, SaaSHub, AlternativeTo, and any Indian startup tool list you can find. Twenty minutes each, permanent.
+- [ ] **Free-tool directories** — submit to ToolsForCreators, AlternativeTo, and any Indian startup tool list you can find. Twenty minutes each, permanent.
+  - [x] **SaaSHub — submitted and verified 15 Oct** (free tier; the $75 Priority+ is not worth it for a nofollow listing). Verified via `contact@mohitkoli.in`, which is what makes the next line work: the listing names Hostinger, GoDaddy, Bluehost and Namecheap as competitors, so the calculator now appears as a verified alternative **on their SaaSHub pages** — exactly where people comparing hosting prices already are. Also listed free in their startups directory. Listing itself is pending approval (1–12 weeks on the free queue).
 - [ ] **Answer with the tool, not a link to your blog.** When someone in a community asks "how much does hosting actually cost", reply with the real numbers *and* the calculator. The tool is the natural link.
 
 ### Build a second tool when the first one lands

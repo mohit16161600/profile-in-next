@@ -65,6 +65,20 @@ export default function ServicesPage() {
         </div>
 
         <div className="mt-12 rounded-2xl border border-primary-500/30 bg-black/20 p-8">
+          <h2 className="text-2xl font-bold text-white">Android and iOS App Deployment</h2>
+          <p className="mt-4 text-gray-300">
+            Already have an app built? I handle publishing on both stores end to end — developer accounts, signed
+            release builds, store listing, privacy and data safety forms, and the rejections that cost most teams a week.
+          </p>
+          <Link
+            href="/services/app-deployment"
+            className="mt-6 inline-flex items-center rounded-xl border border-primary-500/30 px-5 py-3 text-sm font-semibold text-primary-400 hover:border-primary-500 hover:text-white"
+          >
+            App deployment service
+          </Link>
+        </div>
+
+        <div className="mt-12 rounded-2xl border border-primary-500/30 bg-black/20 p-8">
           <h2 className="text-2xl font-bold text-white">Service Areas and Local Pages</h2>
           <p className="mt-4 text-gray-300">
             I deliver local-first web development in cities and states throughout India. Start with the locations page below and choose your region.

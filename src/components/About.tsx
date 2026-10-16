@@ -37,7 +37,7 @@ export default function About() {
 
             <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
               <p>
-                I&apos;m <strong className="text-white" itemProp="name">Mohit Koli</strong>, a <strong>Senior Web Developer</strong> and <strong>Full Stack Engineer</strong> working with <strong>Next.js</strong>, <strong>React</strong>, <strong>PHP</strong>, and <strong>Laravel</strong> to build modern websites, dashboards, and custom web applications for businesses that want strong execution and long-term reliability.
+                I&apos;m <strong className="text-white" itemProp="name">Mohit Koli</strong>, a <strong>Senior Web Developer</strong> and <strong>Full Stack Engineer</strong> working with <strong>Next.js</strong>, <strong>React</strong>, <strong>PHP</strong>, and <strong>Laravel</strong> to build modern websites, dashboards, and custom web applications for businesses that want strong execution and long-term reliability. I also handle <strong>Android and iOS app deployment</strong> end to end — Play Store and App Store publishing, from developer account to live listing.
               </p>
               <p>
                 My work sits at the intersection of frontend quality, backend logic, and technical SEO. That means I focus on websites and web apps that are not only visually polished, but also fast, scalable, mobile-friendly, and structured to support search visibility and better conversions.

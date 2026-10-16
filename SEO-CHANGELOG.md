@@ -4,6 +4,30 @@ Baseline for every entry: Google Search Console, **8 Aug – 4 Oct 2026** (3 mon
 
 ---
 
+## 2026-10-15 — Stale VPS price corrected on three pages (not an experiment)
+
+`src/data/hostinger-vps.ts` has KVM 1 at **₹599/mo sale, ₹999/mo renewal**, checked
+17 September 2026. Three pages still carried a hand-typed **₹499**:
+
+| Page | Was | Now |
+|---|---|---|
+| hostinger-renewal-price-india-2026 | `KVM VPS (all tiers) · from ~₹499/mo · verify at checkout · — · —` | `KVM VPS (KVM 1–KVM 8) · ₹599–₹2,199/mo · ₹999–₹4,399/mo · +50% to +118% · ₹11,988–₹52,788` |
+| hostinger-cloud-hosting-india-2026 | VPS column `~₹499/mo` | `₹599/mo` |
+| nodejs-hosting-india-2026 | `~₹499/mo` in three places | `₹599/mo` |
+
+The renewal page's row is now **derived from `VPS_PLANS`** rather than retyped, so
+the figure cannot drift from the source data again. That page's whole subject is
+renewal rates, and it was the one page telling readers to "verify at checkout" for
+a number we had already verified.
+
+`best-web-hosting-india-2026` also contains `≈₹499–699/mo` — that is **GoDaddy's**
+renewal band, not Hostinger VPS. Left alone.
+
+No title or meta description was touched. EXP-002 and EXP-003 run on the two VPS
+pages until 2026-11-04 and must stay untouched until then.
+
+---
+
 ## 2026-10-07 — Batch 1 (EXP-004 … EXP-009)
 
 **Backup commit:** `7685c79` — "Backup before Phase-2 Batch 1 (EXP-004..012)"

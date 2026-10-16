@@ -10,7 +10,7 @@ const baseUrl = 'https://mohitkoli.in';
 // actually changes. Previously every deploy stamped `new Date()` (today) on all
 // static + location pages, so Google saw 18 pages "changed" every single day and
 // learned to distrust our lastmod signal. Accurate, stable dates fix that.
-const SECTION_PAGES_UPDATED = '2026-07-03'; // profile, services, projects, locations hub
+const SECTION_PAGES_UPDATED = '2026-10-16'; // profile, services, projects, locations hub
 const LEGAL_PAGES_UPDATED = '2026-01-21';   // privacy-policy, terms — rarely change
 const LOCATION_PAGES_UPDATED = '2026-06-20'; // developer-in/* templated service-area pages
 const TOOLS_UPDATED = '2026-09-03';          // /tools/* — bump when a tool's data or logic changes
@@ -46,6 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: baseUrl, lastModified: feedLastMod, changeFrequency: 'weekly', priority: 1.0 },
         { url: `${baseUrl}/profile`, lastModified: SECTION_PAGES_UPDATED, changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/services`, lastModified: SECTION_PAGES_UPDATED, changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/services/app-deployment`, lastModified: SECTION_PAGES_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/blog`, lastModified: feedLastMod, changeFrequency: 'weekly', priority: 0.9 },
         { url: `${baseUrl}/locations`, lastModified: SECTION_PAGES_UPDATED, changeFrequency: 'monthly', priority: 0.7 },
         { url: `${baseUrl}/projects/sheopals-crm`, lastModified: SECTION_PAGES_UPDATED, changeFrequency: 'monthly', priority: 0.6 },

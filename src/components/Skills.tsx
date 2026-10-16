@@ -67,7 +67,7 @@ export default function Skills() {
               and delivery quality across both client projects and in-house product work.
             </p>
             <div className="flex flex-wrap gap-2">
-              {['Git/GitHub', 'VS Code', 'Figma', 'SEO Optimization', 'Agile/Scrum', 'Technical SEO', 'Performance Optimization', 'Content Structuring', 'Debugging', 'Deployment Workflows'].map((skill) => (
+              {['Git/GitHub', 'VS Code', 'Figma', 'SEO Optimization', 'Agile/Scrum', 'Technical SEO', 'Performance Optimization', 'Content Structuring', 'Debugging', 'Deployment Workflows', 'Play Store Publishing', 'App Store Publishing'].map((skill) => (
                 <span key={skill} className="px-3 py-1.5 bg-white/5 text-gray-300 rounded-lg text-sm font-medium hover:bg-purple-500/20 hover:text-purple-300 transition-colors border border-white/10">
                   {skill}
                 </span>
