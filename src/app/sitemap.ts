@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { BLOG_POSTS } from '@/data/posts';
 import { SEO_LOCATIONS } from '@/data/locations';
+import { CATEGORIES as LANDER_CATEGORIES } from '@/data/landers';
 
 export const revalidate = 86400;
 
@@ -14,6 +15,7 @@ const SECTION_PAGES_UPDATED = '2026-10-16'; // profile, services, projects, loca
 const LEGAL_PAGES_UPDATED = '2026-01-21';   // privacy-policy, terms — rarely change
 const LOCATION_PAGES_UPDATED = '2026-06-20'; // developer-in/* templated service-area pages
 const TOOLS_UPDATED = '2026-09-03';          // /tools/* — bump when a tool's data or logic changes
+const LANDER_UPDATED = '2026-11-03';         // /lander/* — bump when a layout or category copy changes
 
 const DAY_MS = 1000 * 60 * 60 * 24;
 const toDay = (value: number | Date) => new Date(value).toISOString().split('T')[0];
@@ -51,9 +53,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${baseUrl}/locations`, lastModified: SECTION_PAGES_UPDATED, changeFrequency: 'monthly', priority: 0.7 },
         { url: `${baseUrl}/projects/sheopals-crm`, lastModified: SECTION_PAGES_UPDATED, changeFrequency: 'monthly', priority: 0.6 },
         { url: `${baseUrl}/tools/hosting-cost-calculator`, lastModified: TOOLS_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
+        { url: `${baseUrl}/lander`, lastModified: LANDER_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/privacy-policy`, lastModified: LEGAL_PAGES_UPDATED, changeFrequency: 'yearly', priority: 0.3 },
         { url: `${baseUrl}/terms`, lastModified: LEGAL_PAGES_UPDATED, changeFrequency: 'yearly', priority: 0.3 },
     ];
+
+    const landerRoutes: MetadataRoute.Sitemap = LANDER_CATEGORIES.map((category) => ({
+        url: `${baseUrl}/lander/${category.slug}`,
+        lastModified: LANDER_UPDATED,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+    }));
 
     const locationRoutes: MetadataRoute.Sitemap = SEO_LOCATIONS.map((location) => ({
         url: `${baseUrl}/developer-in/${location.slug}`,
@@ -62,5 +72,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
     }));
 
-    return [...staticRoutes, ...blogPosts, ...locationRoutes];
+    return [...staticRoutes, ...blogPosts, ...landerRoutes, ...locationRoutes];
 }
