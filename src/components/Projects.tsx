@@ -140,23 +140,23 @@ export default function Projects() {
             <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
               <div className="absolute inset-0 bg-emerald-900/40 z-10 group-hover:bg-emerald-900/10 transition-colors duration-500"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-emerald-700 opacity-60 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700"></div>
-              <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold z-20 transition-transform duration-500 group-hover:scale-110">Vision Sheen</div>
+              <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold z-20 transition-transform duration-500 group-hover:scale-110">PrimeCare Website</div>
             </div>
             <div className="p-8">
               <h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-500 transition-colors">
-                <a href="https://visionsheen.in" target="_blank" rel="noopener noreferrer" className="hover-target">Vision Sheen</a>
+                <a href="https://primecares.co.in/" target="_blank" rel="noopener noreferrer" className="hover-target">PrimeCare Healthcare Website</a>
               </h3>
               <p className="text-gray-400 mb-6 line-clamp-3 text-sm leading-relaxed">
-                Developed and maintained the Vision Sheen website, showcasing a diverse range of high-performance projectors and AV accessories.
+                Patient-facing layer of a healthcare platform — doctor discovery by specialty, clinic and video appointment entry points, health packages and patient app onboarding. Delivered with a three-person product team.
               </p>
 
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-emerald-500/30 transition-colors">Custom Code</span>
-                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-emerald-500/30 transition-colors">E-Commerce</span>
-                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-emerald-500/30 transition-colors">SEO</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-emerald-500/30 transition-colors">Next.js</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-emerald-500/30 transition-colors">TypeScript</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-emerald-500/30 transition-colors">SEO &amp; Structured Data</span>
               </div>
 
-              <a href="https://visionsheen.in" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-emerald-500 hover:text-emerald-400 font-semibold text-sm group-hover:underline decoration-2 underline-offset-4 hover-target">
+              <a href="https://primecares.co.in/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-emerald-500 hover:text-emerald-400 font-semibold text-sm group-hover:underline decoration-2 underline-offset-4 hover-target">
                 Visit Website
                 <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
@@ -168,23 +168,23 @@ export default function Projects() {
             <div className="relative h-56 bg-[#0a0a0a] overflow-hidden">
               <div className="absolute inset-0 bg-purple-900/40 z-10 group-hover:bg-purple-900/10 transition-colors duration-500"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 opacity-60 group-hover:opacity-90 group-hover:scale-110 transition-all duration-700"></div>
-              <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold z-20 transition-transform duration-500 group-hover:scale-110">Vinayak Hospital</div>
+              <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold z-20 transition-transform duration-500 group-hover:scale-110">Doctor Dashboard</div>
             </div>
             <div className="p-8">
               <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-500 transition-colors">
-                <a href="https://www.vinayakhospital.co.in" target="_blank" rel="noopener noreferrer" className="hover-target">Vinayak Hospital</a>
+                <a href="https://doctor.primecares.co.in/register" target="_blank" rel="noopener noreferrer" className="hover-target">PrimeCare Doctor Dashboard</a>
               </h3>
               <p className="text-gray-400 mb-6 line-clamp-3 text-sm leading-relaxed">
-                Enhancing online presence and accessibility for a multi-specialty healthcare facility. Focused on responsive design.
+                Doctor-side workspace for the same platform — staged registration with email OTP, KYC and medical credential submission, application review tracking, and consultation operations. Delivered with a three-person product team.
               </p>
 
               <div className="flex flex-wrap gap-2 mb-6">
-                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-purple-500/30 transition-colors">HTML/CSS</span>
-                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-purple-500/30 transition-colors">JavaScript</span>
-                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-purple-500/30 transition-colors">Responsive</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-purple-500/30 transition-colors">Next.js</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-purple-500/30 transition-colors">Node.js</span>
+                <span className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-semibold rounded-full border border-white/10 group-hover:border-purple-500/30 transition-colors">Auth &amp; KYC</span>
               </div>
 
-              <a href="https://www.vinayakhospital.co.in" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-purple-500 hover:text-purple-400 font-semibold text-sm group-hover:underline decoration-2 underline-offset-4 hover-target">
+              <a href="https://doctor.primecares.co.in/register" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-purple-500 hover:text-purple-400 font-semibold text-sm group-hover:underline decoration-2 underline-offset-4 hover-target">
                 Visit Website
                 <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
               </a>
