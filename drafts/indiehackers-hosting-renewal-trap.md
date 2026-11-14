@@ -1,8 +1,8 @@
 # Indie Hackers post — the hosting renewal trap
 
 **Where:** indiehackers.com → Post → group **Developers** (fallback: **Building in public**)
-**Target page:** https://mohitkoli.in/blog/hostinger-renewal-price-india-2026 (position ~14, page 2, needs the authority)
-**Secondary:** the calculator
+**Target page:** https://mohitkoli.in/blog/hostinger-kvm-vps-plans-india-2026 — retargeted 10 Nov 2026 to match the one-page sprint in `backlink-sprint-kvm-vps.md`. The VPS ladder has its own renewal story (KVM 1 +67%, KVM 4 +118%) so the post's argument holds unchanged.
+**Secondary:** the calculator. Two links is one more than the sprint rule allows, and it is the one deliberate exception — an Indie Hackers "I built this" post with no link to the thing reads as bait. Keep it at two.
 **Link type:** nofollow. Value here is founder traffic and eyeballs, not link equity.
 
 **Posting notes**
@@ -51,8 +51,8 @@ https://mohitkoli.in/tools/hosting-cost-calculator
 
 Pick a plan, pick how many years you realistically keep the site, and it shows the term price and the renewal price side by side, plus the actual invoice with GST. No signup, no email. It runs entirely in the browser.
 
-The longer write-up with every tier and the sources is here:
-https://mohitkoli.in/blog/hostinger-renewal-price-india-2026
+The VPS tiers are where this gets worse, and I tabulated that ladder with the sources here:
+https://mohitkoli.in/blog/hostinger-kvm-vps-plans-india-2026
 
 Two things I would genuinely like to hear from this crowd:
 

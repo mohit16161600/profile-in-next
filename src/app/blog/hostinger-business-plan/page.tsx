@@ -387,7 +387,10 @@ export default function HostingerBusinessPlan() {
                             <Link href="/blog/hostinger-cloud-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">Cloud hosting</Link>{" "}
                             or a{" "}
                             <Link href="/blog/best-vps-hosting-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">VPS</Link>{" "}
-                            long before that.
+                            long before that. If it is Hostinger&apos;s own VPS you are weighing, the tier you want is decided by the
+                            renewal rate rather than the intro price —{" "}
+                            <Link href="/blog/hostinger-kvm-vps-plans-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">what each KVM plan actually renews at</Link>{" "}
+                            is set out tier by tier.
                         </p>
                         <p className="text-gray-300 leading-8">
                             The useful way to read &ldquo;unlimited&rdquo; here is: <em>stop counting</em>. You&apos;re no

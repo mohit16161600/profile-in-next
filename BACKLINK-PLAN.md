@@ -65,6 +65,78 @@ page is what earns commission.
 **Pace it.** Two posts on the same platform the same day gets throttled, and
 the second buries the first.
 
+**Second round, written 10 Nov 2026** — both bodies are finished and ready to paste:
+
+| Platform | Link type | Status | File |
+|---|---|---|---|
+| dev.to #2 | **dofollow** | ✅ posted 14 Nov, verified | `drafts/devto-vps-tier-renewal-india.md` |
+| Hashnode #2 | **dofollow** | ⛔ blocked — see below | `drafts/hashnode-kvm-599-box.md` |
+
+**dev.to #2 — verified 14 Nov 2026**
+
+```
+https://dev.to/mohit_00777/picking-a-vps-tier-in-india-the-renewal-rate-is-the-only-number-that-matters-agf
+```
+
+Fetched and checked: HTTP 200, body rendered, exactly one link to mohitkoli.in,
+pointing at `hostinger-kvm-vps-plans-india-2026`, `rel="noopener noreferrer"` —
+**no nofollow**, so it passes equity. Canonical is dev.to's own URL, so the post
+can rank on its own rather than deferring to the blog. Tags: devops, webdev,
+india, hostinger.
+
+**Hashnode — dead platform, dropped from the plan 14 Nov 2026**
+
+The notifications page gave the answer: every post was **removed by Hashnode**
+for "not meeting community guidelines" — the n8n/VPS post a month ago, and
+Shopify cost, Hostinger domain price and cheap-hosting posts two months ago,
+six removals in all. They were not drafts. They were deleted.
+
+Two causes, both worth carrying to other platforms:
+
+1. **The content pattern.** Every removed post is a price list aimed at a
+   monetised page — "Domain Price in India", "Cheap Hosting Under ₹200". That
+   reads as affiliate marketing rather than developer writing, which is exactly
+   what Hashnode's guidelines exclude.
+2. **A paste error.** The n8n post's preview begins `--- title: Self-hosting
+   n8n...`, meaning the draft file's own header block was pasted along with the
+   body, so the post opened with broken frontmatter. Paste only the fenced body
+   block from a draft file, never the file.
+
+**Do not post there again.** A seventh post gets removed and risks the account.
+Do not appeal either — six removals already stand against it. The 14 Nov post
+should be assumed removed too; check it in a few days.
+
+Hashnode was one of only two dofollow placements in the sprint, so the dofollow
+side now rests on dev.to alone. Replacement to evaluate before writing anything:
+DZone or HackerNoon, both of which accept submissions and pass equity, and both
+of which review editorially — which the removed posts would not have survived
+either.
+
+**Original diagnosis, kept for the record**
+
+Checked 14 Nov 2026, both public surfaces:
+
+```
+hashnode.com/@mohitkoli     "No articles have been published yet." / "No publications yet."
+mohitkoli.hashnode.dev      "We haven't published yet"  ·  posts: []
+```
+
+The Hashnode dashboard lists six posts marked **Published** (14 Nov, 24 Sep,
+7 Sep, 3 Sep, 22 Aug, plus a Hostinger domain-price post), but none of them is
+visible on either public surface. So none of them is a backlink, and that fully
+explains why Hashnode has never appeared in GSC → Top linking sites.
+
+The 14 Oct entry recorded in this file earlier was wrong — no October post
+exists in the dashboard at all. `drafts/hashnode-selfhost-n8n.md` was never
+published.
+
+Next step: in the dashboard, open the ⋯ menu on the 14 Nov post and take its
+public URL. Which of the three it turns out to be decides the fix:
+posts sitting in draft despite the label; a second publication holding them; or
+a publication-level setting blocking the blog from serving.
+
+Day-by-day order for all of it: `drafts/RUNBOOK-external-links.md`.
+
 Next after Hashnode:
 - [ ] **Indie Hackers** — post the hosting-cost analysis there; founders care about infra cost
 - [ ] **r/developersIndia** — read their self-promo rules first. Answer questions for two weeks *before* ever linking, or it is removed and the account is burned.
@@ -129,9 +201,35 @@ Record the count here on the first of each month:
 
 | Date | Referring domains | Total clicks (28d) | Avg position |
 |---|---|---|---|
-| 14 Oct 2026 | (fill in) | 16/week | ~7 |
-| 1 Nov 2026 | | | |
-| 1 Dec 2026 | | | |
+| 14 Oct 2026 | (never recorded) | 16/week | ~7 |
+| 10 Nov 2026 | **3 linking sites / 5 total links** | 66 (4–31 Oct) | ~7.5 |
+| 10 Dec 2026 | | | |
+
+**10 Nov baseline, from GSC → Links → Top linked pages (externally):**
+
+```
+https://mohitkoli.in/                              4 links   3 sites
+https://mohitkoli.in/blog/hostinger-kvm-vps-plans  1 link    1 site
+```
+
+This is the first time the number has actually been measured, and it is the most
+important figure in this file. Three referring domains is, for practical
+purposes, no backlink profile at all. Pages ranking top-three for the queries
+this site targets have hundreds.
+
+Two caveats, neither of which changes the conclusion:
+
+- **GSC's Links report undercounts and lags.** It is a sample, refreshed slowly,
+  and it misses links — particularly from platforms that render links through
+  redirects or scripts. The real number is probably higher than 3.
+- **Even generously, it is tiny.** Eight-plus placements since September
+  producing three recorded domains means some of them either did not land, were
+  collapsed or removed, or are not being attributed.
+
+**What this changes:** at three referring domains, the dofollow placements matter
+disproportionately — they are the only ones passing equity, and each one is a
+large proportional addition rather than a rounding error. The sprint order in
+`drafts/backlink-sprint-kvm-vps.md` has been changed to put them first.
 
 If referring domains are not rising, the plan is not being worked — the ranking
 will not move on its own.

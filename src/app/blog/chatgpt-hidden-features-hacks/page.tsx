@@ -120,7 +120,7 @@ export default function ChatGPTGodModeHacks() {
               }
             },
             "datePublished": "2026-05-10",
-            "dateModified": "2026-09-13T00:00:00.000Z",
+            "dateModified": "2026-11-14T00:00:00.000Z",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://mohitkoli.in/blog/chatgpt-hidden-features-hacks"
@@ -196,7 +196,7 @@ export default function ChatGPTGodModeHacks() {
             <span>|</span>
             <time dateTime="2026-05-10">MAY 10, 2026</time>
             <span>|</span>
-            <time dateTime="2026-09-13" className="text-green-500">UPDATED: SEPTEMBER 13, 2026</time>
+            <time dateTime="2026-11-14" className="text-green-500">UPDATED: NOVEMBER 14, 2026</time>
             <span>|</span>
             <span className="flex items-center gap-1">
               READ_TIME: 11 MIN
@@ -357,11 +357,13 @@ export default function ChatGPTGodModeHacks() {
             And when you do want pure image generation, prompt structure is everything—my collection of <Link href="/blog/viral-chatgpt-image-prompts-2026" className="text-green-400 underline hover:text-green-300">viral ChatGPT image prompts for 2026</Link> breaks down the exact wording patterns behind the trends flooding Instagram right now.
           </p>
           <div className="p-8 bg-green-500/5 rounded-2xl border border-green-500/20 mb-12">
-            <h3 className="text-green-400 font-bold mb-4">Images 2.5: the controls people miss</h3>
+            <h3 className="text-green-400 font-bold mb-4">Images 2.6: the controls people miss</h3>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              Images 2.5 adds sharper detail, more precise multi-turn editing and up to 50% lower latency than Images 2.0, and it is better at editing only what you asked while keeping the rest. Images 2.0 (21 April 2026) is on every plan including Free, with 2K output and nine aspect ratios. The official DALL·E GPT was retired on 30 August 2026.
+              Images 2.6 (4 November 2026) generates faster than 2.5 and holds detail better across repeated edits—the thing that used to degrade an image the fourth or fifth time you asked for a tweak. Before it, Images 2.5 had already brought sharper detail, more precise multi-turn editing and up to 50% lower latency than Images 2.0. Images 2.0 (21 April 2026) is on every plan including Free, with 2K output and nine aspect ratios. The official DALL·E GPT was retired on 30 August 2026.
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-400">
+              <li><strong>GIFs (new in 2.6):</strong> ask for a looping animation, or upload a sketch and ask ChatGPT to make the character wave. Refine it with follow-up instructions, adjust the playback speed, then save or share it. Two limits worth knowing: it cannot edit an animated GIF you upload, and OpenAI has not published per-plan limits. It was still rolling out on 7 November 2026, so it may not be in your account yet. For longer clips this is not the tool—see <Link href="/blog/best-ai-video-generators-2026" className="text-green-400 underline hover:text-green-300">the AI video generators worth using in 2026</Link>.</li>
+              <li><strong>Saved reference images (new in 2.6):</strong> keep an image as a reference and reuse it in later chats, instead of re-uploading the same brand asset or character every time.</li>
               <li><strong>Sketch:</strong> draw a rough reference right in ChatGPT, then describe the final image.</li>
               <li><strong>Templates:</strong> Images {">"} Templates, for formats like posters and product photos.</li>
               <li><strong>Comments on the image:</strong> place a comment directly on a generated image for a focused edit (on mobile, open the image full-screen).</li>
@@ -403,6 +405,12 @@ export default function ChatGPTGodModeHacks() {
             <h3 className="text-green-400 font-bold mb-4">Projects: memory that stays inside one job</h3>
             <p className="text-gray-400 leading-relaxed">
               Projects are available on all free and paid ChatGPT plans. Each project holds chats, uploaded reference material (PDFs, spreadsheets, docs, images, pasted text, and links to Slack channels or Google Drive files) and project instructions set from the three-dot menu {">"} Project settings. Those instructions apply only inside that project and <strong>override your global custom instructions</strong>—a clean way to run a different persona per client or codebase without touching your god mode prompt. Projects have built-in memory of their chats and files, and project-only memory keeps context from leaking in or out. You can also save a ChatGPT response as a project source and move existing chats into a project. Since 14 July 2026, sidebar search covers chats, projects, images and documents on web, iOS and Android.
+            </p>
+          </div>
+          <div className="p-8 bg-white/5 rounded-2xl border border-white/10 mb-12">
+            <h3 className="text-green-400 font-bold mb-4">Locked chats: the privacy control almost nobody has turned on</h3>
+            <p className="text-gray-400 leading-relaxed">
+              Announced 20 October 2026. A locked chat stays in your account but disappears from your regular chat history, from pinned chats and from search. You open it with a 4-digit account PIN or your device&apos;s own authentication. It is rolling out gradually to Free, Go, Plus and Pro, on the web, on iOS and Android, and in the new ChatGPT desktop app for macOS and Windows. The obvious use is a shared laptop. The less obvious one is client work: the chat where you pasted a contract, a salary band or a migration plan is exactly the chat that surfaces when someone types two words into your search box. Lock it, or keep it out of ChatGPT entirely—locking hides a chat, it does not encrypt it.
             </p>
           </div>
 

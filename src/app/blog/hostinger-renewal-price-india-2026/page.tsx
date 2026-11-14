@@ -266,7 +266,10 @@ export default function HostingerRenewalPrice() {
                         </div>
                         <p className="text-sm text-gray-500 mt-3">
                             KVM VPS renewal rates vary by tier and current promotion — Hostinger shows the exact renewal amount on the checkout
-                            page before you pay. Always read that line.
+                            page before you pay. Always read that line. The jump is not uniform across the ladder either, which matters more than the
+                            headline price: I set out{" "}
+                            <Link href="/blog/hostinger-kvm-vps-plans-india-2026" className="text-primary-400 hover:text-primary-300 underline underline-offset-4">the four KVM tiers with both prices</Link>{" "}
+                            side by side, with the date each figure was checked.
                         </p>
                     </section>
 
