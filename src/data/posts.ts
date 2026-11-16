@@ -29,6 +29,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 69,
+        title: "Hostinger Black Friday 2026: ₹69/mo Is Live, and It Renews at ₹289",
+        seoTitle: "Hostinger Black Friday 2026: ₹69/mo Live, Renews at ₹289",
+        description: "The India sale was already running on 16 Nov, before Black Friday. Single ₹69, Premium ₹139, KVM 1 ₹599 — with every renewal rate beside it, including the +319% jump on the cheapest plan.",
+        date: "November 16, 2026",
+        updated: "November 16, 2026",
+        readTime: "8 min read",
+        category: "Hosting",
+        views: 0,
+        keywords: ["hostinger black friday 2026", "hostinger black friday sale india", "hostinger cyber monday 2026", "hostinger sale 2026", "hostinger offer india", "black friday hosting deal"],
+        slug: "hostinger-black-friday-2026",
+        imageSrc: "/assets/blog/hostinger-black-friday-2026.svg",
+    },
+    {
         id: 61,
         title: "Hostinger VPS Ki Poori Kundali: ₹479 Se Shuru, 69% Tak Off",
         description: "KVM 1 sirf ₹479.20/mo, KVM 4 par 69% off + extra 20%. Renewal par bill kitna badhega, kaunsa plan lein aur kaunsa nahi — sab ek jagah. Sept 2026 verified.",
