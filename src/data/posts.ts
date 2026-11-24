@@ -29,6 +29,20 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        id: 70,
+        title: "Dynadot Black Friday 2026: Domains From $1.50, 363 TLDs on Sale",
+        seoTitle: "Dynadot Black Friday 2026: Domains From $1.50",
+        description: ".xyz and .biz at $1.50, .info $3.99, .tech down from $52.65 to $6.64 — plus the live BFCOM26 coupon. Every sale price with the regular price beside it and the exact date each offer ends.",
+        date: "November 24, 2026",
+        updated: "November 24, 2026",
+        readTime: "9 min read",
+        category: "Domains",
+        views: 0,
+        keywords: ["dynadot black friday", "cheapest domain name", "cheap domain registration", "dynadot coupon code", "dynadot sale", "dynadot review", "domain name black friday sale", "dynadot india"],
+        slug: "dynadot-review-2026",
+        imageSrc: "/assets/blog/dynadot-review-2026.svg",
+    },
+    {
         id: 69,
         title: "Hostinger Black Friday 2026: ₹69/mo Is Live, and It Renews at ₹289",
         seoTitle: "Hostinger Black Friday 2026: ₹69/mo Live, Renews at ₹289",

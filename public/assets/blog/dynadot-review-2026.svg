@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Dynadot Black Friday 2026 sale prices with the regular price each one returns to">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#0b0e17"/>
+      <stop offset="1" stop-color="#070910"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.18" r="0.8">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#818cf8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#818cf8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 150h1200M0 300h1200M0 450h1200"/>
+    <path d="M300 0v630M600 0v630M900 0v630"/>
+  </g>
+
+  <text x="80" y="100" font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="22" letter-spacing="6" fill="#818cf8" font-weight="600">DYNADOT &#183; BLACK FRIDAY 2026</text>
+  <rect x="80" y="118" width="300" height="3" fill="url(#rule)"/>
+
+  <text x="80" y="192" font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="56" font-weight="700" fill="#ffffff">Domains from $1.50</text>
+  <text x="80" y="254" font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="40" font-weight="600" fill="#9aa4b2">363 extensions on sale</text>
+
+  <text x="80" y="306" font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="23" fill="#9aa4b2">From Dynadot&#8217;s own sales table &#183; 24 November 2026 &#183; USD</text>
+
+  <g font-family="Segoe UI, Inter, system-ui, sans-serif">
+    <text x="80" y="378" font-size="20" fill="#6b7280" letter-spacing="2">EXTENSION</text>
+    <text x="430" y="378" font-size="20" fill="#6b7280" letter-spacing="2">SALE</text>
+    <text x="680" y="378" font-size="20" fill="#6b7280" letter-spacing="2">REGULAR</text>
+    <text x="960" y="378" font-size="20" fill="#6b7280" letter-spacing="2">OFF</text>
+    <rect x="80" y="392" width="1040" height="1" fill="#ffffff" fill-opacity="0.08"/>
+
+    <text x="80" y="438" font-size="28" fill="#e5e7eb" font-weight="600">.xyz</text>
+    <text x="430" y="438" font-size="28" fill="#34d399" font-weight="700">$1.50</text>
+    <text x="680" y="438" font-size="28" fill="#9aa4b2">$14.45</text>
+    <text x="960" y="438" font-size="28" fill="#fbbf24" font-weight="700">90%</text>
+
+    <text x="80" y="490" font-size="28" fill="#e5e7eb" font-weight="600">.tech</text>
+    <text x="430" y="490" font-size="28" fill="#34d399" font-weight="700">$6.64</text>
+    <text x="680" y="490" font-size="28" fill="#9aa4b2">$52.65</text>
+    <text x="960" y="490" font-size="28" fill="#fbbf24" font-weight="700">87%</text>
+
+    <text x="80" y="542" font-size="28" fill="#e5e7eb" font-weight="600">.com</text>
+    <text x="430" y="542" font-size="28" fill="#ffffff" font-weight="700">$11.62</text>
+    <text x="680" y="542" font-size="28" fill="#9aa4b2">$11.62</text>
+    <text x="960" y="542" font-size="24" fill="#818cf8" font-weight="700">never moves</text>
+  </g>
+
+  <text x="80" y="596" font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="19" fill="#6b7280">mohitkoli.in &#8212; the sale price and the price you keep paying are different numbers</text>
+</svg>
